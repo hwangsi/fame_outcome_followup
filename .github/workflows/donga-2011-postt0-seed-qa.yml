@@ -10,6 +10,7 @@ on:
       - 'research/donga_2011_post_t0_new_audit_batch2_v0_1.json'
       - 'research/donga_2011_post_t0_new_audit_batch3_v0_1.json'
       - 'research/donga_2011_post_t0_new_audit_batch4_v0_1.json'
+      - 'research/donga_2011_post_t0_new_audit_batch5_v0_1.json'
       - 'data/typeA/donga_2011_t0_roles_v0_1.json'
       - '.github/workflows/donga-2011-postt0-seed-qa.yml'
   workflow_dispatch:
@@ -67,38 +68,34 @@ jobs:
           }
           assert q['repeat_resolved_n']==38 and q['repeat_reaudit_pending_n']==0
           PY
-      - name: Build partial 2011 post-T0 master with new-entrant batches 1-4
+      - name: Build partial 2011 post-T0 master with new-entrant batches 1-5
         run: python scripts/build_donga_2011_post_t0_partial_master.py
       - name: QA partial master
         run: |
           python - <<'PY'
           import json
-          d=json.load(open('analysis/donga_2011_post_t0_partial_master_v0_4.json',encoding='utf-8'))
+          d=json.load(open('analysis/donga_2011_post_t0_partial_master_v0_5.json',encoding='utf-8'))
           q=d['qa']
           print(json.dumps(q,ensure_ascii=False,indent=2))
           assert q['total']==100
-          assert q['assessed_n']==78
-          assert q['pending_n']==22
+          assert q['assessed_n']==88
+          assert q['pending_n']==12
           assert q['repeat_assessed_n']==38
-          assert q['new_assessed_n']==40
-          assert len(q['pending_names'])==22
+          assert q['new_assessed_n']==50
+          assert len(q['pending_names'])==12
           batches=q['new_audit_batch_names']
-          assert len(batches)==4 and all(len(v)==10 for v in batches.values())
-          assert q['identity_anchor_validated_n']==20
-          expected_anchor_names={
-            '김선욱','김승환','박형주','석지영','이국종','변대규','남민우','황철주','장하석','함돈희',
-            '박상일','이창준','김상욱','이수만','이불','손영래','권구훈','김은성','하정우','양윤선'
-          }
-          assert set(q['identity_anchor_validated_names'])==expected_anchor_names
+          assert len(batches)==5 and all(len(v)==10 for v in batches.values())
+          assert q['identity_anchor_validated_n']==30
+          anchors=set(q['identity_anchor_validated_names'])
+          assert {'김영달','김영하','윤태호','유범재','조명숙','이상이','백승헌','이자람','정일용','김애란'} <= anchors
           row={p['name']:p for p in d['people']}
           assert row['김정주']['exposure_truncated_by_death'] is True
           assert row['김정주']['death_year']==2022
           assert row['손흥민']['post2011_peak_score']==4
           assert row['김선욱']['t0_identity_anchor']['t0_role_official_2011']=='피아니스트'
           assert '아태이론물리센터' in row['김승환']['t0_identity_anchor']['t0_role_official_2011']
-          assert row['김상욱']['t0_identity_anchor']['t0_role_official_2011']=='KAIST 신소재공학과 교수'
-          assert row['박상일']['t0_identity_anchor']['t0_role_official_2011']=='파크시스템스 대표'
-          assert row['양윤선']['t0_identity_anchor']['t0_role_official_2011']=='메디포스트 대표'
           assert row['양윤선']['post2011_peak_score']==2
-          assert row['이창준']['post2011_peak_score']==3
+          assert row['김영달']['t0_identity_anchor']['t0_role_official_2011']=='아이디스 대표'
+          assert row['김애란']['t0_identity_anchor']['t0_role_official_2011']=='소설가'
+          assert row['정일용']['t0_identity_anchor']['t0_role_official_2011']=='원진녹색병원장'
           PY
