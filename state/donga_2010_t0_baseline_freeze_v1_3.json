@@ -1,0 +1,17 @@
+{
+  "schema_version":"donga_2010_t0_baseline_freeze_v1.3",
+  "generated":"2026-08-18",
+  "status":"frozen_superseding_v1_2",
+  "supersedes":"state/donga_2010_t0_baseline_freeze_v1_2.json",
+  "reason":"Full pioneer-category baseline audit identified two additional selection-era rows whose original title-only coding understated already-established international/national-program leadership.",
+  "new_corrections":[
+    {"name":"이상훈","t0_old":2,"t0_new":3,"baseline_old":2,"baseline_new":3,"basis":"SNU WCU grant PI and founding BCS chair plus landmark pre-T0 visual-neuroscience research"},
+    {"name":"이효철","t0_old":2,"t0_new":3,"baseline_old":2,"baseline_new":3,"basis":"pre-T0 field-pioneering time-resolved X-ray structural-dynamics research and full-professor leadership"}
+  ],
+  "cumulative_corrections_since_v1_0":["이지오 2→3","조동호 2→3","서동철 2→3","이상훈 2→3","이효철 2→3"],
+  "t0_runtime_output":"data/typeA/donga_2010_t0_snapshot_scope_v1_3.json",
+  "baseline_runtime_output":"data/typeA/donga_2010_baseline_peak_through_t0_v1_3.json",
+  "qa_expected":{"total":100,"t0_score_counts":{"1":1,"2":48,"3":48,"4":3},"t0_mean":2.53,"baseline_score_counts":{"1":1,"2":47,"3":49,"4":3},"baseline_mean":2.54,"baseline_greater_than_t0_n":1},
+  "audit_note":"Pioneer-category pre-T0 audit is closed at v1.3. Later changes require genuinely new evidence or a rubric change, not title-only re-interpretation.",
+  "versioning_rule":"Do not modify v1.3 silently; later discoveries require v1.4 or later."
+}
