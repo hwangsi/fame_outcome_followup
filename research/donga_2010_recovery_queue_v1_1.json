@@ -1,0 +1,50 @@
+{
+  "version": "v1.1",
+  "generated": "2026-08-17",
+  "canonical_row_resolved_confirmed_n": 77,
+  "membership_slots_remaining_to_100": 23,
+  "repeat_2010_2011": {
+    "official_total_n": 38,
+    "row_resolved_n": 35,
+    "remaining_n": 3,
+    "business": {
+      "resolved_n": 13,
+      "target_n": 14,
+      "remaining_n": 1,
+      "candidate_pool": ["권구훈","김가영","김남구","손병두","정용진","최태원","황철주"],
+      "excluded_since_v1_0": ["양윤선"]
+    },
+    "science": {"resolved_n": 8,"target_n": 8,"remaining_n": 0},
+    "culture_leader_intellectual_combined": {"resolved_n": 14,"target_n": 16,"remaining_n": 2}
+  },
+  "excluded_by_crossyear": [
+    {
+      "name": "양윤선",
+      "reason": "official 2011 member; absent from complete 2012 business roster; official 2013 member; 2014 Hall article defines her among people reaching total three selections, forcing 2011/2013/2014 and excluding 2010"
+    },
+    {
+      "name": "손열음",
+      "reason": "absent from complete official 2011 roster; official 2012 member; 2014 Hall member at total three selections; later Donga states three consecutive selections, forcing 2012/2013/2014 and excluding 2010"
+    }
+  ],
+  "creative20_reconciliation": {
+    "secondary_full_names_n": 20,
+    "canonical_intersection_n": 16,
+    "pending_first_party": ["김윤진","서도호","신지애","이청용"]
+  },
+  "other_pending_first_party": ["윤명철"],
+  "legacy_records_still_unresolved": [
+    {"name":"윤명철","slot":"category_unknown","status":"probable_secondary_pending_first_party"},
+    {"name":null,"slot":"행동하는 지성인","status":"name_and_provenance_unresolved"},
+    {"name":null,"slot":"행동하는 지성인","status":"name_and_provenance_unresolved"}
+  ],
+  "priority_search_tracks": [
+    {"priority":1,"track":"2013_hall_business_missing_two","goal":"recover the two unnamed 2013 Hall-of-Fame business/economy members; test against seven remaining 2010-2011 business-repeat candidates"},
+    {"priority":2,"track":"repeat_nonbusiness_last_two","goal":"identify the final two culture/leader/intellectual 2010-2011 repeat members and test overlap with the two provenance-lost intellectual legacy records"},
+    {"priority":3,"track":"creative_four_first_party","goal":"corroborate 김윤진, 서도호, 신지애, 이청용 with 2010 first-party/contemporaneous official evidence"},
+    {"priority":4,"track":"yoon_myung_chul_first_party","goal":"obtain 2010 Donga, Dongguk University, or other qualifying evidence for 윤명철"},
+    {"priority":5,"track":"original_2010_A1_A4_or_DNB2","goal":"recover exact 2010 printed/digital roster to close all remaining slots"}
+  ],
+  "acceptance_rule": "No person enters the canonical frozen roster without row-level evidence that guarantees 2010 selection under the predefined evidence hierarchy.",
+  "analysis_gate": "Do not calculate 2020 target-year prediction metrics before exact 100/100 T0 roster freeze, identity resolution, baseline storage, provenance, and category reconciliation."
+}
