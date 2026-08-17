@@ -1,0 +1,23 @@
+{
+  "schema_version":"donga_2010_t0_baseline_freeze_v1.1",
+  "generated":"2026-08-18",
+  "status":"frozen_superseding_v1_0",
+  "supersedes":"state/donga_2010_t0_baseline_freeze_v1_0.json",
+  "reason":"Post-T0 science audit surfaced strong pre-selection evidence that two rows had been conservatively under-scored at T0.",
+  "corrections":[
+    {"name":"이지오","t0_old":2,"t0_new":3,"baseline_old":2,"baseline_new":3,"basis":"pre-2010 repeated Science structural-biology work plus Scientist of the Year / KAIST Person of the Year"},
+    {"name":"조동호","t0_old":2,"t0_new":3,"baseline_old":2,"baseline_new":3,"basis":"selection-era director of the nationally funded OLEV project, KAIST Institute for IT Convergence director, KT Chair Professor"}
+  ],
+  "t0_runtime_output":"data/typeA/donga_2010_t0_snapshot_scope_v1_1.json",
+  "baseline_runtime_output":"data/typeA/donga_2010_baseline_peak_through_t0_v1_1.json",
+  "builders":["scripts/build_donga_2010_t0_snapshot_scope_v1_1.py","scripts/build_donga_2010_baseline_peak_v1_1.py"],
+  "qa_expected":{
+    "total":100,
+    "t0_score_counts":{"1":1,"2":51,"3":45,"4":3},
+    "t0_mean":2.50,
+    "baseline_score_counts":{"1":1,"2":50,"3":46,"4":3},
+    "baseline_mean":2.51,
+    "baseline_greater_than_t0_n":1
+  },
+  "versioning_rule":"Do not modify v1.1 silently; later discoveries require v1.2 or later."
+}
