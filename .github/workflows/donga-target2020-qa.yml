@@ -7,7 +7,9 @@ on:
       - 'scripts/analyze_donga_2010_target2020.py'
       - 'scripts/build_donga_2010_t0_snapshot_scope.py'
       - 'scripts/build_donga_2010_t0_snapshot_scope_v0_2.py'
-      - 'scripts/analyze_donga_2010_t0_to_target2020.py'
+      - 'scripts/build_donga_2010_t0_snapshot_scope_v0_3.py'
+      - 'scripts/build_donga_2010_t0_snapshot_scope_v0_4.py'
+      - 'scripts/build_donga_2010_baseline_peak_v0_1.py'
       - 'scripts/analyze_donga_2010_t0_to_target2020_v0_2.py'
       - 'data/typeA/donga_2010_*'
       - 'state/donga_2010_*'
@@ -25,29 +27,28 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Build T0 snapshot scope pass1
-        run: python scripts/build_donga_2010_t0_snapshot_scope.py
-      - name: Apply T0 snapshot corrections
-        run: python scripts/build_donga_2010_t0_snapshot_scope_v0_2.py
-      - name: Build canonical target2020 master and assert QA
-        run: python scripts/build_donga_2010_target2020_master.py
-      - name: Compute target-year metrics and assert QA
-        run: python scripts/analyze_donga_2010_target2020.py
-      - name: Compute corrected provisional T0-to-target snapshot change
-        run: python scripts/analyze_donga_2010_t0_to_target2020_v0_2.py
-      - name: Show generated files
+      - name: Build T0 scope chain
         run: |
-          wc -l data/typeA/donga_2010_t0_snapshot_scope_v0_2.csv
-          wc -l data/typeA/donga_2010_target2020_master_v1_0.csv
+          python scripts/build_donga_2010_t0_snapshot_scope.py
+          python scripts/build_donga_2010_t0_snapshot_scope_v0_2.py
+          python scripts/build_donga_2010_t0_snapshot_scope_v0_3.py
+          python scripts/build_donga_2010_t0_snapshot_scope_v0_4.py
+      - name: Build baseline peak through T0
+        run: python scripts/build_donga_2010_baseline_peak_v0_1.py
+      - name: Build canonical target2020 master and metrics
+        run: |
+          python scripts/build_donga_2010_target2020_master.py
+          python scripts/analyze_donga_2010_target2020.py
+      - name: Show baseline QA
+        run: |
+          wc -l data/typeA/donga_2010_t0_snapshot_scope_v0_4.csv
+          wc -l data/typeA/donga_2010_baseline_peak_through_t0_v0_1.csv
           python - <<'PY'
           import json
-          t0=json.load(open('data/typeA/donga_2010_t0_snapshot_scope_v0_2.json',encoding='utf-8'))
+          t0=json.load(open('data/typeA/donga_2010_t0_snapshot_scope_v0_4.json',encoding='utf-8'))
+          baseline=json.load(open('data/typeA/donga_2010_baseline_peak_through_t0_v0_1.json',encoding='utf-8'))
           master=json.load(open('data/typeA/donga_2010_target2020_master_v1_0.json',encoding='utf-8'))
-          metrics=json.load(open('data/typeA/donga_2010_target2020_metrics_v1_0.json',encoding='utf-8'))
-          change=json.load(open('data/typeA/donga_2010_t0_to_target2020_snapshot_change_v0_2.json',encoding='utf-8'))
           print(json.dumps(t0['qa'],ensure_ascii=False,indent=2))
+          print(json.dumps(baseline['qa'],ensure_ascii=False,indent=2))
           print(json.dumps(master['qa'],ensure_ascii=False,indent=2))
-          print(json.dumps(metrics['resolved_only'],ensure_ascii=False,indent=2))
-          print(json.dumps(change['overall'],ensure_ascii=False,indent=2))
-          print(json.dumps(change['by_category'],ensure_ascii=False,indent=2))
           PY
