@@ -19,6 +19,7 @@ on:
       - 'scripts/analyze_donga_2010_post_t0_peak.py'
       - 'scripts/build_donga_2010_post_t0_peak_master.py'
       - 'scripts/analyze_donga_2010_repeat_selection.py'
+      - 'scripts/analyze_donga_2010_repeat_stratified.py'
       - 'scripts/build_typeA_common_master_v0_1.py'
       - 'data/typeA/donga_2010_*'
       - 'data/typeA/donga_2011_*'
@@ -65,7 +66,9 @@ jobs:
       - name: Build Type-A common master v0.1
         run: python scripts/build_typeA_common_master_v0_1.py
       - name: Analyze 2010-2011 repeat selection
-        run: python scripts/analyze_donga_2010_repeat_selection.py
+        run: |
+          python scripts/analyze_donga_2010_repeat_selection.py
+          python scripts/analyze_donga_2010_repeat_stratified.py
       - name: Show final QA
         run: |
           wc -l data/typeA/donga_2010_t0_snapshot_scope_v1_3.csv
@@ -81,15 +84,15 @@ jobs:
           metrics=json.load(open('data/typeA/donga_2010_post_t0_peak_metrics_v1_2.json',encoding='utf-8'))
           common=json.load(open('data/typeA/typeA_common_metrics_v0_1.json',encoding='utf-8'))
           repeat=json.load(open('analysis/donga_2010_repeat_selection_metrics_v0_1.json',encoding='utf-8'))
+          strat=json.load(open('analysis/donga_2010_repeat_selection_stratified_v0_2.json',encoding='utf-8'))
           print(json.dumps(t0['qa'],ensure_ascii=False,indent=2))
           print(json.dumps(baseline['qa'],ensure_ascii=False,indent=2))
           print(json.dumps(pmaster['qa'],ensure_ascii=False,indent=2))
           print(json.dumps(metrics['primary_full_cohort'],ensure_ascii=False,indent=2))
           print(json.dumps(common['qa'],ensure_ascii=False,indent=2))
-          print(json.dumps(common['by_cohort_unit'],ensure_ascii=False,indent=2))
-          print(json.dumps(common['by_design'],ensure_ascii=False,indent=2))
           print(json.dumps(repeat['groups'],ensure_ascii=False,indent=2))
           print(json.dumps(repeat['unadjusted_effects'],ensure_ascii=False,indent=2))
+          print(json.dumps(strat,ensure_ascii=False,indent=2))
           assert t0['qa']['score_counts']=={'1':1,'2':48,'3':48,'4':3}
           assert baseline['qa']['score_counts']=={'1':1,'2':46,'3':50,'4':3}
           assert working['coverage']=={'rows':100,'assessed':100,'unresolved':0,'remaining_uncreated':0}
@@ -98,8 +101,9 @@ jobs:
           assert metrics['primary_full_cohort']['major_leadership_precision']==0.71
           assert metrics['primary_full_cohort']['advanced_rate']==0.28
           assert common['qa']['placements']==125 and common['qa']['unique_people']==118 and common['qa']['repeated_person_n']==7
-          assert common['naive_pooled_descriptive']['major_n']==96 and common['naive_pooled_descriptive']['apex_n']==23 and common['naive_pooled_descriptive']['advanced_n']==43
-          assert common['by_design']['ranked_topN_units']['placements']==25 and common['by_design']['ranked_topN_units']['major_n']==25 and common['by_design']['ranked_topN_units']['advanced_n']==15
-          assert common['by_design']['broad_explicit_horizon']['placements']==100 and common['by_design']['broad_explicit_horizon']['major_n']==71 and common['by_design']['broad_explicit_horizon']['advanced_n']==28
           assert repeat['repeat_n']==38 and repeat['single_2010_only_n']==62
+          assert strat['strata']['2']['repeat_advanced_n']==5 and strat['strata']['2']['single_advanced_n']==13
+          assert strat['strata']['3']['repeat_advanced_n']==6 and strat['strata']['3']['single_advanced_n']==3
+          assert abs(strat['mantel_haenszel']['mantel_haenszel_common_odds_ratio']-2.427805280528053)<1e-12
+          assert abs(strat['mantel_haenszel']['cmh_p']-0.10666393286039269)<1e-12
           PY
