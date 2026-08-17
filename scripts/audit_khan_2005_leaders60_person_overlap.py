@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 
+# QA trigger revision: 1
 ROOT=Path(__file__).resolve().parents[1]
 REC=ROOT/'research/khan_2005_korea_leaders60_recovery_v0_1.json'
 COMMON=ROOT/'data/typeA/typeA_common_master_v0_3.json'
