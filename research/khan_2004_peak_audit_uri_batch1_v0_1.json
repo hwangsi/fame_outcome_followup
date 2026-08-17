@@ -1,0 +1,201 @@
+{
+  "schema_version": "khan_2004_peak_audit_uri_batch1_v0.1",
+  "generated": "2026-08-18",
+  "selection_cutoff": "2004-05-05",
+  "rules_ref": [
+    "state/coding_rules_typeA_v0_1.md",
+    "state/coding_rules_typeA_sector_scope_v0_1.md"
+  ],
+  "status": "peak_audited_10_of_10_uri_party",
+  "people": [
+    {
+      "name": "천정배",
+      "party_t0": "열린우리당",
+      "t0_role": "17대 국회의원 당선자·개혁성향 중진",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "국회의원급 전국 정치 역할; NewsMaker 2003 frozen baseline=2와 일치",
+      "post_t0_peak_role": "법무부 장관",
+      "post_t0_peak_year": 2005,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "data/typeA/newsmaker_2003_outcomes_v0_3.json",
+        "https://www.yna.co.kr/view/AKR20051013008900004"
+      ]
+    },
+    {
+      "name": "신기남",
+      "party_t0": "열린우리당",
+      "t0_role": "17대 국회의원 당선자·열린우리당 상임중앙위원",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "T0 시점 국회의원/상임중앙위원; 전국정당 대표 취임은 selection 이후 2004-05-17",
+      "post_t0_peak_role": "열린우리당 의장",
+      "post_t0_peak_year": 2004,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200405121834481",
+        "https://www.khan.co.kr/article/200408171826031"
+      ],
+      "guardrail": "Peak occurred only 12 days after selection; treat as genuine post-cutoff attainment but flag near-immediate succession/imminence."
+    },
+    {
+      "name": "유시민",
+      "party_t0": "열린우리당",
+      "t0_role": "국회의원",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "NewsMaker 2003 frozen baseline=2",
+      "post_t0_peak_role": "보건복지부 장관",
+      "post_t0_peak_year": 2006,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "data/typeA/newsmaker_2003_outcomes_v0_3.json",
+        "https://www.korea.kr/news/policyNewsView.do?newsId=135084339"
+      ]
+    },
+    {
+      "name": "임종석",
+      "party_t0": "열린우리당",
+      "t0_role": "17대 국회의원 당선자",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "국회의원급 전국 정치 역할",
+      "post_t0_peak_role": "대통령 비서실장",
+      "post_t0_peak_year": 2017,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 2,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.yna.co.kr/view/AKR20170620178700001"
+      ],
+      "scope_note": "Presidential chief of staff is coded national apex under the existing rule's presidential-core-leadership stratum."
+    },
+    {
+      "name": "김부겸",
+      "party_t0": "열린우리당",
+      "t0_role": "17대 국회의원 당선자",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "국회의원급 전국 정치 역할",
+      "post_t0_peak_role": "제47대 국무총리",
+      "post_t0_peak_year": 2021,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 2,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.korea.kr/briefing/speechView.do?newsId=132033209"
+      ]
+    },
+    {
+      "name": "송영길",
+      "party_t0": "열린우리당",
+      "t0_role": "17대 국회의원 당선자",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "국회의원급 전국 정치 역할",
+      "post_t0_peak_role": "인천광역시장·더불어민주당 대표",
+      "post_t0_peak_year": 2021,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.song-yg.co.kr/",
+        "https://incheon.theminjoo.kr/party/sub/news/view.php?brd=240&post=1252"
+      ]
+    },
+    {
+      "name": "김영춘",
+      "party_t0": "열린우리당",
+      "t0_role": "17대 국회의원 당선자",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "국회의원급 전국 정치 역할",
+      "post_t0_peak_role": "해양수산부 장관",
+      "post_t0_peak_year": 2017,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.yna.co.kr/view/AKR20170616131000001",
+        "https://www.yna.co.kr/view/AKR20170702032500003"
+      ]
+    },
+    {
+      "name": "한명숙",
+      "party_t0": "열린우리당",
+      "t0_role": "전 여성부·환경부 장관, 17대 국회의원 당선자",
+      "baseline_peak_through_t0": 3,
+      "baseline_basis": "경향 2004 profile directly states pre-selection 여성부·환경부 장관 career",
+      "post_t0_peak_role": "제37대 국무총리",
+      "post_t0_peak_year": 2006,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200405241840311",
+        "https://www.korea.kr/briefing/speechView.do?newsId=132013251"
+      ]
+    },
+    {
+      "name": "이미경",
+      "identity_key": "이미경|politician",
+      "party_t0": "열린우리당",
+      "t0_role": "3선 국회의원·17대 지역구 당선자",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "경향 2004 profile directly describes 3선 의원; no pre-cutoff minister/national-party-leader apex",
+      "post_t0_peak_role": "제12대 한국국제협력단(KOICA) 이사장",
+      "post_t0_peak_year": 2017,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200405181838361/amp",
+        "https://www.yna.co.kr/view/AKR20171128134100014"
+      ],
+      "identity_guardrail": "Distinct from Dong-A 2011 CJ E&M executive 이미경."
+    },
+    {
+      "name": "원혜영",
+      "party_t0": "열린우리당",
+      "t0_role": "전 부천시장·17대 국회의원 당선자",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "MP/municipal-mayor career remains scope2 under current national political scope mapping",
+      "post_t0_peak_role": "통합민주당 원내대표",
+      "post_t0_peak_year": 2008,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200405281834371",
+        "https://www.yna.co.kr/view/AKR20080527046800001"
+      ]
+    }
+  ],
+  "qa": {
+    "audited_n": 10,
+    "baseline_score_2_n": 9,
+    "baseline_score_3_n": 1,
+    "post_peak_score_3_n": 7,
+    "post_peak_score_4_n": 3,
+    "advanced_n": 10,
+    "sustained_high_n": 0,
+    "not_assessable_n": 0
+  },
+  "interpretation_guardrails": [
+    "This is a peak audit, not yet a full T+10/T+20/current longitudinal file.",
+    "All ten were already elected national politicians, so raw post-selection major attainment is not informative by itself.",
+    "신기남's party-chair peak occurred 12 days after selection and should be flagged as near-immediate/imminent advancement rather than treated like a long-horizon forecast.",
+    "KOICA chair is coded scope3 as leadership of a major national public institution under the public-sector scope rule.",
+    "The 10/10 advancement result must be independently QA'd before cohort-level inference; selection was explicitly designed to find future political leaders."
+  ]
+}
