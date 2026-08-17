@@ -7,9 +7,10 @@ from statistics import mean
 ROOT=Path(__file__).resolve().parents[1]
 TYPEA=ROOT/'data/typeA'
 BASE=TYPEA/'donga_2010_baseline_peak_through_t0_v1_4.json'
-MASTER_JSON=TYPEA/'donga_2010_post_t0_peak_master_v1_0.json'
-MASTER_CSV=TYPEA/'donga_2010_post_t0_peak_master_v1_0.csv'
-METRICS_JSON=TYPEA/'donga_2010_post_t0_peak_metrics_v1_0.json'
+PATCH=TYPEA/'donga_2010_post_t0_peak_audit_patch_v1_1.json'
+MASTER_JSON=TYPEA/'donga_2010_post_t0_peak_master_v1_1.json'
+MASTER_CSV=TYPEA/'donga_2010_post_t0_peak_master_v1_1.csv'
+METRICS_JSON=TYPEA/'donga_2010_post_t0_peak_metrics_v1_1.json'
 PATTERN=str(TYPEA/'donga_2010_post_t0_peak_*_v0_1.json')
 
 def adv_class(delta, peak):
@@ -31,8 +32,16 @@ def main():
             name=p['name']
             if name in merged: raise AssertionError(f'duplicate post-T0 row: {name}')
             if name not in b: raise AssertionError(f'noncanonical name: {name}')
-            merged[name]=p
+            merged[name]=dict(p)
     assert len(merged)==100, len(merged)
+
+    patch=json.loads(PATCH.read_text(encoding='utf-8'))
+    for pp in patch.get('patches',[]):
+        name=pp['name']
+        if name not in merged: raise AssertionError(f'patch noncanonical name: {name}')
+        merged[name].update(pp)
+    source_files.append(str(PATCH.relative_to(ROOT)))
+
     rows=[]
     for name,br in b.items():
         p=merged[name]; peak=p.get('post_t0_peak_score')
@@ -60,11 +69,11 @@ def main():
     score_counts=Counter(r['post_t0_peak_score'] for r in assessed)
     classes=Counter(r['advancement_class'] for r in rows)
 
-    assert len(rows)==100 and len(assessed)==98 and len(unresolved)==2
-    assert {r['name'] for r in unresolved}=={'박성훈','김숙정'}
+    assert len(rows)==100 and len(assessed)==99 and len(unresolved)==1
+    assert {r['name'] for r in unresolved}=={'박성훈'}
     assert len(truncated)==3 and {r['name'] for r in truncated}=={'최은석','서동철','박원순'}
-    assert score_counts==Counter({2:27,3:59,4:12}), score_counts
-    assert classes==Counter({'sustained_high':44,'advanced':28,'no_clear_advancement':26,'not_assessable':2}), classes
+    assert score_counts==Counter({2:27,3:60,4:12}), score_counts
+    assert classes==Counter({'sustained_high':44,'advanced':29,'no_clear_advancement':26,'not_assessable':1}), classes
 
     major=sum(r['post_t0_peak_score']>=3 for r in assessed)
     apex=sum(r['post_t0_peak_score']==4 for r in assessed)
@@ -72,8 +81,8 @@ def main():
     nontrunc_major=sum(r['post_t0_peak_score']>=3 for r in nontrunc)
     nontrunc_apex=sum(r['post_t0_peak_score']==4 for r in nontrunc)
     nontrunc_adv=sum(r['advancement_class']=='advanced' for r in nontrunc)
-    assert (major,apex,adv)==(71,12,28)
-    assert (nontrunc_major,nontrunc_apex,nontrunc_adv)==(68,12,26)
+    assert (major,apex,adv)==(72,12,29)
+    assert (nontrunc_major,nontrunc_apex,nontrunc_adv)==(69,12,27)
 
     bycat={}
     for cat in dict.fromkeys(r['category'] for r in rows):
@@ -91,12 +100,14 @@ def main():
         }
 
     master={
-        'schema_version':'donga_2010_post_t0_peak_master_v1.0','generated':'2026-08-18',
+        'schema_version':'donga_2010_post_t0_peak_master_v1.1','generated':'2026-08-18',
         'observation_end':'2026-08-18','selection_cutoff':'2010-05-10',
         'protocol_ref':'state/donga_2010_post_t0_peak_protocol_v1_0.md',
         'baseline_ref':'data/typeA/donga_2010_baseline_peak_through_t0_v1_4.json',
+        'audit_patch_ref':'data/typeA/donga_2010_post_t0_peak_audit_patch_v1_1.json',
+        'supersedes_runtime':'data/typeA/donga_2010_post_t0_peak_master_v1_0.json',
         'source_files':source_files,
-        'qa':{'total':100,'assessed':98,'unresolved':2,'truncated_by_death':3,'post_t0_score_counts':{str(k):v for k,v in sorted(score_counts.items())},'advancement_classes':dict(classes),'unresolved_names':[r['name'] for r in unresolved],'truncated_names':[r['name'] for r in truncated]},
+        'qa':{'total':100,'assessed':99,'unresolved':1,'truncated_by_death':3,'post_t0_score_counts':{str(k):v for k,v in sorted(score_counts.items())},'advancement_classes':dict(classes),'unresolved_names':[r['name'] for r in unresolved],'truncated_names':[r['name'] for r in truncated]},
         'people':rows
     }
     MASTER_JSON.write_text(json.dumps(master,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -104,11 +115,11 @@ def main():
     with MASTER_CSV.open('w',encoding='utf-8-sig',newline='') as f:
         w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows({k:r.get(k) for k in fields} for r in rows)
 
-    nontrunc_den=len(nontrunc)+len(unresolved) # deaths excluded, unresolved retained for bounds
+    nontrunc_den=len(nontrunc)+len(unresolved)
     metrics={
-        'schema_version':'donga_2010_post_t0_peak_metrics_v1.0','generated':'2026-08-18',
+        'schema_version':'donga_2010_post_t0_peak_metrics_v1.1','generated':'2026-08-18',
         'metric_scope':'lifetime_post_selection_peak_through_2026-08-18_with_preselection_peak_adjustment',
-        'population':{'total':100,'assessed':98,'unresolved':2,'death_truncated_assessed':3,'assessed_nontruncated':95,'nontruncated_denominator_with_unresolved':nontrunc_den},
+        'population':{'total':100,'assessed':99,'unresolved':1,'death_truncated_assessed':3,'assessed_nontruncated':96,'nontruncated_denominator_with_unresolved':nontrunc_den},
         'primary_assessed_only':{
             'major_leadership_ge3_n':major,'major_leadership_precision':major/len(assessed),
             'apex_eq4_n':apex,'apex_precision':apex/len(assessed),
@@ -128,13 +139,13 @@ def main():
             'major_ge3':{'known_n':nontrunc_major,'lower_bound':nontrunc_major/nontrunc_den,'upper_bound':(nontrunc_major+len(unresolved))/nontrunc_den},
             'apex_eq4':{'known_n':nontrunc_apex,'lower_bound':nontrunc_apex/nontrunc_den,'upper_bound':(nontrunc_apex+len(unresolved))/nontrunc_den},
             'advanced':{'known_n':nontrunc_adv,'lower_bound':nontrunc_adv/nontrunc_den,'upper_bound':(nontrunc_adv+len(unresolved))/nontrunc_den},
-            'assumption':'three death-truncated rows excluded; two unresolved rows bounded as all below vs all meeting each criterion'
+            'assumption':'three death-truncated rows excluded; one unresolved row bounded as below vs meeting each criterion'
         },
         'by_category':bycat,
         'interpretation_guardrails':[
-            'Primary precision is among 98 assessed rows and is not equivalent to the 2020 target-year snapshot metric.',
+            'Primary precision is among 99 assessed rows and is not equivalent to the 2020 target-year snapshot metric.',
             'Death-truncated rows are not failures; a sensitivity analysis excluding them is reported.',
-            'Unresolved rows are never scored as zero; bounded sensitivity is reported.',
+            'The one unresolved row is never scored as zero; bounded sensitivity is reported.',
             'Advancement uses post-T0 peak minus baseline lifetime peak through selection, not post-T0 peak minus contemporaneous title alone.',
             'The roster is alphabetical within editorial categories, so ranking accuracy is not estimable.'
         ]
