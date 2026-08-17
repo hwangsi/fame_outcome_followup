@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'scripts/build_donga_2011_post_t0_seed.py'
+      - 'research/donga_2011_post_t0_repeat_cutoff_audit_v0_1.json'
       - '.github/workflows/donga-2011-postt0-seed-qa.yml'
   workflow_dispatch:
 
@@ -50,13 +51,21 @@ jobs:
         run: |
           python - <<'PY'
           import json
-          d=json.load(open('analysis/donga_2011_post_t0_seed_v0_1.json',encoding='utf-8'))
+          d=json.load(open('analysis/donga_2011_post_t0_seed_v0_2.json',encoding='utf-8'))
           q=d['qa']
           print(json.dumps(q,ensure_ascii=False,indent=2))
           assert q['total']==100
           assert q['repeat_n']==38
           assert q['new_2011_n']==62
-          assert q['seed_status_counts']['new_2011_manual_audit_required']==62
-          assert q['safe_inheritance_candidate_n'] + len(q['repeat_reaudit_names']) == 38
-          assert q['manual_reaudit_queue_n'] == 100-q['safe_inheritance_candidate_n']
+          assert q['seed_status_counts']=={
+              'repeat_safe_post2011_inheritance_candidate':34,
+              'new_2011_manual_audit_required':62,
+              'repeat_cutoff_reaudit_resolved':4,
+          }
+          assert q['safe_inheritance_candidate_n']==34
+          assert q['cutoff_reaudit_resolved_n']==4
+          assert q['repeat_resolved_n']==38
+          assert q['repeat_reaudit_pending_n']==0
+          assert q['manual_new_outcome_audit_queue_n']==62
+          assert set(q['cutoff_reaudit_resolved_names'])=={'강덕수','박원순','유시민','이주호'}
           PY
