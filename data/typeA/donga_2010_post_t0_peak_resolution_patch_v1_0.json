@@ -1,0 +1,34 @@
+{
+  "schema_version":"donga_2010_post_t0_peak_resolution_patch_v1.0",
+  "generated":"2026-08-18",
+  "reason":"Final unresolved-row audit found reproducible post-cutoff evidence for both previously unresolved people.",
+  "changes":[
+    {
+      "name":"박성훈",
+      "post_t0_peak_role":"롯데호텔서울 피에르 가니에르 서울 요리사·국제기능올림픽 요리 금메달리스트",
+      "post_t0_peak_score":2,
+      "post_t0_peak_year":2010,
+      "sector_at_peak":"culinary",
+      "evidence_confidence":"H",
+      "peak_reason":"2010-05-12 동아일보 릴레이 인터뷰에서 선정 기준일 2010-05-10 이후에도 피에르 가니에르 서울 주방에서 근무 중임이 직접 확인된다. Protocol상 cutoff를 가로질러 지속된 동일 역할은 post-T0 persistence로 score 2를 기록할 수 있다. 이후 더 높은 scope는 재현 가능한 직접 근거로 확인되지 않았다.",
+      "source_urls":["https://www.donga.com/news/Society/article/all/20100512/28273340/1"],
+      "exposure_truncated_by_death":false,
+      "death_year":null,
+      "coding_status":"resolved_by_postcutoff_continuity"
+    },
+    {
+      "name":"김숙정",
+      "post_t0_peak_role":"교육과학기술부 교육과정과장; 이후 부산광역시교육청 전보",
+      "post_t0_peak_score":2,
+      "post_t0_peak_year":2011,
+      "sector_at_peak":"education_public_policy",
+      "evidence_confidence":"H",
+      "peak_reason":"2011-06~08 교육과학기술부 교육과정과장으로 전국 주5일 수업제와 국가 교육과정 정책을 직접 설명했고 2011-09 부산광역시교육청 전보 인사가 확인된다. 중앙부처 과장급 전국 교육정책 전문 리더십은 public/education rubric score 2에 해당한다.",
+      "source_urls":["https://www.ytn.co.kr/_ln/0833_201106220940149363","https://plus.kfta.or.kr/news/article.html?no=76385","https://www.donga.com/news/People/article/all/20110901/39970081/1"],
+      "exposure_truncated_by_death":false,
+      "death_year":null,
+      "coding_status":"resolved_by_followup_audit"
+    }
+  ],
+  "qa":{"resolved_added":2,"remaining_unresolved":0}
+}
