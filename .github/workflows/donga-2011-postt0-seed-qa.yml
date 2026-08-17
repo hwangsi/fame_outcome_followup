@@ -7,6 +7,7 @@ on:
       - 'scripts/build_donga_2011_post_t0_partial_master.py'
       - 'scripts/build_donga_2011_post_t0_master.py'
       - 'scripts/analyze_donga_2011_repeat_predictive_value.py'
+      - 'scripts/build_donga_2010_2011_two_wave_master.py'
       - 'research/donga_2011_post_t0_repeat_cutoff_audit_v0_1.json'
       - 'research/donga_2011_post_t0_new_audit_batch1_v0_1.json'
       - 'research/donga_2011_post_t0_new_audit_batch2_v0_1.json'
@@ -105,5 +106,28 @@ jobs:
           a=json.load(open('analysis/donga_2011_repeat_predictive_value_v1_0.json',encoding='utf-8'))
           print(json.dumps(a,ensure_ascii=False,indent=2))
           assert a['population']=={'total':100,'repeat':38,'new':62,'assessable':99,'new_assessable':61}
-          assert set(a['baseline_stratified_cmh_assessable_only'])=={'major','apex','advanced'}
+          s=a['baseline_stratified_cmh_assessable_only']
+          assert set(s)=={'major','apex','advanced'}
+          assert s['apex']['mh_common_or'] > 8
+          assert s['apex']['exact_conditional']['exact_two_sided_p'] < 0.05
+          assert s['major']['exact_conditional']['exact_two_sided_p'] > 0.05
+          assert s['advanced']['exact_conditional']['exact_two_sided_p'] > 0.05
+          PY
+      - name: Build Dong-A 2010-2011 two-wave placement/person master
+        run: python scripts/build_donga_2010_2011_two_wave_master.py
+      - name: QA two-wave master
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('analysis/donga_2010_2011_two_wave_master_v0_1.json',encoding='utf-8'))
+          q=d['qa']
+          print(json.dumps({'qa':q,'group_summary':d['person_group_first_selection_summary']},ensure_ascii=False,indent=2))
+          assert q['placements_n']==200
+          assert q['unique_persons_n']==162
+          assert q['groups']=={'2010_only':62,'repeat_2010_2011':38,'2011_new':62}
+          assert q['repeat_intersection_n']==38
+          assert len(d['placements'])==200 and len(d['people'])==162
+          rep=[p for p in d['people'] if p['group']=='repeat_2010_2011']
+          assert len(rep)==38 and all(p['placement_count']==2 for p in rep)
+          assert all(p['placement_count']==1 for p in d['people'] if p['group']!='repeat_2010_2011')
           PY
