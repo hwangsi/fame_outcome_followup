@@ -1,0 +1,80 @@
+{
+  "schema_version": "h21_1999_recovery_v0.1",
+  "generated": "2026-08-18",
+  "status": "partial_recovery_exact_issue_identified_pending_issue_scan",
+  "publication": "한겨레21",
+  "survey_label_from_2004_retrospective": "대중이 선호하는 차세대 리더 여론조사",
+  "issue_number": 264,
+  "issue_date": "1999-07-01",
+  "issue_identification_status": "directly_stated_in_2004_hankyoereh21_followup",
+  "methodology_link": {
+    "description": "2004 follow-up states that the second survey used almost the same technique as the 1999 survey: positive favorability and governing-ability evaluations combined with equal weight.",
+    "exact_candidate_pool_n_1999": null,
+    "survey_firm_1999": null,
+    "respondents_n_1999": null,
+    "collection_1999": null,
+    "note": "Do not copy the 2004 sample size, candidate count, survey firm, or error margin backward to 1999 without the 1999 primary issue."
+  },
+  "primary_retrospective_source": {
+    "type": "2004 Hankyoreh21 follow-up retransmitted by Nate",
+    "url": "https://news.nate.com/view/20040920n06510?mid=n0000",
+    "direct_facts": [
+      "1999-07-01 issue no.264 contained the first 'next-generation leader' public-opinion survey.",
+      "Roh Moo-hyun was rank 1 in 1999.",
+      "Lee In-je was rank 3 in 1999 and rank 22 in 2004.",
+      "Chung Dong-young was rank 5 in 1999 and rank 6 in 2004.",
+      "The 2004 survey used almost the same favorability + governing-ability technique as the 1999 survey."
+    ]
+  },
+  "known_ranked_rows": [
+    {"rank": 1, "name": "노무현", "score_pct": null, "status": "direct_2004_retrospective"},
+    {"rank": 3, "name": "이인제", "score_pct": null, "status": "direct_2004_retrospective"},
+    {"rank": 5, "name": "정동영", "score_pct": null, "status": "direct_2004_retrospective"}
+  ],
+  "unknown": {
+    "candidate_pool_n": null,
+    "full_candidate_names": null,
+    "rank_2": null,
+    "rank_4": null,
+    "ranks_6_and_below": null,
+    "scores": null,
+    "sample_and_fieldwork_details": null
+  },
+  "national_assembly_library_locator": {
+    "catalog_title": "한겨레21",
+    "publisher": "한겨레신문사",
+    "control_number": "SERL1000000060",
+    "call_number": "P 051.1 ㅎ152",
+    "holding": "N.1 (1994)-",
+    "seoul_location": "서울관 정기간행물실(524호)",
+    "issn": "1228-4017",
+    "catalog_url": "https://dl.nanet.go.kr/search/searchInnerDetail.do?controlNo=SERL1000000060",
+    "retrieval_target": "한겨레21 통권264호, 1999-07-01",
+    "retrieval_value": "The exact issue is directly identified, so an issue scan should allow primary reconstruction of the full ranking/methodology if the table survives in print."
+  },
+  "search_paths_attempted": [
+    "exact issue no.264 + known three ranked names",
+    "1999-07-01 + next-generation leader phrases",
+    "rank 2/rank 4/rank 6 searches with Hankyoreh21",
+    "Roh #1 + Lee In-je #3 + Chung Dong-young #5 combined phrase searches",
+    "National Assembly Library article-index queries",
+    "Hankyoreh/Hankyoreh21 domain searches"
+  ],
+  "rejected_methods": [
+    "Do not infer missing 1999 ranks from the 2002 Democratic primary order.",
+    "Do not borrow ranks from Shindonga, Newspeople, Ilyo Shinmun, KSOI, or other contemporary leadership polls.",
+    "Do not assume the 1999 candidate pool was 31 just because the 2004 survey used 31 candidates.",
+    "Do not infer rank from later presidential success."
+  ],
+  "qa": {
+    "exact_issue_identified": true,
+    "known_ranked_rows_n": 3,
+    "full_ranking_complete": false,
+    "primary_issue_scan_needed": true
+  },
+  "next_retrieval_gate": {
+    "preferred_source": "National Assembly Library scan/original for 한겨레21 통권264호 (1999-07-01)",
+    "needed_artifact": "pages containing the 1999 next-generation leader survey, especially ranking table and methodology box",
+    "on_retrieval": "transcribe all candidates, ranks, scores and survey methods with page-level provenance; then build h21_1999 Type-A roster/outcome cohort"
+  }
+}
