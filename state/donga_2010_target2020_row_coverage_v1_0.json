@@ -1,0 +1,103 @@
+{
+  "schema_version": "donga_2010_target2020_row_coverage_v1.0",
+  "generated": "2026-08-18",
+  "cohort": "동아일보 2010 2020년 한국을 빛낼 100인",
+  "coverage": {
+    "canonical_roster_n": 100,
+    "outcome_rows_created": 100,
+    "resolved_scored": 73,
+    "resolved_exact_or_tenure": 70,
+    "resolved_nearest_within_window": 3,
+    "competing_events": 2,
+    "pending": 25,
+    "not_instantiated": 0
+  },
+  "category_files": [
+    {
+      "category": "미래를 여는 지도자 + 독자선정",
+      "path": "data/typeA/donga_2010_target2020_outcomes_v0_1.json",
+      "rows": 10,
+      "resolved": 9,
+      "pending": 1,
+      "competing_events": 0
+    },
+    {
+      "category": "자유로운 창조인",
+      "path": "data/typeA/donga_2010_target2020_outcomes_creators_v0_1.json",
+      "rows": 20,
+      "resolved": 16,
+      "pending": 3,
+      "competing_events": 1
+    },
+    {
+      "category": "꿈꾸는 개척가",
+      "path": "data/typeA/donga_2010_target2020_outcomes_pioneers_v0_1.json",
+      "rows": 25,
+      "resolved": 18,
+      "pending": 7,
+      "competing_events": 0
+    },
+    {
+      "category": "행동하는 지성인",
+      "path": "data/typeA/donga_2010_target2020_outcomes_intellectuals_v0_1.json",
+      "rows": 20,
+      "resolved": 10,
+      "pending": 9,
+      "competing_events": 1
+    },
+    {
+      "category": "도전하는 경제인",
+      "path": "data/typeA/donga_2010_target2020_outcomes_economy_v0_1.json",
+      "rows": 25,
+      "resolved": 20,
+      "pending": 5,
+      "competing_events": 0
+    }
+  ],
+  "pending_names": [
+    "김병국",
+    "박민규",
+    "박성훈",
+    "심승현",
+    "김호근",
+    "서동철",
+    "이상훈",
+    "이소연",
+    "이지오",
+    "정하웅",
+    "조동호",
+    "김숙정",
+    "김준영",
+    "김해성",
+    "유근배",
+    "이명균",
+    "이연주",
+    "이은영",
+    "임경진",
+    "한승희",
+    "강덕수",
+    "남수정",
+    "박지영",
+    "성영석",
+    "이원규"
+  ],
+  "competing_event_names": [
+    "최은석",
+    "박원순"
+  ],
+  "analysis_gate": {
+    "row_coverage_100_100": true,
+    "pending_audit_complete": false,
+    "identity_audit_complete": false,
+    "outcome_dataset_frozen": false,
+    "whole_cohort_metrics_allowed": false
+  },
+  "next": [
+    "focused re-search of 25 pending names",
+    "separate no-public-role evidence from search failure",
+    "identity contamination audit",
+    "merge five category files into one canonical target2020 dataset",
+    "freeze dataset",
+    "only then compute overall and category metrics"
+  ]
+}
