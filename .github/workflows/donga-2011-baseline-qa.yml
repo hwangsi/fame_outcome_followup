@@ -3,9 +3,8 @@ name: Dong-A 2011 Baseline QA
 on:
   push:
     paths:
-      - 'research/donga_2011_prior_career_audit_v0_1.json'
-      - 'scripts/build_donga_2011_baseline_peak_v0_2.py'
-      - 'scripts/build_donga_2011_baseline_peak_v0_1.py'
+      - 'research/donga_2011_prior_career_audit_v0_*.json'
+      - 'scripts/build_donga_2011_baseline_peak_v0_*.py'
       - 'scripts/build_donga_2011_t0_snapshot_scope_v0_*.py'
       - 'scripts/build_donga_2010_t0_snapshot_scope*.py'
       - 'scripts/build_donga_2010_baseline_peak_v1_*.py'
@@ -37,34 +36,40 @@ jobs:
           python scripts/build_donga_2010_baseline_peak_v1_2.py
           python scripts/build_donga_2010_baseline_peak_v1_3.py
           python scripts/build_donga_2010_baseline_peak_v1_4.py
-      - name: Build audited 2011 T0 and baseline v0.2
+      - name: Build audited 2011 T0 and baseline through v0.3
         run: |
           python scripts/build_donga_2011_t0_snapshot_scope_v0_1.py
           python scripts/build_donga_2011_t0_snapshot_scope_v0_2.py
           python scripts/build_donga_2011_t0_snapshot_scope_v0_3.py
           python scripts/build_donga_2011_baseline_peak_v0_1.py
           python scripts/build_donga_2011_baseline_peak_v0_2.py
+          python scripts/build_donga_2011_baseline_peak_v0_3.py
       - name: QA
         run: |
           python - <<'PY'
           import json
-          p='data/typeA/donga_2011_baseline_peak_through_t0_v0_2.json'
+          p='data/typeA/donga_2011_baseline_peak_through_t0_v0_3.json'
           d=json.load(open(p,encoding='utf-8'))
           qa=d['qa']
           print(json.dumps(qa,ensure_ascii=False,indent=2))
           assert qa['total']==100 and qa['unique_names']==100
           assert qa['repeat_checked_n']==38
           assert qa['new_person_total_n']==62
-          assert qa['new_person_prior_audited_n']==9
-          assert qa['new_person_prior_audit_pending_n']==53
-          assert qa['corrected_prior_peak_n']==1
-          assert qa['corrected_prior_peak_names']==['백승헌']
+          assert qa['new_person_prior_audited_n']==21
+          assert qa['new_person_prior_audit_pending_n']==41
+          assert qa['cumulative_corrected_prior_peak_n']==1
+          assert qa['cumulative_corrected_prior_peak_names']==['백승헌']
+          assert qa['this_pass_corrected_n']==0
           assert qa['score_counts']=={'2':43,'3':52,'4':5}
           assert qa['mean_baseline']==2.62
           by={x['name']:x for x in d['people']}
           assert by['백승헌']['t0_snapshot_scope_score']==2
           assert by['백승헌']['baseline_peak_through_t0']==3
           assert by['백승헌']['baseline_peak_role']=='민주사회를 위한 변호사모임 회장'
-          for n in ['강일원','김부겸','김태효','임성남','김상우','조명숙','최재경','정일용']:
-              assert by[n]['needs_new_person_prior_career_audit'] is False
+          pass1=['강일원','김부겸','김태효','임성남','김상우','조명숙','최재경','정일용','백승헌']
+          pass2=['박근혜','장미란','김선욱','박지성','이불','이정희','김정주','이미경','이수만','정용진','이서현','손병두']
+          for n in pass1+pass2:
+              assert by[n]['needs_new_person_prior_career_audit'] is False, n
+          assert by['박근혜']['baseline_peak_through_t0']==4
+          assert by['장미란']['baseline_peak_through_t0']==4
           PY
