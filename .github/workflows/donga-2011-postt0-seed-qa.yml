@@ -9,6 +9,7 @@ on:
       - 'scripts/analyze_donga_2011_repeat_predictive_value.py'
       - 'scripts/build_donga_2010_2011_two_wave_master.py'
       - 'scripts/build_typeA_common_master_v0_2.py'
+      - 'scripts/build_typeA_cross_cohort_comparison_v0_3.py'
       - 'research/donga_2011_post_t0_repeat_cutoff_audit_v0_1.json'
       - 'research/donga_2011_post_t0_new_audit_batch1_v0_1.json'
       - 'research/donga_2011_post_t0_new_audit_batch2_v0_1.json'
@@ -174,10 +175,23 @@ jobs:
           assert people['이재용']['placement_count']==3
           assert people['박근혜']['placement_count']==2
           PY
-      - name: Persist Type-A common master v0.2
+      - name: Build cross-cohort comparison v0.3
+        run: python scripts/build_typeA_cross_cohort_comparison_v0_3.py
+      - name: QA cross-cohort report
         run: |
-          git add data/typeA/typeA_common_master_v0_2.json data/typeA/typeA_common_master_v0_2.csv data/typeA/typeA_common_metrics_v0_2.json state/typeA_common_master_freeze_v0_2.json
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('analysis/typeA_cross_cohort_comparison_v0_3.md')
+          s=p.read_text(encoding='utf-8')
+          assert '225 placements' in s
+          assert '179' in s
+          assert '안철수' in s and '유시민' in s and '이재용' in s
+          assert 'not_assessable' in s
+          PY
+      - name: Persist Type-A common master v0.2 and v0.3 report
+        run: |
+          git add data/typeA/typeA_common_master_v0_2.json data/typeA/typeA_common_master_v0_2.csv data/typeA/typeA_common_metrics_v0_2.json state/typeA_common_master_freeze_v0_2.json analysis/typeA_cross_cohort_comparison_v0_3.md
           if ! git diff --cached --quiet; then
-            git commit -m "Freeze Type-A common master v0.2"
+            git commit -m "Freeze Type-A common master v0.2 and cross-cohort v0.3"
             git push
           fi
