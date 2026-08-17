@@ -1,0 +1,72 @@
+name: Kyunghyang 2005 Leaders60 Recovery QA
+
+on:
+  push:
+    paths:
+      - 'research/khan_2005_korea_leaders60_recovery_v0_1.json'
+      - 'state/coding_rules_typeA_mixed_unit_v0_1.md'
+      - 'scripts/audit_khan_2005_leaders60_person_overlap.py'
+      - '.github/workflows/khan-2005-leaders60-recovery-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  recovery-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: QA 60-unit mixed roster
+        run: |
+          python - <<'PY'
+          import json
+          r=json.load(open('research/khan_2005_korea_leaders60_recovery_v0_1.json',encoding='utf-8'))
+          u=r['units']
+          assert len(u)==60
+          assert len({(x['field'],x['printed_name']) for x in u})==60
+          assert sum(x['unit_type']=='person' for x in u)==57
+          assert sum(x['unit_type']=='organization' for x in u)==3
+          org=sorted(x['canonical_name'] for x in u if x['unit_type']=='organization')
+          assert org==['NHN','경제정의실천시민연합','한국공학교육인증원']
+          counts={}
+          for x in u: counts[x['field']]=counts.get(x['field'],0)+1
+          assert counts=={'정치':10,'경제':10,'과학기술':10,'사회교육':10,'대중문화':10,'문화예술':10}
+          assert all(x['unit_type']=='person' for x in u if x['field']=='정치')
+          assert r['method']['initial_candidate_n']==1168
+          assert r['method']['compressed_candidate_n']==185
+          assert r['method']['public_survey']['respondent_n']==1266
+          assert r['method']['final_judging_panel_n']==12
+          assert r['method']['public_survey']['date_status']=='apparent_article_year_typo'
+          PY
+
+      - name: Audit person overlap with common v0.3
+        run: python scripts/audit_khan_2005_leaders60_person_overlap.py
+
+      - name: QA politics10 overlap
+        run: |
+          python - <<'PY'
+          import json
+          a=json.load(open('analysis/khan_2005_leaders60_person_overlap_v0_1.json',encoding='utf-8'))
+          assert a['population']=={'selected_units':60,'person_units':57,'organization_units':3,'existing_common_persons':193}
+          p=a['politics10']
+          assert p['n']==10 and p['all_person'] is True
+          assert p['overlap_n']==8 and p['new_n']==2
+          assert p['overlap_names']==['강금실','김부겸','노회찬','박근혜','박진','원희룡','이명박','정동영']
+          assert p['new_names']==['김근태','손학규']
+          print(json.dumps(a,ensure_ascii=False,indent=2))
+          PY
+
+      - name: Persist overlap audit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add analysis/khan_2005_leaders60_person_overlap_v0_1.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Persist Kyunghyang 2005 Leaders60 overlap audit"
+            git push
+          fi
