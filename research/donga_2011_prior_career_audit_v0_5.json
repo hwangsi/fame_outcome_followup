@@ -1,0 +1,155 @@
+{
+  "schema_version": "donga_2011_prior_career_audit_v0.5",
+  "generated": "2026-08-18",
+  "selection_cutoff": "2011-04-01",
+  "status": "final_new_person_prior_career_audit_complete_62_of_62",
+  "extends": "research/donga_2011_prior_career_audit_v0_4.json",
+  "scope": "Final audit batch for the remaining 15 new 2011 entrants with T0 score 2, focused on culture/creative/public/civic/medical cases.",
+  "rules_ref": "state/coding_rules_typeA_sector_scope_v0_1.md",
+  "audited_n": 15,
+  "corrections": [
+    {
+      "name": "이상이",
+      "t0_score": 2,
+      "baseline_score": 3,
+      "baseline_peak_role": "복지국가소사이어티 공동대표",
+      "baseline_peak_year": 2010,
+      "reason": "The official 2011 roster labels him as a Jeju National University health-policy professor, but a March 2010 contemporary interview identifies him as co-chair of Welfare State Society, a nationwide policy/civic organization actively advancing universal-welfare reform. Top leadership of a nationwide policy organization meets the locked public/civic scope-3 threshold.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.khan.co.kr/article/201003291757475",
+        "https://books.google.com/books/about/%EC%97%AD%EB%8F%99%EC%A0%81_%EB%B3%B5%EC%A7%80_%EA%B5%AD%EA%B0%80_%EC%9D%98_%EB%85%BC%EB%A6%AC_%EC%99%80.html?id=nhVKAQAAIAAJ"
+      ]
+    },
+    {
+      "name": "이국종",
+      "t0_score": 2,
+      "baseline_score": 3,
+      "baseline_peak_role": "아주대병원 중증외상특성화센터장",
+      "baseline_peak_year": 2010,
+      "reason": "Before the cutoff he had been appointed head of Ajou University Hospital's government-designated severe-trauma specialty center in August 2010. January 2011 contemporary coverage described him as a pioneer and young national authority in trauma surgery, and the government dispatched him to lead treatment of Seok Hae-kyun. Nationally leading specialist stature plus leadership of a designated severe-trauma center meets medical scope 3.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.yna.co.kr/view/AKR20110129055500061",
+        "https://news.sbs.co.kr/news/endPagePrintPopup.do?news_id=N1000852746",
+        "https://www.seoul.co.kr/news/society/2011/02/01/20110201006011"
+      ]
+    },
+    {
+      "name": "이자람",
+      "t0_score": 2,
+      "baseline_score": 3,
+      "baseline_peak_role": "국제무대에서 반복 인정된 판소리 창작자·공연예술가",
+      "baseline_peak_year": 2010,
+      "reason": "By cutoff she had won Best Actress at Poland's Kontakt International Theatre Festival for Sacheonga, where her company was the only Asian troupe, and had also been invited to Chicago's World Music Festival. Contemporary Dong-A coverage documented the international award and scheduled US/European invitations. Repeated major international festival recognition meets the locked creator scope-3 threshold.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.donga.com/news/List/article/all/20100624/29345062/1",
+        "https://sports.donga.com/ent/article/all/20100531/28742678/1",
+        "https://www.yna.co.kr/view/AKR20101129157900005",
+        "https://worldmusiccentral.org/chicago-world-music-festival-2010-program-announced/"
+      ]
+    }
+  ],
+  "audited_no_change": [
+    {
+      "name": "김애란",
+      "baseline_score": 2,
+      "reason": "By cutoff she was an established nationally recognized novelist, but the major Yi Sang Literary Award came later in 2013 and this audit did not identify repeated major international recognition before the cutoff. Retain creator scope 2.",
+      "confidence": "M",
+      "source_urls": ["https://www.donga.com/news/100people/2011/text_list.html"]
+    },
+    {
+      "name": "김영준",
+      "baseline_score": 2,
+      "reason": "He was an established architect and was appointed as a member of the Presidential Committee on Future Planning, but committee membership is not top leadership of a major national institution under the locked public/creative rubric. No higher prior role was identified.",
+      "confidence": "M",
+      "source_urls": ["https://www.donga.com/news/100people/2011/text_list.html"]
+    },
+    {
+      "name": "김영하",
+      "baseline_score": 2,
+      "reason": "He was a leading national novelist with international translations before cutoff, but this audit did not identify a pre-cutoff major international author award or repeated top-tier international recognition sufficient for creator scope 3. Retain 2.",
+      "confidence": "M",
+      "source_urls": ["https://www.donga.com/news/100people/2011/text_list.html"]
+    },
+    {
+      "name": "김은식",
+      "baseline_score": 2,
+      "reason": "The official role was professor of forest/environment systems and pre-cutoff records show active climate/environment research. No major national research-institution leadership or internationally field-leading research status sufficient for science scope 3 was identified in this pass.",
+      "confidence": "M",
+      "source_urls": ["https://www.donga.com/news/100people/2011/text_list.html"]
+    },
+    {
+      "name": "박형준",
+      "baseline_score": 2,
+      "reason": "He was an established national poet before cutoff. The audit did not identify a pre-cutoff major international literary award or repeated international recognition sufficient for creator scope 3; retain 2.",
+      "confidence": "M",
+      "source_urls": ["https://www.donga.com/news/100people/2011/text_list.html"]
+    },
+    {
+      "name": "손영래",
+      "baseline_score": 2,
+      "reason": "At cutoff he was a Ministry of Health and Welfare social-policy analysis official. The audit did not identify a prior minister-level, major national-institution-head, or nationwide-organization top-leader role. Retain public-policy scope 2.",
+      "confidence": "M",
+      "source_urls": ["https://www.donga.com/news/100people/2011/text_list.html"]
+    },
+    {
+      "name": "손흥민",
+      "baseline_score": 2,
+      "reason": "By the cutoff he was a highly promising Hamburg first-team player who had already scored in the Bundesliga, but he had not yet accumulated the meaningful established top-European-league starter career required for sports scope 3. Retain 2.",
+      "confidence": "H",
+      "source_urls": ["https://www.donga.com/news/100people/2011/text_list.html"]
+    },
+    {
+      "name": "신준호",
+      "baseline_score": 2,
+      "reason": "The official 2011 roster places him in Hotel Shilla's culinary team at deputy-manager level. This audit did not establish a prior national/international culinary apex or major institutional leadership exceeding the T0 score. Retain 2.",
+      "confidence": "M",
+      "source_urls": ["https://www.donga.com/news/100people/2011/text_list.html"]
+    },
+    {
+      "name": "윤순진",
+      "baseline_score": 2,
+      "reason": "Before cutoff she was an active environmental-policy scholar and served on multiple public committees and smaller civic organizations, but this audit did not identify top leadership of a major nationwide organization or major national institution. Retain 2.",
+      "confidence": "M",
+      "source_urls": ["https://www.donga.com/news/100people/2011/text_list.html"]
+    },
+    {
+      "name": "윤태호",
+      "baseline_score": 2,
+      "reason": "He was already a prominent national cartoonist and Korean Cartoonists Association board member, but not the association president and without pre-cutoff repeated major international recognition. Retain creator scope 2.",
+      "confidence": "M",
+      "source_urls": ["https://www.donga.com/news/100people/2011/text_list.html"]
+    },
+    {
+      "name": "하상백",
+      "baseline_score": 2,
+      "reason": "He had overseas education and London retail/showcase activity, but this audit did not establish repeated recognition at major international fashion weeks, awards, or comparable leading-creator scope 3 before cutoff. Retain 2.",
+      "confidence": "M",
+      "source_urls": ["https://www.donga.com/news/100people/2011/text_list.html"]
+    },
+    {
+      "name": "하정우",
+      "baseline_score": 2,
+      "reason": "He was already a top national actor and had major domestic acting awards before cutoff, but the locked creator score 3 requires substantial/repeated major international recognition or equivalent international-leading status; that threshold was not met by the cutoff. Retain 2.",
+      "confidence": "H",
+      "source_urls": ["https://www.donga.com/news/100people/2011/text_list.html"]
+    }
+  ],
+  "qa": {
+    "audited_n": 15,
+    "corrected_n": 3,
+    "corrected_names": ["이상이", "이국종", "이자람"],
+    "no_change_n": 12,
+    "cumulative_new_people_audited_n": 62,
+    "new_2011_people_total": 62,
+    "remaining_prior_career_audit_n": 0,
+    "new_person_prior_career_audit_complete": true
+  },
+  "guardrails": [
+    "Negative prior-peak findings are confidence-coded; absence of a recovered higher role is not presented as proof that no such event ever existed.",
+    "The three upward corrections require evidence of a pre-cutoff role/achievement clearly crossing the locked scope-3 threshold.",
+    "T0 snapshot scores remain unchanged; only lifetime baseline through selection cutoff is corrected."
+  ]
+}
