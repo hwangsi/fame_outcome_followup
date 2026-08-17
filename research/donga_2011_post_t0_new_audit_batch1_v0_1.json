@@ -1,0 +1,142 @@
+{
+  "schema_version": "donga_2011_post_t0_new_audit_batch1_v0.1",
+  "generated": "2026-08-18",
+  "status": "resolved_high_confidence_batch",
+  "selection_cutoff": "2011-04-01",
+  "purpose": "First dedicated post-2011 outcome audit batch for entrants who were new to the 2011 Dong-A cohort. Prioritize low-ambiguity roles/achievements with direct rubric mapping.",
+  "rules_ref": "state/coding_rules_typeA_sector_scope_v0_1.md",
+  "people": [
+    {
+      "name": "박근혜",
+      "post2011_peak_role": "대한민국 제18대 대통령",
+      "post2011_peak_score": 4,
+      "post2011_peak_year": 2013,
+      "sector_at_peak": "politics",
+      "evidence_confidence": "H",
+      "source_urls": ["https://www.pa.go.kr/online_contents/inauguration/president18.jsp"],
+      "reason": "2013년 제18대 대통령 취임은 political rubric의 명시적 national apex score 4에 해당한다.",
+      "coding_status": "resolved"
+    },
+    {
+      "name": "박형준",
+      "post2011_peak_role": "부산광역시장",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2021,
+      "sector_at_peak": "politics_public_administration",
+      "evidence_confidence": "H",
+      "source_urls": ["https://www.busan.go.kr/nbtnewsBU/1484350"],
+      "reason": "2021년 제38대 부산광역시장 취임은 광역단체장 major national political/public leadership score 3에 해당한다.",
+      "coding_status": "resolved"
+    },
+    {
+      "name": "백운규",
+      "post2011_peak_role": "산업통상자원부 장관",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2017,
+      "sector_at_peak": "government_industry_policy",
+      "evidence_confidence": "H",
+      "source_urls": ["https://www.motie.go.kr/kor/21/history?pageIndex=1"],
+      "reason": "산업통상자원부 공식 역대장관 기록에서 2017-07-20~2018-09-21 장관 재임이 확인되며, 중앙정부 장관은 score 3이다.",
+      "coding_status": "resolved"
+    },
+    {
+      "name": "이정희",
+      "post2011_peak_role": "통합진보당 대표",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2013,
+      "sector_at_peak": "politics",
+      "evidence_confidence": "H",
+      "source_urls": [
+        "https://www.yna.co.kr/view/AKR20130223018300001",
+        "https://www.yna.co.kr/view/AKR20121019216900001"
+      ],
+      "reason": "2013년 전국정당 대표 선출과 2012년 정당 대선후보 경력이 확인된다. 소수정당 대선후보 자체를 national-apex score 4로 확장하지 않고, 전국정당 대표의 명시적 score 3으로 보수적으로 코딩한다.",
+      "coding_status": "resolved_conservative"
+    },
+    {
+      "name": "김남구",
+      "post2011_peak_role": "한국투자금융지주 대표이사 회장·한국투자증권 회장",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2020,
+      "sector_at_peak": "financial_group",
+      "evidence_confidence": "H",
+      "source_urls": ["https://www.koreaholdings.com/kr/manage/director"],
+      "reason": "회사 공식 이사회 이력은 2020년부터 금융지주 대표이사 회장 및 증권사 회장 재임을 확인한다. 대형 금융그룹 최고경영 리더십은 score 3으로 코딩한다.",
+      "coding_status": "resolved"
+    },
+    {
+      "name": "윤순진",
+      "post2011_peak_role": "대통령직속 2050 탄소중립위원회 민간위원장",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2021,
+      "sector_at_peak": "national_climate_policy",
+      "evidence_confidence": "H",
+      "source_urls": ["https://www.2050cnc.go.kr/base/board/read?boardManagementNo=3&boardNo=12&menuLevel=3&menuNo=9&page=16"],
+      "reason": "대통령직속 국가 탄소중립 컨트롤타워의 민간 공동위원장으로 국가정책 결정에 직접 관여한 최고 리더십이므로 public/policy score 3이다.",
+      "coding_status": "resolved"
+    },
+    {
+      "name": "박지성",
+      "post2011_peak_role": "Manchester United 2011/12 시즌 핵심 1군 선수·UEFA Champions League 출전",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2012,
+      "sector_at_peak": "football_sports",
+      "evidence_confidence": "H",
+      "source_urls": ["https://www.premierleague.com/players/2940/"],
+      "reason": "프리미어리그 공식 기록에서 2011/12 맨체스터 유나이티드 1군 리그 17경기 및 UEFA Champions League 출전이 확인된다. 세계 최상위 프로리그의 의미 있는 주전급 활동은 sports rubric score 3이다.",
+      "coding_status": "resolved"
+    },
+    {
+      "name": "장미란",
+      "post2011_peak_role": "2012 런던올림픽 여자 역도 +75kg 동메달리스트(도핑 재검사 후 승격)",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2012,
+      "sector_at_peak": "weightlifting_sports",
+      "evidence_confidence": "H",
+      "source_urls": [
+        "https://www.olympedia.org/athletes/104597",
+        "https://en.yna.co.kr/view/AEN20230629002800315"
+      ],
+      "reason": "현행 올림픽 기록과 후속 보도에서 런던 2012 동메달 승격이 확인된다. Olympic medal은 sports rubric의 explicit score 3이다.",
+      "coding_status": "resolved_reallocated_medal"
+    },
+    {
+      "name": "곽노현",
+      "post2011_peak_role": "서울특별시교육감",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2012,
+      "sector_at_peak": "education_public_administration",
+      "evidence_confidence": "H",
+      "source_urls": [
+        "https://www.yna.co.kr/view/AKR20120124067600004",
+        "https://www.yna.co.kr/view/AKR20120927092800004"
+      ],
+      "reason": "2012년 서울시교육감 복직·재직이 직접 확인되고 2012-09-27 직 상실까지 수도권 최대 교육행정기관의 선출직 수장으로 활동했다. 광역 교육행정 최고 리더를 score 3으로 코딩한다. 이후 형사·직상실 사건은 peak score와 별도의 adverse outcome으로 취급한다.",
+      "coding_status": "resolved_with_adverse_event_separate"
+    },
+    {
+      "name": "이서현",
+      "post2011_peak_role": "삼성물산 패션부문장 사장",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2015,
+      "sector_at_peak": "fashion_conglomerate_business",
+      "evidence_confidence": "H",
+      "source_urls": ["https://www.yna.co.kr/view/AKR20151201047055003"],
+      "reason": "2015년 삼성물산 패션부문 최고 수장(사장)으로 그룹 핵심 사업부를 총괄한 사실이 확인된다. 글로벌 대기업의 핵심 최고경영진은 economic rubric score 3이다.",
+      "coding_status": "resolved"
+    }
+  ],
+  "qa": {
+    "batch_n": 10,
+    "resolved_n": 10,
+    "unresolved_n": 0,
+    "score_counts": {"3": 9, "4": 1},
+    "high_confidence_n": 10
+  },
+  "guardrails": [
+    "This batch codes maximum post-cutoff prominence/leadership only; adverse events remain separate outcome dimensions.",
+    "A presidential candidate is not automatically score 4; the score-4 threshold requires national-apex strength. Lee Jung-hee is therefore coded from national-party leadership at score 3.",
+    "Jang Mi-ran is coded from the current medal record after retrospective doping disqualification, not from contemporaneous 2012 reporting that initially listed her fourth.",
+    "All names must be validated as 2011 cohort members and non-repeat entrants before merger into the final 2011 post-T0 master."
+  ]
+}
