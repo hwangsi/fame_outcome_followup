@@ -26,45 +26,15 @@
     "mean_t0_scope": 2.61,
     "mean_baseline_peak": 2.67,
     "baseline_greater_than_t0_n": 6,
-    "baseline_greater_than_t0_names": ["백승헌", "이국종", "이상 이", "이연희", "이자람", "이창준"]
+    "baseline_greater_than_t0_names": ["백승헌", "이국종", "이상이", "이연희", "이자람", "이창준"]
   },
   "baseline_corrections": [
-    {
-      "name": "백승헌",
-      "t0": 2,
-      "baseline": 3,
-      "basis": "2006-2010 민변 회장; 전국 조직 최고 리더"
-    },
-    {
-      "name": "이창준",
-      "t0": 2,
-      "baseline": 3,
-      "basis": "KIST 신경과학센터 Director + 2010 Science급 국제 선도 연구"
-    },
-    {
-      "name": "이연희",
-      "t0": 2,
-      "baseline": 3,
-      "basis": "연구소재중앙센터장; 전국 연구소재은행·거점센터 연구인프라 총괄"
-    },
-    {
-      "name": "이상이",
-      "t0": 2,
-      "baseline": 3,
-      "basis": "복지국가소사이어티 공동대표; 전국 정책·시민사회 조직 최고 리더"
-    },
-    {
-      "name": "이국종",
-      "t0": 2,
-      "baseline": 3,
-      "basis": "2010 아주대병원 중증외상특성화센터장 + 국내 외상외과 선도 전문성"
-    },
-    {
-      "name": "이자람",
-      "t0": 2,
-      "baseline": 3,
-      "basis": "2010 국제연극제 최고여배우상 + 시카고 월드뮤직페스티벌 등 반복 국제 인정"
-    }
+    {"name":"백승헌","t0":2,"baseline":3,"basis":"2006-2010 민변 회장; 전국 조직 최고 리더"},
+    {"name":"이창준","t0":2,"baseline":3,"basis":"KIST 신경과학센터 Director + 2010 Science급 국제 선도 연구"},
+    {"name":"이연희","t0":2,"baseline":3,"basis":"연구소재중앙센터장; 전국 연구소재은행·거점센터 연구인프라 총괄"},
+    {"name":"이상이","t0":2,"baseline":3,"basis":"복지국가소사이어티 공동대표; 전국 정책·시민사회 조직 최고 리더"},
+    {"name":"이국종","t0":2,"baseline":3,"basis":"2010 아주대병원 중증외상특성화센터장 + 국내 외상외과 선도 전문성"},
+    {"name":"이자람","t0":2,"baseline":3,"basis":"2010 국제연극제 최고여배우상 + 시카고 월드뮤직페스티벌 등 반복 국제 인정"}
   ],
   "validation": {
     "workflow": ".github/workflows/donga-2011-baseline-qa.yml",
