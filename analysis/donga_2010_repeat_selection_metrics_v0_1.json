@@ -1,0 +1,97 @@
+{
+  "schema_version": "donga_2010_2011_repeat_selection_metrics_v0.1",
+  "generated": "2026-08-18",
+  "status": "validated_exploratory_analysis",
+  "cohort": "Dong-A 2010 100-person cohort; exposure = exact-name repeat in official 2011 100-person roster",
+  "repeat_definition": "canonical 2010 roster intersection official 2011 roster",
+  "repeat_n": 38,
+  "single_2010_only_n": 62,
+  "groups": {
+    "repeat_2010_2011": {
+      "n": 38,
+      "baseline_score_counts": {"2": 8, "3": 27, "4": 3},
+      "mean_baseline_peak": 2.8684210526315788,
+      "mean_t0_scope": 2.8684210526315788,
+      "post_t0_score_counts": {"2": 3, "3": 26, "4": 9},
+      "major_ge3_n": 35,
+      "major_ge3_rate": 0.9210526315789473,
+      "apex_eq4_n": 9,
+      "apex_eq4_rate": 0.23684210526315788,
+      "advanced_n": 11,
+      "advanced_rate": 0.2894736842105263,
+      "sustained_high_n": 24,
+      "no_clear_advancement_n": 3,
+      "death_truncated_n": 1
+    },
+    "selected_2010_only": {
+      "n": 62,
+      "baseline_score_counts": {"1": 1, "2": 38, "3": 23},
+      "mean_baseline_peak": 2.3548387096774195,
+      "mean_t0_scope": 2.3225806451612905,
+      "post_t0_score_counts": {"2": 26, "3": 33, "4": 3},
+      "major_ge3_n": 36,
+      "major_ge3_rate": 0.5806451612903226,
+      "apex_eq4_n": 3,
+      "apex_eq4_rate": 0.04838709677419355,
+      "advanced_n": 17,
+      "advanced_rate": 0.27419354838709675,
+      "sustained_high_n": 20,
+      "no_clear_advancement_n": 25,
+      "death_truncated_n": 2
+    }
+  },
+  "unadjusted_effects": {
+    "major_ge3": {
+      "repeat_rate": 0.9210526315789473,
+      "single_rate": 0.5806451612903226,
+      "rate_difference": 0.3404074702886247,
+      "risk_ratio": 1.5862573099415203,
+      "odds_ratio": 8.425925925925926,
+      "fisher_two_sided_p": 0.0002232227403247839
+    },
+    "apex_eq4": {
+      "repeat_rate": 0.23684210526315788,
+      "single_rate": 0.04838709677419355,
+      "rate_difference": 0.18845500848896435,
+      "risk_ratio": 4.894736842105263,
+      "odds_ratio": 6.103448275862069,
+      "fisher_two_sided_p": 0.008850266593330752
+    },
+    "advanced": {
+      "repeat_rate": 0.2894736842105263,
+      "single_rate": 0.27419354838709675,
+      "rate_difference": 0.015280135823429575,
+      "risk_ratio": 1.0557275541795668,
+      "odds_ratio": 1.0784313725490196,
+      "fisher_two_sided_p": 1.0
+    }
+  },
+  "baseline_high_ge3_comparison": {
+    "repeat_high_n": 30,
+    "repeat_n": 38,
+    "repeat_rate": 0.7894736842105263,
+    "single_high_n": 23,
+    "single_n": 62,
+    "single_rate": 0.3709677419354839,
+    "rate_difference": 0.41850594227504245,
+    "risk_ratio": 2.128146453089245,
+    "odds_ratio": 6.358695652173913,
+    "fisher_two_sided_p": 0.00006838871457191907
+  },
+  "validation": {
+    "workflow": ".github/workflows/donga-target2020-qa.yml",
+    "commit": "be47c2310f4212f06a6cc0924fbbe612df0af471",
+    "run_id": 32067838483,
+    "job_id": 95503973396,
+    "analysis_step": "success",
+    "qa_step": "success"
+  },
+  "interpretation": "Repeat-selected people have much higher later major and apex attainment, but they also entered the repeat group with substantially higher preselection baseline status. Baseline-adjusted upward advancement is nearly identical between repeat and single-selection groups. This suggests repeat editorial selection mainly reconfirms already-established high performers rather than identifying substantially more people who later exceed their prior career peak, subject to observational and reverse-causation limitations.",
+  "guardrails": [
+    "Repeat selection is observational, not randomized.",
+    "The 2011 repeat decision occurs about one year after the 2010 selection and may incorporate early post-2010 achievements, so reverse causation is possible.",
+    "Unadjusted major/apex differences are strongly confounded by baseline career scope.",
+    "The coarse 0-4 scale may miss substantial growth within the same score stratum.",
+    "Fisher p-values are exploratory descriptive statistics, not causal tests of editorial forecasting ability."
+  ]
+}
