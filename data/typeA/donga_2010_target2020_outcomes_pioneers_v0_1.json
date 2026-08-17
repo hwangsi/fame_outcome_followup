@@ -1,0 +1,418 @@
+{
+  "schema_version": "donga_2010_target2020_pioneers_v0.1",
+  "generated": "2026-08-18",
+  "cohort": "동아일보 2010 2020년 한국을 빛낼 100인",
+  "category": "꿈꾸는 개척가",
+  "rules_ref": [
+    "state/donga_2010_target2020_protocol_v1_0.md",
+    "state/coding_rules_typeA_sector_scope_v0_1.md"
+  ],
+  "t0_freeze_ref": "state/donga_2010_t0_provenance_freeze_v1_0.json",
+  "batch_n": 25,
+  "people": [
+    {
+      "name": "김광수",
+      "t0_role": "미국 하버드대 의대 교수",
+      "target2020": {
+        "role": "McLean Hospital/Harvard Medical School 분자신경생물학 연구책임자·정신의학 연구자",
+        "scope_score": 3,
+        "sector": "biomedicine_neuroscience",
+        "evidence_date": "2020-02-03",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "Harvard/McLean 기반의 국제적 파킨슨병 세포치료 연구를 주도하는 선도 연구자",
+        "source_notes": ["2020 JCI 논문에서 McLean Hospital/Harvard Medical School Molecular Neurobiology Laboratory 소속 corresponding author로 확인"],
+        "source_urls": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC6994130/"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "김기문",
+      "t0_role": "포스텍 화학과 교수",
+      "target2020": {
+        "role": "POSTECH University Professor·IBS 복잡계 자기조립 연구단장",
+        "scope_score": 3,
+        "sector": "chemistry_nanoscience",
+        "evidence_date": "2020-07-28",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "대학 석학급 교수이자 국가 기초과학 연구단장으로 국제적 연구 리더십",
+        "source_notes": ["POSTECH 공식 2020 보도에서 University Professor 및 IBS Center for Self-assembly and Complexity Director로 명시"],
+        "source_urls": ["https://www.postech.ac.kr/eng/research/research_results.do?article.offset=470&articleLimit=10&articleNo=13911&mode=view"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "김빛내리",
+      "t0_role": "서울대 생명과학부 중견석좌교수",
+      "target2020": {
+        "role": "서울대 교수·IBS RNA 연구단장",
+        "scope_score": 3,
+        "sector": "molecular_biology_rna",
+        "evidence_date": "2020",
+        "match": "exact_year_by_directorship_and_2020_research",
+        "confidence": "H",
+        "scope_rationale": "국가 연구단을 이끄는 세계적 RNA 연구자이며 2020 SARS-CoV-2 전사체 연구를 포함한 국제 선도 연구 수행",
+        "source_notes": ["IBS 공식 연구단 페이지에서 2012년 설립 이후 RNA 연구단장으로 확인되고 주요 2020 SARS-CoV-2 transcriptome 논문이 명시됨"],
+        "source_urls": ["https://www.ibs.re.kr/kor/sub02_05_03.do"]
+      },
+      "coding_status": "coded_exact_by_tenure"
+    },
+    {
+      "name": "김정범",
+      "t0_role": "울산과학기술대 나노생명과학공학부 교수",
+      "target2020": {
+        "role": "UNIST 생명과학 교수·줄기세포/혈관전구세포 연구책임자",
+        "scope_score": 2,
+        "sector": "stem_cell_biomedicine",
+        "evidence_date": "2020-04-13",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 단위의 확립된 교수·연구실 리더로 직접전환 세포치료 연구를 수행",
+        "source_notes": ["UNIST 공식 2020 보도에서 School of Life Sciences 교수 및 ischemic vascular disease 연구 책임자로 확인"],
+        "source_urls": ["https://news.unist.ac.kr/etv2-and-fli1-induced-vascular-progenitor-cells-enhance-functional-recovery-in-ischemic-vascular-disease-model/"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "김창진",
+      "t0_role": "미국 UCLA 기계항공공학과 교수",
+      "target2020": {
+        "role": "UCLA Distinguished Professor·Volgenau Chair in Engineering",
+        "scope_score": 3,
+        "sector": "mechanical_bioengineering",
+        "evidence_date": "2020-12-14",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "미국 주요 연구대학 석학교수·석좌교수이자 IEEE Fellow 선정 수준의 국제 공학 리더",
+        "source_notes": ["UCLA Samueli가 2020년 12월 Chang-Jin 'CJ' Kim을 distinguished professor 및 Volgenau Chair로 명시하며 2021 IEEE Fellow 선정을 발표"],
+        "source_urls": ["https://samueli.ucla.edu/four-ucla-engineering-faculty-named-2021-ieee-fellows/"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "김필립",
+      "t0_role": "미국 컬럼비아대 물리학과 교수",
+      "target2020": {
+        "role": "Harvard University Professor of Physics and Applied Physics",
+        "scope_score": 3,
+        "sector": "condensed_matter_physics",
+        "evidence_date": "2020-04",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "Harvard 교수이자 저차원 물질 분야 세계 선도 연구자로 2020 미국예술과학아카데미 회원 선출",
+        "source_notes": ["Harvard 2020 발표에서 Professor of Physics and Applied Physics로 확인되며 American Academy of Arts & Sciences 신입회원에 포함"],
+        "source_urls": ["https://news.harvard.edu/gazette/story/2020/04/american-academy-of-arts-sciences-announces-new-members/", "https://philipkim.scholars.harvard.edu/bio"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "김호근",
+      "t0_role": "연세대 병리학교실 교수",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "medicine_pathology",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": ["동명이인 가능성을 배제하면서 2019-2021 직접 역할을 확정할 dated source를 아직 확보하지 못함"]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "남홍길",
+      "t0_role": "포스텍 생명과학과 교수",
+      "target2020": {
+        "role": "DGIST/IBS 식물 노화·수명 연구 리더",
+        "scope_score": 3,
+        "sector": "plant_biology_aging",
+        "evidence_date": "2020-05~2020-09",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "IBS 국가 연구단의 핵심 연구그룹을 이끌며 식물 노화·수명 분야에서 국제적 연구 리더십 지속",
+        "source_notes": ["IBS 연구단 구성은 2020년 5월 기준 Group1 Systems Biology of Plant Senescence and Lifespan 책임자를 남홍길로 명시", "DGIST Scholar에 2020년 남홍길 발명자 특허가 복수 확인됨"],
+        "source_urls": ["https://www.ibs.re.kr/kor/sub02_05_05.do", "https://scholar.dgist.ac.kr/handle/20.500.11750/349"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "박승정",
+      "t0_role": "서울아산병원 심장병원 원장, 울산대 의대 교수",
+      "target2020": {
+        "role": "울산대 석좌교수·세계적 중재심장학 연구자",
+        "scope_score": 3,
+        "sector": "medicine_cardiology",
+        "evidence_date": "2020-04-08",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 의료기관/대학의 석좌교수로 국제 중재심장학을 선도하는 의학 리더",
+        "source_notes": ["2020 호암의학상 수상자 발표에서 박승정을 울산대 석좌교수로 명시"],
+        "source_urls": ["https://busan.fnnews.com/news/202004081846445998"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "박홍근",
+      "t0_role": "미국 하버드대 화학과 교수",
+      "target2020": {
+        "role": "Harvard Mark Hyman Jr. Professor of Chemistry and Professor of Physics",
+        "scope_score": 3,
+        "sector": "chemistry_nanoscience",
+        "evidence_date": "2020",
+        "match": "exact_year_by_faculty_role_and_award_record",
+        "confidence": "H",
+        "scope_rationale": "Harvard 석좌급 교수이며 2020 Highly Cited Researcher로 확인되는 국제 선도 연구자",
+        "source_notes": ["Harvard Physics faculty awards archive에서 Hongkun Park이 2020 Clarivate Highly Cited Researchers에 포함"] ,
+        "source_urls": ["https://www.physics.harvard.edu/fac_awards"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "서동철",
+      "t0_role": "미국 스크립스연구소 교수",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "biomedical_research",
+        "evidence_date": null,
+        "match": "pending_identity_and_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": ["2010 T0 identity anchor는 있으나 2019-2021 동일 인물의 직접 경력 연결 자료를 충분히 확보하지 못함"]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "신재원",
+      "t0_role": "미국 항공우주국(NASA) 항공연구사업본부장",
+      "target2020": {
+        "role": "현대자동차 UAM사업부장·사장",
+        "scope_score": 3,
+        "sector": "industry_urban_air_mobility",
+        "evidence_date": "2020-12-15",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "현대차그룹 핵심 미래사업인 UAM을 총괄하는 사장급 산업 리더십",
+        "source_notes": ["2020-01 CES에서 UAM 사업을 이끄는 부사장으로 확인되고 2020-12 사장 승진"],
+        "source_urls": ["https://www.yna.co.kr/view/AKR20200108114800003", "https://www.yna.co.kr/view/AKR20201215057551003"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "안철수",
+      "t0_role": "KAIST 기술경영전문대학원 석좌교수",
+      "target2020": {
+        "role": "국민의당 대표",
+        "scope_score": 3,
+        "sector": "politics",
+        "evidence_date": "2020",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 정당 대표로 주요 국가정치 리더십",
+        "source_notes": ["2020 총선 당시 국민의당 대표·선대위원장으로 활동한 contemporaneous 보도로 확인", "2021 이후 대선 출마는 2020 score에 소급 반영하지 않음"],
+        "source_urls": ["https://www.yna.co.kr/view/AKR20200331052700001"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "이상엽",
+      "t0_role": "KAIST 생명과학기술대학장, 특훈교수",
+      "target2020": {
+        "role": "KAIST 생명화학공학과 특훈교수·시스템대사공학 연구리더",
+        "scope_score": 3,
+        "sector": "biochemical_engineering",
+        "evidence_date": "2020-11-20",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "KAIST 특훈교수이며 세계 최고 수준의 시스템대사공학 연구를 이끄는 국제적 공학 리더",
+        "source_notes": ["KAIST 공식 2020 보도에서 생명화학공학과 이상엽 특훈교수 연구팀의 PNAS 성과 확인"],
+        "source_urls": ["https://www.kaist.ac.kr/news/html/news/?mng_no=11012&mode=V"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "이상훈",
+      "t0_role": "서울대 뇌인지과학과 교수",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "neuroscience_cognitive_science",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": ["과거 및 최근 서울대 교수 경력은 연결되나 2019-2021의 dated direct evidence를 아직 확보하지 못해 보수적으로 보류"]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "이소연",
+      "t0_role": "한국항공우주연구원 선임연구원",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "aerospace_science",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": ["한국 최초 우주인 identity는 명확하나 2020 시점의 직접 역할을 신뢰도 높은 dated source로 아직 확정하지 않음"]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "이지오",
+      "t0_role": "KAIST 화학과 교수",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "structural_biology_chemistry",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": ["T0 KAIST 교수 identity는 확실하나 2019-2021 직접 역할/소속 증거를 추가 확인해야 함"]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "이효철",
+      "t0_role": "KAIST 화학과 및 나노과학기술대학원 교수",
+      "target2020": {
+        "role": "KAIST 화학과 교수·IBS 나노물질 및 화학반응 연구단 부연구단장",
+        "scope_score": 3,
+        "sector": "physical_chemistry_reaction_dynamics",
+        "evidence_date": "2020-06~2020-07",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국가 기초과학 연구단 부연구단장으로 Nature급 실시간 반응동역학 연구를 이끄는 국제적 선도 연구자",
+        "source_notes": ["KAIST 2020 보도에서 분자 결합 전 과정 및 단백질 접힘 과정의 실시간 관측 성과와 IBS 부연구단장 역할을 직접 확인"],
+        "source_urls": ["https://news.kaist.ac.kr/news/html/news/?mng_no=8630&mode=V", "https://news.kaist.ac.kr/news/html/news/?mng_no=8891&mode=V"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "임지순",
+      "t0_role": "서울대 물리천문학부 교수",
+      "target2020": {
+        "role": "POSTECH 물리학과 석학교수·국제 재료/응집물질 물리 연구자",
+        "scope_score": 3,
+        "sector": "physics_materials_science",
+        "evidence_date": "2020-09-24",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "미국 NAS 외국인 회원 경력을 가진 세계적 물리학자이며 2020 IAAM Scientist Award 수상",
+        "source_notes": ["POSTECH 공식 2020 보도에서 물리학과 석학교수 및 IAAM Scientist Award 수상자로 확인"],
+        "source_urls": ["https://postech.ac.kr/kor/newscenter/university-news.do?article.offset=970&articleLimit=10&articleNo=5120&mode=view"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "정경민",
+      "t0_role": "삼성SDI 수석 연구원",
+      "target2020": {
+        "role": "UNIST 에너지 및 화학공학부 교수·차세대 리튬금속전지 연구책임자",
+        "scope_score": 2,
+        "sector": "battery_engineering_academia",
+        "evidence_date": "2020-08-19",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "산업 연구임원 경력 후 대학 교수로 전환해 대형 차세대 배터리 연구를 이끄는 전국 단위 전문 리더",
+        "source_notes": ["UNIST 공식 2020 보도에서 교수 및 삼성미래기술육성사업 리튬금속전지 공동연구 책임자로 확인", "T0 삼성SDI 연구경력과 이후 UNIST 교수 경력이 동일 인물로 연결됨"],
+        "source_urls": ["https://news.unist.ac.kr/kor/20200819-1/"]
+      },
+      "coding_status": "coded_exact_identity_transition_verified"
+    },
+    {
+      "name": "정하웅",
+      "t0_role": "KAIST 물리학과 교수",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "complex_systems_physics",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": ["KAIST 교수 identity는 명확하지만 2019-2021 dated direct source를 확보하기 전까지 score를 보류"]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "조동호",
+      "t0_role": "KAIST 전기전자공학과 석좌교수",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "electrical_engineering",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": ["KAIST 장기 교수경력은 확인되나 2020 snapshot을 직접 뒷받침하는 dated role evidence를 추가 확보할 때까지 보류"]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "주영석",
+      "t0_role": "서울대 의대 유전체의학 연구소 연구원",
+      "target2020": {
+        "role": "KAIST 의과학대학원 교수·암유전체 연구자",
+        "scope_score": 2,
+        "sector": "cancer_genomics",
+        "evidence_date": "2020-01-22",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "독립 연구실을 이끄는 젊은 의과학자로 전국 단위 전문·학술 리더십",
+        "source_notes": ["KAIST 공식 2020 보도에서 의과학대학원 교수 및 제13회 아산의학상 젊은의학자상 수상자로 확인"],
+        "source_urls": ["https://www.kaist.ac.kr/news/html/news/?GotoPage=1&list_e_date=&list_s_date=&mng_no=8450&mode=V&skey=keyword&sval=%EC%A0%8A%EC%9D%80%EC%9D%98%ED%95%99%EC%9E%90%EB%B6%80%EB%AC%B8"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "찰스 리",
+      "t0_role": "미국 하버드대 의대 교수",
+      "target2020": {
+        "role": "The Jackson Laboratory for Genomic Medicine 초대 Scientific Director·Professor·HUGO President",
+        "scope_score": 3,
+        "sector": "human_genomics_institutional_leadership",
+        "evidence_date": "2020",
+        "match": "exact_year_by_official_tenure_and_public_role",
+        "confidence": "H",
+        "scope_rationale": "미국 유전체의학 연구기관 과학책임자이자 국제 Human Genome Organization 회장으로 국제 연구·기관 리더십",
+        "source_notes": ["JAX 공식 경력에서 2013년 JAX-GM 초대 scientific director, HUGO president 2017-2023 확인", "2020 코로나 PCR 역량 확대 및 Reopen Connecticut Advisory Task Force 위원으로 공공 역할 수행"],
+        "source_urls": ["https://www.jax.org/news-and-insights/2024/april/charles-lee-receives-honorary-degree-from-university-of-alberta", "https://www.jax.org/news-and-insights/2021/december/the-robert-alvine-family-endowed-chair", "https://www.jax.org/news-and-insights/2020/march/jax-providing-coronavirus-testing-for-connecticut-residents"]
+      },
+      "coding_status": "coded_exact_by_tenure"
+    },
+    {
+      "name": "현택환",
+      "t0_role": "서울대 화학생물공학부 중견석좌교수",
+      "target2020": {
+        "role": "서울대 석좌교수·IBS 나노입자 연구단장",
+        "scope_score": 3,
+        "sector": "nanochemistry_materials",
+        "evidence_date": "2020-09-25",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국가 연구단장·세계적 나노입자 합성 연구자로 Citation Laureate 수준의 국제 연구 리더십. 실제 Nobel급 수상은 아니므로 score 4로 올리지 않음",
+        "source_notes": ["IBS 공식 2020 보도에서 나노입자 연구단장·서울대 석좌교수 및 2020 Citation Laureate 선정 확인"],
+        "source_urls": ["https://www.ibs.re.kr/cop/bbs/BBSMSTR_000000000736/selectBoardArticle.do?nttId=19134&pageIndex=1&searchCnd=&searchWrd="]
+      },
+      "coding_status": "coded_exact"
+    }
+  ],
+  "batch_summary": {
+    "total": 25,
+    "resolved_scored": 18,
+    "pending": 7,
+    "competing_event": 0,
+    "pending_names": ["김호근", "서동철", "이상훈", "이소연", "이지오", "정하웅", "조동호"],
+    "descriptive_score_counts_among_resolved": {
+      "2": 3,
+      "3": 15,
+      "4": 0
+    },
+    "notable_transitions": [
+      "정경민: 삼성SDI 연구임원 경력에서 UNIST 교수·차세대 배터리 연구책임자로 전환",
+      "신재원: NASA 항공연구사업본부장에서 현대자동차 UAM 사업 사장급 리더로 전환",
+      "찰스 리: Harvard 교수에서 JAX Genomic Medicine 과학책임자 및 국제 유전체기구 리더로 확장"
+    ],
+    "note": "부분 배치 수치는 QA용이며 cohort prediction metric이 아니다. 7명은 직접 2019-2021 근거가 충분해질 때까지 점수를 강제로 부여하지 않는다."
+  }
+}
