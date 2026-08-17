@@ -1,0 +1,83 @@
+{
+  "schema_version": "donga_2011_baseline_freeze_v1.0",
+  "generated": "2026-08-18",
+  "status": "frozen",
+  "cohort": "동아일보 2011 10년 뒤 한국을 빛낼 100인",
+  "selection_cutoff": "2011-04-01",
+  "t0_ref": "data/typeA/donga_2011_t0_snapshot_scope_v0_3.json",
+  "baseline_ref": "data/typeA/donga_2011_baseline_peak_through_t0_v1_0.json",
+  "rules_ref": "state/coding_rules_typeA_sector_scope_v0_1.md",
+  "audit_refs": [
+    "research/donga_2011_prior_career_audit_v0_1.json",
+    "research/donga_2011_prior_career_audit_v0_2.json",
+    "research/donga_2011_prior_career_audit_v0_3.json",
+    "research/donga_2011_prior_career_audit_v0_4.json",
+    "research/donga_2011_prior_career_audit_v0_5.json"
+  ],
+  "qa_expected": {
+    "total": 100,
+    "unique_names": 100,
+    "repeat_2010_2011": 38,
+    "new_2011_people": 62,
+    "new_person_prior_career_audited": 62,
+    "prior_career_pending": 0,
+    "t0_score_counts": {"2": 44, "3": 51, "4": 5},
+    "baseline_score_counts": {"2": 38, "3": 57, "4": 5},
+    "mean_t0_scope": 2.61,
+    "mean_baseline_peak": 2.67,
+    "baseline_greater_than_t0_n": 6,
+    "baseline_greater_than_t0_names": ["백승헌", "이국종", "이상 이", "이연희", "이자람", "이창준"]
+  },
+  "baseline_corrections": [
+    {
+      "name": "백승헌",
+      "t0": 2,
+      "baseline": 3,
+      "basis": "2006-2010 민변 회장; 전국 조직 최고 리더"
+    },
+    {
+      "name": "이창준",
+      "t0": 2,
+      "baseline": 3,
+      "basis": "KIST 신경과학센터 Director + 2010 Science급 국제 선도 연구"
+    },
+    {
+      "name": "이연희",
+      "t0": 2,
+      "baseline": 3,
+      "basis": "연구소재중앙센터장; 전국 연구소재은행·거점센터 연구인프라 총괄"
+    },
+    {
+      "name": "이상이",
+      "t0": 2,
+      "baseline": 3,
+      "basis": "복지국가소사이어티 공동대표; 전국 정책·시민사회 조직 최고 리더"
+    },
+    {
+      "name": "이국종",
+      "t0": 2,
+      "baseline": 3,
+      "basis": "2010 아주대병원 중증외상특성화센터장 + 국내 외상외과 선도 전문성"
+    },
+    {
+      "name": "이자람",
+      "t0": 2,
+      "baseline": 3,
+      "basis": "2010 국제연극제 최고여배우상 + 시카고 월드뮤직페스티벌 등 반복 국제 인정"
+    }
+  ],
+  "validation": {
+    "workflow": ".github/workflows/donga-2011-baseline-qa.yml",
+    "commit": "345aa7af76303560e132a8d5de3c9ab6665dff1c",
+    "run_id": 32071221564,
+    "job_id": 95514661741,
+    "conclusion": "success"
+  },
+  "interpretation_guardrails": [
+    "T0 snapshot and lifetime peak through selection are separate quantities; six people have a higher prior lifetime peak than the contemporaneous 2011 roster title implies.",
+    "Negative prior-career findings are evidence-audited but not metaphysical proof that no obscure higher role existed; confidence remains encoded in row-level audit metadata.",
+    "Repeat-selected 38 people were checked against the already frozen 2010 lifetime baseline, preventing earlier achievements from being lost.",
+    "Post-2011 advancement must compare outcomes only after 2011-04-01 against this frozen lifetime baseline."
+  ],
+  "freeze_policy": "Do not silently alter v1.0. Any new pre-2011 evidence or rubric change requires v1.1 or later with an explicit changelog."
+}
