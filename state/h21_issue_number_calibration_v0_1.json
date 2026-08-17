@@ -1,0 +1,118 @@
+{
+  "schema_version": "h21_issue_number_calibration_v0.1",
+  "generated": "2026-08-18",
+  "status": "directly_dated_issue_anchors_plus_explicit_inference_rules",
+  "purpose": "Calibrate Hankyoreh21 issue-number/date relationships for archive recovery without silently promoting arithmetic estimates to primary facts.",
+  "direct_anchors": [
+    {
+      "issue": 264,
+      "date": "1999-07-01",
+      "status": "direct_publisher_retrospective",
+      "context": "first next-generation/favored-politician survey; Roh Moo-hyun rank1"
+    },
+    {
+      "issue": 301,
+      "date": "2000-03-30",
+      "status": "independent_article_archive_index",
+      "context": "Vietnam-war reporting chronology"
+    },
+    {
+      "issue": 305,
+      "date": "2000-04-27",
+      "status": "independent_article_archive_index",
+      "context": "Vietnam-war reporting chronology"
+    },
+    {
+      "issue": 306,
+      "date": "2000-05-04",
+      "status": "multiple_independent_retrospectives",
+      "context": "Vietnam-war civilian-massacre investigation cover story"
+    },
+    {
+      "issue": 307,
+      "date": "2000-05-11",
+      "status": "independent_article_archive_index",
+      "context": "Vietnam-war reporting chronology"
+    },
+    {
+      "issue": 308,
+      "date": "2000-05-18",
+      "status": "independent_article_archive_index",
+      "context": "Vietnam-war reporting chronology"
+    },
+    {
+      "issue": 309,
+      "date": "2000-05-25",
+      "status": "independent_article_archive_index",
+      "context": "Vietnam-war reporting chronology"
+    },
+    {
+      "issue": 310,
+      "date": "2000-06-01",
+      "status": "independent_article_archive_index",
+      "context": "Vietnam-war reporting chronology"
+    },
+    {
+      "issue": 321,
+      "date": "2000-08-09",
+      "status": "independent_citation",
+      "context": "Hankyoreh21 TV-discussion article citation"
+    },
+    {
+      "issue": 334,
+      "date": "2000-11-15",
+      "status": "independent_article_archive_index",
+      "context": "Vietnam-war reporting chronology"
+    },
+    {
+      "issue": 345,
+      "date": "2001-02-07",
+      "status": "multiple_independent_retrospectives",
+      "context": "first major conscientious-objection report"
+    },
+    {
+      "issue": 536,
+      "date": "2004-12-02",
+      "status": "National_Assembly_Library_search_index",
+      "context": "dated issue anchor for 2004 recovery"
+    },
+    {
+      "issue": 537,
+      "date": "2004-12-09",
+      "status": "National_Assembly_Library_search_index",
+      "context": "dated issue anchor for 2004 recovery"
+    }
+  ],
+  "strong_but_not_primary_clues": [
+    {
+      "target": "H21 late-2000 expert presidential forecast",
+      "possible_issue": 340,
+      "possible_date": "2000-12-27",
+      "basis": [
+        "legacy cover-image filename contains 20001227 and 340",
+        "direct issue anchors 334=2000-11-15 and 345=2001-02-07 place issue340 naturally in late Dec 2000"
+      ],
+      "status": "strongly_bracketed_not_directly_verified",
+      "promotion_rule": "requires issue catalog, cover, or article scan explicitly linking issue340/date to the forecast"
+    },
+    {
+      "target": "H21 2004 next-generation leader full31 article",
+      "possible_issue": 526,
+      "possible_date_window": "around 2004-09-20 to 2004-09-23",
+      "basis": [
+        "article transmitted 2004-09-20",
+        "issue536=2004-12-02 and issue537=2004-12-09 are direct anchors",
+        "weekly/holiday-adjusted back-calculation places late September near issue526"
+      ],
+      "status": "best_current_inference_not_directly_verified",
+      "withdrawn_prior_hint": 528,
+      "promotion_rule": "requires issue table of contents or scan"
+    }
+  ],
+  "rules": [
+    "Directly dated issue anchors may be used for bracketing only, not to manufacture exact issue dates for missing issues.",
+    "Calendar arithmetic must be labeled inference because Hankyoreh21 has holiday/skipped issues.",
+    "Legacy image filenames are retrieval clues, not final bibliographic facts.",
+    "When a later primary catalog contradicts an inferred issue number, supersede the inference explicitly rather than editing history silently."
+  ]
+}
