@@ -1,0 +1,42 @@
+{
+  "schema_version": "canonical_identity_overrides_v0.1",
+  "generated": "2026-08-18",
+  "status": "active_for_typeA_v0_3_and_later",
+  "policy": {
+    "default_identity_key": "name",
+    "override_rule": "When two placements share the same Korean name but are adjudicated as different people, each placement must receive an explicit identity_key. The person_id is derived from identity_key, never from display name alone.",
+    "frozen_v0_2_policy": "Do not rewrite Type-A common master v0.2. Identity-key migration begins with v0.3.",
+    "unresolved_collision_action": "fail build pending manual identity adjudication"
+  },
+  "overrides": [
+    {
+      "display_name": "이미경",
+      "identity_key": "이미경|cj_enm_business",
+      "placement_selector": {
+        "outlet": "동아일보",
+        "cohort_unit": "donga_2011_10yr_100"
+      },
+      "identity_anchor": "CJ E&M 총괄 부회장",
+      "source_ref": "data/typeA/donga_2011_t0_roles_v0_1.json",
+      "decision_ref": "research/khan_2004_common_overlap_identity_audit_v0_1.json",
+      "confidence": "H"
+    },
+    {
+      "display_name": "이미경",
+      "identity_key": "이미경|politician",
+      "placement_selector": {
+        "outlet": "경향신문",
+        "cohort_unit": "khan_2004_17th_assembly_newleaders_20"
+      },
+      "identity_anchor": "열린우리당 17대 국회의원 당선자·뉴리더",
+      "source_ref": "research/khan_2004_17th_assembly_newleaders_roster_v0_1.json",
+      "decision_ref": "research/khan_2004_common_overlap_identity_audit_v0_1.json",
+      "confidence": "H"
+    }
+  ],
+  "qa": {
+    "override_n": 2,
+    "distinct_display_names_with_overrides": 1,
+    "expected_distinct_identity_keys_for_이미경": 2
+  }
+}
