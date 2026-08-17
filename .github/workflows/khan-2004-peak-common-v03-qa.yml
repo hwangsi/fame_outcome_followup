@@ -41,7 +41,7 @@ jobs:
           assert m['outcomes']['apex_n']==4
           assert m['outcomes']['advanced_n']==19
           assert m['outcomes']['lower_than_baseline_n']==1
-          assert m['apex_names']==['김부겸','김문수','임종석','한명숙']
+          assert m['apex_names']==['김문수','김부겸','임종석','한명숙']
           assert m['non_advanced_names']==['박세일']
           assert f['outcomes']==m['outcomes']
           PY
