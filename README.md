@@ -52,19 +52,21 @@ Type A에서는 `selection precision`, `ranking accuracy`, `baseline-adjusted ad
 - 추천 상위: **김빛내리 23 / 이재용 19 / 안철수 18표**
 - category 목표: 자유로운 창조인20 / 꿈꾸는 개척가25 / 행동하는 지성인20 / 도전하는 경제인25 / 미래를 여는 지도자10
 
-### Canonical roster v1.0 — 이름 집합 기준
+### Canonical roster v1.1 — 이름 집합 기준
 
 과거의 aggregate count를 누적하는 방식은 중복/유실 위험이 있어 폐기하고, **개인별 row evidence가 붙은 unique-person set**을 canonical source로 사용한다.
 
 - evidence-cleaned v0.2 base: **67명**
-- 이후 독립적으로 row-resolved된 추가 인물: **10명**
+- 이후 독립적으로 row-resolved된 추가 인물: **11명**
 - base/addition overlap: **0명**
-- **canonical row-resolved membership: 77/100**
-- remaining: **23명**
+- **canonical row-resolved membership: 78/100**
+- remaining: **22명**
 
-추가 10명: 김정범, 박원순, 이창용, 신현송, 현택환, 나경원, 김준영, 김용, 이상훈, 박인출.
+추가 11명: 김정범, 박원순, 이창용, 신현송, 현택환, 나경원, 김준영, 김용, 이상훈, 박인출, **서도호**.
 
-박인출은 2010년 동시대 전문매체들이 동아일보 선정과 `도전하는 경제인` 분야를 구체적으로 보도한 근거로 M-confirmed로 복귀했다. 과거 `78/100` aggregate는 historical audit value로만 보존하며 canonical denominator로 사용하지 않는다.
+서도호는 2013 동아일보 `명예의 전당 21인` 원그래픽에서 확인되며, 2013 Hall이 `통산 세 차례 선정`으로 정의되고 2011 공식 전체명단에는 없으므로 선정연도는 **2010·2012·2013**으로 강제된다. 따라서 2010 membership H. 2013의 category는 2010 category로 소급하지 않는다.
+
+박인출은 2010년 동시대 전문매체들이 동아일보 선정과 `도전하는 경제인` 분야를 구체적으로 보도한 근거로 M-confirmed로 복귀했다. 과거 `78/100` aggregate는 historical audit value일 뿐이며, 현재의 78명은 **별도의 unique-person set audit로 재구축된 수치**다.
 
 ### 2010↔2011 repeat reconstruction
 
@@ -75,14 +77,17 @@ Type A에서는 `selection precision`, `ranking accuracy`, `baseline-adjusted ad
 - 경제: **13/14**, remaining 1
 - 문화·지도자·지성인 합계: **14/16**, remaining 2
 
-2012년 `2010–2012 3년 연속` 명예의 전당 20인은 **20/20 이름 복원 완료**. 이를 포함한 후대 exact-year evidence를 2010 membership backfill에 사용하되, 후대 category는 2010 category로 소급하지 않는다.
+경제 마지막 1명의 후보는 교차연도 배제 후 **권구훈·김가영·김남구·손병두·최태원·황철주 6명**으로 좁혀졌다. 양윤선·정용진은 연도구조상 2010 repeat에서 제외된다.
+
+2012년 `2010–2012 3년 연속` 명예의 전당 20인은 **20/20 이름 복원 완료**. 2013년 `통산 3회` 명예의 전당도 원그래픽에서 **21/21 이름 복원 완료**했다. 이를 포함한 후대 exact-year evidence를 2010 membership backfill에 사용하되, 후대 category는 2010 category로 소급하지 않는다.
 
 ### Primary-source recovery
 
 - 2010 전용 microsite `www.donga.com/news/2020_100/` 존재와 콘텐츠 구조 확인
 - 2010-05-10 A1/A4가 100인 표를 담은 원지면임을 archive/정정기사로 확인
-- A1/A4 원본 asset endpoint 확인, 픽셀 원본 회수는 계속 진행
+- A1/A4 원본 asset endpoint 확인, 고해상도 exact roster 회수는 계속 진행
 - Donga NewsBook 2호의 100인 profile archive 존재 확인
+- 2013 Hall-of-Fame 원그래픽 직접 판독 완료
 
 ### Evidence rule
 
@@ -92,7 +97,7 @@ Type A에서는 `selection precision`, `ranking accuracy`, `baseline-adjusted ad
 4. 2010 동시대 전문매체가 선정 및 category를 구체적으로 보도 → M
 5. copied list / secondary biography / 현재 유명세만으로는 canonical roster에 넣지 않음
 
-윤명철은 후대 자료에서 선정 사실이 반복되지만 first-party corroboration이 없어 아직 보류한다. 신지애·김윤진·서도호·손열음·이청용도 candidate-generation에는 쓰되 2010 row evidence가 붙기 전에는 canonical로 올리지 않는다.
+현재 secondary/candidate-generation 상태로 남은 주요 이름은 **김윤진·신지애·이청용·윤명철**이다. 손열음은 연도구조상 2010 membership에서 제외되었고, 서도호는 H-confirmed로 승격되었다.
 
 **2020 적중률은 roster 100/100 freeze 전에는 계산하지 않는다.** 목표시점 outcome은 이후 strict 2019–2021 근거로 평가하고 Current 2026과 분리한다.
 
@@ -110,15 +115,16 @@ data/typeA/
   newsmaker_2003_outcomes_v0_3.json
   h21_2004_outcomes_v0_1.json
   donga_2010_2020_100_seed_v0_2_cleaned.json
-  donga_2010_canonical_roster_v1_0.json
+  donga_2010_canonical_roster_v1_1.json
   donga_2011_100_roster_v0_1.json
 
 research/
-  donga_2010_recovery_queue_v1_0.json
+  donga_2010_recovery_queue_v1_2.json
   donga_2010_legacy78_reconciliation_v0_3.md
   donga_2010_primary_print_recovery_audit_v0_1.md
   donga_2010_2011_repeat_crosswalk_v0_2.md
   donga_2012_hall_of_fame_backfill_audit_v0_1.md
+  donga_2013_hall_image_resolution_v0_1.md
 
 state/
   coding_rules_v3.md
@@ -131,10 +137,11 @@ artifacts/
 
 ## 5. 다음 우선순위
 
-1. 2010 exact roster **77 → 100/100** row-level evidence 복원
+1. 2010 exact roster **78 → 100/100** row-level evidence 복원
 2. 2011 repeat 잔여 **3명**(경제 1 + 비경제 2) exact-year evidence 확인
 3. 2010 A1/A4 원지면 또는 legacy microsite/DNB2에서 exact roster 직접 회수
-4. category totals 20/25/20/25/10 reconciliation 및 2010 baseline 저장
-5. roster freeze/tag 후에만 **target year 2020 outcome** 코딩
-6. 한겨레21 2004 31명 전체표, 한겨레21 1999, 신동아 1998 archive retrieval 지속
-7. Type A 3개 이상 완성 후 person-clustered common master dataset 구축
+4. 김윤진·신지애·이청용·윤명철의 2010 qualifying evidence 검증
+5. category totals 20/25/20/25/10 reconciliation 및 2010 baseline 저장
+6. roster freeze/tag 후에만 **target year 2020 outcome** 코딩
+7. 한겨레21 2004 31명 전체표, 한겨레21 1999, 신동아 1998 archive retrieval 지속
+8. Type A 3개 이상 완성 후 person-clustered common master dataset 구축
