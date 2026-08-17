@@ -1,0 +1,424 @@
+{
+  "schema_version": "donga_2010_target2020_intellectuals_v0.1",
+  "generated": "2026-08-18",
+  "cohort": "동아일보 2010 2020년 한국을 빛낼 100인",
+  "category": "행동하는 지성인",
+  "rules_ref": [
+    "state/donga_2010_target2020_protocol_v1_0.md",
+    "state/coding_rules_typeA_sector_scope_v0_1.md"
+  ],
+  "t0_freeze_ref": "state/donga_2010_t0_provenance_freeze_v1_0.json",
+  "batch_n": 20,
+  "people": [
+    {
+      "name": "김강립",
+      "t0_role": "보건복지부 보건산업정책국장",
+      "target2020": {
+        "role": "보건복지부 제1차관·WHO 집행이사, 이후 식품의약품안전처장",
+        "scope_score": 3,
+        "sector": "public_health_government",
+        "evidence_date": "2020-05~2020-11",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "중앙정부 차관급 및 식약처장으로 국가 보건정책의 주요 리더십을 맡고 WHO 집행이사로 국제 보건 역할도 수행",
+        "source_notes": [
+          "보건복지부 공식 자료가 2020-05-19 김강립 차관의 WHO 집행이사 지명을 확인",
+          "2020-11-01 식품의약품안전처장 내정으로 연중 직위 전환 확인"
+        ],
+        "source_urls": [
+          "https://www.mohw.go.kr/gallery.es?act=view&bid=0003&list_no=354679&mid=a10607030000&tag=",
+          "https://www.yna.co.kr/view/AKR20201101025652001"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "김숙정",
+      "t0_role": "교육과학기술부 학교정책국 장학관",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "education_public",
+        "evidence_date": null,
+        "match": "pending_identity_and_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": [
+          "2020 교육계 동명이인 검색 결과가 있으나 T0 인물과의 경력 연결을 입증하지 못해 채택하지 않음"
+        ]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "김용",
+      "t0_role": "미국 다트머스대 총장",
+      "target2020": {
+        "role": "Global Infrastructure Partners Vice Chairman and Partner",
+        "scope_score": 3,
+        "sector": "global_infrastructure_investment",
+        "evidence_date": "2020-11-02",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "세계은행 총재 퇴임 후에도 대형 글로벌 인프라 투자기관의 고위 리더십을 맡음; 과거 세계은행 총재 peak를 2020 score로 소급하지 않음",
+        "source_notes": [
+          "Harvard Medical School 2020 세미나가 Jim Yong Kim을 Global Infrastructure Partners Vice Chairman and Partner로 직접 소개"
+        ],
+        "source_urls": [
+          "https://ghsm.hms.harvard.edu/ghsm-events/department-seminars/covid-19-reflections-and-updates"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "김준영",
+      "t0_role": "한국노총 부천지역지부 의장",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "labor",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": [
+          "T0 부천지역지부 의장 identity는 확인되고 후대 금속노련 지도부의 동일 이름 경력도 존재하지만, 2020 역할을 잇는 직접 dated evidence가 부족하여 강제 연결하지 않음"
+        ]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "김해성",
+      "t0_role": "(사단법인)지구촌사랑나눔 이사장",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "migrant_rights_civic",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": [
+          "2010 identity와 과거 이주노동자 지원 경력은 명확하지만 2019-2021 직접 역할을 확인하지 못해 T0 조직 직함의 지속을 가정하지 않음"
+        ]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "김형태",
+      "t0_role": "법무법인 덕수 변호사",
+      "target2020": {
+        "role": "법무법인 덕수 대표변호사",
+        "scope_score": 2,
+        "sector": "law_public_interest",
+        "evidence_date": "2020-02-06",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국적으로 활동하는 법무법인의 대표변호사이자 권익·공익 법률 활동을 지속하는 전문 리더",
+        "source_notes": [
+          "2020 한국프로야구 은퇴선수협회와의 MOU 기사에서 법무법인 덕수 대표변호사 김형태로 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.newsis.com/view/NISX20200206_0000910647"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "박원순",
+      "t0_role": "희망제작소 상임이사",
+      "target2020": {
+        "role": "서울시장 재임 중 2020-07-10 사망",
+        "scope_score": null,
+        "sector": "politics_public_administration",
+        "evidence_date": "2020-07-10",
+        "match": "competing_event_in_target_year",
+        "confidence": "H",
+        "competing_event": "death",
+        "pre_event_role": "서울시장",
+        "pre_event_scope_score": 3,
+        "scope_rationale": "2020년 목표연도 안에 사망했으므로 전체 metric에서는 낮은 scope나 예측 실패로 치환하지 않고 competing event로 censoring",
+        "source_notes": [
+          "서울시 공식 2020-07-07 자료에서 현직 서울시장 활동 확인",
+          "연합뉴스가 2020-07-10 사망을 직접 보도"
+        ],
+        "source_urls": [
+          "https://news.seoul.go.kr/welfare/archives/520406",
+          "https://www.yna.co.kr/view/AKR20200710000500004"
+        ]
+      },
+      "coding_status": "competing_event"
+    },
+    {
+      "name": "송호근",
+      "t0_role": "서울대 사회학과 교수",
+      "target2020": {
+        "role": "POSTECH 석좌교수·사회학자",
+        "scope_score": 2,
+        "sector": "sociology_public_intellectual",
+        "evidence_date": "2020",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 단위의 저명 학자·공공 지식인으로 활동 지속",
+        "source_notes": [
+          "포스코 2020 저출산 심포지엄 공식 자료에서 송호근을 포스텍 석좌교수로 직접 확인"
+        ],
+        "source_urls": [
+          "https://newsroom.posco.com/kr/%ED%8F%AC%EC%8A%A4%EC%BD%94-%EC%95%84%EC%9D%B4-%ED%82%A4%EC%9A%B0%EA%B8%B0-%EC%A2%8B%EC%9D%80-%EC%82%AC%ED%9A%8C%EB%A5%BC-%EC%9C%84%ED%95%9C-2020-%EC%A0%80%EC%B6%9C%EC%82%B0-%EC%8B%AC/"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "염형국",
+      "t0_role": "변호사",
+      "target2020": {
+        "role": "공익인권법재단 공감 변호사·서울지방변호사회 프로보노지원센터장",
+        "scope_score": 2,
+        "sector": "public_interest_law_human_rights",
+        "evidence_date": "2020",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 단위 공익인권 변호사이자 변호사회의 프로보노 지원 리더십",
+        "source_notes": [
+          "2020 인터뷰에서 공감 소속 공익변호사 및 서울지방변호사회 프로보노지원센터장 역할을 직접 확인"
+        ],
+        "source_urls": [
+          "https://chunchu.yonsei.ac.kr/news/articleView.html?idxno=26760"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "오충현",
+      "t0_role": "KOICA 보건의료연구관",
+      "target2020": {
+        "role": "KOICA 글로벌협력의사·국제 보건의료 협력 활동",
+        "scope_score": 2,
+        "sector": "global_health_development_cooperation",
+        "evidence_date": "2020~2021",
+        "match": "exact_year_publication_plus_nearest_window_confirmation",
+        "confidence": "M",
+        "scope_rationale": "의사 전문성을 국제개발협력 현장에서 사용하는 전국·국제 단위 전문 역할",
+        "source_notes": [
+          "2020 발행된 KOICA 글로벌협력의사 활동경험담의 저자로 '글로벌협력의사 오충현'이 확인됨",
+          "2021 대한민국 해외봉사상 기사에서 피지 보건의료 활동을 한 오충현 글로벌협력의사로 확인되어 T0 KOICA·의사 경력과의 연속성을 보조"
+        ],
+        "source_urls": [
+          "https://sdmlib.sen.go.kr/sdmlib/intro/search/index.do?editMode=normal&locExquery=111016&menu_idx=4&search_text=%EC%98%A4%EC%B6%A9%ED%98%84&search_type=titlecollquery",
+          "https://www.yna.co.kr/view/AKR20211216142400371"
+        ]
+      },
+      "coding_status": "coded_exact_with_nearest_confirmation"
+    },
+    {
+      "name": "유근배",
+      "t0_role": "서울대 지리학과 교수",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "geography_academia",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": [
+          "서울대 교수·부총장 경력은 확인되지만 현재 확보한 자료는 목표창 밖이거나 날짜가 불충분하여 2020 역할을 확정하지 않음"
+        ]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "윤명철",
+      "t0_role": "동국대 교양교육원 교수",
+      "target2020": {
+        "role": "동국대 명예교수·한국해양정책학회 부회장",
+        "scope_score": 2,
+        "sector": "history_maritime_policy_public_intellectual",
+        "evidence_date": "2020-10-18",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "은퇴 후에도 전국 단위 학술·정책 활동을 지속하는 저명 학자",
+        "source_notes": [
+          "2020 한국경제 기고의 저자 소개에서 동국대 명예교수·한국해양정책학회 부회장으로 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.hankyung.com/article/202010178782g"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "이광형",
+      "t0_role": "KAIST 바이오뇌공학과 미래산업 석좌교수",
+      "target2020": {
+        "role": "KAIST 바이오및뇌공학과·문술미래전략대학원 미래산업 초빙 석좌교수",
+        "scope_score": 2,
+        "sector": "academia_future_strategy",
+        "evidence_date": "2021-02-19",
+        "match": "nearest_within_window",
+        "confidence": "H",
+        "scope_rationale": "2021 총장 취임 직전까지 석좌교수로 재직한 사실을 nearest-window로 사용; 2021 총장직은 2020 target score를 소급 상승시키지 않음",
+        "source_notes": [
+          "KAIST 공식 총장 선임 기사에서 2021-02 현재 초빙 석좌교수 재직을 확인하고 2020 국민훈장·국회의장상 수상도 기록"
+        ],
+        "source_urls": [
+          "https://news.kaist.ac.kr/news/html/news/?GotoPage=140&list_e_date=&list_s_date=&mng_no=12450&mode=V&skey=&sval=IT"
+        ]
+      },
+      "within_window_followup": {
+        "role": "KAIST 제17대 총장",
+        "scope_score": 3,
+        "evidence_date": "2021-02-23",
+        "match": "within_window_followup_not_substituted_for_2020"
+      },
+      "coding_status": "coded_nearest_within_window"
+    },
+    {
+      "name": "이명균",
+      "t0_role": "계명대 에너지환경계획학과 교수",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "energy_environment_academia",
+        "evidence_date": null,
+        "match": "pending_identity_and_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": [
+          "동명이인 검색결과가 많아 T0 계명대 교수와 2019-2021 경력을 직접 잇는 근거가 확보될 때까지 보류"
+        ]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "이연주",
+      "t0_role": "한국청년유권자연맹 운영위원장",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "civic_youth_voter",
+        "evidence_date": null,
+        "match": "pending_identity_and_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": [
+          "2019-2021 direct role evidence가 충분하지 않아 T0 시민단체 직책 지속을 가정하지 않음"
+        ]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "이은영",
+      "t0_role": "소비자시민모임 미래자원실장",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "consumer_civic",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": [
+          "과거 소비자시민모임 실장·사무총장과 2022 소비자권익포럼 고문 경력은 보이지만 2020 직접 역할을 확인할 자료가 부족해 보류"
+        ]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "이주호",
+      "t0_role": "교육과학기술부 제1차관",
+      "target2020": {
+        "role": "KDI국제정책대학원 교수·교육정책 전문가",
+        "scope_score": 2,
+        "sector": "education_policy_academia",
+        "evidence_date": "2020-08-17",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전직 장관이지만 2020 exact snapshot은 현직 KDI국제정책대학원 교수로 전국 단위 교육정책 전문 역할",
+        "source_notes": [
+          "KDI 공식 2020 언론기고 페이지가 이주호를 KDI국제정책대학원 교수로 직접 표기"
+        ],
+        "source_urls": [
+          "https://www.kdi.re.kr/share/pressContriView?bd_no=3988"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "임경진",
+      "t0_role": "하자센터 프로젝트 매니저",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "youth_civic_culture",
+        "evidence_date": null,
+        "match": "pending_identity_and_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": [
+          "2020 검색에서 같은 이름의 해군 부사관 등 명백한 동명이인이 다수 노출되어 T0 하자센터 인물과 연결하지 않음"
+        ]
+      },
+      "coding_status": "pending_identity_resolution"
+    },
+    {
+      "name": "조국",
+      "t0_role": "서울대 법학전문대학원 교수",
+      "target2020": {
+        "role": "서울대 법학전문대학원 교수 신분이나 2020-01-29부터 직위해제 상태",
+        "scope_score": 1,
+        "sector": "law_academia",
+        "evidence_date": "2020-01-29",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "2020 목표시점에는 교수 신분은 유지됐지만 정상적 직무 수행이 정지된 행정상 직위해제 상태이므로 active national professional role보다 낮게 코딩. 이는 유무죄 판단이 아님",
+        "source_notes": [
+          "연합뉴스가 서울대의 2020-01-29 직위해제 결정을 보도하며, 서울대가 이를 징계나 유무죄 판단이 아닌 교수 직무를 정지하는 행정조치라고 설명했음을 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200129091251004"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "한승희",
+      "t0_role": "서울대 교육학과 교수",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "education_academia",
+        "evidence_date": null,
+        "match": "pending_identity_and_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": [
+          "GIST 환경공학 교수 한승희 등 동명이인이 검색되지만 학력·경력상 T0 서울대 교육학과 인물과 다른 사람으로 판단되어 제외",
+          "T0 인물의 2019-2021 직접 역할을 별도로 찾아야 함"
+        ]
+      },
+      "coding_status": "pending_identity_resolution"
+    }
+  ],
+  "batch_summary": {
+    "total": 20,
+    "resolved_scored": 10,
+    "pending": 9,
+    "competing_event": 1,
+    "pending_names": [
+      "김숙정",
+      "김준영",
+      "김해성",
+      "유근배",
+      "이명균",
+      "이연주",
+      "이은영",
+      "임경진",
+      "한승희"
+    ],
+    "competing_event_names": ["박원순"],
+    "descriptive_score_counts_among_resolved_non_competing": {
+      "1": 1,
+      "2": 7,
+      "3": 2,
+      "4": 0
+    },
+    "identity_contamination_flags": [
+      "임경진: 2020 해군 부사관 등 동명이인 검색 결과 제외",
+      "한승희: GIST 환경공학 교수 등 학력·경력이 다른 동명이인 제외",
+      "이명균·김숙정: 동일 이름의 다른 직역 인물이 검색되어 직접 연속성 증거 전까지 보류"
+    ],
+    "note": "부분 배치 수치는 QA용이며 cohort prediction metric이 아니다. 박원순은 2020년 중 사망으로 competing event 처리하며 pre-event 서울시장 scope 3은 별도 보존한다."
+  }
+}
