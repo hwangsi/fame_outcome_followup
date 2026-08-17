@@ -1,0 +1,74 @@
+{
+  "schema_version": "donga_2010_repeat_selection_stratified_v0.2",
+  "generated": "2026-08-18",
+  "status": "validated_exploratory",
+  "analysis_question": "Within comparable preselection baseline strata, is 2011 repeat selection associated with subsequent advancement above the preselection lifetime peak?",
+  "eligible_common_strata": [2, 3],
+  "strata": {
+    "2": {
+      "meaning": "Advancement from baseline 2 means reaching post-T0 scope >=3.",
+      "repeat_advanced_n": 5,
+      "repeat_n": 8,
+      "repeat_rate": 0.625,
+      "single_advanced_n": 13,
+      "single_n": 38,
+      "single_rate": 0.34210526315789475,
+      "rate_difference": 0.28289473684210525,
+      "risk_ratio": 1.8269230769230769,
+      "odds_ratio": 3.2051282051282053,
+      "fisher_two_sided_p": 0.23163669544591392
+    },
+    "3": {
+      "meaning": "Advancement from baseline 3 means reaching apex scope 4.",
+      "repeat_advanced_n": 6,
+      "repeat_n": 27,
+      "repeat_rate": 0.2222222222222222,
+      "single_advanced_n": 3,
+      "single_n": 23,
+      "single_rate": 0.13043478260869565,
+      "rate_difference": 0.09178743961352656,
+      "risk_ratio": 1.7037037037037037,
+      "odds_ratio": 1.9047619047619047,
+      "fisher_two_sided_p": 0.4789708065314201
+    }
+  },
+  "pooled_common_strata_unstratified": {
+    "repeat_advanced_n": 11,
+    "repeat_n": 35,
+    "repeat_rate": 0.3142857142857143,
+    "single_advanced_n": 16,
+    "single_n": 61,
+    "single_rate": 0.26229508196721313,
+    "rate_difference": 0.05199063231850115
+  },
+  "mantel_haenszel": {
+    "mantel_haenszel_common_odds_ratio": 2.427805280528053,
+    "cmh_chi_square_df1": 2.602965936400859,
+    "cmh_p": 0.10666393286039269
+  },
+  "excluded_from_common_strata": {
+    "baseline_1": "No repeat-selected comparator; one single-selected case only.",
+    "baseline_4": "Three repeat-selected cases but no upward room on the locked 0-4 scale and no single-selected comparator."
+  },
+  "interpretation": [
+    "The very large unadjusted major/apex advantage of repeat-selected people is strongly confounded by their much higher preselection baseline status.",
+    "After comparing people from the same upward-capable baseline strata, both baseline=2 and baseline=3 point toward more advancement among repeat-selected people.",
+    "The stratum-specific estimates are imprecise and individually non-significant; the CMH common OR of 2.43 has p=0.107.",
+    "Therefore the data are compatible with a possible incremental repeat-selection signal, but they do not provide confirmatory evidence at this sample size.",
+    "This is more accurate than saying either that repeat selection has no incremental signal or that repeat selection independently predicts future rise."
+  ],
+  "guardrails": [
+    "Repeat selection occurs roughly one year after initial selection, so early post-2010 performance may influence the repeat decision (reverse causation).",
+    "CMH adjusts only for the coarse locked baseline score strata, not editorial category, age, domain, visibility, institution, or other confounders.",
+    "The 0-4 scale has ceiling effects, especially for baseline=4.",
+    "Small strata make estimates unstable; p-values are exploratory."
+  ],
+  "validation": {
+    "script": "scripts/analyze_donga_2010_repeat_stratified.py",
+    "workflow": ".github/workflows/donga-target2020-qa.yml",
+    "commit": "345a6ea410837bbf526daca1074d767f5b315e91",
+    "run_id": 32068258774,
+    "analysis_step": "success",
+    "qa_step": "success"
+  }
+}
