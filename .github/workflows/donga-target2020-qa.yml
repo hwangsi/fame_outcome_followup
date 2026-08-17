@@ -9,7 +9,10 @@ on:
       - 'scripts/build_donga_2010_t0_snapshot_scope_v0_2.py'
       - 'scripts/build_donga_2010_t0_snapshot_scope_v0_3.py'
       - 'scripts/build_donga_2010_t0_snapshot_scope_v0_4.py'
-      - 'scripts/build_donga_2010_baseline_peak_v0_1.py'
+      - 'scripts/build_donga_2010_t0_snapshot_scope_v1_1.py'
+      - 'scripts/build_donga_2010_t0_snapshot_scope_v1_2.py'
+      - 'scripts/build_donga_2010_baseline_peak_v1_1.py'
+      - 'scripts/build_donga_2010_baseline_peak_v1_2.py'
       - 'scripts/analyze_donga_2010_post_t0_peak.py'
       - 'data/typeA/donga_2010_*'
       - 'state/donga_2010_*'
@@ -27,14 +30,18 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Build T0 scope chain
+      - name: Build frozen T0 scope chain through v1.2
         run: |
           python scripts/build_donga_2010_t0_snapshot_scope.py
           python scripts/build_donga_2010_t0_snapshot_scope_v0_2.py
           python scripts/build_donga_2010_t0_snapshot_scope_v0_3.py
           python scripts/build_donga_2010_t0_snapshot_scope_v0_4.py
-      - name: Build baseline peak through T0
-        run: python scripts/build_donga_2010_baseline_peak_v0_1.py
+          python scripts/build_donga_2010_t0_snapshot_scope_v1_1.py
+          python scripts/build_donga_2010_t0_snapshot_scope_v1_2.py
+      - name: Build baseline peak through T0 v1.2
+        run: |
+          python scripts/build_donga_2010_baseline_peak_v1_1.py
+          python scripts/build_donga_2010_baseline_peak_v1_2.py
       - name: Build canonical target2020 master and metrics
         run: |
           python scripts/build_donga_2010_target2020_master.py
@@ -43,12 +50,12 @@ jobs:
         run: python scripts/analyze_donga_2010_post_t0_peak.py
       - name: Show QA
         run: |
-          wc -l data/typeA/donga_2010_t0_snapshot_scope_v0_4.csv
-          wc -l data/typeA/donga_2010_baseline_peak_through_t0_v0_1.csv
+          wc -l data/typeA/donga_2010_t0_snapshot_scope_v1_2.csv
+          wc -l data/typeA/donga_2010_baseline_peak_through_t0_v1_2.csv
           python - <<'PY'
           import json
-          t0=json.load(open('data/typeA/donga_2010_t0_snapshot_scope_v0_4.json',encoding='utf-8'))
-          baseline=json.load(open('data/typeA/donga_2010_baseline_peak_through_t0_v0_1.json',encoding='utf-8'))
+          t0=json.load(open('data/typeA/donga_2010_t0_snapshot_scope_v1_2.json',encoding='utf-8'))
+          baseline=json.load(open('data/typeA/donga_2010_baseline_peak_through_t0_v1_2.json',encoding='utf-8'))
           master=json.load(open('data/typeA/donga_2010_target2020_master_v1_0.json',encoding='utf-8'))
           peak=json.load(open('data/typeA/donga_2010_post_t0_peak_analysis_working.json',encoding='utf-8'))
           print(json.dumps(t0['qa'],ensure_ascii=False,indent=2))
@@ -57,6 +64,8 @@ jobs:
           print(json.dumps(peak['coverage'],ensure_ascii=False,indent=2))
           print(json.dumps(peak['assessed_only'],ensure_ascii=False,indent=2))
           print(json.dumps(peak['by_category'],ensure_ascii=False,indent=2))
+          assert t0['qa']['score_counts']=={'1':1,'2':50,'3':46,'4':3}
+          assert baseline['qa']['score_counts']=={'1':1,'2':49,'3':47,'4':3}
           assert peak['coverage']['rows'] >= 20
           assert peak['coverage']['assessed'] >= 19
           PY
