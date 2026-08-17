@@ -1,0 +1,93 @@
+{
+  "schema_version": "h21_2000_citizen_favorability_recovery_v0.1",
+  "generated": "2026-08-18",
+  "status": "survey_existence_and_rank1_confirmed_issue_not_recovered",
+  "publication": "한겨레21",
+  "survey_type": "citizen favorability / preferred-politician poll",
+  "survey_year": 2000,
+  "important_distinction": "This is a distinct survey from Hankyoreh21's late-2000 expert/political-reporter presidential-election probability forecast. The citizen poll asked whom citizens liked/preferred; the expert forecast asked who was likely to become president.",
+  "primary_retrospective_source": {
+    "source": "한겨레 아카이브 프로젝트 2020 '남들이 뭐라건, 노무현의 길'",
+    "url": "https://www.hani.co.kr/arti/politics/politics_general/945329.html",
+    "direct_facts": [
+      "한겨레21은 1999년과 2000년에 시민을 상대로 호감 가는 정치인이 누구인지 여론조사를 했다.",
+      "두 번 모두 1위는 노무현이었다."
+    ],
+    "provenance_strength": "publisher retrospective using Hankyoreh/Hankyoreh21 archive"
+  },
+  "known_ranked_rows": [
+    {
+      "rank": 1,
+      "name": "노무현",
+      "score_pct": null,
+      "status": "direct_publisher_retrospective"
+    }
+  ],
+  "unknown": {
+    "exact_issue_number": null,
+    "exact_publication_date": null,
+    "article_title": null,
+    "candidate_pool_n": null,
+    "full_candidate_list": null,
+    "rank_2_and_below": null,
+    "scores": null,
+    "survey_firm": null,
+    "respondent_n": null,
+    "fieldwork_date": null,
+    "collection_method": null,
+    "question_wording": null,
+    "scoring_method": null
+  },
+  "related_surveys_do_not_merge": [
+    {
+      "survey": "한겨레21 1999 시민 차세대리더/호감 정치인 조사",
+      "known": "1999-07-01 제264호, 노무현 1위, 이인제 3위, 정동영 5위",
+      "reason_separate": "different survey year"
+    },
+    {
+      "survey": "한겨레21 2000 연말 정치학자·정치부기자 대통령 당선가능성 조사",
+      "known": "이회창 압도적 1위, 노무현 정치학자 3.8%·정치부기자 1.7%",
+      "reason_separate": "different respondent population, question construct, and likely issue/date"
+    },
+    {
+      "survey": "다른 기관의 2000년 정기 정치인 선호도/대선주자 여론조사",
+      "reason_separate": "different publisher/sampling/question; cannot be used to reconstruct Hankyoreh21 ranks"
+    }
+  ],
+  "national_assembly_library_locator": {
+    "catalog_title": "한겨레21",
+    "control_number": "SERL1000000060",
+    "call_number": "P 051.1 ㅎ152",
+    "holding": "N.1 (1994)-",
+    "seoul_location": "서울관 정기간행물실(524호)",
+    "issn": "1228-4017",
+    "catalog_url": "https://dl.nanet.go.kr/search/searchInnerDetail.do?controlNo=SERL1000000060",
+    "retrieval_strategy": "2000년 전체 권호의 기사목차에서 노무현·호감·정치인·여론조사·차세대 리더 관련 표제 검색 후 원문/스캔 확인"
+  },
+  "search_paths_attempted": [
+    "site:h21.hani.co.kr 2000 호감 가는 정치인 노무현",
+    "site:hani.co.kr 한겨레21 2000 노무현 1위 호감",
+    "exact phrase searches for '2000년 한겨레21 호감 가는 정치인'",
+    "retrospective references in 2020 Hankyoreh archive project",
+    "cross-check against non-Hankyoreh 2000 preference polls to avoid accidental conflation"
+  ],
+  "rejected_methods": [
+    "Do not assume the 2000 poll occurred in June/July just because the 1999 survey did.",
+    "Do not assume the candidate pool or scoring method matched 1999 or 2004 without the primary issue.",
+    "Do not infer rank 2+ from contemporary national presidential polls.",
+    "Do not merge the citizen favorability poll with the year-end expert presidential forecast."
+  ],
+  "qa": {
+    "survey_existence_confirmed_by_publisher_retrospective": true,
+    "rank1_confirmed": true,
+    "exact_issue_identified": false,
+    "full_ranking_complete": false,
+    "primary_issue_scan_needed": true
+  },
+  "next_retrieval_gate": {
+    "preferred_source": "National Assembly Library/Hankyoreh21 2000 serial issue contents and scan",
+    "needed_artifact": "primary article/pages showing citizen-poll candidate list, ranks, scores, and methodology",
+    "search_priority": "scan 2000 issue-level article indexes for Roh/favorability/politician/survey terms without assuming a month",
+    "on_retrieval": "build a separate H21-2000 citizen Type-A cohort and compare it with the same-year expert forecast as two distinct prediction constructs"
+  }
+}
