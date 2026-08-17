@@ -1,7 +1,7 @@
 {
   "schema_version": "h21_2004_full31_recovery_v0.1",
   "generated": "2026-08-18",
-  "status": "partial_online_recovery_library_locator_identified_issue_window_revalidated",
+  "status": "partial_online_recovery_primary_text_reverified_library_gate_confirmed",
   "publication": "한겨레21",
   "article_title": "고건 · 강금실, 박근혜를 누르다",
   "article_transmission_date": "2004-09-20",
@@ -16,16 +16,31 @@
   "primary_online_source": {
     "type": "Nate retransmission of Hankyoreh21 article",
     "url": "https://news.nate.com/view/20040920n06510?mid=n0000",
-    "recovery_note": "본문 텍스트에는 1~10위와 이인제 22위가 직접 서술되어 있으나 11~31위 전체 표/그래픽은 검색·텍스트 전송본에 포함되지 않음"
+    "reverified_2026_08_18": true,
+    "recovery_note": "본문 텍스트에는 조사설계, 31명 후보군, 1~10위와 이인제 22위가 직접 서술되어 있으나 11~31위 전체 표/그래픽은 텍스트 전송본에 포함되지 않음"
+  },
+  "score_source_of_truth": {
+    "status": "reverified_from_primary_online_text",
+    "definition": "각 인물의 호감도 긍정평가와 국정수행 능력 긍정평가를 같은 비중으로 합산한 평균값",
+    "directly_exposed_scores": {
+      "고건": 60.0,
+      "강금실": 47.3,
+      "박근혜": 46.5,
+      "이회창": 33.8,
+      "정몽준": 32.4,
+      "정동영": 31.0,
+      "권영길": 26.2
+    },
+    "contamination_warning": "25.6% 등 다른 대선후보 선호도/지지도 조사 수치를 이 full31 score로 사용하지 말 것. 해당 수치는 본 기사의 호감도+능력평가 평균 체계와 다른 조사이다."
   },
   "issue_identification": {
     "previous_528_hint": "withdrawn_as_unsupported",
     "current_best_issue_hint": 526,
     "status": "inferred_narrow_window_not_primary_verified",
     "basis": [
-      "국회도서관 검색 색인에서 한겨레21 통권536호가 2004-12-02, 통권537호가 2004-12-09로 직접 확인됨.",
-      "주간 발행 순서를 역산하면 2004-09-23 전후가 통권526호에 해당하는 것이 자연스럽고, 별도 한겨레 기사도 526호를 '지난 9월' 표지기사로 지칭함.",
-      "본 차세대리더 기사는 2004-09-20 전송이므로 통권526호와 시점이 잘 맞지만, 실제 수록호는 원문/권호목차 확인 전까지 확정하지 않음."
+      "국회도서관 검색 색인에서 한겨레21 통권536호가 2004-12-02, 통권537호가 2004-12-09로 직접 확인된 기존 조사 기록.",
+      "주간 발행 순서를 역산하면 2004-09-23 전후가 통권526호에 해당하는 것이 자연스럽고, 별도 한겨레 기사도 526호를 2004년 9월의 지난 호로 지칭하는 흔적이 있음.",
+      "본 차세대리더 기사는 2004-09-20 전송이므로 통권526호와 시점이 잘 맞지만 실제 수록호는 원문/권호목차 확인 전까지 확정하지 않음."
     ],
     "do_not_treat_issue526_as_primary_fact_until_catalog_or_scan": true
   },
@@ -37,11 +52,18 @@
     "call_number": "P 051.1 ㅎ152",
     "holding": "N.1 (1994)-",
     "seoul_location": "서울관 정기간행물실(524호)",
-    "busan_location": "부산관 로비(1층 로비; 최근 권호)",
+    "busan_location": "부산관 로비(최근 권호)",
     "issn": "1228-4017",
     "catalog_url": "https://dl.nanet.go.kr/search/searchInnerDetail.do?controlNo=SERL1000000060",
-    "catalog_capability": "권호별 기사목차 및 원문보기 항목을 제공하는 것으로 검색 색인에 확인됨",
-    "retrieval_value": "2004년 9월20일 전후 권호, 우선 통권526호 전후의 기사목차를 조회하면 누락된 표/그래픽 원문을 가장 빠르게 찾을 가능성이 높음"
+    "catalog_capability": "권호별 발행일자/권호명 및 기사명·원문·기사목차 테이블 구조가 공개 검색 페이지에 확인됨",
+    "retrieval_value": "2004년 9월20일 전후 권호의 기사목차 또는 원문을 직접 열면 누락된 표/그래픽을 복원할 가능성이 가장 높음"
+  },
+  "official_hankyoreh_page_view_constraint": {
+    "url": "https://newsviews.hani.co.kr/",
+    "hankyoreh21_coverage_start": "2013-06-24",
+    "coverage_end": "current",
+    "implication": "한겨레 공식 지면보기는 2004년 한겨레21을 제공하지 않으므로 본 full31 복원에는 사용할 수 없음",
+    "verified_2026_08_18": true
   },
   "known_ranked_rows": [
     {"rank": 1, "name": "고건", "score_pct": 60.0, "status": "direct_text"},
@@ -65,7 +87,9 @@
     "top10_complete_names": true,
     "top10_scores_complete": false,
     "full31_complete": false,
+    "primary_score_definition_reverified": true,
     "library_locator_identified": true,
+    "official_hani_viewer_2004_unavailable": true,
     "previous_issue528_hint_withdrawn": true
   },
   "search_paths_attempted": [
@@ -77,12 +101,13 @@
     "library/catalog and PDF/scan web searches",
     "image-search attempt for article/table scan",
     "National Assembly Library serial catalog discovery",
-    "cross-check of independently dated issue536=2004-12-02 and issue537=2004-12-09"
+    "Hankyoreh official page-view coverage check",
+    "cross-check of independently dated issue-number clues"
   ],
   "rejected_reconstruction_methods": [
     "Do not infer membership from contemporary prominence alone.",
     "Do not treat search-engine return for article-title + candidate as evidence of candidate inclusion because query terms may be ignored/loosely matched.",
-    "Do not borrow ranks from other 2004 surveys such as KSOI or other media polls.",
+    "Do not borrow ranks or percentages from other 2004/2005 presidential-preference surveys or other media polls.",
     "Do not fabricate ranks 11~31 from later political prominence.",
     "Do not treat issue526 as confirmed until the catalog/article scan explicitly links this article to that issue."
   ],
@@ -91,6 +116,6 @@
     "first_issue_to_check": "통권526호 전후",
     "needed_artifact": "page image/PDF showing the 31-candidate ranking table or candidate list",
     "fallback": "서울관 정기간행물실(524호)에서 청구기호 P 051.1 ㅎ152의 해당 권호 열람/복사",
-    "on_retrieval": "transcribe all 31 names/ranks/scores with page-level provenance, then build h21_2004_full31 roster and extend Type-A common master"
+    "on_retrieval": "transcribe all 31 names/ranks/scores with page-level provenance, then build h21_2004_full31 canonical roster and extend Type-A common master"
   }
 }
