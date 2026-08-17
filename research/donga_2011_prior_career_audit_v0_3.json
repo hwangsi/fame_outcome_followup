@@ -1,0 +1,146 @@
+{
+  "schema_version": "donga_2011_prior_career_audit_v0.3",
+  "generated": "2026-08-18",
+  "selection_cutoff": "2011-04-01",
+  "status": "all_remaining_new_score3_prior_apex_checks_complete",
+  "extends": "research/donga_2011_prior_career_audit_v0_2.json",
+  "scope": "Audit all remaining new 2011 entrants whose audited T0 score is 3. Because baseline can only rise if a pre-cutoff score-4 apex existed, this pass is an explicit prior-apex screen.",
+  "rules_ref": "state/coding_rules_typeA_sector_scope_v0_1.md",
+  "audited_n": 14,
+  "corrections": [],
+  "audited_no_change": [
+    {
+      "name": "곽노현",
+      "baseline_score": 3,
+      "reason": "By cutoff he was Seoul superintendent of education, already a major metropolitan public-education leadership role. His documented earlier career includes professor, National Human Rights Commission secretary-general and presidential policy-advisory work; no pre-cutoff score-4 national/global apex role is present.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.seoul.co.kr/news/politics/election2010/2010/05/18/20100518014009",
+        "https://www.yna.co.kr/view/AKR20100603112100004"
+      ]
+    },
+    {
+      "name": "김남구",
+      "baseline_score": 3,
+      "reason": "Korea Investment Holdings' official chronology places him as representative director/president/vice-chairman from 2003-2019; the chairman role began in 2020. Thus pre-cutoff major financial-group leadership supports 3, not the top-conglomerate-chair/global-apex score 4.",
+      "confidence": "H",
+      "source_urls": ["https://www.koreaholdings.com/kr/manage/director"]
+    },
+    {
+      "name": "김상욱",
+      "baseline_score": 3,
+      "reason": "Pre-cutoff international nanomaterials research stature and major science awards support score 3. No Nobel/Fields-level or comparable field-defining global apex had occurred by cutoff.",
+      "confidence": "H",
+      "source_urls": ["https://www.kaist.ac.kr/newsen/html/news/?skey=prof&sval=Kim+Sang+Ouk"]
+    },
+    {
+      "name": "김승환",
+      "baseline_score": 3,
+      "reason": "The 2011 official role combined secretary-general leadership of the Asia Pacific Center for Theoretical Physics with institute leadership, which is major international scientific-organization scope. No pre-cutoff Nobel/Fields-equivalent or comparable global-apex event was identified.",
+      "confidence": "M",
+      "source_urls": ["https://www.donga.com/news/100people/2011/text_list.html"]
+    },
+    {
+      "name": "김영달",
+      "baseline_score": 3,
+      "reason": "IDIS had reached leading global DVR-industry status before cutoff. This satisfies major/global industry leadership but not the much narrower world-industry-apex founder/CEO score-4 threshold.",
+      "confidence": "H",
+      "source_urls": [
+        "https://biz.chosun.com/site/data/html_dir/2010/10/08/2010100800451.html",
+        "https://www.mk.co.kr/news/stock/4800821"
+      ]
+    },
+    {
+      "name": "김은성",
+      "baseline_score": 3,
+      "reason": "His supersolidity co-discovery and pre-cutoff Science/Nature Physics research are field-leading and clearly score 3, but not Nobel/Fields-level or otherwise sufficient for locked science score 4.",
+      "confidence": "H",
+      "source_urls": [
+        "https://kaist.ac.kr/newsen/html/news/?GotoPage=189&list_e_date=&list_s_date=&mng_no=3711&mode=V&skey=&sval=",
+        "https://pubmed.ncbi.nlm.nih.gov/21097904/"
+      ]
+    },
+    {
+      "name": "김철영",
+      "baseline_score": 3,
+      "reason": "Mirae Nanotech's international optical-film market position and major global customers support major-industry leadership. The pre-cutoff evidence does not establish a world-industry-apex founder/CEO role meeting score 4.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.mk.co.kr/news/business/4730373",
+        "https://view.asiae.co.kr/article/2010032214213709737"
+      ]
+    },
+    {
+      "name": "변대규",
+      "baseline_score": 3,
+      "reason": "Humax had surpassed KRW 1 trillion sales, generated nearly all sales overseas and ranked among global set-top-box leaders. This is strong score-3 global industry leadership but not world-industry apex score 4.",
+      "confidence": "H",
+      "source_urls": ["https://www.hankyung.com/article/2011012664651"]
+    },
+    {
+      "name": "석지영",
+      "baseline_score": 3,
+      "reason": "She received tenure at Harvard Law School in October 2010 as its first tenured Asian-American woman, an exceptional international academic milestone. Under the locked academic rubric this is score 3 rather than Nobel/Fields-equivalent global apex 4.",
+      "confidence": "H",
+      "source_urls": [
+        "https://hls.harvard.edu/today/suk-gains-tenure-as-professor-of-law-at-harvard/",
+        "https://www.donga.com/news/Society/article/all/20101213/33243703/1"
+      ]
+    },
+    {
+      "name": "유범재",
+      "baseline_score": 3,
+      "reason": "As KIST Cognitive Robotics Center head, he led nationally prominent humanoid-robot development including Maru-Z. This is major national research-program leadership but not a score-4 global scientific apex.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.yna.co.kr/view/AKR20100115143700017",
+        "https://news.kaist.ac.kr/site/news/html/news/index.php?GotoPage=1&list_e_date=&list_s_date=&mng_no=1097&mode=V&skey=keyword&sval=%EC%B2%98%EC%9D%B4"
+      ]
+    },
+    {
+      "name": "장하석",
+      "baseline_score": 3,
+      "reason": "Before cutoff he had won the Lakatos Award and been appointed Cambridge's Hans Rausing Professor, the department's senior chair. These are outstanding international academic achievements but remain below the locked Nobel/Fields-equivalent science/academic apex score 4.",
+      "confidence": "H",
+      "source_urls": ["https://www.khan.co.kr/article/20100419031345A"]
+    },
+    {
+      "name": "전혜경",
+      "baseline_score": 3,
+      "reason": "The official 2011 roster identifies her as a UNICEF Senior Advisor, a high-level international public role consistent with scope 3. No evidence in this pass establishes that she had headed a major global multilateral organization before cutoff, the public-sector score-4 threshold.",
+      "confidence": "M",
+      "source_urls": ["https://www.donga.com/news/100people/2011/text_list.html"]
+    },
+    {
+      "name": "함돈희",
+      "baseline_score": 3,
+      "reason": "By cutoff he was Harvard's Gordon McKay Professor and an internationally recognized engineering innovator. This is clear score-3 academic scope, without a pre-cutoff Nobel/Fields-equivalent or comparable global-apex event.",
+      "confidence": "H",
+      "source_urls": ["https://people.seas.harvard.edu/~donhee/donheeham.htm"]
+    },
+    {
+      "name": "황철주",
+      "baseline_score": 3,
+      "reason": "Before cutoff he led Jusung Engineering through major international solar-equipment exports and also chaired the Korea Venture Business Association. These are major national/global industry leadership signals, but not the locked top-conglomerate/world-industry-apex score-4 level.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.etnews.com/201004040100",
+        "https://jusung.com/post/481"
+      ]
+    }
+  ],
+  "qa": {
+    "audited_n": 14,
+    "corrected_n": 0,
+    "no_change_n": 14,
+    "cumulative_new_people_audited_n": 35,
+    "new_2011_people_total": 62,
+    "remaining_prior_career_audit_n": 27,
+    "all_new_t0_score3_or4_audited": true
+  },
+  "guardrails": [
+    "Score-3 entrants can only have a higher baseline if a defensible pre-cutoff score-4 apex is documented.",
+    "Prestigious professorships, international awards and global-company leadership remain score 3 unless they meet the explicitly locked apex examples.",
+    "Two rows with only official-roster chronology support are retained at M confidence and can be upgraded if richer pre-cutoff biographies are recovered."
+  ]
+}
