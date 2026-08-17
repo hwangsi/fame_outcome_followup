@@ -2,6 +2,7 @@
   "schema_version": "canonical_identity_overrides_v0.1",
   "generated": "2026-08-18",
   "status": "active_for_typeA_v0_3_and_later",
+  "qa_trigger_revision": 1,
   "policy": {
     "default_identity_key": "name",
     "override_rule": "When two placements share the same Korean name but are adjudicated as different people, each placement must receive an explicit identity_key. The person_id is derived from identity_key, never from display name alone.",
