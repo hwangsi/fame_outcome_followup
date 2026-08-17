@@ -1,0 +1,13 @@
+{
+  "schema_version":"donga_2010_t0_baseline_freeze_v1.4",
+  "generated":"2026-08-18",
+  "status":"frozen_superseding_v1_3",
+  "supersedes":"state/donga_2010_t0_baseline_freeze_v1_3.json",
+  "reason":"Final leader-category audit identified a pre-selection national executive role for Kim Byung-kook that affects baseline peak but not the May-2010 snapshot.",
+  "t0_runtime_output":"data/typeA/donga_2010_t0_snapshot_scope_v1_3.json",
+  "baseline_runtime_output":"data/typeA/donga_2010_baseline_peak_through_t0_v1_4.json",
+  "new_correction":{"name":"김병국","t0_unchanged":2,"baseline_old":2,"baseline_new":3,"basis":"2008 presidential senior secretary for foreign affairs and national security"},
+  "qa_expected":{"total":100,"t0_score_counts":{"1":1,"2":48,"3":48,"4":3},"t0_mean":2.53,"baseline_score_counts":{"1":1,"2":46,"3":50,"4":3},"baseline_mean":2.55,"baseline_greater_than_t0_n":2,"baseline_greater_than_t0_names":["이소연","김병국"]},
+  "audit_note":"All six editorial groups have now received a pre-T0 baseline audit. Further baseline changes require genuinely new evidence or a rubric change.",
+  "versioning_rule":"Do not modify v1.4 silently; later discoveries require v1.5 or later."
+}
