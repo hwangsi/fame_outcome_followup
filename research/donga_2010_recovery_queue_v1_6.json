@@ -1,0 +1,78 @@
+{
+  "version": "v1.6",
+  "generated": "2026-08-18",
+  "supersedes": "research/donga_2010_recovery_queue_v1_5.json",
+  "canonical_source": "data/typeA/donga_2010_canonical_roster_v1_1.json",
+  "canonical_row_resolved_confirmed_n": 78,
+  "membership_slots_remaining_to_100": 22,
+  "canonical_change_in_v1_6": 0,
+  "new_research_signal": {
+    "primary_print_assets": {
+      "status": "exact_asset_endpoints_resolved_low_resolution_only",
+      "archive_date_page": "https://www.donga.com/archive/newslibrary/view?ymd=20100510",
+      "a1_500px": "https://dimg.donga.com/a/500/0/90/5/PDF_EXT/NEWS/2010/05/10/2010051045A01010101.jpg",
+      "a4_500px": "https://dimg.donga.com/a/500/0/90/5/PDF_EXT/NEWS/2010/05/10/2010051045A04040101.jpg",
+      "next": "recover high-resolution derivative or original source object"
+    },
+    "donga_newsbook_2": {
+      "status": "first_party_structure_confirmed",
+      "title": "2020년을 빛낼 대한민국 100인",
+      "page_count": 146,
+      "profile_structure": "category main screens with person photos linking to individual profile pages",
+      "historical_distribution": ["dnb.donga.com", "dongabiz.com"],
+      "recovery_value": "potential one-shot recovery of exact 100-person roster and category mapping",
+      "file_or_live_archive_recovered": false
+    },
+    "free_creator_missing_three": {
+      "names": ["김윤진", "신지애", "이청용"],
+      "source_class": "secondary_copied_category_list",
+      "canonical_action": "none_until_qualifying_2010_row_evidence",
+      "shin_jiae": "2011 first-party membership confirmed; high-priority unresolved repeat candidate"
+    },
+    "yoon_myungchul": {
+      "status": "strong_secondary_year_explicit",
+      "year_explicit_source": "https://www.omiglobal.net/entry/오미글로벌-저자-윤명철",
+      "claim": "2010 동아일보 2020년 한국을 빛낼 100인 선정",
+      "canonical_action": "none_until_first_party_or_contemporaneous_official_evidence"
+    }
+  },
+  "repeat_2010_2011": {
+    "official_total_n": 38,
+    "row_resolved_n": 35,
+    "remaining_n": 3,
+    "science": {"resolved_n": 8, "target_n": 8, "remaining_n": 0},
+    "business": {
+      "resolved_n": 13,
+      "target_n": 14,
+      "remaining_n": 1,
+      "candidate_pool": ["권구훈", "김가영", "김남구", "손병두", "최태원", "황철주"],
+      "crossyear_excluded": ["양윤선", "정용진"]
+    },
+    "culture_leader_intellectual_combined": {
+      "resolved_n": 14,
+      "target_n": 16,
+      "remaining_n": 2,
+      "high_priority_signal": ["신지애"],
+      "note": "2011 official + 2010 copied-list intersection is suggestive but not sufficient."
+    }
+  },
+  "search_failures_logged": {
+    "exact_a1_a4_filename_web_index": "no indexed high-resolution variant found",
+    "dnb2_public_file_search": "no public file or indexed live profile archive found",
+    "kim_yunjin_2010_direct": "not found",
+    "shin_jiae_2010_direct": "not found",
+    "lee_chungyong_2010_direct": "not found",
+    "yoon_myungchul_2010_qualifying": "not found; secondary explicit-year source only"
+  },
+  "priority_search_tracks": [
+    {"priority": 1, "track": "A1_A4_highres_endpoint", "goal": "derive or locate original/high-resolution objects from exact 2010 asset filenames"},
+    {"priority": 2, "track": "DNB2_archive_recovery", "goal": "recover 146-page Donga NewsBook 2 or profile-page index"},
+    {"priority": 3, "track": "shin_jiae_2010_repeat", "goal": "find qualifying 2010 evidence and potentially resolve one nonbusiness repeat"},
+    {"priority": 4, "track": "kim_yunjin_lee_chungyong", "goal": "qualify or reject the two other copied-list free-creator candidates"},
+    {"priority": 5, "track": "repeat_business_last_one", "goal": "resolve one of 권구훈/김가영/김남구/손병두/최태원/황철주"},
+    {"priority": 6, "track": "yoon_myungchul_qualifying", "goal": "find 2010 Donga or contemporaneous institutional evidence"},
+    {"priority": 7, "track": "category_reconciliation", "goal": "after membership recovery, reconcile to 20/25/20/25/10"}
+  ],
+  "acceptance_rule": "No person enters the canonical frozen roster without row-level evidence guaranteeing 2010 selection under the predefined hierarchy.",
+  "analysis_gate": "Do not calculate 2020 target-year metrics before exact 100/100 roster freeze, identity resolution, baseline/provenance storage, and category reconciliation."
+}
