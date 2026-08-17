@@ -1,0 +1,31 @@
+{
+  "version": "v0.8",
+  "generated": "2026-08-17",
+  "legacy_aggregate_confirmed_n": 78,
+  "row_resolved_confirmed_min_n": 74,
+  "legacy_vs_row_resolved_gap": 4,
+  "row_resolved_membership_slots_remaining": 26,
+  "completed_tracks": [
+    {"track":"2012_three_year_hall_of_fame","status":"complete","resolved_n":20},
+    {"track":"2011_full_roster_recovery","status":"complete","resolved_n":100},
+    {"track":"2011_science_repeat","status":"complete","resolved_n":8,"target_n":8}
+  ],
+  "repeat_2011": {
+    "official_repeat_total_n": 38,
+    "row_resolved_repeat_n": 35,
+    "repeat_remaining_n": 3,
+    "business": {"resolved_n":13,"target_n":14,"remaining_n":1},
+    "science": {"resolved_n":8,"target_n":8,"remaining_n":0},
+    "culture_leader_intellectual_combined": {"resolved_n":14,"target_n":16,"remaining_n":2},
+    "new_in_v0_8": ["나경원","김준영"]
+  },
+  "search_tracks": [
+    {"priority":1,"track":"2011_business_repeat_last_one","goal":"identify the one remaining 2010-2011 repeat economy member with exact-year or logically complete first-party evidence"},
+    {"priority":2,"track":"2011_nonbusiness_repeat_last_two","goal":"identify two remaining repeats across culture, leaders and intellectuals"},
+    {"priority":3,"track":"legacy_78_row_reconciliation","goal":"reattach the remaining four legacy aggregate memberships to explicit per-person evidence rows"},
+    {"priority":4,"track":"2010_original_print_roster","goal":"recover original 2010 A1/A4 printed roster or first-party archived list"},
+    {"priority":5,"track":"category_resolution","goal":"resolve 2010 category only when direct category evidence exists"}
+  ],
+  "acceptance_rule": "No person enters the canonical frozen roster without row-level evidence that guarantees 2010 selection.",
+  "analysis_gate": "Do not calculate 2020 target-year prediction metrics before exact 100/100 T0 roster freeze and category reconciliation."
+}
