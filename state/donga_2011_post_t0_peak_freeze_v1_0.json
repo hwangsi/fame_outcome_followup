@@ -1,0 +1,78 @@
+{
+  "schema_version": "donga_2011_post_t0_peak_freeze_v1.0",
+  "generated": "2026-08-18",
+  "cohort": "동아일보 2011 10년 뒤 한국을 빛낼 100인",
+  "selection_cutoff": "2011-04-01",
+  "observation_end": "2026-08-18",
+  "status": "final_adjudicated_100_pending_0",
+  "baseline_ref": "state/donga_2011_baseline_freeze_v1_0.json",
+  "t0_identity_ref": "data/typeA/donga_2011_t0_roles_v0_1.json",
+  "master_builder_ref": "scripts/build_donga_2011_post_t0_master.py",
+  "runtime_master_ref": "analysis/donga_2011_post_t0_master_v1_0.json",
+  "runtime_metrics_ref": "analysis/donga_2011_post_t0_metrics_v1_0.json",
+  "new_audit_refs": [
+    "research/donga_2011_post_t0_new_audit_batch1_v0_1.json",
+    "research/donga_2011_post_t0_new_audit_batch2_v0_1.json",
+    "research/donga_2011_post_t0_new_audit_batch3_v0_1.json",
+    "research/donga_2011_post_t0_new_audit_batch4_v0_1.json",
+    "research/donga_2011_post_t0_new_audit_batch5_v0_1.json",
+    "research/donga_2011_post_t0_new_audit_batch6_v0_1.json"
+  ],
+  "population": {
+    "total": 100,
+    "adjudicated": 100,
+    "scored": 99,
+    "not_assessable": 1,
+    "pending": 0,
+    "repeat_2010_2011": 38,
+    "new_2011_entrants": 62,
+    "not_assessable_names": ["신준호"],
+    "death_truncated_n": 2,
+    "death_truncated_names": ["김정주", "박원순"],
+    "identity_anchor_validated_n": 42
+  },
+  "primary_full_cohort_conservative": {
+    "denominator": 100,
+    "major_ge3_n": 90,
+    "major_ge3_rate": 0.9,
+    "apex_eq4_n": 12,
+    "apex_eq4_rate": 0.12,
+    "advanced_n": 36,
+    "advanced_rate": 0.36,
+    "advancement_classes": {
+      "advanced": 36,
+      "sustained_high": 53,
+      "no_clear_advancement": 7,
+      "lower_than_baseline": 3,
+      "not_assessable": 1
+    },
+    "post_t0_score_counts_scored": {
+      "2": 9,
+      "3": 78,
+      "4": 12
+    }
+  },
+  "sensitivity_assessable_only": {
+    "denominator": 99,
+    "major_ge3_n": 90,
+    "major_ge3_rate": 0.9090909090909091,
+    "apex_eq4_n": 12,
+    "apex_eq4_rate": 0.12121212121212122,
+    "advanced_n": 36,
+    "advanced_rate": 0.36363636363636365
+  },
+  "qa": {
+    "workflow": ".github/workflows/donga-2011-postt0-seed-qa.yml",
+    "run_id": 32074307890,
+    "head_commit": "82d6dd13122952c2287537f7d12298297e599900",
+    "conclusion": "success"
+  },
+  "interpretation_guardrails": [
+    "The primary denominator is all 100 roster members; the one not-assessable row is conservatively counted as a non-hit.",
+    "Assessable-only sensitivity excludes the single not-assessable row and uses denominator 99.",
+    "Major-leadership precision and baseline-adjusted advancement answer different questions and must not be conflated.",
+    "Advancement is post-selection peak minus pre-selection lifetime peak through 2011-04-01.",
+    "Repeat-selected status is observational and not randomized.",
+    "The roster is alphabetical within editorial categories, so ranking accuracy is not estimable."
+  ]
+}
