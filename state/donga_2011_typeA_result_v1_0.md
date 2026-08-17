@@ -80,20 +80,56 @@ Scored 99명의 post-T0 peak 분포:
 
 그러나 이 표를 곧바로 “2011 편집진이 2010보다 예측을 더 잘했다”는 결론으로 읽으면 안 된다. 두 코호트의 baseline 구성과 분야 구성은 다르고, **38명이 반복 선정**되어 독립 표본도 아니다. 현재 단계의 비교는 design-aware descriptive comparison이다.
 
-## 6. 반복선정의 해석
+## 6. 2011 repeat 38명 vs new entrant 62명 — prospective 분석 완료
 
-2010 시점에서 나중의 2011 재선정 여부를 이용해 2010 이후 outcome을 나누는 분석은 look-ahead가 포함되므로 association으로만 해석한다.
+2010 시점에서 나중의 2011 재선정 여부로 2010 outcome을 나누는 기존 분석은 look-ahead가 포함된다. 반면 2011 선정 시점에는 `2010에도 선정되었는가`가 이미 알려진 baseline 정보다.
 
-반면 **2011 선정 시점에는 ‘2010에도 선정되었는가’가 이미 알려진 baseline 정보**다. 따라서 최종 2011 outcome을 이용해 repeat 38명과 new entrant 62명을 비교하는 것은 반복선정 여부의 prospective 추가 예측정보를 검토하는 보다 적절한 다음 분석이다.
+따라서 이번 비교는 다음 질문에 답한다.
 
-이 분석에서는 반드시:
+> **2011년 선정 시점에서 반복 선정되었다는 정보가 당시 baseline prestige를 넘어 이후 성과에 추가적인 예측정보를 제공했는가?**
 
-- raw major / apex / advancement
-- baseline strata
-- repeat vs new의 baseline distribution
-- 가능하면 baseline-adjusted regression 또는 CMH-style analysis
+### 6.1 Baseline imbalance
 
-를 함께 본다.
+| baseline score | Repeat | New |
+|---:|---:|---:|
+| 2 | 8 | 30 |
+| 3 | 27 | 30 |
+| 4 | 3 | 2 |
+
+repeat 집단은 처음부터 baseline 3–4에 훨씬 많이 몰려 있다. 따라서 raw outcome과 baseline-stratified 결과를 반드시 함께 봐야 한다.
+
+### 6.2 Raw outcomes
+
+| Outcome | Repeat | New | Difference | Fisher p |
+|---|---:|---:|---:|---:|
+| Major ≥3 | **35/38 = 92.1%** | **55/62 = 88.7%** | +3.4 pp | 0.738 |
+| Apex =4 | **9/38 = 23.7%** | **3/62 = 4.8%** | **+18.8 pp** | **0.00885** |
+| Advanced | **11/38 = 28.9%** | **25/62 = 40.3%** | -11.4 pp | 0.288 |
+
+### 6.3 Baseline-stratified analysis
+
+신준호를 제외한 assessable 99명을 frozen baseline score로 층화했다.
+
+| Outcome | MH common OR | CMH p | Exact conditional p |
+|---|---:|---:|---:|
+| Major ≥3 | **0.734** | 0.657 | **0.691** |
+| Apex =4 | **8.690** | **0.0167** | **0.0268** |
+| Advanced | **1.825** | 0.276 | **0.339** |
+
+### 6.4 해석
+
+- **Major:** repeat 여부의 추가 정보가 거의 없다. 두 집단 모두 약 90%로 이미 ceiling에 가깝다.
+- **Apex:** repeat 23.7% vs new 4.8%였고, baseline 층화 후에도 MH OR≈8.69, exact p=0.0268로 강한 association이 남는다.
+- **Advanced:** raw로는 new가 더 높지만 repeat가 시작부터 높은 baseline에 몰려 있다. 층화 후 OR 방향은 1보다 커지지만 통계적으로 확증적이지 않다.
+
+> **반복 선정은 ‘더 성장할 사람’을 명확히 골라내는 신호라기보다, 이미 강한 후보군 가운데 장차 극소수 apex까지 갈 인물을 재차 포착하는 editorial consensus signal일 가능성이 있다.**
+
+다만 apex 사건은 전체 12건뿐이고 baseline score도 거친 척도이므로, causal effect나 확정적 효과크기로 해석하지 않는다.
+
+상세 분석:
+
+- `state/donga_2011_repeat_predictive_value_v1_0.md`
+- `state/donga_2011_repeat_predictive_value_freeze_v1_0.json`
 
 ## 7. Identity QA에서 얻은 교훈
 
@@ -108,30 +144,40 @@ batch 3 이후 frozen T0 identity anchor를 의무화했다. 이름만 검색하
 
 ## 8. 재현성
 
-최종 builder:
+최종 outcome builder:
 
 - `scripts/build_donga_2011_post_t0_master.py`
+
+repeat predictive-value analysis:
+
+- `scripts/analyze_donga_2011_repeat_predictive_value.py`
 
 runtime outputs:
 
 - `analysis/donga_2011_post_t0_master_v1_0.json`
 - `analysis/donga_2011_post_t0_metrics_v1_0.json`
+- `analysis/donga_2011_repeat_predictive_value_v1_0.json`
+- `analysis/donga_2011_repeat_predictive_value_v1_0.md`
 
 freeze:
 
 - `state/donga_2011_post_t0_peak_freeze_v1_0.json`
+- `state/donga_2011_repeat_predictive_value_freeze_v1_0.json`
 
-최신 QA:
+최신 repeat-analysis QA:
 
 - workflow: `.github/workflows/donga-2011-postt0-seed-qa.yml`
-- run ID: `32074307890`
-- head commit: `82d6dd13122952c2287537f7d12298297e599900`
+- run ID: `32074755458`
+- head commit: `f58533302bd85eabd38bcd0e62ee3dead5de27b4`
 - conclusion: **success**
 
 ## 9. 다음 분석
 
-다음 우선순위는 **2011 repeat 38명 vs new entrant 62명의 prospective post-2011 outcome 비교**다.
+다음 우선순위는 동아 2010과 2011을 **200 placements / 162 unique persons**의 two-wave longitudinal dataset으로 통합하는 것이다.
 
-이것은 앞선 2010 repeat association 분석보다 방법론적으로 더 강한 질문이다.
+핵심 질문:
 
-> “2011년 선정 시점에서, 이미 전년도에도 다시 선택된 사람이라는 정보가 baseline prestige를 넘어 추가적인 미래 성과 정보를 제공했는가?”
+1. 2010-only 62명, repeat 38명, 2011-new 62명의 person-level trajectory는 어떻게 다른가?
+2. repeat 38명의 2010→2011 baseline과 이후 peak가 어떻게 이동했는가?
+3. placement-level precision과 person-level outcome을 분리하면 screening / persistence / apex signal이 어떻게 달라지는가?
+4. 이후 이 구조를 뉴스메이커·한겨레21과 같은 Type-A common master에 연결할 수 있는가?
