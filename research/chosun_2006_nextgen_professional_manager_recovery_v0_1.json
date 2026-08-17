@@ -1,0 +1,70 @@
+{
+  "schema_version": "chosun_2006_nextgen_professional_manager_recovery_v0.1",
+  "generated": "2026-08-18",
+  "status": "candidate_cohort_not_yet_promoted",
+  "working_title": "2006 차세대 리더 전문경영인",
+  "publication_attribution": "조선일보",
+  "publication_attribution_confidence": "M-H",
+  "cohort_type_candidate": "A",
+  "domain_candidate": "economy_business",
+  "known_direct_members": [
+    {
+      "name": "안승권",
+      "t0_role": "LG전자 모바일커뮤니케이션 연구소장 겸 부사장",
+      "membership_status": "confirmed_by_two_independent_biographical_sources",
+      "confidence": "H",
+      "sources": [
+        "https://www.ajou.ac.kr/kr/ajou/news.do?articleNo=74865&mode=view",
+        "https://www.yc.ac.kr/www/presidents-profile.do"
+      ],
+      "source_text_summary": "아주대 2006-11-24 기사와 연암공대 총장 공식 프로필 모두 조선일보가 선정한 2006 차세대 리더 전문경영인으로 명시."
+    }
+  ],
+  "known_by_date": "2006-11-24",
+  "unknowns": {
+    "exact_original_article_date": true,
+    "exact_original_article_title": true,
+    "roster_size": true,
+    "full_roster": true,
+    "selection_mechanism": true,
+    "candidate_pool": true,
+    "rank_or_score": true,
+    "whether_daily_chosun_or_affiliated_weekly_brand": true
+  },
+  "non_roster_evidence": [
+    {
+      "title": "우린 전문경영인 차세대 리더",
+      "publication": "조선비즈",
+      "date": "2007-03-04",
+      "url": "https://biz.chosun.com/site/data/html_dir/2007/03/04/2007030400648.html",
+      "names_mentioned": ["김기남","서강덕","오세용","이원성","안승권","하영봉","박규석","김대훈","유정준","조원태","박세창","허세홍","조현준","조현문","조현상"],
+      "guardrail": "This is a 2007 trend article describing emerging executives. It is NOT evidence that these people belonged to the 2006 selected cohort. Do not use as roster."
+    }
+  ],
+  "archive_constraints": {
+    "bigkinds": {
+      "chosun_coverage": "2018-01-01 ~ current only",
+      "usable_for_2006": false,
+      "source": "https://www.bigkinds.or.kr/v2/intro/news.do"
+    },
+    "required_routes": [
+      "Chosun original archive/search",
+      "National Assembly Library / National Library periodical or newspaper archive",
+      "contemporaneous company/university biographies that reproduce the selection",
+      "independent archived copies of the original list"
+    ]
+  },
+  "promotion_criteria": [
+    "Recover original or faithfully reproduced roster with more than isolated individual membership evidence.",
+    "Recover selection date and selection mechanism/candidate frame.",
+    "Establish whether this was a finite selected list versus a descriptive feature series.",
+    "Do not infer roster from the 2007 ChosunBiz trend article.",
+    "Do not add the cohort to Type-A common master until roster denominator is known."
+  ],
+  "qa": {
+    "confirmed_member_n": 1,
+    "roster_denominator_known": false,
+    "selection_mechanism_known": false,
+    "eligible_for_common_master": false
+  }
+}
