@@ -1,0 +1,88 @@
+{
+  "schema_version": "h21_2000_yearend_presidential_forecast_recovery_v0.1",
+  "generated": "2026-08-18",
+  "status": "secondary_reconstruction_anchor_primary_issue_required",
+  "publication": "한겨레21",
+  "survey_type": "expert/political-reporter presidential-election probability forecast",
+  "timeframe": "2000년 연말",
+  "important_distinction": "This is NOT the same survey as the 2000 citizen favorability poll retrospectively described by Hankyoreh as having Roh Moo-hyun ranked first. The year-end forecast asked experts/reporters who was likely to become president and reportedly favored Lee Hoi-chang overwhelmingly.",
+  "known_results": [
+    {
+      "name": "이회창",
+      "result": "압도적 1위",
+      "political_scientist_pct": null,
+      "political_reporter_pct": null,
+      "status": "secondary_retrospective"
+    },
+    {
+      "name": "노무현",
+      "result": "낮은 당선 가능성 평가",
+      "political_scientist_pct": 3.8,
+      "political_reporter_pct": 1.7,
+      "status": "secondary_retrospective"
+    }
+  ],
+  "secondary_sources": [
+    {
+      "source": "건대신문 2018 칼럼",
+      "url": "https://kung.kr/ku_media/5897966",
+      "fact": "2000년 연말 한겨레21이 정치학자와 정치부 기자를 대상으로 '출마가능성 거론 후보 중 대통령이 될 가능성'을 조사했고 이회창이 압도적 1위, 노무현은 정치학자 3.8%·정치부 기자 1.7%였다고 회고"
+    },
+    {
+      "source": "제16대 대통령 선거 관련 후대 자료의 한겨레21 표지 이미지 인용",
+      "url": "https://namu.moe/w/%EC%A0%9C16%EB%8C%80%20%EB%8C%80%ED%86%B5%EB%A0%B9%20%EC%84%A0%EA%B1%B0",
+      "image_legacy_url": "http://legacy.www.hani.co.kr/section-021003000/2000/021003000120001227340-21.jpg",
+      "fact": "2000년 연말 한겨레21 커버스토리로 해당 예측조사가 존재했음을 보여주는 옛 표지 이미지 경로를 인용",
+      "caution": "후대 위키성 자료는 primary ranking source로 사용하지 않고 issue/date recovery clue로만 사용"
+    }
+  ],
+  "date_issue_clues": {
+    "legacy_image_filename": "021003000120001227340-21.jpg",
+    "possible_date_encoded": "2000-12-27",
+    "possible_issue_number_encoded": 340,
+    "status": "clue_only_not_verified",
+    "warning": "Do not treat 2000-12-27 or issue 340 as confirmed until a primary catalog/scan verifies them."
+  },
+  "unknown": {
+    "exact_issue_number": null,
+    "exact_publication_date": null,
+    "article_title": null,
+    "full_candidate_list": null,
+    "all_expert_percentages": null,
+    "political_scientist_sample_n": null,
+    "political_reporter_sample_n": null,
+    "fieldwork_and_question_wording": null
+  },
+  "related_but_distinct_2000_poll": {
+    "description": "Hankyoreh 2020 retrospective states Hankyoreh21 asked citizens for their favored politician in both 1999 and 2000 and Roh Moo-hyun ranked first both times.",
+    "source_url": "https://v.daum.net/v/20200518060602687?s=print_news",
+    "status": "separate cohort candidate; exact 2000 issue/date/ranking not yet recovered",
+    "do_not_merge": true
+  },
+  "search_paths_attempted": [
+    "exact phrase '출마가능성 거론 후보 중 대통령이 될 가능성'",
+    "Lee Hoi-chang + Roh 3.8%/1.7%",
+    "Hankyoreh21 + December 2000 + presidential probability",
+    "legacy Hani cover-image filename search",
+    "possible 2000-12-27 and issue-340 queries"
+  ],
+  "rejected_methods": [
+    "Do not merge the citizen favorability poll with the expert presidential-probability forecast.",
+    "Do not infer the remaining candidate ranking from ordinary national presidential polls.",
+    "Do not promote the image filename's apparent date/issue number to a primary fact without catalog or scan verification.",
+    "Do not infer prediction success from later election outcome before recovering the original denominator/candidate list."
+  ],
+  "qa": {
+    "survey_existence_strongly_supported": true,
+    "lee_hoi_chang_rank1_supported_by_secondary_source": true,
+    "roh_two_group_percentages_supported_by_secondary_source": true,
+    "primary_issue_recovered": false,
+    "full_forecast_complete": false
+  },
+  "next_retrieval_gate": {
+    "preferred_source": "National Assembly Library or other serial archive scan of Hankyoreh21 late-December 2000 issue",
+    "search_key": "legacy image filename suggests late Dec 2000; verify issue/date independently",
+    "needed_artifact": "cover story pages containing expert/reporter presidential-probability table and methodology",
+    "on_retrieval": "transcribe full candidate-by-expert-group probabilities and create a separate Type-A forecast cohort distinct from the citizen favorability series"
+  }
+}
