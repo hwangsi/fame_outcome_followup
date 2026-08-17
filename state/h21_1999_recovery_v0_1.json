@@ -23,6 +23,7 @@
       "Roh Moo-hyun was rank 1 in 1999.",
       "Lee In-je was rank 3 in 1999 and rank 22 in 2004.",
       "Chung Dong-young was rank 5 in 1999 and rank 6 in 2004.",
+      "Goh Kun was rank 6 in 1999 and rank 1 in 2004.",
       "The 2004 survey used almost the same favorability + governing-ability technique as the 1999 survey."
     ]
   },
@@ -41,7 +42,7 @@
     "publication_date": "2002-12-27",
     "current_h21_path": "https://h21.hani.co.kr/arti/cover/cover_general/6902.html",
     "legacy_url": "http://legacy.h21.hani.co.kr/section-021075000/2002/12/021075000200212270440027.html",
-    "status": "exact title/date/path recovered; body not yet retrievable through current web index",
+    "status": "exact title/date/path recovered; current URL returns cache miss through the available web fetcher",
     "recovery_value": "high-priority cache/archive key because a 2002 in-house retrospective may quote more of the 1999 ranking than the 2004 follow-up"
   },
   "cover_image_lead": {
@@ -53,14 +54,15 @@
   "known_ranked_rows": [
     {"rank": 1, "name": "노무현", "score_pct": null, "status": "direct_2004_retrospective_plus_2020_publisher_archive"},
     {"rank": 3, "name": "이인제", "score_pct": null, "status": "direct_2004_retrospective"},
-    {"rank": 5, "name": "정동영", "score_pct": null, "status": "direct_2004_retrospective"}
+    {"rank": 5, "name": "정동영", "score_pct": null, "status": "direct_2004_retrospective"},
+    {"rank": 6, "name": "고건", "score_pct": null, "status": "direct_2004_retrospective"}
   ],
   "unknown": {
     "candidate_pool_n": null,
     "full_candidate_names": null,
     "rank_2": null,
     "rank_4": null,
-    "ranks_6_and_below": null,
+    "ranks_7_and_below": null,
     "scores": null,
     "sample_and_fieldwork_details": null
   },
@@ -77,15 +79,16 @@
     "retrieval_value": "The exact issue is directly identified, so an issue scan should allow primary reconstruction of the full ranking/methodology if the table survives in print."
   },
   "search_paths_attempted": [
-    "exact issue no.264 + known three ranked names",
+    "exact issue no.264 + known ranked names",
     "1999-07-01 + next-generation leader phrases",
-    "rank 2/rank 4/rank 6 searches with Hankyoreh21",
-    "Roh #1 + Lee In-je #3 + Chung Dong-young #5 combined phrase searches",
+    "rank 2/rank 4/rank 7+ searches with Hankyoreh21",
+    "known-name combination phrase searches",
     "National Assembly Library article-index queries",
     "Hankyoreh/Hankyoreh21 domain searches",
     "2020 Hankyoreh archive-project retrospective",
     "2002 retrospective title/current article ID/legacy URL recovery",
-    "cover-image search and visual inspection"
+    "cover-image search and visual inspection",
+    "full 2004 follow-up re-read, which recovered Goh Kun rank6 in the 1999 survey"
   ],
   "rejected_methods": [
     "Do not infer missing 1999 ranks from the 2002 Democratic primary order.",
@@ -96,7 +99,7 @@
   ],
   "qa": {
     "exact_issue_identified": true,
-    "known_ranked_rows_n": 3,
+    "known_ranked_rows_n": 4,
     "publisher_archive_reconfirmed": true,
     "surviving_2002_retrospective_path_recovered": true,
     "full_ranking_complete": false,
