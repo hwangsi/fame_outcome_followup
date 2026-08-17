@@ -1,0 +1,56 @@
+{
+  "schema_version": "donga_2010_canonical_roster_v2.1",
+  "generated": "2026-08-18",
+  "supersedes": "data/typeA/donga_2010_canonical_roster_v2_0.json",
+  "correction_ref": "data/typeA/donga_2010_name_correction_v2_1.json",
+  "cohort": {
+    "outlet": "동아일보",
+    "title": "2020년 한국을 빛낼 100인",
+    "selection_year": 2010,
+    "explicit_target_year": 2020,
+    "total_n": 100,
+    "editorial_selected_n": 99,
+    "reader_selected_n": 1
+  },
+  "source_recovery": {
+    "editorial_99": "direct transcription from user-provided captures, cross-checked against Donga 2010 articles",
+    "donga_launch_article": "https://www.donga.com/news/Society/article/all/20100510/28213859/1",
+    "reader_selected_100th": "https://www.donga.com/news/Issue/List/06001600010001/article/all/20100531/28723481/1",
+    "reader_selected_name": "백경학",
+    "name_correction_evidence": "https://www.donga.com/news/Society/article/all/20100511/28249520/1"
+  },
+  "category_structure": {
+    "자유로운 창조인": 20,
+    "꿈꾸는 개척가": 25,
+    "행동하는 지성인": 20,
+    "도전하는 경제인": 25,
+    "미래를 여는 지도자": 9,
+    "독자선정": 1
+  },
+  "categories": {
+    "자유로운 창조인": ["김연아","김윤진","김현수","노희경","박민규","박성훈","박진영","봉준호","서도호","신경숙","신지애","심승현","양성원","이청용","장한나","정연두","정욱준","조성진","최은석","홍명보"],
+    "꿈꾸는 개척가": ["김광수","김기문","김빛내리","김정범","김창진","김필립","김호근","남홍길","박승정","박홍근","서동철","신재원","안철수","이상엽","이상훈","이소연","이지오","이효철","임지순","정경민","정하웅","조동호","주영석","찰스 리","현택환"],
+    "행동하는 지성인": ["김강립","김숙정","김용","김준영","김해성","김형태","박원순","송호근","염형국","오충현","유근배","윤명철","이광형","이명균","이연주","이은영","이주호","임경진","조국","한숭희"],
+    "도전하는 경제인": ["강덕수","강방천","김재하","김택진","남수정","박병엽","박인출","박지영","박현주","서경배","서정진","성영석","신동빈","신현송","안동현","이근","이부진","이원규","이재용","이창용","이해진","장하준","정의선","정태영","최태원"],
+    "미래를 여는 지도자": ["김문수","김병국","김성한","나경원","송영길","오세훈","원희룡","유시민","임태희"],
+    "독자선정": ["백경학"]
+  },
+  "v2_1_changes": {
+    "name_corrections": [{"old":"한승희","new":"한숭희","category":"행동하는 지성인","reason":"Donga original article and SNU official profile agree on 한숭희"}],
+    "count_change": 0,
+    "canonical_n": 100,
+    "unique_names": 100
+  },
+  "repeat_resolution": {
+    "2010_2011_business_last_one": "최태원",
+    "repeat_total": 38,
+    "name_correction_effect": "none"
+  },
+  "analysis_gate": {
+    "membership_100_100": true,
+    "canonical_name_normalization_passed": true,
+    "target2020_rows_100_100": true,
+    "pending_audit_complete": false,
+    "calculate_2020_metrics_now": false
+  }
+}
