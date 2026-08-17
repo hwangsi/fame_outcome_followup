@@ -1,0 +1,37 @@
+{
+  "schema_version": "donga_2010_t0_baseline_freeze_v1.0",
+  "generated": "2026-08-18",
+  "status": "frozen",
+  "cohort": "동아일보 2010 2020년 한국을 빛낼 100인",
+  "canonical_roster_ref": "data/typeA/donga_2010_canonical_roster_v2_1.json",
+  "t0_builder_chain": [
+    "scripts/build_donga_2010_t0_snapshot_scope.py",
+    "scripts/build_donga_2010_t0_snapshot_scope_v0_2.py",
+    "scripts/build_donga_2010_t0_snapshot_scope_v0_3.py",
+    "scripts/build_donga_2010_t0_snapshot_scope_v0_4.py"
+  ],
+  "t0_runtime_output": "data/typeA/donga_2010_t0_snapshot_scope_v0_4.json",
+  "baseline_builder": "scripts/build_donga_2010_baseline_peak_v0_1.py",
+  "baseline_runtime_output": "data/typeA/donga_2010_baseline_peak_through_t0_v0_1.json",
+  "protocol_ref": "state/donga_2010_baseline_peak_protocol_v1_0.md",
+  "qa": {
+    "t0_total": 100,
+    "t0_unique_names": 100,
+    "t0_review_flags_remaining": 0,
+    "t0_score_counts": {"1": 1, "2": 53, "3": 43, "4": 3},
+    "baseline_total": 100,
+    "baseline_score_counts": {"1": 1, "2": 52, "3": 44, "4": 3},
+    "baseline_mean": 2.49,
+    "baseline_greater_than_t0_n": 1,
+    "baseline_greater_than_t0_name": "이소연",
+    "github_actions_run": 32064279926,
+    "github_actions_conclusion": "success"
+  },
+  "interpretation": {
+    "t0_snapshot_scope": "scope actually held/expressed around May 2010, with contemporaneous achievements included only where they define active professional scope",
+    "baseline_peak_through_t0": "highest verified scope reached on or before selection",
+    "important_distinction": "baseline peak is not post-T0 peak and cannot yet be used alone to calculate final Type-A prediction accuracy"
+  },
+  "versioning_rule": "Do not silently edit frozen v1.0. New evidence requires a superseding v1.1 or later freeze with explicit change log.",
+  "next_gate": "Build and audit post_t0_peak for all 100, then calculate true baseline-adjusted advancement and Type-A selection precision."
+}
