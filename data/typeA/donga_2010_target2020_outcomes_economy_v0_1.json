@@ -1,0 +1,567 @@
+{
+  "schema_version": "donga_2010_target2020_economy_v0.1",
+  "generated": "2026-08-18",
+  "cohort": "동아일보 2010 2020년 한국을 빛낼 100인",
+  "category": "도전하는 경제인",
+  "rules_ref": [
+    "state/donga_2010_target2020_protocol_v1_0.md",
+    "state/coding_rules_typeA_sector_scope_v0_1.md"
+  ],
+  "t0_freeze_ref": "state/donga_2010_t0_provenance_freeze_v1_0.json",
+  "batch_n": 25,
+  "people": [
+    {
+      "name": "강덕수",
+      "t0_role": "STX 회장",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "business_industry",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_role_evidence",
+        "confidence": null,
+        "source_notes": [
+          "2021-01 대법원 판결 보도에서 '전 STX그룹 회장' 신분과 2020 전후 재판 지속은 확인되지만, 이는 2020의 적극적 직업·리더십 역할을 의미하지 않음",
+          "따라서 과거 회장직이나 소송 상태를 target role로 대체하지 않고 보류"
+        ],
+        "timeline_support_urls": [
+          "https://www.yna.co.kr/view/AKR20210107147100004"
+        ]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "강방천",
+      "t0_role": "에셋플러스자산운용 회장",
+      "target2020": {
+        "role": "에셋플러스자산운용 회장",
+        "scope_score": 2,
+        "sector": "asset_management_investment",
+        "evidence_date": "2020-03-09",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 단위 독립 자산운용사의 창업자·회장으로 확립된 금융 전문·경영 리더",
+        "source_notes": [
+          "2020-03-09 연합뉴스가 강방천을 에셋플러스자산운용 회장으로 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200309182300008"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "김재하",
+      "t0_role": "서울예술대 디지털아트학부 교수",
+      "target2020": {
+        "role": "서울예술대학교 제12대 산학협력단장",
+        "scope_score": 2,
+        "sector": "arts_academia_industry_collaboration",
+        "evidence_date": "2020",
+        "match": "exact_year_by_official_institution_history",
+        "confidence": "H",
+        "scope_rationale": "대학 내 산학협력 조직을 이끄는 전문·기관 리더십",
+        "source_notes": [
+          "서울예술대학교 공식 산학협력단 연혁이 2020년 제12대 산학협력단장 김재하를 명시"
+        ],
+        "source_urls": [
+          "https://www.seoularts.ac.kr/web/content.do?proFn=9421200"
+        ]
+      },
+      "coding_status": "coded_exact_by_official_history"
+    },
+    {
+      "name": "김택진",
+      "t0_role": "엔씨소프트 사장",
+      "target2020": {
+        "role": "엔씨소프트 대표이사",
+        "scope_score": 3,
+        "sector": "gaming_technology",
+        "evidence_date": "2020-10-27",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 게임기업의 창업자·대표로 글로벌 게임시장에서 영향력을 가진 주요 산업 리더",
+        "source_notes": [
+          "2020-10-27 연합뉴스가 엔씨소프트 김택진 대표로 직접 확인",
+          "2020 상반기에도 엔씨소프트 대표 신분과 경영 성과가 확인됨"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20201027087651001",
+          "https://www.yna.co.kr/view/AKR20200814157451017"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "남수정",
+      "t0_role": "썬앳푸드 대표",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "food_service_business",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_role_evidence",
+        "confidence": null,
+        "source_notes": [
+          "썬앳푸드는 2020-12 신규 브랜드를 론칭해 회사 활동은 확인되며, 남수정의 썬앳푸드 대표 경력은 2018까지 확인됨",
+          "그러나 2020 회사 활동만으로 남수정 개인의 당시 직함을 추정하지 않음"
+        ],
+        "timeline_support_urls": [
+          "https://www.seoul.co.kr/news/Brandnews/2020/12/14/20201214500043",
+          "https://news.nate.com/view/20180110n01582"
+        ]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "박병엽",
+      "t0_role": "팬택 부회장",
+      "target2020": {
+        "role": "팬택씨앤아이 대표자·회장",
+        "scope_score": 2,
+        "sector": "holding_investment_it",
+        "evidence_date": "2020-10-05",
+        "match": "exact_year_by_corporate_registration",
+        "confidence": "M",
+        "scope_rationale": "중견 지주·투자회사의 대표자로 신규투자와 IT/계열 사업을 이끄는 전국 단위 기업가 역할",
+        "source_notes": [
+          "사업자·법인 정보에서 2020-10-05 등록된 팬택씨앤아이 대표자명이 박병엽으로 확인됨",
+          "팬택씨앤아이 공식 회사개요·CEO 페이지도 박병엽을 대표이사 회장으로 확인하고 2020 투자 연혁을 제공",
+          "기업 공식 페이지는 현재 페이지이므로 exact-year anchor는 2020 등록정보에 둠"
+        ],
+        "source_urls": [
+          "https://www.bizno.net/article/1088617624",
+          "https://pantechcni.com/bbs/content.php?co_id=overview",
+          "https://pantechcni.com/bbs/content.php?co_id=history"
+        ]
+      },
+      "coding_status": "coded_exact_corporate_registration"
+    },
+    {
+      "name": "박인출",
+      "t0_role": "예치과 원장",
+      "target2020": {
+        "role": "교정전문 올쏘치과 원장·치과의사",
+        "scope_score": 2,
+        "sector": "dentistry_healthcare",
+        "evidence_date": "2020-08-31",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "치과 네트워크 창업 경력 이후에도 2020 전문 임상·교육 활동을 지속하는 전국 단위 의료 전문 역할",
+        "source_notes": [
+          "2020-08-31 치과 전문매체가 올쏘치과 박인출 원장의 웨비나를 보도",
+          "동 매체의 저자 아카이브에도 2020 박인출 원장 활동이 반복 확인됨"
+        ],
+        "source_urls": [
+          "https://www.dentin.kr/news/article.html?no=9656",
+          "https://www.dentin.kr/news/article_list_writer.html?name=%EB%B0%95%EC%9D%B8%EC%B6%9C"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "박지영",
+      "t0_role": "컴투스 대표",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "gaming_entrepreneurship",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_role_evidence",
+        "confidence": null,
+        "source_notes": [
+          "박지영은 2013-12 컴투스 대표직과 경영에서 완전히 물러난 것이 직접 확인됨",
+          "당시 새로운 도전을 구상한다고 밝혔지만 2019-2021의 구체적 공적 역할은 현재 확보 자료로 확인되지 않아 은퇴·무직을 추정하지 않음"
+        ],
+        "timeline_support_urls": [
+          "https://www.newspim.com/news/view/20131206000128",
+          "https://www.hankyung.com/article/2013121908771"
+        ]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "박현주",
+      "t0_role": "미래에셋금융그룹 회장",
+      "target2020": {
+        "role": "미래에셋그룹 회장",
+        "scope_score": 3,
+        "sector": "financial_group_asset_management",
+        "evidence_date": "2020-05-27",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 주요 금융그룹 창업자·회장으로 글로벌 자산운용·증권 사업을 이끄는 주요 산업 리더",
+        "source_notes": [
+          "2020-05-27 contemporaneous 보도에서 박현주를 미래에셋그룹 회장으로 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200527053051002"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "서경배",
+      "t0_role": "아모레퍼시픽 사장",
+      "target2020": {
+        "role": "아모레퍼시픽그룹 대표이사 회장",
+        "scope_score": 3,
+        "sector": "beauty_consumer_business",
+        "evidence_date": "2020-04-23",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 대표 뷰티그룹을 이끄는 대기업·글로벌 소비재 산업 리더",
+        "source_notes": [
+          "아모레퍼시픽 공식 2020 보도자료가 서경배를 아모레퍼시픽그룹 대표이사 회장으로 직접 명시"
+        ],
+        "source_urls": [
+          "https://www.apgroup.com/int/ko/misc/news/2020-04-23.html"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "서정진",
+      "t0_role": "셀트리온 회장",
+      "target2020": {
+        "role": "셀트리온그룹 회장; 2020-12-31 경영 일선 은퇴 발표",
+        "scope_score": 3,
+        "sector": "biopharma_business",
+        "evidence_date": "2020-12-31",
+        "match": "exact_year_by_tenure_and_retirement_date",
+        "confidence": "H",
+        "scope_rationale": "글로벌 바이오시밀러 기업집단 창업자·회장으로 주요 국제 바이오산업 리더. 보조규칙의 score 4는 최상위 대기업집단/세계 산업 apex에 제한하여 보수적으로 3",
+        "source_notes": [
+          "2021-02 보도가 서정진이 2020-12-31 회장직에서 물러났고 2021-03 주총까지 공식 직함을 유지한다고 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20210208031451017"
+        ]
+      },
+      "coding_status": "coded_exact_by_tenure"
+    },
+    {
+      "name": "성영석",
+      "t0_role": "스테레오픽쳐스코리아 대표",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "3d_media_business",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_role_evidence",
+        "confidence": null,
+        "source_notes": [
+          "2010 동아일보 원문으로 스테레오픽쳐스코리아 창업·대표 경력과 당시 3D 변환사업은 명확히 확인됨",
+          "그러나 2019-2021 동일 인물의 직접 직함·활동을 신뢰도 높은 dated source로 아직 연결하지 못함"
+        ],
+        "timeline_support_urls": [
+          "https://www.donga.com/news/article/all/20100520/28474637/1"
+        ]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "신동빈",
+      "t0_role": "롯데그룹 부회장",
+      "target2020": {
+        "role": "롯데그룹 회장·일본 롯데홀딩스 회장",
+        "scope_score": 4,
+        "sector": "conglomerate_management",
+        "evidence_date": "2020-04-01",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 대기업집단의 총수·회장으로 보조규칙의 경제 score 4 예시에 직접 해당",
+        "source_notes": [
+          "2020-03 연합뉴스가 신동빈을 롯데그룹 회장으로 확인하고 일본 롯데홀딩스 회장 선임 및 4월 1일 취임 예정 사실을 보도"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200319015651073",
+          "https://www.yna.co.kr/view/AKR20200604047500030"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "신현송",
+      "t0_role": "대통령실 국제경제보좌관",
+      "target2020": {
+        "role": "국제결제은행(BIS) 경제자문역·조사국장",
+        "scope_score": 3,
+        "sector": "international_finance_economics",
+        "evidence_date": "2020",
+        "match": "exact_year_by_official_tenure",
+        "confidence": "H",
+        "scope_rationale": "주요 글로벌 중앙은행 협력기구의 최고위 연구·경제정책 리더십이며 조직 전체 수장은 아니므로 3",
+        "source_notes": [
+          "한국은행 공식 약력이 2014-05부터 BIS Economic Adviser and Head of Research 재직을 명시하여 2020 tenure를 직접 포함"
+        ],
+        "source_urls": [
+          "https://www.bok.or.kr/eng/main/contents.do?menuNo=400472"
+        ]
+      },
+      "coding_status": "coded_exact_by_official_tenure"
+    },
+    {
+      "name": "안동현",
+      "t0_role": "서울대 경제학부 교수",
+      "target2020": {
+        "role": "서울대학교 경제학부 교수",
+        "scope_score": 2,
+        "sector": "economics_academia",
+        "evidence_date": "2020",
+        "match": "exact_year_by_official_tenure",
+        "confidence": "H",
+        "scope_rationale": "국내 주요 대학의 확립된 경제학 교수·전문가 역할",
+        "source_notes": [
+          "서울대 공식 경력 페이지가 안동현의 서울대 경제학부 교수 재직을 2009-09부터 현재까지로 명시"
+        ],
+        "source_urls": [
+          "https://www.snu.ac.kr/about/winners/education/2022/467"
+        ]
+      },
+      "coding_status": "coded_exact_by_official_tenure"
+    },
+    {
+      "name": "이근",
+      "t0_role": "서울대 경제학부 교수",
+      "target2020": {
+        "role": "서울대학교 경제학부 교수",
+        "scope_score": 2,
+        "sector": "economics_academia",
+        "evidence_date": "2021-01-19",
+        "match": "nearest_within_window",
+        "confidence": "H",
+        "scope_rationale": "2021년 1월의 직접 근거가 2020 목표연도에 가장 가까운 안정적 학술 역할을 확인",
+        "source_notes": [
+          "2021-01-19 연합뉴스가 이근을 서울대 경제학부 교수로 직접 확인",
+          "같은 날 국민경제자문회의 부의장 위촉은 2021 후속 역할이므로 2020 score를 소급 상승시키지 않음"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20210119107300001"
+        ]
+      },
+      "within_window_followup": {
+        "role": "국민경제자문회의 부의장",
+        "scope_score": 3,
+        "evidence_date": "2021-01-19",
+        "match": "within_window_followup_not_substituted_for_2020"
+      },
+      "coding_status": "coded_nearest_within_window"
+    },
+    {
+      "name": "이부진",
+      "t0_role": "호텔신라 전무",
+      "target2020": {
+        "role": "호텔신라 대표이사 사장",
+        "scope_score": 3,
+        "sector": "hospitality_dutyfree_business",
+        "evidence_date": "2020-03-19",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 주요 상장 호텔·면세기업의 대표이사로 글로벌 면세사업을 이끄는 대기업 리더십",
+        "source_notes": [
+          "2020-03-19 호텔신라 정기주총에서 이부진 대표이사 사장의 사내이사 재선임이 확인됨"
+        ],
+        "source_urls": [
+          "https://www.greened.kr/news/articleView.html?idxno=242877",
+          "https://www.mk.co.kr/news/special-edition/9642827"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "이원규",
+      "t0_role": "세실 회장",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "business_biotech_agriculture",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_role_evidence",
+        "confidence": null,
+        "source_notes": [
+          "2020 세실 관련 민사 강제집행 공지에서 이원규의 세실 주식 가치가 없고 추가 집행 가능한 재산을 찾지 못했다는 사실은 확인됨",
+          "그러나 소송·재산상태는 2020의 적극적 직업 역할이 아니므로 scope score로 치환하지 않음"
+        ],
+        "timeline_support_urls": [
+          "https://onlinesosong.com/lawsuits/28/open/articles/notice/4143/view?pageNo=1"
+        ]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "이재용",
+      "t0_role": "삼성전자 부사장",
+      "target2020": {
+        "role": "삼성전자 부회장·삼성그룹 핵심 경영 리더",
+        "scope_score": 4,
+        "sector": "conglomerate_technology_management",
+        "evidence_date": "2020-09-03",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 대기업집단의 사실상 최고 경영 리더로 경제 score 4의 apex 기준에 해당",
+        "source_notes": [
+          "2020 contemporaneous 보도에서 삼성전자 이재용 부회장 직함이 직접 확인됨",
+          "법적 사건의 내용은 role coding과 분리하며 직함 확인에만 사용"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200903134151004"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "이창용",
+      "t0_role": "G20 정상회의 준비위원회 기획조정단장",
+      "target2020": {
+        "role": "국제통화기금(IMF) 아시아·태평양 담당 국장",
+        "scope_score": 3,
+        "sector": "international_finance_multilateral",
+        "evidence_date": "2020-04-16",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "IMF의 핵심 지역국을 이끄는 고위 국제금융 리더십이며 조직 전체 수장은 아니므로 3",
+        "source_notes": [
+          "2020 인터뷰에서 이창용을 IMF 아시아태평양 담당 국장으로 직접 확인",
+          "IMF 공식 2022 퇴임자료가 2014년부터 8년간 APD를 이끌었다고 확인해 tenure를 교차검증"
+        ],
+        "source_urls": [
+          "https://www.hankyung.com/article/202004163745i",
+          "https://www.imf.org/ko/news/articles/2022/03/23/pr2286-changyong-rhee-to-retire-as-director-of-the-imfs-asia-and-pacific-department"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "이해진",
+      "t0_role": "NHN 이사회 의장·최고전략책임자",
+      "target2020": {
+        "role": "네이버 창업자·글로벌투자책임자(GIO)",
+        "scope_score": 3,
+        "sector": "internet_platform_global_investment",
+        "evidence_date": "2020-03-23",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 대표 인터넷 플랫폼의 창업자이자 글로벌 투자전략 책임자로 주요 기술산업 리더십",
+        "source_notes": [
+          "2020-03-23 contemporaneous 보도에서 이해진을 네이버 글로벌투자책임자(GIO)로 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0300&key=20200323.99099009379"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "장하준",
+      "t0_role": "영국 케임브리지대 경제학과 교수",
+      "target2020": {
+        "role": "영국 케임브리지대학교 경제학 교수",
+        "scope_score": 2,
+        "sector": "economics_academia_public_intellectual",
+        "evidence_date": "2020-08-25",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국제적으로 저명한 경제학자이나 target rubric은 명성 자체보다 2020 역할 scope를 평가하므로 대학 교수·공공 지식인 역할을 2로 보수적 코딩",
+        "source_notes": [
+          "2020 경향포럼 contemporaneous 기사에서 장하준을 영국 케임브리지대 교수로 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.khan.co.kr/article/202008252047025"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "정의선",
+      "t0_role": "현대자동차 부회장",
+      "target2020": {
+        "role": "현대자동차그룹 회장",
+        "scope_score": 4,
+        "sector": "conglomerate_automotive_management",
+        "evidence_date": "2020-10-14",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 대기업집단 회장으로 경제 score 4의 명시적 apex 기준에 해당",
+        "source_notes": [
+          "2020-10-14 현대차그룹 임시 이사회에서 정의선 신임 회장 선임이 확인됨"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20201014022100003"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "정태영",
+      "t0_role": "현대카드·현대캐피탈 사장",
+      "target2020": {
+        "role": "현대카드·현대캐피탈·현대커머셜 대표이사 부회장",
+        "scope_score": 3,
+        "sector": "consumer_finance_business",
+        "evidence_date": "2020-08-14",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "현대차그룹 주요 금융 3사를 동시에 이끄는 대형 금융사업 리더십",
+        "source_notes": [
+          "2020 상반기 보도에서 현대카드·캐피탈·커머셜을 이끄는 정태영 부회장으로 직접 확인",
+          "2021 현대캐피탈 대표 사임 보도가 그 직전까지 3사 대표를 겸임했음을 교차검증"
+        ],
+        "source_urls": [
+          "https://www.hankyung.com/article/2020081408101",
+          "https://www.yna.co.kr/view/AKR20210906063100003"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "최태원",
+      "t0_role": "SK 회장",
+      "target2020": {
+        "role": "SK그룹 회장",
+        "scope_score": 4,
+        "sector": "conglomerate_management",
+        "evidence_date": "2020-01-16",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 대기업집단의 총수·회장으로 경제 score 4의 명시적 apex 기준에 해당",
+        "source_notes": [
+          "2020-01 SK 그룹 행사에서 최태원 SK 회장 직함과 그룹 최고경영진 리더십을 직접 확인",
+          "2020년 SK 주식회사 보수자료도 회장 역할을 교차확인"
+        ],
+        "source_urls": [
+          "https://zdnet.co.kr/view/?no=20200116094219",
+          "https://www.etoday.co.kr/news/view/2006296"
+        ]
+      },
+      "coding_status": "coded_exact"
+    }
+  ],
+  "batch_summary": {
+    "total": 25,
+    "resolved_scored": 20,
+    "pending": 5,
+    "competing_event": 0,
+    "pending_names": [
+      "강덕수",
+      "남수정",
+      "박지영",
+      "성영석",
+      "이원규"
+    ],
+    "descriptive_score_counts_among_resolved": {
+      "2": 7,
+      "3": 9,
+      "4": 4
+    },
+    "notable_trajectories": [
+      "정의선: 2010 현대차 부회장 → 2020 현대차그룹 회장",
+      "신동빈: 2010 롯데그룹 부회장 → 2020 롯데그룹 회장 및 일본 롯데홀딩스 회장",
+      "이재용: 2010 삼성전자 부사장 → 2020 삼성전자 부회장·그룹 핵심 경영 리더",
+      "신현송: 2010 대통령실 국제경제보좌관 → 2020 BIS 경제자문역·조사국장",
+      "이창용: 2010 G20 준비위 기획조정단장 → 2020 IMF 아시아·태평양 국장",
+      "박병엽: 팬택 경영 이후 2020 팬택씨앤아이 대표자·회장으로 지주·투자사업 재편"
+    ],
+    "note": "부분 배치 수치는 QA용이며 cohort prediction metric이 아니다. 5명은 target-window의 적극적 역할이 직접 확인될 때까지 과거 명성, 소송 상태, 회사 존속만으로 점수를 강제하지 않는다."
+  }
+}
