@@ -1,0 +1,264 @@
+{
+  "schema_version": "donga_2010_target2020_outcome_v0.1",
+  "generated": "2026-08-18",
+  "cohort": "동아일보 2010 2020년 한국을 빛낼 100인",
+  "rules_ref": "state/donga_2010_target2020_protocol_v1_0.md",
+  "t0_freeze_ref": "state/donga_2010_t0_provenance_freeze_v1_0.json",
+  "batch": {
+    "name": "미래를 여는 지도자 9 + 독자선정 1",
+    "n": 10,
+    "exact_year_coded": 9,
+    "pending_direct_window_evidence": 1,
+    "whole_cohort_metrics_allowed": false
+  },
+  "people": [
+    {
+      "category": "미래를 여는 지도자",
+      "name": "김문수",
+      "t0_role": "경기도지사",
+      "target2020": {
+        "role": "자유통일당 대표로 창당 후 자유공화당 공동대표를 맡았다가 2020년 3월 탈당",
+        "scope_score": 2,
+        "sector": "politics",
+        "evidence_date": "2020-01~2020-03",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 단위 정당 대표이지만 당시 주요 거대정당의 지도부·공직은 아님",
+        "source_notes": [
+          "2020-01-31 자유통일당 창당대회에서 대표 선출",
+          "2020-03-03 우리공화당과 통합해 자유공화당 공동대표",
+          "2020-03-21 자유공화당 탈당"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200131165000001",
+          "https://www.yna.co.kr/view/AKR20200303056252001",
+          "https://www.yna.co.kr/view/AKR20200322022100001"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "category": "미래를 여는 지도자",
+      "name": "김병국",
+      "t0_role": "고려대 정치외교학과 교수",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "academia_policy",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": [
+          "고려대 공식 퇴임교수 페이지에서 동일 인물과 경력 및 2016-08-31 퇴임은 확인",
+          "그러나 현재 확보한 자료만으로 2019-2021의 직접 역할을 확정하지 않음"
+        ],
+        "identity_timeline_support": {
+          "evidence_date": "2016-08-31",
+          "confidence": "H",
+          "source_url": "https://politics.korea.ac.kr/kupolitics_kor/people/retirement.do?article.offset=0&articleLimit=100&articleNo=275741&mode=view"
+        }
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "category": "미래를 여는 지도자",
+      "name": "김성한",
+      "t0_role": "고려대 국제대학원 교수",
+      "target2020": {
+        "role": "고려대 국제대학원장·교수",
+        "scope_score": 2,
+        "sector": "academia_policy",
+        "evidence_date": "2020-02-20",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국적 전문·학술 및 정책 영역의 안정적 기관 리더십",
+        "source_notes": [
+          "동아일보 2020 기사에서 고려대 국제대학원 원장 김성한으로 확인"
+        ],
+        "source_urls": [
+          "https://www.donga.com/news/Society/article/all/20200219/99775790/1"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "category": "미래를 여는 지도자",
+      "name": "나경원",
+      "t0_role": "국회의원",
+      "target2020": {
+        "role": "제20대 국회의원·미래통합당 서울 동작을 제21대 총선 후보; 2020-04-15 총선 낙선 후 의원 임기 종료",
+        "scope_score": 2,
+        "sector": "politics",
+        "evidence_date": "2020-04",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "2020년 상반기 현역 국회의원이며 전국 주요 정당의 총선 후보",
+        "source_notes": [
+          "2020-04-05 연합뉴스가 현역 나경원 의원의 동작을 유세를 보도",
+          "2020-04-16 낙선 인사 보도로 제21대 총선 패배 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200405058900001",
+          "https://v.daum.net/v/20200416181625516"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "category": "미래를 여는 지도자",
+      "name": "송영길",
+      "t0_role": "민주당 최고위원, 전 국회의원",
+      "target2020": {
+        "role": "제21대 5선 국회의원·국회 외교통일위원장",
+        "scope_score": 3,
+        "sector": "politics",
+        "evidence_date": "2020-06-15",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "5선 의원이자 국회 상임위원장으로 주요 국가 의회 리더십에 해당",
+        "source_notes": [
+          "연합뉴스가 2020-06-15 제21대 국회 전반기 외교통일위원장 선출과 5선 경력을 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200615148200001"
+        ]
+      },
+      "within_window_followup": {
+        "role": "더불어민주당 대표",
+        "scope_score": 3,
+        "evidence_date": "2021-05-02",
+        "match": "within_window_followup_not_substituted_for_2020",
+        "note": "2021 당대표 취임은 허용창 내 후속 사건이지만 2020 target score를 대체하지 않음"
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "category": "미래를 여는 지도자",
+      "name": "오세훈",
+      "t0_role": "서울시장",
+      "target2020": {
+        "role": "전 서울시장·미래통합당 서울 광진을 제21대 총선 후보; 총선 낙선",
+        "scope_score": 2,
+        "sector": "politics",
+        "evidence_date": "2020-04",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전직 광역단체장이며 전국 주요 정당의 국회의원 후보였으나 2020 target 시점에는 선출 공직이 없음",
+        "source_notes": [
+          "2020-04-11 연합뉴스가 미래통합당 서울 광진을 오세훈 후보의 선거운동을 보도",
+          "2020-04-21 아시아경제가 최종 득표 47.8%로 고민정 후보에게 패배한 결과를 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200411045051004",
+          "https://www.asiae.co.kr/article/2020042110244999904"
+        ]
+      },
+      "within_window_followup": {
+        "role": "서울시장 복귀",
+        "scope_score": 3,
+        "evidence_date": "2021-04-08",
+        "match": "within_window_followup_not_substituted_for_2020",
+        "source_urls": [
+          "https://www.seoul.go.kr/seoul/mayor.do",
+          "https://www.yna.co.kr/view/AKR20210408030900004"
+        ],
+        "note": "2021 서울시장 복귀는 중요한 허용창 내 후속 사건이나 2020 exact snapshot을 대체하지 않음"
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "category": "미래를 여는 지도자",
+      "name": "원희룡",
+      "t0_role": "국회의원",
+      "target2020": {
+        "role": "제주특별자치도지사·야권 대선주자",
+        "scope_score": 3,
+        "sector": "politics",
+        "evidence_date": "2020-12",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "현직 광역자치단체장으로 주요 국가 정치 리더십 범주",
+        "source_notes": [
+          "2020-12 연합뉴스 인터뷰에서 현직 제주지사이자 야권 대선주자로 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20201222023300056"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "category": "미래를 여는 지도자",
+      "name": "유시민",
+      "t0_role": "전 보건복지부 장관",
+      "target2020": {
+        "role": "노무현재단 이사장·작가/시사평론 활동",
+        "scope_score": 2,
+        "sector": "civic_media",
+        "evidence_date": "2020-08-29",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 단위 시민·정책·미디어 영향력을 가진 비영리기관 리더십",
+        "source_notes": [
+          "연합뉴스 2020-08-29 기사에서 노무현재단 이사장 유시민으로 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200829065400052"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "category": "미래를 여는 지도자",
+      "name": "임태희",
+      "t0_role": "노동부 장관",
+      "target2020": {
+        "role": "한경대학교 총장",
+        "scope_score": 2,
+        "sector": "academia_public",
+        "evidence_date": "2020",
+        "match": "exact_year_by_official_tenure",
+        "confidence": "H",
+        "scope_rationale": "국립대학 총장으로 전국 단위 전문·공공기관 리더십",
+        "source_notes": [
+          "한경국립대 공식 역대총장 페이지에서 임태희 제7대 총장 임기를 2017-10-20~2021-10-05로 확인"
+        ],
+        "source_urls": [
+          "https://sanhak.hknu.ac.kr/kor/674/subview.do"
+        ]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "category": "독자선정",
+      "name": "백경학",
+      "t0_role": "푸르메재단 이사",
+      "target2020": {
+        "role": "푸르메재단 상임이사",
+        "scope_score": 2,
+        "sector": "civic_nonprofit",
+        "evidence_date": "2020-12-03",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 단위 비영리·사회복지기관의 상근 리더십",
+        "source_notes": [
+          "연합뉴스 2020-12-03 기사에서 푸르메재단 백경학 상임이사로 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20201203111000005"
+        ]
+      },
+      "coding_status": "coded_exact"
+    }
+  ],
+  "batch_summary": {
+    "coded_exact": 9,
+    "pending": 1,
+    "pending_names": ["김병국"],
+    "score_counts_among_coded": {
+      "2": 7,
+      "3": 2
+    },
+    "note": "Partial batch counts are descriptive QA only and are not cohort prediction metrics. 김병국은 2019-2021 직접 역할 근거 확보 전까지 점수를 비워 둔다."
+  }
+}
