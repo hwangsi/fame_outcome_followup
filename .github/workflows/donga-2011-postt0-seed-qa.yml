@@ -20,7 +20,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build-and-seed:
@@ -85,7 +85,6 @@ jobs:
           d=json.load(open('analysis/donga_2011_post_t0_master_v1_0.json',encoding='utf-8'))
           m=json.load(open('analysis/donga_2011_post_t0_metrics_v1_0.json',encoding='utf-8'))
           q=d['qa']
-          print(json.dumps({'qa':q,'primary':m['primary_full_cohort_conservative'],'sensitivity':m['sensitivity_assessable_only']},ensure_ascii=False,indent=2))
           assert q['total']==100 and q['adjudicated_n']==100 and q['scored_n']==99
           assert q['not_assessable_n']==1 and q['pending_n']==0 and q['not_assessable_names']==['신준호']
           assert q['repeat_n']==38 and q['new_entrant_n']==62 and q['identity_anchor_validated_n']==42
@@ -104,9 +103,8 @@ jobs:
           python - <<'PY'
           import json
           a=json.load(open('analysis/donga_2011_repeat_predictive_value_v1_0.json',encoding='utf-8'))
-          print(json.dumps(a,ensure_ascii=False,indent=2))
-          assert a['population']=={'total':100,'repeat':38,'new':62,'assessable':99,'new_assessable':61}
           s=a['baseline_stratified_cmh_assessable_only']
+          assert a['population']=={'total':100,'repeat':38,'new':62,'assessable':99,'new_assessable':61}
           assert set(s)=={'major','apex','advanced'}
           assert s['apex']['mh_common_or'] > 8
           assert s['apex']['exact_conditional']['exact_two_sided_p'] < 0.05
@@ -121,13 +119,23 @@ jobs:
           import json
           d=json.load(open('analysis/donga_2010_2011_two_wave_master_v0_1.json',encoding='utf-8'))
           q=d['qa']
-          print(json.dumps({'qa':q,'group_summary':d['person_group_first_selection_summary']},ensure_ascii=False,indent=2))
+          f=json.load(open('state/donga_2010_2011_two_wave_freeze_v0_1.json',encoding='utf-8'))
           assert q['placements_n']==200
           assert q['unique_persons_n']==162
           assert q['groups']=={'2010_only':62,'repeat_2010_2011':38,'2011_new':62}
           assert q['repeat_intersection_n']==38
           assert len(d['placements'])==200 and len(d['people'])==162
+          assert f['population']=={'placements':200,'unique_persons':162,'groups':{'2010_only':62,'repeat_2010_2011':38,'2011_new':62}}
           rep=[p for p in d['people'] if p['group']=='repeat_2010_2011']
           assert len(rep)==38 and all(p['placement_count']==2 for p in rep)
           assert all(p['placement_count']==1 for p in d['people'] if p['group']!='repeat_2010_2011')
           PY
+      - name: Persist two-wave freeze and result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/donga_2010_2011_two_wave_freeze_v0_1.json state/donga_2010_2011_two_wave_result_v0_1.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Freeze Dong-A 2010-2011 two-wave summary"
+            git push
+          fi
