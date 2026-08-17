@@ -1,0 +1,54 @@
+{
+  "schema_version": "donga_2010_canonical_roster_v1.1",
+  "generated": "2026-08-17",
+  "supersedes": "data/typeA/donga_2010_canonical_roster_v1_0.json",
+  "cohort": {
+    "outlet": "동아일보",
+    "title": "2020년 한국을 빛낼 100인",
+    "selection_year": 2010,
+    "explicit_target_year": 2020,
+    "total_n": 100
+  },
+  "canonical_n": 78,
+  "remaining_to_100": 22,
+  "construction": {
+    "base_v0_2_n": 67,
+    "post_v0_2_additions_n": 11,
+    "deduplication_rule": "canonical_n is the size of the unique person-name union, never an accumulated historical count",
+    "base_source": "data/typeA/donga_2010_2020_100_seed_v0_2_cleaned.json"
+  },
+  "new_in_v1_1": [
+    {
+      "name": "서도호",
+      "route": "2013 Donga Hall-of-Fame total-three membership + absence from complete official 2011 roster forces 2010/2012/2013 selections",
+      "confidence": "H",
+      "category_2010": "unknown",
+      "audit": "research/donga_2013_hall_image_resolution_v0_1.md"
+    }
+  ],
+  "post_v0_2_additions": [
+    {"name":"김정범","confidence":"H"},
+    {"name":"박원순","confidence":"H","category_2010":"행동하는 지성인"},
+    {"name":"이창용","confidence":"H"},
+    {"name":"신현송","confidence":"H"},
+    {"name":"현택환","confidence":"H"},
+    {"name":"나경원","confidence":"H","category_2010":"unknown"},
+    {"name":"김준영","confidence":"H","category_2010":"unknown"},
+    {"name":"김용","confidence":"H","category_2010":"unknown"},
+    {"name":"이상훈","confidence":"H","category_2010":"unknown"},
+    {"name":"박인출","confidence":"M","category_2010":"도전하는 경제인"},
+    {"name":"서도호","confidence":"H","category_2010":"unknown"}
+  ],
+  "canonical_names": [
+    "강덕수","강방천","김기문","김문수","김빛내리","김연아","김용","김정범","김준영","김창진","김택진","김필립","김해성","김현수","나경원","남수정","남홍길","노희경","박민규","박병엽","박성훈","박승정","박원순","박인출","박지영","박진영","박현주","백경학","봉준호","서경배","서도호","서동철","서정진","성영석","송영길","신경숙","신동빈","신재원","신현송","심승현","안동현","안철수","양성원","오세훈","오충현","원희룡","유시민","이광형","이명균","이부진","이상엽","이상훈","이연주","이원규","이재용","이지오","이창용","이해진","이효철","임경진","임지순","임태희","장하준","장한나","정연두","정욱준","정의선","정태영","정하웅","조국","조동호","조성진","주영석","찰스 리","최은석","한숭희","현택환","홍명보"
+  ],
+  "validation": {
+    "base_unique_n": 67,
+    "additions_unique_n": 11,
+    "overlap_base_additions_n": 0,
+    "canonical_unique_n": 78,
+    "status": "set-audited"
+  },
+  "historical_count_warning": "Legacy aggregate counts are audit artifacts. This explicit unique-person set is authoritative until superseded by another set-audited roster version.",
+  "analysis_gate": "Do not calculate 2020 target-year metrics before exact 100/100 roster freeze, identity resolution, baseline/provenance storage, and category reconciliation."
+}
