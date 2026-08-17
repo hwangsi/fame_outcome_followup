@@ -1,0 +1,82 @@
+{
+  "version": "v1.5",
+  "generated": "2026-08-18",
+  "supersedes": "research/donga_2010_recovery_queue_v1_4.json",
+  "canonical_source": "data/typeA/donga_2010_canonical_roster_v1_1.json",
+  "canonical_row_resolved_confirmed_n": 78,
+  "membership_slots_remaining_to_100": 22,
+  "canonical_change_in_v1_5": 0,
+  "new_research_signal": {
+    "free_creator_secondary_copy": {
+      "source": "https://kdk99.tistory.com/entry/2020년을-빛낼-100인-17951766",
+      "published": "2011-04-03",
+      "evidence_class": "secondary_copied_list_candidate_generation_only",
+      "listed_n": 20,
+      "names": ["김연아","김윤진","김현수","노희경","박민규","박성훈","박진영","봉준호","서도호","신경숙","신지애","심승현","양성원","이청용","장한나","정연두","정욱준","조성진","최은석","홍명보"],
+      "intersection_with_canonical_n": 17,
+      "missing_vs_canonical": ["김윤진","신지애","이청용"],
+      "interpretation": "If the copied category transcription is accurate, these are exactly the three unresolved 2010 free-creator names. This does not itself qualify them for canonical membership."
+    },
+    "shin_jiae_2011_first_party": {
+      "status": "confirmed_2011_membership",
+      "source": "https://www.donga.com/news/Issue/List/0600160002/article/all/20110413/36369293/1",
+      "issue_context": "Donga official [2011 선정] 10년 뒤 한국을 빛낼 100인",
+      "implication": "High-priority candidate for one of the unresolved nonbusiness 2010-2011 repeats, but 2010 membership remains unconfirmed until qualifying evidence is found."
+    },
+    "yoon_myungchul_secondary": {
+      "status": "strong_secondary_corroboration",
+      "sources_include": [
+        "https://www.omiglobal.net/entry/오미글로벌-저자-윤명철",
+        "Kyobo ebook author biographies",
+        "Ridi author profile",
+        "Yes24 author biographies",
+        "Korean Community Education Foundation biography"
+      ],
+      "claim": "Selected for Donga 90th-anniversary 2020년 한국을 빛낼 100인; some profiles explicitly date it to 2010.",
+      "canonical_action": "none_until_qualifying_source"
+    }
+  },
+  "repeat_2010_2011": {
+    "official_total_n": 38,
+    "row_resolved_n": 35,
+    "remaining_n": 3,
+    "science": {"resolved_n": 8, "target_n": 8, "remaining_n": 0},
+    "business": {
+      "resolved_n": 13,
+      "target_n": 14,
+      "remaining_n": 1,
+      "candidate_pool": ["권구훈","김가영","김남구","손병두","최태원","황철주"],
+      "crossyear_excluded": ["양윤선","정용진"]
+    },
+    "culture_leader_intellectual_combined": {
+      "resolved_n": 14,
+      "target_n": 16,
+      "remaining_n": 2,
+      "high_priority_new_signal": ["신지애"],
+      "note": "Shin Ji-ae is first-party confirmed in the 2011 selected cohort and appears in the 2010 secondary copied free-creator list. Still requires qualifying 2010 evidence."
+    }
+  },
+  "primary_archive_state": {
+    "archive_date_page": "https://www.donga.com/archive/newslibrary/view?ymd=20100510",
+    "a1_asset": "https://dimg.donga.com/a/500/0/90/5/PDF_EXT/NEWS/2010/05/10/2010051045A01010101.jpg",
+    "a4_asset": "https://dimg.donga.com/a/500/0/90/5/PDF_EXT/NEWS/2010/05/10/2010051045A04040101.jpg",
+    "pixel_recovery": "pending",
+    "dnb2": {
+      "status": "first_party_existence_confirmed",
+      "title": "2020년을 빛낼 대한민국 100인",
+      "route": "Donga NewsBook 2",
+      "note": "Donga later described the project as distributed in print, internet, and NewsBook formats; DNB2 remains a direct roster recovery target."
+    },
+    "microsite": "https://www.donga.com/news/2020_100/"
+  },
+  "priority_search_tracks": [
+    {"priority": 1, "track": "original_2010_A1_A4_or_DNB2", "goal": "recover exact 100-person printed/digital roster"},
+    {"priority": 2, "track": "shin_jiae_repeat_marker", "goal": "find first-party or exact-year evidence forcing 2010 membership"},
+    {"priority": 3, "track": "kim_yunjin_lee_chungyong_2010", "goal": "find contemporaneous institutional or Donga evidence for the two other free-creator missing names"},
+    {"priority": 4, "track": "repeat_business_last_one", "goal": "resolve one of 권구훈/김가영/김남구/손병두/최태원/황철주"},
+    {"priority": 5, "track": "yoon_myungchul_qualifying_source", "goal": "upgrade strong secondary corroboration to qualifying 2010 evidence"},
+    {"priority": 6, "track": "category_reconciliation", "goal": "only after membership recovery, reconcile 2010 categories to 20/25/20/25/10"}
+  ],
+  "acceptance_rule": "No person enters the canonical frozen roster without row-level evidence guaranteeing 2010 selection under the predefined hierarchy.",
+  "analysis_gate": "Do not calculate 2020 target-year metrics before exact 100/100 roster freeze, identity resolution, baseline/provenance storage, and category reconciliation."
+}
