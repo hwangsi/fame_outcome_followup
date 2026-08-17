@@ -3,7 +3,7 @@ import csv,json
 from collections import Counter
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];TYPEA=ROOT/'data/typeA'
-T0=TYPEA/'donga_2011_t0_snapshot_scope_v0_2.json'
+T0=TYPEA/'donga_2011_t0_snapshot_scope_v0_3.json'
 BASE10=TYPEA/'donga_2010_baseline_peak_through_t0_v1_4.json'
 OUTJ=TYPEA/'donga_2011_baseline_peak_through_t0_v0_1.json';OUTC=TYPEA/'donga_2011_baseline_peak_through_t0_v0_1.csv'
 
@@ -27,7 +27,9 @@ def main():
   people.append(p)
  assert repeat_checked==38
  cnt=Counter(p['baseline_peak_through_t0'] for p in people)
- out={'schema_version':'donga_2011_baseline_peak_through_t0_v0.1','generated':'2026-08-18','status':'pass1_repeat_history_checked_new62_prior_career_audit_pending','selection_cutoff':'2011-04-01','t0_ref':'data/typeA/donga_2011_t0_snapshot_scope_v0_2.json','prior_repeat_baseline_ref':'data/typeA/donga_2010_baseline_peak_through_t0_v1_4.json','method':{'repeat_38':'baseline is max(audited 2011 T0, frozen 2010 lifetime peak); this prevents losing pre-2010 achievements','new_62':'audited 2011 T0 is provisional baseline until a dedicated prior-career audit checks for a higher pre-2011 peak'},'qa':{'total':100,'unique_names':100,'repeat_checked_n':repeat_checked,'new_person_prior_audit_pending_n':62,'repeat_carried_higher_n':len(repeat_carried_higher),'repeat_carried_higher_names':repeat_carried_higher,'score_counts':{str(k):v for k,v in sorted(cnt.items())},'mean_baseline':sum(p['baseline_peak_through_t0'] for p in people)/100},'people':people}
+ assert cnt==Counter({2:44,3:51,4:5}),cnt
+ assert len(repeat_carried_higher)==0,repeat_carried_higher
+ out={'schema_version':'donga_2011_baseline_peak_through_t0_v0.1','generated':'2026-08-18','status':'pass1_repeat_history_checked_new62_prior_career_audit_pending','selection_cutoff':'2011-04-01','t0_ref':'data/typeA/donga_2011_t0_snapshot_scope_v0_3.json','prior_repeat_baseline_ref':'data/typeA/donga_2010_baseline_peak_through_t0_v1_4.json','method':{'repeat_38':'baseline is max(audited 2011 T0, frozen 2010 lifetime peak); this prevents losing pre-2010 achievements','new_62':'audited 2011 T0 is provisional baseline until a dedicated prior-career audit checks for a higher pre-2011 peak'},'qa':{'total':100,'unique_names':100,'repeat_checked_n':repeat_checked,'new_person_prior_audit_pending_n':62,'repeat_carried_higher_n':len(repeat_carried_higher),'repeat_carried_higher_names':repeat_carried_higher,'score_counts':{str(k):v for k,v in sorted(cnt.items())},'mean_baseline':sum(p['baseline_peak_through_t0'] for p in people)/100},'people':people}
  OUTJ.write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  fields=['name','category','repeat_2010_2011','t0_snapshot_scope_score','baseline_peak_through_t0','baseline_peak_role','baseline_peak_year','prior_2010_frozen_baseline','needs_new_person_prior_career_audit']
  with OUTC.open('w',encoding='utf-8-sig',newline='') as f:
