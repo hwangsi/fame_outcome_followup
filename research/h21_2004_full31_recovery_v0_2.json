@@ -1,0 +1,108 @@
+{
+  "schema_version": "h21_2004_full31_recovery_v0.2",
+  "generated": "2026-08-18",
+  "supersedes": "research/h21_2004_full31_recovery_v0_1.json",
+  "status": "partial_primary_text_recovery_archive_targeted",
+  "publication": "한겨레21",
+  "article_title": "고건 · 강금실, 박근혜를 누르다",
+  "syndicated_transmission_date": "2004-09-20",
+  "issue_locator": {
+    "target_issue": 527,
+    "issue_date": "2004-09-16",
+    "confidence": "M-H",
+    "basis": "A preserved mirror of another Han겨레21 article identifies 2004-09-16 as issue 527; the target article was syndicated four days later. Original issue TOC/table still needs direct confirmation.",
+    "evidence_url": "https://seokgung.com/badjudge.htm"
+  },
+  "primary_text_source": {
+    "url": "https://news.nate.com/view/20040920n06510?mid=n0000",
+    "type": "syndicated_hankyoreh21_full_text",
+    "retrieved": "2026-08-18",
+    "directly_confirms": [
+      "candidate_pool_n=31",
+      "survey_date=2004-09-14",
+      "survey_firm=리서치플러스",
+      "respondents=700 nationwide adults",
+      "telephone interviews",
+      "95% CI ±3.7%p",
+      "composite score definition",
+      "ranks 1-10",
+      "rank 22=이인제"
+    ]
+  },
+  "survey": {
+    "candidate_pool_n": 31,
+    "candidate_selection": "한겨레21 취재진이 정치권 내 위상과 각종 여론조사 추이를 고려해 31명 선정",
+    "survey_date": "2004-09-14",
+    "survey_firm": "리서치플러스",
+    "population": "전국 성인남녀",
+    "n_respondents": 700,
+    "collection": "전화면접",
+    "margin_of_error": "95% 신뢰수준 ±3.7%p",
+    "composite_score_definition": "호감도 긍정평가와 나랏일 수행 능력 긍정평가를 같은 비중으로 평균"
+  },
+  "confirmed_rank_summary": {
+    "confirmed_n": 11,
+    "confirmed_top10_n": 10,
+    "known_outside_top10": {"rank": 22, "name": "이인제"},
+    "confirmed_ranks": [1,2,3,4,5,6,7,8,9,10,22],
+    "unresolved_ranks": [11,12,13,14,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31]
+  },
+  "confirmed_people_ref": "research/h21_2004_full31_recovery_v0_1.json#confirmed_ranks",
+  "archive_routes": [
+    {
+      "priority": 1,
+      "service": "BIG Kinds",
+      "status": "coverage_confirmed_query_pending",
+      "coverage": "한겨레21 2002-06-01 ~ current, no missing period listed",
+      "official_url": "https://www.bigkinds.or.kr/v2/intro/news.do",
+      "query_packet": {
+        "media": "한겨레21",
+        "date_from": "2004-09-14",
+        "date_to": "2004-09-21",
+        "exact_title": "고건 · 강금실, 박근혜를 누르다",
+        "fallback_terms": ["차세대 리더 여론조사", "고건 강금실 박근혜", "이인제 22위"]
+      },
+      "goal": "Recover article database record, any attached image/table metadata, and full issue context."
+    },
+    {
+      "priority": 2,
+      "service": "대한민국 국회도서관 국내 주간지 기사/국회전자도서관",
+      "status": "collection_route_confirmed",
+      "coverage_note": "한겨레21 is one of the listed domestic weekly magazines; weekly articles are searchable in the electronic library academic-article DB, with periodical-room access also documented.",
+      "official_url": "https://www.nanet.go.kr/datasearch/weeklyarticle/selectWeeklyarticleList.do",
+      "query_packet": {
+        "magazine": "한겨레21",
+        "issue": "527",
+        "issue_date": "2004-09-16",
+        "article_title": "고건 · 강금실, 박근혜를 누르다"
+      },
+      "goal": "Inspect issue-level scan/article record and recover the printed 31-person table."
+    },
+    {
+      "priority": 3,
+      "service": "한겨레21 original archive / physical issue",
+      "status": "issue_target_narrowed",
+      "target": "제527호, 2004-09-16",
+      "goal": "Locate original contents page or printed table/graphic; verify that the target article belongs to issue 527."
+    }
+  ],
+  "web_search_result": {
+    "new_lower_rank_names_recovered": 0,
+    "note": "Repeated exact-title/rank searches returned the same syndicated full text but no searchable 11-21 or 23-31 table."
+  },
+  "qa": {
+    "candidate_pool_n": 31,
+    "confirmed_rank_n": 11,
+    "unresolved_rank_n": 20,
+    "complete_roster": false,
+    "new_names_added_vs_v0_1": 0,
+    "archive_routes_confirmed": 2
+  },
+  "guardrails": [
+    "Do not infer missing ranks from other 2004 presidential preference polls.",
+    "Do not add plausible politicians to the 31-person candidate pool without direct H21 table/article/archive evidence.",
+    "Treat issue 527 as a targeted locator until the original target article TOC/table confirms the issue association directly.",
+    "When the printed table is recovered, preserve rank, composite score, favorability, ability, contemporaneous role, and source coordinates separately.",
+    "Any same-name ambiguity requires a contemporaneous-role identity anchor before canonical merge."
+  ]
+}
