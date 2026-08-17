@@ -87,7 +87,7 @@ def main():
     death_names=sorted(p['name'] for p in people if p['death_truncated'])
     assert death_names==['노회찬','박세일']
     low_current=sorted(p['name'] for p in people if p['current']['confidence']=='L')
-    assert low_current==['심재철','신기남','전재희','천정배']
+    assert low_current==['신기남','심재철','전재희','천정배']
 
     metrics={
       'schema_version':'khan_2004_17th_assembly_newleaders_longitudinal_metrics_v1.0',
