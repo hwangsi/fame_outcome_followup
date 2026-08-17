@@ -1,0 +1,90 @@
+{
+  "schema_version": "donga_2011_repeat_predictive_value_freeze_v1.0",
+  "generated": "2026-08-18",
+  "status": "final",
+  "question": "At the 2011 selection time, did prior selection in 2010 add prospective information about post-2011 outcomes beyond baseline prestige?",
+  "design": "prospective_from_2011_selection_time_observational_repeat_vs_new",
+  "population": {
+    "total": 100,
+    "repeat": 38,
+    "new": 62,
+    "assessable": 99,
+    "new_assessable": 61
+  },
+  "baseline_distribution": {
+    "repeat": {"2": 8, "3": 27, "4": 3},
+    "new": {"2": 30, "3": 30, "4": 2}
+  },
+  "raw_full_cohort": {
+    "major": {
+      "repeat": "35/38",
+      "repeat_rate": 0.9210526315789473,
+      "new": "55/62",
+      "new_rate": 0.8870967741935484,
+      "risk_difference": 0.03395585738539897,
+      "raw_or": 1.4848484848484849,
+      "fisher_two_sided_p": 0.7378590122029159
+    },
+    "apex": {
+      "repeat": "9/38",
+      "repeat_rate": 0.23684210526315788,
+      "new": "3/62",
+      "new_rate": 0.04838709677419355,
+      "risk_difference": 0.18845500848896435,
+      "raw_or": 6.103448275862069,
+      "fisher_two_sided_p": 0.00885026659333125
+    },
+    "advanced": {
+      "repeat": "11/38",
+      "repeat_rate": 0.2894736842105263,
+      "new": "25/62",
+      "new_rate": 0.4032258064516129,
+      "risk_difference": -0.11375212224108655,
+      "raw_or": 0.6029629629629629,
+      "fisher_two_sided_p": 0.288311212026176
+    }
+  },
+  "baseline_stratified_assessable_only": {
+    "major": {
+      "mh_common_or": 0.7340350877192983,
+      "cmh_p": 0.6574677828805325,
+      "cmh_p_continuity_corrected": 0.9743335365289852,
+      "exact_two_sided_p": 0.6913016676074701
+    },
+    "apex": {
+      "mh_common_or": 8.690131578947367,
+      "cmh_p": 0.016729424557791854,
+      "cmh_p_continuity_corrected": 0.04206653147346842,
+      "exact_two_sided_p": 0.026801886037238574,
+      "exact_greater_p": 0.020816958254892718
+    },
+    "advanced": {
+      "mh_common_or": 1.8245614035087716,
+      "cmh_p": 0.27566428701900386,
+      "cmh_p_continuity_corrected": 0.44486402622307425,
+      "exact_two_sided_p": 0.33890477854834694
+    }
+  },
+  "interpretation": {
+    "major": "Repeat selection adds little information for merely reaching or maintaining major status; both groups are already near 90% and the baseline-stratified association is null.",
+    "apex": "Repeat selection is strongly associated with later apex attainment. The association remains after baseline-score stratification and is supported by an exact conditional two-sided p-value of 0.0268. Because only 12 apex events occurred, this should be described as a strong sparse-data signal rather than causal proof.",
+    "advanced": "Raw advancement is lower in repeat selections because the repeat group starts from substantially higher baselines. Baseline stratification reverses the OR above 1, but the association is not statistically persuasive."
+  },
+  "guardrails": [
+    "Repeat status is known at the 2011 selection time, avoiding the look-ahead problem of classifying the 2010 cohort using a future 2011 event.",
+    "Repeat status is observational rather than randomized; no causal interpretation is warranted.",
+    "The baseline score is coarse and residual confounding can remain.",
+    "Sparse apex cells make exact conditional inference particularly important."
+  ],
+  "runtime_refs": {
+    "script": "scripts/analyze_donga_2011_repeat_predictive_value.py",
+    "json": "analysis/donga_2011_repeat_predictive_value_v1_0.json",
+    "markdown": "analysis/donga_2011_repeat_predictive_value_v1_0.md"
+  },
+  "qa": {
+    "workflow": ".github/workflows/donga-2011-postt0-seed-qa.yml",
+    "run_id": 32074755458,
+    "head_commit": "f58533302bd85eabd38bcd0e62ee3dead5de27b4",
+    "conclusion": "success"
+  }
+}
