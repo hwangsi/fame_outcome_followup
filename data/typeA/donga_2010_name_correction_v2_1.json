@@ -1,0 +1,34 @@
+{
+  "schema_version": "donga_2010_name_correction_v2.1",
+  "generated": "2026-08-18",
+  "applies_to": [
+    "data/typeA/donga_2010_canonical_roster_v2_0.json",
+    "data/typeA/donga_2010_baseline_from_capture_v1_0.json",
+    "data/typeA/donga_2010_target2020_outcomes_intellectuals_v0_1.json"
+  ],
+  "corrections": [
+    {
+      "field": "name",
+      "old": "한승희",
+      "new": "한숭희",
+      "category": "행동하는 지성인",
+      "t0_role": "서울대 교육학과 교수",
+      "reason": "manual transcription/normalization error in capture-derived dataset",
+      "evidence": [
+        {
+          "type": "original_donga_2010_article",
+          "url": "https://www.donga.com/news/Society/article/all/20100511/28249520/1",
+          "note": "동아일보 원문이 '한숭희 서울대 교육학과 교수'로 직접 표기"
+        },
+        {
+          "type": "official_university_profile",
+          "url": "https://learning.snu.ac.kr/snu__professor/%ED%95%9C%EC%88%AD%ED%9D%AC/",
+          "note": "서울대학교 교육학과 공식 교수 페이지가 한숭희(HAN, SoongHee), 1997-09~현재 서울대 교수로 확인"
+        }
+      ],
+      "effect_on_counts": "none; one entity name normalization only",
+      "effect_on_repeat_crosswalk": "none; this person is not in the canonical 2010-2011 repeat-38 list"
+    }
+  ],
+  "policy": "Do not overwrite historical source files silently. Apply this correction layer in all canonical merges and future analysis."
+}
