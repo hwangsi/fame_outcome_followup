@@ -1,7 +1,7 @@
 {
   "schema_version": "h21_2004_full31_recovery_v0.1",
   "generated": "2026-08-18",
-  "status": "partial_online_recovery_exhausted_pending_issue_scan",
+  "status": "partial_online_recovery_exhausted_library_locator_identified",
   "publication": "한겨레21",
   "article_title": "고건 · 강금실, 박근혜를 누르다",
   "article_transmission_date": "2004-09-20",
@@ -25,6 +25,20 @@
     "basis": "별도 재전송/인용 자료에서 한겨레21 제528호가 2004-09-22자로 확인되며 이 기사의 2004-09-20 전송 시점과 일치하는 발행주기",
     "do_not_treat_as_primary_fact_until_scan": true
   },
+  "national_assembly_library_locator": {
+    "catalog_title": "한겨레21",
+    "publisher": "한겨레신문사",
+    "publication_start": "1994-",
+    "control_number": "SERL1000000060",
+    "call_number": "P 051.1 ㅎ152",
+    "holding": "N.1 (1994)-",
+    "seoul_location": "서울관 정기간행물실(524호)",
+    "busan_location": "부산관 로비(1층 로비; 최근 권호)",
+    "issn": "1228-4017",
+    "catalog_url": "https://dl.nanet.go.kr/search/searchInnerDetail.do?controlNo=SERL1000000060",
+    "catalog_capability": "권호별 기사목차 및 원문보기 항목을 제공하는 것으로 검색 색인에 확인됨",
+    "retrieval_value": "2004년 9월 하순 권호를 조회하면 누락된 표/그래픽의 원문 접근 가능성이 가장 높음"
+  },
   "known_ranked_rows": [
     {"rank": 1, "name": "고건", "score_pct": 60.0, "status": "direct_text"},
     {"rank": 2, "name": "강금실", "score_pct": 47.3, "status": "direct_text"},
@@ -46,7 +60,8 @@
     "unknown_rank_slots_n": 20,
     "top10_complete_names": true,
     "top10_scores_complete": false,
-    "full31_complete": false
+    "full31_complete": false,
+    "library_locator_identified": true
   },
   "search_paths_attempted": [
     "exact article title + rank fragments",
@@ -55,7 +70,8 @@
     "Hankyoreh21 domain/title searches",
     "issue-number searches for 527/528",
     "library/catalog and PDF/scan web searches",
-    "image-search attempt for article/table scan"
+    "image-search attempt for article/table scan",
+    "National Assembly Library serial catalog discovery"
   ],
   "rejected_reconstruction_methods": [
     "Do not infer membership from contemporary prominence alone.",
@@ -64,9 +80,10 @@
     "Do not fabricate ranks 11~31 from later political prominence."
   ],
   "next_retrieval_gate": {
-    "preferred_source": "physical or digitized scan of the Hankyoreh21 issue containing the article/table",
+    "preferred_source": "대한민국 국회도서관 한겨레21 serial SERL1000000060의 2004년 9월 하순 권호 원문/스캔",
     "likely_target": "late-September 2004 issue, likely no. 528 but issue number must be verified from the scan",
     "needed_artifact": "page image/PDF showing the 31-candidate ranking table or candidate list",
+    "fallback": "서울관 정기간행물실(524호)에서 청구기호 P 051.1 ㅎ152의 해당 권호 열람/복사",
     "on_retrieval": "transcribe all 31 names/ranks/scores with page-level provenance, then build h21_2004_full31 roster and extend Type-A common master"
   }
 }
