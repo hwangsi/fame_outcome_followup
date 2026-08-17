@@ -1,7 +1,7 @@
 # 언론사 선정 인재 추적 — Fame Outcome Follow-up
 
 **기준일:** 2026-08-17  
-**현재 단계:** Type B longitudinal Pilot 완료 + Type A 2개 코호트 비교 + 동아일보 2010 explicit-horizon roster 재구축/정화
+**현재 단계:** Type B longitudinal Pilot 완료 + Type A 2개 코호트 비교 + 동아일보 2010 explicit-horizon exact roster 복원
 
 ## 1. Type B — 동아일보 과학기술 역할모델 Pilot
 
@@ -52,23 +52,49 @@ Type A에서는 `selection precision`, `ranking accuracy`, `baseline-adjusted ad
 - 추천 상위: **김빛내리 23 / 이재용 19 / 안철수 18표**
 - category 목표: 자유로운 창조인20 / 꿈꾸는 개척가25 / 행동하는 지성인20 / 도전하는 경제인25 / 미래를 여는 지도자10
 
-### Evidence-cleaned reconstruction v0.2
+### Canonical roster v1.0 — 이름 집합 기준
 
-v0.1에서 secondary copied list를 근거로 일부 category를 `complete`라고 한 주장은 철회했다. v0.2부터 분석 roster는 다음 evidence만 인정한다.
+과거의 aggregate count를 누적하는 방식은 중복/유실 위험이 있어 폐기하고, **개인별 row evidence가 붙은 unique-person set**을 canonical source로 사용한다.
 
-1. **2010 동아일보 원문**이 selected 100으로 직접 명시/인용
-2. **2010 당시 소속기관 공식 공지**가 선정 사실 명시
-3. 후대 동아/공식자료가 **2010을 포함하는 정확한 반복선정 범위**를 보장
+- evidence-cleaned v0.2 base: **67명**
+- 이후 독립적으로 row-resolved된 추가 인물: **10명**
+- base/addition overlap: **0명**
+- **canonical row-resolved membership: 77/100**
+- remaining: **23명**
 
-현재 candidate records 73명 중:
-- **analysis-eligible membership confirmed: 67명**
-- pending: **6명** — 김윤진, 박인출, 서도호, 손열음, 신지애, 이청용
-- category 미확정 confirmed member: 11명
-- **어느 category도 아직 complete라고 선언하지 않음**
+추가 10명: 김정범, 박원순, 이창용, 신현송, 현택환, 나경원, 김준영, 김용, 이상훈, 박인출.
 
-손열음의 후대 `3년 연속 선정` 문구는 정확한 3개 연도가 특정되지 않아 2010 membership 근거로 쓰지 않는다.
+박인출은 2010년 동시대 전문매체들이 동아일보 선정과 `도전하는 경제인` 분야를 구체적으로 보도한 근거로 M-confirmed로 복귀했다. 과거 `78/100` aggregate는 historical audit value로만 보존하며 canonical denominator로 사용하지 않는다.
 
-**2020 적중률은 roster 100/100 freeze 전에는 계산하지 않는다.** 목표시점 outcome은 strict 2019–2021 근거로 먼저 평가하고 Current 2026과 분리한다.
+### 2010↔2011 repeat reconstruction
+
+동아일보는 2011년 선정자 중 **38명이 2010·2011 2년 연속 선정**됐다고 명시했다.
+
+- row-resolved: **35/38**
+- 과학: **8/8 complete**
+- 경제: **13/14**, remaining 1
+- 문화·지도자·지성인 합계: **14/16**, remaining 2
+
+2012년 `2010–2012 3년 연속` 명예의 전당 20인은 **20/20 이름 복원 완료**. 이를 포함한 후대 exact-year evidence를 2010 membership backfill에 사용하되, 후대 category는 2010 category로 소급하지 않는다.
+
+### Primary-source recovery
+
+- 2010 전용 microsite `www.donga.com/news/2020_100/` 존재와 콘텐츠 구조 확인
+- 2010-05-10 A1/A4가 100인 표를 담은 원지면임을 archive/정정기사로 확인
+- A1/A4 원본 asset endpoint 확인, 픽셀 원본 회수는 계속 진행
+- Donga NewsBook 2호의 100인 profile archive 존재 확인
+
+### Evidence rule
+
+1. **2010 동아일보 원문**이 selected 100으로 직접 명시/인용 → H
+2. **2010 당시 소속기관 공식 공지**가 선정 사실 명시 → H
+3. 후대 동아/공식자료가 **2010을 포함하는 정확한 선정연도**를 보장 → H
+4. 2010 동시대 전문매체가 선정 및 category를 구체적으로 보도 → M
+5. copied list / secondary biography / 현재 유명세만으로는 canonical roster에 넣지 않음
+
+윤명철은 후대 자료에서 선정 사실이 반복되지만 first-party corroboration이 없어 아직 보류한다. 신지애·김윤진·서도호·손열음·이청용도 candidate-generation에는 쓰되 2010 row evidence가 붙기 전에는 canonical로 올리지 않는다.
+
+**2020 적중률은 roster 100/100 freeze 전에는 계산하지 않는다.** 목표시점 outcome은 이후 strict 2019–2021 근거로 평가하고 Current 2026과 분리한다.
 
 ## 4. 주요 파일
 
@@ -84,11 +110,15 @@ data/typeA/
   newsmaker_2003_outcomes_v0_3.json
   h21_2004_outcomes_v0_1.json
   donga_2010_2020_100_seed_v0_2_cleaned.json
+  donga_2010_canonical_roster_v1_0.json
+  donga_2011_100_roster_v0_1.json
 
 research/
-  phase2_typeA_candidates.md
-  donga_2010_explicit_horizon_discovery_v0_1.md
-  donga_2010_reconstruction_log_v0_2.md
+  donga_2010_recovery_queue_v1_0.json
+  donga_2010_legacy78_reconciliation_v0_3.md
+  donga_2010_primary_print_recovery_audit_v0_1.md
+  donga_2010_2011_repeat_crosswalk_v0_2.md
+  donga_2012_hall_of_fame_backfill_audit_v0_1.md
 
 state/
   coding_rules_v3.md
@@ -101,8 +131,10 @@ artifacts/
 
 ## 5. 다음 우선순위
 
-1. 동아일보 2010 exact roster **100/100 membership evidence** 복원
-2. category totals 20/25/20/25/10 reconciliation 및 2010 baseline 저장
-3. roster를 freeze/tag한 뒤에만 **target year 2020 outcome** 코딩
-4. 한겨레21 2004 31명 전체표, 한겨레21 1999, 신동아 1998 archive retrieval 지속
-5. Type A 3개 이상 완성 후 person-clustered common master dataset 구축
+1. 2010 exact roster **77 → 100/100** row-level evidence 복원
+2. 2011 repeat 잔여 **3명**(경제 1 + 비경제 2) exact-year evidence 확인
+3. 2010 A1/A4 원지면 또는 legacy microsite/DNB2에서 exact roster 직접 회수
+4. category totals 20/25/20/25/10 reconciliation 및 2010 baseline 저장
+5. roster freeze/tag 후에만 **target year 2020 outcome** 코딩
+6. 한겨레21 2004 31명 전체표, 한겨레21 1999, 신동아 1998 archive retrieval 지속
+7. Type A 3개 이상 완성 후 person-clustered common master dataset 구축
