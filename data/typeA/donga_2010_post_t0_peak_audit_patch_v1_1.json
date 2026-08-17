@@ -1,0 +1,32 @@
+{
+  "schema_version": "donga_2010_post_t0_peak_audit_patch_v1.1",
+  "generated": "2026-08-18",
+  "status": "audited_patch_before_final_freeze",
+  "reason": "Focused final unresolved audit established a reliable career bridge for Kim Sook-jung from the Ministry of Education to Busan education leadership.",
+  "patches": [
+    {
+      "name": "김숙정",
+      "post_t0_peak_role": "교육과학기술부 교육과정과장",
+      "post_t0_peak_score": 3,
+      "post_t0_peak_year": 2011,
+      "sector_at_peak": "national_education_policy",
+      "evidence_confidence": "H",
+      "coding_status": "resolved_by_final_audit_patch",
+      "exposure_truncated_by_death": false,
+      "peak_reason": "2011년 교육과학기술부 교육과정과장으로 국가 교육과정 및 주5일 수업제 등 전국 단위 교육정책을 담당. 2011-09 부산광역시교육청 전보 후 2018-2020 부산 남부교육지원청 교육장 경력으로 동일인 career bridge가 연결됨.",
+      "source_urls": [
+        "https://www.mt.co.kr/policy/2011/02/25/2011022510424133984",
+        "https://www.ytn.co.kr/_ln/0833_201106220940149363",
+        "https://imgkr.seoul.co.kr/news/peoples/movement/2011/09/01/20110901027022",
+        "https://www.yna.co.kr/view/AKR20180822113600051",
+        "https://council.busan.go.kr/assem/user/assem/minute/printReview.busan?minuteSid=23987"
+      ]
+    }
+  ],
+  "still_unresolved": [
+    {
+      "name": "박성훈",
+      "reason": "2009-2010 identity and international culinary gold-medal achievement are secure, but no sufficiently reliable post-selection same-person career bridge has been established. Do not infer later roles from namesakes."
+    }
+  ]
+}
