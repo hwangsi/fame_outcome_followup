@@ -1,0 +1,62 @@
+name: Kyunghyang 2004 New Leaders Roster QA
+
+on:
+  push:
+    paths:
+      - 'research/khan_2004_17th_assembly_newleaders_roster_v0_1.json'
+      - 'scripts/audit_khan_2004_common_overlap.py'
+      - '.github/workflows/khan-2004-newleaders-roster-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  roster-and-overlap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: QA recovered 20-person roster
+        run: |
+          python - <<'PY'
+          import json
+          r=json.load(open('research/khan_2004_17th_assembly_newleaders_roster_v0_1.json',encoding='utf-8'))
+          people=r['people']
+          assert len(people)==20
+          assert len({p['name'] for p in people})==20
+          counts={}
+          for p in people: counts[p['party_t0']]=counts.get(p['party_t0'],0)+1
+          assert counts=={'열린우리당':10,'한나라당':8,'민주노동당':2}
+          assert {p['name'] for p in people} >= {'노회찬','천정배','원희룡','원혜영','조승수'}
+          assert r['qa']['membership_complete'] is True
+          assert r['qa']['series_order_is_rank'] is False
+          PY
+
+      - name: Audit overlap with frozen Type-A common master
+        run: python scripts/audit_khan_2004_common_overlap.py
+
+      - name: QA overlap artifact
+        run: |
+          python - <<'PY'
+          import json
+          a=json.load(open('analysis/khan_2004_common_overlap_v0_1.json',encoding='utf-8'))
+          assert a['new_cohort_n']==20
+          assert a['existing_common_person_n']==179
+          assert a['overlap_name_n']==len(a['overlap_names'])==len(a['overlaps'])
+          assert {'천정배','유시민','원희룡','김문수'} <= set(a['overlap_names'])
+          print(json.dumps(a,ensure_ascii=False,indent=2))
+          PY
+
+      - name: Persist overlap audit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add analysis/khan_2004_common_overlap_v0_1.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Persist Kyunghyang 2004 common overlap audit"
+            git push
+          fi
