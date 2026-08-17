@@ -1,0 +1,71 @@
+{
+  "schema_version": "donga_2010_target2020_freeze_v1.0",
+  "generated": "2026-08-18",
+  "status": "frozen_source_layers_and_deterministic_master_v1.0",
+  "cohort": "동아일보 2010 2020년 한국을 빛낼 100인",
+  "canonical_roster": "data/typeA/donga_2010_canonical_roster_v2_1.json",
+  "baseline": "data/typeA/donga_2010_baseline_from_capture_v1_0.json",
+  "name_correction": "data/typeA/donga_2010_name_correction_v2_1.json",
+  "rules": [
+    "state/coding_rules_typeA_v0_1.md",
+    "state/coding_rules_typeA_sector_scope_v0_1.md",
+    "state/donga_2010_target2020_protocol_v1_0.md",
+    "state/donga_2010_target2020_unresolved_taxonomy_v1_0.md"
+  ],
+  "base_outcome_files": [
+    "data/typeA/donga_2010_target2020_outcomes_v0_1.json",
+    "data/typeA/donga_2010_target2020_outcomes_creators_v0_1.json",
+    "data/typeA/donga_2010_target2020_outcomes_pioneers_v0_1.json",
+    "data/typeA/donga_2010_target2020_outcomes_intellectuals_v0_1.json",
+    "data/typeA/donga_2010_target2020_outcomes_economy_v0_1.json"
+  ],
+  "audit_patch_files": [
+    "data/typeA/donga_2010_target2020_pending_audit_round1_academic_v0_1.json",
+    "data/typeA/donga_2010_target2020_pending_audit_round2_public_civic_v0_1.json",
+    "data/typeA/donga_2010_target2020_pending_audit_round3_resolved_v0_1.json",
+    "data/typeA/donga_2010_target2020_round3_unresolved_a_v0_1.json",
+    "data/typeA/donga_2010_target2020_round3_unresolved_b_v0_1.json"
+  ],
+  "deterministic_builder": "scripts/build_donga_2010_target2020_master.py",
+  "generated_outputs": [
+    "data/typeA/donga_2010_target2020_master_v1_0.json",
+    "data/typeA/donga_2010_target2020_master_v1_0.csv"
+  ],
+  "note_on_generated_outputs": "The canonical master outputs are deterministic build products rather than manually edited source-of-truth files. The source layers, precedence rules and QA assertions are frozen here; a fresh checkout can reproduce the same master.",
+  "qa": {
+    "workflow": ".github/workflows/donga-target2020-qa.yml",
+    "workflow_run_id": 32050555151,
+    "job_id": 95448629949,
+    "conclusion": "success",
+    "total": 100,
+    "csv_lines_including_header": 101,
+    "states": {
+      "resolved": 87,
+      "competing_event": 3,
+      "unresolved": 10
+    },
+    "resolved_score_counts": {
+      "1": 2,
+      "2": 43,
+      "3": 37,
+      "4": 5
+    },
+    "by_category": {
+      "자유로운 창조인": {"n":20,"resolved":17,"competing_event":1,"unresolved":2},
+      "꿈꾸는 개척가": {"n":25,"resolved":24,"competing_event":1,"unresolved":0},
+      "행동하는 지성인": {"n":20,"resolved":16,"competing_event":1,"unresolved":3},
+      "도전하는 경제인": {"n":25,"resolved":21,"competing_event":0,"unresolved":4},
+      "미래를 여는 지도자": {"n":9,"resolved":8,"competing_event":0,"unresolved":1},
+      "독자선정": {"n":1,"resolved":1,"competing_event":0,"unresolved":0}
+    }
+  },
+  "analysis_policy_after_freeze": {
+    "target_year_attainment_metrics": "allowed",
+    "category_target_scope_comparison": "allowed with coverage/unresolved shown",
+    "unresolved_sensitivity_analysis": "required",
+    "post_t0_peak_selection_precision": "not_yet_allowed; requires a separate post-T0 peak dataset",
+    "ranking_accuracy": "not_applicable to this alphabetic category roster unless an original rank variable exists",
+    "baseline_adjusted_advancement": "not_yet_allowed; requires baseline scope and post-T0 peak coding"
+  },
+  "freeze_semantics": "v1.0 is frozen for reproducible target-year 2020 analysis. New evidence should create a new version rather than silently mutate this freeze."
+}
