@@ -1,0 +1,97 @@
+name: Kyunghyang 2004 Peak + Type-A Common v0.3 QA
+
+on:
+  push:
+    paths:
+      - 'research/khan_2004_peak_audit_uri_batch1_v0_1.json'
+      - 'research/khan_2004_peak_audit_gnp_dlp_batch2_v0_1.json'
+      - 'scripts/build_khan_2004_peak_master.py'
+      - 'scripts/build_typeA_common_master_v0_3.py'
+      - 'scripts/identity_resolution.py'
+      - 'data/typeA/canonical_identity_overrides_v0_1.json'
+      - 'research/khan_2004_common_overlap_identity_audit_v0_1.json'
+      - '.github/workflows/khan-2004-peak-common-v03-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-freeze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build Kyunghyang 2004 peak master
+        run: python scripts/build_khan_2004_peak_master.py
+
+      - name: QA Kyunghyang peak master
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('data/typeA/khan_2004_17th_assembly_newleaders_peak_master_v1_0.json',encoding='utf-8'))
+          m=json.load(open('data/typeA/khan_2004_17th_assembly_newleaders_metrics_v1_0.json',encoding='utf-8'))
+          f=json.load(open('state/khan_2004_17th_assembly_newleaders_freeze_v1_0.json',encoding='utf-8'))
+          assert len(d['people'])==20
+          assert m['population']=={'n':20,'assessable_n':20}
+          assert m['outcomes']['major_n']==20
+          assert m['outcomes']['apex_n']==4
+          assert m['outcomes']['advanced_n']==19
+          assert m['outcomes']['lower_than_baseline_n']==1
+          assert m['apex_names']==['김부겸','김문수','임종석','한명숙']
+          assert m['non_advanced_names']==['박세일']
+          assert f['outcomes']==m['outcomes']
+          PY
+
+      - name: Build homonym-safe Type-A common master v0.3
+        run: python scripts/build_typeA_common_master_v0_3.py
+
+      - name: QA common master v0.3 population and identity
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('data/typeA/typeA_common_master_v0_3.json',encoding='utf-8'))
+          m=json.load(open('data/typeA/typeA_common_metrics_v0_3.json',encoding='utf-8'))
+          f=json.load(open('state/typeA_common_master_freeze_v0_3.json',encoding='utf-8'))
+          q=d['qa']
+          assert q['placements']==245
+          assert q['unique_people']==193
+          assert q['unique_display_names']==192
+          assert q['true_homonym_split_n']==1
+          assert q['repeated_person_n']==46
+          assert q['placement_count_distribution']=={'1':147,'2':41,'3':4,'4':1}
+          assert q['four_time_selected_names']==['유시민']
+          assert q['three_time_selected_names']==['김문수','안철수','원희룡','이재용']
+          assert q['cohort_units']==6
+          assert q['not_assessable_placements']==1
+          lee=[p for p in d['people'] if p['name']=='이미경']
+          assert len(lee)==2 and len({p['person_id'] for p in lee})==2
+          assert {p['identity_key'] for p in lee}=={'이미경|cj_enm_business','이미경|politician'}
+          k=m['by_cohort_unit']['khan_2004_17th_assembly_newleaders_20']
+          assert (k['n'],k['major_n'],k['apex_n'],k['advanced_n'])==(20,20,4,19)
+          assert m['naive_placement_pooled_descriptive']['major_n']==206
+          assert m['naive_placement_pooled_descriptive']['apex_n']==39
+          assert m['naive_placement_pooled_descriptive']['advanced_n']==98
+          assert m['person_first_selection_descriptive']['first_selection_advanced_n']==78
+          assert f['qa']==q
+          PY
+
+      - name: Persist Kyunghyang and common v0.3 outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/typeA/khan_2004_17th_assembly_newleaders_peak_master_v1_0.json \
+            data/typeA/khan_2004_17th_assembly_newleaders_metrics_v1_0.json \
+            state/khan_2004_17th_assembly_newleaders_freeze_v1_0.json \
+            data/typeA/typeA_common_master_v0_3.json \
+            data/typeA/typeA_common_master_v0_3.csv \
+            data/typeA/typeA_common_metrics_v0_3.json \
+            state/typeA_common_master_freeze_v0_3.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Freeze Kyunghyang 2004 peak master and Type-A common v0.3"
+            git push
+          fi
