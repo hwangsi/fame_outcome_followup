@@ -1,0 +1,82 @@
+{
+  "version": "v1.4",
+  "generated": "2026-08-17",
+  "canonical_source": "data/typeA/donga_2010_canonical_roster_v1_1.json",
+  "canonical_row_resolved_confirmed_n": 78,
+  "membership_slots_remaining_to_100": 22,
+  "latest_positive_addition": {
+    "name": "서도호",
+    "confidence": "H",
+    "route": "2013 Donga Hall total-three + official 2011 roster absence forces selection years 2010/2012/2013",
+    "category_2010": "unknown"
+  },
+  "repeat_2010_2011": {
+    "official_total_n": 38,
+    "row_resolved_n": 35,
+    "remaining_n": 3,
+    "science": {"resolved_n":8,"target_n":8,"remaining_n":0},
+    "business": {
+      "resolved_n":13,
+      "target_n":14,
+      "remaining_n":1,
+      "candidate_pool": ["권구훈","김가영","김남구","손병두","최태원","황철주"],
+      "crossyear_excluded": ["양윤선","정용진"],
+      "2013_hall_economy_8": ["김정주","박지영","변대규","서경배","신동빈","이미경","이서현","이해진"],
+      "rejected_working_hypothesis": "황철주는 2013 선정자이지만 2013 Hall 8인에는 없으므로 Hall logic으로 2010을 확정할 수 없다."
+    },
+    "culture_leader_intellectual_combined": {
+      "resolved_n":14,
+      "target_n":16,
+      "remaining_n":2,
+      "confirmed_14": {
+        "culture": ["김연아","박진영","봉준호","장한나"],
+        "leaders": ["김문수","오세훈","원희룡","유시민","나경원"],
+        "intellectuals": ["김해성","안철수","조국","박원순","김준영"]
+      },
+      "crossyear_excluded_since_2012_audit": ["김애란","이수만","이자람","장미란","하정우","최재경"]
+    }
+  },
+  "2013_hall_of_fame": {
+    "status": "complete_image_transcription_21_of_21",
+    "audit": "research/donga_2013_hall_image_resolution_v0_1.md",
+    "members": {
+      "꿈꾸는 개척가": ["이효철","함돈희"],
+      "미래를 여는 지도자": ["김문수","나경원","박원순"],
+      "도전하는 경제인": ["김정주","박지영","변대규","서경배","신동빈","이미경","이서현","이해진"],
+      "자유로운 창조인": ["김애란","봉준호","서도호","이자람","장한나","하정우","홍명보"],
+      "행동하는 지성인": ["김준영"]
+    },
+    "category_backprojection_allowed": false
+  },
+  "negative_evidence": {
+    "excluded_from_2010_membership": ["손열음","정용진","김애란","이수만","이자람","장미란","하정우","최재경"],
+    "excluded_from_2010_2011_business_repeat": ["양윤선","정용진"],
+    "note": "Negative evidence is retained to prevent secondary/copied candidates from re-entering the canonical roster."
+  },
+  "candidate_generation_pending": {
+    "strong_secondary_or_repeated_bio": ["김윤진","신지애","이청용","윤명철"],
+    "warning": "These names are search leads only and are not canonical until qualifying row-level evidence is attached."
+  },
+  "legacy_78_audit": {
+    "historical_aggregate_n": 78,
+    "current_canonical_n": 78,
+    "same_number_does_not_imply_same_provenance": true,
+    "commit_history_result": "No row-level data commits exist between the evidence-cleaned 67 state and the later legacy aggregate 78 log that can reconstruct the two provenance-lost 행동하는 지성인 identities. They must be rediscovered from source evidence."
+  },
+  "primary_archive_state": {
+    "archive_date_page": "https://www.donga.com/archive/newslibrary/view?ymd=20100510",
+    "a1_contains": "[2020년을 빛낼 대한민국 100인]10년후 대한민국을 빛낼 100인입니다",
+    "a4_contains": "[2020년을 빛낼 대한민국 100인]잠재력+α 있어야 차세대 리더…",
+    "a1_a4_table_existence": "independently confirmed by 2010-05-12 correction article",
+    "high_resolution_pixel_recovery": "pending"
+  },
+  "priority_search_tracks": [
+    {"priority":1,"track":"original_2010_A1_A4_or_DNB2","goal":"recover exact 100-person printed/digital roster; this is the shortest path to the remaining 22 names"},
+    {"priority":2,"track":"repeat_business_last_one","goal":"resolve one of 권구훈/김가영/김남구/손병두/최태원/황철주 with qualifying 2010 evidence"},
+    {"priority":3,"track":"repeat_nonbusiness_last_two","goal":"recover the final two nonbusiness repeats, preferably from person-level repeat markers or exact-year retrospective evidence"},
+    {"priority":4,"track":"pending_four","goal":"qualify or reject 김윤진/신지애/이청용/윤명철"},
+    {"priority":5,"track":"category_reconciliation","goal":"only after membership recovery, reconcile 2010 categories to 20/25/20/25/10"}
+  ],
+  "acceptance_rule": "No person enters the canonical frozen roster without row-level evidence guaranteeing 2010 selection under the predefined hierarchy.",
+  "analysis_gate": "Do not calculate 2020 target-year metrics before exact 100/100 roster freeze, identity resolution, baseline/provenance storage, and category reconciliation."
+}
