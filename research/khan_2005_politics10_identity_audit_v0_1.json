@@ -1,0 +1,36 @@
+{
+  "schema_version": "khan_2005_politics10_identity_audit_v0.1",
+  "generated": "2026-08-18",
+  "status": "adjudicated_10_of_10",
+  "source": "research/khan_2005_korea_leaders60_recovery_v0_1.json",
+  "existing_common": "typeA_common_master_v0.3",
+  "same_person_existing": [
+    {"name":"강금실","decision":"same_person","anchor":"전 법무부 장관","confidence":"H"},
+    {"name":"김부겸","decision":"same_person","anchor":"열린우리당 국회의원","confidence":"H"},
+    {"name":"노회찬","decision":"same_person","anchor":"민주노동당 국회의원","confidence":"H"},
+    {"name":"박근혜","decision":"same_person","anchor":"한나라당 대표","confidence":"H"},
+    {"name":"박진","decision":"same_person","anchor":"한나라당 국회의원","confidence":"H"},
+    {"name":"원희룡","decision":"same_person","anchor":"한나라당 국회의원·최고위원","confidence":"H"},
+    {"name":"이명박","decision":"same_person","anchor":"서울특별시장","confidence":"H"},
+    {"name":"정동영","decision":"same_person","anchor":"통일부 장관·전 열린우리당 의장","confidence":"H"}
+  ],
+  "new_canonical_people": [
+    {"name":"김근태","identity_key":"김근태","anchor":"보건복지부 장관","confidence":"H"},
+    {"name":"손학규","identity_key":"손학규","anchor":"경기도지사·전 보건복지부 장관","confidence":"H"}
+  ],
+  "qa": {
+    "n":10,
+    "same_existing_n":8,
+    "new_person_n":2,
+    "different_person_same_name_n":0,
+    "pending_n":0,
+    "expected_common_v0_4_placements":255,
+    "expected_common_v0_4_persons":195
+  },
+  "guardrails": [
+    "The 2005 politics field is a secondary stratum of the original 60-unit mixed selection.",
+    "All eight name overlaps are confirmed by contemporaneous political roles before merge.",
+    "No organization unit from the parent 60-unit selection is inserted into the person-only common master.",
+    "김근태 and 손학규 receive new canonical person IDs only in v0.4 after the politics10 peak master is validated."
+  ]
+}
