@@ -6,7 +6,7 @@ from statistics import mean
 
 ROOT=Path(__file__).resolve().parents[1]
 TYPEA=ROOT/'data/typeA'
-BASE=TYPEA/'donga_2010_baseline_peak_through_t0_v1_1.json'
+BASE=TYPEA/'donga_2010_baseline_peak_through_t0_v1_2.json'
 OUT=TYPEA/'donga_2010_post_t0_peak_analysis_working.json'
 PATTERN=str(TYPEA/'donga_2010_post_t0_peak_*_v0_1.json')
 
@@ -41,7 +41,7 @@ def main():
     for cat in dict.fromkeys(r['category'] for r in rows):
         allc=[r for r in rows if r['category']==cat]; a=[r for r in allc if r['post_t0_peak_score'] is not None]
         bycat[cat]={'rows':len(allc),'assessed':len(a),'unresolved':len(allc)-len(a),'major_ge3_n':sum(r['post_t0_peak_score']>=3 for r in a),'major_ge3_rate_assessed':sum(r['post_t0_peak_score']>=3 for r in a)/len(a) if a else None,'apex_eq4_n':sum(r['post_t0_peak_score']==4 for r in a),'advanced_n':sum(r['advancement_class']=='advanced' for r in a),'sustained_high_n':sum(r['advancement_class']=='sustained_high' for r in a),'no_clear_advancement_n':sum(r['advancement_class']=='no_clear_advancement' for r in a),'lower_than_baseline_n':sum(r['advancement_class']=='lower_than_baseline' for r in a),'mean_advancement_delta':mean(r['advancement_delta'] for r in a) if a else None,'truncated_by_death_n':sum(r['exposure_truncated_by_death'] for r in allc)}
-    out={'schema_version':'donga_2010_post_t0_peak_analysis_working_v0.2','generated':'2026-08-18','status':'working_not_frozen_until_100_rows_audited','baseline_ref':'data/typeA/donga_2010_baseline_peak_through_t0_v1_1.json','source_files':source_files,'coverage':{'rows':len(rows),'assessed':len(assessed),'unresolved':len(rows)-len(assessed),'remaining_uncreated':100-len(rows)},'assessed_only':{'major_leadership_precision_ge3':sum(r['post_t0_peak_score']>=3 for r in assessed)/len(assessed) if assessed else None,'major_ge3_n':sum(r['post_t0_peak_score']>=3 for r in assessed),'apex_precision_eq4':sum(r['post_t0_peak_score']==4 for r in assessed)/len(assessed) if assessed else None,'apex_eq4_n':sum(r['post_t0_peak_score']==4 for r in assessed),'mean_advancement_delta':mean(r['advancement_delta'] for r in assessed) if assessed else None,'advancement_classes':dict(classes)},'by_category':bycat,'rows':rows}
+    out={'schema_version':'donga_2010_post_t0_peak_analysis_working_v0.3','generated':'2026-08-18','status':'working_not_frozen_until_100_rows_audited','baseline_ref':'data/typeA/donga_2010_baseline_peak_through_t0_v1_2.json','source_files':source_files,'coverage':{'rows':len(rows),'assessed':len(assessed),'unresolved':len(rows)-len(assessed),'remaining_uncreated':100-len(rows)},'assessed_only':{'major_leadership_precision_ge3':sum(r['post_t0_peak_score']>=3 for r in assessed)/len(assessed) if assessed else None,'major_ge3_n':sum(r['post_t0_peak_score']>=3 for r in assessed),'apex_precision_eq4':sum(r['post_t0_peak_score']==4 for r in assessed)/len(assessed) if assessed else None,'apex_eq4_n':sum(r['post_t0_peak_score']==4 for r in assessed),'mean_advancement_delta':mean(r['advancement_delta'] for r in assessed) if assessed else None,'advancement_classes':dict(classes)},'by_category':bycat,'rows':rows}
     OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     assert len(rows)==len(merged) and len(set(merged))==len(merged)
     print(json.dumps({k:v for k,v in out.items() if k!='rows'},ensure_ascii=False,indent=2))
