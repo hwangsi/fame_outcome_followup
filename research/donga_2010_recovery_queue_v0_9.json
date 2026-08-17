@@ -1,0 +1,46 @@
+{
+  "version": "v0.9",
+  "generated": "2026-08-17",
+  "canonical_row_resolved_confirmed_n": 76,
+  "membership_slots_remaining_to_100": 24,
+  "historical_legacy_aggregate_n": 78,
+  "legacy_unresolved_records_n": 4,
+  "canonical_additions_since_v0_7": [
+    {"name":"나경원","route":"2011 roster + 2012 absence + 2013 Donga Hall total-three logic","category_2010":"unknown"},
+    {"name":"김준영","route":"2011 roster + 2012 absence + 2013 Donga Hall total-three logic","category_2010":"unknown"},
+    {"name":"김용","route":"primary Donga 2010 DNB2 article","category_2010":"unknown"},
+    {"name":"이상훈","route":"primary Donga 2010 launch article","category_2010":"unknown"}
+  ],
+  "legacy_records_still_unresolved": [
+    {"name":"윤명철","slot":"category_unknown","status":"probable_secondary_pending_first_party"},
+    {"name":null,"slot":"도전하는 경제인","status":"name_and_provenance_unresolved"},
+    {"name":null,"slot":"행동하는 지성인","status":"name_and_provenance_unresolved"},
+    {"name":null,"slot":"행동하는 지성인","status":"name_and_provenance_unresolved"}
+  ],
+  "repeat_2010_2011": {
+    "official_total_n": 38,
+    "row_resolved_n": 35,
+    "remaining_n": 3,
+    "business":{"resolved_n":13,"target_n":14,"remaining_n":1},
+    "science":{"resolved_n":8,"target_n":8,"remaining_n":0},
+    "culture_leader_intellectual_combined":{"resolved_n":14,"target_n":16,"remaining_n":2}
+  },
+  "high_priority_candidates": {
+    "secondary_2010_and_official_2011_overlap": ["신지애"],
+    "pending_secondary_2010": ["김윤진","서도호","손열음","신지애","이청용","윤명철"]
+  },
+  "exclusion_notes": [
+    "2011 membership alone is never sufficient for 2010 membership.",
+    "2013/2014 Hall evidence is used only when selection-year combinations are logically unique.",
+    "Later categories are not back-projected to 2010 categories.",
+    "Outcome status in 2020 or 2026 is never used to infer T0 membership."
+  ],
+  "search_tracks": [
+    {"priority":1,"track":"repeat_business_last_one","goal":"resolve final business member among 2010-2011 repeat 14 using exact-year first-party evidence"},
+    {"priority":2,"track":"repeat_nonbusiness_last_two","goal":"resolve final two culture/leader/intellectual repeat members"},
+    {"priority":3,"track":"shin_ji_ae_2010_first_party","goal":"upgrade strong secondary 2010 + official 2011 overlap with first-party/official 2010 evidence"},
+    {"priority":4,"track":"legacy_four_reconciliation","goal":"resolve 윤명철 + one economy + two intellectual legacy records"},
+    {"priority":5,"track":"original_2010_A1_A4_or_DNB2","goal":"recover exact original 100-person printed/digital roster"}
+  ],
+  "analysis_gate":"Do not calculate 2020 target-year prediction metrics before exact 100/100 T0 roster freeze, identity resolution, baseline storage, provenance, and category reconciliation."
+}
