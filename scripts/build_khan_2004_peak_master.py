@@ -42,7 +42,7 @@ def main():
     assert sum(p['advancement_class']=='advanced' for p in people)==19
     assert [p['name'] for p in people if p['advancement_class']=='lower_than_baseline']==['박세일']
     assert sum(p['apex_eq4'] for p in people)==4
-    assert sorted(p['name'] for p in people if p['apex_eq4'])==['김부겸','김문수','임종석','한명숙']
+    assert sorted(p['name'] for p in people if p['apex_eq4'])==['김문수','김부겸','임종석','한명숙']
 
     metrics={
       'schema_version':'khan_2004_17th_assembly_newleaders_metrics_v1.0',
