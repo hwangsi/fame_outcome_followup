@@ -1,0 +1,34 @@
+{
+  "schema_version": "typeA_t0_partial_v0.1",
+  "generated": "2026-08-17",
+  "cohort": {
+    "publication": "한겨레21",
+    "date": "2004-09-20",
+    "cohort_type": "A",
+    "title": "고건 · 강금실, 박근혜를 누르다 — 차세대 리더 여론조사",
+    "candidate_pool_n": 31,
+    "ranked_core": "Top10",
+    "survey_firm": "리서치플러스",
+    "n_respondents": 700,
+    "population": "전국 성인남녀",
+    "collection": "전화면접",
+    "survey_date": "2004-09-14",
+    "margin_of_error": "95% CI ±3.7%p",
+    "score_definition": "호감도 긍정평가와 국정수행 능력 긍정평가의 평균",
+    "note": "Top10 순위는 원문에서 전부 복원. 1~7위 종합점수 복원, 8~10위 종합점수는 공개 본문 미기재."
+  },
+  "ranked_top10": [
+    {"rank":1,"name":"고건","score_pct":60.0,"t0_role":"전 국무총리·2004 대통령 권한대행"},
+    {"rank":2,"name":"강금실","score_pct":47.3,"t0_role":"전 법무부 장관"},
+    {"rank":3,"name":"박근혜","score_pct":46.5,"t0_role":"한나라당 대표최고위원"},
+    {"rank":4,"name":"이회창","score_pct":33.8,"t0_role":"전 한나라당 총재·1997/2002 대통령 후보, 정계은퇴 상태"},
+    {"rank":5,"name":"정몽준","score_pct":32.4,"t0_role":"국회의원·2002 대선 주요 후보/단일화 당사자"},
+    {"rank":6,"name":"정동영","score_pct":31.0,"t0_role":"통일부 장관·열린우리당 지도부"},
+    {"rank":7,"name":"권영길","score_pct":26.2,"t0_role":"민주노동당 의원·2002 대통령 후보"},
+    {"rank":8,"name":"이명박","score_pct":null,"t0_role":"서울특별시장"},
+    {"rank":9,"name":"추미애","score_pct":null,"t0_role":"전 국회의원·민주당 중진"},
+    {"rank":10,"name":"이해찬","score_pct":null,"t0_role":"국무총리"}
+  ],
+  "additional_recovered": [{"rank":22,"name":"이인제","score_pct":null}],
+  "missing": "11~31위 전체표와 8~10위 점수 미복원"
+}
