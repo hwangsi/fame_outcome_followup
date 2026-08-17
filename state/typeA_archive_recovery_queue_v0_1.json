@@ -1,0 +1,127 @@
+{
+  "schema_version": "typeA_archive_recovery_queue_v0.1",
+  "generated": "2026-08-18",
+  "status": "active_recovery_queue",
+  "goal": "Recover primary historical ranking/survey tables without guessing missing ranks, then promote each recovered archive into a reproducible Type-A cohort.",
+  "priority_order": [
+    {
+      "priority": 1,
+      "id": "h21_1999_issue264",
+      "publication": "한겨레21",
+      "year": 1999,
+      "target": "통권264호 1999-07-01 차세대리더/호감 정치인 조사",
+      "research_value": "very_high",
+      "recoverability": "very_high",
+      "why": "exact issue/date is directly known; rank1/3/5 are already confirmed; primary serial is held from issue 1 onward by National Assembly Library",
+      "known": ["노무현 1위", "이인제 3위", "정동영 5위"],
+      "missing": ["full candidate pool", "rank2/rank4/rank6+", "scores", "methodology/sample details"],
+      "primary_locator": {
+        "institution": "국회도서관",
+        "control_number": "SERL1000000060",
+        "call_number": "P 051.1 ㅎ152",
+        "exact_issue": "264",
+        "exact_date": "1999-07-01"
+      },
+      "secondary_cache_key": "한겨레21, 노풍을 처음 예보하다 / 2002-12-27 / H21 article ID 6902",
+      "ledger": "state/h21_1999_recovery_v0_1.json",
+      "completion_gate": "primary scan/table with full names/ranks and methodology"
+    },
+    {
+      "priority": 2,
+      "id": "h21_2004_full31",
+      "publication": "한겨레21",
+      "year": 2004,
+      "target": "2004 차세대리더 여론조사 31명 전체표",
+      "research_value": "very_high",
+      "recoverability": "high",
+      "why": "candidate pool=31 and Top10 plus rank22 are known; recovering ranks11-31 removes severe Top10 truncation in an already-coded outcome cohort",
+      "known": ["ranks1-10 complete names", "scores1-7", "이인제 22위", "sample700/ResearchPlus/telephone/2004-09-14"],
+      "missing": ["ranks11-21,23-31", "scores8-31"],
+      "primary_locator": {
+        "institution": "국회도서관",
+        "control_number": "SERL1000000060",
+        "call_number": "P 051.1 ㅎ152",
+        "date_window": "late September 2004",
+        "issue_hint": "likely no.528; verify from scan before treating as fact"
+      },
+      "ledger": "state/h21_2004_full31_recovery_v0_1.json",
+      "completion_gate": "primary ranking table/graphic with all 31 candidates"
+    },
+    {
+      "priority": 3,
+      "id": "h21_2000_citizen_favorability",
+      "publication": "한겨레21",
+      "year": 2000,
+      "target": "시민 대상 호감 가는 정치인 조사",
+      "research_value": "very_high",
+      "recoverability": "medium",
+      "why": "publisher retrospective confirms survey existence and Roh rank1; same-year pairing with expert forecast can compare two prediction constructs within one outlet",
+      "known": ["노무현 1위", "citizen favorability/preference construct"],
+      "missing": ["exact issue/date", "candidate pool", "ranks2+", "scores", "methodology"],
+      "primary_locator": {
+        "institution": "국회도서관",
+        "control_number": "SERL1000000060",
+        "call_number": "P 051.1 ㅎ152",
+        "date_window": "all 2000 issues; do not assume month"
+      },
+      "ledger": "state/h21_2000_citizen_favorability_recovery_v0_1.json",
+      "completion_gate": "primary issue/article identifying date and full ranking/methodology"
+    },
+    {
+      "priority": 4,
+      "id": "h21_2000_yearend_expert_forecast",
+      "publication": "한겨레21",
+      "year": 2000,
+      "target": "연말 정치학자·정치부기자 대통령 당선가능성 forecast",
+      "research_value": "very_high",
+      "recoverability": "medium",
+      "why": "a true forecast-style question; Lee Hoi-chang rank1 and Roh 3.8%/1.7% are known from retrospective; useful contrast with citizen favorability poll",
+      "known": ["이회창 압도적 1위", "노무현 정치학자3.8%", "노무현 정치부기자1.7%"],
+      "missing": ["exact issue/date/title", "candidate list", "full expert-group percentages", "sample sizes/methodology"],
+      "primary_locator": {
+        "institution": "국회도서관",
+        "control_number": "SERL1000000060",
+        "call_number": "P 051.1 ㅎ152",
+        "date_window": "late December 2000",
+        "legacy_image_clue": "filename suggests 2000-12-27 / possible issue340; clue only"
+      },
+      "ledger": "state/h21_2000_yearend_presidential_forecast_recovery_v0_1.json",
+      "completion_gate": "primary forecast table and methodology"
+    },
+    {
+      "priority": 5,
+      "id": "shindonga_1998_aug_nextgen_politics",
+      "publication": "신동아",
+      "year": 1998,
+      "target": "1998년 8월 정치부 기자100명이 뽑은 차세대 정치인",
+      "research_value": "high",
+      "recoverability": "medium_low",
+      "why": "Kim Geun-tae rank1 is independently confirmed and a physical issue exists, but official online archive coverage predates the current searchable range",
+      "known": ["김근태 1위", "political reporters100", "1998 Aug issue"],
+      "missing": ["article title", "ranks2+", "scores/votes", "methodology/candidate eligibility"],
+      "primary_locator": {
+        "preferred": "public library/archive holding of 신동아 1998년8월호",
+        "fallback": "confirmed physical-copy market listing retained only as existence/retrieval lead"
+      },
+      "ledger": "state/shindonga_1998_nextgen_politics_recovery_v0_1.json",
+      "completion_gate": "primary issue pages containing survey table/article"
+    }
+  ],
+  "global_rules": [
+    "Never fill missing ranks from later fame, election outcomes, or contemporary prominence.",
+    "Never merge surveys from different publishers, respondent populations, questions, or years merely because candidate names overlap.",
+    "A search-engine match containing a candidate name is not proof of inclusion unless the source text/table explicitly links the candidate to the survey.",
+    "Primary issue/table is required before promoting an incomplete recovery ledger to a full Type-A roster.",
+    "Record page-level provenance when scans become available.",
+    "Preserve separate constructs: citizen favorability, expert future-leader ranking, presidential win probability, editorial broad screening."
+  ],
+  "promotion_pipeline": [
+    "recover primary scan/table",
+    "transcribe roster/ranks/scores/methodology",
+    "freeze provenance roster",
+    "code T0 and baseline lifetime peak",
+    "code post-T0 career peak",
+    "calculate major/apex/advancement/rank metrics",
+    "add to Type-A common master with design metadata"
+  ]
+}
