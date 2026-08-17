@@ -1,0 +1,63 @@
+{
+  "schema_version": "donga_2010_t0_freeze_v1.0",
+  "generated": "2026-08-18",
+  "cohort": "동아일보 2010 2020년 한국을 빛낼 100인",
+  "status": "membership_and_t0_baseline_provenance_frozen",
+  "canonical_roster": {
+    "path": "data/typeA/donga_2010_canonical_roster_v2_0.json",
+    "blob_sha": "810bbf383ad16763d3c0711cc5b959a20cc62af6",
+    "total_n": 100,
+    "editorial_n": 99,
+    "reader_selected_n": 1,
+    "category_counts": {
+      "자유로운 창조인": 20,
+      "꿈꾸는 개척가": 25,
+      "행동하는 지성인": 20,
+      "도전하는 경제인": 25,
+      "미래를 여는 지도자": 9,
+      "독자선정": 1
+    }
+  },
+  "baseline_capture": {
+    "path": "data/typeA/donga_2010_baseline_from_capture_v1_0.json",
+    "blob_sha": "91c5d710b7c690e07ad3fa8ee5adce2c58c33139",
+    "source": "user-provided captures of the original Donga 2010 table plus Donga reader-selected follow-up",
+    "total_rows": 100,
+    "fields_transcribed": ["name", "category", "role", "age", "sex"],
+    "known_missing_demographics": [
+      {
+        "name": "백경학",
+        "age": null,
+        "sex": null,
+        "note": "reader-selected 100th person; role is available from follow-up source"
+      }
+    ]
+  },
+  "source_recovery": {
+    "launch_article": "https://www.donga.com/news/Society/article/all/20100510/28213859/1",
+    "reader_selected_followup": "https://www.donga.com/news/Issue/List/06001600010001/article/all/20100531/28723481/1",
+    "repeat_crosswalk": "research/donga_2010_2011_repeat_crosswalk_v1_0.md",
+    "repeat_2010_2011_status": "38/38 complete"
+  },
+  "identity_policy": {
+    "t0_anchor": "name + original category + contemporaneous role/affiliation",
+    "t0_rows_anchored": 100,
+    "future_outcome_matching": "audit per person against dated 2019-2021 evidence; ambiguous matches remain pending rather than forced",
+    "future_identity_audit_status": "in_progress"
+  },
+  "target_outcome_protocol": "state/donga_2010_target2020_protocol_v1_0.md",
+  "analysis_gate": {
+    "membership_100_100": true,
+    "baseline_roles_100_100": true,
+    "t0_provenance_frozen": true,
+    "future_identity_audit_complete": false,
+    "target2020_coding_started": true,
+    "whole_cohort_metrics_allowed": false
+  },
+  "next": [
+    "code target2020 outcomes category by category",
+    "resolve future identity/timeline uncertainties during coding",
+    "reach 100/100 outcome rows",
+    "freeze outcome dataset before calculating cohort metrics"
+  ]
+}
