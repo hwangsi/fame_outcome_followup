@@ -1,0 +1,48 @@
+{
+  "schema_version": "donga_2010_explicit_horizon_seed_v0.1",
+  "generated": "2026-08-17",
+  "cohort": {
+    "outlet": "동아일보",
+    "title": "2020년 한국을 빛낼 100인",
+    "selection_year": 2010,
+    "explicit_target_year": 2020,
+    "cohort_type": "A_explicit_horizon",
+    "editorial_selection_n": 99,
+    "reader_selected_n": 1,
+    "total_n": 100,
+    "initial_candidate_n": 355,
+    "advisers_n": 8,
+    "recommenders_n": 205,
+    "university_professors_n": 36,
+    "mean_age": 44.9,
+    "women_n": 16,
+    "categories": {"자유로운 창조인":20,"꿈꾸는 개척가":25,"행동하는 지성인":20,"도전하는 경제인":25,"미래를 여는 지도자":10},
+    "top_first_round_recommendations": [{"name":"김빛내리","votes":23},{"name":"이재용","votes":19},{"name":"안철수","votes":18}],
+    "selection_process": [
+      "편집국 취재기자 약 200명의 도움으로 추천위원 205명 선정",
+      "1단계: 추천위원이 분야 무관 3명씩 추천하여 355명 후보군 생성",
+      "자문위원 8명이 미래 인재 가이드라인 제시",
+      "2단계: 12개 세부분야별 40~50명 후보에서 추천위원이 5명씩 선택",
+      "99명 편집부 선정 후 100번째 인물은 독자 추천 824건에서 자문위원 검토로 백경학 선정"
+    ],
+    "why_methodologically_valuable": "선정 시점에 목표연도 2020을 명시하여 actual target-year calibration이 가능"
+  },
+  "reconstruction": {
+    "confirmed_seed_n": 58,
+    "confirmed_seed": [
+      {"name":"김연아","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"김윤진","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"김현수","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"노희경","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"박민규","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"박성훈","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"박진영","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"봉준호","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"서도호","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"신경숙","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"신지애","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"심승현","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"양성원","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"이청용","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"장한나","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"정연두","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"정욱준","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"조성진","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"최은석","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},{"name":"홍명보","category":"자유로운 창조인","selection_confirmed":true,"category_confidence":"H"},
+      {"name":"김빛내리","category":"꿈꾸는 개척가","selection_confirmed":true,"category_confidence":"H"},{"name":"안철수","category":"꿈꾸는 개척가","selection_confirmed":true,"category_confidence":"H"},{"name":"이상엽","category":"꿈꾸는 개척가","selection_confirmed":true,"category_confidence":"H"},{"name":"이지오","category":"꿈꾸는 개척가","selection_confirmed":true,"category_confidence":"H"},{"name":"이효철","category":"꿈꾸는 개척가","selection_confirmed":true,"category_confidence":"H"},{"name":"정하웅","category":"꿈꾸는 개척가","selection_confirmed":true,"category_confidence":"H"},{"name":"조동호","category":"꿈꾸는 개척가","selection_confirmed":true,"category_confidence":"H"},{"name":"주영석","category":"꿈꾸는 개척가","selection_confirmed":true,"category_confidence":"H"},{"name":"김기문","category":"꿈꾸는 개척가","selection_confirmed":true,"category_confidence":"H"},{"name":"신재원","category":"꿈꾸는 개척가","selection_confirmed":true,"category_confidence":"H"},
+      {"name":"이광형","category":"행동하는 지성인","selection_confirmed":true,"category_confidence":"H"},{"name":"조국","category":"행동하는 지성인","selection_confirmed":true,"category_confidence":"M"},{"name":"임경진","category":"행동하는 지성인","selection_confirmed":true,"category_confidence":"M"},{"name":"한숭희","category":"행동하는 지성인","selection_confirmed":true,"category_confidence":"M"},{"name":"오충현","category":"행동하는 지성인","selection_confirmed":true,"category_confidence":"M"},{"name":"이명균","category":"행동하는 지성인","selection_confirmed":true,"category_confidence":"M"},{"name":"백경학","category":"행동하는 지성인","selection_confirmed":true,"category_confidence":"M"},
+      {"name":"이재용","category":"도전하는 경제인","selection_confirmed":true,"category_confidence":"H"},{"name":"신동빈","category":"도전하는 경제인","selection_confirmed":true,"category_confidence":"H"},{"name":"강방천","category":"도전하는 경제인","selection_confirmed":true,"category_confidence":"H"},{"name":"서경배","category":"도전하는 경제인","selection_confirmed":true,"category_confidence":"H"},{"name":"김택진","category":"도전하는 경제인","selection_confirmed":true,"category_confidence":"H"},{"name":"정태영","category":"도전하는 경제인","selection_confirmed":true,"category_confidence":"H"},{"name":"박현주","category":"도전하는 경제인","selection_confirmed":true,"category_confidence":"H"},{"name":"서정진","category":"도전하는 경제인","selection_confirmed":true,"category_confidence":"H"},{"name":"강덕수","category":"도전하는 경제인","selection_confirmed":true,"category_confidence":"H"},{"name":"남수정","category":"도전하는 경제인","selection_confirmed":true,"category_confidence":"H"},{"name":"박병엽","category":"도전하는 경제인","selection_confirmed":true,"category_confidence":"H"},{"name":"이해진","category":"도전하는 경제인","selection_confirmed":true,"category_confidence":"H"},{"name":"박지영","category":"도전하는 경제인","selection_confirmed":true,"category_confidence":"H"},{"name":"성영석","category":"도전하는 경제인","selection_confirmed":true,"category_confidence":"H"},{"name":"박인출","category":"도전하는 경제인","selection_confirmed":true,"category_confidence":"H"},
+      {"name":"오세훈","category":"미래를 여는 지도자","selection_confirmed":true,"category_confidence":"H"},{"name":"김문수","category":"미래를 여는 지도자","selection_confirmed":true,"category_confidence":"H"},{"name":"유시민","category":"미래를 여는 지도자","selection_confirmed":true,"category_confidence":"H"},{"name":"송영길","category":"미래를 여는 지도자","selection_confirmed":true,"category_confidence":"H"},{"name":"임태희","category":"미래를 여는 지도자","selection_confirmed":true,"category_confidence":"H"},{"name":"원희룡","category":"미래를 여는 지도자","selection_confirmed":true,"category_confidence":"M"}
+    ],
+    "category_completion": {"자유로운 창조인":{"confirmed":20,"target":20,"status":"complete_seed_reconstruction"},"꿈꾸는 개척가":{"confirmed":10,"target":25,"status":"partial"},"행동하는 지성인":{"confirmed":7,"target":20,"status":"partial"},"도전하는 경제인":{"confirmed":15,"target":25,"status":"partial"},"미래를 여는 지도자":{"confirmed":6,"target":10,"status":"partial"}},
+    "notes": [
+      "confirmed_seed는 명단 전체가 아니며 공개 원문/기관 공지/당시 복제본에서 직접 확인된 인물만 포함.",
+      "자유로운 창조인 20명은 당시 동아일보 본문을 복제한 2011 블로그 텍스트에서 전체 연속 명단이 확인되며 다수는 동아일보 개별기사로 교차확인.",
+      "category_confidence=M은 선정 자체는 확인되나 카테고리 귀속이 공개 본문에서 직접 명시되지 않아 문맥으로 배치한 사례.",
+      "전체 100명 복원 전에는 target-year outcome precision을 계산하지 않음."
+    ]
+  },
+  "next_steps": ["나머지 42명 및 카테고리 귀속 복원","2010 DNB 2호/동아 100people 구형 페이지 archive 탐색","전체 명단 완성 후 2020 target-year outcome 코딩","추천 득표수 전체/상위권 추가 복원 시 vote count calibration 분석"]
+}
