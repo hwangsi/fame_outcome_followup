@@ -269,7 +269,7 @@ state/
   donga_2010_post_t0_peak_protocol_v1_0.md
   donga_2010_post_t0_peak_freeze_v1_2.json
   donga_2010_typeA_result_v1_0.md
-  donga_2011_t0_baseline_freeze_v1_0.json
+  donga_2011_baseline_freeze_v1_0.json
 
 data/typeA/
   newsmaker_2003_outcomes_v0_3.json
