@@ -1,0 +1,161 @@
+{
+  "schema_version": "donga_2011_post_t0_new_audit_batch2_v0.1",
+  "generated": "2026-08-18",
+  "status": "resolved_high_confidence_batch",
+  "selection_cutoff": "2011-04-01",
+  "purpose": "Second dedicated post-2011 outcome audit batch for new 2011 entrants, prioritizing senior public offices and objectively verifiable top-level business/sports roles.",
+  "rules_ref": "state/coding_rules_typeA_sector_scope_v0_1.md",
+  "people": [
+    {
+      "name": "김부겸",
+      "post2011_peak_role": "대한민국 국무총리",
+      "post2011_peak_score": 4,
+      "post2011_peak_year": 2021,
+      "sector_at_peak": "politics_government",
+      "evidence_confidence": "H",
+      "source_urls": ["https://www.yna.co.kr/view/AKR20210513180600001"],
+      "reason": "2021-05-14 국무총리 임기 시작이 확인된다. locked political rubric에서 대통령·국무총리는 national-apex score 4에 해당한다.",
+      "exposure_truncated_by_death": false,
+      "death_year": null,
+      "coding_status": "resolved"
+    },
+    {
+      "name": "강일원",
+      "post2011_peak_role": "헌법재판소 재판관",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2012,
+      "sector_at_peak": "constitutional_judiciary",
+      "evidence_confidence": "H",
+      "source_urls": [
+        "https://ccourt.go.kr/site/history/02/10201000000002020101203.jsp",
+        "https://www.ccourt.go.kr/site/kor/ex/bbs/View.do?bcIdx=983378&cbIdx=1127"
+      ],
+      "reason": "헌법재판소 공식 연혁에서 2012년 재판관 취임과 2018년 퇴임이 확인된다. 국가 최고 헌법재판기관의 재판관은 major national public/legal leadership score 3으로 코딩한다.",
+      "exposure_truncated_by_death": false,
+      "death_year": null,
+      "coding_status": "resolved"
+    },
+    {
+      "name": "김태효",
+      "post2011_peak_role": "대통령실 국가안보실 제1차장",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2022,
+      "sector_at_peak": "national_security_presidential_office",
+      "evidence_confidence": "H",
+      "source_urls": ["https://www.yna.co.kr/view/AKR20220501032252001"],
+      "reason": "2022년 대통령실 국가안보실 1차장 임명이 확인된다. 대통령실 국가안보 정책의 최고위 실무 리더십은 major national public leadership score 3이다.",
+      "exposure_truncated_by_death": false,
+      "death_year": null,
+      "coding_status": "resolved"
+    },
+    {
+      "name": "임성남",
+      "post2011_peak_role": "외교부 제1차관",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2015,
+      "sector_at_peak": "foreign_affairs_government",
+      "evidence_confidence": "H",
+      "source_urls": ["https://rou.mofa.go.kr/www/wpge/m_4171/contents.do"],
+      "reason": "외교부 공식 역대차관 기록에서 2015-10-21부터 2018-09-28까지 제1차관 재임이 확인된다. 중앙정부 차관급 최고위 정책 리더십은 score 3으로 코딩한다.",
+      "exposure_truncated_by_death": false,
+      "death_year": null,
+      "coding_status": "resolved"
+    },
+    {
+      "name": "최재경",
+      "post2011_peak_role": "대통령비서실 민정수석비서관",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2016,
+      "sector_at_peak": "presidential_office_law",
+      "evidence_confidence": "H",
+      "source_urls": ["https://www.yna.co.kr/view/AKR20161030053100004"],
+      "reason": "2016년 청와대 민정수석 임명이 확인된다. 대통령비서실 핵심 수석비서관은 국가 수준의 주요 공공 리더십으로 score 3이다.",
+      "exposure_truncated_by_death": false,
+      "death_year": null,
+      "coding_status": "resolved"
+    },
+    {
+      "name": "손병두",
+      "post2011_peak_role": "한국거래소 제7대 이사장",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2020,
+      "sector_at_peak": "finance_public_market_infrastructure",
+      "evidence_confidence": "H",
+      "source_urls": ["https://info.krx.co.kr/contents/KRX/01/01020300/KRX01020300.jsp?pageCount=1"],
+      "reason": "한국거래소 공식 역대 이사장 기록에서 2020-12-21~2023-12-20 제7대 이사장 재임이 확인된다. 국가 핵심 자본시장 인프라 기관의 최고책임자는 major national institution leadership score 3이다.",
+      "exposure_truncated_by_death": false,
+      "death_year": null,
+      "coding_status": "resolved"
+    },
+    {
+      "name": "손흥민",
+      "post2011_peak_role": "2021/22 Premier League Golden Boot 공동 수상자",
+      "post2011_peak_score": 4,
+      "post2011_peak_year": 2022,
+      "sector_at_peak": "football_sports",
+      "evidence_confidence": "H",
+      "source_urls": ["https://www.premierleague.com/en/news/2626553"],
+      "reason": "프리미어리그 공식 기록에서 2021/22 시즌 23골로 모하메드 살라와 Golden Boot를 공동 수상했으며 아시아 선수 최초 수상임이 확인된다. 세계 최상위 프로축구 리그의 시즌 득점왕은 단순 top-league participation을 넘어 해당 리그의 명시적 개인 apex title이므로 sports score 4로 코딩한다.",
+      "exposure_truncated_by_death": false,
+      "death_year": null,
+      "coding_status": "resolved_apex_award"
+    },
+    {
+      "name": "김정주",
+      "post2011_peak_role": "NXC 대표이사·넥슨 창업자",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2021,
+      "sector_at_peak": "gaming_global_business",
+      "evidence_confidence": "H",
+      "source_urls": [
+        "https://www.yna.co.kr/view/AKR20210729060500017",
+        "https://www.yna.co.kr/view/AKR20220302075300017"
+      ],
+      "reason": "2021년까지 16년간 넥슨 지주사 NXC 대표이사를 맡았고 이후에도 이사로 주요 의사결정에 참여한 사실이 확인된다. 대형 글로벌 게임기업 창업자·지주사 최고경영 리더십은 score 3으로 보수적으로 코딩한다.",
+      "exposure_truncated_by_death": true,
+      "death_year": 2022,
+      "coding_status": "resolved_truncated_by_death"
+    },
+    {
+      "name": "정용진",
+      "post2011_peak_role": "신세계그룹 회장",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2024,
+      "sector_at_peak": "retail_conglomerate_business",
+      "evidence_confidence": "H",
+      "source_urls": ["https://www.yna.co.kr/view/AKR20240308018452030"],
+      "reason": "2024년 신세계그룹 회장 승진이 확인된다. 국내 주요 대기업집단 최고경영 리더십은 score 3으로 코딩하며, 그룹 총수 동일인 지위가 당시 모친에게 유지된 점을 감안해 score 4로 확대하지 않는다.",
+      "exposure_truncated_by_death": false,
+      "death_year": null,
+      "coding_status": "resolved_conservative"
+    },
+    {
+      "name": "이미경",
+      "post2011_peak_role": "CJ그룹 부회장·글로벌 엔터테인먼트 전략 리더",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2020,
+      "sector_at_peak": "media_entertainment_business",
+      "evidence_confidence": "H",
+      "source_urls": ["https://www.yna.co.kr/view/AKR20200211121351009"],
+      "reason": "2020년 CJ그룹 부회장으로서 CJ ENM의 기생충 글로벌·오스카 캠페인을 이끈 핵심 역할이 확인된다. 대형 미디어·엔터테인먼트 그룹의 글로벌 전략 최고위 리더십을 score 3으로 보수적으로 코딩한다.",
+      "exposure_truncated_by_death": false,
+      "death_year": null,
+      "coding_status": "resolved"
+    }
+  ],
+  "qa": {
+    "batch_n": 10,
+    "resolved_n": 10,
+    "unresolved_n": 0,
+    "score_counts": {"3": 8, "4": 2},
+    "high_confidence_n": 10,
+    "death_truncated_n": 1
+  },
+  "guardrails": [
+    "This batch codes maximum post-cutoff prominence/leadership; adverse events and death truncation remain separate outcome dimensions.",
+    "Son Heung-min is score 4 because the Golden Boot is an explicit season apex individual title in the Premier League, not merely participation in a top professional league.",
+    "Jung Yong-jin is held at score 3 because the 2024 promotion made him group chairman while the formal conglomerate head/designated-person status remained with Lee Myung-hee at that time.",
+    "Kim Jung-ju is exposure-truncated by death in 2022; death is not coded as failure and does not erase an observed post-selection peak.",
+    "All names must be validated as 2011 cohort members and non-repeat entrants before merger."
+  ]
+}
