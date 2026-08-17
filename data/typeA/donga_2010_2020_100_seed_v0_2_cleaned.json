@@ -18,72 +18,39 @@
     "university_professors_n": 36,
     "mean_age": 44.9,
     "women_n": 16,
-    "categories": {
-      "자유로운 창조인": 20,
-      "꿈꾸는 개척가": 25,
-      "행동하는 지성인": 20,
-      "도전하는 경제인": 25,
-      "미래를 여는 지도자": 10
-    },
-    "top_first_round_recommendations": [
-      {"name":"김빛내리","votes":23},
-      {"name":"이재용","votes":19},
-      {"name":"안철수","votes":18}
-    ]
+    "categories": {"자유로운 창조인":20,"꿈꾸는 개척가":25,"행동하는 지성인":20,"도전하는 경제인":25,"미래를 여는 지도자":10},
+    "top_first_round_recommendations": [{"name":"김빛내리","votes":23},{"name":"이재용","votes":19},{"name":"안철수","votes":18}]
   },
   "evidence_policy": {
     "analysis_eligible_if": [
       "2010 Donga primary article directly identifies/quotes person within selected 100",
       "2010 official institution explicitly states the Donga selection",
-      "later Donga/official record explicitly guarantees consecutive selections covering 2010"
+      "later Donga/official record explicitly guarantees selections covering 2010"
     ],
-    "not_analysis_eligible_if": [
-      "secondary copied list only",
-      "secondary biography only",
-      "inference from current fame"
-    ],
+    "not_analysis_eligible_if": ["secondary copied list only","secondary biography only","inference from current fame"],
     "v0_1_completeness_claim_invalidated": true,
-    "reason": "A secondary copied creator list labeled complete omitted Son Yeol-eum, who is independently documented as selected for three consecutive editions beginning with the 2010 series."
+    "reason": "Even when individual names in a secondary copy may be correct, an unverified copy cannot establish an exact category roster. Completeness requires reconciliation against primary or official evidence.",
+    "correction_note": "An interim v0.2 draft incorrectly treated Son Yeol-eum's unspecified '3 consecutive selections' as 2010-2012. The years are not specified and the 2011 published list does not include her, so she is pending for 2010 membership."
   },
   "reconstruction": {
     "candidate_records_n": 73,
-    "analysis_eligible_confirmed_n": 68,
-    "pending_n": 5,
-    "selection_status_counts": {
-      "confirmed_primary_2010": 54,
-      "confirmed_institutional_2010": 8,
-      "confirmed_retrospective_3year": 6,
-      "unverified_secondary": 4,
-      "probable_secondary": 1
-    },
-    "eligible_category_counts": {
-      "자유로운 창조인": 17,
-      "꿈꾸는 개척가": 10,
-      "행동하는 지성인": 8,
-      "도전하는 경제인": 16,
-      "미래를 여는 지도자": 6,
-      "category_unknown": 11
-    },
+    "analysis_eligible_confirmed_n": 67,
+    "pending_n": 6,
+    "selection_status_counts": {"confirmed_primary_2010":54,"confirmed_institutional_2010":8,"confirmed_retrospective_3year":5,"unverified_secondary":4,"probable_secondary":2},
+    "eligible_category_counts": {"자유로운 창조인":16,"꿈꾸는 개척가":10,"행동하는 지성인":8,"도전하는 경제인":16,"미래를 여는 지도자":6,"category_unknown":11},
     "category_completeness_status": "No category is claimed complete in v0.2.",
-    "analysis_eligible_names": [
-      "강덕수","강방천","김기문","김문수","김빛내리","김연아","김창진","김택진","김필립","김해성","김현수","남수정","남홍길","노희경","박민규","박병엽","박성훈","박승정","박지영","박진영","박현주","백경학","봉준호","서경배","서동철","서정진","성영석","손열음","송영길","신경숙","신동빈","신재원","심승현","안동현","안철수","양성원","오세훈","오충현","원희룡","유시민","이광형","이명균","이부진","이상엽","이연주","이원규","이재용","이지오","이해진","이효철","임경진","임지순","임태희","장하준","장한나","정연두","정욱준","정의선","정태영","정하웅","조국","조동호","조성진","주영석","찰스 리","최은석","한숭희","홍명보"
-    ],
-    "pending_names": ["김윤진","박인출","서도호","신지애","이청용"]
+    "analysis_eligible_names": ["강덕수","강방천","김기문","김문수","김빛내리","김연아","김창진","김택진","김필립","김해성","김현수","남수정","남홍길","노희경","박민규","박병엽","박성훈","박승정","박지영","박진영","박현주","백경학","봉준호","서경배","서동철","서정진","성영석","송영길","신경숙","신동빈","신재원","심승현","안동현","안철수","양성원","오세훈","오충현","원희룡","유시민","이광형","이명균","이부진","이상엽","이연주","이원규","이재용","이지오","이해진","이효철","임경진","임지순","임태희","장하준","장한나","정연두","정욱준","정의선","정태영","정하웅","조국","조동호","조성진","주영석","찰스 리","최은석","한숭희","홍명보"],
+    "pending_names": ["김윤진","박인출","서도호","손열음","신지애","이청용"]
   },
   "newly_added_or_upgraded": {
     "primary_growth_article": ["안동현","서동철","김창진","장하준","이원규","이연주","양성원","정욱준"],
     "primary_rolemodel_article": ["찰스 리","남홍길","임지순","봉준호","노희경"],
     "official_institution": ["박승정"],
-    "retrospective_guarantees_2010": ["손열음","이부진","정의선","김해성","김필립"]
+    "retrospective_guarantees_2010": ["이부진","정의선","김해성","김필립"],
+    "retrospective_pending_unspecified_years": ["손열음"]
   },
   "analysis_gate": {
     "calculate_2020_prediction_metrics_now": false,
-    "requirements": [
-      "Freeze exact 100/100 roster",
-      "Reconcile category totals 20/25/20/25/10",
-      "Store 2010 baseline role and provenance",
-      "Resolve identities",
-      "Only then code target-year 2020 outcomes"
-    ]
+    "requirements": ["Freeze exact 100/100 roster","Reconcile category totals 20/25/20/25/10","Store 2010 baseline role and provenance","Resolve identities","Only then code target-year 2020 outcomes"]
   }
 }
