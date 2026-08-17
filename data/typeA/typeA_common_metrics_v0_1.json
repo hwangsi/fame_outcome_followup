@@ -1,0 +1,124 @@
+{
+  "schema_version": "typeA_common_metrics_v0.1",
+  "generated": "2026-08-18",
+  "status": "validated_descriptive_common_metrics",
+  "source_builder": "scripts/build_typeA_common_master_v0_1.py",
+  "qa": {
+    "placements": 125,
+    "unique_people": 118,
+    "repeated_person_n": 7,
+    "repeated_names": ["강금실", "권영길", "안철수", "유시민", "이재용", "정동영", "추미애"],
+    "cohort_units": 4
+  },
+  "by_cohort_unit": {
+    "newsmaker_2003_politics_top10": {
+      "n": 10,
+      "design": "ranked_topN_expert_survey",
+      "baseline_mean": 2.4,
+      "post_peak_mean": 3.2,
+      "major_n": 10,
+      "major_rate": 1.0,
+      "apex_n": 2,
+      "apex_rate": 0.2,
+      "advanced_n": 7,
+      "advanced_rate": 0.7,
+      "sustained_high_n": 3,
+      "no_clear_advancement_n": 0,
+      "lower_than_baseline_n": 0,
+      "mean_delta": 0.8
+    },
+    "newsmaker_2003_economy_top5": {
+      "n": 5,
+      "design": "ranked_topN_expert_survey",
+      "baseline_mean": 2.4,
+      "post_peak_mean": 3.8,
+      "major_n": 5,
+      "major_rate": 1.0,
+      "apex_n": 4,
+      "apex_rate": 0.8,
+      "advanced_n": 4,
+      "advanced_rate": 0.8,
+      "sustained_high_n": 1,
+      "no_clear_advancement_n": 0,
+      "lower_than_baseline_n": 0,
+      "mean_delta": 1.4
+    },
+    "h21_2004_politics_top10": {
+      "n": 10,
+      "design": "ranked_topN_public_opinion_survey",
+      "baseline_mean": 3.3,
+      "post_peak_mean": 3.5,
+      "major_n": 10,
+      "major_rate": 1.0,
+      "apex_n": 5,
+      "apex_rate": 0.5,
+      "advanced_n": 4,
+      "advanced_rate": 0.4,
+      "sustained_high_n": 4,
+      "no_clear_advancement_n": 0,
+      "lower_than_baseline_n": 2,
+      "mean_delta": 0.2
+    },
+    "donga_2010_2020_100": {
+      "n": 100,
+      "design": "explicit_horizon_broad_screening",
+      "baseline_mean": 2.55,
+      "post_peak_mean": 2.83,
+      "major_n": 71,
+      "major_rate": 0.71,
+      "apex_n": 12,
+      "apex_rate": 0.12,
+      "advanced_n": 28,
+      "advanced_rate": 0.28,
+      "sustained_high_n": 44,
+      "no_clear_advancement_n": 28,
+      "lower_than_baseline_n": 0,
+      "mean_delta": 0.28
+    }
+  },
+  "naive_pooled_descriptive": {
+    "placements": 125,
+    "unique_people": 118,
+    "major_n": 96,
+    "major_rate": 0.768,
+    "apex_n": 23,
+    "apex_rate": 0.184,
+    "advanced_n": 43,
+    "advanced_rate": 0.344,
+    "warning": "Descriptive only. Seven people are repeated and the four cohort units have heterogeneous designs, domains, years, and list depths."
+  },
+  "by_design": {
+    "ranked_topN_units": {
+      "placements": 25,
+      "unique_people": 21,
+      "major_n": 25,
+      "major_rate": 1.0,
+      "apex_n": 11,
+      "apex_rate": 0.44,
+      "advanced_n": 15,
+      "advanced_rate": 0.6
+    },
+    "broad_explicit_horizon": {
+      "placements": 100,
+      "unique_people": 100,
+      "major_n": 71,
+      "major_rate": 0.71,
+      "apex_n": 12,
+      "apex_rate": 0.12,
+      "advanced_n": 28,
+      "advanced_rate": 0.28
+    }
+  },
+  "interpretation_guardrails": [
+    "Do not treat 125 placements as independent observations; seven people appear twice.",
+    "Do not interpret ranked TopN versus broad-screening differences as outlet effects; domain, year, list depth, and selection mechanism are confounded.",
+    "Baseline-adjusted advancement is the preferred outcome for claims about future rise; major attainment also counts already-high people who merely sustain that level.",
+    "Rank accuracy can only be analyzed in cohorts with a genuine published rank."
+  ],
+  "validation": {
+    "workflow": ".github/workflows/donga-target2020-qa.yml",
+    "run_id": 32067990921,
+    "job_id": 95504444792,
+    "conclusion": "success"
+  }
+}
