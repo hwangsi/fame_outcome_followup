@@ -1,0 +1,112 @@
+{
+  "schema_version": "donga_2011_prior_career_audit_v0.1",
+  "generated": "2026-08-18",
+  "selection_cutoff": "2011-04-01",
+  "scope": "First high-risk audit among the 62 people newly appearing in the 2011 roster; checks whether a pre-cutoff career peak exceeded the audited 2011 T0 snapshot score.",
+  "rules_ref": "state/coding_rules_typeA_sector_scope_v0_1.md",
+  "audited_n": 9,
+  "corrections": [
+    {
+      "name": "백승헌",
+      "t0_score": 2,
+      "baseline_score": 3,
+      "baseline_peak_role": "민주사회를 위한 변호사모임 회장",
+      "baseline_peak_year": 2006,
+      "reason": "The 2011 roster labels him simply as a lawyer, but he had served 2006-2010 as chair of Minbyun, a nationwide lawyers' organization with direct national policy and civil-rights influence. Under the locked civic/public rubric, this is nationwide-organization top leadership (scope 3).",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.khan.co.kr/article/201005280307345",
+        "https://www.yna.co.kr/view/AKR20091014161200004"
+      ]
+    }
+  ],
+  "audited_no_change": [
+    {
+      "name": "강일원",
+      "baseline_score": 2,
+      "reason": "Before cutoff he had held senior court-administration posts including Judicial Policy Office head, Chief Justice chief of staff, and Court Administration Office planning chief, but not the top leadership of a major national institution required for scope 3 under the locked public rubric.",
+      "confidence": "H",
+      "source_urls": ["https://www.kimchang.com/ko/professionals/view/ilwon.kang"]
+    },
+    {
+      "name": "김부겸",
+      "baseline_score": 2,
+      "reason": "He was already a multi-term National Assembly member before cutoff. The locked politics rubric scores ordinary national legislators as 2 unless they had reached minister, metropolitan governor, nationwide party leader, or apex-candidate status.",
+      "confidence": "H",
+      "source_urls": ["https://www.yna.co.kr/view/AKR20111215121000001"]
+    },
+    {
+      "name": "김태효",
+      "baseline_score": 2,
+      "reason": "Presidential Office foreign-strategy secretary was a nationally important policy role, but below minister or major national-institution-head scope 3. No higher pre-cutoff office was identified in this pass.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.seoul.co.kr/news/politics/2010/02/23/20100223004004",
+        "https://www.seoul.co.kr/news/politics/2010/02/04/20100204800008"
+      ]
+    },
+    {
+      "name": "임성남",
+      "baseline_score": 2,
+      "reason": "Before cutoff he had been the six-party-talks deputy representative/nuclear-diplomacy planning head and then minister at the Korean embassy in China. These are senior specialist diplomatic roles but below minister/ambassador or comparable top national leadership in the locked rubric.",
+      "confidence": "H",
+      "source_urls": [
+        "https://m.ktv.go.kr/content/view?content_id=401043",
+        "https://www.seoul.co.kr/news/politics/diplomacy/2011/10/06/20111006005007"
+      ]
+    },
+    {
+      "name": "김상우",
+      "baseline_score": 2,
+      "reason": "He was Korea's first ICC investigator and by 2010 an ICC prosecution-division investigator, an important international professional post but not high executive leadership of a major multilateral institution.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.donga.com/news/People/article/all/20051029/8242559/1",
+        "https://www.seoul.co.kr/news/society/2010/02/23/20100223015014"
+      ]
+    },
+    {
+      "name": "조명숙",
+      "baseline_score": 2,
+      "reason": "She had long run refugee-support and North-Korean-defector education work and served as Yeomyung School vice principal. This is established nationwide civic/education leadership but does not meet the major nationwide-organization top-leader threshold for scope 3.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.donga.com/news/Society/article/all/20110407/36236827/1",
+        "https://www.donga.com/news/Opinion/article/all/20101225/33502040/1"
+      ]
+    },
+    {
+      "name": "최재경",
+      "baseline_score": 2,
+      "reason": "At cutoff he was Judicial Research and Training Institute deputy director after senior prosecution posts. The later appointment as Supreme Prosecutors' Office Central Investigation Department chief occurred in August 2011, after the selection cutoff, and is therefore excluded from baseline.",
+      "confidence": "H",
+      "source_urls": [
+        "https://jrti.scourt.go.kr/jrti/intro/intro_01/intro_01_03/index.html",
+        "https://www.yna.co.kr/view/AKR20121128211400004",
+        "https://www.yna.co.kr/view/AKR20110816183200004"
+      ]
+    },
+    {
+      "name": "정일용",
+      "baseline_score": 2,
+      "reason": "The same public-health surgeon had served as Wonjin Green Hospital director since 2002; earlier recorded roles were hospital/public-health physician posts, not a higher major national public leadership role before the 2011 cutoff.",
+      "confidence": "H",
+      "source_urls": [
+        "https://wjgreenh.quv.kr/57",
+        "https://gnews.gg.go.kr/briefing/brief_gongbo_view.do?BS_CODE=S017&number=38305&subject_Code=BO01"
+      ]
+    }
+  ],
+  "qa": {
+    "audited_n": 9,
+    "corrected_n": 1,
+    "no_change_n": 8,
+    "new_2011_people_total": 62,
+    "remaining_prior_career_audit_n": 53
+  },
+  "guardrails": [
+    "T0 snapshot score is not overwritten by a prior higher role; only lifetime baseline peak through cutoff is updated.",
+    "Later post-cutoff promotions are excluded from baseline even when they occur within 2011.",
+    "Name-only matches are not accepted without same-person career continuity."
+  ]
+}
