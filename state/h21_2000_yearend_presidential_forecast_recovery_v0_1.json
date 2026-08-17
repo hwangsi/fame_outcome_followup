@@ -1,7 +1,7 @@
 {
   "schema_version": "h21_2000_yearend_presidential_forecast_recovery_v0.1",
   "generated": "2026-08-18",
-  "status": "secondary_reconstruction_anchor_primary_issue_required",
+  "status": "secondary_reconstruction_strongly_bracketed_issue340_primary_scan_required",
   "publication": "한겨레21",
   "survey_type": "expert/political-reporter presidential-election probability forecast",
   "timeframe": "2000년 연말",
@@ -40,8 +40,15 @@
     "legacy_image_filename": "021003000120001227340-21.jpg",
     "possible_date_encoded": "2000-12-27",
     "possible_issue_number_encoded": 340,
-    "status": "clue_only_not_verified",
-    "warning": "Do not treat 2000-12-27 or issue 340 as confirmed until a primary catalog/scan verifies them."
+    "issue_number_calibration_ref": "state/h21_issue_number_calibration_v0_1.json",
+    "direct_neighboring_anchors": [
+      {"issue": 321, "date": "2000-08-09"},
+      {"issue": 334, "date": "2000-11-15"},
+      {"issue": 345, "date": "2001-02-07"}
+    ],
+    "status": "strongly_bracketed_not_primary_verified",
+    "interpretation": "The filename's 20001227/340 pattern is consistent with independently dated surrounding issue numbers, making issue340 in late December 2000 the highest-priority retrieval target. It remains a recovery locator rather than a frozen bibliographic fact.",
+    "warning": "Do not treat 2000-12-27 or issue340 as confirmed until a primary catalog record, cover, table of contents, or scan explicitly verifies them."
   },
   "unknown": {
     "exact_issue_number": null,
@@ -55,7 +62,7 @@
   },
   "related_but_distinct_2000_poll": {
     "description": "Hankyoreh 2020 retrospective states Hankyoreh21 asked citizens for their favored politician in both 1999 and 2000 and Roh Moo-hyun ranked first both times.",
-    "source_url": "https://v.daum.net/v/20200518060602687?s=print_news",
+    "source_url": "https://www.hani.co.kr/arti/politics/politics_general/945329.html",
     "status": "separate cohort candidate; exact 2000 issue/date/ranking not yet recovered",
     "do_not_merge": true
   },
@@ -64,7 +71,10 @@
     "Lee Hoi-chang + Roh 3.8%/1.7%",
     "Hankyoreh21 + December 2000 + presidential probability",
     "legacy Hani cover-image filename search",
-    "possible 2000-12-27 and issue-340 queries"
+    "possible 2000-12-27 and issue340 queries",
+    "direct web searches for issue340/date/title",
+    "issue-number calibration against directly dated issues 321, 334 and 345",
+    "National Library and National Assembly Library web-index searches"
   ],
   "rejected_methods": [
     "Do not merge the citizen favorability poll with the expert presidential-probability forecast.",
@@ -76,13 +86,14 @@
     "survey_existence_strongly_supported": true,
     "lee_hoi_chang_rank1_supported_by_secondary_source": true,
     "roh_two_group_percentages_supported_by_secondary_source": true,
+    "issue340_late_december_strongly_bracketed": true,
     "primary_issue_recovered": false,
     "full_forecast_complete": false
   },
   "next_retrieval_gate": {
-    "preferred_source": "National Assembly Library or other serial archive scan of Hankyoreh21 late-December 2000 issue",
-    "search_key": "legacy image filename suggests late Dec 2000; verify issue/date independently",
-    "needed_artifact": "cover story pages containing expert/reporter presidential-probability table and methodology",
-    "on_retrieval": "transcribe full candidate-by-expert-group probabilities and create a separate Type-A forecast cohort distinct from the citizen favorability series"
+    "preferred_source": "National Assembly Library or other serial archive scan of Hankyoreh21 issue340 / late-December 2000, checking adjacent issues if needed",
+    "search_key": "legacy image filename 20001227/340 plus calibrated issue sequence",
+    "needed_artifact": "cover/table-of-contents/article pages containing expert/reporter presidential-probability table and methodology",
+    "on_retrieval": "verify issue/date first, then transcribe full candidate-by-expert-group probabilities and create a separate Type-A forecast cohort distinct from the citizen favorability series"
   }
 }
