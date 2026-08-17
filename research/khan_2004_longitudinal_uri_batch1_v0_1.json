@@ -2,11 +2,7 @@
   "schema_version": "khan_2004_longitudinal_uri_batch1_v0.1",
   "generated": "2026-08-18",
   "selection_cutoff": "2004-05-05",
-  "target_windows": {
-    "t10": "2014 ±1 year",
-    "t20": "2024 ±1 year",
-    "current": "2026-08-18"
-  },
+  "target_windows": {"t10":"2014 ±1 year","t20":"2024 ±1 year","current":"2026-08-18"},
   "status": "longitudinal_snapshots_audited_10_of_10_uri",
   "rules": [
     "Snapshot score describes role/status near the target time, not lifetime peak.",
@@ -15,290 +11,24 @@
     "Stale or weakly anchored current evidence is coded conservatively with lower confidence rather than imputed upward."
   ],
   "people": [
-    {
-      "name": "천정배",
-      "t10": {
-        "role": "2015 광주 서구을 보궐선거 당선·국회의원 복귀",
-        "scope_score": 2,
-        "evidence_date": "2015-04",
-        "match": "within_window_plus1",
-        "confidence": "H",
-        "sources": ["https://www.yna.co.kr/view/AKR20150429206600054"]
-      },
-      "t20": {
-        "role": "6선 전 의원·전 법무부 장관; 2023년 말 2024 총선 불출마 선언",
-        "scope_score": 1,
-        "evidence_date": "2023-12-22",
-        "match": "within_window_minus1",
-        "confidence": "H",
-        "sources": ["https://www.yna.co.kr/view/AKR20231222114200054"]
-      },
-      "current": {
-        "role": "전 법무부 장관·정치 원로; 확인된 현직 공직 없음",
-        "scope_score": 1,
-        "evidence_date": "2023-12-22",
-        "match": "stale",
-        "confidence": "L",
-        "sources": ["https://www.yna.co.kr/view/AKR20231222114200054"]
-      }
-    },
-    {
-      "name": "신기남",
-      "t10": {
-        "role": "제19대 국회의원",
-        "scope_score": 2,
-        "evidence_date": "2014",
-        "match": "target_year",
-        "confidence": "M",
-        "sources": ["https://www.khan.co.kr/article/201408171826031"]
-      },
-      "t20": {
-        "role": "전 국회의원·작가; 최신 고위 상근 정치직 직접자료 부족",
-        "scope_score": 1,
-        "evidence_date": "2018",
-        "match": "stale",
-        "confidence": "L",
-        "sources": ["https://www.yna.co.kr/view/AKR20180413048100005"]
-      },
-      "current": {
-        "role": "전 국회의원·작가; 2026 현직 공직 직접자료 미확인",
-        "scope_score": 1,
-        "evidence_date": "2018",
-        "match": "stale",
-        "confidence": "L",
-        "sources": ["https://www.yna.co.kr/view/AKR20180413048100005"]
-      }
-    },
-    {
-      "name": "유시민",
-      "t10": {
-        "role": "정계 은퇴 후 작가·시사평론 활동",
-        "scope_score": 2,
-        "evidence_date": "2013-2014",
-        "match": "within_window",
-        "confidence": "M",
-        "sources": ["https://www.yna.co.kr/view/AKR20130219094200001"]
-      },
-      "t20": {
-        "role": "전 장관·작가·전국적 시사평론가",
-        "scope_score": 2,
-        "evidence_date": "2024",
-        "match": "target_year",
-        "confidence": "M",
-        "sources": ["https://www.sisain.co.kr/news/articleView.html?idxno=54123"]
-      },
-      "current": {
-        "role": "작가·공개 강연자",
-        "scope_score": 2,
-        "evidence_date": "2026-05-13",
-        "match": "current",
-        "confidence": "H",
-        "sources": ["https://www.sookmyung.ac.kr/kr/news/sm-news.do?articleNo=93424&mode=view"]
-      }
-    },
-    {
-      "name": "임종석",
-      "t10": {
-        "role": "서울특별시 정무부시장",
-        "scope_score": 2,
-        "evidence_date": "2014-06-23",
-        "match": "target_year",
-        "confidence": "H",
-        "sources": ["https://www.yna.co.kr/view/AKR20140623126500004"]
-      },
-      "t20": {
-        "role": "전 대통령비서실장·남북경제문화협력재단 이사장; 한반도 정책 공개활동",
-        "scope_score": 2,
-        "evidence_date": "2024-09-19",
-        "match": "target_year",
-        "confidence": "H",
-        "sources": ["https://www.yna.co.kr/view/AKR20240919105551001"]
-      },
-      "current": {
-        "role": "남북경제문화협력재단 이사장",
-        "scope_score": 2,
-        "evidence_date": "2025-06-25",
-        "match": "near_current",
-        "confidence": "H",
-        "sources": ["https://www.fnnews.com/news/202506250839469805"]
-      }
-    },
-    {
-      "name": "김부겸",
-      "t10": {
-        "role": "2014 대구시장 야당 후보",
-        "scope_score": 3,
-        "evidence_date": "2014-06",
-        "match": "target_year",
-        "confidence": "H",
-        "sources": ["https://www.yna.co.kr/view/AKR20140604222200053"]
-      },
-      "t20": {
-        "role": "더불어민주당 상임공동선거대책위원장·전 국무총리",
-        "scope_score": 3,
-        "evidence_date": "2024-03-21",
-        "match": "target_year",
-        "confidence": "H",
-        "sources": ["https://www.yna.co.kr/view/AKR20240321059600001"]
-      },
-      "current": {
-        "role": "2026 대구시장 더불어민주당 후보",
-        "scope_score": 3,
-        "evidence_date": "2026-05-24",
-        "match": "current_year",
-        "confidence": "H",
-        "sources": ["https://www.yna.co.kr/view/AKR20260524011951053"]
-      }
-    },
-    {
-      "name": "송영길",
-      "t10": {
-        "role": "인천광역시장(2010-2014)",
-        "scope_score": 3,
-        "evidence_date": "2014",
-        "match": "target_year",
-        "confidence": "H",
-        "sources": ["https://www.yna.co.kr/view/AKR20140605008400065"]
-      },
-      "t20": {
-        "role": "소나무당 대표",
-        "scope_score": 3,
-        "evidence_date": "2024-05-30",
-        "match": "target_year",
-        "confidence": "H",
-        "sources": ["https://www.yna.co.kr/view/AKR20240530069652004"]
-      },
-      "current": {
-        "role": "제22대 국회의원(인천 연수갑)·6선; 2026 민주당 당대표 선거 출마",
-        "scope_score": 2,
-        "evidence_date": "2026-06-05",
-        "match": "current",
-        "confidence": "H",
-        "sources": [
-          "https://www.yna.co.kr/view/AKR20260605069900001",
-          "https://theminjoo.kr/main/sub/news/view.php?brd=1&post=1219423&sno=0"
-        ],
-        "guardrail": "당대표 후보 등록은 achieved party-leader role로 올리지 않음; 2026-08-17 선거 결과를 이 snapshot에 추정 반영하지 않음."
-      }
-    },
-    {
-      "name": "김영춘",
-      "t10": {
-        "role": "2014 부산시장 야당 후보",
-        "scope_score": 3,
-        "evidence_date": "2014-05",
-        "match": "target_year",
-        "confidence": "H",
-        "sources": ["https://www.yna.co.kr/view/AKR20140516075700051"]
-      },
-      "t20": {
-        "role": "2022 정계 은퇴 후 전직 장관·정치인",
-        "scope_score": 1,
-        "evidence_date": "2022-03-21",
-        "match": "stale",
-        "confidence": "H",
-        "sources": ["https://www.yna.co.kr/view/AKR20220321082951001"]
-      },
-      "current": {
-        "role": "정계 은퇴 상태로 확인; 최신 상근 공직 자료 없음",
-        "scope_score": 1,
-        "evidence_date": "2022-03-21",
-        "match": "stale",
-        "confidence": "M",
-        "sources": ["https://www.yna.co.kr/view/AKR20220321082951001"]
-      }
-    },
-    {
-      "name": "한명숙",
-      "t10": {
-        "role": "제19대 국회의원·전 국무총리",
-        "scope_score": 2,
-        "evidence_date": "2014",
-        "match": "target_year",
-        "confidence": "M",
-        "sources": ["https://www.yna.co.kr/view/AKR20140703165100001"]
-      },
-      "t20": {
-        "role": "전 국무총리; 2024년 확인 가능한 상근 공직 없음",
-        "scope_score": 1,
-        "evidence_date": "2024-07",
-        "match": "target_year",
-        "confidence": "M",
-        "sources": ["https://www.yna.co.kr/view/AKR20240703111700004"]
-      },
-      "current": {
-        "role": "더불어민주당 상임고문·전 국무총리",
-        "scope_score": 2,
-        "evidence_date": "2026-02-25",
-        "match": "current",
-        "confidence": "H",
-        "sources": ["https://www.korea.kr/news/policyNewsView.do?newsId=148959991"]
-      }
-    },
-    {
-      "name": "이미경",
-      "identity_key": "이미경|politician",
-      "t10": {
-        "role": "제19대 국회의원",
-        "scope_score": 2,
-        "evidence_date": "2014-12-23",
-        "match": "target_year",
-        "confidence": "H",
-        "sources": ["https://www.yna.co.kr/view/AKR20141223122300001"]
-      },
-      "t20": {
-        "role": "전 국회의원·전 KOICA 이사장; 확인된 2024 상근 공직 없음",
-        "scope_score": 1,
-        "evidence_date": "2024",
-        "match": "target_year_indirect",
-        "confidence": "L",
-        "sources": ["https://www.koica.go.kr/koica_kr/1005/subview.do"]
-      },
-      "current": {
-        "role": "전 KOICA 이사장·전 국회의원; 현직 기관장 아님",
-        "scope_score": 1,
-        "evidence_date": "2026-04-27",
-        "match": "current",
-        "confidence": "H",
-        "sources": ["https://www.yna.co.kr/view/AKR20260426050600371"]
-      },
-      "identity_guardrail": "동아일보 2011 CJ E&M 경영인 이미경과 다른 사람."
-    },
-    {
-      "name": "원혜영",
-      "t10": {
-        "role": "제19대 국회의원",
-        "scope_score": 2,
-        "evidence_date": "2014",
-        "match": "target_year",
-        "confidence": "H",
-        "sources": ["https://www.yna.co.kr/view/AKR20141113105300001"]
-      },
-      "t20": {
-        "role": "웰다잉문화운동 공동대표·부천희망재단 고문",
-        "scope_score": 2,
-        "evidence_date": "2024-09-13",
-        "match": "target_year",
-        "confidence": "H",
-        "sources": ["https://www.onelawpartners.com/ko/news/notice/?gbn=view&ix=2527&pidx=706"]
-      },
-      "current": {
-        "role": "웰다잉문화운동 공동대표",
-        "scope_score": 2,
-        "evidence_date": "2026-05-27",
-        "match": "current",
-        "confidence": "H",
-        "sources": ["https://www.yna.co.kr/view/AKR20260527123200505"]
-      }
-    }
+    {"name":"천정배","t10":{"role":"2015 광주 서구을 보궐선거 당선·국회의원 복귀","scope_score":2,"evidence_date":"2015-04","match":"within_window_plus1","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20150429206600054"]},"t20":{"role":"6선 전 의원·전 법무부 장관; 2023년 말 2024 총선 불출마 선언","scope_score":1,"evidence_date":"2023-12-22","match":"within_window_minus1","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20231222114200054"]},"current":{"role":"전 법무부 장관·정치 원로; 확인된 현직 공직 없음","scope_score":1,"evidence_date":"2023-12-22","match":"stale","confidence":"L","sources":["https://www.yna.co.kr/view/AKR20231222114200054"]}},
+    {"name":"신기남","t10":{"role":"제19대 국회의원","scope_score":2,"evidence_date":"2014","match":"target_year","confidence":"M","sources":["https://www.khan.co.kr/article/201408171826031"]},"t20":{"role":"전 국회의원·작가; 최신 고위 상근 정치직 직접자료 부족","scope_score":1,"evidence_date":"2018","match":"stale","confidence":"L","sources":["https://www.yna.co.kr/view/AKR20180413048100005"]},"current":{"role":"전 국회의원·작가; 2026 현직 공직 직접자료 미확인","scope_score":1,"evidence_date":"2018","match":"stale","confidence":"L","sources":["https://www.yna.co.kr/view/AKR20180413048100005"]}},
+    {"name":"유시민","t10":{"role":"정계 은퇴 후 작가·시사평론 활동","scope_score":2,"evidence_date":"2013-2014","match":"within_window","confidence":"M","sources":["https://www.yna.co.kr/view/AKR20130219094200001"]},"t20":{"role":"전 장관·작가·전국적 시사평론가","scope_score":2,"evidence_date":"2024","match":"target_year","confidence":"M","sources":["https://www.sisain.co.kr/news/articleView.html?idxno=54123"]},"current":{"role":"작가·공개 강연자","scope_score":2,"evidence_date":"2026-05-13","match":"current","confidence":"H","sources":["https://www.sookmyung.ac.kr/kr/news/sm-news.do?articleNo=93424&mode=view"]}},
+    {"name":"임종석","t10":{"role":"서울특별시 정무부시장","scope_score":2,"evidence_date":"2014-06-23","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140623126500004"]},"t20":{"role":"전 대통령비서실장·남북경제문화협력재단 이사장; 한반도 정책 공개활동","scope_score":2,"evidence_date":"2024-09-19","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20240919105551001"]},"current":{"role":"남북경제문화협력재단 이사장","scope_score":2,"evidence_date":"2025-06-25","match":"near_current","confidence":"H","sources":["https://www.fnnews.com/news/202506250839469805"]}},
+    {"name":"김부겸","t10":{"role":"2014 대구시장 야당 후보","scope_score":3,"evidence_date":"2014-06","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140604222200053"]},"t20":{"role":"더불어민주당 상임공동선거대책위원장·전 국무총리","scope_score":3,"evidence_date":"2024-03-21","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20240321059600001"]},"current":{"role":"2026 대구시장 더불어민주당 후보","scope_score":3,"evidence_date":"2026-05-24","match":"current_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20260524011951053"]}},
+    {"name":"송영길","t10":{"role":"인천광역시장(2010-2014)","scope_score":3,"evidence_date":"2014","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140605008400065"]},"t20":{"role":"소나무당 대표","scope_score":3,"evidence_date":"2024-05-30","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20240530069652004"]},"current":{"role":"제22대 국회의원(인천 연수갑)·6선; 2026 민주당 당대표 선거 출마","scope_score":2,"evidence_date":"2026-06-05","match":"current","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20260605069900001","https://theminjoo.kr/main/sub/news/view.php?brd=1&post=1219423&sno=0"],"guardrail":"당대표 후보 등록은 achieved party-leader role로 올리지 않음; 2026-08-17 선거 결과를 추정 반영하지 않음."}},
+    {"name":"김영춘","t10":{"role":"2014 부산시장 야당 후보","scope_score":3,"evidence_date":"2014-05","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140516075700051"]},"t20":{"role":"2022 정계 은퇴 후 전직 장관·정치인","scope_score":1,"evidence_date":"2022-03-21","match":"stale","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20220321082951001"]},"current":{"role":"정계 은퇴 상태로 확인; 최신 상근 공직 자료 없음","scope_score":1,"evidence_date":"2022-03-21","match":"stale","confidence":"M","sources":["https://www.yna.co.kr/view/AKR20220321082951001"]}},
+    {"name":"한명숙","t10":{"role":"제19대 국회의원·전 국무총리","scope_score":2,"evidence_date":"2014","match":"target_year","confidence":"M","sources":["https://www.yna.co.kr/view/AKR20140703165100001"]},"t20":{"role":"전 국무총리; 2024년 확인 가능한 상근 공직 없음","scope_score":1,"evidence_date":"2024-07","match":"target_year","confidence":"M","sources":["https://www.yna.co.kr/view/AKR20240703111700004"]},"current":{"role":"더불어민주당 상임고문·전 국무총리","scope_score":2,"evidence_date":"2026-02-25","match":"current","confidence":"H","sources":["https://www.korea.kr/news/policyNewsView.do?newsId=148959991"]}},
+    {"name":"이미경","identity_key":"이미경|politician","t10":{"role":"제19대 국회의원","scope_score":2,"evidence_date":"2014-12-23","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20141223122300001"]},"t20":{"role":"전 국회의원·전 KOICA 이사장; 확인된 2024 상근 공직 없음","scope_score":1,"evidence_date":"2024","match":"target_year_indirect","confidence":"L","sources":["https://www.koica.go.kr/koica_kr/1005/subview.do"]},"current":{"role":"전 KOICA 이사장·전 국회의원; 현직 기관장 아님","scope_score":1,"evidence_date":"2026-04-27","match":"current","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20260426050600371"]},"identity_guardrail":"동아일보 2011 CJ E&M 경영인 이미경과 다른 사람."},
+    {"name":"원혜영","t10":{"role":"제19대 국회의원","scope_score":2,"evidence_date":"2014","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20141113105300001"]},"t20":{"role":"웰다잉문화운동 공동대표·부천희망재단 고문","scope_score":2,"evidence_date":"2024-09-13","match":"target_year","confidence":"H","sources":["https://www.onelawpartners.com/ko/news/notice/?gbn=view&ix=2527&pidx=706"]},"current":{"role":"웰다잉문화운동 공동대표","scope_score":2,"evidence_date":"2026-05-27","match":"current","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20260527123200505"]}}
   ],
   "qa": {
     "audited_n": 10,
-    "t10_score_distribution": {"1": 0, "2": 7, "3": 3, "4": 0},
-    "t20_score_distribution": {"1": 4, "2": 3, "3": 3, "4": 0},
-    "current_score_distribution": {"1": 4, "2": 4, "3": 2, "4": 0},
+    "t10_score_distribution": {"1":0,"2":7,"3":3,"4":0},
+    "t20_score_distribution": {"1":5,"2":3,"3":2,"4":0},
+    "current_score_distribution": {"1":4,"2":5,"3":1,"4":0},
     "current_low_confidence_n": 2,
-    "current_low_confidence_names": ["천정배", "신기남"]
+    "current_low_confidence_names": ["천정배","신기남"]
   },
   "interpretation_guardrails": [
     "Snapshot distributions are not peak distributions and should not be used to recompute advancement.",
