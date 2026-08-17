@@ -1,0 +1,144 @@
+{
+  "schema_version": "donga_2011_prior_career_audit_v0.4",
+  "generated": "2026-08-18",
+  "selection_cutoff": "2011-04-01",
+  "status": "science_business_t0_score2_batch_complete",
+  "extends": "research/donga_2011_prior_career_audit_v0_3.json",
+  "scope": "Risk-prioritized prior-career audit of the remaining new 2011 entrants with T0 score 2 in science/technology/business-related categories.",
+  "rules_ref": "state/coding_rules_typeA_sector_scope_v0_1.md",
+  "audited_n": 12,
+  "corrections": [
+    {
+      "name": "이창준",
+      "t0_score": 2,
+      "baseline_score": 3,
+      "baseline_peak_role": "KIST 신경과학센터 Director",
+      "baseline_peak_year": 2010,
+      "reason": "The 2011 roster listed him as deputy director of the WCI Functional Connectomics Center, but his ORCID career record states that he served as Director of KIST's Center for Neural Science from 2004 to 2018. Before the cutoff his team had also reported the world-first mechanism of channel-mediated tonic GABA release in Science. A major national research-center director with internationally leading research meets locked science scope 3.",
+      "confidence": "H",
+      "source_urls": [
+        "https://orcid.org/0000-0002-3555-0980",
+        "https://pubmed.ncbi.nlm.nih.gov/20929730/",
+        "https://www.yna.co.kr/view/AKR20100923056600017"
+      ]
+    },
+    {
+      "name": "이연희",
+      "t0_score": 2,
+      "baseline_score": 3,
+      "baseline_peak_role": "재단법인 연구소재중앙센터 센터장",
+      "baseline_peak_year": 2009,
+      "reason": "Before the cutoff she headed the Korea National Research Resource Center. Contemporary program material states that 33 national research-resource banks and five field hub centers were coordinated, planned and managed by one central center, and the Ministry/NRF program listed Lee as the central-center principal investigator. This is top leadership of a national research infrastructure and meets locked science/public scope 3.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.bioin.or.kr/EventEdc.do?bid=semina&cmd=view&num=191547",
+        "https://www.bioin.or.kr/board.do?bid=notice&cmd=view&num=195247",
+        "https://www.bioin.or.kr/EventEdc.do?bid=semina&cmd=view&num=197150"
+      ]
+    }
+  ],
+  "audited_no_change": [
+    {
+      "name": "권구훈",
+      "baseline_score": 2,
+      "reason": "Before cutoff he was a highly visible Goldman Sachs economist providing Korea macroeconomic and market forecasts. No prior role at the head of a major national/international economic institution or comparable scope-3 leadership was identified.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.fnnews.com/news/200912091745434225",
+        "https://marketin.edaily.co.kr/News/Read?newsId=01505526593103400"
+      ]
+    },
+    {
+      "name": "김가영",
+      "baseline_score": 2,
+      "reason": "She founded Jirisan Eco-Friendly Agricultural Products Distribution in 2005 and grew it to 18 employees and annual sales above KRW 2 billion by selection. This is a successful national entrepreneurial role but below major-industry/global-company scope 3.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.donga.com/news/article/all/20110401/36063079/1",
+        "https://www.ewha.ac.kr/ewha/news/ewha-news.do?article.offset=280&articleLimit=1&articleNo=265826&mode=view"
+      ]
+    },
+    {
+      "name": "남광희",
+      "baseline_score": 2,
+      "reason": "The earlier T0 business audit found a strong global component supplier and distinctive technology but did not establish KH Vatec or its CEO as a broad major-industry/global-company leader at the cutoff. No higher prior role was identified in this prior-career pass.",
+      "confidence": "M",
+      "source_urls": ["https://www.donga.com/news/100people/2011/text_list.html"]
+    },
+    {
+      "name": "남민우",
+      "baseline_score": 2,
+      "reason": "Dasan Networks was Korea's leading wired-network equipment vendor with roughly 60% domestic share and expanding exports, but contemporary reporting still framed global top-five status as a future goal. This remains below the locked major/global-industry score-3 threshold.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.mt.co.kr/article/2010032811025684184",
+        "https://news.nate.com/view/20101018n21555"
+      ]
+    },
+    {
+      "name": "박상일",
+      "baseline_score": 2,
+      "reason": "He had founded and sold a prior US AFM company and later founded Park Systems; by 2010 its industrial AFM was designated a national core technology. These are strong specialist-technology achievements, but pre-cutoff evidence does not establish major/global-industry leadership required for 3.",
+      "confidence": "H",
+      "source_urls": ["https://www.hankyung.com/article/2020081898611"]
+    },
+    {
+      "name": "박형주",
+      "baseline_score": 2,
+      "reason": "He led the successful Korean bid effort for the 2014 International Congress of Mathematicians, an important academic-service achievement, but before cutoff the available evidence does not establish a major national academic-institution head, large national research-program leader, or internationally field-leading research apex sufficient for score 3.",
+      "confidence": "M",
+      "source_urls": [
+        "https://www.math.snu.ac.kr/bbs/board.php?bo_table=Math_News&wr_id=969",
+        "https://www.kmib.co.kr/article/view.asp?arcid=0922752132"
+      ]
+    },
+    {
+      "name": "백운규",
+      "baseline_score": 2,
+      "reason": "He had distinguished academic status and a 2010 Nature collaboration, and biographies reference energy-R&D planning activities. However, this pass did not recover sufficiently precise pre-cutoff evidence that he personally held top/core leadership of a major national R&D program or institution. Under the conservative locked rubric, retain 2 pending stronger role-specific evidence.",
+      "confidence": "M",
+      "source_urls": [
+        "https://www.donga.com/news/100people/2011/text_list.html",
+        "https://doi.org/10.1038/nmat2743"
+      ]
+    },
+    {
+      "name": "양윤선",
+      "baseline_score": 2,
+      "reason": "She was an established biotech founder-CEO and was appointed a private member of the National Science and Technology Council in 2010. The advisory appointment and pre-approval biotech company scale do not themselves meet major-industry or major-institution top-leader score 3.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.newsprime.co.kr/ezview/article_main.html?no=166053",
+        "https://news.unist.ac.kr/kor/%EC%A1%B0%EB%AC%B4%EC%A0%9C-%EC%B4%9D%EC%9E%A5-%EA%B5%AD%EA%B0%80%EA%B3%BC%ED%95%99%EA%B8%B0%EC%88%A0%EC%9C%84%EC%9B%90%ED%9A%8C-%EB%AF%BC%EA%B0%84-%EC%9C%84%EC%9B%90-%EC%9C%84%EC%B4%89/"
+      ]
+    },
+    {
+      "name": "정근창",
+      "baseline_score": 2,
+      "reason": "At cutoff he was an LG Chem battery-research department manager. The higher research-fellow role occurred after the 2011 cutoff, so no prior scope-3 peak is carried into baseline.",
+      "confidence": "M",
+      "source_urls": ["https://www.donga.com/news/100people/2011/text_list.html"]
+    },
+    {
+      "name": "정준",
+      "baseline_score": 2,
+      "reason": "Solid Technologies had internationally recognized specialist telecom technology, including World Economic Forum Technology Pioneer recognition, but contemporary plans still targeted future global market leadership. This supports innovative specialist-company leadership rather than locked major-industry scope 3.",
+      "confidence": "H",
+      "source_urls": ["https://www.newswire.co.kr/newsRead.php?no=331213"]
+    }
+  ],
+  "qa": {
+    "audited_n": 12,
+    "corrected_n": 2,
+    "corrected_names": ["이창준", "이연희"],
+    "no_change_n": 10,
+    "cumulative_new_people_audited_n": 47,
+    "new_2011_people_total": 62,
+    "remaining_prior_career_audit_n": 15
+  },
+  "guardrails": [
+    "A strong single publication alone does not automatically imply score 3; leadership scope and repeated/field-leading research stature are considered together.",
+    "Where an institutional role could plausibly cross a threshold but its national scope is not precisely established, the conservative lower baseline is retained with M confidence.",
+    "T0 snapshot remains unchanged when a higher prior career role is found; only lifetime baseline through cutoff is raised."
+  ]
+}
