@@ -1,15 +1,31 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Analyze outcomes_v3.json: T+10→T+20 transitions, sector and age-known subset."""
+"""Analyze v3 outcomes: T+10→T+20 transitions, sector and age-known subset.
+
+Reads either:
+- data/outcomes_v3.json
+- data/outcomes_v3.json.xz
+"""
 from pathlib import Path
-import json, pandas as pd, numpy as np
+import json, lzma
+import pandas as pd
+import numpy as np
 from scipy.stats import fisher_exact
 
 STRICT={"exact_year","within_window","timeline_covers_target"}
 HIGH={"upward_expansion","sustained_high"}
 
+def load_data(root: Path):
+    raw=root/"data/outcomes_v3.json"
+    if raw.exists():
+        return json.loads(raw.read_text(encoding="utf-8"))
+    packed=root/"data/outcomes_v3.json.xz"
+    if packed.exists():
+        return json.loads(lzma.decompress(packed.read_bytes()).decode("utf-8"))
+    raise FileNotFoundError("Expected data/outcomes_v3.json or data/outcomes_v3.json.xz")
+
 def main(root=Path(".")):
-    d=json.loads((root/"data/outcomes_v3.json").read_text(encoding="utf-8"))
+    d=load_data(root)
     rows=[]
     for p in d["people"]:
         rows.append({
