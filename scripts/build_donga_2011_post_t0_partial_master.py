@@ -5,11 +5,13 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 SEED=ROOT/'analysis/donga_2011_post_t0_seed_v0_2.json'
+T0_ROLES=ROOT/'data/typeA/donga_2011_t0_roles_v0_1.json'
 BATCH_FILES=[
     ROOT/'research/donga_2011_post_t0_new_audit_batch1_v0_1.json',
     ROOT/'research/donga_2011_post_t0_new_audit_batch2_v0_1.json',
+    ROOT/'research/donga_2011_post_t0_new_audit_batch3_v0_1.json',
 ]
-OUT=ROOT/'analysis/donga_2011_post_t0_partial_master_v0_2.json'
+OUT=ROOT/'analysis/donga_2011_post_t0_partial_master_v0_3.json'
 
 def adv_class(delta,peak):
     if delta is None or peak is None: return 'not_assessed'
@@ -20,17 +22,32 @@ def adv_class(delta,peak):
 
 def main():
     seed=json.loads(SEED.read_text(encoding='utf-8'))
-    audited={}; audit_source={}; batch_names={}
+    t0=json.loads(T0_ROLES.read_text(encoding='utf-8'))
+    t0_by={p['name']:p for p in t0['people']}
+    assert len(t0_by)==100
+
+    audited={}; audit_source={}; batch_names={}; identity_anchor_validated=[]
     for bf in BATCH_FILES:
         b=json.loads(bf.read_text(encoding='utf-8'))
         assert b['qa']['resolved_n']==b['qa']['batch_n']==len(b['people'])
         names=[]
+        is_batch3=(bf.name=='donga_2011_post_t0_new_audit_batch3_v0_1.json')
         for p in b['people']:
             n=p['name']
             assert n not in audited, f'duplicate across new audit batches: {n}'
+            assert n in t0_by, f'audited name absent from frozen 2011 T0 roster: {n}'
+            if is_batch3:
+                anchor=p.get('t0_identity_anchor')
+                assert anchor is not None, f'batch3 missing T0 identity anchor: {n}'
+                expected=t0_by[n]
+                assert anchor['category']==expected['category'], f'category identity mismatch for {n}'
+                assert anchor['t0_role_official_2011']==expected['t0_role_official_2011'], f'T0 role identity mismatch for {n}'
+                assert expected['repeat_2010_2011'] is False, f'batch3 identity anchor points to repeat entrant: {n}'
+                identity_anchor_validated.append(n)
             audited[n]=p; audit_source[n]=str(bf.relative_to(ROOT)); names.append(n)
         batch_names[bf.stem]=sorted(names)
-    assert len(audited)==20
+    assert len(audited)==30
+    assert len(identity_anchor_validated)==10
 
     seed_by={p['name']:p for p in seed['people']}
     assert set(audited) <= set(seed_by)
@@ -62,6 +79,8 @@ def main():
               'death_year':a.get('death_year'),
               'coding_status':a['coding_status'],'audit_source':audit_source[n]
             }
+            if 't0_identity_anchor' in a:
+                r['t0_identity_anchor']=a['t0_identity_anchor']
         else:
             r={
               'name':n,'category':s['category'],'repeat_2010_2011':False,'baseline_2011':baseline,
@@ -84,18 +103,23 @@ def main():
     class_counts=Counter(r['advancement_class'] for r in assessed)
 
     assert len(rows)==100 and len(repeats)==38
-    assert len(assessed)==58 and len(new_assessed)==20 and len(pending)==42
+    assert len(assessed)==68 and len(new_assessed)==30 and len(pending)==32
     assert all(r['post2011_peak_score'] is not None for r in repeats)
     assert any(r['name']=='김정주' and r['exposure_truncated_by_death'] and r['death_year']==2022 for r in rows)
+    assert any(r['name']=='김선욱' and r.get('t0_identity_anchor',{}).get('t0_role_official_2011')=='피아니스트' for r in rows)
+    assert any(r['name']=='김승환' and '아태이론물리센터' in r.get('t0_identity_anchor',{}).get('t0_role_official_2011','') for r in rows)
 
     out={
-      'schema_version':'donga_2011_post_t0_partial_master_v0.2','generated':'2026-08-18',
-      'status':'partial_58_of_100_assessed','selection_cutoff':'2011-04-01',
+      'schema_version':'donga_2011_post_t0_partial_master_v0.3','generated':'2026-08-18',
+      'status':'partial_68_of_100_assessed','selection_cutoff':'2011-04-01',
       'baseline_ref':seed['baseline_ref'],'repeat_seed_ref':str(SEED.relative_to(ROOT)),
+      't0_identity_ref':str(T0_ROLES.relative_to(ROOT)),
       'new_audit_refs':[str(x.relative_to(ROOT)) for x in BATCH_FILES],
       'qa':{
-        'total':100,'assessed_n':58,'pending_n':42,'repeat_assessed_n':38,'new_assessed_n':20,
+        'total':100,'assessed_n':68,'pending_n':32,'repeat_assessed_n':38,'new_assessed_n':30,
         'death_truncated_assessed_n':len(death_truncated),
+        'identity_anchor_validated_n':len(identity_anchor_validated),
+        'identity_anchor_validated_names':sorted(identity_anchor_validated),
         'score_counts_assessed':dict(score_counts),'advancement_class_counts_assessed':dict(class_counts),
         'pending_names':sorted(r['name'] for r in pending),
         'new_audit_batch_names':batch_names
@@ -104,7 +128,8 @@ def main():
         'Partial master only; do not report 2011 cohort-wide rates until pending_n reaches zero.',
         'All repeat-selected cases are post-cutoff resolved; remaining pending cases are new 2011 entrants only.',
         'Adverse events and death truncation are separate dimensions and do not retroactively lower a maximum prominence score.',
-        'A score-4 sports apex requires an explicit apex title/achievement; top-league participation alone remains score 3.'
+        'A score-4 sports apex requires an explicit apex title/achievement; top-league participation alone remains score 3.',
+        'For same-name risk, T0 identity anchors must match the frozen 2011 category and official role before merger.'
       ],
       'people':rows
     }
