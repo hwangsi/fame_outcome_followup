@@ -12,77 +12,24 @@
     "Current score reflects achieved current role, not a former presidential candidacy or ministerial peak."
   ],
   "people": [
-    {
-      "name":"원희룡",
-      "t10":{"role":"제37대 제주특별자치도지사 당선·취임","scope_score":3,"evidence_date":"2014-07","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140604081200056"]},
-      "t20":{"role":"국토교통부 장관을 2023-12-22까지 역임; 2024 총선 출마","scope_score":3,"evidence_date":"2023-12-22","match":"within_window_minus1","confidence":"H","sources":["https://www.molit.go.kr/USR/WPGE0201/m_35286/DTL.jsp","https://www.yna.co.kr/view/AKR20231222056600003"]},
-      "current":{"role":"전 국토교통부 장관·정치인; 확인된 2026 현직 공직 없음","scope_score":1,"evidence_date":"2026","match":"current","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20260707065900004"]}
-    },
-    {
-      "name":"박진",
-      "t10":{"role":"전 3선 국회의원·외교안보 정책연구기관 상임대표/대학 석좌교수","scope_score":2,"evidence_date":"2014-09","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140922068000001"]},
-      "t20":{"role":"제40대 외교부 장관; 2023년 말까지 재임 후 2024년 초 이임","scope_score":3,"evidence_date":"2023-12","match":"within_window_minus1","confidence":"H","sources":["https://www.korea.kr/briefing/speechView.do?newsId=132034365","https://www.yna.co.kr/view/AKR20231219085800001"]},
-      "current":{"role":"전 외교부 장관·KAIST 과학외교센터 자문위원장·Oxford honorary fellow","scope_score":2,"evidence_date":"2026-07-16","match":"current","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20260716094000001"]}
-    },
-    {
-      "name":"남경필",
-      "t10":{"role":"제34대 경기도지사 당선·취임","scope_score":3,"evidence_date":"2014-07","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140701083500061"]},
-      "t20":{"role":"정계 은퇴 후 마약 예방·치유운동단체 은구(NGU) 설립·대표 활동","scope_score":2,"evidence_date":"2024-10-10","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20241010155900001"]},
-      "current":{"role":"마약예방치유단체 은구(NGU) 대표·사회활동가","scope_score":2,"evidence_date":"2026-06-27","match":"current","confidence":"H","sources":["https://v.daum.net/v/20260627155502815","https://imnews.imbc.com/replay/2025/nwtoday/article/6735948_36807.html"]}
-    },
-    {
-      "name":"박세일",
-      "t10":{"role":"한반도선진화재단 명예이사장·서울대 명예교수·정책지식인","scope_score":2,"evidence_date":"2014","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140724090300001"]},
-      "t20":{"role":"2017-01-13 별세","scope_score":null,"evidence_date":"2017-01-13","match":"competing_event","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20170113057451001"]},
-      "current":{"role":"2017-01-13 별세","scope_score":null,"evidence_date":"2017-01-13","match":"competing_event","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20170113057451001"]},
-      "death_truncated":true
-    },
-    {
-      "name":"김문수",
-      "t10":{"role":"제32·33대 경기도지사; 2014-06까지 재임","scope_score":3,"evidence_date":"2014-06","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140625051600061"]},
-      "t20":{"role":"경제사회노동위원장(2022-2024) 후 고용노동부 장관 취임","scope_score":3,"evidence_date":"2024-08","match":"target_year","confidence":"H","sources":["https://www.moel.go.kr/minister/intro/profile.do"]},
-      "current":{"role":"전 고용노동부 장관·2025 대통령 후보; 2026 지방선거 지원 정치활동","scope_score":2,"evidence_date":"2026-06","match":"current","confidence":"H","sources":["https://imnews.imbc.com/news/2026/politics/article/6739952_36611.html"]},
-      "guardrail":"2025 presidential candidacy is retained as lifetime peak4, but current snapshot is not automatically score4."
-    },
-    {
-      "name":"권오을",
-      "t10":{"role":"전 3선 국회의원·새누리당 인재영입위원장/경북지사 경선 참여","scope_score":2,"evidence_date":"2014","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140211171800053"]},
-      "t20":{"role":"2025-07 국가보훈부 장관 취임","scope_score":3,"evidence_date":"2025-07-25","match":"within_window_plus1","confidence":"H","sources":["https://www.mpva.go.kr/mpva/contents.do?key=239"]},
-      "current":{"role":"제3대 국가보훈부 장관","scope_score":3,"evidence_date":"2026-07","match":"current","confidence":"H","sources":["https://www.mpva.go.kr/mpva/contents.do?key=239"]}
-    },
-    {
-      "name":"심재철",
-      "t10":{"role":"제19대 국회의원·새누리당 최고위원·세월호 국정조사특위원장","scope_score":2,"evidence_date":"2014-06","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140610052200001","https://www.yna.co.kr/view/AKR20140523023400001"]},
-      "t20":{"role":"2024 국민의힘 안양동안을 국회의원 후보·전 국회부의장","scope_score":2,"evidence_date":"2024-04-04","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20240404054600001"]},
-      "current":{"role":"전 국회부의장·전 국회의원; 2026 현직 공직 직접확인 없음","scope_score":1,"evidence_date":"2024-04-04","match":"stale","confidence":"L","sources":["https://www.yna.co.kr/view/AKR20240404054600001"]}
-    },
-    {
-      "name":"전재희",
-      "t10":{"role":"전 보건복지가족부 장관·전 국회의원; 확인된 2014 상근 공직 없음","scope_score":1,"evidence_date":"2014","match":"target_year_indirect","confidence":"M","sources":["https://www.yna.co.kr/view/AKR20080811182900003"]},
-      "t20":{"role":"전 보건복지가족부 장관·전 국회의원; 2024 현직 공직 직접확인 없음","scope_score":1,"evidence_date":"2024","match":"target_year_indirect","confidence":"L","sources":["https://www.yna.co.kr/view/AKR20080811182900003"]},
-      "current":{"role":"전 보건복지가족부 장관·전 국회의원; 2026 현직 공직 직접확인 없음","scope_score":1,"evidence_date":"2026","match":"current_indirect","confidence":"L","sources":["https://www.yna.co.kr/view/AKR20080811182900003"]}
-    },
-    {
-      "name":"노회찬",
-      "t10":{"role":"전 정의당 대표·2014 동작을 국회의원 보궐선거 후보","scope_score":2,"evidence_date":"2014-07","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140708082600001"]},
-      "t20":{"role":"2018-07-23 별세(당시 정의당 원내대표)","scope_score":null,"evidence_date":"2018-07-23","match":"competing_event","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20180723075753001"]},
-      "current":{"role":"2018-07-23 별세","scope_score":null,"evidence_date":"2018-07-23","match":"competing_event","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20180723075753001"]},
-      "death_truncated":true
-    },
-    {
-      "name":"조승수",
-      "t10":{"role":"2014 울산광역시장 후보","scope_score":3,"evidence_date":"2014-05","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140521078900057"]},
-      "t20":{"role":"노회찬재단 이사장/대표로 진보정치·시민사회 활동","scope_score":2,"evidence_date":"2024","match":"target_year","confidence":"H","sources":["https://hcroh.org/notice/?bmode=view&idx=16242933"]},
-      "current":{"role":"노회찬재단 대표·진보정치 시민사회 활동","scope_score":2,"evidence_date":"2026","match":"current","confidence":"H","sources":["https://hcroh.org/"]}
-    }
+    {"name":"원희룡","t10":{"role":"제37대 제주특별자치도지사 당선·취임","scope_score":3,"evidence_date":"2014-07","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140604081200056"]},"t20":{"role":"국토교통부 장관을 2023-12-22까지 역임; 2024 총선 출마","scope_score":3,"evidence_date":"2023-12-22","match":"within_window_minus1","confidence":"H","sources":["https://www.molit.go.kr/USR/WPGE0201/m_35286/DTL.jsp","https://www.yna.co.kr/view/AKR20231222056600003"]},"current":{"role":"전 국토교통부 장관·정치인; 확인된 2026 현직 공직 없음","scope_score":1,"evidence_date":"2026","match":"current","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20260707065900004"]}},
+    {"name":"박진","t10":{"role":"전 3선 국회의원·외교안보 정책연구기관 상임대표/대학 석좌교수","scope_score":2,"evidence_date":"2014-09","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140922068000001"]},"t20":{"role":"제40대 외교부 장관; 2023년 말까지 재임 후 2024년 초 이임","scope_score":3,"evidence_date":"2023-12","match":"within_window_minus1","confidence":"H","sources":["https://www.korea.kr/briefing/speechView.do?newsId=132034365","https://www.yna.co.kr/view/AKR20231219085800001"]},"current":{"role":"전 외교부 장관·KAIST 과학외교센터 자문위원장·Oxford honorary fellow","scope_score":2,"evidence_date":"2026-07-16","match":"current","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20260716094000001"]}},
+    {"name":"남경필","t10":{"role":"제34대 경기도지사 당선·취임","scope_score":3,"evidence_date":"2014-07","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140701083500061"]},"t20":{"role":"정계 은퇴 후 마약 예방·치유운동단체 은구(NGU) 설립·대표 활동","scope_score":2,"evidence_date":"2024-10-10","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20241010155900001"]},"current":{"role":"마약예방치유단체 은구(NGU) 대표·사회활동가","scope_score":2,"evidence_date":"2026-06-27","match":"current","confidence":"H","sources":["https://v.daum.net/v/20260627155502815","https://imnews.imbc.com/replay/2025/nwtoday/article/6735948_36807.html"]}},
+    {"name":"박세일","t10":{"role":"한반도선진화재단 명예이사장·서울대 명예교수·정책지식인","scope_score":2,"evidence_date":"2014","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140724090300001"]},"t20":{"role":"2017-01-13 별세","scope_score":null,"evidence_date":"2017-01-13","match":"competing_event","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20170113057451001"]},"current":{"role":"2017-01-13 별세","scope_score":null,"evidence_date":"2017-01-13","match":"competing_event","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20170113057451001"]},"death_truncated":true},
+    {"name":"김문수","t10":{"role":"제32·33대 경기도지사; 2014-06까지 재임","scope_score":3,"evidence_date":"2014-06","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140625051600061"]},"t20":{"role":"경제사회노동위원장(2022-2024) 후 고용노동부 장관 취임","scope_score":3,"evidence_date":"2024-08","match":"target_year","confidence":"H","sources":["https://www.moel.go.kr/minister/intro/profile.do"]},"current":{"role":"전 고용노동부 장관·2025 대통령 후보; 2026 지방선거 지원 정치활동","scope_score":2,"evidence_date":"2026-06","match":"current","confidence":"H","sources":["https://imnews.imbc.com/news/2026/politics/article/6739952_36611.html"]},"guardrail":"2025 presidential candidacy is retained as lifetime peak4, but current snapshot is not automatically score4."},
+    {"name":"권오을","t10":{"role":"전 3선 국회의원·새누리당 인재영입위원장/경북지사 경선 참여","scope_score":2,"evidence_date":"2014","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140211171800053"]},"t20":{"role":"2025-07 국가보훈부 장관 취임","scope_score":3,"evidence_date":"2025-07-25","match":"within_window_plus1","confidence":"H","sources":["https://www.mpva.go.kr/mpva/contents.do?key=239"]},"current":{"role":"제3대 국가보훈부 장관","scope_score":3,"evidence_date":"2026-07","match":"current","confidence":"H","sources":["https://www.mpva.go.kr/mpva/contents.do?key=239"]}},
+    {"name":"심재철","t10":{"role":"제19대 국회의원·새누리당 최고위원·세월호 국정조사특위원장","scope_score":2,"evidence_date":"2014-06","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140610052200001","https://www.yna.co.kr/view/AKR20140523023400001"]},"t20":{"role":"2024 국민의힘 안양동안을 국회의원 후보·전 국회부의장","scope_score":2,"evidence_date":"2024-04-04","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20240404054600001"]},"current":{"role":"전 국회부의장·전 국회의원; 2026 현직 공직 직접확인 없음","scope_score":1,"evidence_date":"2024-04-04","match":"stale","confidence":"L","sources":["https://www.yna.co.kr/view/AKR20240404054600001"]}},
+    {"name":"전재희","t10":{"role":"전 보건복지가족부 장관·전 국회의원; 확인된 2014 상근 공직 없음","scope_score":1,"evidence_date":"2014","match":"target_year_indirect","confidence":"M","sources":["https://www.yna.co.kr/view/AKR20080811182900003"]},"t20":{"role":"전 보건복지가족부 장관·전 국회의원; 2024 현직 공직 직접확인 없음","scope_score":1,"evidence_date":"2024","match":"target_year_indirect","confidence":"L","sources":["https://www.yna.co.kr/view/AKR20080811182900003"]},"current":{"role":"전 보건복지가족부 장관·전 국회의원; 2026 현직 공직 직접확인 없음","scope_score":1,"evidence_date":"2026","match":"current_indirect","confidence":"L","sources":["https://www.yna.co.kr/view/AKR20080811182900003"]}},
+    {"name":"노회찬","t10":{"role":"전 정의당 대표·2014 동작을 국회의원 보궐선거 후보","scope_score":2,"evidence_date":"2014-07","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140708082600001"]},"t20":{"role":"2018-07-23 별세(당시 정의당 원내대표)","scope_score":null,"evidence_date":"2018-07-23","match":"competing_event","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20180723075753001"]},"current":{"role":"2018-07-23 별세","scope_score":null,"evidence_date":"2018-07-23","match":"competing_event","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20180723075753001"]},"death_truncated":true},
+    {"name":"조승수","t10":{"role":"2014 울산광역시장 후보","scope_score":3,"evidence_date":"2014-05","match":"target_year","confidence":"H","sources":["https://www.yna.co.kr/view/AKR20140521078900057"]},"t20":{"role":"노회찬재단 이사장/대표로 진보정치·시민사회 활동","scope_score":2,"evidence_date":"2024","match":"target_year","confidence":"H","sources":["https://hcroh.org/notice/?bmode=view&idx=16242933"]},"current":{"role":"노회찬재단 대표·진보정치 시민사회 활동","scope_score":2,"evidence_date":"2026","match":"current","confidence":"H","sources":["https://hcroh.org/"]}}
   ],
   "qa": {
     "audited_n":10,
     "death_truncated_n":2,
     "death_truncated_names":["노회찬","박세일"],
-    "t10_score_distribution":{"1":1,"2":4,"3":5,"4":0,"null":0},
-    "t20_score_distribution":{"1":2,"2":3,"3":3,"4":0,"null":2},
-    "current_score_distribution":{"1":3,"2":3,"3":1,"4":0,"null":2},
+    "t10_score_distribution":{"1":1,"2":5,"3":4,"4":0,"null":0},
+    "t20_score_distribution":{"1":1,"2":3,"3":4,"4":0,"null":2},
+    "current_score_distribution":{"1":3,"2":4,"3":1,"4":0,"null":2},
     "current_low_confidence_n":2,
     "current_low_confidence_names":["심재철","전재희"]
   },
