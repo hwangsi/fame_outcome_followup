@@ -12,9 +12,9 @@
       "target": "통권264호 1999-07-01 차세대리더/호감 정치인 조사",
       "research_value": "very_high",
       "recoverability": "very_high",
-      "why": "exact issue/date is directly known; rank1/3/5 are already confirmed; primary serial is held from issue 1 onward by National Assembly Library",
-      "known": ["노무현 1위", "이인제 3위", "정동영 5위"],
-      "missing": ["full candidate pool", "rank2/rank4/rank6+", "scores", "methodology/sample details"],
+      "why": "exact issue/date is directly known; rank1/3/5/6 are confirmed; primary serial is held from issue 1 onward by National Assembly Library",
+      "known": ["노무현 1위", "이인제 3위", "정동영 5위", "고건 6위"],
+      "missing": ["full candidate pool", "rank2/rank4/rank7+", "scores", "methodology/sample details"],
       "primary_locator": {
         "institution": "국회도서관",
         "control_number": "SERL1000000060",
@@ -41,8 +41,9 @@
         "institution": "국회도서관",
         "control_number": "SERL1000000060",
         "call_number": "P 051.1 ㅎ152",
-        "date_window": "late September 2004",
-        "issue_hint": "likely no.528; verify from scan before treating as fact"
+        "date_window": "around 2004-09-20/23",
+        "issue_hint": "issue526 is now the best inference after rechecking dated issue536=2004-12-02 and issue537=2004-12-09; verify from catalog/scan before treating as fact",
+        "withdrawn_hint": "previous issue528 inference withdrawn"
       },
       "ledger": "state/h21_2004_full31_recovery_v0_1.json",
       "completion_gate": "primary ranking table/graphic with all 31 candidates"
