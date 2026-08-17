@@ -1,0 +1,13 @@
+{
+  "schema_version":"donga_2010_t0_baseline_freeze_v1.2",
+  "generated":"2026-08-18",
+  "status":"frozen_superseding_v1_1",
+  "supersedes":"state/donga_2010_t0_baseline_freeze_v1_1.json",
+  "reason":"Post-T0 audit surfaced official IBS evidence that Charles D. Surh (서동철) was already a world-renowned immunologist before the 2010 selection; treating his later IBS directorship as a 2→3 advancement would overstate prediction gain.",
+  "new_correction":{"name":"서동철","t0_old":2,"t0_new":3,"baseline_old":2,"baseline_new":3},
+  "cumulative_corrections_since_v1_0":["이지오 2→3","조동호 2→3","서동철 2→3"],
+  "t0_runtime_output":"data/typeA/donga_2010_t0_snapshot_scope_v1_2.json",
+  "baseline_runtime_output":"data/typeA/donga_2010_baseline_peak_through_t0_v1_2.json",
+  "qa_expected":{"total":100,"t0_score_counts":{"1":1,"2":50,"3":46,"4":3},"t0_mean":2.51,"baseline_score_counts":{"1":1,"2":49,"3":47,"4":3},"baseline_mean":2.52,"baseline_greater_than_t0_n":1},
+  "versioning_rule":"Do not modify v1.2 silently; later discoveries require v1.3 or later."
+}
