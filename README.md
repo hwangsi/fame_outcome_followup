@@ -1,77 +1,112 @@
-# 언론사 선정 인재 추적 — 동아일보 Pilot v3
+# 언론사 선정 인재 추적 — Fame Outcome Follow-up
 
 **기준일:** 2026-08-17  
-**코호트:** 동아일보 「닮고 싶고 되고 싶은 과학기술인」 2002–2005, n=39  
-**버전:** v3.0
+**현재 단계:** 동아일보 Type B Pilot v3.1 분석 완료 + Phase 2 Type A 코호트 착수
 
-## v3 핵심
+## 1. 동아일보 Pilot v3
 
-- 추적축을 `T0 → T+10(±1년) → T+20(±1년) → Current`로 확장.
-- 각 T+10/T+20 시점에 `observed_role`, `level`, `sector`, `evidence_date`, `match`, `confidence`, `sources` 저장.
-- strict evidence = `exact_year | within_window | timeline_covers_target`.
-- Current의 `status_trajectory`와 `sector_transition`을 분리 유지.
-- 사망은 career failure가 아니라 competing event로 처리.
+**코호트:** 동아일보 「닮고 싶고 되고 싶은 과학기술인」 2002–2005, n=39
 
-## 최종 coverage
-
+- 추적축: `T0 → T+10(±1년) → T+20(±1년) → Current`
 - Current verified: **29/39 = 74%**
 - T+10 strict: **37/39 = 95%**
-- T+10 broad: **39/39 = 100%**
 - T+20 strict: **34/39 = 87%**
-- T+20 broad: **36/39 = 92%**
-- High-status lifetime trajectory: **26/39 = 67%**, Wilson 95% CI **51–79%**
+- High-status lifetime trajectory: **26/39 = 67%**
 
-## 시점별 elite-high
+이 코호트는 당시 이미 성취한 역할모델을 선정한 Type B이므로 이 비율은 “언론 예측 성공률”이 아니다.
 
-- T+10: **21/37 = 57%** (strict career-assessable), Wilson 95% CI **41–71%**
-- T+20: **15/32 = 47%** (strict career-assessable; 사망 2 제외), Wilson 95% CI **31–64%**
+### v3.1 longitudinal analysis
 
-이 비율은 예측 성공률이 아니다. 이 코호트는 당시 이미 성취한 역할모델을 선정한 Type B 코호트이므로, 시점별 지위의 지속/전환을 기술하는 지표로 사용한다.
+T+10과 T+20 모두 strict evidence가 있는 33명의 전이행렬을 추가 분석했다.
 
-## 남은 strict gap
+- T+10 `elite_high`였고 T+20까지 평가 가능한 생존자: **14/19 = 74%가 elite 유지**
+- T+10 `established` → T+20 `elite_high`: **1/11 = 9%**
+- 산업계 lifetime high-status: **10/12 = 83%**
+- 학술연구: **11/19 = 58%**
+- 사회문화: **5/8 = 62%**
+- 산업계 vs 비산업계 Fisher exact: **OR 3.44, p=0.269** → 탐색적 가설 수준
 
-- T+10: 박성래, 백우현
-- T+20: 박완철, 문대원, 이조원, 홍지준, 백우현
+연령이 확인된 23명 분석에서는 T0 고연령군일수록 lifetime high-status는 높지만 T+20 현역 elite 비율은 낮아, 향후 언론사 간 비교에 **age/career-stage adjustment가 필수**임을 확인했다.
 
-## 이번 최종 정정
+## 2. Phase 2 — Type A 미래예측형 코호트
 
-- 유향숙: 유명희의 대통령실 미래전략기획관 경력이 잘못 붙은 오류 제거. 2012·2022 한국생명공학연구원 명예연구원 활동으로 교정.
-- 유명희(1954, 분자생물학자): 2013 대통령실 미래전략기획관, 2023 마크로젠 사외이사, 2026 사외이사/감사위원 선임 확인.
-- 이재웅: `쏘카 창업자` 표현 제거. 쏘카 원 창업자는 김지만이며, 이재웅은 초기 투자자·후일 대표·2026 이사회 의장/COO로 구분.
-- 손욱: 2023 차세대 CTO 초청강연과 2025 공개기고로 T+20 및 Current 보강.
-- 문대원: 한국진공학회 공식 임원자료로 T+10 strict window 보강.
-- 장순근: 2022 「남극 그리고 네번의 겨울」 자료로 T+20 exact-year 보강.
-- 장인순: 2026 연합뉴스 직접 인터뷰를 T+20(2025±1) 근거로 반영.
+실제 prediction accuracy를 평가할 수 있는 미래예측형 기획을 별도 코호트로 구축한다.
 
-## 저장소 파일
+### 첫 구축 대상: 뉴스메이커 2003 「차세대 리더 정치·경제」
 
-현재 GitHub에서 바로 읽을 수 있는 핵심 파일:
+- 발행: **2003-05-30**
+- 질문: “앞으로 정치·경제 분야를 이끌어갈 차세대 리더”
+- 한길리서치, 오피니언 리더 100명
+- 교수 50 / 기자 30 / 시민단체 간부 20
+- 3명 중복 선택
 
-- `report_2026-08-17_v3.md` — 메인 결과 보고서
-- `state/coding_rules_v3.md` — milestone 및 longitudinal coding 규칙
-- `scripts/gen_report_v3.py` — v3 보고서 생성 스크립트
+현재 복원:
 
-전체 v3 원본 스냅샷은 다음 아카이브에 보존되어 있다.
+**정치 Top 10 순위**
+1. 정동영 43%
+2. 김근태 33%
+3. 손학규 28%
+4. 유시민 20%
+5. 강금실 18%
+6. 추미애·권영길 공동
+8. 이부영
+9. 천정배·강재섭 공동
 
-- `artifacts/v3_bundle.tar.xz`
+**경제 Top 5 순위·점수**
+1. 안철수 39%
+2. 장하성 32%
+3. 강철규 29%
+4. 정운찬 28%
+5. 이재용 19%
 
-아카이브에는 아래 파일이 **원본 그대로** 포함되어 있다.
+경제 분야는 조학국·변양호·이재웅·진대제·장하준도 원문에서 언급되지만, 정확한 전체 순위가 복원될 때까지 임의 순위를 부여하지 않는다.
+
+### 다른 Type A 후보
+
+- 한겨레21 1999 차세대 리더 조사 — 전체 31명 원표 확보 필요
+- 신동아 1998 정치부 기자 100명 ‘차세대 정치인’ — 전체 순위 원문 확보 필요
+- 시사저널 차세대 리더 시리즈 — 방법론 benchmark
+
+## 3. Repository structure
 
 ```text
-README_v3.md
-coding_rules_v3.md
-build_v3.py
-gen_report_v3.py
-outcomes_v2_1.json
-outcomes_v3.json
-outcomes_v3.md
+README.md
 report_2026-08-17_v3.md
+
+analysis/
+  analysis_v3_1.md
+
+phase2/
+  phase2_typeA_candidates.md
+  typeA_newsmaker_2003_t0_partial.md
+  typeA_newsmaker_2003_t0_partial.json
+
+data/
+  outcomes_v3.json.xz
+
+state/
+  coding_rules_v3.md
+
+scripts/
+  gen_report_v3.py
+  analyze_v3_1.py
+
+artifacts/
+  v3_bundle.tar.xz
 ```
 
-따라서 `outcomes_v3.json`, 39명 상세 근거 MD, build script까지 포함한 현재 작업 전체는 이 아카이브에서 재현할 수 있다.
+`data/outcomes_v3.json.xz`는 전체 39명 v3 JSON의 xz 압축본이다. `scripts/analyze_v3_1.py`는 raw JSON 또는 이 압축본을 직접 읽는다.
 
-### 아카이브 풀기
+전체 v3 원본 스냅샷은 `artifacts/v3_bundle.tar.xz`에도 보존되어 있다.
 
 ```bash
 tar -xJf artifacts/v3_bundle.tar.xz
 ```
+
+## 4. 다음 작업
+
+1. 뉴스메이커 2003 정치/경제 ranked core의 **T+10(2013), T+20(2023), Current(2026)** outcome 코딩
+2. 경제 전체 Top10 정확 순위/score 복원
+3. 정치 6~10위 score 복원
+4. Type A `Top-k precision`, rank–outcome association 계산
+5. 동아일보 2002–2003 코호트의 누락 birth year 보완 → age-adjusted analysis 완성
