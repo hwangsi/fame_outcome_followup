@@ -1,0 +1,201 @@
+{
+  "schema_version": "khan_2004_peak_audit_gnp_dlp_batch2_v0.1",
+  "generated": "2026-08-18",
+  "selection_cutoff": "2004-05-05",
+  "rules_ref": [
+    "state/coding_rules_typeA_v0_1.md",
+    "state/coding_rules_typeA_sector_scope_v0_1.md"
+  ],
+  "status": "peak_audited_10_of_10_gnp_dlp",
+  "people": [
+    {
+      "name": "원희룡",
+      "party_t0": "한나라당",
+      "t0_role": "17대 국회의원 당선자",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "국회의원급 전국 정치 역할",
+      "post_t0_peak_role": "제주특별자치도지사·국토교통부 장관",
+      "post_t0_peak_year": 2022,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.molit.go.kr/USR/WPGE0201/m_35286/DTL.jsp",
+        "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156537313"
+      ]
+    },
+    {
+      "name": "박진",
+      "party_t0": "한나라당",
+      "t0_role": "17대 국회의원 당선자",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "국회의원급 전국 정치 역할",
+      "post_t0_peak_role": "제40대 외교부 장관",
+      "post_t0_peak_year": 2022,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.korea.kr/briefing/speechView.do?newsId=132034365"
+      ]
+    },
+    {
+      "name": "남경필",
+      "party_t0": "한나라당",
+      "t0_role": "17대 국회의원 당선자",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "국회의원급 전국 정치 역할",
+      "post_t0_peak_role": "제34대 경기도지사",
+      "post_t0_peak_year": 2014,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.yna.co.kr/view/AKR20140701083500061"
+      ]
+    },
+    {
+      "name": "박세일",
+      "party_t0": "한나라당",
+      "t0_role": "17대 국회의원 당선자·전 대통령비서실 정책기획수석/사회복지수석",
+      "baseline_peak_through_t0": 4,
+      "baseline_basis": "Pre-selection presidential core policy leadership; existing politics rule codes presidential-core leadership as national apex.",
+      "post_t0_peak_role": "국민생각 대표",
+      "post_t0_peak_year": 2012,
+      "post_t0_peak_score": 3,
+      "advancement_delta": -1,
+      "advancement_class": "lower_than_baseline",
+      "confidence": "H",
+      "sources": [
+        "https://www.ehistory.go.kr/view/photo?mediaid=23135&mediasrcgbn=PT",
+        "https://www.yna.co.kr/view/AKR20120223133900001",
+        "https://www.yna.co.kr/view/AKR20120302057300001"
+      ],
+      "guardrail": "This case demonstrates why lifetime pre-selection peak, not contemporaneous elected-office title, must define baseline."
+    },
+    {
+      "name": "김문수",
+      "party_t0": "한나라당",
+      "t0_role": "17대 국회의원 당선자·한나라당 공천심사위원장",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "National Assembly member; no pre-cutoff governor/minister/national-party-leader/apex role",
+      "post_t0_peak_role": "2025 국민의힘 대통령 후보",
+      "post_t0_peak_year": 2025,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 2,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200405051842301",
+        "https://www.yna.co.kr/view/AKR20250503038251001"
+      ]
+    },
+    {
+      "name": "권오을",
+      "party_t0": "한나라당",
+      "t0_role": "17대 국회의원 당선자",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "국회의원급 전국 정치 역할",
+      "post_t0_peak_role": "제3대 국가보훈부 장관",
+      "post_t0_peak_year": 2025,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200405271841231",
+        "https://www.mpva.go.kr/mpva/contents.do?key=239"
+      ]
+    },
+    {
+      "name": "심재철",
+      "party_t0": "한나라당",
+      "t0_role": "17대 국회의원 당선자",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "국회의원급 전국 정치 역할",
+      "post_t0_peak_role": "제20대 국회 전반기 국회부의장",
+      "post_t0_peak_year": 2016,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.yna.co.kr/view/AKR20160609125900001"
+      ],
+      "scope_note": "National Assembly deputy speaker is treated as major national political leadership (scope3), below president/PM/presidential-candidate apex."
+    },
+    {
+      "name": "전재희",
+      "party_t0": "한나라당",
+      "t0_role": "17대 국회의원 당선자·전 광명시장",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "National MP plus municipal-mayor career; no pre-cutoff minister/metropolitan-governor/national-party-leader role",
+      "post_t0_peak_role": "보건복지가족부 장관",
+      "post_t0_peak_year": 2008,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.yna.co.kr/view/AKR20080707119800001",
+        "https://www.korea.kr/news/policyNewsView.do?newsId=148656008"
+      ]
+    },
+    {
+      "name": "노회찬",
+      "party_t0": "민주노동당",
+      "t0_role": "민주노동당 사무총장·17대 국회의원 당선자",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "National party secretary-general/elected MP is below national-party representative under frozen mapping",
+      "post_t0_peak_role": "진보신당 상임대표·진보정의당 공동대표",
+      "post_t0_peak_year": 2008,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200405061855181",
+        "https://www.yna.co.kr/view/AKR20081101052900062",
+        "https://www.khan.co.kr/article/201302142213275"
+      ]
+    },
+    {
+      "name": "조승수",
+      "party_t0": "민주노동당",
+      "t0_role": "전 울산 북구청장·17대 국회의원 당선자",
+      "baseline_peak_through_t0": 2,
+      "baseline_basis": "Municipal mayor/elected MP; no pre-cutoff national-party representative role",
+      "post_t0_peak_role": "진보신당 대표",
+      "post_t0_peak_year": 2010,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/201010152150095/amp",
+        "https://www.seoul.co.kr/news/politics/2010/10/16/20101016004022"
+      ]
+    }
+  ],
+  "qa": {
+    "audited_n": 10,
+    "baseline_score_2_n": 9,
+    "baseline_score_4_n": 1,
+    "post_peak_score_3_n": 9,
+    "post_peak_score_4_n": 1,
+    "advanced_n": 9,
+    "sustained_high_n": 0,
+    "lower_than_baseline_n": 1,
+    "not_assessable_n": 0
+  },
+  "interpretation_guardrails": [
+    "This is a peak audit, not yet a full T+10/T+20/current longitudinal file.",
+    "박세일 is the key baseline guardrail case: his pre-2004 presidential policy-chief peak is scope4 even though his contemporaneous T0 role was newly elected MP; later party leadership therefore does not count as advancement.",
+    "김문수 reaches scope4 through selection as a major national presidential candidate in 2025, not merely through his earlier governorship or ministry.",
+    "노회찬 and 조승수 national-party representative roles are coded scope3; party size does not reduce a genuine nationwide party-leader role below the frozen political mapping.",
+    "Adverse events or later retirement do not retroactively reduce an achieved post-selection peak."
+  ]
+}
