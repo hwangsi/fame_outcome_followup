@@ -1,0 +1,86 @@
+{
+  "schema_version": "donga_2010_2011_two_wave_freeze_v0.1",
+  "generated": "2026-08-18",
+  "status": "complete_two_wave_200_placements_162_persons",
+  "source_master_ref": "analysis/donga_2010_2011_two_wave_master_v0_1.json",
+  "population": {
+    "placements": 200,
+    "unique_persons": 162,
+    "groups": {
+      "repeat_2010_2011": 38,
+      "2010_only": 62,
+      "2011_new": 62
+    }
+  },
+  "repeat_38": {
+    "baseline_change_counts": {
+      "same": 38
+    },
+    "category_change_counts": {
+      "same": 37,
+      "changed": 1
+    },
+    "advancement_transition_counts": {
+      "advanced -> advanced": 11,
+      "no_clear_advancement -> no_clear_advancement": 3,
+      "sustained_high -> sustained_high": 24
+    }
+  },
+  "person_group_first_selection_summary": {
+    "2010_only": {
+      "n": 62,
+      "first_selection_assessable_n": 62,
+      "first_selection_major_n": 36,
+      "first_selection_major_rate_full": 0.5806451612903226,
+      "first_selection_apex_n": 3,
+      "first_selection_apex_rate_full": 0.04838709677419355,
+      "first_selection_advanced_n": 17,
+      "first_selection_advanced_rate_full": 0.27419354838709675,
+      "first_selection_baseline_counts": {
+        "2": 38,
+        "3": 23,
+        "1": 1
+      }
+    },
+    "repeat_2010_2011": {
+      "n": 38,
+      "first_selection_assessable_n": 38,
+      "first_selection_major_n": 35,
+      "first_selection_major_rate_full": 0.9210526315789473,
+      "first_selection_apex_n": 9,
+      "first_selection_apex_rate_full": 0.23684210526315788,
+      "first_selection_advanced_n": 11,
+      "first_selection_advanced_rate_full": 0.2894736842105263,
+      "first_selection_baseline_counts": {
+        "3": 27,
+        "4": 3,
+        "2": 8
+      }
+    },
+    "2011_new": {
+      "n": 62,
+      "first_selection_assessable_n": 61,
+      "first_selection_major_n": 55,
+      "first_selection_major_rate_full": 0.8870967741935484,
+      "first_selection_apex_n": 3,
+      "first_selection_apex_rate_full": 0.04838709677419355,
+      "first_selection_advanced_n": 25,
+      "first_selection_advanced_rate_full": 0.4032258064516129,
+      "first_selection_baseline_counts": {
+        "2": 30,
+        "3": 30,
+        "4": 2
+      }
+    }
+  },
+  "runtime_context": {
+    "github_run_id": "32075323894",
+    "github_sha": "5217e1db95dae58986e417a7084fb1d89c0bea4d"
+  },
+  "guardrails": [
+    "The 200 placements are not 200 independent people; 38 repeat persons contribute two placements each.",
+    "Person-level first-selection outcomes use the post-selection window beginning at the person’s first wave: 2010 for 2010-only/repeat, 2011 for 2011-new.",
+    "For repeat persons, post-2010 and post-2011 peak windows overlap in calendar time and their difference is descriptive, not a causal trajectory estimator.",
+    "The name intersection between 2010 and 2011 must exactly equal the frozen 38-person repeat set; otherwise the build fails."
+  ]
+}
