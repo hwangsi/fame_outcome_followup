@@ -1,0 +1,70 @@
+{
+  "schema_version": "shindonga_1998_nextgen_politics_recovery_v0.1",
+  "generated": "2026-08-18",
+  "status": "secondary_anchor_confirmed_primary_issue_required",
+  "publication": "신동아",
+  "target_issue": "1998년 8월호",
+  "survey_description": "정치부 기자 100명이 뽑은 차세대 정치인",
+  "known_ranked_rows": [
+    {
+      "rank": 1,
+      "name": "김근태",
+      "status": "confirmed_by_independent_biographical_retrospectives",
+      "score": null
+    }
+  ],
+  "strong_secondary_sources": [
+    {
+      "source": "김근태재단 연혁",
+      "url": "https://gtf.or.kr/about/history",
+      "fact": "1998년 8월 신동아 여론조사에서 '정치부 기자 1백 명이 뽑은 차세대 정치인 1위'로 선정됐다고 직접 기록"
+    },
+    {
+      "source": "프레시안 김근태 회고 기사",
+      "url": "https://www.pressian.com/pages/articles/271372",
+      "fact": "1998년 8월 신동아가 실시한 정치부 기자 100명 조사에서 김근태가 차세대 정치인 1위였다고 독립적으로 회고"
+    }
+  ],
+  "archive_context": {
+    "official_web_archive_limitation": "신동아 공식 회고에 따르면 1996년부터 일부 인터넷 서비스가 있었지만 과거 기사 중 현재 체계적으로 제공되는 범위는 주로 2001년 1월호 이후이므로 1998 원문이 공식 웹 검색에서 빠지는 것이 구조적으로 설명된다.",
+    "source_url": "https://v.daum.net/v/20211101100103857"
+  },
+  "physical_copy_lead": {
+    "status": "confirmed_listing_seen",
+    "description": "고서·잡지 판매 색인에 '신동아 - <1998년 8월호>' 실물 매물이 확인됨",
+    "url": "https://www.saybooks.net/shop/list.php?ca_id=2040a0&page=1&page=3&rows=20&shop_type=&sort1=&sort2=",
+    "use_policy": "구매 필요성을 현재 단계에서 전제하지 않는다. 우선 도서관/공공 소장본을 찾고, 실물 매물은 존재 확인용 fallback lead로만 보존."
+  },
+  "unknown": {
+    "article_title": null,
+    "full_ranked_candidate_list": null,
+    "rank_2_and_below": null,
+    "scores_or_vote_counts": null,
+    "exact_fieldwork_method": null,
+    "candidate_eligibility_rule": null
+  },
+  "search_paths_attempted": [
+    "Shindonga domain searches for 1998 + Kim Geun-tae + next-generation politician",
+    "Donga archive searches",
+    "exact phrase '정치부 기자 100명' + 김근태",
+    "National Assembly Library web-index searches",
+    "1998 August issue inventory/physical-copy searches"
+  ],
+  "rejected_methods": [
+    "Do not infer lower ranks from later political prominence.",
+    "Do not merge Newspeople Jan-1999 or Ilyo Shinmun Apr-1999 rankings with the Shindonga list.",
+    "Do not treat Kim Geun-tae's rank 1 as proof of any other candidate's inclusion."
+  ],
+  "qa": {
+    "target_month_confirmed": true,
+    "rank1_confirmed_by_two_secondary_sources": true,
+    "primary_article_recovered": false,
+    "full_roster_complete": false
+  },
+  "next_retrieval_gate": {
+    "preferred": "public-library or archival scan of 신동아 1998년 8월호",
+    "needed_artifact": "table/article containing the political-reporter 100-person next-generation-politician survey",
+    "fallback": "physical issue lead if no institutional digital copy is obtainable",
+    "on_retrieval": "transcribe exact article title, all ranked names, vote/score data, and methodology with page-level provenance before Type-A outcome coding"
+  }
+}
