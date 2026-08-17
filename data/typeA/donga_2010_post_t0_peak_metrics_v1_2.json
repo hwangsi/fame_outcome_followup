@@ -1,0 +1,141 @@
+{
+  "schema_version": "donga_2010_post_t0_peak_metrics_v1.2",
+  "generated": "2026-08-18",
+  "status": "frozen_result_metrics",
+  "metric_scope": "lifetime_post_selection_peak_through_2026-08-18_with_preselection_peak_adjustment",
+  "selection_cutoff": "2010-05-10",
+  "observation_end": "2026-08-18",
+  "protocol_ref": "state/donga_2010_post_t0_peak_protocol_v1_0.md",
+  "baseline_ref": "data/typeA/donga_2010_baseline_peak_through_t0_v1_4.json",
+  "audit_patch_ref": "data/typeA/donga_2010_post_t0_peak_audit_patch_v1_2.json",
+  "builder_ref": "scripts/build_donga_2010_post_t0_peak_master.py",
+  "population": {
+    "total": 100,
+    "assessed": 100,
+    "unresolved": 0,
+    "death_truncated_assessed": 3,
+    "assessed_nontruncated": 97,
+    "death_truncated_names": ["최은석", "서동철", "박원순"]
+  },
+  "post_t0_score_counts": {"2": 29, "3": 59, "4": 12},
+  "primary_full_cohort": {
+    "denominator": 100,
+    "major_leadership_ge3_n": 71,
+    "major_leadership_precision": 0.71,
+    "apex_eq4_n": 12,
+    "apex_precision": 0.12,
+    "advanced_n": 28,
+    "advanced_rate": 0.28,
+    "mean_advancement_delta": 0.28,
+    "advancement_classes": {
+      "advanced": 28,
+      "sustained_high": 44,
+      "no_clear_advancement": 28,
+      "lower_than_baseline": 0,
+      "not_assessable": 0
+    }
+  },
+  "sensitivity_excluding_death_truncated": {
+    "denominator": 97,
+    "major_ge3_n": 68,
+    "major_ge3_rate": 0.7010309278350515,
+    "apex_eq4_n": 12,
+    "apex_eq4_rate": 0.12371134020618557,
+    "advanced_n": 26,
+    "advanced_rate": 0.26804123711340205,
+    "mean_advancement_delta": 0.26804123711340205
+  },
+  "by_category": {
+    "자유로운 창조인": {
+      "n": 20,
+      "major_ge3_n": 16,
+      "major_ge3_rate": 0.8,
+      "apex_eq4_n": 4,
+      "apex_eq4_rate": 0.2,
+      "advanced_n": 8,
+      "advanced_rate": 0.4,
+      "sustained_high_n": 8,
+      "no_clear_advancement_n": 4,
+      "mean_advancement_delta": 0.4,
+      "truncated_by_death_n": 1
+    },
+    "꿈꾸는 개척가": {
+      "n": 25,
+      "major_ge3_n": 22,
+      "major_ge3_rate": 0.88,
+      "apex_eq4_n": 1,
+      "apex_eq4_rate": 0.04,
+      "advanced_n": 3,
+      "advanced_rate": 0.12,
+      "sustained_high_n": 19,
+      "no_clear_advancement_n": 3,
+      "mean_advancement_delta": 0.12,
+      "truncated_by_death_n": 1
+    },
+    "행동하는 지성인": {
+      "n": 20,
+      "major_ge3_n": 7,
+      "major_ge3_rate": 0.35,
+      "apex_eq4_n": 1,
+      "apex_eq4_rate": 0.05,
+      "advanced_n": 7,
+      "advanced_rate": 0.35,
+      "sustained_high_n": 1,
+      "no_clear_advancement_n": 12,
+      "mean_advancement_delta": 0.35,
+      "truncated_by_death_n": 1
+    },
+    "도전하는 경제인": {
+      "n": 25,
+      "major_ge3_n": 17,
+      "major_ge3_rate": 0.68,
+      "apex_eq4_n": 5,
+      "apex_eq4_rate": 0.2,
+      "advanced_n": 6,
+      "advanced_rate": 0.24,
+      "sustained_high_n": 11,
+      "no_clear_advancement_n": 8,
+      "mean_advancement_delta": 0.24,
+      "truncated_by_death_n": 0
+    },
+    "미래를 여는 지도자": {
+      "n": 9,
+      "major_ge3_n": 9,
+      "major_ge3_rate": 1.0,
+      "apex_eq4_n": 1,
+      "apex_eq4_rate": 0.1111111111111111,
+      "advanced_n": 4,
+      "advanced_rate": 0.4444444444444444,
+      "sustained_high_n": 5,
+      "no_clear_advancement_n": 0,
+      "mean_advancement_delta": 0.4444444444444444,
+      "truncated_by_death_n": 0
+    },
+    "독자선정": {
+      "n": 1,
+      "major_ge3_n": 0,
+      "major_ge3_rate": 0.0,
+      "apex_eq4_n": 0,
+      "apex_eq4_rate": 0.0,
+      "advanced_n": 0,
+      "advanced_rate": 0.0,
+      "sustained_high_n": 0,
+      "no_clear_advancement_n": 1,
+      "mean_advancement_delta": 0.0,
+      "truncated_by_death_n": 0
+    }
+  },
+  "target2020_context": {
+    "resolved_n": 87,
+    "scope_ge3_n": 42,
+    "scope_ge3_rate_among_resolved": 0.4827586206896552,
+    "note": "This is a distinct target-year snapshot metric with a different denominator and must not be labeled selection precision."
+  },
+  "interpretation_guardrails": [
+    "Major-leadership precision measures later attainment among selected people, not causal forecasting skill against an unselected control group.",
+    "Advanced rate measures who exceeded the highest scope already achieved by selection time; it is conceptually different from later major-leadership attainment.",
+    "Death-truncated cases are not coded as failures.",
+    "The 0-4 scope scale is coarse, ordinal, and sector-normalized.",
+    "The published roster is alphabetical within editorial groups, so ranking accuracy cannot be inferred from list position."
+  ]
+}
