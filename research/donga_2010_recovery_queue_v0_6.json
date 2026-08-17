@@ -1,0 +1,42 @@
+{
+  "version": "v0.6",
+  "generated": "2026-08-17",
+  "confirmed_membership_n": 78,
+  "membership_slots_remaining": 22,
+  "named_pending_secondary": ["김윤진", "서도호", "손열음", "신지애", "이청용"],
+  "confirmed_category_unknown": ["김용", "김창진", "김필립", "남홍길", "박승정", "서동철", "신현송", "안동현", "윤명철", "이상훈", "이연주", "이원규", "이창용", "임지순", "장하준", "찰스 리", "현택환"],
+  "completed_tracks": [
+    {
+      "track": "2012_three_year_hall_of_fame",
+      "status": "complete",
+      "resolved_n": 20,
+      "last_resolved_name": "신현송",
+      "membership_count_changed": false,
+      "note": "The previously unnamed 10th economy/business Hall-of-Fame member was resolved from the 2012 A8 primary page as Shin Hyun-song. A 2011 Donga primary article independently places him among the 38 selected in both 2010 and 2011. He was already in the confirmed roster, so this strengthens provenance without increasing n."
+    }
+  ],
+  "search_tracks": [
+    {
+      "priority": 1,
+      "track": "2011_two_year_repeat",
+      "goal": "recover the complete primary list of 38 explicitly selected in both 2010 and 2011 from the 2011-04-01 A3 page and linked primary material"
+    },
+    {
+      "priority": 2,
+      "track": "category_resolution",
+      "names": ["김용", "김창진", "김필립", "남홍길", "박승정", "서동철", "신현송", "안동현", "윤명철", "이상훈", "이연주", "이원규", "이창용", "임지순", "장하준", "찰스 리", "현택환"]
+    },
+    {
+      "priority": 3,
+      "track": "2010_institutional_notices",
+      "goal": "discover T0 names without outcome-based search"
+    },
+    {
+      "priority": 4,
+      "track": "digital_archive_A1_A4",
+      "goal": "recover the original 2010 printed roster"
+    }
+  ],
+  "acceptance_rule": "No person enters frozen roster without explicit evidence that guarantees 2010 selection.",
+  "analysis_gate": "Do not calculate 2020 target-year prediction metrics before exact 100/100 T0 roster freeze."
+}
