@@ -21,12 +21,17 @@
 ## Repeat 38 — category continuity
 
 `{'same': 37, 'changed': 1}`
+- changed: **안철수**
 
 ## Repeat 38 — advancement-class transition
 
 - `advanced → advanced`: **11**
 - `no_clear_advancement → no_clear_advancement`: **3**
 - `sustained_high → sustained_high`: **24**
+
+## Interpretation guardrail
+
+repeat 38명의 baseline이 38/38 동일하고 advancement class도 38/38 동일하지만, 이를 독립적인 1년 안정성 증거로 해석하지 않는다. 2010·2011 post-selection window가 겹치며, 2011 repeat outcome의 상당수는 2011 cutoff 이후임이 명확한 기존 post-2010 peak를 안전 승계하도록 설계되었기 때문에 class identity는 부분적으로 구조적이다.
 
 ## Guardrails
 

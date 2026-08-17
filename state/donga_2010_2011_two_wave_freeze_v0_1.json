@@ -16,14 +16,107 @@
     "baseline_change_counts": {
       "same": 38
     },
+    "baseline_change_names": {
+      "up": [],
+      "same": [
+        "강덕수",
+        "김기문",
+        "김문수",
+        "김빛내리",
+        "김연아",
+        "김정범",
+        "김준영",
+        "김택진",
+        "김필립",
+        "김해성",
+        "나경원",
+        "박원순",
+        "박지영",
+        "박진영",
+        "박현주",
+        "봉준호",
+        "서정진",
+        "신지애",
+        "신현송",
+        "안철수",
+        "오세훈",
+        "원희룡",
+        "유시민",
+        "이부진",
+        "이상엽",
+        "이재용",
+        "이주호",
+        "이창용",
+        "이해진",
+        "임지순",
+        "장하준",
+        "장한나",
+        "정의선",
+        "정태영",
+        "정하웅",
+        "조국",
+        "최태원",
+        "현택환"
+      ],
+      "down": []
+    },
     "category_change_counts": {
       "same": 37,
       "changed": 1
     },
+    "category_changed_names": [
+      "안철수"
+    ],
     "advancement_transition_counts": {
       "advanced -> advanced": 11,
       "no_clear_advancement -> no_clear_advancement": 3,
       "sustained_high -> sustained_high": 24
+    },
+    "advancement_transition_names": {
+      "advanced -> advanced": [
+        "김문수",
+        "김준영",
+        "나경원",
+        "박원순",
+        "봉준호",
+        "서정진",
+        "안철수",
+        "원희룡",
+        "이재용",
+        "정의선",
+        "조국"
+      ],
+      "no_clear_advancement -> no_clear_advancement": [
+        "김정범",
+        "김해성",
+        "박지영"
+      ],
+      "sustained_high -> sustained_high": [
+        "강덕수",
+        "김기문",
+        "김빛내리",
+        "김연아",
+        "김택진",
+        "김필립",
+        "박진영",
+        "박현주",
+        "신지애",
+        "신현송",
+        "오세훈",
+        "유시민",
+        "이부진",
+        "이상엽",
+        "이주호",
+        "이창용",
+        "이해진",
+        "임지순",
+        "장하준",
+        "장한나",
+        "정태영",
+        "정하웅",
+        "최태원",
+        "현택환"
+      ]
     }
   },
   "person_group_first_selection_summary": {
@@ -74,13 +167,14 @@
     }
   },
   "runtime_context": {
-    "github_run_id": "32075323894",
-    "github_sha": "5217e1db95dae58986e417a7084fb1d89c0bea4d"
+    "github_run_id": "32075435387",
+    "github_sha": "7fcbe80456b6be1d1c8804ebd29208327917604f"
   },
   "guardrails": [
     "The 200 placements are not 200 independent people; 38 repeat persons contribute two placements each.",
     "Person-level first-selection outcomes use the post-selection window beginning at the person’s first wave: 2010 for 2010-only/repeat, 2011 for 2011-new.",
     "For repeat persons, post-2010 and post-2011 peak windows overlap in calendar time and their difference is descriptive, not a causal trajectory estimator.",
+    "The 38/38 identical advancement-class transitions are not independent longitudinal evidence: most 2011 repeat outcomes inherit the already-audited post-2010 peak when that peak is safely after the 2011 cutoff, so class identity is partly structural by design.",
     "The name intersection between 2010 and 2011 must exactly equal the frozen 38-person repeat set; otherwise the build fails."
   ]
 }
