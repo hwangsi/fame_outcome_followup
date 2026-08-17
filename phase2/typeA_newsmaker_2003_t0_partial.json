@@ -1,0 +1,59 @@
+{
+  "schema_version": "typeA_t0_partial_v0.1",
+  "generated": "2026-08-17",
+  "cohort": {
+    "id": "newsmaker_2003_next_leaders",
+    "publication": "뉴스메이커 (경향 계열; 현 주간경향 전신)",
+    "date": "2003-05-30",
+    "cohort_type": "A",
+    "framing": "앞으로 정치·경제 분야를 이끌어갈 차세대 리더",
+    "survey_firm": "한길리서치연구소",
+    "survey_dates": "2003-05-20~2003-05-22",
+    "method": "구조화 설문지 전화면접, purposeful sampling, 3명 중복 선택",
+    "n_respondents": 100,
+    "respondents": {"professors": 50, "journalists": 30, "civic_group_executives": 20},
+    "sources": [
+      {"source": "오마이뉴스 10년 아카이브의 뉴스메이커 기사 사본", "role": "2003 원기사 텍스트/방법론 및 Top5 score 복원"},
+      {"source": "주간경향 2005-06-07 후속기사", "role": "2003 정치 Top10 순서 회고"}
+    ]
+  },
+  "politics": [
+    {"rank": 1, "name": "정동영", "score_pct": 43.0, "rank_status": "verified", "score_status": "verified"},
+    {"rank": 2, "name": "김근태", "score_pct": 33.0, "rank_status": "verified", "score_status": "verified"},
+    {"rank": 3, "name": "손학규", "score_pct": 28.0, "rank_status": "verified", "score_status": "verified"},
+    {"rank": 4, "name": "유시민", "score_pct": 20.0, "rank_status": "verified", "score_status": "verified"},
+    {"rank": 5, "name": "강금실", "score_pct": 18.0, "rank_status": "verified", "score_status": "verified"},
+    {"rank": 6, "name": "추미애", "score_pct": null, "rank_status": "verified_tie", "score_status": "not_recovered"},
+    {"rank": 6, "name": "권영길", "score_pct": null, "rank_status": "verified_tie", "score_status": "not_recovered"},
+    {"rank": 8, "name": "이부영", "score_pct": null, "rank_status": "verified", "score_status": "not_recovered"},
+    {"rank": 9, "name": "천정배", "score_pct": null, "rank_status": "verified_tie", "score_status": "not_recovered"},
+    {"rank": 9, "name": "강재섭", "score_pct": null, "rank_status": "verified_tie", "score_status": "not_recovered"}
+  ],
+  "economy": {
+    "ranked_top5": [
+      {"rank": 1, "name": "안철수", "score_pct": 39.0, "rank_status": "verified", "score_status": "verified"},
+      {"rank": 2, "name": "장하성", "score_pct": 32.0, "rank_status": "verified", "score_status": "verified"},
+      {"rank": 3, "name": "강철규", "score_pct": 29.0, "rank_status": "verified", "score_status": "verified"},
+      {"rank": 4, "name": "정운찬", "score_pct": 28.0, "rank_status": "verified", "score_status": "verified"},
+      {"rank": 5, "name": "이재용", "score_pct": 19.0, "rank_status": "verified", "score_status": "verified"}
+    ],
+    "additional_mentioned_not_ranked": [
+      {"name": "조학국", "evidence": "원문에서 차세대 경제 리더로 거명; 전체 순위/점수 미복원"},
+      {"name": "변양호", "evidence": "원문에서 차세대 경제 리더로 거명; 경제부 기자 선호군에 포함"},
+      {"name": "이재웅", "evidence": "경제·경영학 교수 선호군에 포함; 전체 순위/점수 미복원"},
+      {"name": "진대제", "evidence": "경제·경영학 교수 선호군에 포함; 전체 순위/점수 미복원"},
+      {"name": "장하준", "evidence": "원문이 '10위 내에 진입'이라고 명시하나 정확 순위/점수 미복원"}
+    ]
+  },
+  "coding_notes": [
+    "정치 6위 추미애·권영길은 공동 6위, 이부영 8위, 천정배·강재섭 공동 9위로 2005 주간경향 회고기사에서 확인.",
+    "경제는 Top5만 순위·점수가 확정. 추가 5인은 원문 언급 범위를 넘어서 임의 순위를 부여하지 않음.",
+    "Type A에서는 T0 rank/score를 predictor로 원형 보존하고, outcome 코딩과 분리."
+  ],
+  "next_steps": [
+    "경제 전체 Top10의 정확 rank/score 원표 추가 탐색",
+    "정치 6~10위 score 추가 탐색",
+    "정치/경제 각각 T+10=2013, T+20=2023, Current=2026 outcome 코딩",
+    "top-k precision 및 rank-outcome association 분석"
+  ]
+}
