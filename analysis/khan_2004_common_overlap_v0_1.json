@@ -1,0 +1,262 @@
+{
+  "schema_version": "khan_2004_common_overlap_v0.1",
+  "generated": "2026-08-18",
+  "new_cohort_n": 20,
+  "existing_common_person_n": 179,
+  "overlap_name_n": 7,
+  "overlap_names": [
+    "김문수",
+    "김부겸",
+    "송영길",
+    "원희룡",
+    "유시민",
+    "이미경",
+    "천정배"
+  ],
+  "overlaps": [
+    {
+      "name": "김문수",
+      "existing_person_id": "ko-adb56e66853b",
+      "existing_placement_count": 2,
+      "existing_outlets": [
+        "동아일보"
+      ],
+      "existing_selection_years": [
+        2010,
+        2011
+      ],
+      "existing_cohort_units": [
+        "donga_2010_2020_100",
+        "donga_2011_10yr_100"
+      ],
+      "existing_placements": [
+        {
+          "placement_id": "pl-209b895bb2aed6",
+          "outlet": "동아일보",
+          "selection_date": "2010-05-10",
+          "cohort_unit": "donga_2010_2020_100",
+          "domain": "미래를 여는 지도자",
+          "baseline_peak_through_t0": 3,
+          "post_t0_peak_score": 4,
+          "advancement_class": "advanced"
+        },
+        {
+          "placement_id": "pl-1e9a691c8c8dc8",
+          "outlet": "동아일보",
+          "selection_date": "2011-04-01",
+          "cohort_unit": "donga_2011_10yr_100",
+          "domain": "미래를 여는 지도자",
+          "baseline_peak_through_t0": 3,
+          "post_t0_peak_score": 4,
+          "advancement_class": "advanced"
+        }
+      ],
+      "identity_status": "requires_cross_cohort_identity_confirmation_before_merge"
+    },
+    {
+      "name": "김부겸",
+      "existing_person_id": "ko-d05b0c6ed3ba",
+      "existing_placement_count": 1,
+      "existing_outlets": [
+        "동아일보"
+      ],
+      "existing_selection_years": [
+        2011
+      ],
+      "existing_cohort_units": [
+        "donga_2011_10yr_100"
+      ],
+      "existing_placements": [
+        {
+          "placement_id": "pl-c883c852380824",
+          "outlet": "동아일보",
+          "selection_date": "2011-04-01",
+          "cohort_unit": "donga_2011_10yr_100",
+          "domain": "미래를 여는 지도자",
+          "baseline_peak_through_t0": 2,
+          "post_t0_peak_score": 4,
+          "advancement_class": "advanced"
+        }
+      ],
+      "identity_status": "requires_cross_cohort_identity_confirmation_before_merge"
+    },
+    {
+      "name": "송영길",
+      "existing_person_id": "ko-2628f432316c",
+      "existing_placement_count": 1,
+      "existing_outlets": [
+        "동아일보"
+      ],
+      "existing_selection_years": [
+        2010
+      ],
+      "existing_cohort_units": [
+        "donga_2010_2020_100"
+      ],
+      "existing_placements": [
+        {
+          "placement_id": "pl-a5b2c904b6171b",
+          "outlet": "동아일보",
+          "selection_date": "2010-05-10",
+          "cohort_unit": "donga_2010_2020_100",
+          "domain": "미래를 여는 지도자",
+          "baseline_peak_through_t0": 3,
+          "post_t0_peak_score": 3,
+          "advancement_class": "sustained_high"
+        }
+      ],
+      "identity_status": "requires_cross_cohort_identity_confirmation_before_merge"
+    },
+    {
+      "name": "원희룡",
+      "existing_person_id": "ko-9f607622047e",
+      "existing_placement_count": 2,
+      "existing_outlets": [
+        "동아일보"
+      ],
+      "existing_selection_years": [
+        2010,
+        2011
+      ],
+      "existing_cohort_units": [
+        "donga_2010_2020_100",
+        "donga_2011_10yr_100"
+      ],
+      "existing_placements": [
+        {
+          "placement_id": "pl-736fa261743c43",
+          "outlet": "동아일보",
+          "selection_date": "2010-05-10",
+          "cohort_unit": "donga_2010_2020_100",
+          "domain": "미래를 여는 지도자",
+          "baseline_peak_through_t0": 2,
+          "post_t0_peak_score": 3,
+          "advancement_class": "advanced"
+        },
+        {
+          "placement_id": "pl-d12ad1bc8a2694",
+          "outlet": "동아일보",
+          "selection_date": "2011-04-01",
+          "cohort_unit": "donga_2011_10yr_100",
+          "domain": "미래를 여는 지도자",
+          "baseline_peak_through_t0": 2,
+          "post_t0_peak_score": 3,
+          "advancement_class": "advanced"
+        }
+      ],
+      "identity_status": "requires_cross_cohort_identity_confirmation_before_merge"
+    },
+    {
+      "name": "유시민",
+      "existing_person_id": "ko-241873e69979",
+      "existing_placement_count": 3,
+      "existing_outlets": [
+        "뉴스메이커",
+        "동아일보"
+      ],
+      "existing_selection_years": [
+        2003,
+        2010,
+        2011
+      ],
+      "existing_cohort_units": [
+        "newsmaker_2003_politics_top10",
+        "donga_2010_2020_100",
+        "donga_2011_10yr_100"
+      ],
+      "existing_placements": [
+        {
+          "placement_id": "pl-934e18747a1ad1",
+          "outlet": "뉴스메이커",
+          "selection_date": "2003-05-30",
+          "cohort_unit": "newsmaker_2003_politics_top10",
+          "domain": "politics",
+          "baseline_peak_through_t0": 2,
+          "post_t0_peak_score": 3,
+          "advancement_class": "advanced"
+        },
+        {
+          "placement_id": "pl-ebd11dbefb90dc",
+          "outlet": "동아일보",
+          "selection_date": "2010-05-10",
+          "cohort_unit": "donga_2010_2020_100",
+          "domain": "미래를 여는 지도자",
+          "baseline_peak_through_t0": 3,
+          "post_t0_peak_score": 3,
+          "advancement_class": "sustained_high"
+        },
+        {
+          "placement_id": "pl-4f4a67c816d035",
+          "outlet": "동아일보",
+          "selection_date": "2011-04-01",
+          "cohort_unit": "donga_2011_10yr_100",
+          "domain": "미래를 여는 지도자",
+          "baseline_peak_through_t0": 3,
+          "post_t0_peak_score": 3,
+          "advancement_class": "sustained_high"
+        }
+      ],
+      "identity_status": "requires_cross_cohort_identity_confirmation_before_merge"
+    },
+    {
+      "name": "이미경",
+      "existing_person_id": "ko-ca954dff0c05",
+      "existing_placement_count": 1,
+      "existing_outlets": [
+        "동아일보"
+      ],
+      "existing_selection_years": [
+        2011
+      ],
+      "existing_cohort_units": [
+        "donga_2011_10yr_100"
+      ],
+      "existing_placements": [
+        {
+          "placement_id": "pl-74a1485d3c664e",
+          "outlet": "동아일보",
+          "selection_date": "2011-04-01",
+          "cohort_unit": "donga_2011_10yr_100",
+          "domain": "도전하는 경제인",
+          "baseline_peak_through_t0": 3,
+          "post_t0_peak_score": 3,
+          "advancement_class": "sustained_high"
+        }
+      ],
+      "identity_status": "requires_cross_cohort_identity_confirmation_before_merge"
+    },
+    {
+      "name": "천정배",
+      "existing_person_id": "ko-6cd22bfd1967",
+      "existing_placement_count": 1,
+      "existing_outlets": [
+        "뉴스메이커"
+      ],
+      "existing_selection_years": [
+        2003
+      ],
+      "existing_cohort_units": [
+        "newsmaker_2003_politics_top10"
+      ],
+      "existing_placements": [
+        {
+          "placement_id": "pl-2b4346f2dcd58c",
+          "outlet": "뉴스메이커",
+          "selection_date": "2003-05-30",
+          "cohort_unit": "newsmaker_2003_politics_top10",
+          "domain": "politics",
+          "baseline_peak_through_t0": 2,
+          "post_t0_peak_score": 3,
+          "advancement_class": "advanced"
+        }
+      ],
+      "identity_status": "requires_cross_cohort_identity_confirmation_before_merge"
+    }
+  ],
+  "guardrails": [
+    "Name intersection is only a candidate identity match, not proof of identity.",
+    "Political names should be verified against 2004 party/office and existing cohort contemporaneous role before merge.",
+    "No new placement may be added to the common master until each overlap is identity-confirmed.",
+    "Non-overlap names receive new person IDs only when the Kyunghyang cohort is promoted from recovery to audited outcome master."
+  ]
+}
