@@ -1,0 +1,83 @@
+{
+  "schema_version": "donga_2010_post_t0_peak_freeze_v1.2",
+  "generated": "2026-08-18",
+  "status": "frozen",
+  "supersedes": "state/donga_2010_post_t0_peak_freeze_v1_1.json",
+  "cohort": "동아일보 2010 2020년 한국을 빛낼 100인",
+  "selection_cutoff": "2010-05-10",
+  "observation_end": "2026-08-18",
+  "metric_definition": "Highest sector-normalized scope score reached after selection through observation_end, compared with lifetime peak through selection.",
+  "protocol_ref": "state/donga_2010_post_t0_peak_protocol_v1_0.md",
+  "t0_ref": "data/typeA/donga_2010_t0_snapshot_scope_v1_3.json",
+  "baseline_ref": "data/typeA/donga_2010_baseline_peak_through_t0_v1_4.json",
+  "audit_patch_ref": "data/typeA/donga_2010_post_t0_peak_audit_patch_v1_2.json",
+  "builder_ref": "scripts/build_donga_2010_post_t0_peak_master.py",
+  "committed_metrics_ref": "data/typeA/donga_2010_post_t0_peak_metrics_v1_2.json",
+  "result_report_ref": "state/donga_2010_typeA_result_v1_0.md",
+  "runtime_outputs": [
+    "data/typeA/donga_2010_post_t0_peak_master_v1_2.json",
+    "data/typeA/donga_2010_post_t0_peak_master_v1_2.csv",
+    "data/typeA/donga_2010_post_t0_peak_metrics_v1_2.json"
+  ],
+  "change_from_v1_1": {
+    "kim_sook_jung": "score 3 -> 2 after rubric reconciliation: national curriculum division chief has nationwide policy responsibility but is not the highest leader of a major national institution or nationwide organization",
+    "park_sung_hoon": "unresolved -> score 2 using direct 2010-05-12 post-cutoff continuity evidence at Pierre Gagnaire Seoul",
+    "net_effect": "99/100 assessed -> 100/100 assessed; major-leadership n 72 -> 71; advanced n 29 -> 28"
+  },
+  "qa_expected": {
+    "total": 100,
+    "assessed": 100,
+    "unresolved": 0,
+    "death_truncated_assessed": 3,
+    "death_truncated_names": ["최은석", "서동철", "박원순"],
+    "post_t0_score_counts": {"2": 29, "3": 59, "4": 12},
+    "advancement_classes": {
+      "advanced": 28,
+      "sustained_high": 44,
+      "no_clear_advancement": 28,
+      "lower_than_baseline": 0,
+      "not_assessable": 0
+    }
+  },
+  "primary_metrics_full_cohort": {
+    "major_leadership_scope_ge3_n": 71,
+    "major_leadership_precision": 0.71,
+    "apex_scope_eq4_n": 12,
+    "apex_precision": 0.12,
+    "advanced_above_preselection_peak_n": 28,
+    "advanced_rate": 0.28,
+    "mean_advancement_delta": 0.28
+  },
+  "sensitivity_excluding_death_truncated": {
+    "denominator": 97,
+    "major_scope_ge3_n": 68,
+    "major_scope_ge3_rate": 0.7010309278350515,
+    "apex_scope_eq4_n": 12,
+    "apex_scope_eq4_rate": 0.12371134020618557,
+    "advanced_n": 26,
+    "advanced_rate": 0.26804123711340205,
+    "mean_advancement_delta": 0.26804123711340205
+  },
+  "baseline_freeze": {
+    "version": "v1.4",
+    "score_counts": {"1": 1, "2": 46, "3": 50, "4": 3},
+    "mean": 2.55,
+    "baseline_greater_than_t0_n": 2,
+    "baseline_greater_than_t0_names": ["이소연", "김병국"]
+  },
+  "validation": {
+    "github_actions_workflow": ".github/workflows/donga-target2020-qa.yml",
+    "validated_commit": "76100ec19a452a6e7a7d7e14a7d0d0ef59df2b3b",
+    "run_id": 32067510433,
+    "job_id": 95502940945,
+    "conclusion": "success"
+  },
+  "interpretation_guardrails": [
+    "Major-leadership precision measures later attainment among selected people, not causal forecasting skill against an unselected control group.",
+    "Advanced rate is the proportion that exceeded the best scope already achieved by selection time; it is conceptually different from later major-leadership attainment.",
+    "Death-truncated cases are not coded as failures.",
+    "The 0-4 scope scale is coarse, ordinal, and sector-normalized.",
+    "The published roster is alphabetical within editorial groups, so ranking accuracy cannot be inferred from list position."
+  ],
+  "freeze_policy": "Do not silently alter v1.2. Any later evidence or rubric change requires v1.3 or later with an explicit changelog."
+}
