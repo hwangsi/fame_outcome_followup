@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import hashlib, json
+import hashlib, json, os
 from collections import Counter
 from pathlib import Path
 
@@ -7,6 +7,8 @@ ROOT=Path(__file__).resolve().parents[1]
 M10=ROOT/'data/typeA/donga_2010_post_t0_peak_master_v1_2.json'
 M11=ROOT/'analysis/donga_2011_post_t0_master_v1_0.json'
 OUT=ROOT/'analysis/donga_2010_2011_two_wave_master_v0_1.json'
+FREEZE_OUT=ROOT/'state/donga_2010_2011_two_wave_freeze_v0_1.json'
+RESULT_OUT=ROOT/'state/donga_2010_2011_two_wave_result_v0_1.md'
 
 
 def pid(name):
@@ -114,6 +116,7 @@ def main():
           'first_selection_baseline_counts':dict(Counter(str(p['baseline_at_first_selection']) for p in rr)),
         }
 
+    summaries={g:group_summary(g) for g in ['2010_only','repeat_2010_2011','2011_new']}
     qa={
       'placements_n':200,'unique_persons_n':162,'2010_placements_n':100,'2011_placements_n':100,
       'groups':dict(groups),'repeat_intersection_n':len(intersection),
@@ -130,18 +133,54 @@ def main():
         'person':'one canonical individual across waves; 162 rows total',
         'repeat':'same frozen identity selected in both 2010 and 2011; 38 persons'
       },
-      'qa':qa,
-      'person_group_first_selection_summary':{g:group_summary(g) for g in ['2010_only','repeat_2010_2011','2011_new']},
+      'qa':qa,'person_group_first_selection_summary':summaries,
       'guardrails':[
         'The 200 placements are not 200 independent people; 38 repeat persons contribute two placements each.',
         'Person-level first-selection outcomes use the post-selection window beginning at the person’s first wave: 2010 for 2010-only/repeat, 2011 for 2011-new.',
         'For repeat persons, post-2010 and post-2011 peak windows overlap in calendar time and their difference is descriptive, not a causal trajectory estimator.',
         'The name intersection between 2010 and 2011 must exactly equal the frozen 38-person repeat set; otherwise the build fails.'
       ],
-      'placements':placements,
-      'people':people,
+      'placements':placements,'people':people,
     }
     OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print(json.dumps({'qa':qa,'group_summary':out['person_group_first_selection_summary']},ensure_ascii=False,indent=2))
+
+    freeze={
+      'schema_version':'donga_2010_2011_two_wave_freeze_v0.1','generated':'2026-08-18',
+      'status':'complete_two_wave_200_placements_162_persons',
+      'source_master_ref':str(OUT.relative_to(ROOT)),
+      'population':{'placements':200,'unique_persons':162,'groups':dict(groups)},
+      'repeat_38':{
+        'baseline_change_counts':dict(baseline_changes),
+        'category_change_counts':dict(category_changes),
+        'advancement_transition_counts':{f'{a} -> {b}':n for (a,b),n in sorted(transition.items())},
+      },
+      'person_group_first_selection_summary':summaries,
+      'runtime_context':{'github_run_id':os.getenv('GITHUB_RUN_ID'),'github_sha':os.getenv('GITHUB_SHA')},
+      'guardrails':out['guardrails'],
+    }
+    FREEZE_OUT.write_text(json.dumps(freeze,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+    def pct(x): return f'{100*x:.1f}%'
+    lines=[
+      '# 동아일보 2010–2011 two-wave longitudinal summary v0.1','',
+      '- placements: **200**','- unique persons: **162**',
+      '- 2010-only: **62**','- repeat 2010+2011: **38**','- 2011-new: **62**','',
+      '## Person-level first-selection outcomes','',
+      '| Group | N | Major | Apex | Advanced |','|---|---:|---:|---:|---:|'
+    ]
+    labels={'2010_only':'2010-only','repeat_2010_2011':'Repeat','2011_new':'2011-new'}
+    for g in ['2010_only','repeat_2010_2011','2011_new']:
+        s=summaries[g]
+        lines.append(f"| {labels[g]} | {s['n']} | {s['first_selection_major_n']}/{s['n']} = {pct(s['first_selection_major_rate_full'])} | {s['first_selection_apex_n']}/{s['n']} = {pct(s['first_selection_apex_rate_full'])} | {s['first_selection_advanced_n']}/{s['n']} = {pct(s['first_selection_advanced_rate_full'])} |")
+    lines += ['', '## Repeat 38 — 2010→2011 baseline change','', f"`{dict(baseline_changes)}`",'',
+              '## Repeat 38 — category continuity','', f"`{dict(category_changes)}`",'',
+              '## Repeat 38 — advancement-class transition','']
+    for (a,b),n in sorted(transition.items()): lines.append(f'- `{a} → {b}`: **{n}**')
+    lines += ['', '## Guardrails','',
+              '- 200 placements are not 200 independent people; repeat 38 contribute two placements.',
+              '- First-selection person outcomes start at 2010 for 2010-only/repeat and 2011 for 2011-new.',
+              '- Repeat post-2010 and post-2011 outcome windows overlap, so their difference is descriptive rather than causal.','']
+    RESULT_OUT.write_text('\n'.join(lines),encoding='utf-8')
+    print(json.dumps({'qa':qa,'group_summary':summaries},ensure_ascii=False,indent=2))
 
 if __name__=='__main__': main()
