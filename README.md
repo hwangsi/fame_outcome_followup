@@ -1,9 +1,9 @@
 # 언론사 선정 인재 추적 — Fame Outcome Follow-up
 
 **기준일:** 2026-08-17  
-**현재 단계:** 동아일보 Type B Pilot v3.1 완료 + 뉴스메이커 2003 Type A v0.3 분석
+**현재 단계:** Type B longitudinal Pilot 완료 + Type A 2개 코호트 비교 + 동아일보 2010 explicit-horizon calibration cohort 재구축
 
-## 1. 동아일보 Pilot — Type B 역할모델형
+## 1. Type B — 동아일보 과학기술 역할모델 Pilot
 
 **코호트:** 동아일보 「닮고 싶고 되고 싶은 과학기술인」 2002–2005, n=39
 
@@ -12,112 +12,129 @@
 - T+10 strict: **37/39 = 95%**
 - T+20 strict: **34/39 = 87%**
 - High-status lifetime trajectory: **26/39 = 67%**
+- T+10 elite 생존자 중 T+20 elite 유지: **14/19 = 74%**
 
-이 코호트는 당시 이미 성취한 역할모델을 선정한 Type B이므로 이 비율은 “언론 예측 성공률”이 아니다.
+Type B는 이미 성취한 역할모델 선정이므로 prediction accuracy가 아니라 **persistence / trajectory**로 해석한다.
 
-### v3.1 longitudinal analysis
+## 2. Type A — 미래예측형
 
-- T+10 `elite_high`였고 T+20까지 평가 가능한 생존자: **14/19 = 74%가 elite 유지**
-- T+10 `established` → T+20 `elite_high`: **1/11 = 9%**
-- 산업계 lifetime high-status: **10/12 = 83%**
-- 학술연구: **11/19 = 58%**
-- 사회문화: **5/8 = 62%**
-- 산업계 vs 비산업계 Fisher exact: **OR 3.44, p=0.269** → 탐색적 가설 수준
-
-연령이 확인된 23명 분석에서는 T0 고연령군일수록 lifetime high-status는 높지만 T+20 현역 elite 비율은 낮아, 향후 언론사 간 비교에 **age/career-stage adjustment가 필수**임을 확인했다.
-
-## 2. Phase 2 — Type A 미래예측형
-
-### 뉴스메이커 2003 「차세대 리더 정치·경제」 v0.3
-
-- 발행: **2003-05-30**
-- 질문: “앞으로 정치·경제 분야를 이끌어갈 차세대 리더”
-- 한길리서치, 오피니언 리더 100명
-- 교수 50 / 기자 30 / 시민단체 간부 20
-- 3명 중복 선택
-
-### T0 복원
-
-**정치 Top10**
-1. 정동영 43%
-2. 김근태 33%
-3. 손학규 28%
-4. 유시민 20%
-5. 강금실 18%
-6. 추미애·권영길 공동
-8. 이부영
-9. 천정배·강재섭 공동
-
-**경제 Top5**
-1. 안철수 39%
-2. 장하성 32%
-3. 강철규 29%
-4. 정운찬 28%
-5. 이재용 19%
-
-경제 원문에는 조학국·변양호·이재웅·진대제·장하준도 등장하지만 정확한 6–10위 원순위/지목률은 공개 텍스트에서 복원하지 못했다. 정치 6–10위 지목률도 미복원 상태로 유지하며 임의 추정하지 않는다.
-
-### v0.3 핵심 결과
-
-Type A는 세 가지를 분리한다.
+Type A에서는 세 축을 분리한다.
 
 1. **Selection precision** — 후보군을 잘 골랐는가?
 2. **Ranking accuracy** — 순위가 미래 성취 순서를 맞혔는가?
-3. **Baseline-adjusted advancement** — 선정 당시 이미 높았던 지위를 감안해도 더 상승했는가?
+3. **Baseline-adjusted advancement** — 선정 당시 지위를 빼고도 실제 상승했는가?
 
-현재 ranked sample:
+### A. 뉴스메이커 2003 정치 Top10
 
-| 지표 | 정치 Top10 | 경제 Top5 |
+- post-T0 major leadership: **10/10**
+- post-T0 apex: **2/10**
+- baseline-adjusted advanced: **7/10**
+- Rank vs post-T0 peak: ρ=-0.306, p=0.389
+- **Rank vs advancement Δ: ρ=-0.094, p=0.796**
+
+경제 Top5는 major **5/5**, apex **4/5**, advanced **4/5**이며 rank vs Δ는 ρ=-0.224, p=0.718이다.
+
+### B. 한겨레21 2004 차세대 리더 Top10
+
+복원 순위:
+1. 고건 60.0
+2. 강금실 47.3
+3. 박근혜 46.5
+4. 이회창 33.8
+5. 정몽준 32.4
+6. 정동영 31.0
+7. 권영길 26.2
+8. 이명박
+9. 추미애
+10. 이해찬
+
+결과:
+- post-T0 major leadership: **10/10**
+- apex: **5/10**
+- baseline-adjusted advanced: **4/10**
+- Rank vs post-T0 peak: ρ=+0.035, p=0.924
+- **Rank vs advancement Δ: ρ=+0.402, p=0.249**
+
+### 두 Type A 코호트의 현재 공통 신호
+
+> **후보군 자체는 매우 잘 골랐지만, 후보군 내부의 순위는 누가 더 크게 성장할지를 잘 예측하지 못했다.**
+
+뉴스메이커와 한겨레21 정치 Top10의 20개 placement에는 **16명 unique person**만 있다. 강금실·권영길·정동영·추미애가 중복되므로 outlet 간 비교에서 단순 독립표본 검정은 사용하지 않는다.
+
+| 지표 | 뉴스메이커 2003 | 한겨레21 2004 |
 |---|---:|---:|
-| post-T0 major leadership | **10/10 (100%)** | **5/5 (100%)** |
-| post-T0 apex | 2/10 (20%) | 4/5 (80%) |
-| baseline-adjusted advanced | **7/10 (70%)** | **4/5 (80%)** |
+| T0 baseline mean | 2.4 | 3.3 |
+| baseline-adjusted advanced | 7/10 | 4/10 |
+| Rank vs Δ ρ | -0.094 | +0.402 |
 
-**Ranking accuracy**
-- Rank vs post-T0 peak: 정치 ρ=-0.306 (p=0.389), 경제 ρ=0.000 (p=1.000)
-- Rank vs 실제 상승폭 `advancement_delta`: **정치 ρ=-0.094 (p=0.796), 경제 ρ=-0.224 (p=0.718)**
+한겨레21은 T0부터 대통령 권한대행 경험자·대선후보·총리·장관·서울시장 등이 많아, raw future success보다 **baseline adjustment의 필요성**이 특히 크다.
 
-> **현재의 핵심 해석: 후보군 자체는 매우 잘 골랐지만, 후보군 내부의 순위가 누가 더 크게 성장할지를 예측하지는 못했다.**
+## 3. Explicit-horizon calibration — 동아일보 2010 「2020년 한국을 빛낼 100인」
 
-raw 100%를 “언론 예측 성공률 100%”라고 부르지 않는다. 손학규·강금실·권영길·강철규·정운찬 등은 T0에서 이미 높은 직위에 있었으므로, 미래예측에는 baseline-adjusted advancement가 더 중요하다.
+2010년에 목표연도를 **2020년으로 명시**한 미래예측형 기획이다.
 
-## 3. Repository structure
+- 총 100명: 편집부 99 + 독자선정 1
+- 최초 후보 355명
+- 자문위원 8명
+- 추천위원 205명
+- 평균나이 44.9세
+- 여성 16명
+- 대학 교수 36명
+- 1차 추천 상위: **김빛내리 23표 / 이재용 19표 / 안철수 18표**
+
+카테고리 목표:
+- 자유로운 창조인 20
+- 꿈꾸는 개척가 25
+- 행동하는 지성인 20
+- 도전하는 경제인 25
+- 미래를 여는 지도자 10
+
+현재 **58/100명**을 직접 확인했다.
+- 자유로운 창조인 **20/20**
+- 꿈꾸는 개척가 10/25
+- 행동하는 지성인 7/20
+- 도전하는 경제인 15/25
+- 미래를 여는 지도자 6/10
+
+전체 100명 복원 전에는 성공률을 계산하지 않는다. 이 코호트는 완성 후 **2010의 예측을 정확히 목표시점 2020에서 calibration**할 수 있다는 점이 가장 큰 장점이다.
+
+## 4. Repository structure
 
 ```text
-README.md
-report_2026-08-17_v3.md
-
 analysis/
   analysis_v3_1.md
-  typeA_newsmaker_2003_v0_2.md
   typeA_newsmaker_2003_v0_3.md
+  typeA_h21_2004_v0_1.md
+  typeA_cross_cohort_comparison_v0_1.md
+  typeA_cross_cohort_metrics_v0_1.json
+
+data/typeA/
+  newsmaker_2003_t0_partial.json
+  newsmaker_2003_outcomes_v0_3.json
+  h21_2004_t0_partial.json
+  h21_2004_outcomes_v0_1.json
+  donga_2010_2020_100_seed_v0_1.json
 
 research/
   phase2_typeA_candidates.md
+  donga_2010_explicit_horizon_discovery_v0_1.md
 
 state/
   coding_rules_v3.md
   coding_rules_typeA_v0_1.md
 
 scripts/
-  gen_report_v3.py
   analyze_v3_1.py
   analyze_typeA_newsmaker_2003.py
-
-data/
-  typeA/
-    newsmaker_2003_t0_partial.json
-    newsmaker_2003_outcomes_v0_2.json
-    newsmaker_2003_outcomes_v0_3.json
-
-artifacts/
-  v3_bundle.tar.xz
+  analyze_typeA_cross_cohort.py
+  gen_report_v3.py
 ```
 
-## 4. 다음 작업
+## 5. 다음 우선순위
 
-1. 뉴스메이커 정치 6–10위 T0 profile을 동시대 자료로 추가 검증해 baseline confidence 승격
-2. 경제 6–10위 원지면/표 확보 시 Top10으로 확장
-3. **한겨레21 1999 차세대 리더** 전체 31명 원표 확보 시도
-4. 신동아 1998 ‘정치부 기자가 뽑은 차세대 정치인’ 전체 순위 복원 시도
-5. 두 번째 Type A 코호트 확보 후 outlet 간 `selection precision / ranking accuracy / baseline-adjusted advancement` 비교
+1. **동아일보 2010 나머지 42명 복원** → 전체 100명 완성
+2. 전체 100명에 대해 **target year 2020 outcome** 코딩
+3. 1차 추천표 추가 복원 시 vote-count calibration 분석
+4. 한겨레21 2004 31명 전체표 복원
+5. 한겨레21 1999 및 신동아 1998 원순위 archive retrieval
+6. Type A가 3개 이상 완성되면 person-clustered 공통 master dataset 구축
