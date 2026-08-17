@@ -8,6 +8,7 @@ on:
       - 'scripts/build_donga_2011_post_t0_master.py'
       - 'scripts/analyze_donga_2011_repeat_predictive_value.py'
       - 'scripts/build_donga_2010_2011_two_wave_master.py'
+      - 'scripts/build_typeA_common_master_v0_2.py'
       - 'research/donga_2011_post_t0_repeat_cutoff_audit_v0_1.json'
       - 'research/donga_2011_post_t0_new_audit_batch1_v0_1.json'
       - 'research/donga_2011_post_t0_new_audit_batch2_v0_1.json'
@@ -16,6 +17,8 @@ on:
       - 'research/donga_2011_post_t0_new_audit_batch5_v0_1.json'
       - 'research/donga_2011_post_t0_new_audit_batch6_v0_1.json'
       - 'data/typeA/donga_2011_t0_roles_v0_1.json'
+      - 'data/typeA/newsmaker_2003_outcomes_v0_3.json'
+      - 'data/typeA/h21_2004_outcomes_v0_1.json'
       - '.github/workflows/donga-2011-postt0-seed-qa.yml'
   workflow_dispatch:
 
@@ -137,5 +140,44 @@ jobs:
           git add state/donga_2010_2011_two_wave_freeze_v0_1.json state/donga_2010_2011_two_wave_result_v0_1.md
           if ! git diff --cached --quiet; then
             git commit -m "Freeze Dong-A 2010-2011 two-wave summary"
+            git push
+          fi
+      - name: Build identity-safe Type-A common master v0.2
+        run: python scripts/build_typeA_common_master_v0_2.py
+      - name: QA Type-A common master v0.2
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('data/typeA/typeA_common_master_v0_2.json',encoding='utf-8'))
+          m=json.load(open('data/typeA/typeA_common_metrics_v0_2.json',encoding='utf-8'))
+          f=json.load(open('state/typeA_common_master_freeze_v0_2.json',encoding='utf-8'))
+          q=d['qa']
+          print(json.dumps({'common_qa':q,'by_unit':m['by_cohort_unit'],'person_first':m['person_first_selection_descriptive']},ensure_ascii=False,indent=2))
+          assert q['placements']==225
+          assert q['unique_people']==179
+          assert q['repeated_person_n']==43
+          assert q['placement_count_distribution']=={'1':136,'2':40,'3':3}
+          assert q['triple_selected_names']==['안철수','유시민','이재용']
+          assert q['same_name_candidates_n']==43
+          assert q['cohort_units']==5
+          assert q['not_assessable_placements']==1
+          assert f['qa']==q
+          u=m['by_cohort_unit']
+          assert (u['newsmaker_2003_politics_top10']['n'],u['newsmaker_2003_economy_top5']['n'])==(10,5)
+          assert u['h21_2004_politics_top10']['n']==10
+          assert u['donga_2010_2020_100']['n']==100
+          assert u['donga_2011_10yr_100']['n']==100
+          assert (u['donga_2011_10yr_100']['major_n'],u['donga_2011_10yr_100']['apex_n'],u['donga_2011_10yr_100']['advanced_n'])==(90,12,36)
+          people={p['name']:p for p in d['people']}
+          assert people['안철수']['placement_count']==3
+          assert people['유시민']['placement_count']==3
+          assert people['이재용']['placement_count']==3
+          assert people['박근혜']['placement_count']==2
+          PY
+      - name: Persist Type-A common master v0.2
+        run: |
+          git add data/typeA/typeA_common_master_v0_2.json data/typeA/typeA_common_master_v0_2.csv data/typeA/typeA_common_metrics_v0_2.json state/typeA_common_master_freeze_v0_2.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Freeze Type-A common master v0.2"
             git push
           fi
