@@ -1,0 +1,33 @@
+name: Dong-A Target2020 QA
+
+on:
+  push:
+    paths:
+      - 'scripts/build_donga_2010_target2020_master.py'
+      - 'data/typeA/donga_2010_*'
+      - 'state/donga_2010_*'
+      - '.github/workflows/donga-target2020-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build canonical target2020 master and assert QA
+        run: python scripts/build_donga_2010_target2020_master.py
+      - name: Show generated files
+        run: |
+          wc -l data/typeA/donga_2010_target2020_master_v1_0.csv
+          python - <<'PY'
+          import json
+          p='data/typeA/donga_2010_target2020_master_v1_0.json'
+          d=json.load(open(p,encoding='utf-8'))
+          print(json.dumps(d['qa'],ensure_ascii=False,indent=2))
+          PY
