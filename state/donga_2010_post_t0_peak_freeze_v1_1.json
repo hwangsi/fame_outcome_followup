@@ -1,0 +1,83 @@
+{
+  "schema_version": "donga_2010_post_t0_peak_freeze_v1.1",
+  "generated": "2026-08-18",
+  "status": "frozen",
+  "cohort": "동아일보 2010 2020년 한국을 빛낼 100인",
+  "selection_cutoff": "2010-05-10",
+  "observation_end": "2026-08-18",
+  "metric_definition": "Highest sector-normalized scope score reached after selection through observation_end, compared with lifetime peak through selection.",
+  "protocol_ref": "state/donga_2010_post_t0_peak_protocol_v1_0.md",
+  "t0_ref": "data/typeA/donga_2010_t0_snapshot_scope_v1_3.json",
+  "baseline_ref": "data/typeA/donga_2010_baseline_peak_through_t0_v1_4.json",
+  "audit_patch_ref": "data/typeA/donga_2010_post_t0_peak_audit_patch_v1_1.json",
+  "builder_ref": "scripts/build_donga_2010_post_t0_peak_master.py",
+  "runtime_outputs": [
+    "data/typeA/donga_2010_post_t0_peak_master_v1_1.json",
+    "data/typeA/donga_2010_post_t0_peak_master_v1_1.csv",
+    "data/typeA/donga_2010_post_t0_peak_metrics_v1_1.json"
+  ],
+  "qa_expected": {
+    "total": 100,
+    "assessed": 99,
+    "unresolved": 1,
+    "unresolved_names": ["박성훈"],
+    "death_truncated_assessed": 3,
+    "death_truncated_names": ["최은석", "서동철", "박원순"],
+    "post_t0_score_counts": {"2": 27, "3": 60, "4": 12},
+    "advancement_classes": {
+      "advanced": 29,
+      "sustained_high": 44,
+      "no_clear_advancement": 26,
+      "lower_than_baseline": 0,
+      "not_assessable": 1
+    }
+  },
+  "primary_metrics_assessed_only": {
+    "major_leadership_scope_ge3_n": 72,
+    "major_leadership_precision": 0.7272727272727273,
+    "apex_scope_eq4_n": 12,
+    "apex_precision": 0.12121212121212122,
+    "advanced_above_preselection_peak_n": 29,
+    "advanced_rate": 0.29292929292929293,
+    "mean_advancement_delta": 0.29292929292929293
+  },
+  "sensitivity_excluding_death_truncated_assessed": {
+    "denominator": 96,
+    "major_scope_ge3_n": 69,
+    "major_scope_ge3_rate": 0.71875,
+    "apex_scope_eq4_n": 12,
+    "apex_scope_eq4_rate": 0.125,
+    "advanced_n": 27,
+    "advanced_rate": 0.28125,
+    "mean_advancement_delta": 0.28125
+  },
+  "bounds_excluding_deaths_with_unresolved_retained": {
+    "denominator": 97,
+    "major_scope_ge3": [0.711340206185567, 0.7216494845360825],
+    "apex_scope_eq4": [0.12371134020618557, 0.13402061855670103],
+    "advanced": [0.27835051546391754, 0.28865979381443296]
+  },
+  "baseline_freeze": {
+    "version": "v1.4",
+    "score_counts": {"1": 1, "2": 46, "3": 50, "4": 3},
+    "mean": 2.55,
+    "baseline_greater_than_t0_n": 2,
+    "baseline_greater_than_t0_names": ["이소연", "김병국"]
+  },
+  "validation": {
+    "github_actions_workflow": ".github/workflows/donga-target2020-qa.yml",
+    "commit": "d592a9a3240550a0e7074f3953cf6f0de696426e",
+    "run_id": 32067234779,
+    "job_id": 95502078133,
+    "conclusion": "success"
+  },
+  "interpretation_guardrails": [
+    "major_leadership_precision measures attainment among selected people, not causal forecasting skill against an unselected control group.",
+    "advanced_rate is the proportion that exceeded the best scope already achieved by selection time; it is conceptually different from later major-leadership attainment.",
+    "Death-truncated cases are not coded as failures.",
+    "The unresolved row is not coded as zero.",
+    "The 0-4 scope scale is coarse, ordinal, and sector-normalized.",
+    "The published roster is alphabetical within editorial groups, so ranking accuracy cannot be inferred from list position."
+  ],
+  "freeze_policy": "Do not silently alter v1.1. New evidence for Park Sung-hoon or any coding/rubric change requires v1.2 or later with an explicit changelog."
+}
