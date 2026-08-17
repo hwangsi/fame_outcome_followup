@@ -5,6 +5,7 @@ on:
     paths:
       - 'scripts/build_donga_2010_target2020_master.py'
       - 'scripts/analyze_donga_2010_target2020.py'
+      - 'scripts/build_donga_2010_t0_snapshot_scope.py'
       - 'data/typeA/donga_2010_*'
       - 'state/donga_2010_*'
       - '.github/workflows/donga-target2020-qa.yml'
@@ -21,17 +22,22 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Build T0 snapshot scope and assert QA
+        run: python scripts/build_donga_2010_t0_snapshot_scope.py
       - name: Build canonical target2020 master and assert QA
         run: python scripts/build_donga_2010_target2020_master.py
       - name: Compute target-year metrics and assert QA
         run: python scripts/analyze_donga_2010_target2020.py
       - name: Show generated files
         run: |
+          wc -l data/typeA/donga_2010_t0_snapshot_scope_v0_1.csv
           wc -l data/typeA/donga_2010_target2020_master_v1_0.csv
           python - <<'PY'
           import json
+          t0=json.load(open('data/typeA/donga_2010_t0_snapshot_scope_v0_1.json',encoding='utf-8'))
           master=json.load(open('data/typeA/donga_2010_target2020_master_v1_0.json',encoding='utf-8'))
           metrics=json.load(open('data/typeA/donga_2010_target2020_metrics_v1_0.json',encoding='utf-8'))
+          print(json.dumps(t0['qa'],ensure_ascii=False,indent=2))
           print(json.dumps(master['qa'],ensure_ascii=False,indent=2))
           print(json.dumps(metrics['resolved_only'],ensure_ascii=False,indent=2))
           print(json.dumps(metrics['sensitivity_non_competing_denominator'],ensure_ascii=False,indent=2))
