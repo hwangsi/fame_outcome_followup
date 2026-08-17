@@ -1,0 +1,91 @@
+{
+  "schema_version": "khan_2004_common_overlap_identity_audit_v0.1",
+  "generated": "2026-08-18",
+  "source_overlap": "analysis/khan_2004_common_overlap_v0_1.json",
+  "status": "adjudicated_7_of_7",
+  "summary": {
+    "name_collisions": 7,
+    "same_person": 6,
+    "different_person": 1,
+    "pending": 0
+  },
+  "adjudications": [
+    {
+      "name": "김문수",
+      "decision": "same_person",
+      "khan_2004_identity": "한나라당 17대 국회의원 당선자/뉴리더",
+      "existing_identity_anchor": "동아 2011 경기도지사; 미래를 여는 지도자",
+      "confidence": "H",
+      "merge_allowed_after_outcome_audit": true
+    },
+    {
+      "name": "김부겸",
+      "decision": "same_person",
+      "khan_2004_identity": "열린우리당 17대 국회의원 당선자/뉴리더",
+      "existing_identity_anchor": "동아 2011 민주당 국회의원; 미래를 여는 지도자",
+      "confidence": "H",
+      "merge_allowed_after_outcome_audit": true
+    },
+    {
+      "name": "송영길",
+      "decision": "same_person",
+      "khan_2004_identity": "열린우리당 17대 국회의원 당선자/뉴리더",
+      "existing_identity_anchor": "동아 2010 미래를 여는 지도자",
+      "confidence": "H",
+      "merge_allowed_after_outcome_audit": true
+    },
+    {
+      "name": "원희룡",
+      "decision": "same_person",
+      "khan_2004_identity": "한나라당 17대 국회의원 당선자/뉴리더",
+      "existing_identity_anchor": "동아 2011 한나라당 국회의원; 미래를 여는 지도자",
+      "confidence": "H",
+      "merge_allowed_after_outcome_audit": true
+    },
+    {
+      "name": "유시민",
+      "decision": "same_person",
+      "khan_2004_identity": "열린우리당 17대 국회의원 당선자/뉴리더",
+      "existing_identity_anchor": "뉴스메이커 2003 국회의원 보궐선거 당선 직후; 동아 2011 국민참여당 대표",
+      "confidence": "H",
+      "merge_allowed_after_outcome_audit": true
+    },
+    {
+      "name": "천정배",
+      "decision": "same_person",
+      "khan_2004_identity": "열린우리당 17대 국회의원 당선자/뉴리더",
+      "existing_identity_anchor": "뉴스메이커 2003 다선 국회의원·개혁정치인",
+      "confidence": "H",
+      "merge_allowed_after_outcome_audit": true
+    },
+    {
+      "name": "이미경",
+      "decision": "different_person",
+      "khan_2004_identity": "열린우리당 17대 국회의원 당선자; 3선 정치인",
+      "existing_identity_anchor": "동아 2011 CJ E&M 총괄 부회장; 도전하는 경제인",
+      "confidence": "H",
+      "merge_allowed_after_outcome_audit": false,
+      "required_identity_keys": {
+        "existing_donga_2011": "이미경|cj_enm_business",
+        "new_khan_2004": "이미경|politician"
+      },
+      "note": "This collision proves that name-only person_id generation cannot safely support future cross-cohort expansion."
+    }
+  ],
+  "sources": {
+    "khan_launch": "https://www.khan.co.kr/article/200405051842301",
+    "khan_leader_result": "https://www.khan.co.kr/article/200405051827091",
+    "khan_lee_mikyung_profile": "https://www.khan.co.kr/article/200405181838361/amp",
+    "existing_donga_2011_roles": "data/typeA/donga_2011_t0_roles_v0_1.json",
+    "existing_newsmaker_2003": "data/typeA/newsmaker_2003_outcomes_v0_3.json"
+  },
+  "architecture_consequence": {
+    "current_problem": "scripts/build_typeA_common_master_v0_2.py derives person_id from Korean name only.",
+    "required_change": "Introduce placement-aware canonical identity_key overrides before Type-A common master v0.3 accepts Kyunghyang 2004.",
+    "expected_after_adding_khan_if_all_20_assessable": {
+      "placements": 245,
+      "unique_people": 193,
+      "calculation": "179 existing + 20 new placements - 6 confirmed same persons = 193; the different-person 이미경 must remain distinct."
+    }
+  }
+}
