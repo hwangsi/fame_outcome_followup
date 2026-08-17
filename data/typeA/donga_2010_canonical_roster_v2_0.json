@@ -1,0 +1,54 @@
+{
+  "schema_version": "donga_2010_canonical_roster_v2.0",
+  "generated": "2026-08-18",
+  "supersedes": "data/typeA/donga_2010_canonical_roster_v1_1.json",
+  "cohort": {
+    "outlet": "동아일보",
+    "title": "2020년 한국을 빛낼 100인",
+    "selection_year": 2010,
+    "explicit_target_year": 2020,
+    "total_n": 100,
+    "editorial_selected_n": 99,
+    "reader_selected_n": 1
+  },
+  "source_recovery": {
+    "editorial_99": "direct transcription from user-provided captures of the original Donga table '동아일보 선정 2020년 한국을 빛낼 100인 (영역별 가나다순)'",
+    "donga_launch_article": "https://www.donga.com/news/Society/article/all/20100510/28213859/1",
+    "reader_selected_100th": "https://www.donga.com/news/Issue/List/06001600010001/article/all/20100531/28723481/1",
+    "reader_selected_name": "백경학"
+  },
+  "category_structure": {
+    "자유로운 창조인": 20,
+    "꿈꾸는 개척가": 25,
+    "행동하는 지성인": 20,
+    "도전하는 경제인": 25,
+    "미래를 여는 지도자": 9,
+    "독자선정": 1,
+    "note": "The original printed editorial table contains 99 names: 20+25+20+25+9. The 100th slot was explicitly left to readers and was later filled by 백경학. Therefore prior forced reconciliation to 20/25/20/25/10 is superseded."
+  },
+  "categories": {
+    "자유로운 창조인": ["김연아","김윤진","김현수","노희경","박민규","박성훈","박진영","봉준호","서도호","신경숙","신지애","심승현","양성원","이청용","장한나","정연두","정욱준","조성진","최은석","홍명보"],
+    "꿈꾸는 개척가": ["김광수","김기문","김빛내리","김정범","김창진","김필립","김호근","남홍길","박승정","박홍근","서동철","신재원","안철수","이상엽","이상훈","이소연","이지오","이효철","임지순","정경민","정하웅","조동호","주영석","찰스 리","현택환"],
+    "행동하는 지성인": ["김강립","김숙정","김용","김준영","김해성","김형태","박원순","송호근","염형국","오충현","유근배","윤명철","이광형","이명균","이연주","이은영","이주호","임경진","조국","한승희"],
+    "도전하는 경제인": ["강덕수","강방천","김재하","김택진","남수정","박병엽","박인출","박지영","박현주","서경배","서정진","성영석","신동빈","신현송","안동현","이근","이부진","이원규","이재용","이창용","이해진","장하준","정의선","정태영","최태원"],
+    "미래를 여는 지도자": ["김문수","김병국","김성한","나경원","송영길","오세훈","원희룡","유시민","임태희"],
+    "독자선정": ["백경학"]
+  },
+  "recovered_vs_v1_1": {
+    "previous_canonical_n": 78,
+    "newly_recovered_n": 22,
+    "newly_recovered": ["김윤진","신지애","이청용","김광수","김호근","박홍근","이소연","정경민","김강립","김숙정","김형태","송호근","염형국","유근배","윤명철","이은영","이주호","김재하","이근","최태원","김병국","김성한"],
+    "previous_names_missing_from_full_roster": [],
+    "canonical_n": 100,
+    "unique_names": 100
+  },
+  "repeat_resolution": {
+    "2010_2011_business_last_one": "최태원",
+    "reason": "Exact 2010 table membership plus official 2011 roster membership resolves the final business repeat slot."
+  },
+  "analysis_gate": {
+    "membership_100_100": true,
+    "next_requirements": ["store baseline role/affiliation for all 100", "identity resolution audit", "freeze provenance manifest", "then code strict 2019-2021 target-year outcomes"],
+    "calculate_2020_metrics_now": false
+  }
+}
