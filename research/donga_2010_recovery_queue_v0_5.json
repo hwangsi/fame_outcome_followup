@@ -1,0 +1,16 @@
+{
+  "version": "v0.5",
+  "generated": "2026-08-17",
+  "confirmed_membership_n": 78,
+  "membership_slots_remaining": 22,
+  "named_pending_secondary": ["김윤진", "서도호", "손열음", "신지애", "이청용"],
+  "confirmed_category_unknown": ["김용", "김창진", "김필립", "남홍길", "박승정", "서동철", "신현송", "안동현", "윤명철", "이상훈", "이연주", "이원규", "이창용", "임지순", "장하준", "찰스 리", "현택환"],
+  "search_tracks": [
+    {"priority": 1, "track": "2012_three_year_hall_of_fame", "goal": "recover remaining explicit Hall-of-Fame names"},
+    {"priority": 2, "track": "2011_two_year_repeat", "goal": "recover explicitly named 2010–2011 repeat members"},
+    {"priority": 3, "track": "category_resolution", "names": ["김용", "김창진", "김필립", "남홍길", "박승정", "서동철", "신현송", "안동현", "윤명철", "이상훈", "이연주", "이원규", "이창용", "임지순", "장하준", "찰스 리", "현택환"]},
+    {"priority": 4, "track": "2010_institutional_notices", "goal": "discover T0 names without outcome-based search"},
+    {"priority": 5, "track": "digital_archive_A1_A4", "goal": "recover original printed roster"}
+  ],
+  "acceptance_rule": "No person enters frozen roster without explicit evidence that guarantees 2010 selection."
+}
