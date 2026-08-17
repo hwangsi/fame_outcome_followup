@@ -1,0 +1,73 @@
+name: Dong-A 2011 Outcome QA
+
+on:
+  push:
+    paths:
+      - 'scripts/prepare_donga_2011_post_t0_repeat_seed.py'
+      - 'scripts/build_donga_2010_post_t0_peak_master.py'
+      - 'scripts/build_donga_2011_baseline_peak_v*.py'
+      - 'scripts/build_donga_2011_t0_snapshot_scope_v*.py'
+      - 'data/typeA/donga_2010_post_t0_peak_*'
+      - 'data/typeA/donga_2011_*'
+      - 'research/donga_2011_*'
+      - 'state/donga_2011_*'
+      - '.github/workflows/donga-2011-outcome-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build 2010 T0 and baseline prerequisite
+        run: |
+          python scripts/build_donga_2010_t0_snapshot_scope.py
+          python scripts/build_donga_2010_t0_snapshot_scope_v0_2.py
+          python scripts/build_donga_2010_t0_snapshot_scope_v0_3.py
+          python scripts/build_donga_2010_t0_snapshot_scope_v0_4.py
+          python scripts/build_donga_2010_t0_snapshot_scope_v1_1.py
+          python scripts/build_donga_2010_t0_snapshot_scope_v1_2.py
+          python scripts/build_donga_2010_t0_snapshot_scope_v1_3.py
+          python scripts/build_donga_2010_baseline_peak_v1_1.py
+          python scripts/build_donga_2010_baseline_peak_v1_2.py
+          python scripts/build_donga_2010_baseline_peak_v1_3.py
+          python scripts/build_donga_2010_baseline_peak_v1_4.py
+      - name: Build frozen 2010 post-T0 master runtime
+        run: python scripts/build_donga_2010_post_t0_peak_master.py
+      - name: Build final 2011 baseline runtime
+        run: |
+          python scripts/build_donga_2011_t0_snapshot_scope_v0_1.py
+          python scripts/build_donga_2011_t0_snapshot_scope_v0_2.py
+          python scripts/build_donga_2011_t0_snapshot_scope_v0_3.py
+          python scripts/build_donga_2011_baseline_peak_v0_1.py
+          python scripts/build_donga_2011_baseline_peak_v0_2.py
+          python scripts/build_donga_2011_baseline_peak_v0_3.py
+          python scripts/build_donga_2011_baseline_peak_v0_4.py
+          python scripts/build_donga_2011_baseline_peak_v0_5.py
+          python scripts/build_donga_2011_baseline_peak_v1_0.py
+      - name: Prepare repeat-38 post-T0 seed
+        run: python scripts/prepare_donga_2011_post_t0_repeat_seed.py
+      - name: QA seed
+        run: |
+          python - <<'PY'
+          import json
+          p='data/typeA/donga_2011_post_t0_repeat_seed_v0_1.json'
+          d=json.load(open(p,encoding='utf-8'))
+          qa=d['qa']
+          print(json.dumps(qa,ensure_ascii=False,indent=2))
+          re=[x['name'] for x in d['people'] if x['reuse_status']=='requires_2011_cutoff_reaudit']
+          safe=[x['name'] for x in d['people'] if x['reuse_status']=='safe_reuse_candidate_after_2011_cutoff']
+          print('requires_reaudit=',re)
+          print('safe_reuse_candidates=',safe)
+          assert qa['repeat_total']==38
+          assert qa['safe_reuse_candidate_n']+qa['requires_cutoff_reaudit_n']==38
+          assert len(re)==qa['requires_cutoff_reaudit_n']
+          assert len(safe)==qa['safe_reuse_candidate_n']
+          assert not any(x['final_2011_post_t0_peak_score'] is not None for x in d['people'])
+          PY
