@@ -1,0 +1,39 @@
+{
+  "version": "v2.0",
+  "generated": "2026-08-18",
+  "supersedes": "research/donga_2010_recovery_queue_v1_6.json",
+  "canonical_source": "data/typeA/donga_2010_canonical_roster_v2_0.json",
+  "membership_recovery": {
+    "status": "complete",
+    "canonical_n": 100,
+    "remaining": 0,
+    "unique_names": 100,
+    "previous_v1_1_n": 78,
+    "newly_recovered_n": 22
+  },
+  "structure": {
+    "editorial_99": {
+      "자유로운 창조인": 20,
+      "꿈꾸는 개척가": 25,
+      "행동하는 지성인": 20,
+      "도전하는 경제인": 25,
+      "미래를 여는 지도자": 9
+    },
+    "reader_selected_1": "백경학",
+    "prior_20_25_20_25_10_reconciliation": "retired_as_incompatible_with_original_99_plus_1_structure"
+  },
+  "resolved_missing_22": ["김윤진","신지애","이청용","김광수","김호근","박홍근","이소연","정경민","김강립","김숙정","김형태","송호근","염형국","유근배","윤명철","이은영","이주호","김재하","이근","최태원","김병국","김성한"],
+  "repeat_updates": {
+    "business_2010_2011": {"status":"complete","resolved_n":14,"target_n":14,"new_resolution":"최태원"},
+    "shin_jiae": "Direct 2010 table + official 2011 roster confirms 2010-2011 repeat; full 38-person crosswalk should be regenerated from exact roster intersection and repeat constraints."
+  },
+  "next_phase": [
+    "transcribe all 100 baseline roles/affiliations/age/sex from capture and reader-selected follow-up",
+    "identity resolution audit",
+    "freeze provenance manifest and T0 roster tag",
+    "regenerate 2010-2011 repeat crosswalk against exact 2010 roster",
+    "begin strict 2019-2021 target-year outcome coding",
+    "keep Current 2026 outcomes separate from target-year 2020"
+  ],
+  "analysis_gate": "Membership gate is cleared. Outcome coding waits only for baseline/provenance/identity freeze, not for further roster search."
+}
