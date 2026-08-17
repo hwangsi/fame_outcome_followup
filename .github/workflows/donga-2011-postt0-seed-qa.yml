@@ -4,7 +4,9 @@ on:
   push:
     paths:
       - 'scripts/build_donga_2011_post_t0_seed.py'
+      - 'scripts/build_donga_2011_post_t0_partial_master.py'
       - 'research/donga_2011_post_t0_repeat_cutoff_audit_v0_1.json'
+      - 'research/donga_2011_post_t0_new_audit_batch1_v0_1.json'
       - '.github/workflows/donga-2011-postt0-seed-qa.yml'
   workflow_dispatch:
 
@@ -68,4 +70,21 @@ jobs:
           assert q['repeat_reaudit_pending_n']==0
           assert q['manual_new_outcome_audit_queue_n']==62
           assert set(q['cutoff_reaudit_resolved_names'])=={'강덕수','박원순','유시민','이주호'}
+          PY
+      - name: Build partial 2011 post-T0 master with new-entrant batch 1
+        run: python scripts/build_donga_2011_post_t0_partial_master.py
+      - name: QA partial master
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('analysis/donga_2011_post_t0_partial_master_v0_1.json',encoding='utf-8'))
+          q=d['qa']
+          print(json.dumps(q,ensure_ascii=False,indent=2))
+          assert q['total']==100
+          assert q['assessed_n']==48
+          assert q['pending_n']==52
+          assert q['repeat_assessed_n']==38
+          assert q['new_assessed_n']==10
+          assert len(q['pending_names'])==52
+          assert len(q['new_batch1_names'])==10
           PY
