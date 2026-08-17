@@ -7,10 +7,10 @@ from statistics import mean
 ROOT=Path(__file__).resolve().parents[1]
 TYPEA=ROOT/'data/typeA'
 BASE=TYPEA/'donga_2010_baseline_peak_through_t0_v1_4.json'
-PATCH=TYPEA/'donga_2010_post_t0_peak_audit_patch_v1_1.json'
-MASTER_JSON=TYPEA/'donga_2010_post_t0_peak_master_v1_1.json'
-MASTER_CSV=TYPEA/'donga_2010_post_t0_peak_master_v1_1.csv'
-METRICS_JSON=TYPEA/'donga_2010_post_t0_peak_metrics_v1_1.json'
+PATCH=TYPEA/'donga_2010_post_t0_peak_audit_patch_v1_2.json'
+MASTER_JSON=TYPEA/'donga_2010_post_t0_peak_master_v1_2.json'
+MASTER_CSV=TYPEA/'donga_2010_post_t0_peak_master_v1_2.csv'
+METRICS_JSON=TYPEA/'donga_2010_post_t0_peak_metrics_v1_2.json'
 PATTERN=str(TYPEA/'donga_2010_post_t0_peak_*_v0_1.json')
 
 def adv_class(delta, peak):
@@ -25,28 +25,28 @@ def main():
     merged={}; source_files=[]
     for fn in sorted(glob.glob(PATTERN)):
         d=json.load(open(fn,encoding='utf-8'))
-        if not isinstance(d.get('people'),list):
-            continue
+        if not isinstance(d.get('people'),list): continue
         source_files.append(str(Path(fn).relative_to(ROOT)))
         for p in d['people']:
-            name=p['name']
-            if name in merged: raise AssertionError(f'duplicate post-T0 row: {name}')
-            if name not in b: raise AssertionError(f'noncanonical name: {name}')
-            merged[name]=dict(p)
-    assert len(merged)==100, len(merged)
+            n=p['name']
+            if n in merged: raise AssertionError(f'duplicate post-T0 row: {n}')
+            if n not in b: raise AssertionError(f'noncanonical name: {n}')
+            merged[n]=dict(p)
+    assert len(merged)==100
 
     patch=json.loads(PATCH.read_text(encoding='utf-8'))
-    for pp in patch.get('patches',[]):
-        name=pp['name']
-        if name not in merged: raise AssertionError(f'patch noncanonical name: {name}')
-        merged[name].update(pp)
+    for pp in patch['patches']:
+        n=pp['name']
+        if n not in merged: raise AssertionError(f'patch noncanonical name: {n}')
+        merged[n].update(pp)
+    assert {p['name'] for p in patch['patches']}=={'김숙정','박성훈'}
     source_files.append(str(PATCH.relative_to(ROOT)))
 
     rows=[]
-    for name,br in b.items():
-        p=merged[name]; peak=p.get('post_t0_peak_score')
+    for n,br in b.items():
+        p=merged[n]; peak=p.get('post_t0_peak_score')
         row={
-            'name':name,'category':br['category'],'sector_t0':br['sector'],
+            'name':n,'category':br['category'],'sector_t0':br['sector'],
             't0_snapshot_scope_score':br['t0_snapshot_scope_score'],
             'baseline_peak_through_t0':br['baseline_peak_through_t0'],
             'baseline_peak_role':br['baseline_peak_role'],'baseline_peak_year':br['baseline_peak_year'],
@@ -59,7 +59,7 @@ def main():
         if peak is None:
             row['advancement_delta']=None; row['advancement_class']='not_assessable'
         else:
-            delta=peak-br['baseline_peak_through_t0']; row['advancement_delta']=delta; row['advancement_class']=adv_class(delta,peak)
+            d=peak-br['baseline_peak_through_t0']; row['advancement_delta']=d; row['advancement_class']=adv_class(d,peak)
         rows.append(row)
 
     assessed=[r for r in rows if r['post_t0_peak_score'] is not None]
@@ -69,84 +69,75 @@ def main():
     score_counts=Counter(r['post_t0_peak_score'] for r in assessed)
     classes=Counter(r['advancement_class'] for r in rows)
 
-    assert len(rows)==100 and len(assessed)==99 and len(unresolved)==1
-    assert {r['name'] for r in unresolved}=={'박성훈'}
+    assert len(rows)==100 and len(assessed)==100 and not unresolved
     assert len(truncated)==3 and {r['name'] for r in truncated}=={'최은석','서동철','박원순'}
-    assert score_counts==Counter({2:27,3:60,4:12}), score_counts
-    assert classes==Counter({'sustained_high':44,'advanced':29,'no_clear_advancement':26,'not_assessable':1}), classes
+    assert score_counts==Counter({2:29,3:59,4:12}), score_counts
+    assert classes==Counter({'sustained_high':44,'advanced':28,'no_clear_advancement':28}), classes
 
     major=sum(r['post_t0_peak_score']>=3 for r in assessed)
     apex=sum(r['post_t0_peak_score']==4 for r in assessed)
     adv=sum(r['advancement_class']=='advanced' for r in assessed)
-    nontrunc_major=sum(r['post_t0_peak_score']>=3 for r in nontrunc)
-    nontrunc_apex=sum(r['post_t0_peak_score']==4 for r in nontrunc)
-    nontrunc_adv=sum(r['advancement_class']=='advanced' for r in nontrunc)
-    assert (major,apex,adv)==(72,12,29)
-    assert (nontrunc_major,nontrunc_apex,nontrunc_adv)==(69,12,27)
+    nm=sum(r['post_t0_peak_score']>=3 for r in nontrunc)
+    na=sum(r['post_t0_peak_score']==4 for r in nontrunc)
+    nd=sum(r['advancement_class']=='advanced' for r in nontrunc)
+    assert (major,apex,adv)==(71,12,28)
+    assert len(nontrunc)==97 and (nm,na,nd)==(68,12,26)
 
     bycat={}
     for cat in dict.fromkeys(r['category'] for r in rows):
-        rr=[r for r in rows if r['category']==cat]; aa=[r for r in rr if r['post_t0_peak_score'] is not None]
+        rr=[r for r in rows if r['category']==cat]
         bycat[cat]={
-            'n':len(rr),'assessed':len(aa),'unresolved':len(rr)-len(aa),
-            'major_ge3_n':sum(r['post_t0_peak_score']>=3 for r in aa),
-            'major_ge3_rate_assessed':sum(r['post_t0_peak_score']>=3 for r in aa)/len(aa) if aa else None,
-            'apex_eq4_n':sum(r['post_t0_peak_score']==4 for r in aa),
-            'advanced_n':sum(r['advancement_class']=='advanced' for r in aa),
-            'sustained_high_n':sum(r['advancement_class']=='sustained_high' for r in aa),
-            'no_clear_advancement_n':sum(r['advancement_class']=='no_clear_advancement' for r in aa),
-            'mean_advancement_delta':mean(r['advancement_delta'] for r in aa) if aa else None,
+            'n':len(rr),'assessed':len(rr),'unresolved':0,
+            'major_ge3_n':sum(r['post_t0_peak_score']>=3 for r in rr),
+            'major_ge3_rate':sum(r['post_t0_peak_score']>=3 for r in rr)/len(rr),
+            'apex_eq4_n':sum(r['post_t0_peak_score']==4 for r in rr),
+            'apex_eq4_rate':sum(r['post_t0_peak_score']==4 for r in rr)/len(rr),
+            'advanced_n':sum(r['advancement_class']=='advanced' for r in rr),
+            'advanced_rate':sum(r['advancement_class']=='advanced' for r in rr)/len(rr),
+            'sustained_high_n':sum(r['advancement_class']=='sustained_high' for r in rr),
+            'no_clear_advancement_n':sum(r['advancement_class']=='no_clear_advancement' for r in rr),
+            'mean_advancement_delta':mean(r['advancement_delta'] for r in rr),
             'truncated_by_death_n':sum(r['exposure_truncated_by_death'] for r in rr)
         }
 
     master={
-        'schema_version':'donga_2010_post_t0_peak_master_v1.1','generated':'2026-08-18',
+        'schema_version':'donga_2010_post_t0_peak_master_v1.2','generated':'2026-08-18','status':'complete_100_of_100',
         'observation_end':'2026-08-18','selection_cutoff':'2010-05-10',
         'protocol_ref':'state/donga_2010_post_t0_peak_protocol_v1_0.md',
         'baseline_ref':'data/typeA/donga_2010_baseline_peak_through_t0_v1_4.json',
-        'audit_patch_ref':'data/typeA/donga_2010_post_t0_peak_audit_patch_v1_1.json',
-        'supersedes_runtime':'data/typeA/donga_2010_post_t0_peak_master_v1_0.json',
+        'audit_patch_ref':'data/typeA/donga_2010_post_t0_peak_audit_patch_v1_2.json',
+        'supersedes_runtime':'data/typeA/donga_2010_post_t0_peak_master_v1_1.json',
         'source_files':source_files,
-        'qa':{'total':100,'assessed':99,'unresolved':1,'truncated_by_death':3,'post_t0_score_counts':{str(k):v for k,v in sorted(score_counts.items())},'advancement_classes':dict(classes),'unresolved_names':[r['name'] for r in unresolved],'truncated_names':[r['name'] for r in truncated]},
+        'qa':{'total':100,'assessed':100,'unresolved':0,'truncated_by_death':3,'post_t0_score_counts':{str(k):v for k,v in sorted(score_counts.items())},'advancement_classes':{k:classes.get(k,0) for k in ['advanced','sustained_high','no_clear_advancement','lower_than_baseline','not_assessable']},'unresolved_names':[],'truncated_names':[r['name'] for r in truncated]},
         'people':rows
     }
     MASTER_JSON.write_text(json.dumps(master,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     fields=['name','category','sector_t0','t0_snapshot_scope_score','baseline_peak_through_t0','baseline_peak_role','baseline_peak_year','post_t0_peak_role','post_t0_peak_score','post_t0_peak_year','sector_at_peak','advancement_delta','advancement_class','evidence_confidence','coding_status','exposure_truncated_by_death','death_year']
     with MASTER_CSV.open('w',encoding='utf-8-sig',newline='') as f:
-        w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows({k:r.get(k) for k in fields} for r in rows)
+        w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows({k:r.get(k) for k in fields} for r in rows)
 
-    nontrunc_den=len(nontrunc)+len(unresolved)
     metrics={
-        'schema_version':'donga_2010_post_t0_peak_metrics_v1.1','generated':'2026-08-18',
+        'schema_version':'donga_2010_post_t0_peak_metrics_v1.2','generated':'2026-08-18',
         'metric_scope':'lifetime_post_selection_peak_through_2026-08-18_with_preselection_peak_adjustment',
-        'population':{'total':100,'assessed':99,'unresolved':1,'death_truncated_assessed':3,'assessed_nontruncated':96,'nontruncated_denominator_with_unresolved':nontrunc_den},
-        'primary_assessed_only':{
-            'major_leadership_ge3_n':major,'major_leadership_precision':major/len(assessed),
-            'apex_eq4_n':apex,'apex_precision':apex/len(assessed),
-            'advanced_n':adv,'advanced_rate':adv/len(assessed),
+        'population':{'total':100,'assessed':100,'unresolved':0,'death_truncated_assessed':3,'assessed_nontruncated':97},
+        'primary_full_cohort':{
+            'denominator':100,'major_leadership_ge3_n':major,'major_leadership_precision':major/100,
+            'apex_eq4_n':apex,'apex_precision':apex/100,'advanced_n':adv,'advanced_rate':adv/100,
             'mean_advancement_delta':mean(r['advancement_delta'] for r in assessed),
             'advancement_classes':{k:classes.get(k,0) for k in ['advanced','sustained_high','no_clear_advancement','lower_than_baseline','not_assessable']},
             'post_t0_score_counts':{str(k):v for k,v in sorted(score_counts.items())}
         },
-        'sensitivity_excluding_death_truncated_assessed':{
-            'denominator':len(nontrunc),'major_ge3_n':nontrunc_major,'major_ge3_rate':nontrunc_major/len(nontrunc),
-            'apex_eq4_n':nontrunc_apex,'apex_eq4_rate':nontrunc_apex/len(nontrunc),
-            'advanced_n':nontrunc_adv,'advanced_rate':nontrunc_adv/len(nontrunc),
+        'sensitivity_excluding_death_truncated':{
+            'denominator':97,'major_ge3_n':nm,'major_ge3_rate':nm/97,
+            'apex_eq4_n':na,'apex_eq4_rate':na/97,'advanced_n':nd,'advanced_rate':nd/97,
             'mean_advancement_delta':mean(r['advancement_delta'] for r in nontrunc)
-        },
-        'bounds_nontruncated_with_unresolved':{
-            'denominator':nontrunc_den,
-            'major_ge3':{'known_n':nontrunc_major,'lower_bound':nontrunc_major/nontrunc_den,'upper_bound':(nontrunc_major+len(unresolved))/nontrunc_den},
-            'apex_eq4':{'known_n':nontrunc_apex,'lower_bound':nontrunc_apex/nontrunc_den,'upper_bound':(nontrunc_apex+len(unresolved))/nontrunc_den},
-            'advanced':{'known_n':nontrunc_adv,'lower_bound':nontrunc_adv/nontrunc_den,'upper_bound':(nontrunc_adv+len(unresolved))/nontrunc_den},
-            'assumption':'three death-truncated rows excluded; one unresolved row bounded as below vs meeting each criterion'
         },
         'by_category':bycat,
         'interpretation_guardrails':[
-            'Primary precision is among 99 assessed rows and is not equivalent to the 2020 target-year snapshot metric.',
-            'Death-truncated rows are not failures; a sensitivity analysis excluding them is reported.',
-            'The one unresolved row is never scored as zero; bounded sensitivity is reported.',
+            'Primary precision uses all 100 roster members and is not equivalent to the 2020 target-year snapshot metric.',
+            'Death-truncated rows remain in the primary cohort because a post-selection peak was observed before death; a sensitivity analysis excluding them is also reported.',
             'Advancement uses post-T0 peak minus baseline lifetime peak through selection, not post-T0 peak minus contemporaneous title alone.',
+            'A major-leadership hit can be sustained_high rather than an editorially predicted rise; major precision and advancement rate answer different questions.',
             'The roster is alphabetical within editorial categories, so ranking accuracy is not estimable.'
         ]
     }
