@@ -1,0 +1,143 @@
+{
+  "schema_version": "donga_2010_target2020_pending_audit_round2_public_civic_v0.1",
+  "generated": "2026-08-18",
+  "purpose": "Resolve public/civic/education pending rows and one corrected identity using dated evidence.",
+  "rules_ref": [
+    "state/donga_2010_target2020_protocol_v1_0.md",
+    "state/coding_rules_typeA_sector_scope_v0_1.md",
+    "data/typeA/donga_2010_name_correction_v2_1.json"
+  ],
+  "changes": [
+    {
+      "name": "김숙정",
+      "previous_status": "pending_identity_and_2019_2021_evidence",
+      "new_status": "coded_exact",
+      "target2020": {
+        "role": "부산광역시 남부교육지원청 교육장",
+        "scope_score": 2,
+        "sector": "public_education_administration",
+        "evidence_date": "2020",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "지역 교육행정기관 최고책임자로 안정적 공공 교육 리더십을 수행",
+        "source_notes": [
+          "2011 교육과학기술부 인사에서 김숙정이 부산광역시교육청으로 전보된 경력 bridge 확인",
+          "부산광역시의회 2020 업무보고에서 남부교육지원청교육장 김숙정으로 직접 확인",
+          "남부교육지원청 공식 연혁은 2018-09-01 취임, 2020-09-01 후임 취임을 기록"
+        ],
+        "source_urls": [
+          "https://www.donga.com/news/People/article/all/20110901/39970081/1",
+          "https://council.busan.go.kr/assem/user/assem/minute/preViewMovie.busan?assemFullMovie=8924&command=update",
+          "https://home.pen.go.kr/nambu/cm/cntnts/cntntsView.do?cntntsId=88&mi=12257"
+        ]
+      }
+    },
+    {
+      "name": "김준영",
+      "previous_status": "pending_direct_window_evidence",
+      "new_status": "coded_nearest_within_window",
+      "target2020": {
+        "role": "한국노총 전국금속노동조합연맹 사무처장",
+        "scope_score": 2,
+        "sector": "labor_union_national",
+        "evidence_date": "2021",
+        "match": "nearest_within_window",
+        "confidence": "H",
+        "scope_rationale": "전국 단위 산별노련의 사무처장으로 안정적 노동조직 리더십을 수행",
+        "source_notes": [
+          "경력 연표에서 2005-2012 부천노총 의장, 2016 한국노총 대변인, 2017 금속노련 사무처장으로 이동한 동일인 trajectory 확인",
+          "2021 경제사회노동위원회 자료에서 '김준영 한국노총 금속노련 사무처장(전 부천노총 의장)'으로 직접 확인",
+          "2020 exact 자료가 없어 2021 nearest-window로 기록"
+        ],
+        "source_urls": [
+          "https://www.eslc.go.kr/bbs/data/view.do?bbs_mst_idx=BM0000000366&data_idx=BD0000000020&menu_idx=2290"
+        ]
+      }
+    },
+    {
+      "name": "유근배",
+      "previous_status": "pending_direct_2019_2021_evidence",
+      "new_status": "coded_exact",
+      "target2020": {
+        "role": "서울대학교 지리학과 명예교수·지리학 저술/교육 활동",
+        "scope_score": 1,
+        "sector": "geography_academia",
+        "evidence_date": "2020-01-25",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "퇴임 후 명예교수로 저술·교육 활동을 지속하지만 상근 기관 리더십은 아닌 상태",
+        "source_notes": [
+          "한국방송통신대학교출판문화원 2020 교재 저자소개가 유근배를 '현재 서울대학교 지리학과 명예교수'로 직접 표기"
+        ],
+        "source_urls": [
+          "https://press.knou.ac.kr/goods/commonViewUrl.m?condCmdtCode=9788920035296"
+        ]
+      }
+    },
+    {
+      "name": "이은영",
+      "previous_status": "pending_direct_2019_2021_evidence",
+      "new_status": "coded_exact",
+      "target2020": {
+        "role": "소비자권익포럼 이사장",
+        "scope_score": 2,
+        "sector": "consumer_rights_civic",
+        "evidence_date": "2020",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 단위 소비자권익 시민단체를 이끄는 공익 리더십",
+        "source_notes": [
+          "2006~2010 소비자시민모임 미래자원실장, 2015 사무총장으로 이어지는 경력 bridge 확인",
+          "2020 소비자금융포럼에서 소비자권익포럼 이사장 이은영으로 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.consumernews.co.kr/news/articleView.html?idxno=607292"
+        ]
+      }
+    },
+    {
+      "name": "한숭희",
+      "previous_name": "한승희",
+      "previous_status": "pending_identity_resolution",
+      "new_status": "coded_exact",
+      "identity_correction_ref": "data/typeA/donga_2010_name_correction_v2_1.json",
+      "target2020": {
+        "role": "서울대학교 사범대학 교육학과 교수",
+        "scope_score": 2,
+        "sector": "education_academia_lifelong_learning",
+        "evidence_date": "2020",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "서울대 교육학과 교수로 연구·교육·공공 담론 활동을 지속하는 전국 단위 학술 전문 역할",
+        "source_notes": [
+          "동아일보 2010 원문이 선정 인물을 '한숭희 서울대 교육학과 교수'로 확인하여 기존 한승희 표기가 transcription error임을 확정",
+          "서울대 공식 교수 페이지가 1997-09부터 현재까지 서울대 교육학과 재직, 2020-03~2023-12 Asia Pacific Education Review Editor-in-Chief 경력을 확인",
+          "2020-06 서울대 리포지터리 논문 및 2020 경향신문 칼럼으로 목표연도 활동도 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.donga.com/news/Society/article/all/20100511/28249520/1",
+          "https://learning.snu.ac.kr/snu__professor/%ED%95%9C%EC%88%AD%ED%9D%AC/",
+          "https://s-space.snu.ac.kr/handle/10371/198012",
+          "https://www.khan.co.kr/article/202004072044045"
+        ]
+      }
+    }
+  ],
+  "reviewed_but_still_pending": [
+    {
+      "name": "김병국",
+      "reason": "2016 고려대 퇴임과 EAI 창립/과거 역할은 확인했으나 2019-2021의 직접 dated active role을 아직 충분히 확보하지 못함"
+    },
+    {
+      "name": "김해성",
+      "reason": "2016 지구촌사랑나눔 대표직 사퇴 이후 2019-2021의 직접 역할 또는 공식 복귀 시점을 확인하지 못함"
+    }
+  ],
+  "round_summary": {
+    "newly_scored": 5,
+    "new_competing_events": 0,
+    "still_pending_reviewed": 2,
+    "net_pending_reduction": 5,
+    "data_quality_corrections": 1
+  }
+}
