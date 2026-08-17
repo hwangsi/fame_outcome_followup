@@ -1,0 +1,357 @@
+{
+  "schema_version": "donga_2010_target2020_creators_v0.1",
+  "generated": "2026-08-18",
+  "cohort": "동아일보 2010 2020년 한국을 빛낼 100인",
+  "category": "자유로운 창조인",
+  "rules_ref": [
+    "state/donga_2010_target2020_protocol_v1_0.md",
+    "state/coding_rules_typeA_sector_scope_v0_1.md"
+  ],
+  "t0_freeze_ref": "state/donga_2010_t0_provenance_freeze_v1_0.json",
+  "batch_n": 20,
+  "people": [
+    {
+      "name": "김연아",
+      "t0_role": "피겨스케이팅 선수",
+      "target2020": {
+        "role": "은퇴한 올림픽 챔피언·유니세프 국제친선대사",
+        "scope_score": 2,
+        "sector": "sports_civic",
+        "evidence_date": "2020-03-16",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "현역 선수 peak가 아니라 2020 snapshot을 평가. 국제친선대사로 지속적인 전국·국제 공익 역할을 수행",
+        "source_notes": ["유니세프한국위원회가 2020 코로나19 치료 지원 기금 전달 당시 김연아를 유니세프 국제친선대사로 명시"],
+        "source_urls": ["https://www.unicef.or.kr/about-us/press/115588"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "김윤진",
+      "t0_role": "영화배우",
+      "target2020": {
+        "role": "영화배우; 영화 담보 출연 및 자백 촬영",
+        "scope_score": 2,
+        "sector": "film",
+        "evidence_date": "2020",
+        "match": "exact_year_confirmed_by_contemporaneous_and_later_sources",
+        "confidence": "M",
+        "scope_rationale": "국내외 경력을 가진 확립된 배우로 2020에도 영화 활동 지속",
+        "source_notes": [
+          "2020 개봉 영화 담보의 출연진으로 contemporaneous 기사에서 확인",
+          "후대 인터뷰에서 영화 자백 촬영이 2020년에 완료됐음을 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.newsis.com/view/NISX20200928_0001181784",
+          "https://v.daum.net/v/20221021095201552"
+        ]
+      },
+      "coding_status": "coded_exact_mixed_provenance"
+    },
+    {
+      "name": "김현수",
+      "t0_role": "두산베어스 외야수",
+      "target2020": {
+        "role": "LG 트윈스 주전 외야수·중심타자",
+        "scope_score": 2,
+        "sector": "sports_baseball",
+        "evidence_date": "2020-05-05",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 프로리그의 확립된 주전 선수",
+        "source_notes": ["2020 KBO 개막전 LG 소속으로 첫 홈런 기록"],
+        "source_urls": ["https://www.yna.co.kr/view/AKR20200505049951007"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "노희경",
+      "t0_role": "작가",
+      "target2020": {
+        "role": "드라마 작가; 신작 HERE 집필·제작 준비",
+        "scope_score": 2,
+        "sector": "television_writing",
+        "evidence_date": "2020-07-07",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국적으로 확립된 대표 드라마 작가로 창작 활동 지속",
+        "source_notes": ["2020 코로나19로 해외촬영이 어려워지며 노희경 작가의 HERE 제작이 연기된 사실 확인"],
+        "source_urls": ["https://sports.donga.com/ent/article/all/20200707/101851390/1"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "박민규",
+      "t0_role": "소설가",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "literature",
+        "evidence_date": null,
+        "match": "pending_reliable_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": ["2020 장편 연재를 언급하는 커뮤니티 자료는 발견했으나 재현 가능한 신뢰도 높은 직접 근거로 채택하지 않음"]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "박성훈",
+      "t0_role": "롯데호텔 피에르가니에르 조리장",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "culinary",
+        "evidence_date": null,
+        "match": "pending_identity_and_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": ["2010 원문에서 국제기능올림픽 요리 금메달리스트이자 롯데호텔 피에르 가니에르의 박성훈으로 identity anchor는 확실하나 2019-2021 경력 연결 근거 미확보"],
+        "identity_anchor_url": "https://www.donga.com/news/Society/article/all/20100512/28273340/1"
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "박진영",
+      "t0_role": "가수 겸 프로듀서",
+      "target2020": {
+        "role": "JYP엔터테인먼트 대표 프로듀서·가수·작곡가",
+        "scope_score": 3,
+        "sector": "music_industry",
+        "evidence_date": "2020-10-06",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 K-pop 제작·산업 리더이자 국제 시장에 지속적으로 영향력을 가진 프로듀서",
+        "source_notes": ["2020 연합뉴스가 박진영을 히트곡 메이커이자 JYP엔터테인먼트 대표 프로듀서로 확인"],
+        "source_urls": ["https://www.yna.co.kr/view/AKR20201006037400005"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "봉준호",
+      "t0_role": "영화감독",
+      "target2020": {
+        "role": "영화감독; 기생충으로 아카데미 감독상 및 작품상 등 4관왕",
+        "scope_score": 4,
+        "sector": "film",
+        "evidence_date": "2020-02-10",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "아카데미 감독상·작품상 및 국제영화상·각본상 4관왕은 보조규칙상 명시적 global-apex 성취",
+        "source_notes": ["기생충이 아카데미 작품상·감독상·각본상·국제영화상 4관왕을 달성"],
+        "source_urls": ["https://www.yna.co.kr/view/AKR20200210087351005"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "서도호",
+      "t0_role": "설치미술가",
+      "target2020": {
+        "role": "서울·뉴욕·런던을 기반으로 활동하는 국제 설치미술가",
+        "scope_score": 3,
+        "sector": "visual_art",
+        "evidence_date": "2020-09-28",
+        "match": "exact_year",
+        "confidence": "M",
+        "scope_rationale": "복수의 국제 미술도시를 기반으로 지속적으로 작업하는 국제적 leading artist",
+        "source_notes": ["2020 현대미술관회 소개가 서울·뉴욕·런던을 오가며 지속적으로 신작을 작업하는 서도호의 당시 활동을 설명"],
+        "source_urls": ["https://www.formmca.org/post/%EC%84%9C%EB%8F%84%ED%98%B8%EC%9D%98-%EA%B8%B0%EC%96%B5%EC%9C%BC%EB%A1%9C-%EC%A7%80%EC%9D%80-%EC%A7%91"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "신경숙",
+      "t0_role": "소설가",
+      "target2020": {
+        "role": "소설가; 장편 아버지에게 갔었어 연재로 창작 활동 재개",
+        "scope_score": 2,
+        "sector": "literature",
+        "evidence_date": "2020-06-23",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국적으로 확립된 소설가가 2020 장편 연재로 공개 창작활동을 재개",
+        "source_notes": ["연합뉴스가 표절 논란 후 장기 공백을 거쳐 창비 웹진에 새 장편 연재를 시작한다고 보도"],
+        "source_urls": ["https://www.yna.co.kr/view/AKR20200623141400005"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "신지애",
+      "t0_role": "프로골퍼",
+      "target2020": {
+        "role": "JLPGA 투어 프로골퍼; 2020 후지쓰 레이디스 우승",
+        "scope_score": 3,
+        "sector": "sports_golf",
+        "evidence_date": "2020-10-18",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "세계 주요 프로골프 투어에서 우승을 지속하는 국제 최상위권 선수",
+        "source_notes": ["2020 JLPGA 후지쓰 레이디스 우승 및 당시 세계랭킹 30위권 확인"],
+        "source_urls": ["https://www.yna.co.kr/view/AKR20201020011100007"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "심승현",
+      "t0_role": "만화가",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "comics_illustration",
+        "evidence_date": null,
+        "match": "pending_reliable_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": ["파페포포 작가 identity와 2017까지의 출간 활동은 확인되나 2019-2021 직접 활동 근거 미확보"]
+      },
+      "coding_status": "pending_direct_window_evidence"
+    },
+    {
+      "name": "양성원",
+      "t0_role": "연세대 음대 교수, 첼리스트",
+      "target2020": {
+        "role": "첼리스트·연세대 음대 교수",
+        "scope_score": 2,
+        "sector": "classical_music_academia",
+        "evidence_date": "2021-09-27",
+        "match": "nearest_within_window",
+        "confidence": "H",
+        "scope_rationale": "전국 단위에서 확립된 연주자·음대 교수로 활동 지속",
+        "source_notes": ["2021 서울신문이 양성원을 첼리스트이자 연세대 교수로 직접 소개하고 협연 활동을 확인"],
+        "source_urls": ["https://www.seoul.co.kr/news/life/performance/2021/09/27/20210927500109"]
+      },
+      "coding_status": "coded_nearest_within_window"
+    },
+    {
+      "name": "이청용",
+      "t0_role": "영국 볼턴 원더러스 FC 선수",
+      "target2020": {
+        "role": "울산 현대 프로축구 선수; 유럽 생활 후 K리그 복귀",
+        "scope_score": 2,
+        "sector": "sports_football",
+        "evidence_date": "2020-03-05",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 프로리그의 핵심 선수",
+        "source_notes": ["2020 보훔에서 울산 현대로 이적하며 11년 만에 K리그 복귀"],
+        "source_urls": ["https://www.yna.co.kr/view/AKR20200305168200007"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "장한나",
+      "t0_role": "첼리스트 겸 지휘자",
+      "target2020": {
+        "role": "Trondheim Symphony Orchestra & Opera 수석지휘자·예술리더",
+        "scope_score": 3,
+        "sector": "classical_music_conducting",
+        "evidence_date": "2020",
+        "match": "exact_year_by_official_tenure",
+        "confidence": "H",
+        "scope_rationale": "유럽 주요 오케스트라의 chief conductor/artistic leader로 국제적 리더십",
+        "source_notes": ["Trondheim Symphony 공식 자료가 장한나가 2017년부터 chief conductor and artistic leader였음을 확인"],
+        "source_urls": ["https://tso.no/program/konserter/han-nas-farvel-beethoven-mahler"]
+      },
+      "coding_status": "coded_exact_by_tenure"
+    },
+    {
+      "name": "정연두",
+      "t0_role": "현대미술 작가",
+      "target2020": {
+        "role": "미디어·사진·설치미술가; 2020 개인전 및 외교부 VR 전시 참여",
+        "scope_score": 2,
+        "sector": "visual_art",
+        "evidence_date": "2020-12-14",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 대표 현대미술가로 지속적 전시 활동; 현재 batch에서는 국제 apex 근거를 별도 소급하지 않고 보수적으로 코딩",
+        "source_notes": ["외교부가 2020 Dream Believer VR 전시에 한국 대표 작가 정연두의 작품 참여를 공식 확인"],
+        "source_urls": ["https://www.mofa.go.kr/www/brd/m_4080/view.do?page=1&pitem=102026&seq=370794"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "정욱준",
+      "t0_role": "패션디자이너",
+      "target2020": {
+        "role": "삼성물산 패션부문 JUUN.J 크리에이티브 디렉터·상무; 파리패션위크 참가",
+        "scope_score": 3,
+        "sector": "fashion",
+        "evidence_date": "2020-07-14",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 대기업 패션 브랜드의 창작 리더이자 파리 무대에서 지속 활동하는 국제적 디자이너",
+        "source_notes": ["삼성물산 공식 뉴스룸이 정욱준 크리에이티브 디렉터의 JUUN.J 2021 S/S 디지털 파리패션위크 참가를 확인"],
+        "source_urls": ["https://news.samsungcnt.com/ko/%EC%A0%84%EC%B2%B4%EA%B8%B0%EC%82%AC/%ED%8C%A8%EC%85%98%EB%B6%80%EB%AC%B8/2020-07-%EC%A4%80%EC%A7%80-21ss-%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%80-%EB%94%94%EC%A7%80%ED%84%B8%EB%A1%9C/"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "조성진",
+      "t0_role": "서울예술고 1학년·피아니스트",
+      "target2020": {
+        "role": "국제 활동 피아니스트; 2020 전국 리사이틀 및 음반 활동",
+        "scope_score": 3,
+        "sector": "classical_music",
+        "evidence_date": "2020-11-05",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국제 주요 무대에서 활동하는 최상위급 클래식 피아니스트",
+        "source_notes": ["2020 연합뉴스가 국내 리사이틀 투어와 신보를 다루며 조성진의 국제 연주 경력을 확인"],
+        "source_urls": ["https://www.yna.co.kr/view/AKR20201105061000005"]
+      },
+      "coding_status": "coded_exact"
+    },
+    {
+      "name": "최은석",
+      "t0_role": "디스트릭트 대표이사",
+      "target2020": {
+        "role": "사망",
+        "scope_score": null,
+        "sector": "digital_media_business",
+        "evidence_date": "2012-02-18",
+        "match": "competing_event_pre_target",
+        "confidence": "H",
+        "competing_event": "death",
+        "scope_rationale": "사망은 예측 실패나 낮은 2020 scope로 코딩하지 않음",
+        "source_notes": [
+          "2010 전자신문 자료로 선정대상 최은석이 디스트릭트 창업자·대표임을 identity anchor",
+          "2012 한국경제가 디스트릭트 최은석 대표가 미국 출장 중 사망했다고 보도"
+        ],
+        "source_urls": [
+          "https://www.etnews.com/201001280176",
+          "https://www.hankyung.com/article/2012022080731"
+        ]
+      },
+      "coding_status": "competing_event"
+    },
+    {
+      "name": "홍명보",
+      "t0_role": "올림픽 축구대표팀 감독",
+      "target2020": {
+        "role": "대한축구협회 전무이사 임기 종료 후 울산 현대 감독 선임",
+        "scope_score": 3,
+        "sector": "sports_football_leadership",
+        "evidence_date": "2020-12-24",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국가 축구협회 최고위 실무 리더십과 국내 최상위 프로팀 감독직",
+        "source_notes": ["2020-12-24 대한축구협회 전무이사 3년 임기를 마치고 울산 현대 감독에 선임"],
+        "source_urls": ["https://www.yna.co.kr/view/AKR20201224080051007"]
+      },
+      "coding_status": "coded_exact"
+    }
+  ],
+  "batch_summary": {
+    "total": 20,
+    "coded_exact_or_exact_by_tenure": 15,
+    "coded_nearest_within_window": 1,
+    "pending": 3,
+    "competing_event": 1,
+    "pending_names": ["박민규", "박성훈", "심승현"],
+    "competing_event_names": ["최은석"],
+    "descriptive_score_counts_among_resolved_non_competing": {
+      "2": 8,
+      "3": 7,
+      "4": 1
+    },
+    "note": "Counts are QA summaries, not prediction metrics. Career peak is not substituted for target-year snapshot."
+  }
+}
