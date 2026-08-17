@@ -1,0 +1,48 @@
+name: Type-A Identity Resolution QA
+
+on:
+  push:
+    paths:
+      - 'data/typeA/canonical_identity_overrides_v0_1.json'
+      - 'scripts/identity_resolution.py'
+      - 'state/identity_resolution_policy_v0_2.md'
+      - 'research/khan_2004_common_overlap_identity_audit_v0_1.json'
+      - '.github/workflows/typeA-identity-resolution-qa.yml'
+  workflow_dispatch:
+
+jobs:
+  identity-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: QA canonical identity overrides
+        run: |
+          python - <<'PY'
+          import json
+          from scripts.identity_resolution import resolve_identity_key, person_id
+
+          d=json.load(open('data/typeA/canonical_identity_overrides_v0_1.json',encoding='utf-8'))
+          a=json.load(open('research/khan_2004_common_overlap_identity_audit_v0_1.json',encoding='utf-8'))
+          assert d['qa']['override_n']==2
+          assert a['summary']=={'name_collisions':7,'same_person':6,'different_person':1,'pending':0}
+
+          k1=resolve_identity_key('이미경','동아일보','donga_2011_10yr_100')
+          k2=resolve_identity_key('이미경','경향신문','khan_2004_17th_assembly_newleaders_20')
+          assert k1=='이미경|cj_enm_business'
+          assert k2=='이미경|politician'
+          assert k1!=k2
+          p1=person_id('이미경','동아일보','donga_2011_10yr_100')
+          p2=person_id('이미경','경향신문','khan_2004_17th_assembly_newleaders_20')
+          assert p1!=p2
+
+          # Unambiguous names retain the legacy name-based identity key.
+          assert resolve_identity_key('유시민','뉴스메이커','newsmaker_2003_politics_top10')=='유시민'
+          assert resolve_identity_key('유시민','경향신문','khan_2004_17th_assembly_newleaders_20')=='유시민'
+          assert person_id('유시민','뉴스메이커','newsmaker_2003_politics_top10') == person_id('유시민','경향신문','khan_2004_17th_assembly_newleaders_20')
+
+          print({'이미경_business':p1,'이미경_politician':p2})
+          PY
