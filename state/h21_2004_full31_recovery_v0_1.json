@@ -1,7 +1,7 @@
 {
   "schema_version": "h21_2004_full31_recovery_v0.1",
   "generated": "2026-08-18",
-  "status": "partial_online_recovery_exhausted_library_locator_identified",
+  "status": "partial_online_recovery_library_locator_identified_issue_window_revalidated",
   "publication": "한겨레21",
   "article_title": "고건 · 강금실, 박근혜를 누르다",
   "article_transmission_date": "2004-09-20",
@@ -19,11 +19,15 @@
     "recovery_note": "본문 텍스트에는 1~10위와 이인제 22위가 직접 서술되어 있으나 11~31위 전체 표/그래픽은 검색·텍스트 전송본에 포함되지 않음"
   },
   "issue_identification": {
-    "likely_issue_number": 528,
-    "likely_issue_date": "2004-09-22",
-    "status": "inferred_not_directly_verified_for_this_article",
-    "basis": "별도 재전송/인용 자료에서 한겨레21 제528호가 2004-09-22자로 확인되며 이 기사의 2004-09-20 전송 시점과 일치하는 발행주기",
-    "do_not_treat_as_primary_fact_until_scan": true
+    "previous_528_hint": "withdrawn_as_unsupported",
+    "current_best_issue_hint": 526,
+    "status": "inferred_narrow_window_not_primary_verified",
+    "basis": [
+      "국회도서관 검색 색인에서 한겨레21 통권536호가 2004-12-02, 통권537호가 2004-12-09로 직접 확인됨.",
+      "주간 발행 순서를 역산하면 2004-09-23 전후가 통권526호에 해당하는 것이 자연스럽고, 별도 한겨레 기사도 526호를 '지난 9월' 표지기사로 지칭함.",
+      "본 차세대리더 기사는 2004-09-20 전송이므로 통권526호와 시점이 잘 맞지만, 실제 수록호는 원문/권호목차 확인 전까지 확정하지 않음."
+    ],
+    "do_not_treat_issue526_as_primary_fact_until_catalog_or_scan": true
   },
   "national_assembly_library_locator": {
     "catalog_title": "한겨레21",
@@ -37,7 +41,7 @@
     "issn": "1228-4017",
     "catalog_url": "https://dl.nanet.go.kr/search/searchInnerDetail.do?controlNo=SERL1000000060",
     "catalog_capability": "권호별 기사목차 및 원문보기 항목을 제공하는 것으로 검색 색인에 확인됨",
-    "retrieval_value": "2004년 9월 하순 권호를 조회하면 누락된 표/그래픽의 원문 접근 가능성이 가장 높음"
+    "retrieval_value": "2004년 9월20일 전후 권호, 우선 통권526호 전후의 기사목차를 조회하면 누락된 표/그래픽 원문을 가장 빠르게 찾을 가능성이 높음"
   },
   "known_ranked_rows": [
     {"rank": 1, "name": "고건", "score_pct": 60.0, "status": "direct_text"},
@@ -61,27 +65,30 @@
     "top10_complete_names": true,
     "top10_scores_complete": false,
     "full31_complete": false,
-    "library_locator_identified": true
+    "library_locator_identified": true,
+    "previous_issue528_hint_withdrawn": true
   },
   "search_paths_attempted": [
     "exact article title + rank fragments",
     "known lower-rank anchor 이인제 22위",
     "candidate-name + 호감도/능력평가 phrase searches",
     "Hankyoreh21 domain/title searches",
-    "issue-number searches for 527/528",
+    "issue-number searches including 526/527/528",
     "library/catalog and PDF/scan web searches",
     "image-search attempt for article/table scan",
-    "National Assembly Library serial catalog discovery"
+    "National Assembly Library serial catalog discovery",
+    "cross-check of independently dated issue536=2004-12-02 and issue537=2004-12-09"
   ],
   "rejected_reconstruction_methods": [
     "Do not infer membership from contemporary prominence alone.",
     "Do not treat search-engine return for article-title + candidate as evidence of candidate inclusion because query terms may be ignored/loosely matched.",
     "Do not borrow ranks from other 2004 surveys such as KSOI or other media polls.",
-    "Do not fabricate ranks 11~31 from later political prominence."
+    "Do not fabricate ranks 11~31 from later political prominence.",
+    "Do not treat issue526 as confirmed until the catalog/article scan explicitly links this article to that issue."
   ],
   "next_retrieval_gate": {
-    "preferred_source": "대한민국 국회도서관 한겨레21 serial SERL1000000060의 2004년 9월 하순 권호 원문/스캔",
-    "likely_target": "late-September 2004 issue, likely no. 528 but issue number must be verified from the scan",
+    "preferred_source": "대한민국 국회도서관 한겨레21 serial SERL1000000060의 2004-09-20 전후 권호 원문/스캔",
+    "first_issue_to_check": "통권526호 전후",
     "needed_artifact": "page image/PDF showing the 31-candidate ranking table or candidate list",
     "fallback": "서울관 정기간행물실(524호)에서 청구기호 P 051.1 ㅎ152의 해당 권호 열람/복사",
     "on_retrieval": "transcribe all 31 names/ranks/scores with page-level provenance, then build h21_2004_full31 roster and extend Type-A common master"
