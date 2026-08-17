@@ -53,21 +53,21 @@ jobs:
         run: |
           python scripts/build_donga_2010_target2020_master.py
           python scripts/analyze_donga_2010_target2020.py
-      - name: Analyze post-T0 peak batches
+      - name: Analyze unpatched post-T0 peak batches
         run: python scripts/analyze_donga_2010_post_t0_peak.py
-      - name: Build final post-T0 master and metrics
+      - name: Build final patched post-T0 master and metrics v1.1
         run: python scripts/build_donga_2010_post_t0_peak_master.py
       - name: Show final QA
         run: |
           wc -l data/typeA/donga_2010_t0_snapshot_scope_v1_3.csv
           wc -l data/typeA/donga_2010_baseline_peak_through_t0_v1_4.csv
-          wc -l data/typeA/donga_2010_post_t0_peak_master_v1_0.csv
+          wc -l data/typeA/donga_2010_post_t0_peak_master_v1_1.csv
           python - <<'PY'
           import json
           t0=json.load(open('data/typeA/donga_2010_t0_snapshot_scope_v1_3.json',encoding='utf-8'))
           baseline=json.load(open('data/typeA/donga_2010_baseline_peak_through_t0_v1_4.json',encoding='utf-8'))
-          pmaster=json.load(open('data/typeA/donga_2010_post_t0_peak_master_v1_0.json',encoding='utf-8'))
-          metrics=json.load(open('data/typeA/donga_2010_post_t0_peak_metrics_v1_0.json',encoding='utf-8'))
+          pmaster=json.load(open('data/typeA/donga_2010_post_t0_peak_master_v1_1.json',encoding='utf-8'))
+          metrics=json.load(open('data/typeA/donga_2010_post_t0_peak_metrics_v1_1.json',encoding='utf-8'))
           print(json.dumps(t0['qa'],ensure_ascii=False,indent=2))
           print(json.dumps(baseline['qa'],ensure_ascii=False,indent=2))
           print(json.dumps(pmaster['qa'],ensure_ascii=False,indent=2))
@@ -77,10 +77,13 @@ jobs:
           print(json.dumps(metrics['by_category'],ensure_ascii=False,indent=2))
           assert t0['qa']['score_counts']=={'1':1,'2':48,'3':48,'4':3}
           assert baseline['qa']['score_counts']=={'1':1,'2':46,'3':50,'4':3}
-          assert pmaster['qa']['total']==100 and pmaster['qa']['assessed']==98 and pmaster['qa']['unresolved']==2
-          assert pmaster['qa']['post_t0_score_counts']=={'2':27,'3':59,'4':12}
-          assert metrics['primary_assessed_only']['major_leadership_ge3_n']==71
+          assert pmaster['qa']['total']==100 and pmaster['qa']['assessed']==99 and pmaster['qa']['unresolved']==1
+          assert pmaster['qa']['unresolved_names']==['박성훈']
+          assert pmaster['qa']['post_t0_score_counts']=={'2':27,'3':60,'4':12}
+          assert metrics['primary_assessed_only']['major_leadership_ge3_n']==72
           assert metrics['primary_assessed_only']['apex_eq4_n']==12
-          assert metrics['primary_assessed_only']['advanced_n']==28
-          assert metrics['primary_assessed_only']['advancement_classes']=={'advanced':28,'sustained_high':44,'no_clear_advancement':26,'lower_than_baseline':0,'not_assessable':2}
+          assert metrics['primary_assessed_only']['advanced_n']==29
+          assert metrics['primary_assessed_only']['advancement_classes']=={'advanced':29,'sustained_high':44,'no_clear_advancement':26,'lower_than_baseline':0,'not_assessable':1}
+          intel=metrics['by_category']['행동하는 지성인']
+          assert intel['assessed']==20 and intel['unresolved']==0 and intel['major_ge3_n']==8 and intel['advanced_n']==8
           PY
