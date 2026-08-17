@@ -7,6 +7,7 @@ on:
       - 'research/khan_2004_peak_audit_gnp_dlp_batch2_v0_1.json'
       - 'scripts/build_khan_2004_peak_master.py'
       - 'scripts/build_typeA_common_master_v0_3.py'
+      - 'scripts/build_typeA_cross_cohort_comparison_v0_4.py'
       - 'scripts/identity_resolution.py'
       - 'data/typeA/canonical_identity_overrides_v0_1.json'
       - 'research/khan_2004_common_overlap_identity_audit_v0_1.json'
@@ -79,7 +80,22 @@ jobs:
           assert f['qa']==q
           PY
 
-      - name: Persist Kyunghyang and common v0.3 outputs
+      - name: Build cross-cohort comparison v0.4
+        run: python scripts/build_typeA_cross_cohort_comparison_v0_4.py
+
+      - name: QA cross-cohort v0.4 report
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          s=Path('analysis/typeA_cross_cohort_comparison_v0_4.md').read_text(encoding='utf-8')
+          assert '245 placements / 193 canonical persons / 6 cohort units' in s
+          assert '경향신문 2004 국회 뉴리더20' in s
+          assert '19/20 (95.0%)' in s
+          assert '이미경|politician' in s and '이미경|cj_enm_business' in s
+          assert '94.7%' in s
+          PY
+
+      - name: Persist Kyunghyang, common v0.3 and comparison v0.4 outputs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -90,8 +106,9 @@ jobs:
             data/typeA/typeA_common_master_v0_3.json \
             data/typeA/typeA_common_master_v0_3.csv \
             data/typeA/typeA_common_metrics_v0_3.json \
-            state/typeA_common_master_freeze_v0_3.json
+            state/typeA_common_master_freeze_v0_3.json \
+            analysis/typeA_cross_cohort_comparison_v0_4.md
           if ! git diff --cached --quiet; then
-            git commit -m "Freeze Kyunghyang 2004 peak master and Type-A common v0.3"
+            git commit -m "Freeze Kyunghyang 2004, Type-A common v0.3 and comparison v0.4"
             git push
           fi
