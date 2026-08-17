@@ -1,0 +1,211 @@
+{
+  "schema_version": "khan_2005_politics10_peak_audit_v0.1",
+  "generated": "2026-08-18",
+  "status": "peak_audited_10_of_10",
+  "parent_selection": "khan_2005_korea_leaders60",
+  "parent_selected_units": 60,
+  "field": "정치",
+  "field_selected_n": 10,
+  "field_specific_secondary": true,
+  "selection_cutoff": "2005-12-15",
+  "publication_date": "2005-12-30",
+  "selection_cutoff_basis": "Methodology article states the selection work ran through 2005-12-15; publication occurred 15 days later.",
+  "rules_ref": [
+    "state/coding_rules_typeA_v0_1.md",
+    "state/coding_rules_typeA_sector_scope_v0_1.md",
+    "state/coding_rules_typeA_mixed_unit_v0_1.md"
+  ],
+  "people": [
+    {
+      "name": "강금실",
+      "t0_role": "전 법무부 장관·인권대사",
+      "baseline_peak_through_t0": 3,
+      "post_t0_peak_role": "2006 열린우리당 서울시장 후보·이후 국가/공공 역할",
+      "post_t0_peak_year": 2006,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "death_truncated": false,
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301518231",
+        "data/typeA/typeA_common_master_v0_3.json"
+      ]
+    },
+    {
+      "name": "김근태",
+      "t0_role": "보건복지부 장관",
+      "baseline_peak_through_t0": 3,
+      "post_t0_peak_role": "열린우리당 의장",
+      "post_t0_peak_year": 2006,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "death_truncated": true,
+      "death_date": "2011-12-30",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301518231",
+        "https://www.korea.kr/news/policyNewsView.do?newsId=75082275",
+        "https://www.yna.co.kr/amp/view/AKR20060618044600001",
+        "https://www.yna.co.kr/view/AKR20111229197300001"
+      ]
+    },
+    {
+      "name": "김부겸",
+      "t0_role": "제17대 국회의원·열린우리당 원내수석부대표",
+      "baseline_peak_through_t0": 2,
+      "post_t0_peak_role": "제47대 국무총리",
+      "post_t0_peak_year": 2021,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 2,
+      "advancement_class": "advanced",
+      "death_truncated": false,
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301518231",
+        "data/typeA/khan_2004_17th_assembly_newleaders_peak_master_v1_0.json"
+      ]
+    },
+    {
+      "name": "노회찬",
+      "t0_role": "민주노동당 국회의원·당 간판 정치인",
+      "baseline_peak_through_t0": 2,
+      "post_t0_peak_role": "진보신당 상임대표·진보정의당 공동대표",
+      "post_t0_peak_year": 2008,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "death_truncated": true,
+      "death_date": "2018-07-23",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301518231",
+        "data/typeA/khan_2004_17th_assembly_newleaders_peak_master_v1_0.json",
+        "https://www.yna.co.kr/view/AKR20180723139800001"
+      ]
+    },
+    {
+      "name": "박근혜",
+      "t0_role": "한나라당 대표",
+      "baseline_peak_through_t0": 3,
+      "post_t0_peak_role": "제18대 대한민국 대통령",
+      "post_t0_peak_year": 2013,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "death_truncated": false,
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301518231",
+        "data/typeA/typeA_common_master_v0_3.json"
+      ]
+    },
+    {
+      "name": "박진",
+      "t0_role": "재선 국회의원·한나라당 국제위원장 경력",
+      "baseline_peak_through_t0": 2,
+      "post_t0_peak_role": "제40대 외교부 장관",
+      "post_t0_peak_year": 2022,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "death_truncated": false,
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301518231",
+        "data/typeA/khan_2004_17th_assembly_newleaders_peak_master_v1_0.json"
+      ]
+    },
+    {
+      "name": "손학규",
+      "t0_role": "경기도지사·전 보건복지부 장관",
+      "baseline_peak_through_t0": 3,
+      "post_t0_peak_role": "2007 대통합민주신당 유력 대통령후보 경선주자",
+      "post_t0_peak_year": 2007,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "death_truncated": false,
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301518231",
+        "https://www.yna.co.kr/view/AKR20070905184300001",
+        "https://www.yna.co.kr/view/AKR20070905221000001"
+      ],
+      "scope4_basis": "Frozen political rule includes a major national presidential candidate/contender. He ranked first in the party preliminary and remained a leading contender in the national nomination race."
+    },
+    {
+      "name": "원희룡",
+      "t0_role": "재선 국회의원·한나라당 최고위원",
+      "baseline_peak_through_t0": 2,
+      "post_t0_peak_role": "제주특별자치도지사·국토교통부 장관",
+      "post_t0_peak_year": 2022,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "death_truncated": false,
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301518231",
+        "data/typeA/khan_2004_17th_assembly_newleaders_peak_master_v1_0.json"
+      ]
+    },
+    {
+      "name": "이명박",
+      "t0_role": "서울특별시장·유력 차기 대권주자",
+      "baseline_peak_through_t0": 3,
+      "post_t0_peak_role": "제17대 대한민국 대통령",
+      "post_t0_peak_year": 2008,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "death_truncated": false,
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301518231",
+        "data/typeA/typeA_common_master_v0_3.json"
+      ]
+    },
+    {
+      "name": "정동영",
+      "t0_role": "통일부 장관·NSC 상임위원장·전 열린우리당 의장",
+      "baseline_peak_through_t0": 3,
+      "post_t0_peak_role": "2007 대통합민주신당 대통령 후보",
+      "post_t0_peak_year": 2007,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "death_truncated": false,
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301518231",
+        "data/typeA/typeA_common_master_v0_3.json"
+      ]
+    }
+  ],
+  "qa": {
+    "audited_n": 10,
+    "baseline_distribution": {"2": 4, "3": 6},
+    "baseline_mean": 2.6,
+    "post_peak_distribution": {"3": 5, "4": 5},
+    "post_peak_mean": 3.5,
+    "major_n": 10,
+    "apex_n": 5,
+    "advanced_n": 8,
+    "sustained_high_n": 2,
+    "lower_than_baseline_n": 0,
+    "apex_names": ["김부겸", "박근혜", "손학규", "이명박", "정동영"],
+    "sustained_high_names": ["강금실", "김근태"],
+    "death_truncated_n": 2,
+    "death_truncated_names": ["김근태", "노회찬"]
+  },
+  "interpretation_guardrails": [
+    "This is a field-specific secondary analysis of the politics stratum inside the original 60-unit mixed selection.",
+    "The primary parent denominator remains 60 selected units; politics10 must not be presented as the whole 2005 project.",
+    "Use 2005-12-15 as the no-lookahead selection cutoff because the methodology article states selection work ended that day.",
+    "The 2005-12-30 profile article is used to document contemporaneous roles, not to import achievements after the cutoff.",
+    "손학규 scope4 is based on a major national presidential nomination candidacy, explicitly allowed by the frozen political mapping.",
+    "Deaths truncate later exposure but do not erase achieved post-selection peaks."
+  ]
+}
