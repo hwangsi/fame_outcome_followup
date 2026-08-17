@@ -1,0 +1,58 @@
+{
+  "schema_version": "khan_2004_17th_assembly_newleaders_metrics_v1.0",
+  "generated": "2026-08-18",
+  "population": {
+    "n": 20,
+    "assessable_n": 20
+  },
+  "baseline": {
+    "mean": 2.15,
+    "distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 18,
+      "3": 1,
+      "4": 1
+    }
+  },
+  "post_peak": {
+    "mean": 3.2,
+    "distribution": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 16,
+      "4": 4
+    }
+  },
+  "outcomes": {
+    "major_n": 20,
+    "major_rate": 1.0,
+    "apex_n": 4,
+    "apex_rate": 0.2,
+    "advanced_n": 19,
+    "advanced_rate": 0.95,
+    "sustained_high_n": 0,
+    "no_clear_advancement_n": 0,
+    "lower_than_baseline_n": 1
+  },
+  "apex_names": [
+    "김문수",
+    "김부겸",
+    "임종석",
+    "한명숙"
+  ],
+  "non_advanced_names": [
+    "박세일"
+  ],
+  "near_immediate_advancement_flags": [
+    "신기남"
+  ],
+  "guardrails": [
+    "All 20 were already elected to the 17th National Assembly; raw major attainment has severe baseline ceiling and is not the primary future-rise metric.",
+    "The selection explicitly targeted future political leaders, so baseline-adjusted advancement is the primary descriptive outcome.",
+    "Party quotas (10 Uri, 8 GNP, 2 DLP) are part of the selection design and must be retained in any comparison.",
+    "신기남 reached national party chair 12 days after selection; count it after the frozen cutoff but flag likely imminence/short-horizon editorial information.",
+    "박세일 baseline uses lifetime pre-selection presidential policy-chief peak (scope4), not his contemporaneous MP title."
+  ]
+}
