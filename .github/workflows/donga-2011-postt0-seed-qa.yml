@@ -5,12 +5,14 @@ on:
     paths:
       - 'scripts/build_donga_2011_post_t0_seed.py'
       - 'scripts/build_donga_2011_post_t0_partial_master.py'
+      - 'scripts/build_donga_2011_post_t0_master.py'
       - 'research/donga_2011_post_t0_repeat_cutoff_audit_v0_1.json'
       - 'research/donga_2011_post_t0_new_audit_batch1_v0_1.json'
       - 'research/donga_2011_post_t0_new_audit_batch2_v0_1.json'
       - 'research/donga_2011_post_t0_new_audit_batch3_v0_1.json'
       - 'research/donga_2011_post_t0_new_audit_batch4_v0_1.json'
       - 'research/donga_2011_post_t0_new_audit_batch5_v0_1.json'
+      - 'research/donga_2011_post_t0_new_audit_batch6_v0_1.json'
       - 'data/typeA/donga_2011_t0_roles_v0_1.json'
       - '.github/workflows/donga-2011-postt0-seed-qa.yml'
   workflow_dispatch:
@@ -59,43 +61,47 @@ jobs:
           python - <<'PY'
           import json
           q=json.load(open('analysis/donga_2011_post_t0_seed_v0_2.json',encoding='utf-8'))['qa']
-          print(json.dumps(q,ensure_ascii=False,indent=2))
           assert q['total']==100 and q['repeat_n']==38 and q['new_2011_n']==62
-          assert q['seed_status_counts']=={
-              'repeat_safe_post2011_inheritance_candidate':34,
-              'new_2011_manual_audit_required':62,
-              'repeat_cutoff_reaudit_resolved':4,
-          }
           assert q['repeat_resolved_n']==38 and q['repeat_reaudit_pending_n']==0
           PY
-      - name: Build partial 2011 post-T0 master with new-entrant batches 1-5
+      - name: Rebuild pre-final partial master regression checkpoint
         run: python scripts/build_donga_2011_post_t0_partial_master.py
-      - name: QA partial master
+      - name: QA 88-of-100 checkpoint
         run: |
           python - <<'PY'
           import json
-          d=json.load(open('analysis/donga_2011_post_t0_partial_master_v0_5.json',encoding='utf-8'))
-          q=d['qa']
-          print(json.dumps(q,ensure_ascii=False,indent=2))
-          assert q['total']==100
-          assert q['assessed_n']==88
-          assert q['pending_n']==12
-          assert q['repeat_assessed_n']==38
-          assert q['new_assessed_n']==50
-          assert len(q['pending_names'])==12
-          batches=q['new_audit_batch_names']
-          assert len(batches)==5 and all(len(v)==10 for v in batches.values())
+          q=json.load(open('analysis/donga_2011_post_t0_partial_master_v0_5.json',encoding='utf-8'))['qa']
+          assert q['assessed_n']==88 and q['pending_n']==12
           assert q['identity_anchor_validated_n']==30
-          anchors=set(q['identity_anchor_validated_names'])
-          assert {'김영달','김영하','윤태호','유범재','조명숙','이상이','백승헌','이자람','정일용','김애란'} <= anchors
+          PY
+      - name: Build final 2011 post-T0 master and metrics
+        run: python scripts/build_donga_2011_post_t0_master.py
+      - name: QA final master and metrics
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('analysis/donga_2011_post_t0_master_v1_0.json',encoding='utf-8'))
+          m=json.load(open('analysis/donga_2011_post_t0_metrics_v1_0.json',encoding='utf-8'))
+          q=d['qa']
+          print(json.dumps({'qa':q,'primary':m['primary_full_cohort_conservative'],'sensitivity':m['sensitivity_assessable_only']},ensure_ascii=False,indent=2))
+          assert q['total']==100
+          assert q['adjudicated_n']==100
+          assert q['scored_n']==99
+          assert q['not_assessable_n']==1
+          assert q['pending_n']==0
+          assert q['not_assessable_names']==['신준호']
+          assert q['repeat_n']==38 and q['new_entrant_n']==62
+          assert q['identity_anchor_validated_n']==42
+          batches=q['new_audit_batch_names']
+          assert len(batches)==6
+          assert [len(v) for v in batches.values()]==[10,10,10,10,10,12]
           row={p['name']:p for p in d['people']}
-          assert row['김정주']['exposure_truncated_by_death'] is True
-          assert row['김정주']['death_year']==2022
-          assert row['손흥민']['post2011_peak_score']==4
+          assert row['신준호']['post2011_peak_score'] is None
+          assert row['신준호']['advancement_class']=='not_assessable'
           assert row['김선욱']['t0_identity_anchor']['t0_role_official_2011']=='피아니스트'
-          assert '아태이론물리센터' in row['김승환']['t0_identity_anchor']['t0_role_official_2011']
-          assert row['양윤선']['post2011_peak_score']==2
-          assert row['김영달']['t0_identity_anchor']['t0_role_official_2011']=='아이디스 대표'
-          assert row['김애란']['t0_identity_anchor']['t0_role_official_2011']=='소설가'
-          assert row['정일용']['t0_identity_anchor']['t0_role_official_2011']=='원진녹색병원장'
+          assert row['김가영']['t0_identity_anchor']['t0_role_official_2011']=='지리산친환경농상물유통 대표'
+          assert row['전혜경']['t0_identity_anchor']['t0_role_official_2011']=='유니세프 Senior Advisor'
+          assert row['정근창']['post2011_peak_score']==3
+          assert m['primary_full_cohort_conservative']['denominator']==100
+          assert m['sensitivity_assessable_only']['denominator']==99
           PY
