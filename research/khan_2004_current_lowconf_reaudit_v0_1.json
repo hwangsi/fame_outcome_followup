@@ -1,0 +1,84 @@
+{
+  "schema_version": "khan_2004_current_lowconf_reaudit_v0.1",
+  "generated": "2026-08-18",
+  "source_master": "data/typeA/khan_2004_17th_assembly_newleaders_longitudinal_master_v1_0.json",
+  "status": "reaudited_4_of_4_no_current_score_changes",
+  "target": "current 2026 snapshot sensitivity re-audit",
+  "people": [
+    {
+      "name": "신기남",
+      "existing_current_score": 1,
+      "existing_current_confidence": "L",
+      "new_evidence": {
+        "type": "author/biographical profile",
+        "summary": "정치 은퇴 이후 소설가 활동과 과거 대통령소속 도서관정보정책위원장 경력이 확인되지만, 2026-08-18 시점의 새로운 상근 고위 공직은 직접 확인되지 않음.",
+        "source": "교보문고 작가 프로필",
+        "url": "https://search.kyobobook.co.kr/search?keyword=%EC%8B%A0%EA%B8%B0%EB%82%A8"
+      },
+      "decision": "keep",
+      "current_score_after_reaudit": 1,
+      "current_confidence_after_reaudit": "L",
+      "reason": "자료는 은퇴 후 활동을 지지하지만 현재 시점을 충분히 고정하지 못함."
+    },
+    {
+      "name": "심재철",
+      "existing_current_score": 1,
+      "existing_current_confidence": "L",
+      "new_evidence": {
+        "type": "2024 direct political role",
+        "summary": "2024년 국민의힘 경기도당위원장으로 선임되어 2026 지방선거 준비를 언급한 자료를 확인. 다만 지역당위원장 역할이며 2026 현재 재임 여부는 직접 확인되지 않음.",
+        "source": "중부일보 2024-06-26 인터뷰",
+        "url": "https://www.joongboo.com/news/articleView.html?idxno=363661936"
+      },
+      "decision": "keep_current_score_strengthen_t20_context",
+      "current_score_after_reaudit": 1,
+      "current_confidence_after_reaudit": "L",
+      "reason": "2024 역할은 T+20 context 보강에는 유용하지만 2026 current role로 승계할 수 없음. 지역당위원장은 frozen national-scope mapping에서도 scope3 national party leader가 아님."
+    },
+    {
+      "name": "전재희",
+      "existing_current_score": 1,
+      "existing_current_confidence": "L",
+      "new_evidence": {
+        "type": "search re-audit",
+        "summary": "2026 현직 고위 공직 또는 전국 단위 상근 리더십을 직접 고정할 새로운 신뢰도 높은 자료를 찾지 못함.",
+        "source": "targeted web re-audit",
+        "url": null
+      },
+      "decision": "keep",
+      "current_score_after_reaudit": 1,
+      "current_confidence_after_reaudit": "L",
+      "reason": "확인 실패를 score0로 처리하지 않고 기존 conservative score1/low confidence 유지."
+    },
+    {
+      "name": "천정배",
+      "existing_current_score": 1,
+      "existing_current_confidence": "L",
+      "new_evidence": {
+        "type": "search re-audit",
+        "summary": "2023년 말 2024 총선 불출마 선언 이후 2026 시점의 새로운 현직 고위 공직을 권위 있는 직접 자료로 확인하지 못함.",
+        "source": "targeted web re-audit",
+        "url": "https://www.yna.co.kr/view/AKR20231222114200054"
+      },
+      "decision": "keep",
+      "current_score_after_reaudit": 1,
+      "current_confidence_after_reaudit": "L",
+      "reason": "최신 직접 현직 anchor 부재."
+    }
+  ],
+  "qa": {
+    "reaudited_n": 4,
+    "current_score_changed_n": 0,
+    "current_confidence_changed_n": 0,
+    "t20_context_strengthened_n": 1,
+    "t20_context_strengthened_names": ["심재철"],
+    "remaining_current_low_confidence_n": 4,
+    "remaining_current_low_confidence_names": ["신기남", "심재철", "전재희", "천정배"]
+  },
+  "guardrails": [
+    "A recent biography that lists past positions does not prove a current role.",
+    "A 2024 party position is not carried forward to 2026 without evidence of continuing tenure.",
+    "Failure to identify a new current office is not coded as scope0.",
+    "Current sensitivity results do not alter lifetime peak, advancement class, T+10 or T+20 scores unless explicitly stated."
+  ]
+}
