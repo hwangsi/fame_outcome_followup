@@ -1,0 +1,107 @@
+{
+  "schema_version": "khan_2004_17th_assembly_newleaders_roster_v0.1",
+  "generated": "2026-08-18",
+  "status": "selected_roster_complete_outcomes_pending",
+  "publication": "경향신문",
+  "selection_publication_date": "2004-05-05",
+  "series_run": "2004-05-06 to 2004-06-04",
+  "title": "17代국회 이끌 뉴리더",
+  "cohort_type": "A",
+  "cohort_subtype": "expert_future_political_leadership_selection_from_elected_members",
+  "domain": "politics",
+  "design": "expert_vote_party_quota_top20",
+  "selection_question": "새로운 한국정치를 이끌어갈 뉴리더",
+  "method": {
+    "universe": "17대 국회의원 당선자 299명",
+    "initial_candidate_pool": {
+      "열린우리당": 21,
+      "한나라당": 16,
+      "민주노동당_기타": 8,
+      "total": 45,
+      "outside_pool_write_in_allowed": true
+    },
+    "expert_panel_n": 40,
+    "expert_panel_description": "학계·법조계·문화계·재계·시민단체 등 각계 인사",
+    "ballot": {
+      "열린우리당_choices_per_panelist": 5,
+      "한나라당_choices_per_panelist": 4,
+      "민주노동당_기타_choices_per_panelist": 2
+    },
+    "final_quota": {
+      "열린우리당": 10,
+      "한나라당": 8,
+      "민주노동당_기타": 2,
+      "total": 20
+    },
+    "party_leaders_excluded": true,
+    "final_selection_rule": "party-group vote totals with fixed final quotas"
+  },
+  "known_vote_counts": [
+    {"name": "노회찬", "votes": 29, "context": "overall highest stated directly"},
+    {"name": "천정배", "votes": 26, "context": "highest among 열린우리당 stated directly"},
+    {"name": "원희룡", "votes": 25, "context": "highest among 한나라당 stated directly"}
+  ],
+  "known_partial_party_order": {
+    "열린우리당": ["천정배", "임종석", "신기남", "유시민", "김부겸", "이미경"],
+    "한나라당": ["원희룡", "박진", "남경필", "전재희", "김문수"],
+    "note": "Only the order explicitly stated in the launch article is preserved. This is not a complete 1-20 rank."
+  },
+  "people": [
+    {"name":"천정배","party_t0":"열린우리당","selected":true,"vote_count":26,"series_order":null,"membership_evidence":"launch_article"},
+    {"name":"신기남","party_t0":"열린우리당","selected":true,"vote_count":null,"series_order":null,"membership_evidence":"launch_article"},
+    {"name":"유시민","party_t0":"열린우리당","selected":true,"vote_count":null,"series_order":19,"membership_evidence":"launch_article+profile"},
+    {"name":"임종석","party_t0":"열린우리당","selected":true,"vote_count":null,"series_order":4,"membership_evidence":"launch_article+profile"},
+    {"name":"김부겸","party_t0":"열린우리당","selected":true,"vote_count":null,"series_order":8,"membership_evidence":"launch_article+profile"},
+    {"name":"송영길","party_t0":"열린우리당","selected":true,"vote_count":null,"series_order":17,"membership_evidence":"launch_article+profile"},
+    {"name":"김영춘","party_t0":"열린우리당","selected":true,"vote_count":null,"series_order":null,"membership_evidence":"launch_article"},
+    {"name":"한명숙","party_t0":"열린우리당","selected":true,"vote_count":null,"series_order":12,"membership_evidence":"launch_article+profile"},
+    {"name":"이미경","party_t0":"열린우리당","selected":true,"vote_count":null,"series_order":10,"membership_evidence":"launch_article+profile"},
+    {"name":"원혜영","party_t0":"열린우리당","selected":true,"vote_count":null,"series_order":null,"membership_evidence":"series_profile_direct"},
+
+    {"name":"원희룡","party_t0":"한나라당","selected":true,"vote_count":25,"series_order":3,"membership_evidence":"launch_article+profile"},
+    {"name":"박진","party_t0":"한나라당","selected":true,"vote_count":null,"series_order":5,"membership_evidence":"launch_article+profile"},
+    {"name":"남경필","party_t0":"한나라당","selected":true,"vote_count":null,"series_order":null,"membership_evidence":"launch_article"},
+    {"name":"박세일","party_t0":"한나라당","selected":true,"vote_count":null,"series_order":null,"membership_evidence":"launch_article"},
+    {"name":"김문수","party_t0":"한나라당","selected":true,"vote_count":null,"series_order":null,"membership_evidence":"launch_article"},
+    {"name":"권오을","party_t0":"한나라당","selected":true,"vote_count":null,"series_order":15,"membership_evidence":"launch_article+profile"},
+    {"name":"심재철","party_t0":"한나라당","selected":true,"vote_count":null,"series_order":18,"membership_evidence":"launch_article+profile"},
+    {"name":"전재희","party_t0":"한나라당","selected":true,"vote_count":null,"series_order":11,"membership_evidence":"launch_article+profile"},
+
+    {"name":"노회찬","party_t0":"민주노동당","selected":true,"vote_count":29,"series_order":1,"membership_evidence":"launch_article+profile"},
+    {"name":"조승수","party_t0":"민주노동당","selected":true,"vote_count":null,"series_order":20,"membership_evidence":"launch_article+profile"}
+  ],
+  "sources": [
+    {
+      "type":"primary_launch_methodology",
+      "title":"17代국회 이끌 뉴리더",
+      "url":"https://www.khan.co.kr/article/200405051842301"
+    },
+    {
+      "type":"primary_launch_result",
+      "title":"노회찬·천정배·원희룡 17대국회 ‘뉴 리더’",
+      "url":"https://www.khan.co.kr/article/200405051827091"
+    },
+    {
+      "type":"primary_series_profile_missing_launch_name",
+      "title":"[17대국회뉴리더] 원혜영 열린우리당 당선자",
+      "url":"https://www.khan.co.kr/article/200405281834371"
+    }
+  ],
+  "qa": {
+    "selected_n": 20,
+    "party_counts": {"열린우리당":10,"한나라당":8,"민주노동당":2},
+    "unique_names_n": 20,
+    "known_vote_count_n": 3,
+    "membership_complete": true,
+    "vote_table_complete": false,
+    "series_order_is_rank": false
+  },
+  "guardrails": [
+    "Do not use series_order as voting rank; the numbered profile sequence is an editorial publication order unless independently proven otherwise.",
+    "Do not infer missing vote counts from series order or from partial party preference order.",
+    "Final quotas are party-structured, so cross-party vote totals and outcome rates require quota-aware interpretation.",
+    "All 20 were already elected to the 17th National Assembly at selection; baseline-adjusted advancement is essential and raw later-office attainment will overstate future-prediction performance.",
+    "Current party labels must not replace contemporaneous 2004 party labels."
+  ],
+  "next": "Audit T0 lifetime peak and post-selection peak for all 20 under state/coding_rules_typeA_v0_1.md."
+}
