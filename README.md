@@ -43,12 +43,35 @@
 - 장순근: 2022 「남극 그리고 네번의 겨울」 자료로 T+20 exact-year 보강.
 - 장인순: 2026 연합뉴스 직접 인터뷰를 T+20(2025±1) 근거로 반영.
 
-## 파일
+## 저장소 파일
 
-- `scripts/build_v3.py` — v2.1 JSON을 읽어 v3 JSON을 생성
-- `scripts/gen_report_v3.py` — v3 JSON에서 상세 MD와 최종 보고서 자동 생성
-- `state/coding_rules_v3.md` — milestone 및 longitudinal coding 규칙
-- `data/outcomes_v3.json` — 분석용 원데이터
-- `state/outcomes_v3.md` — 39명 상세 근거
+현재 GitHub에서 바로 읽을 수 있는 핵심 파일:
+
 - `report_2026-08-17_v3.md` — 메인 결과 보고서
-- `data/outcomes_v2_1.json` — build 재현에 필요한 source dataset
+- `state/coding_rules_v3.md` — milestone 및 longitudinal coding 규칙
+- `scripts/gen_report_v3.py` — v3 보고서 생성 스크립트
+
+전체 v3 원본 스냅샷은 다음 아카이브에 보존되어 있다.
+
+- `artifacts/v3_bundle.tar.xz`
+
+아카이브에는 아래 파일이 **원본 그대로** 포함되어 있다.
+
+```text
+README_v3.md
+coding_rules_v3.md
+build_v3.py
+gen_report_v3.py
+outcomes_v2_1.json
+outcomes_v3.json
+outcomes_v3.md
+report_2026-08-17_v3.md
+```
+
+따라서 `outcomes_v3.json`, 39명 상세 근거 MD, build script까지 포함한 현재 작업 전체는 이 아카이브에서 재현할 수 있다.
+
+### 아카이브 풀기
+
+```bash
+tar -xJf artifacts/v3_bundle.tar.xz
+```
