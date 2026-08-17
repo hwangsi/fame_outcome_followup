@@ -70,8 +70,9 @@ jobs:
           print(json.dumps(peak['by_category'],ensure_ascii=False,indent=2))
           assert t0['qa']['score_counts']=={'1':1,'2':48,'3':48,'4':3}
           assert baseline['qa']['score_counts']=={'1':1,'2':47,'3':49,'4':3}
-          assert peak['coverage']['rows'] >= 65
-          assert peak['coverage']['assessed'] >= 63
-          intel=peak['by_category']['행동하는 지성인']
-          assert intel['rows']==20 and intel['assessed']==19 and intel['unresolved']==1
+          assert peak['coverage']['rows'] >= 90
+          assert peak['coverage']['assessed'] >= 88
+          econ=peak['by_category']['도전하는 경제인']
+          assert econ['rows']==25 and econ['assessed']==25 and econ['unresolved']==0
+          assert econ['major_ge3_n']==17 and econ['apex_eq4_n']==5
           PY
