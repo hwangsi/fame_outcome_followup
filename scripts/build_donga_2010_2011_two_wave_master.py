@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import hashlib, json, os
-from collections import Counter
+from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -101,6 +101,12 @@ def main():
     baseline_changes=Counter('up' if p['baseline_change_2010_to_2011']>0 else 'same' if p['baseline_change_2010_to_2011']==0 else 'down' for p in repeats)
     category_changes=Counter('same' if p['category_same'] else 'changed' for p in repeats)
     transition=Counter((p['advancement_class_2010'],p['advancement_class_2011']) for p in repeats)
+    category_changed_names=sorted(p['name'] for p in repeats if not p['category_same'])
+    baseline_change_names={k:sorted(p['name'] for p in repeats if ('up' if p['baseline_change_2010_to_2011']>0 else 'same' if p['baseline_change_2010_to_2011']==0 else 'down')==k) for k in ['up','same','down']}
+    transition_names=defaultdict(list)
+    for p in repeats:
+        transition_names[f"{p['advancement_class_2010']} -> {p['advancement_class_2011']}"] .append(p['name'])
+    transition_names={k:sorted(v) for k,v in sorted(transition_names.items())}
 
     def group_summary(g):
         rr=[p for p in people if p['group']==g]
@@ -124,6 +130,13 @@ def main():
       'repeat_category_change_counts':dict(category_changes),
       'repeat_advancement_transition_counts':{f'{a} -> {b}':n for (a,b),n in sorted(transition.items())},
     }
+    guardrails=[
+      'The 200 placements are not 200 independent people; 38 repeat persons contribute two placements each.',
+      'Person-level first-selection outcomes use the post-selection window beginning at the person’s first wave: 2010 for 2010-only/repeat, 2011 for 2011-new.',
+      'For repeat persons, post-2010 and post-2011 peak windows overlap in calendar time and their difference is descriptive, not a causal trajectory estimator.',
+      'The 38/38 identical advancement-class transitions are not independent longitudinal evidence: most 2011 repeat outcomes inherit the already-audited post-2010 peak when that peak is safely after the 2011 cutoff, so class identity is partly structural by design.',
+      'The name intersection between 2010 and 2011 must exactly equal the frozen 38-person repeat set; otherwise the build fails.'
+    ]
     out={
       'schema_version':'donga_2010_2011_two_wave_master_v0.1','generated':'2026-08-18',
       'status':'complete_two_wave_200_placements_162_persons',
@@ -133,13 +146,7 @@ def main():
         'person':'one canonical individual across waves; 162 rows total',
         'repeat':'same frozen identity selected in both 2010 and 2011; 38 persons'
       },
-      'qa':qa,'person_group_first_selection_summary':summaries,
-      'guardrails':[
-        'The 200 placements are not 200 independent people; 38 repeat persons contribute two placements each.',
-        'Person-level first-selection outcomes use the post-selection window beginning at the person’s first wave: 2010 for 2010-only/repeat, 2011 for 2011-new.',
-        'For repeat persons, post-2010 and post-2011 peak windows overlap in calendar time and their difference is descriptive, not a causal trajectory estimator.',
-        'The name intersection between 2010 and 2011 must exactly equal the frozen 38-person repeat set; otherwise the build fails.'
-      ],
+      'qa':qa,'person_group_first_selection_summary':summaries,'guardrails':guardrails,
       'placements':placements,'people':people,
     }
     OUT.write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -151,12 +158,15 @@ def main():
       'population':{'placements':200,'unique_persons':162,'groups':dict(groups)},
       'repeat_38':{
         'baseline_change_counts':dict(baseline_changes),
+        'baseline_change_names':baseline_change_names,
         'category_change_counts':dict(category_changes),
+        'category_changed_names':category_changed_names,
         'advancement_transition_counts':{f'{a} -> {b}':n for (a,b),n in sorted(transition.items())},
+        'advancement_transition_names':transition_names,
       },
       'person_group_first_selection_summary':summaries,
       'runtime_context':{'github_run_id':os.getenv('GITHUB_RUN_ID'),'github_sha':os.getenv('GITHUB_SHA')},
-      'guardrails':out['guardrails'],
+      'guardrails':guardrails,
     }
     FREEZE_OUT.write_text(json.dumps(freeze,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 
@@ -173,14 +183,16 @@ def main():
         s=summaries[g]
         lines.append(f"| {labels[g]} | {s['n']} | {s['first_selection_major_n']}/{s['n']} = {pct(s['first_selection_major_rate_full'])} | {s['first_selection_apex_n']}/{s['n']} = {pct(s['first_selection_apex_rate_full'])} | {s['first_selection_advanced_n']}/{s['n']} = {pct(s['first_selection_advanced_rate_full'])} |")
     lines += ['', '## Repeat 38 — 2010→2011 baseline change','', f"`{dict(baseline_changes)}`",'',
-              '## Repeat 38 — category continuity','', f"`{dict(category_changes)}`",'',
+              '## Repeat 38 — category continuity','', f"`{dict(category_changes)}`",f"- changed: **{', '.join(category_changed_names) if category_changed_names else 'none'}**",'',
               '## Repeat 38 — advancement-class transition','']
     for (a,b),n in sorted(transition.items()): lines.append(f'- `{a} → {b}`: **{n}**')
-    lines += ['', '## Guardrails','',
+    lines += ['', '## Interpretation guardrail','',
+              'repeat 38명의 baseline이 38/38 동일하고 advancement class도 38/38 동일하지만, 이를 독립적인 1년 안정성 증거로 해석하지 않는다. 2010·2011 post-selection window가 겹치며, 2011 repeat outcome의 상당수는 2011 cutoff 이후임이 명확한 기존 post-2010 peak를 안전 승계하도록 설계되었기 때문에 class identity는 부분적으로 구조적이다.','',
+              '## Guardrails','',
               '- 200 placements are not 200 independent people; repeat 38 contribute two placements.',
               '- First-selection person outcomes start at 2010 for 2010-only/repeat and 2011 for 2011-new.',
               '- Repeat post-2010 and post-2011 outcome windows overlap, so their difference is descriptive rather than causal.','']
     RESULT_OUT.write_text('\n'.join(lines),encoding='utf-8')
-    print(json.dumps({'qa':qa,'group_summary':summaries},ensure_ascii=False,indent=2))
+    print(json.dumps({'qa':qa,'group_summary':summaries,'category_changed_names':category_changed_names},ensure_ascii=False,indent=2))
 
 if __name__=='__main__': main()
