@@ -1,0 +1,132 @@
+{
+  "schema_version": "donga_2011_prior_career_audit_v0.2",
+  "generated": "2026-08-18",
+  "selection_cutoff": "2011-04-01",
+  "status": "second_risk_prioritized_pass",
+  "extends": "research/donga_2011_prior_career_audit_v0_1.json",
+  "scope": "Second pass over new 2011 entrants, prioritizing score-4 ceiling cases and score-3 people plausibly capable of a pre-cutoff global/national apex score 4.",
+  "rules_ref": "state/coding_rules_typeA_sector_scope_v0_1.md",
+  "audited_n": 12,
+  "corrections": [],
+  "audited_no_change": [
+    {
+      "name": "박근혜",
+      "baseline_score": 4,
+      "reason": "Audited 2011 T0 is already the maximum locked score 4 because she was a viable nationwide presidential frontrunner. No prior-career value can exceed the scale ceiling.",
+      "confidence": "H",
+      "source_urls": ["https://www.yna.co.kr/view/AKR20110102037700001"]
+    },
+    {
+      "name": "장미란",
+      "baseline_score": 4,
+      "reason": "The T0 score is already at the scale ceiling. Before cutoff she had won the 2008 Olympic heavyweight gold medal while setting world records, directly satisfying the locked sports-apex definition.",
+      "confidence": "H",
+      "source_urls": ["https://www.yna.co.kr/view/AKR20080816060700007"]
+    },
+    {
+      "name": "김선욱",
+      "baseline_score": 3,
+      "reason": "He won the prestigious Leeds International Piano Competition in 2006 at age 18, the youngest winner in 40 years and first Asian winner. This is strong international-leading creator evidence, but not the locked field-defining global-apex score-4 threshold.",
+      "confidence": "H",
+      "source_urls": ["https://www.leedspiano.com/competitor/sunwook-kim/"]
+    },
+    {
+      "name": "박지성",
+      "baseline_score": 3,
+      "reason": "By cutoff he was an established Manchester United player with Champions League semifinal/final-stage experience and meaningful top-European-league status. This meets score 3 but not the sports score-4 definition of Olympic/world-championship/global-best individual apex.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.yna.co.kr/view/AKR20090506007800007",
+        "https://www.yna.co.kr/view/AKR20090810001300007"
+      ]
+    },
+    {
+      "name": "이불",
+      "baseline_score": 3,
+      "reason": "Her 1999 Venice Biennale special award and international art stature support score 3. The official Korean Pavilion record identifies the award as a special award, not the Golden Lion/global-apex equivalent used for score 4.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.arko.or.kr/biennale/content/643",
+        "https://www.donga.com/news/List/article/all/19990613/7447268/1"
+      ]
+    },
+    {
+      "name": "이정희",
+      "baseline_score": 3,
+      "reason": "She became Democratic Labor Party leader in July 2010, satisfying the nationwide-party-leader score-3 threshold. Her presidential candidacy occurred in 2012, after the 2011 cutoff; no pre-cutoff viable national presidential-contender score-4 status was identified.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.seoul.co.kr/news/politics/2010/07/16/20100716008009",
+        "https://www.yna.co.kr/view/AKR20100615215600001",
+        "https://www.yna.co.kr/view/AKR20121019216900001"
+      ]
+    },
+    {
+      "name": "김정주",
+      "baseline_score": 3,
+      "reason": "Before cutoff Nexon was already a major international game company and its Japanese listing plan was public, supporting major/global industry leadership. The actual Tokyo listing and later scale milestones occurred after the cutoff, and pre-cutoff evidence does not establish a world-industry-apex founder/CEO score 4.",
+      "confidence": "H",
+      "source_urls": ["https://www.mt.co.kr/stock/2010/12/07/2010120711163010702"]
+    },
+    {
+      "name": "이미경",
+      "baseline_score": 3,
+      "reason": "She had led CJ's entertainment expansion since the 1990s, including the DreamWorks investment and oversight of CJ entertainment/media businesses, clearly supporting major industry leadership. She was not a top-conglomerate-group chair or a world-industry-apex founder/CEO before cutoff, so score 4 is not warranted.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.etoday.co.kr/news/view/386508",
+        "https://www.berklee.edu/leadership/people/miky-lee-mie-kyung-lee"
+      ]
+    },
+    {
+      "name": "이수만",
+      "baseline_score": 3,
+      "reason": "By 2010 he was SM Entertainment's controlling shareholder and producer behind a resurgent, export-oriented Hallyu business. This supports top national/international cultural-industry leadership, but the pre-cutoff record does not meet the locked world-industry/field-defining apex score-4 threshold.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.yna.co.kr/view/AKR20100811184300008",
+        "https://www.mk.co.kr/economy/view.php?no=693319&sc=50000001&year=2010"
+      ]
+    },
+    {
+      "name": "정용진",
+      "baseline_score": 3,
+      "reason": "He had become Shinsegae's chief executive and group vice chairman before cutoff, with substantial strategic control over a major Korean retail group. Under the locked business rubric this is score 3; he was not yet the top conglomerate-group chairman/global-industry-apex role required for score 4.",
+      "confidence": "H",
+      "source_urls": ["https://koreajoongangdaily.joins.com/2010/06/27/industry/New-Shinsegae-Co-CEO-putting-customers-first/2922382.html"]
+    },
+    {
+      "name": "이서현",
+      "baseline_score": 3,
+      "reason": "She became a Samsung group vice president in December 2010 after progressively leading fashion and advertising functions. This supports major-group executive scope 3 but not top-conglomerate-chair/global-industry-apex score 4.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.yna.co.kr/view/AKR20101208008151003",
+        "https://www.newspim.com/news/view/20101208000539"
+      ]
+    },
+    {
+      "name": "손병두",
+      "baseline_score": 3,
+      "reason": "His G20 coordination leadership and earlier international-economic-policy career support major national/international policy scope 3. Available career chronology includes World Bank and finance-ministry roles but no pre-cutoff global multilateral-head or comparable score-4 apex role.",
+      "confidence": "H",
+      "source_urls": [
+        "https://www.seoul.co.kr/news/economy/2011/04/12/20110412029027",
+        "https://www.yna.co.kr/view/AKR20201218132851002"
+      ]
+    }
+  ],
+  "qa": {
+    "audited_n": 12,
+    "corrected_n": 0,
+    "no_change_n": 12,
+    "cumulative_new_people_audited_n": 21,
+    "new_2011_people_total": 62,
+    "remaining_prior_career_audit_n": 41
+  },
+  "guardrails": [
+    "A current T0 score of 4 resolves the prior-peak audit by ceiling; it does not imply every earlier year was score 4.",
+    "For T0 score 3, this pass asks only whether a defensible pre-cutoff score-4 apex existed.",
+    "Post-cutoff achievements are used only to establish chronology or exclusion and never raise the pre-cutoff baseline."
+  ]
+}
