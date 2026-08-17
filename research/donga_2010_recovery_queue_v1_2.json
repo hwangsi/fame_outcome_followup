@@ -1,0 +1,52 @@
+{
+  "version": "v1.2",
+  "generated": "2026-08-17",
+  "canonical_row_resolved_confirmed_n": 77,
+  "membership_slots_remaining_to_100": 23,
+  "repeat_2010_2011": {
+    "official_total_n": 38,
+    "row_resolved_n": 35,
+    "remaining_n": 3,
+    "business": {
+      "resolved_n": 13,
+      "target_n": 14,
+      "remaining_n": 1,
+      "candidate_pool": ["권구훈","김가영","김남구","손병두","최태원","황철주"],
+      "excluded_crossyear": ["양윤선","정용진"]
+    },
+    "science": {"resolved_n":8,"target_n":8,"remaining_n":0},
+    "culture_leader_intellectual_combined": {"resolved_n":14,"target_n":16,"remaining_n":2}
+  },
+  "excluded_2010_by_crossyear": [
+    {"name":"양윤선","basis":"2011 + 2013 + 2014 total-three Hall, absent 2012"},
+    {"name":"손열음","basis":"absent 2011; 2012 selected; later Donga says three consecutive and 2014 total-three Hall, forcing 2012-2014"},
+    {"name":"정용진","basis":"2011 and 2012 official member but absent from complete 2012 Hall of 2010-2012 three-year selections; therefore 2010 impossible"}
+  ],
+  "2013_hall_business_constraint": {
+    "total_business_hall_n": 8,
+    "explicit_text_resolved_n": 6,
+    "explicit_text_resolved": ["이서현","김정주","변대규","이해진","이미경","서경배"],
+    "unidentified_n": 2,
+    "high_priority_person": "황철주",
+    "high_priority_reason": "official 2011 member + absent 2012 + official 2013 selected-person response; 2013 Hall membership would uniquely force 2010"
+  },
+  "creative20_reconciliation": {
+    "secondary_full_names_n":20,
+    "canonical_intersection_n":16,
+    "pending_first_party":["김윤진","서도호","신지애","이청용"]
+  },
+  "legacy_records_still_unresolved": [
+    {"name":"윤명철","slot":"category_unknown","status":"probable_secondary_pending_first_party"},
+    {"name":null,"slot":"행동하는 지성인","status":"name_and_provenance_unresolved"},
+    {"name":null,"slot":"행동하는 지성인","status":"name_and_provenance_unresolved"}
+  ],
+  "priority_search_tracks": [
+    {"priority":1,"track":"2013_hall_business_missing_two","goal":"recover the two unnamed 2013 Hall business people, with Huang Chul-joo tested first"},
+    {"priority":2,"track":"repeat_nonbusiness_last_two","goal":"resolve last two nonbusiness repeats and test overlap with two provenance-lost 2010 intellectual slots"},
+    {"priority":3,"track":"creative_four_first_party","goal":"corroborate Kim Yun-jin, Do Ho Suh, Shin Ji-yai, Lee Chung-yong from 2010 first-party/contemporaneous official records"},
+    {"priority":4,"track":"yoon_myung_chul_first_party","goal":"qualifying 2010 evidence for Yoon Myung-chul"},
+    {"priority":5,"track":"original_2010_A1_A4_or_DNB2","goal":"recover exact printed/digital roster"}
+  ],
+  "acceptance_rule":"No person enters the canonical frozen roster without row-level evidence guaranteeing 2010 selection.",
+  "analysis_gate":"Do not calculate 2020 target-year metrics before exact 100/100 roster freeze, identity resolution, baseline/provenance storage and category reconciliation."
+}
