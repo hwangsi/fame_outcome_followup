@@ -1,0 +1,72 @@
+{
+  "schema_version": "h21_2004_full31_recovery_v0.1",
+  "generated": "2026-08-18",
+  "status": "partial_online_recovery_exhausted_pending_issue_scan",
+  "publication": "한겨레21",
+  "article_title": "고건 · 강금실, 박근혜를 누르다",
+  "article_transmission_date": "2004-09-20",
+  "survey_date": "2004-09-14",
+  "survey_firm": "리서치플러스",
+  "respondents_n": 700,
+  "population": "전국 성인남녀",
+  "collection": "전화면접",
+  "margin_of_error": "95% CI ±3.7%p",
+  "candidate_pool_n": 31,
+  "score_definition": "호감도 긍정평가와 국정수행 능력 긍정평가의 평균",
+  "primary_online_source": {
+    "type": "Nate retransmission of Hankyoreh21 article",
+    "url": "https://news.nate.com/view/20040920n06510?mid=n0000",
+    "recovery_note": "본문 텍스트에는 1~10위와 이인제 22위가 직접 서술되어 있으나 11~31위 전체 표/그래픽은 검색·텍스트 전송본에 포함되지 않음"
+  },
+  "issue_identification": {
+    "likely_issue_number": 528,
+    "likely_issue_date": "2004-09-22",
+    "status": "inferred_not_directly_verified_for_this_article",
+    "basis": "별도 재전송/인용 자료에서 한겨레21 제528호가 2004-09-22자로 확인되며 이 기사의 2004-09-20 전송 시점과 일치하는 발행주기",
+    "do_not_treat_as_primary_fact_until_scan": true
+  },
+  "known_ranked_rows": [
+    {"rank": 1, "name": "고건", "score_pct": 60.0, "status": "direct_text"},
+    {"rank": 2, "name": "강금실", "score_pct": 47.3, "status": "direct_text"},
+    {"rank": 3, "name": "박근혜", "score_pct": 46.5, "status": "direct_text"},
+    {"rank": 4, "name": "이회창", "score_pct": 33.8, "status": "direct_text"},
+    {"rank": 5, "name": "정몽준", "score_pct": 32.4, "status": "direct_text"},
+    {"rank": 6, "name": "정동영", "score_pct": 31.0, "status": "direct_text"},
+    {"rank": 7, "name": "권영길", "score_pct": 26.2, "status": "direct_text"},
+    {"rank": 8, "name": "이명박", "score_pct": null, "status": "direct_text_rank_score_missing"},
+    {"rank": 9, "name": "추미애", "score_pct": null, "status": "direct_text_rank_score_missing"},
+    {"rank": 10, "name": "이해찬", "score_pct": null, "status": "direct_text_rank_score_missing"},
+    {"rank": 22, "name": "이인제", "score_pct": null, "status": "direct_text_rank_score_missing"}
+  ],
+  "unknown_rank_slots": [11,12,13,14,15,16,17,18,19,20,21,23,24,25,26,27,28,29,30,31],
+  "qa": {
+    "candidate_pool_n": 31,
+    "known_names_n": 11,
+    "known_rank_slots_n": 11,
+    "unknown_rank_slots_n": 20,
+    "top10_complete_names": true,
+    "top10_scores_complete": false,
+    "full31_complete": false
+  },
+  "search_paths_attempted": [
+    "exact article title + rank fragments",
+    "known lower-rank anchor 이인제 22위",
+    "candidate-name + 호감도/능력평가 phrase searches",
+    "Hankyoreh21 domain/title searches",
+    "issue-number searches for 527/528",
+    "library/catalog and PDF/scan web searches",
+    "image-search attempt for article/table scan"
+  ],
+  "rejected_reconstruction_methods": [
+    "Do not infer membership from contemporary prominence alone.",
+    "Do not treat search-engine return for article-title + candidate as evidence of candidate inclusion because query terms may be ignored/loosely matched.",
+    "Do not borrow ranks from other 2004 surveys such as KSOI or other media polls.",
+    "Do not fabricate ranks 11~31 from later political prominence."
+  ],
+  "next_retrieval_gate": {
+    "preferred_source": "physical or digitized scan of the Hankyoreh21 issue containing the article/table",
+    "likely_target": "late-September 2004 issue, likely no. 528 but issue number must be verified from the scan",
+    "needed_artifact": "page image/PDF showing the 31-candidate ranking table or candidate list",
+    "on_retrieval": "transcribe all 31 names/ranks/scores with page-level provenance, then build h21_2004_full31 roster and extend Type-A common master"
+  }
+}
