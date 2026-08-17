@@ -1,0 +1,79 @@
+{
+  "schema_version": "donga_2011_post_t0_repeat_cutoff_audit_v0.1",
+  "generated": "2026-08-18",
+  "status": "resolved_4_of_4_repeat_cutoff_cases",
+  "selection_cutoff": "2011-04-01",
+  "purpose": "Resolve the four 2010↔2011 repeat-selected people whose locked 2010 post-T0 representative peak year could not by itself prove that the same peak level was observed after the 2011 selection cutoff.",
+  "rules_ref": "state/coding_rules_typeA_sector_scope_v0_1.md",
+  "people": [
+    {
+      "name": "강덕수",
+      "post2011_peak_role": "STX그룹 회장·주요 계열 경영인",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2013,
+      "sector_at_peak": "conglomerate_industry",
+      "evidence_confidence": "H",
+      "source_urls": [
+        "https://www.yna.co.kr/view/AKR20140211109300003"
+      ],
+      "reason": "연합뉴스는 강덕수가 2013년 7월 STX팬오션, 9월 STX조선해양, 11월 STX중공업 대표 자리에서 차례로 물러나고 2014년 2월 ㈜STX 경영에서도 완전히 퇴장했다고 보도한다. 따라서 2011-04-01 이후에도 major national conglomerate leadership score 3이 직접 확인된다.",
+      "exposure_truncated_by_death": false,
+      "death_year": null
+    },
+    {
+      "name": "박원순",
+      "post2011_peak_role": "서울특별시장",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2011,
+      "sector_at_peak": "politics_public_administration",
+      "evidence_confidence": "H",
+      "source_urls": [
+        "https://www.yna.co.kr/view/AKR20111027001500001"
+      ],
+      "reason": "2011년 10월 26일 서울시장 보궐선거 당선은 2011-04-01 cutoff 이후 사건이며, 광역단체장은 locked political rubric의 score 3 major national leadership에 해당한다.",
+      "exposure_truncated_by_death": true,
+      "death_year": 2020
+    },
+    {
+      "name": "유시민",
+      "post2011_peak_role": "통합진보당 공동대표",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2012,
+      "sector_at_peak": "politics",
+      "evidence_confidence": "H",
+      "source_urls": [
+        "https://www.yna.co.kr/view/AKR20120503032400001",
+        "https://www.yna.co.kr/view/AKR20111205084000001"
+      ],
+      "reason": "2011년 12월 통합진보당 출범과 2012년 5월 유시민의 공동대표 재직이 직접 확인된다. 전국정당 대표는 locked political rubric의 score 3에 해당하므로 cutoff 이후에도 baseline/2010 peak와 같은 major national leadership level을 유지했다.",
+      "exposure_truncated_by_death": false,
+      "death_year": null
+    },
+    {
+      "name": "이주호",
+      "post2011_peak_role": "부총리 겸 교육부장관",
+      "post2011_peak_score": 3,
+      "post2011_peak_year": 2022,
+      "sector_at_peak": "education_government",
+      "evidence_confidence": "H",
+      "source_urls": [
+        "https://moe.go.kr/mnstrBoardView.do?boardID=430&boardSeq=92982&lev=0"
+      ],
+      "reason": "교육부 공식 자료는 이주호가 2022년 11월 7일 부총리 겸 교육부장관으로 취임했음을 확인한다. 중앙정부 장관은 locked political/public rubric의 score 3에 해당하므로 2011 cutoff 이후 동일 major national leadership level이 명확히 재확인된다.",
+      "exposure_truncated_by_death": false,
+      "death_year": null
+    }
+  ],
+  "qa": {
+    "repeat_cutoff_reaudit_n": 4,
+    "resolved_n": 4,
+    "unresolved_n": 0,
+    "names": ["강덕수", "박원순", "유시민", "이주호"],
+    "score_counts": {"3": 4}
+  },
+  "guardrails": [
+    "This audit only establishes post-2011-cutoff observation of the peak level; it does not make repeat selection causal.",
+    "For a same-score post-cutoff role, advancement relative to the 2011 lifetime baseline remains zero when baseline_2011 is also 3.",
+    "박원순 remains exposure-truncated by death in 2020; death truncation is not coded as failure."
+  ]
+}
