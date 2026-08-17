@@ -1,0 +1,46 @@
+{
+  "schema_version": "donga_2010_canonical_roster_v1.0",
+  "generated": "2026-08-17",
+  "cohort": {
+    "outlet": "동아일보",
+    "title": "2020년 한국을 빛낼 100인",
+    "selection_year": 2010,
+    "explicit_target_year": 2020,
+    "total_n": 100
+  },
+  "canonical_n": 77,
+  "remaining_to_100": 23,
+  "construction": {
+    "base_v0_2_n": 67,
+    "post_v0_2_additions_n": 10,
+    "deduplication_rule": "canonical_n is the size of the unique person-name union, never an accumulated historical count",
+    "base_source": "data/typeA/donga_2010_2020_100_seed_v0_2_cleaned.json"
+  },
+  "base_v0_2_names": [
+    "강덕수","강방천","김기문","김문수","김빛내리","김연아","김창진","김택진","김필립","김해성","김현수","남수정","남홍길","노희경","박민규","박병엽","박성훈","박승정","박지영","박진영","박현주","백경학","봉준호","서경배","서동철","서정진","성영석","송영길","신경숙","신동빈","신재원","심승현","안동현","안철수","양성원","오세훈","오충현","원희룡","유시민","이광형","이명균","이부진","이상엽","이연주","이원규","이재용","이지오","이해진","이효철","임경진","임지순","임태희","장하준","장한나","정연두","정욱준","정의선","정태영","정하웅","조국","조동호","조성진","주영석","찰스 리","최은석","한숭희","홍명보"
+  ],
+  "post_v0_2_additions": [
+    {"name":"김정범","route":"previous row-level evidence audit","confidence":"H"},
+    {"name":"박원순","route":"later Donga exact-year retrospective explicitly covering 2010 and 2011","confidence":"H","category_2010":"행동하는 지성인"},
+    {"name":"이창용","route":"exact retrospective/repeat evidence guaranteeing 2010 membership","confidence":"H"},
+    {"name":"신현송","route":"2012 Donga Hall-of-Fame three-year membership evidence","confidence":"H"},
+    {"name":"현택환","route":"later Donga exact 2010-2012 three-year selection statement","confidence":"H"},
+    {"name":"나경원","route":"2011 official roster + 2012 absence + 2013 Donga Hall total-three logic","confidence":"H","category_2010":"unknown"},
+    {"name":"김준영","route":"2011 official roster + 2012 absence + 2013 Donga Hall total-three logic","confidence":"H","category_2010":"unknown"},
+    {"name":"김용","route":"2010 Donga DNB2 primary article","confidence":"H","category_2010":"unknown"},
+    {"name":"이상훈","route":"2010 Donga launch primary article","confidence":"H","category_2010":"unknown"},
+    {"name":"박인출","route":"2010 contemporaneous specialist-media reports naming Donga selection and category","confidence":"M","category_2010":"도전하는 경제인"}
+  ],
+  "canonical_names": [
+    "강덕수","강방천","김기문","김문수","김빛내리","김연아","김용","김정범","김준영","김창진","김택진","김필립","김해성","김현수","나경원","남수정","남홍길","노희경","박민규","박병엽","박성훈","박승정","박원순","박인출","박지영","박진영","박현주","백경학","봉준호","서경배","서동철","서정진","성영석","송영길","신경숙","신동빈","신재원","신현송","심승현","안동현","안철수","양성원","오세훈","오충현","원희룡","유시민","이광형","이명균","이부진","이상엽","이상훈","이연주","이원규","이재용","이지오","이창용","이해진","이효철","임경진","임지순","임태희","장하준","장한나","정연두","정욱준","정의선","정태영","정하웅","조국","조동호","조성진","주영석","찰스 리","최은석","한숭희","현택환","홍명보"
+  ],
+  "validation": {
+    "base_unique_n": 67,
+    "additions_unique_n": 10,
+    "overlap_base_additions_n": 0,
+    "canonical_unique_n": 77,
+    "status": "set-audited"
+  },
+  "historical_count_warning": "Legacy aggregate counts such as 78/100 are audit artifacts and must not replace this explicit unique-person canonical set unless their missing rows are reattached with row-level evidence.",
+  "analysis_gate": "Do not calculate 2020 target-year metrics before exact 100/100 roster freeze, identity resolution, baseline/provenance storage, and category reconciliation."
+}
