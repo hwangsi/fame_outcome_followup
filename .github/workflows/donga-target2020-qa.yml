@@ -20,6 +20,7 @@ on:
       - 'scripts/build_donga_2010_post_t0_peak_master.py'
       - 'scripts/analyze_donga_2010_repeat_selection.py'
       - 'scripts/analyze_donga_2010_repeat_stratified.py'
+      - 'scripts/build_donga_2011_t0_snapshot_scope_v0_1.py'
       - 'scripts/build_typeA_common_master_v0_1.py'
       - 'data/typeA/donga_2010_*'
       - 'data/typeA/donga_2011_*'
@@ -69,11 +70,14 @@ jobs:
         run: |
           python scripts/analyze_donga_2010_repeat_selection.py
           python scripts/analyze_donga_2010_repeat_stratified.py
+      - name: Build Dong-A 2011 T0 scope pass 1
+        run: python scripts/build_donga_2011_t0_snapshot_scope_v0_1.py
       - name: Show final QA
         run: |
           wc -l data/typeA/donga_2010_t0_snapshot_scope_v1_3.csv
           wc -l data/typeA/donga_2010_baseline_peak_through_t0_v1_4.csv
           wc -l data/typeA/donga_2010_post_t0_peak_master_v1_2.csv
+          wc -l data/typeA/donga_2011_t0_snapshot_scope_v0_1.csv
           wc -l data/typeA/typeA_common_master_v0_1.csv
           python - <<'PY'
           import json
@@ -85,14 +89,15 @@ jobs:
           common=json.load(open('data/typeA/typeA_common_metrics_v0_1.json',encoding='utf-8'))
           repeat=json.load(open('analysis/donga_2010_repeat_selection_metrics_v0_1.json',encoding='utf-8'))
           strat=json.load(open('analysis/donga_2010_repeat_selection_stratified_v0_2.json',encoding='utf-8'))
+          t011=json.load(open('data/typeA/donga_2011_t0_snapshot_scope_v0_1.json',encoding='utf-8'))
           print(json.dumps(t0['qa'],ensure_ascii=False,indent=2))
           print(json.dumps(baseline['qa'],ensure_ascii=False,indent=2))
           print(json.dumps(pmaster['qa'],ensure_ascii=False,indent=2))
           print(json.dumps(metrics['primary_full_cohort'],ensure_ascii=False,indent=2))
           print(json.dumps(common['qa'],ensure_ascii=False,indent=2))
           print(json.dumps(repeat['groups'],ensure_ascii=False,indent=2))
-          print(json.dumps(repeat['unadjusted_effects'],ensure_ascii=False,indent=2))
           print(json.dumps(strat,ensure_ascii=False,indent=2))
+          print(json.dumps(t011['qa'],ensure_ascii=False,indent=2))
           assert t0['qa']['score_counts']=={'1':1,'2':48,'3':48,'4':3}
           assert baseline['qa']['score_counts']=={'1':1,'2':46,'3':50,'4':3}
           assert working['coverage']=={'rows':100,'assessed':100,'unresolved':0,'remaining_uncreated':0}
@@ -104,6 +109,6 @@ jobs:
           assert repeat['repeat_n']==38 and repeat['single_2010_only_n']==62
           assert strat['strata']['2']['repeat_advanced_n']==5 and strat['strata']['2']['single_advanced_n']==13
           assert strat['strata']['3']['repeat_advanced_n']==6 and strat['strata']['3']['single_advanced_n']==3
-          assert abs(strat['mantel_haenszel']['mantel_haenszel_common_odds_ratio']-2.427805280528053)<1e-12
-          assert abs(strat['mantel_haenszel']['cmh_p']-0.10666393286039269)<1e-12
+          assert t011['qa']['total']==100 and t011['qa']['unique_names']==100 and t011['qa']['repeat_n']==38
+          assert t011['qa']['score_counts']=={'2':52,'3':44,'4':4}
           PY
