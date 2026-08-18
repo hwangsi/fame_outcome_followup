@@ -1,7 +1,7 @@
 {
   "schema_version": "khan_2005_scitech_person9_longitudinal_freeze_v1.0",
   "generated": "2026-08-18",
-  "status": "frozen_t10_t20_person9",
+  "status": "frozen_t10_t20_person9_corrected",
   "population": {"person_n": 9, "field_selected_units": 10, "organization_unit": "한국공학교육인증원"},
   "target_windows": {"t10": "2015 ±1 year (2014-2016)", "t20": "2025 ±1 year (2024-2026)"},
   "t10": {
@@ -15,16 +15,23 @@
   "t20": {
     "assessable_n": 9,
     "competing_event_n": 0,
-    "score_distribution": {"0": 0, "1": 1, "2": 3, "3": 3, "4": 2, "null": 0},
-    "scope_ge2_n": 8,
-    "major_ge3_n": 5,
+    "score_distribution": {"0": 0, "1": 2, "2": 3, "3": 2, "4": 2, "null": 0},
+    "scope_ge2_n": 7,
+    "major_ge3_n": 4,
     "apex_eq4_n": 2
   },
   "audit_ref": "research/khan_2005_scitech_person9_longitudinal_audit_v0_1.json",
   "metrics_ref": "data/typeA/khan_2005_scitech_person9_longitudinal_metrics_v1_0.json",
+  "correction": {
+    "name": "신희섭",
+    "old_t20_score": 3,
+    "new_t20_score": 1,
+    "evidence": "IBS official retirement ceremony 2020-12-23"
+  },
   "guardrails": [
     "Person9 is a unit-type-specific secondary analysis within the original science-tech10 mixed field.",
     "ABEEK is not given a person scope score.",
-    "Historic scientific apex is not mechanically inherited into later snapshots."
+    "Historic scientific apex is not mechanically inherited into later snapshots.",
+    "Former institutional leadership is not inherited after documented retirement."
   ]
 }
