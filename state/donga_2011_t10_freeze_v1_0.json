@@ -1,0 +1,51 @@
+{
+  "schema_version": "donga_2011_t10_freeze_v1.0",
+  "generated": "2026-08-18",
+  "status": "frozen_complete_100_of_100",
+  "cohort": "동아일보 2011 10년 뒤 한국을 빛낼 100인",
+  "master_ref": "data/typeA/donga_2011_t10_final_master_v1_0.json",
+  "metrics_ref": "data/typeA/donga_2011_t10_metrics_v1_0.json",
+  "protocol_ref": "state/donga_2011_t10_protocol_v0_1.md",
+  "window": {"target_year":2021,"window_start":"2020-01-01","window_end":"2022-12-31","priority":"2021 direct > nearest 2020/2022"},
+  "final_population": {
+    "original_n":100,
+    "final_path_n":100,
+    "assessable_n":90,
+    "competing_event_n":1,
+    "competing_event_names":["박원순"],
+    "untraceable_n":9,
+    "untraceable_names":["강덕수","김준영","김해성","박지영","김영준","신준호","하상백","김상우","최재경"]
+  },
+  "primary_t10_metrics": {
+    "scope_ge2":"87/90 = 96.7%",
+    "major_ge3":"63/90 = 70.0%",
+    "apex_eq4":"4/90 = 4.4%"
+  },
+  "evidence_provenance": {"exact_2021_or_tenure":81,"nearest_2020":8,"nearest_2022":1},
+  "repeat_vs_new_descriptive": {
+    "repeat":{"original_n":38,"assessable_n":33,"major":"25/33 = 75.8%","apex":"3/33 = 9.1%"},
+    "new":{"original_n":62,"assessable_n":57,"major":"38/57 = 66.7%","apex":"1/57 = 1.8%"},
+    "fisher_two_sided":{"major_p":0.4754393407,"apex_p":0.1377243962},
+    "interpretation":"No statistically clear repeat-vs-new difference at T+10; exploratory observational comparison only."
+  },
+  "key_methodological_findings": [
+    "Lifetime post-selection Major was 90% in the 2011 cohort, whereas fixed-window T+10 Major is 70.0% among assessable persons; eventual attainment and target-window occupancy are different outcomes.",
+    "Lifetime Apex was 12% but T+10 Apex is 4.4% among assessable persons.",
+    "2021-first priority materially changes individual coding: e.g., later or earlier higher peaks are not automatically imported into the target-year snapshot.",
+    "Nine people remain untraceable rather than being forced to low scores; one death is a competing event."
+  ],
+  "freeze_invariants": [
+    "100/100 original selections have a final T+10 path",
+    "100 unique names; no duplicate person rows inside this cohort",
+    "all assessable rows use evidence inside 2020-2022",
+    "direct 2021 evidence has priority",
+    "competing event and untraceable are excluded from the primary assessable denominator",
+    "no future post-2022 role raises the T+10 score",
+    "no historical lifetime peak is copied solely because it is higher"
+  ],
+  "next_recommended_analysis": [
+    "Compare Dong-A 2010 canonical target2020/T+10 and Dong-A 2011 T+10 with harmonized denominator semantics.",
+    "Use placement-level comparison first, then a deduplicated 162-person two-wave sensitivity analysis because 38 people repeat across waves.",
+    "Materialize these fixed-window fields into the next Type-A common master version."
+  ]
+}
