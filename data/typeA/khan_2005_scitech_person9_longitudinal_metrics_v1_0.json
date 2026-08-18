@@ -35,11 +35,11 @@
     "t20": {
       "assessable_n": 9,
       "competing_event_n": 0,
-      "score_distribution": {"0": 0, "1": 1, "2": 3, "3": 3, "4": 2, "null": 0},
-      "scope_ge2_n": 8,
-      "scope_ge2_rate_assessable": 0.8888888888888888,
-      "major_ge3_n": 5,
-      "major_ge3_rate_assessable": 0.5555555555555556,
+      "score_distribution": {"0": 0, "1": 2, "2": 3, "3": 2, "4": 2, "null": 0},
+      "scope_ge2_n": 7,
+      "scope_ge2_rate_assessable": 0.7777777777777778,
+      "major_ge3_n": 4,
+      "major_ge3_rate_assessable": 0.4444444444444444,
       "apex_eq4_n": 2,
       "apex_eq4_rate_assessable": 0.2222222222222222
     }
@@ -48,10 +48,16 @@
     "ever_advanced_n_full": 3,
     "ever_advanced_rate_full": 0.3333333333333333,
     "t10_major_among_assessable": {"n": 5, "denominator": 9, "rate": 0.5555555555555556},
-    "t20_major_among_assessable": {"n": 5, "denominator": 9, "rate": 0.5555555555555556},
+    "t20_major_among_assessable": {"n": 4, "denominator": 9, "rate": 0.4444444444444444},
     "t10_apex_among_assessable": {"n": 0, "denominator": 9, "rate": 0.0},
     "t20_apex_among_assessable": {"n": 2, "denominator": 9, "rate": 0.2222222222222222},
-    "interpretation": "Major-scope persistence is stable from T+10 to T+20, while the composition changes. Some original senior scientific leaders remain active at score3, a former founder recedes, and Ahn Cheol-soo plus Lee Sang-yup reach in-window apex roles through politics and field-defining scientific achievement respectively."
+    "interpretation": "Major-scope presence declines modestly from T+10 to T+20, while apex presence appears in two rows through Ahn Cheol-soo's in-window presidential nomination contest and Lee Sang-yup's current field-defining scientific leadership. The corrected T20 coding removes Shin Hee-sup's former IBS directorship after his documented 2020 retirement."
+  },
+  "correction_note": {
+    "name": "신희섭",
+    "old_t20_score": 3,
+    "new_t20_score": 1,
+    "effect": "t20 major 5->4; scope>=2 8->7; score1 1->2; score3 3->2"
   },
   "source_audit": "research/khan_2005_scitech_person9_longitudinal_audit_v0_1.json",
   "guardrails": [
