@@ -1,0 +1,52 @@
+name: Materialize corrected Type-A common v0.4
+
+on:
+  push:
+    paths:
+      - 'scripts/build_typeA_common_master_v0_4_corrected.py'
+      - 'research/khan_2005_politics10_identity_audit_v0_2.json'
+      - '.github/workflows/materialize-typeA-common-v0-4-corrected.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build corrected common v0.4
+        run: python scripts/build_typeA_common_master_v0_4_corrected.py
+      - name: QA corrected identity counts
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('data/typeA/typeA_common_master_v0_4.json',encoding='utf-8'))
+          m=json.load(open('data/typeA/typeA_common_metrics_v0_4.json',encoding='utf-8'))
+          f=json.load(open('state/typeA_common_master_freeze_v0_4.json',encoding='utf-8'))
+          q=d['qa']
+          assert q['placements']==255
+          assert q['unique_people']==193
+          assert q['unique_display_names']==192
+          assert q['cohort_units']==7
+          assert q['not_assessable_placements']==1
+          assert m['naive_placement_pooled_descriptive']['major_n']==216
+          assert m['naive_placement_pooled_descriptive']['apex_n']==44
+          assert m['naive_placement_pooled_descriptive']['advanced_n']==106
+          assert m['person_first_selection_descriptive']['persons']==193
+          assert f['qa']==q
+          PY
+          test "$(wc -l < data/typeA/typeA_common_master_v0_4.csv)" -eq 256
+      - name: Persist corrected outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/typeA/typeA_common_master_v0_4.json data/typeA/typeA_common_master_v0_4.csv data/typeA/typeA_common_metrics_v0_4.json state/typeA_common_master_freeze_v0_4.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Materialize corrected Type-A common v0.4"
+            git push
+          fi
