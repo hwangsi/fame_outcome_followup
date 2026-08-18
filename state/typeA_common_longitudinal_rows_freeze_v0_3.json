@@ -1,0 +1,65 @@
+{
+  "schema_version": "typeA_common_longitudinal_rows_freeze_v0.3",
+  "generated": "2026-08-18",
+  "qa": {
+    "snapshot_rows": 374,
+    "unique_snapshot_ids": 374,
+    "cohort_units": 4,
+    "cohort_window_cells": 7,
+    "row_ready_selected_placements": 277,
+    "by_cohort": {
+      "khan_2004_17th_assembly_newleaders_20": {
+        "selected_person_placements": 20,
+        "snapshot_rows": 60,
+        "windows": [
+          "t10",
+          "t20",
+          "current"
+        ]
+      },
+      "khan_2005_korea_leaders60_person57": {
+        "selected_person_placements": 57,
+        "snapshot_rows": 114,
+        "windows": [
+          "t10",
+          "t20"
+        ],
+        "secondary_of_mixed_60_unit_selection": true
+      },
+      "donga_2010_2020_100": {
+        "selected_person_placements": 100,
+        "snapshot_rows": 100,
+        "windows": [
+          "t10"
+        ]
+      },
+      "donga_2011_10yr_100": {
+        "selected_person_placements": 100,
+        "snapshot_rows": 100,
+        "windows": [
+          "t10"
+        ]
+      }
+    },
+    "khan_2005_corrected_t20": {
+      "assessable_n": 52,
+      "scope_ge2_n": 43,
+      "major_ge3_n": 26,
+      "apex_eq4_n": 10
+    },
+    "remaining_completed_metric_only_cohorts": []
+  },
+  "sources": [
+    "data/typeA/typeA_common_longitudinal_rows_v0_2.json",
+    "data/typeA/khan_2005_korea_leaders60_person57_common_longitudinal_rows_v0_1.json"
+  ],
+  "supersedes": "state/typeA_common_longitudinal_rows_freeze_v0_2.json",
+  "guardrails": [
+    "one row equals one cohort-placement x fixed-window snapshot",
+    "Kyunghyang 2005 person57 is a secondary person-only analysis of a mixed 60-unit selection",
+    "organization units remain excluded from person-scope row master",
+    "same person selected in different cohorts remains separate placement exposure",
+    "competing events and untraceable rows remain null rather than failure scores",
+    "Kyunghyang 2005 T20 uses corrected Shin Hee-sup retirement coding"
+  ]
+}
