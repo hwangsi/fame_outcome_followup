@@ -1,0 +1,194 @@
+{
+  "schema_version": "khan_2005_economy_person9_peak_audit_v0.1",
+  "generated": "2026-08-18",
+  "status": "peak_audited_9_of_9_person_units",
+  "parent_selection": "khan_2005_korea_leaders60",
+  "parent_selected_units": 60,
+  "field": "경제",
+  "field_selected_units": 10,
+  "field_person_units": 9,
+  "field_organization_units": 1,
+  "organization_unit": "NHN",
+  "field_specific_secondary": true,
+  "selection_cutoff": "2005-12-15",
+  "publication_date": "2005-12-30",
+  "selection_cutoff_basis": "Methodology article states the selection work ran through 2005-12-15; publication occurred 15 days later.",
+  "rules_ref": [
+    "state/coding_rules_typeA_v0_1.md",
+    "state/coding_rules_typeA_sector_scope_v0_1.md",
+    "state/coding_rules_typeA_mixed_unit_v0_1.md",
+    "state/coding_rules_typeA_organization_outcomes_v0_1.md"
+  ],
+  "people": [
+    {
+      "name": "김석동",
+      "t0_role": "재정경제부 차관보·8·31 부동산정책 실무 총괄",
+      "baseline_peak_through_t0": 2,
+      "baseline_reason": "중앙 경제부처의 고위 정책책임자였으나 장관·기관 수장급 score 3에는 아직 도달하지 않은 것으로 보수적으로 코딩.",
+      "post_t0_peak_role": "제3대 금융위원장",
+      "post_t0_peak_year": 2011,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301526291",
+        "https://www.korea.kr/news/policyNewsView.do?newsId=110084223",
+        "https://www.yna.co.kr/view/AKR20150217180600002"
+      ]
+    },
+    {
+      "name": "박현주",
+      "t0_role": "미래에셋 회장·자산운용/증권/보험 등 금융그룹 창업자",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "2005년 이미 국내 자본시장 주요 금융그룹 회장으로 대기업·산업 주요 리더 stratum.",
+      "post_t0_peak_role": "미래에셋그룹 창업자·Global Strategy Officer; 19개국 네트워크와 대규모 글로벌 운용 플랫폼 구축",
+      "post_t0_peak_year": 2024,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "scope4_basis": "공식 프로필 기준 미래에셋이 19개국, 834조원 이상 운용 및 글로벌 ETF 자산규모 12위로 성장했고, 2024 AIB 올해의 국제 최고경영자상을 수상. 세계 산업 apex급 창업자/CEO 규칙을 충족한다고 판정.",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301526291",
+        "https://securities.miraeasset.com/newir/view/pc/kr/about/founderGISO.jsp"
+      ]
+    },
+    {
+      "name": "이구택",
+      "t0_role": "포스코 회장",
+      "baseline_peak_through_t0": 4,
+      "post_t0_peak_role": "포스코 회장 지속 후 2009년 퇴임",
+      "post_t0_peak_year": 2006,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301526291",
+        "https://www.idaegu.co.kr/news/articleView.html?idxno=4470"
+      ]
+    },
+    {
+      "name": "이재용",
+      "t0_role": "삼성전자 임원(상무급 경영수업 단계)",
+      "baseline_peak_through_t0": 2,
+      "baseline_reason": "글로벌 대기업 내 전국 단위 안정적 경영 역할은 확인되나 당시 최고경영진/부회장급은 아님.",
+      "post_t0_peak_role": "삼성전자 회장",
+      "post_t0_peak_year": 2022,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 2,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301526291",
+        "https://www.yna.co.kr/view/AKR20221027165800704"
+      ]
+    },
+    {
+      "name": "이재현",
+      "t0_role": "CJ그룹 대표이사 회장",
+      "baseline_peak_through_t0": 4,
+      "post_t0_peak_role": "CJ그룹 회장 지속·글로벌 생활문화기업 확장",
+      "post_t0_peak_year": 2006,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301526291",
+        "https://www.cj.net/cj-introduction"
+      ]
+    },
+    {
+      "name": "장하준",
+      "t0_role": "케임브리지대 교수·뮈르달상 및 레온티에프상 수상 경제학자",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "국제적으로 반복 검증된 최상위 연구성과를 가진 세계적 선도 연구자 stratum.",
+      "post_t0_peak_role": "SOAS 런던대 경제학 연구교수·지속적 국제 학술/저술 활동",
+      "post_t0_peak_year": 2023,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301526291",
+        "https://www.soas.ac.uk/about/ha-joon-chang"
+      ]
+    },
+    {
+      "name": "정의선",
+      "t0_role": "기아자동차 사장·현대모비스 사장·현대기아차 기획총괄본부 사장",
+      "baseline_peak_through_t0": 3,
+      "post_t0_peak_role": "현대자동차그룹 회장",
+      "post_t0_peak_year": 2020,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301526291",
+        "https://www.hyundai.com/content/hyundai/worldwide/en/newsroom/detail/euisun-chung-inaugurated-as-chairman-of-hyundai-motor-group%252C-opening-a-new-chapter-in-history-0000000611.html"
+      ]
+    },
+    {
+      "name": "최태원",
+      "t0_role": "SK 회장",
+      "baseline_peak_through_t0": 4,
+      "post_t0_peak_role": "SK그룹 회장 지속",
+      "post_t0_peak_year": 2006,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301526291",
+        "https://www.sk.co.kr/en/about/about.jsp"
+      ]
+    },
+    {
+      "name": "황창규",
+      "t0_role": "삼성전자 반도체총괄 사장·메모리 반도체 기술/사업 리더",
+      "baseline_peak_through_t0": 3,
+      "post_t0_peak_role": "KT 대표이사 회장",
+      "post_t0_peak_year": 2014,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "score3_guardrail": "KT는 국내 대표 대기업이지만 sector rule의 score 4 예시인 최상위 대기업집단 회장 또는 세계 산업 apex급 창업자/CEO로 자동 상향하지 않고 대기업 최고경영 리더 score 3으로 보수적으로 고정.",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301526291",
+        "https://www.yna.co.kr/view/AKR20140127198151017"
+      ]
+    }
+  ],
+  "qa": {
+    "audited_person_n": 9,
+    "baseline_distribution": {"2": 2, "3": 4, "4": 3},
+    "baseline_mean": 3.111111111111111,
+    "post_peak_distribution": {"3": 3, "4": 6},
+    "post_peak_mean": 3.6666666666666665,
+    "major_n": 9,
+    "major_rate": 1.0,
+    "apex_n": 6,
+    "apex_rate": 0.6666666666666666,
+    "advanced_n": 4,
+    "advanced_rate": 0.4444444444444444,
+    "sustained_high_n": 5,
+    "sustained_high_rate": 0.5555555555555556,
+    "lower_than_baseline_n": 0,
+    "apex_names": ["박현주", "이구택", "이재용", "이재현", "정의선", "최태원"],
+    "advanced_names": ["김석동", "박현주", "이재용", "정의선"],
+    "sustained_high_names": ["이구택", "이재현", "장하준", "최태원", "황창규"]
+  },
+  "interpretation_guardrails": [
+    "The original economy field denominator is 10 selected units: 9 persons plus NHN as one organization.",
+    "The 9-person career-scope metrics are a unit-type-specific secondary analysis and must not be reported as the full economy10 result.",
+    "NHN is tracked separately under the organization outcome architecture and is not assigned person Major/Apex/Advanced labels.",
+    "Baseline is lifetime peak through the 2005-12-15 selection cutoff, not merely the title printed on 2005-12-30.",
+    "Continuing the same apex role after T0 can establish post-T0 sustained_high, but it is not advancement.",
+    "박현주 score4 is based on later demonstrated global-scale founder/CEO scope rather than 2005 expectations.",
+    "황창규 remains score3 at KT chairman under a conservative anti-inflation rule; large-company chairmanship alone is not automatically score4 unless it meets the frozen apex criterion."
+  ]
+}
