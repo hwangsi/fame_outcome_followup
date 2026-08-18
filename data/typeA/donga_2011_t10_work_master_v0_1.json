@@ -1,0 +1,76 @@
+{
+  "schema_version": "donga_2011_t10_work_master_v0.1",
+  "generated": "2026-08-18",
+  "status": "coverage_paths_100_of_100_not_final_scores",
+  "cohort": {
+    "outlet": "동아일보",
+    "title": "10년 뒤 한국을 빛낼 100인",
+    "selection_year": 2011,
+    "total_n": 100
+  },
+  "window": {
+    "window_id": "t10",
+    "target_year": 2021,
+    "window_start": "2020-01-01",
+    "window_end": "2022-12-31"
+  },
+  "protocol_ref": "state/donga_2011_t10_protocol_v0_1.md",
+  "roster_ref": "data/typeA/donga_2011_100_roster_v0_1.json",
+  "repeat_inventory_ref": "research/donga_2011_t10_repeat38_reuse_inventory_v0_1.json",
+  "newentrant_inventory_ref": "research/donga_2011_t10_newentrant_reuse_inventory_v1_0.json",
+  "path_summary": {
+    "total": 100,
+    "repeat_existing_2020_candidate_path": 38,
+    "newentrant_peak_inside_window_candidate": 18,
+    "newentrant_requires_window_specific_reaudit": 44,
+    "known_competing_event": 1,
+    "known_competing_event_names": ["박원순"],
+    "note": "Categories overlap logically: the competing-event row belongs to the repeat-38 path. No final T+10 metrics are allowed yet."
+  },
+  "repeat_existing_2020_candidate_path_names": [
+    "강덕수","김기문","김문수","김빛내리","김연아","김정범","김준영","김택진","김필립","김해성","나경원","박원순","박지영","박진영","박현주","봉준호","서정진","신지애","신현송","안철수","오세훈","원희룡","유시민","이부진","이상엽","이재용","이주호","이창용","이해진","임지순","장하준","장한나","정의선","정태영","정하웅","조국","최태원","현택환"
+  ],
+  "newentrant_peak_inside_window_candidate_names": [
+    "박형준","김남구","윤순진","김부겸","김태효","손병두","손흥민","김정주","이미경","황철주","손영래","양윤선","유범재","조명숙","이상이","김철영","이연희","정근창"
+  ],
+  "newentrant_requires_window_specific_reaudit_names": [
+    "김상욱","김승환","김영달","김은성","남광희","남민우","박상일","박형주","백운규","이창준","장하석","정준","함돈희","김선욱","김애란","김영준","김영하","박지성","신준호","윤태호","이불","이수만","이자람","장미란","하상백","하정우","박근혜","이정희","임성남","권구훈","김가영","변대규","이서현","정용진","강일원","곽노현","김상우","김은식","백승헌","석지영","이국종","전혜경","정일용","최재경"
+  ],
+  "special_cases": {
+    "박원순": {
+      "planned_status": "competing_event",
+      "death_year": 2020,
+      "scope_score": null,
+      "reason": "Death before target year 2021 prevents ordinary role-occupancy assessment."
+    },
+    "김정주": {
+      "planned_status": "assessable_if_exact_2021_evidence_retained",
+      "death_year": 2022,
+      "reason": "Exact 2021 NXC leadership is already observed; later death does not retroactively erase the exact-target-year snapshot."
+    },
+    "신준호": {
+      "planned_status": "requires_identity_window_search",
+      "reason": "Lifetime peak layer is not assessable; T+10 must independently search for same-person 2020-2022 evidence rather than inherit not-assessable automatically."
+    }
+  },
+  "qa_invariants": [
+    "38 repeat + 62 new entrants = 100",
+    "18 reuse candidates + 44 new-entrant reaudit rows = 62",
+    "all names are members of the frozen 2011 roster",
+    "no final snapshot score is inferred solely because a historical lifetime peak exists",
+    "2021 direct evidence has priority over 2020 or 2022 nearest evidence",
+    "post-2022 roles cannot raise T+10 scores",
+    "death before target-year assessment is not coded as ordinary failure"
+  ],
+  "analysis_gate": {
+    "final_t10_metrics_allowed": false,
+    "unlock_conditions": [
+      "100/100 rows receive a final path status",
+      "all assessable rows have 2020-2022 evidence with 2021-first priority checked",
+      "competing events are explicitly separated",
+      "identity QA is complete",
+      "untraceable rows, if any, are explicit"
+    ]
+  },
+  "next": "Resolve the 38 repeat rows with 2021-first evidence priority, then audit the 44 new-entrant rows that lack an in-window peak event."
+}
