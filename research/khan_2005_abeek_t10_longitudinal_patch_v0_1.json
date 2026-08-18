@@ -1,0 +1,30 @@
+{
+  "schema_version": "khan_2005_abeek_t10_longitudinal_patch_v0.1",
+  "generated": "2026-08-18",
+  "status": "t10_organization_snapshot_complete",
+  "parent_selection": "khan_2005_korea_leaders60",
+  "field": "과학기술",
+  "organization_id": "org-khan05-abeek",
+  "entity_key_t0": "한국공학교육인증원",
+  "target_window": "2015 ±1 year (2014-2016)",
+  "t10": {
+    "operational_status": "active",
+    "continuity_class": "direct_continuity",
+    "reach": "international_reach",
+    "field_leadership": "leading",
+    "institutional_influence": "high",
+    "trajectory": "expanded",
+    "confidence": "H",
+    "notes": "By the T+10 window ABEEK had already become a full Washington Accord member (2007), joined Sydney/Dublin Accords as a full member (2013), and was formally designated as an engineering-program evaluation/accreditation recognition body (2013). In 2014 it evaluated programs at 54 universities and in 2015 continued national accreditation forums and operations."
+  },
+  "evidence": [
+    "https://www.abeek.or.kr/abeek/history",
+    "https://www.abeek.or.kr/intro/benefitg",
+    "https://www.abeek.or.kr/lab/relation/1329?keyword=&page="
+  ],
+  "rules_ref": [
+    "state/coding_rules_typeA_organization_outcome_v0_1.md",
+    "research/khan_2005_organizations_outcome_audit_v0_1.json"
+  ],
+  "guardrail": "This organization snapshot uses organization axes only and has no person scope score."
+}
