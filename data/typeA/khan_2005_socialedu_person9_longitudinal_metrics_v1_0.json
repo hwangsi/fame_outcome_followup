@@ -1,0 +1,15 @@
+{
+  "schema_version": "khan_2005_socialedu_person9_longitudinal_metrics_v1.0",
+  "generated": "2026-08-18",
+  "population": {"person_n":9,"field_selected_units":10,"organization_n":1,"organization_unit":"경제정의실천시민연합","unit_type_specific_secondary":true,"death_truncated_ever_n":2},
+  "target_windows": {"t10":"2015 ±1 year (2014-2016)","t20":"2025 ±1 year (2024-2026)"},
+  "peak_reference": {"major_n":9,"apex_n":5,"advanced_n":4,"sustained_high_n":5},
+  "snapshots": {
+    "t10": {"assessable_n":8,"competing_event_n":1,"score_distribution":{"0":0,"1":0,"2":6,"3":2,"4":0,"null":1},"scope_ge2_n":8,"scope_ge2_rate_assessable":1.0,"major_ge3_n":2,"major_ge3_rate_assessable":0.25,"apex_eq4_n":0,"apex_eq4_rate_assessable":0.0},
+    "t20": {"assessable_n":7,"competing_event_n":2,"score_distribution":{"0":0,"1":1,"2":3,"3":3,"4":0,"null":2},"scope_ge2_n":6,"scope_ge2_rate_assessable":0.8571428571428571,"major_ge3_n":3,"major_ge3_rate_assessable":0.42857142857142855,"apex_eq4_n":0,"apex_eq4_rate_assessable":0.0}
+  },
+  "trajectory_contrast": {"ever_advanced_n_full":4,"ever_advanced_rate_full":0.4444444444444444,"t10_major_among_assessable":{"n":2,"denominator":8,"rate":0.25},"t20_major_among_assessable":{"n":3,"denominator":7,"rate":0.42857142857142855},"interpretation":"Lifetime apex attainment is much higher than fixed-window apex persistence. By T+20 none of the assessable persons occupies scope4, while three hold scope3 roles; two deaths reduce the denominator."},
+  "death_truncated_names":["박원순","이종욱"],
+  "source_audit":"research/khan_2005_socialedu_person9_longitudinal_audit_v0_1.json",
+  "guardrails":["Original field denominator is 10 units, not 9 persons.","CCEJ is excluded from person-score denominators.","Deaths are competing events.","Earlier national/apex offices are not inherited after the office ends."]
+}
