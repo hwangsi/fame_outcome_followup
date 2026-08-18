@@ -1,30 +1,37 @@
 {
   "schema_version": "typeA_common_v0_4_materialization_gap_v0.1",
   "generated": "2026-08-18",
-  "status": "builder_and_metrics_present_generated_master_artifacts_absent_from_repo",
-  "builder": {
-    "path": "scripts/build_typeA_common_master_v0_4.py",
-    "present": true,
-    "expected_outputs": [
-      "data/typeA/typeA_common_master_v0_4.json",
-      "data/typeA/typeA_common_master_v0_4.csv",
-      "data/typeA/typeA_common_metrics_v0_4.json",
-      "state/typeA_common_master_freeze_v0_4.json"
-    ]
-  },
-  "repo_presence_check": {
-    "data/typeA/typeA_common_metrics_v0_4.json": "present",
-    "data/typeA/typeA_common_master_v0_4.json": "absent_404",
-    "data/typeA/typeA_common_master_v0_4.csv": "absent_404",
-    "state/typeA_common_master_freeze_v0_4.json": "absent_404"
-  },
-  "known_metrics_v0_4_qa": {
+  "status": "resolved_with_identity_audit_correction",
+  "original_gap": "builder_and_metrics_present_generated_master_artifacts_absent_from_repo",
+  "root_cause": "The original v0.1 Kyunghyang 2005 politics10 identity audit incorrectly classified 김근태 and 손학규 as new canonical people even though both already existed in NewsMaker 2003 politics Top10. The old builder therefore asserted 195 unique people and failed before materialization.",
+  "correction": {
+    "identity_audit": "research/khan_2005_politics10_identity_audit_v0_2.json",
+    "corrected_builder": "scripts/build_typeA_common_master_v0_4_corrected.py",
+    "debug_ref": "state/typeA_common_v0_4_materialization_debug.md",
+    "correct_unique_people": 193,
+    "correct_unique_display_names": 192,
     "placements": 255,
-    "unique_people": 195,
-    "cohort_units": 7,
-    "not_assessable_placements": 1
+    "cohort_units": 7
   },
-  "interpretation": "The v0.4 generation logic already exists and the metrics artifact is committed, but the corresponding full placement JSON/CSV and freeze artifact were not materialized in the repository. This is an artifact-presence/reproducibility gap, not an analytical definition gap.",
-  "guardrail": "Do not claim typeA_common_master_v0_4.json/.csv or typeA_common_master_freeze_v0_4.json are currently present until a deterministic builder run materializes and commits them.",
-  "next": "Run scripts/build_typeA_common_master_v0_4.py in a repository checkout or CI job with its required source files, verify its assertions, then commit the generated JSON/CSV/freeze without manually editing row content."
+  "materialized_outputs": [
+    "data/typeA/typeA_common_master_v0_4.json",
+    "data/typeA/typeA_common_master_v0_4.csv",
+    "data/typeA/typeA_common_metrics_v0_4.json",
+    "state/typeA_common_master_freeze_v0_4.json"
+  ],
+  "qa": {
+    "placements": 255,
+    "unique_people": 193,
+    "unique_display_names": 192,
+    "repeated_person_n": 51,
+    "cohort_units": 7,
+    "not_assessable_placements": 1,
+    "materialization_complete": true
+  },
+  "superseded_expectation": {
+    "unique_people": 195,
+    "unique_display_names": 194,
+    "reason": "person novelty was confused with placement novelty for 김근태 and 손학규"
+  },
+  "guardrail": "A newly added placement does not create a new canonical person when the same person already exists in an earlier cohort."
 }
