@@ -1,0 +1,73 @@
+{
+  "schema_version": "chosun_2006_nextgen_professional_manager_recovery_v0.2",
+  "generated": "2026-08-18",
+  "status": "candidate_cohort_not_yet_promoted_provenance_strengthened",
+  "working_title": "2006 차세대 리더 전문경영인",
+  "publication_attribution": "조선일보",
+  "publication_attribution_confidence": "H_for_member_fact_M_for_cohort_structure",
+  "cohort_type_candidate": "A",
+  "domain_candidate": "economy_business",
+  "known_direct_members": [
+    {
+      "name": "안승권",
+      "t0_role": "LG전자 모바일커뮤니케이션 연구소장 겸 부사장",
+      "membership_status": "confirmed_by_contemporaneous_university_news_and_official_later_profile",
+      "confidence": "H",
+      "sources": [
+        "https://pol.ajou.ac.kr/kr/ajou/news.do?article.offset=3504&articleLimit=12&articleNo=74865&mode=view",
+        "https://www.yc.ac.kr/www/presidents-profile.do"
+      ],
+      "source_text_summary": "아주대 2006-11-24 동시대 기사에서 조선일보 선정 '2006 차세대 리더 전문경영인'으로 명시하고, 연암공대 공식 총장 프로필 Honors에도 2006 차세대 리더 전문경영인 선정, 조선일보가 독립적으로 기록되어 있다."
+    }
+  ],
+  "temporal_constraints": {
+    "selection_must_predate": "2006-11-24",
+    "basis": "Ajou University contemporaneous article dated 2006-11-24 already describes Ahn Seung-kwon as selected.",
+    "exact_original_article_date_known": false
+  },
+  "unknowns": {
+    "exact_original_article_date": true,
+    "exact_original_article_title": true,
+    "roster_size": true,
+    "full_roster": true,
+    "selection_mechanism": true,
+    "candidate_pool": true,
+    "rank_or_score": true,
+    "whether_daily_chosun_or_affiliated_weekly_brand": true
+  },
+  "negative_roster_control": {
+    "title": "우린 전문경영인 차세대 리더",
+    "publication": "조선비즈",
+    "date": "2007-03-04",
+    "url": "https://biz.chosun.com/site/data/html_dir/2007/03/04/2007030400648.html",
+    "names_mentioned": ["김기남","서강덕","오세용","이원성","안승권","하영봉","박규석","김대훈","유정준","조원태","박세창","허세홍","조현준","조현문","조현상"],
+    "decision": "do_not_treat_as_2006_selection_roster",
+    "reason": "The 2007 article is a descriptive feature on emerging executives and does not state that its listed people form the 2006 Chosun selected cohort."
+  },
+  "search_update_2026_08_18": {
+    "queries": [
+      "2006 차세대 리더 전문경영인 조선일보",
+      "차세대 리더 전문경영인 조선일보 2006",
+      "조선일보가 선정한 차세대 리더 전문경영인",
+      "조선일보 선정 차세대 리더 전문경영인 2006"
+    ],
+    "new_confirmed_members": 0,
+    "conclusion": "Open-web search strengthens Ahn membership provenance but still does not recover denominator, full roster, or selection mechanism."
+  },
+  "promotion_criteria": [
+    "Recover original or faithfully reproduced roster with more than isolated individual membership evidence.",
+    "Recover roster denominator.",
+    "Recover selection date and selection mechanism/candidate frame.",
+    "Establish finite selected-list status versus descriptive feature series.",
+    "Do not infer roster from the 2007 ChosunBiz trend article.",
+    "Do not add the cohort to Type-A common master until roster denominator and list architecture are known."
+  ],
+  "qa": {
+    "confirmed_member_n": 1,
+    "contemporaneous_membership_source_n": 1,
+    "official_retrospective_membership_source_n": 1,
+    "roster_denominator_known": false,
+    "selection_mechanism_known": false,
+    "eligible_for_common_master": false
+  }
+}
