@@ -1,0 +1,56 @@
+{
+  "schema_version": "donga_2011_t10_repeat38_reuse_inventory_v0.1",
+  "generated": "2026-08-18",
+  "cohort": "동아일보 2011 10년 뒤 한국을 빛낼 100인",
+  "population_scope": "38 repeat-selected persons from 2010 and 2011",
+  "window": {
+    "window_id": "t10",
+    "target_year": 2021,
+    "window_start": "2020-01-01",
+    "window_end": "2022-12-31"
+  },
+  "identity_ref": "state/donga_2010_2011_two_wave_freeze_v0_1.json",
+  "canonical_2020_source_ref": "state/donga_2010_target2020_t10_harmonization_freeze_v1_0.json",
+  "repeat_cutoff_audit_ref": "research/donga_2011_post_t0_repeat_cutoff_audit_v0_1.json",
+  "qa": {
+    "repeat_n": 38,
+    "repeat_names_frozen_n": 38,
+    "has_existing_2020_candidate_path_n": 38,
+    "known_competing_event_before_target_year_n": 1,
+    "known_competing_event_before_target_year_names": ["박원순"],
+    "known_direct_2022_override_candidate_n": 1,
+    "known_direct_2022_override_candidate_names": ["이주호"]
+  },
+  "repeat_names": [
+    "강덕수","김기문","김문수","김빛내리","김연아","김정범","김준영","김택진","김필립","김해성","나경원","박원순","박지영","박진영","박현주","봉준호","서정진","신지애","신현송","안철수","오세훈","원희룡","유시민","이부진","이상엽","이재용","이주호","이창용","이해진","임지순","장하준","장한나","정의선","정태영","정하웅","조국","최태원","현택환"
+  ],
+  "reuse_policy": {
+    "step1": "Search for direct 2021 evidence first for each repeat person.",
+    "step2": "If no direct 2021 evidence is available, the already frozen 2020 target2020 observation is admissible as nearest_within_window evidence because it lies inside 2020-01-01 through 2022-12-31.",
+    "step3": "A 2022 direct observation may supersede a 2020 nearest candidate only when no direct 2021 evidence is available and it is the closer/better-supported window observation under the protocol.",
+    "step4": "Never import a lifetime post-selection peak outside the T+10 window."
+  },
+  "special_cases": [
+    {
+      "name": "박원순",
+      "status_candidate": "competing_event",
+      "death_year": 2020,
+      "reason": "Death occurred before the 2021 target year and prevents meaningful 2021 role-occupancy assessment. A 2020 role observation may be retained descriptively but must not be treated as an ordinary 2021 failure or ordinary assessable snapshot."
+    },
+    {
+      "name": "이주호",
+      "status_candidate": "assessable",
+      "direct_window_role": "부총리 겸 교육부장관",
+      "direct_window_year": 2022,
+      "candidate_scope_score": 3,
+      "reason": "Official 2022 appointment lies inside the admissible T+10 window. Check for direct 2021 evidence first; if absent, 2022 is an admissible nearest-within-window observation."
+    }
+  ],
+  "guardrails": [
+    "Existing 2020 evidence gives all 38 repeat persons an admissible evidence path, but does not automatically finalize their T+10 score because 2021 direct evidence has priority.",
+    "Repeat status does not create an independent person in pooled person-level analyses.",
+    "The 2010 target2020 observation and the 2011 T+10 observation are distinct research snapshots even when the same 2020 evidence is reused; provenance must record reuse rather than duplicate the underlying evidence claim.",
+    "Death before the target year is a competing event, not a zero score or ordinary failure."
+  ],
+  "next": "Resolve 2021-first priority for the 38 repeat rows, combine with the 62-new-entrant inventory, and construct a 100-row T+10 work master with explicit assessable/competing_event/requires_reaudit paths."
+}
