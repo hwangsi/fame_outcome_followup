@@ -1,7 +1,7 @@
 {
   "schema_version": "khan_2005_scitech_person9_longitudinal_audit_v0.1",
   "generated": "2026-08-18",
-  "status": "t10_t20_complete_9_of_9_person_units",
+  "status": "t10_t20_complete_9_of_9_person_units_corrected",
   "parent_selection": "khan_2005_korea_leaders60",
   "field": "과학기술",
   "field_selected_units": 10,
@@ -52,13 +52,14 @@
         "sources": ["https://www.ibs.re.kr/scc/lounge/ibsPeopleView.do?dtaTy=002&langSe=kor&scienceLoungeNo=16441"]
       },
       "t20": {
-        "role": "IBS 인지 및 사회성 연구단 단장·세계적 뇌과학자",
-        "scope_score": 3,
-        "evidence_date": "2025",
-        "match": "target_window_continuing_role",
+        "role": "2020-12 IBS 인지 및 사회성 연구단장 퇴임 이후 원로 뇌과학자",
+        "scope_score": 1,
+        "evidence_date": "2020-12-23",
+        "match": "pre_window_retirement_status_carried_forward_no_later_leadership_found",
         "confidence": "H",
-        "sources": ["https://www.ibs.re.kr/scc/lounge/ibsPeopleView.do?dtaTy=002&langSe=kor&scienceLoungeNo=16441"]
-      }
+        "sources": ["https://www.ibs.re.kr/cop/bbs/BBSMSTR_000000000511/selectBoardArticle.do?nttId=19527"]
+      },
+      "guardrail": "The prior draft incorrectly treated him as IBS research-center director in 2025. IBS officially documented his retirement ceremony on 2020-12-23; the former directorship is not inherited into the T20 snapshot."
     },
     {
       "name": "안철수",
@@ -98,8 +99,8 @@
         "scope_score": 2,
         "evidence_date": "2024-2025",
         "match": "within_window",
-        "confidence": "M-H",
-        "sources": ["https://kr.linkedin.com/posts/bobiyu_%EC%B2%9C%EC%9E%AC-%EC%86%8C%EB%85%80%EB%A1%9C-%EB%B6%88%EB%A6%AC%EB%A9%B0-%EC%97%94%EC%94%A8%EC%86%8C%ED%94%84%ED%8A%B8%EC%9D%98-%EC%B5%9C%EA%B3%A0%EC%A0%84%EB%9E%B5%EC%B1%85%EC%9E%84%EC%9E%90cso-%EC%97%94%EC%94%A8%EC%9B%A8%EC%8A%A4%ED%8A%B8-%EB%8C%80%ED%91%9C%EB%A5%BC-activity-7392807070292561920-mB1C"]
+        "confidence": "H",
+        "sources": ["https://www.yna.co.kr/view/AKR20250410038651017"]
       },
       "guardrail": "A new venture-capital founder role is nationally/internationally established professional leadership but is not automatically a major global-company CEO score3."
     },
@@ -111,7 +112,7 @@
         "evidence_date": "2015",
         "match": "target_year",
         "confidence": "H",
-        "sources": ["https://www.kaist.ac.kr/news/html/news/?GotoPage=379&list_e_date=&list_s_date=&mng_no=2581&mode=V&skey=&sval="]
+        "sources": ["https://www.kaist.ac.kr/news/html/news/?GotoPage=289&list_e_date=&list_s_date=&mng_no=1666&mode=V&skey=keyword&sval="]
       },
       "t20": {
         "role": "KAIST 연구부총장·특훈교수, 2025 Gregory N. Stephanopoulos Metabolic Engineering Award 수상",
@@ -139,32 +140,29 @@
         "evidence_date": "2025-04",
         "match": "target_year",
         "confidence": "H",
-        "sources": [
-          "https://v.daum.net/v/20250530155449688",
-          "https://car122.imweb.me/"
-        ]
+        "sources": ["https://physics.snu.ac.kr/boards/colloquium?bbsidx=13916&md=v"]
       },
       "guardrail": "His pre-2005 carbon-nanotube field-defining discovery remains lifetime peak4, but fixed-window active professor/startup leadership is conservatively score3 absent a new in-window global-apex event."
     },
     {
       "name": "정재승",
       "t10": {
-        "role": "KAIST 바이오및뇌공학과 교수·뇌과학 연구/대중과학 활동",
+        "role": "KAIST 바이오및뇌공학과 교수·뇌인지공학 프로그램 총괄",
         "scope_score": 2,
-        "evidence_date": "2015",
-        "match": "target_year_continuing_faculty_role",
-        "confidence": "H",
-        "sources": ["https://pure.kaist.ac.kr/en/persons/jaeseung-jeong/"]
-      },
-      "t20": {
-        "role": "KAIST 뇌인지과학과 학과장·교수, 2025 KAIST 교육혁신상",
-        "scope_score": 2,
-        "evidence_date": "2025-04-28",
+        "evidence_date": "2015-09-22",
         "match": "target_year",
         "confidence": "H",
-        "sources": ["https://bcs.kaist.ac.kr/korean/sub0801/view/id/354"]
+        "sources": ["https://news.kaist.ac.kr/site/news/html/news/index.php?GotoPage=13&list_e_date=&list_s_date=&skey=keyword&sval=%EC%A4%80"]
       },
-      "guardrail": "Department chair and institutional teaching awards do not automatically satisfy score3 major-national-institution top leadership."
+      "t20": {
+        "role": "KAIST 뇌인지과학과 교수·교육/연구 리더",
+        "scope_score": 2,
+        "evidence_date": "2025",
+        "match": "target_year",
+        "confidence": "M-H",
+        "sources": ["https://pure.kaist.ac.kr/en/persons/jaeseung-jeong/"]
+      },
+      "guardrail": "Department-level academic leadership is not automatically score3 major-national-institution top leadership."
     },
     {
       "name": "조장희",
@@ -177,15 +175,12 @@
         "sources": ["https://www.gachon.ac.kr/eng/7498/subview.do"]
       },
       "t20": {
-        "role": "고려대 뇌과학융합센터 석좌교수·2024 MRI/Quantum Computing 집중강좌 및 연구",
+        "role": "고려대 뇌과학융합센터 석좌교수·첨단 의료영상/뇌과학 연구",
         "scope_score": 3,
-        "evidence_date": "2024-11-22",
-        "match": "within_window_minus1",
+        "evidence_date": "2025-2026",
+        "match": "within_window_active_research",
         "confidence": "H",
-        "sources": [
-          "https://tlo.korea.ac.kr/ja/researcher/1692",
-          "https://mediacom.korea.ac.kr/board/notice_view.html?cate=B&no=1313&page=1"
-        ]
+        "sources": ["https://tlo.korea.ac.kr/researcher/1692"]
       },
       "guardrail": "The historic world-first Ring PET achievement remains lifetime peak4 but is not automatically inherited; active chair-professor/research leadership is score3."
     },
@@ -208,7 +203,7 @@
         "evidence_date": "2026-05-28",
         "match": "within_window_plus1",
         "confidence": "H",
-        "sources": ["https://www.newsis.com/view/NISX20260528_0003647876"]
+        "sources": ["research/khan_2005_scitech_person9_peak_audit_v0_1.json"]
       },
       "guardrail": "His former KARI presidency is not inherited; continuing national expert/honorary-professor status is score2."
     }
@@ -223,10 +218,16 @@
     "t10_apex_eq4_n": 0,
     "t20_assessable_n": 9,
     "t20_competing_event_n": 0,
-    "t20_score_distribution": {"1": 1, "2": 3, "3": 3, "4": 2, "null": 0},
-    "t20_scope_ge2_n": 8,
-    "t20_major_ge3_n": 5,
-    "t20_apex_eq4_n": 2
+    "t20_score_distribution": {"1": 2, "2": 3, "3": 2, "4": 2, "null": 0},
+    "t20_scope_ge2_n": 7,
+    "t20_major_ge3_n": 4,
+    "t20_apex_eq4_n": 2,
+    "correction_from_prior_draft": {
+      "name": "신희섭",
+      "old_t20_score": 3,
+      "new_t20_score": 1,
+      "reason": "IBS official retirement record documents retirement from the research-center directorship on 2020-12-23."
+    }
   },
   "interpretation_guardrails": [
     "The original science-tech field denominator remains 10 units: 9 persons plus ABEEK.",
