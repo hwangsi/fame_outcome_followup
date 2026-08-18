@@ -1,0 +1,81 @@
+{
+  "schema_version": "typeA_common_longitudinal_v0.1",
+  "adapter_version": "donga_2011_common_longitudinal_adapter_v0.1",
+  "date": "2026-08-18",
+  "status": "window_verified_semantic_adapter_no_source_freeze_changes",
+  "cohort": {
+    "cohort_id": "donga_2011_t10_100",
+    "outlet": "동아일보",
+    "article_title": "10년 뒤 한국을 빛낼 100인",
+    "selection_year": 2011,
+    "explicit_target_year": 2021,
+    "explicit_target_label": "10년 뒤 한국을 빛낼 100인",
+    "explicit_prediction_horizon_years": 10
+  },
+  "source_layers": {
+    "final_index": "data/typeA/donga_2011_t10_final_master_v1_0.json",
+    "metrics": "data/typeA/donga_2011_t10_metrics_v1_0.json",
+    "freeze": "state/donga_2011_t10_freeze_v1_0.json",
+    "protocol": "state/donga_2011_t10_protocol_v0_1.md",
+    "source_batches": [
+      "state/donga_2011_t10_repeat38_freeze_v1_0.json",
+      "research/donga_2011_t10_newentrant_inwindow18_audit_v0_1.json",
+      "research/donga_2011_t10_pending44_batch1_institutional_v0_1.json",
+      "research/donga_2011_t10_pending36_batch2_continuity_v0_1.json",
+      "research/donga_2011_t10_remaining30_creative_sports_v1_0.json",
+      "research/donga_2011_t10_remaining30_public_legal_v1_0.json",
+      "research/donga_2011_t10_remaining30_hard_academic_business_v1_0.json"
+    ]
+  },
+  "window_verification": {
+    "explicit_target_center_year": 2021,
+    "explicit_target_admissible_window_start": "2020-01-01",
+    "explicit_target_admissible_window_end": "2022-12-31",
+    "common_t10_center_year": 2021,
+    "common_t10_tolerance_years": 1,
+    "equivalence": "exact_calendar_window_match",
+    "decision": "reuse_one_canonical_snapshot_for_explicit_target_2021_and_t10"
+  },
+  "canonical_snapshot_policy": {
+    "snapshot_id_template": "donga2011:{person_or_placement_id}:2021",
+    "target_year": 2021,
+    "window_start": "2020-01-01",
+    "window_end": "2022-12-31",
+    "semantic_aliases": [
+      "explicit_target_2021",
+      "t10"
+    ],
+    "observation_count_rule": "one canonical 2021 observation per selected unit, not two",
+    "pooled_analysis_rule": "count canonical snapshot once",
+    "reporting_rule": "may report the same canonical observation under both article-prediction and T+10 research questions with reuse disclosure",
+    "exact_year_priority_rule": "2021 direct evidence or tenure explicitly spanning 2021 takes priority; nearest 2020/2022 evidence is used only when direct 2021 evidence is unavailable",
+    "missingness_rule": "competing_event and untraceable remain null and are not recoded as score 0"
+  },
+  "frozen_coverage": {
+    "original_n": 100,
+    "assessable_n": 90,
+    "competing_event_n": 1,
+    "untraceable_n": 9,
+    "exact_2021_or_explicit_2021_tenure_n": 81,
+    "nearest_2020_n": 8,
+    "nearest_2022_n": 1,
+    "scope_ge2_n": 87,
+    "major_ge3_n": 63,
+    "apex_eq4_n": 4
+  },
+  "guardrails": [
+    "do not duplicate explicit-target observations as independent T+10 records",
+    "do not alter frozen source outcome files through this adapter",
+    "keep lifetime post-selection peak separate from the 2021 snapshot",
+    "preserve the 38 repeat-selected placements while handling person-level dependence separately",
+    "preserve exact-year versus nearest-within-window provenance",
+    "do not substitute a higher 2020 or 2022 achievement when direct 2021 evidence exists",
+    "do not convert competing-event or untraceable rows to failure scores"
+  ],
+  "next": [
+    "materialize per-unit canonical snapshot IDs from all seven frozen source batches",
+    "validate 100 unique selected-unit paths and 90 assessable scores",
+    "join with Type-A placement identity keys without duplicating the 38 repeat-selected persons",
+    "use the row-level adapter in common longitudinal comparisons"
+  ]
+}
