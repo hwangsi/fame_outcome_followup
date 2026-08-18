@@ -1,0 +1,31 @@
+{
+  "schema_version": "typeA_common_longitudinal_rows_freeze_v0.2",
+  "generated": "2026-08-18",
+  "qa": {
+    "snapshot_rows": 260,
+    "unique_snapshot_ids": 260,
+    "cohort_units": 3,
+    "cohort_window_cells": 5,
+    "khan_2004_persons": 20,
+    "khan_2004_snapshot_rows": 60,
+    "donga_2010_t10_rows": 100,
+    "donga_2011_t10_rows": 100,
+    "row_ready_selected_placements": 220,
+    "not_included_yet": [
+      "khan_2005_korea_leaders60_person57"
+    ],
+    "reason_not_included": "Kyunghyang 2005 has complete field/person aggregate longitudinal metrics but no single normalized 57-person row master yet."
+  },
+  "sources": [
+    "data/typeA/khan_2004_17th_assembly_newleaders_longitudinal_master_v1_0.json",
+    "data/typeA/donga_2010_common_longitudinal_rows_v0_1.json",
+    "data/typeA/donga_2011_common_longitudinal_rows_v0_1.json"
+  ],
+  "guardrails": [
+    "one row equals one cohort-placement x fixed-window snapshot",
+    "same person in different cohorts remains separate placement exposure",
+    "competing events and untraceable rows are null, not failures",
+    "explicit target-year aliases are not duplicated",
+    "Kyunghyang 2005 person57 is not silently pooled until row-normalized"
+  ]
+}
