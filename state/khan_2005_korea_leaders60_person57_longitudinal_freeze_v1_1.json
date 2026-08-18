@@ -1,0 +1,49 @@
+{
+  "schema_version": "khan_2005_korea_leaders60_person57_longitudinal_freeze_v1.1",
+  "generated": "2026-08-18",
+  "qa": {
+    "persons": 57,
+    "snapshot_rows": 114,
+    "unique_snapshot_ids": 114,
+    "t10": {
+      "person_n": 57,
+      "assessable_n": 54,
+      "competing_event_n": 3,
+      "untraceable_n": 0,
+      "score_distribution": {
+        "0": 0,
+        "1": 4,
+        "2": 23,
+        "3": 24,
+        "4": 3,
+        "null": 3
+      },
+      "scope_ge2_n": 50,
+      "major_ge3_n": 27,
+      "apex_eq4_n": 3
+    },
+    "t20": {
+      "person_n": 57,
+      "assessable_n": 52,
+      "competing_event_n": 5,
+      "untraceable_n": 0,
+      "score_distribution": {
+        "0": 0,
+        "1": 9,
+        "2": 17,
+        "3": 16,
+        "4": 10,
+        "null": 5
+      },
+      "scope_ge2_n": 43,
+      "major_ge3_n": 26,
+      "apex_eq4_n": 10
+    },
+    "identity_key_cj_lee_preserved": true,
+    "source_field_audits": 6
+  },
+  "metrics_ref": "data/typeA/khan_2005_korea_leaders60_person57_longitudinal_metrics_v1_1.json",
+  "rows_ref": "data/typeA/khan_2005_korea_leaders60_person57_common_longitudinal_rows_v0_1.json",
+  "supersedes": "data/typeA/khan_2005_korea_leaders60_person57_longitudinal_metrics_v1_0.json",
+  "reason": "reconciled to corrected science-tech audit"
+}

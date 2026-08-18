@@ -1,0 +1,157 @@
+{
+  "schema_version": "khan_2005_korea_leaders60_person57_longitudinal_metrics_v1.1",
+  "generated": "2026-08-18",
+  "status": "corrected_after_scitech_shin_heesup_t20_retirement",
+  "parent_selection": "khan_2005_korea_leaders60",
+  "original_selected_units": 60,
+  "person_units": 57,
+  "organization_units": 3,
+  "analysis_type": "prespecified_person_only_secondary",
+  "snapshots": {
+    "t10": {
+      "person_n": 57,
+      "assessable_n": 54,
+      "competing_event_n": 3,
+      "untraceable_n": 0,
+      "score_distribution": {
+        "0": 0,
+        "1": 4,
+        "2": 23,
+        "3": 24,
+        "4": 3,
+        "null": 3
+      },
+      "scope_ge2_n": 50,
+      "major_ge3_n": 27,
+      "apex_eq4_n": 3
+    },
+    "t20": {
+      "person_n": 57,
+      "assessable_n": 52,
+      "competing_event_n": 5,
+      "untraceable_n": 0,
+      "score_distribution": {
+        "0": 0,
+        "1": 9,
+        "2": 17,
+        "3": 16,
+        "4": 10,
+        "null": 5
+      },
+      "scope_ge2_n": 43,
+      "major_ge3_n": 26,
+      "apex_eq4_n": 10
+    }
+  },
+  "by_field": {
+    "정치": {
+      "person_n": 10,
+      "source_ref": "research/khan_2005_politics10_longitudinal_audit_v0_1.json",
+      "t10": {
+        "assessable_n": 9,
+        "major_ge3_n": 3,
+        "apex_eq4_n": 1
+      },
+      "t20": {
+        "assessable_n": 8,
+        "major_ge3_n": 4,
+        "apex_eq4_n": 0
+      }
+    },
+    "경제": {
+      "person_n": 9,
+      "source_ref": "research/khan_2005_economy_person9_longitudinal_audit_v0_1.json",
+      "t10": {
+        "assessable_n": 9,
+        "major_ge3_n": 7,
+        "apex_eq4_n": 2
+      },
+      "t20": {
+        "assessable_n": 9,
+        "major_ge3_n": 6,
+        "apex_eq4_n": 5
+      }
+    },
+    "과학기술": {
+      "person_n": 9,
+      "source_ref": "research/khan_2005_scitech_person9_longitudinal_audit_v0_1.json",
+      "t10": {
+        "assessable_n": 9,
+        "major_ge3_n": 5,
+        "apex_eq4_n": 0
+      },
+      "t20": {
+        "assessable_n": 9,
+        "major_ge3_n": 4,
+        "apex_eq4_n": 2
+      }
+    },
+    "사회교육": {
+      "person_n": 9,
+      "source_ref": "research/khan_2005_socialedu_person9_longitudinal_audit_v0_1.json",
+      "t10": {
+        "assessable_n": 8,
+        "major_ge3_n": 2,
+        "apex_eq4_n": 0
+      },
+      "t20": {
+        "assessable_n": 7,
+        "major_ge3_n": 3,
+        "apex_eq4_n": 0
+      }
+    },
+    "대중문화": {
+      "person_n": 10,
+      "source_ref": "research/khan_2005_popculture10_longitudinal_audit_v0_1.json",
+      "t10": {
+        "assessable_n": 9,
+        "major_ge3_n": 4,
+        "apex_eq4_n": 0
+      },
+      "t20": {
+        "assessable_n": 9,
+        "major_ge3_n": 4,
+        "apex_eq4_n": 2
+      }
+    },
+    "문화예술": {
+      "person_n": 10,
+      "source_ref": "research/khan_2005_cultureart10_longitudinal_audit_v0_1.json",
+      "t10": {
+        "assessable_n": 10,
+        "major_ge3_n": 6,
+        "apex_eq4_n": 0
+      },
+      "t20": {
+        "assessable_n": 10,
+        "major_ge3_n": 5,
+        "apex_eq4_n": 1
+      }
+    }
+  },
+  "correction_from_v1_0": {
+    "t20_score1": {
+      "old": 8,
+      "new": 9
+    },
+    "t20_score3": {
+      "old": 17,
+      "new": 16
+    },
+    "t20_scope_ge2_n": {
+      "old": 44,
+      "new": 43
+    },
+    "t20_major_ge3_n": {
+      "old": 27,
+      "new": 26
+    },
+    "reason": "Shin Hee-sup T20 corrected from scope3 to scope1 after official IBS retirement evidence; v1.0 aggregate was not regenerated after the field correction."
+  },
+  "guardrails": [
+    "Person57 is a secondary person-only analysis of a mixed 60-unit selection.",
+    "Organizations remain outside person scope scores.",
+    "Deaths are competing events.",
+    "Current six field audits are authoritative over stale pre-correction aggregate."
+  ]
+}
