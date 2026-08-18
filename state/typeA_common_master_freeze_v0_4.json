@@ -1,7 +1,6 @@
 {
-  "schema_version": "typeA_common_metrics_v0.4",
+  "schema_version": "typeA_common_master_freeze_v0.4",
   "generated": "2026-08-18",
-  "status": "corrected_identity_overlap",
   "qa": {
     "placements": 255,
     "unique_people": 193,
@@ -229,7 +228,7 @@
     "first_selection_advanced_n": 78,
     "warning": "Person-level first-selection description; observation windows and cohort designs differ."
   },
-  "interpretation_guardrails": [
+  "guardrails": [
     "person_id is derived from canonical identity_key, not display name alone.",
     "The two people named 이미경 remain distinct canonical persons.",
     "All ten Kyunghyang 2005 politics10 persons already existed in the v0.3 canonical person set; adding the cohort creates ten placements and zero new canonical people.",
@@ -237,5 +236,8 @@
     "Only its all-person politics10 field is included here as a field-specific secondary cohort.",
     "Do not treat 255 placements as independent observations."
   ],
-  "correction_note": "Earlier unmaterialized v0.4 design incorrectly expected 195 persons because 김근태 and 손학규 were misclassified as new; v0.3 already contains both in NewsMaker 2003."
+  "supersedes_unmaterialized_expectation": {
+    "unique_people": 195,
+    "unique_display_names": 194
+  }
 }
