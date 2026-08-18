@@ -2,7 +2,7 @@
   "schema_version": "typeA_common_longitudinal_v0.1",
   "adapter_version": "donga_2010_common_longitudinal_adapter_v0.1",
   "date": "2026-08-18",
-  "status": "semantic_adapter_no_source_freeze_changes",
+  "status": "window_verified_semantic_adapter_no_source_freeze_changes",
   "cohort": {
     "cohort_id": "donga_2010_2020_100",
     "outlet": "동아일보",
@@ -16,6 +16,7 @@
     "roster": "data/typeA/donga_2010_canonical_roster_v2_1.json",
     "baseline": "data/typeA/donga_2010_baseline_from_capture_v1_0.json",
     "lifetime_peak_metrics": "data/typeA/donga_2010_post_t0_peak_metrics_v1_2.json",
+    "target2020_protocol": "state/donga_2010_target2020_protocol_v1_0.md",
     "target2020_master": "data/typeA/donga_2010_target2020_outcomes_v0_1.json",
     "target2020_sector_layers": [
       "data/typeA/donga_2010_target2020_outcomes_creators_v0_1.json",
@@ -24,25 +25,37 @@
       "data/typeA/donga_2010_target2020_outcomes_pioneers_v0_1.json"
     ]
   },
+  "window_verification": {
+    "explicit_target_center_year": 2020,
+    "explicit_target_admissible_window_start": "2019-01-01",
+    "explicit_target_admissible_window_end": "2021-12-31",
+    "common_t10_center_year": 2020,
+    "common_t10_tolerance_years": 1,
+    "equivalence": "exact_calendar_window_match",
+    "decision": "reuse_one_canonical_snapshot_for_explicit_target_2020_and_t10"
+  },
   "canonical_snapshot_policy": {
     "snapshot_id_template": "donga2010:{unit_id}:2020",
     "target_year": 2020,
+    "window_start": "2019-01-01",
+    "window_end": "2021-12-31",
     "semantic_aliases": ["explicit_target_2020", "t10"],
     "observation_count_rule": "one canonical 2020 observation per unit, not two",
     "pooled_analysis_rule": "count canonical snapshot once",
-    "reporting_rule": "may report the same canonical observation under both article-prediction and T+10 research questions with reuse disclosure"
+    "reporting_rule": "may report the same canonical observation under both article-prediction and T+10 research questions with reuse disclosure",
+    "exact_year_priority_rule": "2020 direct evidence takes priority; nearest 2019/2021 evidence is used only when 2020 direct evidence is unavailable"
   },
-  "window_note": "The existing target2020 layer is treated as the canonical 2020 observation. Before numeric pooling with other T+10 cohorts, verify its exact date tolerance against the common default T+10 ±1-year window. If identical, alias directly. If not identical, preserve separate window definitions and document overlap rather than silently equating them.",
   "guardrails": [
     "do not duplicate target2020 observations as independent T+10 records",
     "do not alter frozen source outcome files through this adapter",
     "keep lifetime peak separate from 2020 snapshot",
     "preserve placement denominator and identity corrections from canonical roster",
-    "verify exact target2020 window tolerance before pooled T+10 statistics"
+    "preserve exact_year versus nearest_within_window provenance",
+    "do not substitute a higher 2021 within-window role when direct 2020 evidence exists"
   ],
   "next": [
-    "materialize per-unit canonical snapshot IDs when exact target2020 window tolerance is verified",
+    "materialize per-unit canonical snapshot IDs from the completed target2020 layers",
     "apply the same schema to Dong-A 2011 with generic T+10 centered on 2021",
-    "compare Dong-A 2010 explicit-target performance with Dong-A 2011 generic T+10 only after harmonized-window QA"
+    "compare Dong-A 2010 and Dong-A 2011 T+10 after per-unit materialization QA"
   ]
 }
