@@ -1,0 +1,44 @@
+name: Materialize Type-A common longitudinal rows v0.3
+
+on:
+  push:
+    paths:
+      - 'scripts/build_typeA_common_longitudinal_rows_v0_3.py'
+      - '.github/workflows/materialize-typeA-common-longitudinal-rows-v0-3.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build common longitudinal rows v0.3
+        run: python scripts/build_typeA_common_longitudinal_rows_v0_3.py
+      - name: QA
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('data/typeA/typeA_common_longitudinal_rows_v0_3.json',encoding='utf-8'))
+          q=d['qa']
+          assert q['snapshot_rows']==374
+          assert q['unique_snapshot_ids']==374
+          assert q['cohort_units']==4
+          assert q['cohort_window_cells']==7
+          assert q['row_ready_selected_placements']==277
+          assert q['khan_2005_corrected_t20']=={'assessable_n':52,'scope_ge2_n':43,'major_ge3_n':26,'apex_eq4_n':10}
+          PY
+      - name: Persist
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/typeA/typeA_common_longitudinal_rows_v0_3.json state/typeA_common_longitudinal_rows_freeze_v0_3.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Materialize Type-A common longitudinal rows v0.3"
+            git push
+          fi
