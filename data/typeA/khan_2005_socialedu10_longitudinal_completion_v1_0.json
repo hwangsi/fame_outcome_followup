@@ -1,0 +1,14 @@
+{
+  "schema_version":"khan_2005_socialedu10_longitudinal_completion_v1.0",
+  "generated":"2026-08-18",
+  "status":"t10_t20_complete_10_of_10_units_by_unit_type",
+  "parent_selection":"khan_2005_korea_leaders60",
+  "field":"사회교육",
+  "field_selected_units":10,
+  "unit_types":{"person":9,"organization":1},
+  "target_windows":{"t10":"2015 ±1 year (2014-2016)","t20":"2025 ±1 year (2024-2026)"},
+  "person9":{"metrics_ref":"data/typeA/khan_2005_socialedu_person9_longitudinal_metrics_v1_0.json","freeze_ref":"state/khan_2005_socialedu_person9_longitudinal_freeze_v1_0.json","t10":{"assessable_n":8,"competing_event_n":1,"major_ge3_n":2,"apex_eq4_n":0},"t20":{"assessable_n":7,"competing_event_n":2,"major_ge3_n":3,"apex_eq4_n":0}},
+  "organization1":{"name":"경제정의실천시민연합","t10_ref":"research/khan_2005_ccej_t10_longitudinal_patch_v0_1.json","t10":{"continuity_class":"direct_continuity","trajectory":"sustained_high","reach":"national_broad","field_leadership":"significant","institutional_influence":"moderate"},"t20_ref":"research/khan_2005_organizations_outcome_audit_v0_1.json","t20":{"continuity_class":"direct_continuity","trajectory":"sustained_high","reach":"national_broad","field_leadership":"significant","institutional_influence":"moderate"}},
+  "qa":{"selected_units":10,"person_rows_complete":9,"organization_rows_complete":1,"t10_units_with_unit_type_outcome":10,"t20_units_with_unit_type_outcome":10,"single_cross_unit_type_success_rate_created":false,"original_field_denominator_preserved":10},
+  "guardrails":["Person and organization outcomes remain separate architectures.","Do not calculate a 10-unit Major/Apex rate by assigning CCEJ a person score.","Deaths among person units are competing events.","The field is complete by unit type, not by forcing heterogeneous units onto one scale."]
+}
