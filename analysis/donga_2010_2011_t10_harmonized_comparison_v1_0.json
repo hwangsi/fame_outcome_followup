@@ -1,0 +1,100 @@
+{
+  "schema_version": "donga_2010_2011_t10_harmonized_comparison_v1.0",
+  "generated": "2026-08-18",
+  "status": "final_harmonized_descriptive_comparison",
+  "question": "How do Dong-A 2010 and Dong-A 2011 selections compare at their respective T+10 fixed-window snapshots?",
+  "cohorts": {
+    "donga_2010": {
+      "article": "2020년 한국을 빛낼 100인",
+      "selection_year": 2010,
+      "canonical_snapshot_aliases": ["explicit_target_2020", "t10"],
+      "target_year": 2020,
+      "window_start": "2019-01-01",
+      "window_end": "2021-12-31",
+      "source_ref": "state/donga_2010_target2020_freeze_v1_0.json",
+      "harmonization_ref": "state/donga_2010_target2020_t10_harmonization_freeze_v1_0.json",
+      "original_n": 100,
+      "assessable_n": 87,
+      "competing_event_n": 3,
+      "unresolved_n": 10,
+      "score_counts_assessable": {"1": 2, "2": 43, "3": 37, "4": 5},
+      "scope_ge2_n": 85,
+      "scope_ge2_rate_assessable": 0.9770114943,
+      "major_ge3_n": 42,
+      "major_ge3_rate_assessable": 0.4827586207,
+      "apex_eq4_n": 5,
+      "apex_eq4_rate_assessable": 0.0574712644
+    },
+    "donga_2011": {
+      "article": "10년 뒤 한국을 빛낼 100인",
+      "selection_year": 2011,
+      "target_year": 2021,
+      "window_start": "2020-01-01",
+      "window_end": "2022-12-31",
+      "source_ref": "data/typeA/donga_2011_t10_metrics_v1_0.json",
+      "freeze_ref": "state/donga_2011_t10_freeze_v1_0.json",
+      "original_n": 100,
+      "assessable_n": 90,
+      "competing_event_n": 1,
+      "untraceable_n": 9,
+      "score_counts_assessable": {"0": 1, "1": 2, "2": 24, "3": 59, "4": 4},
+      "scope_ge2_n": 87,
+      "scope_ge2_rate_assessable": 0.9666666667,
+      "major_ge3_n": 63,
+      "major_ge3_rate_assessable": 0.7000000000,
+      "apex_eq4_n": 4,
+      "apex_eq4_rate_assessable": 0.0444444444
+    }
+  },
+  "placement_level_descriptive_difference_2011_minus_2010": {
+    "scope_ge2_percentage_points": -1.03448276,
+    "major_ge3_percentage_points": 21.72413793,
+    "apex_eq4_percentage_points": -1.30268199,
+    "interpretation": "Broad established-role occupancy is nearly identical, while major-role occupancy is substantially higher in the 2011 cohort. Apex occupancy is similar and rare in both."
+  },
+  "overlap_and_dependence": {
+    "placements_total": 200,
+    "unique_persons": 162,
+    "repeat_persons": 38,
+    "2010_only": 62,
+    "2011_new": 62,
+    "identity_ref": "state/donga_2010_2011_two_wave_freeze_v0_1.json",
+    "windows_overlap": true,
+    "window_overlap_calendar": "2020-01-01 through 2021-12-31 lies in both admissible windows",
+    "independent_two_sample_test_on_all_100_vs_100_allowed": false,
+    "reason": "Thirty-eight people appear in both cohorts and the calendar windows substantially overlap; treating 200 placements as independent observations would overstate independence."
+  },
+  "unique_person_first_selection_sensitivity": {
+    "definition": "Deduplicate the two waves to 162 people and anchor each person to T+10 from first selection. All 100 people selected in 2010 use the canonical 2020/T+10 snapshot; only the 62 people newly selected in 2011 contribute the 2021 T+10 snapshot.",
+    "original_unique_person_n": 162,
+    "components": {
+      "all_2010_first_selected_people_n": 100,
+      "2011_new_people_n": 62,
+      "repeat38_counted_once_under_2010_first_selection": true
+    },
+    "assessable_n": 144,
+    "competing_event_n": 3,
+    "nonassessable_unresolved_or_untraceable_n": 15,
+    "score_counts_assessable": {"0": 1, "1": 3, "2": 60, "3": 74, "4": 6},
+    "scope_ge2_n": 140,
+    "scope_ge2_rate_assessable": 0.9722222222,
+    "major_ge3_n": 80,
+    "major_ge3_rate_assessable": 0.5555555556,
+    "apex_eq4_n": 6,
+    "apex_eq4_rate_assessable": 0.0416666667,
+    "original_n_descriptive_lower_bound": {
+      "scope_ge2_rate": 0.8641975309,
+      "major_ge3_rate": 0.4938271605,
+      "apex_eq4_rate": 0.0370370370
+    },
+    "guardrail": "This is person-specific T+10 from first selection, not a single-calendar-year cross-section: 2010-first selections center on 2020 and 2011-new selections center on 2021."
+  },
+  "interpretive_guardrails": [
+    "Do not call the 21.7-point Major difference a newspaper/year causal effect.",
+    "Selection composition, baseline status, sector mix and list design differ between 2010 and 2011.",
+    "The 2010 article has an explicit 2020 prediction label whereas the 2011 article has a generic 10-year-forward framing; the harmonized outcome is fixed-window role occupancy.",
+    "Competing events and unresolved/untraceable rows are excluded from primary assessable-denominator rates and remain in original cohort counts.",
+    "The first-selection 162-person sensitivity removes duplicate persons but does not make the two calendar target years identical."
+  ],
+  "headline": "At T+10, established-role occupancy was essentially saturated in both Dong-A waves (~97%), but Major-role occupancy was higher in the 2011 cohort (70.0% vs 48.3%); Apex occupancy remained rare (~4-6%)."
+}
