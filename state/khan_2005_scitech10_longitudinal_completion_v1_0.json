@@ -1,0 +1,56 @@
+{
+  "schema_version": "khan_2005_scitech10_longitudinal_completion_v1.0",
+  "generated": "2026-08-18",
+  "status": "complete_10_of_10_unit_type_aware_t10_t20",
+  "parent_selection": "khan_2005_korea_leaders60",
+  "field": "과학기술",
+  "selected_units": 10,
+  "person_units": 9,
+  "organization_units": 1,
+  "person_longitudinal": {
+    "audit_ref": "research/khan_2005_scitech_person9_longitudinal_audit_v0_1.json",
+    "metrics_ref": "data/typeA/khan_2005_scitech_person9_longitudinal_metrics_v1_0.json",
+    "freeze_ref": "state/khan_2005_scitech_person9_longitudinal_freeze_v1_0.json",
+    "t10_major_ge3_n": 5,
+    "t10_denominator": 9,
+    "t20_major_ge3_n": 4,
+    "t20_denominator": 9,
+    "t20_apex_eq4_n": 2
+  },
+  "organization_longitudinal": {
+    "name": "한국공학교육인증원",
+    "outcome_ref": "research/khan_2005_organizations_outcome_audit_v0_1.json",
+    "t10": {
+      "window": "2014-2016",
+      "continuity_class": "direct_continuity",
+      "reach": "international_reach",
+      "field_leadership": "leading",
+      "institutional_influence": "high",
+      "trajectory": "expanded",
+      "basis": "By 2015 ABEEK was a Washington Accord full signatory, had joined Sydney/Dublin accords as full signatory in 2013, and was a government-recognized engineering-program accreditation body.",
+      "sources": ["https://www.abeek.or.kr/abeek/history","https://www.abeek.or.kr/intro/benefitg"]
+    },
+    "t20": {
+      "window": "2024-2026",
+      "continuity_class": "direct_continuity",
+      "reach": "international_reach",
+      "field_leadership": "leading",
+      "institutional_influence": "high",
+      "trajectory": "expanded",
+      "basis": "ABEEK remains an active Washington Accord full signatory and operates current accreditation standards after repeated government recognition.",
+      "sources": ["https://www.abeek.or.kr/abeek/history","https://www.abeek.or.kr/abeek/washington"]
+    }
+  },
+  "qa": {
+    "selected_units": 10,
+    "outcome_paths_complete": 10,
+    "person_score_denominator": 9,
+    "organization_score_denominator": 1,
+    "single_pooled_success_rate_created": false
+  },
+  "guardrails": [
+    "Do not convert ABEEK organization outcome into a person scope score.",
+    "Do not report person9 Major/Apex rates as a science-tech10 success rate.",
+    "The original field denominator remains 10 selected units."
+  ]
+}
