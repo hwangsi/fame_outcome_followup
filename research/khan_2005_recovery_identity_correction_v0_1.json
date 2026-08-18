@@ -1,0 +1,42 @@
+{
+  "schema_version": "khan_2005_recovery_identity_correction_v0.1",
+  "generated": "2026-08-18",
+  "status": "adjudicated_correction",
+  "source_recovery": "research/khan_2005_korea_leaders60_recovery_v0_1.json",
+  "affected_field": "문화예술",
+  "affected_printed_name": "임지선",
+  "error_type": "identity_anchor_misparse",
+  "incorrect_prior_anchor": "바이올리니스트",
+  "correct_identity": {
+    "printed_name": "임지선",
+    "canonical_name": "임지선",
+    "unit_type": "person",
+    "identity_anchor": "작곡가/연세대학교 작곡과 교수",
+    "t0_role_anchor": "연세대 음대 작곡과 교수·아시아작곡가연맹 이사",
+    "identity_key_hint": "임지선|composer"
+  },
+  "primary_evidence": {
+    "url": "https://www.khan.co.kr/article/200512301538381",
+    "article_date": "2005-12-30",
+    "printed_heading": "임지선 작곡가 : 민족성 살리는 여성 작곡가",
+    "content_anchor": "연세대 음대 졸업 후 인디애나대에서 작곡 석·박사, 1996년부터 연세대 음대 작곡과 교수, 아시아작곡가연맹 이사"
+  },
+  "secondary_identity_evidence": [
+    "https://hwaum.org/bbs/board.php?bo_table=hwcomposer&wr_id=1",
+    "https://go.yonsei.ac.kr/fro_end/html/dep_03/3120.php?courseid=8236&smode=view"
+  ],
+  "impact": {
+    "selected_unit_count_change": 0,
+    "person_unit_count_change": 0,
+    "organization_unit_count_change": 0,
+    "name_change": false,
+    "identity_anchor_change": true,
+    "prior_outcome_scores_affected": false,
+    "reason": "문화예술 outcome audit had not yet been frozen when the correction was found."
+  },
+  "guardrails": [
+    "Do not use the violinist identity for this 2005 Kyunghyang selected unit.",
+    "All future outcome, identity and common-master work must resolve this unit as the composer Lim Ji-sun.",
+    "The v0.1 recovery file remains an immutable historical artifact; this correction supersedes its identity_anchor for 임지선."
+  ]
+}
