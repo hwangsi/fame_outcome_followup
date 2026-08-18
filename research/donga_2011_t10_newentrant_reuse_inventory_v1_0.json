@@ -1,0 +1,69 @@
+{
+  "schema_version": "donga_2011_t10_newentrant_reuse_inventory_v1.0",
+  "generated": "2026-08-18",
+  "cohort": "동아일보 2011 10년 뒤 한국을 빛낼 100인",
+  "population_scope": "62 new 2011 entrants only",
+  "window": {
+    "window_id": "t10",
+    "target_year": 2021,
+    "window_start": "2020-01-01",
+    "window_end": "2022-12-31"
+  },
+  "source_batches": [
+    "research/donga_2011_post_t0_new_audit_batch1_v0_1.json",
+    "research/donga_2011_post_t0_new_audit_batch2_v0_1.json",
+    "research/donga_2011_post_t0_new_audit_batch3_v0_1.json",
+    "research/donga_2011_post_t0_new_audit_batch4_v0_1.json",
+    "research/donga_2011_post_t0_new_audit_batch5_v0_1.json",
+    "research/donga_2011_post_t0_new_audit_batch6_v0_1.json"
+  ],
+  "qa": {
+    "new_entrant_n": 62,
+    "audit_rows_reviewed": 62,
+    "peak_event_inside_2020_2022_n": 18,
+    "requires_window_specific_reaudit_n": 44,
+    "not_assessable_in_lifetime_peak_layer_n": 1,
+    "not_assessable_name": "신준호"
+  },
+  "candidate_names_by_batch": {
+    "batch1": ["박형준", "김남구", "윤순진"],
+    "batch2": ["김부겸", "김태효", "손병두", "손흥민", "김정주", "이미경"],
+    "batch3": ["황철주"],
+    "batch4": ["손영래", "양윤선"],
+    "batch5": ["유범재", "조명숙", "이상이"],
+    "batch6": ["김철영", "이연희", "정근창"]
+  },
+  "direct_window_peak_candidates": [
+    {"name":"박형준","peak_year":2021,"candidate_score":3,"priority":"exact_2021","source_batch":1},
+    {"name":"김남구","peak_year":2020,"candidate_score":3,"priority":"check_2021_then_nearest_2020","source_batch":1},
+    {"name":"윤순진","peak_year":2021,"candidate_score":3,"priority":"exact_2021","source_batch":1},
+    {"name":"김부겸","peak_year":2021,"candidate_score":4,"priority":"exact_2021","source_batch":2},
+    {"name":"김태효","peak_year":2022,"candidate_score":3,"priority":"check_2021_then_nearest_2022","source_batch":2},
+    {"name":"손병두","peak_year":2020,"candidate_score":3,"priority":"tenure_spans_2021_check_exact","source_batch":2},
+    {"name":"손흥민","peak_year":2022,"candidate_score":4,"priority":"check_2021_role_then_nearest_2022","source_batch":2},
+    {"name":"김정주","peak_year":2021,"candidate_score":3,"priority":"exact_2021","source_batch":2,"death_year":2022,"note":"Observed exact-2021 role remains assessable; later death does not retroactively erase the snapshot."},
+    {"name":"이미경","peak_year":2020,"candidate_score":3,"priority":"check_2021_then_nearest_2020","source_batch":2},
+    {"name":"황철주","peak_year":2022,"candidate_score":3,"priority":"continuity_check_2021","source_batch":3},
+    {"name":"손영래","peak_year":2022,"candidate_score":3,"priority":"check_2021_then_nearest_2022","source_batch":4},
+    {"name":"양윤선","peak_year":2021,"candidate_score":2,"priority":"exact_2021","source_batch":4},
+    {"name":"유범재","peak_year":2020,"candidate_score":3,"priority":"check_2021_then_nearest_2020","source_batch":5},
+    {"name":"조명숙","peak_year":2021,"candidate_score":2,"priority":"exact_2021","source_batch":5},
+    {"name":"이상이","peak_year":2020,"candidate_score":2,"priority":"check_2021_then_nearest_2020","source_batch":5},
+    {"name":"김철영","peak_year":2021,"candidate_score":3,"priority":"exact_2021","source_batch":6},
+    {"name":"이연희","peak_year":2020,"candidate_score":3,"priority":"check_2021_then_nearest_2020","source_batch":6},
+    {"name":"정근창","peak_year":2021,"candidate_score":3,"priority":"exact_2021","source_batch":6}
+  ],
+  "interpretation": {
+    "exact_2021_peak_candidates_n": 8,
+    "nearest_or_continuity_candidates_n": 10,
+    "note": "Peak-year inclusion is triage only. Exact 2021 rows are strongest direct materialization candidates. 2020/2022 rows must first satisfy the protocol rule that no stronger direct 2021 evidence is available."
+  },
+  "guardrails": [
+    "Do not copy lifetime peak values outside 2020-2022 into T+10.",
+    "Do not automatically score a 2020 or 2022 peak as the T+10 snapshot before checking for direct 2021 evidence.",
+    "A pre-2020 peak may have continued into 2021, but continuity must be independently supported.",
+    "A post-2022 peak cannot raise the T+10 score.",
+    "Identity anchors from the frozen 2011 layer remain mandatory."
+  ],
+  "next": "Build the 38-repeat reuse inventory from frozen Dong-A 2010 target2020 evidence and repeat identity mapping, then merge all 100 rows into a T+10 work master with explicit unresolved paths."
+}
