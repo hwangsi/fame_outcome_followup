@@ -1,0 +1,13 @@
+{
+  "schema_version":"khan_2005_socialedu_person9_longitudinal_freeze_v1.0",
+  "generated":"2026-08-18",
+  "status":"frozen_t10_t20_person9",
+  "population":{"person_n":9,"field_selected_units":10,"organization_unit":"경제정의실천시민연합","death_truncated_ever_n":2},
+  "target_windows":{"t10":"2015 ±1 year (2014-2016)","t20":"2025 ±1 year (2024-2026)"},
+  "t10":{"assessable_n":8,"competing_event_n":1,"score_distribution":{"0":0,"1":0,"2":6,"3":2,"4":0,"null":1},"scope_ge2_n":8,"major_ge3_n":2,"apex_eq4_n":0},
+  "t20":{"assessable_n":7,"competing_event_n":2,"score_distribution":{"0":0,"1":1,"2":3,"3":3,"4":0,"null":2},"scope_ge2_n":6,"major_ge3_n":3,"apex_eq4_n":0},
+  "death_truncated_names":["박원순","이종욱"],
+  "audit_ref":"research/khan_2005_socialedu_person9_longitudinal_audit_v0_1.json",
+  "metrics_ref":"data/typeA/khan_2005_socialedu_person9_longitudinal_metrics_v1_0.json",
+  "guardrails":["Person9 is unit-type-specific secondary analysis within social-education10.","CCEJ is not assigned person scope.","Death is a competing event.","Earlier office scope is not inherited into later windows."]
+}
