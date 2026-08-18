@@ -1,0 +1,138 @@
+{
+  "schema_version": "typeA_common_longitudinal_metrics_v0.1",
+  "generated": "2026-08-18",
+  "status": "first_cross_cohort_fixed_window_metrics_layer",
+  "rules_ref": "state/coding_rules_typeA_longitudinal_v0_1.md",
+  "schema_ref": "state/typeA_common_longitudinal_schema_v0_1.json",
+  "purpose": "Keep fixed-window role occupancy separate from lifetime post-selection peak while making completed Type-A longitudinal cohorts comparable under common scope thresholds.",
+  "cohorts": {
+    "khan_2004_17th_assembly_newleaders_20": {
+      "outlet": "경향신문",
+      "unit_scope": "persons",
+      "original_n": 20,
+      "source_ref": "state/khan_2004_17th_assembly_newleaders_longitudinal_freeze_v1_0.json",
+      "t10": {
+        "assessable_n": 20,
+        "competing_event_n": 0,
+        "untraceable_n": 0,
+        "scope_ge2_n": 19,
+        "scope_ge2_rate": 0.95,
+        "major_ge3_n": 7,
+        "major_ge3_rate": 0.35,
+        "apex_eq4_n": 0,
+        "apex_eq4_rate": 0.0
+      },
+      "t20": {
+        "assessable_n": 18,
+        "competing_event_n": 2,
+        "untraceable_n": 0,
+        "scope_ge2_n": 12,
+        "scope_ge2_rate": 0.6666666667,
+        "major_ge3_n": 6,
+        "major_ge3_rate": 0.3333333333,
+        "apex_eq4_n": 0,
+        "apex_eq4_rate": 0.0
+      }
+    },
+    "khan_2005_korea_leaders60_person57": {
+      "outlet": "경향신문",
+      "unit_scope": "person-only secondary from mixed 60-unit selection",
+      "original_parent_units": 60,
+      "person_n": 57,
+      "organization_n_excluded_from_person_metrics": 3,
+      "source_ref": "state/khan_2005_korea_leaders60_person57_longitudinal_freeze_v1_0.json",
+      "t10": {
+        "assessable_n": 54,
+        "competing_event_n": 3,
+        "untraceable_n": 0,
+        "scope_ge2_n": 50,
+        "scope_ge2_rate": 0.9259259259,
+        "major_ge3_n": 27,
+        "major_ge3_rate": 0.5,
+        "apex_eq4_n": 3,
+        "apex_eq4_rate": 0.0555555556
+      },
+      "t20": {
+        "assessable_n": 52,
+        "competing_event_n": 5,
+        "untraceable_n": 0,
+        "scope_ge2_n": 44,
+        "scope_ge2_rate": 0.8461538462,
+        "major_ge3_n": 27,
+        "major_ge3_rate": 0.5192307692,
+        "apex_eq4_n": 10,
+        "apex_eq4_rate": 0.1923076923
+      }
+    },
+    "donga_2010_2020_100": {
+      "outlet": "동아일보",
+      "unit_scope": "persons",
+      "original_n": 100,
+      "source_ref": "state/donga_2010_target2020_freeze_v1_0.json",
+      "harmonization_ref": "state/donga_2010_target2020_t10_harmonization_freeze_v1_0.json",
+      "explicit_target_alias": "explicit_target_2020",
+      "t10": {
+        "target_year": 2020,
+        "window": "2019-2021",
+        "assessable_n": 87,
+        "competing_event_n": 3,
+        "untraceable_or_unresolved_n": 10,
+        "scope_ge2_n": 85,
+        "scope_ge2_rate": 0.9770114943,
+        "major_ge3_n": 42,
+        "major_ge3_rate": 0.4827586207,
+        "apex_eq4_n": 5,
+        "apex_eq4_rate": 0.0574712644
+      }
+    },
+    "donga_2011_10yr_100": {
+      "outlet": "동아일보",
+      "unit_scope": "persons",
+      "original_n": 100,
+      "source_ref": "data/typeA/donga_2011_t10_metrics_v1_0.json",
+      "freeze_ref": "state/donga_2011_t10_freeze_v1_0.json",
+      "t10": {
+        "target_year": 2021,
+        "window": "2020-2022",
+        "assessable_n": 90,
+        "competing_event_n": 1,
+        "untraceable_n": 9,
+        "scope_ge2_n": 87,
+        "scope_ge2_rate": 0.9666666667,
+        "major_ge3_n": 63,
+        "major_ge3_rate": 0.7,
+        "apex_eq4_n": 4,
+        "apex_eq4_rate": 0.0444444444
+      }
+    }
+  },
+  "cross_cohort_t10_descriptive": {
+    "scope_ge2_rates": {
+      "khan_2004": 0.95,
+      "khan_2005_person57": 0.9259259259,
+      "donga_2010": 0.9770114943,
+      "donga_2011": 0.9666666667
+    },
+    "major_ge3_rates": {
+      "khan_2004": 0.35,
+      "khan_2005_person57": 0.5,
+      "donga_2010": 0.4827586207,
+      "donga_2011": 0.7
+    },
+    "apex_eq4_rates": {
+      "khan_2004": 0.0,
+      "khan_2005_person57": 0.0555555556,
+      "donga_2010": 0.0574712644,
+      "donga_2011": 0.0444444444
+    },
+    "warning": "Descriptive only. Cohorts differ in selection year, design, sector mix, baseline prestige, denominator and target calendar year."
+  },
+  "key_pattern": "Across completed cohorts, T+10 scope>=2 is generally high (92.6-97.7%), while Major occupancy varies much more (35.0-70.0%). This supports using Major as a more discriminating fixed-window outcome than broad establishment.",
+  "guardrails": [
+    "Do not pool person and organization snapshot scores.",
+    "Do not pool cohort placements as independent observations when people overlap across cohorts.",
+    "Competing events and untraceable/unresolved rows remain outside the primary assessable denominator.",
+    "Explicit target-year and generic T+10 are a single canonical observation when their calendar windows are identical.",
+    "Lifetime Major/Apex and fixed-window Major/Apex use the same scope threshold but answer different temporal questions."
+  ]
+}
