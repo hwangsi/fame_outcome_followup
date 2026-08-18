@@ -1,0 +1,42 @@
+{
+  "schema_version": "khan_2005_nhn_t10_longitudinal_patch_v0.1",
+  "generated": "2026-08-18",
+  "status": "t10_organization_snapshot_complete",
+  "parent_selection": "khan_2005_korea_leaders60",
+  "field": "경제",
+  "organization_id": "org-khan05-nhn-parent",
+  "entity_key_t0": "NHN|2005_parent_corporation",
+  "target_window": "2015 ±1 year (2014-2016)",
+  "t10": {
+    "operational_status": "active_through_two_successor_lineages",
+    "continuity_class": "branched_continuity",
+    "reach": "branched_multi_entity",
+    "field_leadership": "significant",
+    "institutional_influence": "moderate",
+    "trajectory": "transformed_branched",
+    "successor_entities_in_window": [
+      {
+        "name": "NAVER Corp.",
+        "lineage_role": "surviving_portal_lineage",
+        "active_in_window": true
+      },
+      {
+        "name": "NHN Entertainment Corp.",
+        "lineage_role": "spun_off_game_lineage",
+        "active_in_window": true
+      }
+    ],
+    "confidence": "H",
+    "notes": "The 2013 corporate split predates the 2014-2016 T+10 window. Therefore the 2005 NHN selection unit is already a branched lineage at T+10 and must not be forced into a single company identity. The NHN Entertainment branch had not yet adopted the later 2019 NHN name during this window."
+  },
+  "evidence": [
+    "https://www.navercorp.com/media/pressReleasesDetail?seq=28884",
+    "https://www.navercorp.com/en/company/history",
+    "https://www.nhn.com/en-US/company?tab=about"
+  ],
+  "rules_ref": [
+    "state/coding_rules_typeA_organization_outcome_v0_1.md",
+    "research/khan_2005_organizations_outcome_audit_v0_1.json"
+  ],
+  "guardrail": "This organization snapshot has no person scope score and cannot enter person Major/Apex/Advanced denominators."
+}
