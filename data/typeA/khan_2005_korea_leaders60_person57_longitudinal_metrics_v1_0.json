@@ -1,0 +1,31 @@
+{
+  "schema_version":"khan_2005_korea_leaders60_person57_longitudinal_metrics_v1.0",
+  "generated":"2026-08-18",
+  "status":"t10_t20_complete_person57_secondary",
+  "parent_selection":"khan_2005_korea_leaders60",
+  "original_selected_units":60,
+  "person_units":57,
+  "organization_units":3,
+  "analysis_type":"prespecified_person_only_secondary",
+  "target_windows":{"t10":"2015 ±1 year (2014-2016)","t20":"2025 ±1 year (2024-2026)"},
+  "peak_reference":{"metrics_ref":"data/typeA/khan_2005_korea_leaders60_person57_metrics_v1_0.json","major_n":53,"major_rate":0.9298245614035088,"apex_n":24,"apex_rate":0.42105263157894735,"advanced_n":24,"advanced_rate":0.42105263157894735},
+  "snapshots":{
+    "t10":{"person_n":57,"assessable_n":54,"competing_event_n":3,"score_distribution":{"0":0,"1":4,"2":23,"3":24,"4":3,"null":3},"scope_ge2_n":50,"scope_ge2_rate_assessable":0.9259259259259259,"major_ge3_n":27,"major_ge3_rate_assessable":0.5,"apex_eq4_n":3,"apex_eq4_rate_assessable":0.05555555555555555},
+    "t20":{"person_n":57,"assessable_n":52,"competing_event_n":5,"score_distribution":{"0":0,"1":8,"2":17,"3":17,"4":10,"null":5},"scope_ge2_n":44,"scope_ge2_rate_assessable":0.8461538461538461,"major_ge3_n":27,"major_ge3_rate_assessable":0.5192307692307693,"apex_eq4_n":10,"apex_eq4_rate_assessable":0.19230769230769232}
+  },
+  "death_truncated_names":["김근태","노회찬","박원순","이종욱","김종학"],
+  "by_field":{
+    "정치":{"person_n":10,"t10":{"assessable_n":9,"major_ge3_n":3,"apex_eq4_n":1},"t20":{"assessable_n":8,"major_ge3_n":4,"apex_eq4_n":0},"metrics_ref":"data/typeA/khan_2005_politics10_longitudinal_metrics_v1_0.json"},
+    "경제":{"person_n":9,"organization_n":1,"organization":"NHN","t10":{"assessable_n":9,"major_ge3_n":7,"apex_eq4_n":2},"t20":{"assessable_n":9,"major_ge3_n":6,"apex_eq4_n":5},"metrics_ref":"data/typeA/khan_2005_economy_person9_longitudinal_metrics_v1_0.json"},
+    "과학기술":{"person_n":9,"organization_n":1,"organization":"한국공학교육인증원","t10":{"assessable_n":9,"major_ge3_n":5,"apex_eq4_n":0},"t20":{"assessable_n":9,"major_ge3_n":5,"apex_eq4_n":2},"metrics_ref":"data/typeA/khan_2005_scitech_person9_longitudinal_metrics_v1_0.json"},
+    "사회교육":{"person_n":9,"organization_n":1,"organization":"경제정의실천시민연합","t10":{"assessable_n":8,"major_ge3_n":2,"apex_eq4_n":0},"t20":{"assessable_n":7,"major_ge3_n":3,"apex_eq4_n":0},"metrics_ref":"data/typeA/khan_2005_socialedu_person9_longitudinal_metrics_v1_0.json"},
+    "대중문화":{"person_n":10,"t10":{"assessable_n":9,"major_ge3_n":4,"apex_eq4_n":0},"t20":{"assessable_n":9,"major_ge3_n":4,"apex_eq4_n":2},"metrics_ref":"data/typeA/khan_2005_popculture10_longitudinal_metrics_v1_0.json"},
+    "문화예술":{"person_n":10,"t10":{"assessable_n":10,"major_ge3_n":6,"apex_eq4_n":0},"t20":{"assessable_n":10,"major_ge3_n":5,"apex_eq4_n":1},"metrics_ref":"data/typeA/khan_2005_cultureart10_longitudinal_metrics_v1_0.json"}
+  },
+  "interpretation":{
+    "peak_vs_persistence":"Peak Major 53/57 (93.0%) is much higher than fixed-window Major: T+10 27/54 (50.0%) and T+20 27/52 (51.9%). This shows that eventual high achievement and being in a major role at a fixed later time are different outcomes.",
+    "apex_pattern":"Lifetime peak Apex is 24/57 (42.1%), versus T+10 3/54 (5.6%) and T+20 10/52 (19.2%). The T+20 increase over T+10 reflects later-generation executives/scientists/cultural leaders reaching apex while some older leaders retire or die; it is not a cumulative survival curve.",
+    "activity_floor":"Scope >=2 remains high: T+10 50/54 (92.6%) and T+20 44/52 (84.6%), indicating broad long-run professional/public activity even when major leadership is no longer held."
+  },
+  "guardrails":["The original primary denominator remains 60 selected units; these are person-only secondary metrics.","Organization units are not missing and are reported separately under organization axes.","Deaths are competing events and excluded from assessable snapshot denominators.","Fixed-window scores do not inherit earlier lifetime peaks or former titles.","T+10 and T+20 are independent window snapshots, not cumulative success probabilities.","Field heterogeneity makes pooled person57 values descriptive rather than causal or outlet-superiority estimates."]
+}
