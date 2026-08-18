@@ -1,0 +1,15 @@
+{
+  "schema_version":"khan_2005_popculture10_longitudinal_metrics_v1.0",
+  "generated":"2026-08-18",
+  "population":{"n":10,"field_selected_units":10,"person_units":10,"death_truncated_ever_n":1},
+  "target_windows":{"t10":"2015 ±1 year (2014-2016)","t20":"2025 ±1 year (2024-2026)"},
+  "peak_reference":{"major_n":10,"apex_n":2,"advanced_n":2,"sustained_high_n":8},
+  "snapshots":{
+    "t10":{"assessable_n":9,"competing_event_n":1,"score_distribution":{"0":0,"1":1,"2":4,"3":4,"4":0,"null":1},"scope_ge2_n":8,"scope_ge2_rate_assessable":0.8888888888888888,"major_ge3_n":4,"major_ge3_rate_assessable":0.4444444444444444,"apex_eq4_n":0,"apex_eq4_rate_assessable":0.0},
+    "t20":{"assessable_n":9,"competing_event_n":1,"score_distribution":{"0":0,"1":2,"2":3,"3":2,"4":2,"null":1},"scope_ge2_n":7,"scope_ge2_rate_assessable":0.7777777777777778,"major_ge3_n":4,"major_ge3_rate_assessable":0.4444444444444444,"apex_eq4_n":2,"apex_eq4_rate_assessable":0.2222222222222222}
+  },
+  "trajectory_contrast":{"ever_advanced_n_full":2,"ever_advanced_rate_full":0.2,"t10_major_among_assessable":{"n":4,"denominator":9,"rate":0.4444444444444444},"t20_major_among_assessable":{"n":4,"denominator":9,"rate":0.4444444444444444},"t10_apex_among_assessable":{"n":0,"denominator":9,"rate":0.0},"t20_apex_among_assessable":{"n":2,"denominator":9,"rate":0.2222222222222222},"interpretation":"Major-scope persistence is numerically unchanged from T+10 to T+20, but the composition shifts sharply: several 2005 superstars move into retirement or lower-intensity roles, while Park Chan-wook and Miky Lee occupy global-apex cultural roles in the T+20 window."},
+  "death_truncated_names":["김종학"],
+  "source_audit":"research/khan_2005_popculture10_longitudinal_audit_v0_1.json",
+  "guardrails":["Historical celebrity/sports peak is not inherited into fixed-window scope.","Death is a competing event.","Senior-sport major success is kept distinct from open-age global-apex criteria.","Domestic top-performer success without current major international recognition remains below culture score3."]
+}
