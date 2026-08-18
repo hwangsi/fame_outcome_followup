@@ -1,0 +1,56 @@
+{
+  "schema_version": "joongang_2005_daejeon_youngleaders_recovery_v0.1",
+  "generated": "2026-08-18",
+  "status": "regional_typeA_candidate_roster_and_selection_architecture_recovered",
+  "publication_attribution": "중앙일보",
+  "co_organizers": ["대전광역시", "한국행정학회"],
+  "program": "지역비전 포럼",
+  "working_title": "대덕R&D특구 차세대 영 리더",
+  "selection_date": "2005-02-16",
+  "geographic_scope": "대전/대덕R&D특구 regional",
+  "national_common_master_eligibility": false,
+  "reason_not_national_common": "Selection target is explicitly regional; preserve as a separate regional Type-A stratum rather than pooling with national cohorts.",
+  "selection_architecture": {
+    "fields": ["비즈니스", "과학기술", "문화예술", "사회복지"],
+    "first_stage": "지역혁신협의회가 분야별 복수 후보 추천 후 분야별 3명씩 선정",
+    "first_stage_n": 12,
+    "final_stage": "다보스포럼 차세대 영리더 자문회의 심사",
+    "final_per_field": 1,
+    "final_n": 4,
+    "ranked": false
+  },
+  "final_roster": [
+    {"name": "박성동", "field": "비즈니스", "t0_role": "쎄트렉아이 사장"},
+    {"name": "강정구", "field": "과학기술", "t0_role": "KAIST 교수"},
+    {"name": "신영숙", "field": "문화예술", "t0_role": "침례신학대학 교수·첼리스트"},
+    {"name": "심완섭", "field": "사회복지", "t0_role": "대전시 중구 석교동사무소 지방행정 주사"}
+  ],
+  "sources": [
+    {
+      "url": "https://www.hellodd.com/news/articleView.html?idxno=10533",
+      "date": "2005-02-16",
+      "type": "contemporaneous_independent_report",
+      "supports": ["publication/co-organizer attribution", "final roster 4", "fields", "first-stage 12", "final selection mechanism"]
+    },
+    {
+      "url": "https://economist.co.kr/article/view/ecn200502280044",
+      "date": "2005-02-28",
+      "type": "contemporaneous_JoongAng_affiliated_magazine_report",
+      "supports": ["same final roster 4", "field structure", "12-to-4 selection architecture"]
+    }
+  ],
+  "qa": {
+    "final_roster_n": 4,
+    "denominator_known": true,
+    "selection_mechanism_known": true,
+    "selection_date_known": true,
+    "contemporaneous_source_n": 2,
+    "eligible_as_regional_typeA": true,
+    "eligible_for_national_common_master": false
+  },
+  "next": [
+    "Identity-anchor all four people before outcome coding.",
+    "Build T+10 window 2014-2016 and T+20 window 2024-2026 as a regional secondary cohort.",
+    "Search whether the same JoongAng Regional Vision Forum architecture was repeated in other regions; if so, recover as a multi-region program rather than treating Daejeon in isolation."
+  ]
+}
