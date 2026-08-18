@@ -1,0 +1,36 @@
+{
+  "schema_version": "typeA_common_longitudinal_metrics_freeze_v0.1",
+  "generated": "2026-08-18",
+  "status": "frozen_first_cross_cohort_fixed_window_metrics_layer",
+  "metrics_ref": "data/typeA/typeA_common_longitudinal_metrics_v0_1.json",
+  "rules_ref": "state/coding_rules_typeA_longitudinal_v0_1.md",
+  "schema_ref": "state/typeA_common_longitudinal_schema_v0_1.json",
+  "included_longitudinal_units": [
+    "khan_2004_17th_assembly_newleaders_20",
+    "khan_2005_korea_leaders60_person57",
+    "donga_2010_2020_100",
+    "donga_2011_10yr_100"
+  ],
+  "completed_window_coverage": {
+    "t10_units": 4,
+    "t20_units": 2,
+    "donga_2010_explicit_target_2020_reuses_t10_canonical_snapshot": true
+  },
+  "t10_rate_ranges_across_included_units": {
+    "scope_ge2_min": 0.9259259259,
+    "scope_ge2_max": 0.9770114943,
+    "major_ge3_min": 0.35,
+    "major_ge3_max": 0.7,
+    "apex_eq4_min": 0.0,
+    "apex_eq4_max": 0.0574712644
+  },
+  "frozen_pattern": "Broad scope>=2 occupancy is uniformly high at T+10, whereas Major>=3 occupancy is substantially more variable and therefore more discriminating across completed cohorts.",
+  "guardrails": [
+    "This metrics layer does not alter any source cohort freeze.",
+    "Kyunghyang 2005 is person57 secondary analysis from an original mixed 60-unit selection; three organizations remain outside person scoring.",
+    "No naive pooled p-value is authorized across heterogeneous cohorts.",
+    "Overlapping persons must be deduplicated or modeled explicitly for person-level cross-cohort analyses.",
+    "Fixed-window and lifetime outcomes remain separate namespaces."
+  ],
+  "next": "Materialize common longitudinal row-level adapters where source rows are available, then extend T+20 to additional cohorts as calendar follow-up permits."
+}
