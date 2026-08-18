@@ -1,0 +1,120 @@
+name: Kyunghyang 2005 Politics10 + Type-A Common v0.4 QA
+
+on:
+  push:
+    paths:
+      - 'research/khan_2005_korea_leaders60_recovery_v0_1.json'
+      - 'research/khan_2005_politics10_peak_audit_v0_1.json'
+      - 'research/khan_2005_politics10_identity_audit_v0_1.json'
+      - 'scripts/build_khan_2005_politics10_peak_master.py'
+      - 'scripts/build_typeA_common_master_v0_4.py'
+      - 'scripts/build_typeA_cross_cohort_comparison_v0_5.py'
+      - 'scripts/identity_resolution.py'
+      - '.github/workflows/khan-2005-politics10-common-v04-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-freeze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build Kyunghyang 2005 politics10 peak master
+        run: python scripts/build_khan_2005_politics10_peak_master.py
+
+      - name: QA politics10 peak master
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('data/typeA/khan_2005_politics10_peak_master_v1_0.json',encoding='utf-8'))
+          m=json.load(open('data/typeA/khan_2005_politics10_metrics_v1_0.json',encoding='utf-8'))
+          f=json.load(open('state/khan_2005_politics10_freeze_v1_0.json',encoding='utf-8'))
+          assert len(d['people'])==10
+          assert m['population']=={'n':10,'assessable_n':10,'parent_selected_units':60,'field_specific_secondary':True}
+          assert m['baseline']=={'mean':2.6,'distribution':{'2':4,'3':6}}
+          assert m['post_peak']=={'mean':3.5,'distribution':{'3':5,'4':5}}
+          assert m['outcomes']['major_n']==10
+          assert m['outcomes']['apex_n']==5
+          assert m['outcomes']['advanced_n']==8
+          assert m['outcomes']['sustained_high_n']==2
+          assert m['apex_names']==['김부겸','박근혜','손학규','이명박','정동영']
+          assert m['sustained_high_names']==['강금실','김근태']
+          assert f['outcomes']==m['outcomes']
+          PY
+
+      - name: Build Type-A common master v0.4
+        run: python scripts/build_typeA_common_master_v0_4.py
+
+      - name: QA common master v0.4
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('data/typeA/typeA_common_master_v0_4.json',encoding='utf-8'))
+          m=json.load(open('data/typeA/typeA_common_metrics_v0_4.json',encoding='utf-8'))
+          f=json.load(open('state/typeA_common_master_freeze_v0_4.json',encoding='utf-8'))
+          q=d['qa']
+          assert q['placements']==255
+          assert q['unique_people']==195
+          assert q['unique_display_names']==194
+          assert q['true_homonym_split_n']==1
+          assert q['cohort_units']==7
+          assert q['not_assessable_placements']==1
+          assert q['field_specific_secondary_units']==['khan_2005_korea_leaders60_politics10']
+          assert q['mixed_parent_selections_excluded_from_person_master']==['khan_2005_korea_leaders60']
+          assert len([r for r in d['placements'] if r['cohort_unit']=='khan_2005_korea_leaders60_politics10'])==10
+          assert not any(r.get('parent_selection')=='khan_2005_korea_leaders60' and r['cohort_unit']!='khan_2005_korea_leaders60_politics10' for r in d['placements'])
+          k=m['by_cohort_unit']['khan_2005_korea_leaders60_politics10']
+          assert (k['n'],k['major_n'],k['apex_n'],k['advanced_n'])==(10,10,5,8)
+          assert abs(k['baseline_mean']-2.6)<1e-12
+          assert abs(k['post_peak_mean_assessable']-3.5)<1e-12
+          assert k['field_specific_secondary'] is True
+          assert m['naive_placement_pooled_descriptive']['major_n']==216
+          assert m['naive_placement_pooled_descriptive']['apex_n']==44
+          assert m['naive_placement_pooled_descriptive']['advanced_n']==106
+          assert m['person_first_selection_descriptive']['persons']==195
+          assert m['person_first_selection_descriptive']['first_selection_major_n']==159
+          assert m['person_first_selection_descriptive']['first_selection_apex_n']==24
+          assert m['person_first_selection_descriptive']['first_selection_advanced_n']==79
+          lee=[p for p in d['people'] if p['name']=='이미경']
+          assert len(lee)==2 and len({p['person_id'] for p in lee})==2
+          assert f['qa']==q
+          PY
+
+      - name: Build cross-cohort comparison v0.5
+        run: python scripts/build_typeA_cross_cohort_comparison_v0_5.py
+
+      - name: QA comparison v0.5
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          s=Path('analysis/typeA_cross_cohort_comparison_v0_5.md').read_text(encoding='utf-8')
+          assert '255 placements / 195 canonical persons / 7 cohort units' in s
+          assert '경향 2005 한국을 이끌 60인 — 정치10' in s
+          assert 'Advanced: **8/10 = 80%**' in s
+          assert '60 selected units = 57 persons + 3 organizations' in s
+          assert 'baseline 2.60, Advanced 80%' in s
+          PY
+
+      - name: Persist v0.4/v0.5 outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/typeA/khan_2005_politics10_peak_master_v1_0.json \
+            data/typeA/khan_2005_politics10_metrics_v1_0.json \
+            state/khan_2005_politics10_freeze_v1_0.json \
+            data/typeA/typeA_common_master_v0_4.json \
+            data/typeA/typeA_common_master_v0_4.csv \
+            data/typeA/typeA_common_metrics_v0_4.json \
+            state/typeA_common_master_freeze_v0_4.json \
+            analysis/typeA_cross_cohort_comparison_v0_5.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Freeze Kyunghyang 2005 politics10 and Type-A common v0.4"
+            git push
+          fi
