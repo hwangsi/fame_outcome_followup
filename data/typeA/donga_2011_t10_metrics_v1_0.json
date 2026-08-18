@@ -1,0 +1,77 @@
+{
+  "schema_version": "donga_2011_t10_metrics_v1.0",
+  "generated": "2026-08-18",
+  "status": "final_metrics_unlocked_after_100_of_100_paths",
+  "master_ref": "data/typeA/donga_2011_t10_final_master_v1_0.json",
+  "window": {"target_year":2021,"window_start":"2020-01-01","window_end":"2022-12-31"},
+  "population": {
+    "original_n":100,
+    "assessable_n":90,
+    "competing_event_n":1,
+    "untraceable_n":9
+  },
+  "primary_assessable_denominator": {
+    "scope_ge2_n":87,
+    "scope_ge2_rate":0.9666666667,
+    "major_ge3_n":63,
+    "major_ge3_rate":0.7000000000,
+    "apex_eq4_n":4,
+    "apex_eq4_rate":0.0444444444,
+    "score_counts":{"0":1,"1":2,"2":24,"3":59,"4":4}
+  },
+  "original_cohort_denominator_descriptive": {
+    "scope_ge2_n":87,
+    "scope_ge2_rate":0.87,
+    "major_ge3_n":63,
+    "major_ge3_rate":0.63,
+    "apex_eq4_n":4,
+    "apex_eq4_rate":0.04,
+    "note":"Competing event and untraceable rows are retained in original N but are not scored as failures in the primary analysis. These rates are conservative descriptive full-cohort bounds, not the primary window metric."
+  },
+  "repeat_2010_2011": {
+    "original_n":38,
+    "assessable_n":33,
+    "competing_event_n":1,
+    "untraceable_n":4,
+    "score_counts":{"1":1,"2":7,"3":22,"4":3},
+    "scope_ge2_n":32,
+    "scope_ge2_rate_assessable":0.9696969697,
+    "major_ge3_n":25,
+    "major_ge3_rate_assessable":0.7575757576,
+    "apex_eq4_n":3,
+    "apex_eq4_rate_assessable":0.0909090909
+  },
+  "new_2011_entrants": {
+    "original_n":62,
+    "assessable_n":57,
+    "competing_event_n":0,
+    "untraceable_n":5,
+    "score_counts":{"0":1,"1":1,"2":17,"3":37,"4":1},
+    "scope_ge2_n":55,
+    "scope_ge2_rate_assessable":0.9649122807,
+    "major_ge3_n":38,
+    "major_ge3_rate_assessable":0.6666666667,
+    "apex_eq4_n":1,
+    "apex_eq4_rate_assessable":0.0175438596
+  },
+  "repeat_vs_new_exploratory_fisher_exact": {
+    "scope_ge2_p_two_sided":1.0,
+    "major_ge3_p_two_sided":0.4754393407,
+    "apex_eq4_p_two_sided":0.1377243962,
+    "note":"Exploratory only. Repeat selection is observational, samples are small, and this is not a causal comparison."
+  },
+  "contrast_with_lifetime_layer": {
+    "lifetime_postselection_major_full_cohort_rate":0.90,
+    "lifetime_postselection_apex_full_cohort_rate":0.12,
+    "t10_major_assessable_rate":0.70,
+    "t10_apex_assessable_rate":0.0444444444,
+    "interpretation":"The large drop from eventual peak attainment to fixed-window occupancy demonstrates why lifetime success and T+10 persistence must remain separate outcomes. Denominators differ, so this is a conceptual/descriptive contrast rather than a paired percentage-point estimator."
+  },
+  "analysis_gate": {"final_t10_metrics_allowed":true,"unlock_reason":"100/100 final outcome paths; competing event and untraceable rows explicit; identity and 2021-first QA completed."},
+  "guardrails": [
+    "Primary fixed-window proportions use the assessable denominator.",
+    "Competing event and untraceable are never silently converted to zero.",
+    "Exact 2021 evidence has priority over 2020/2022 fallback even when fallback carries a higher prominence score.",
+    "Lifetime peak and T+10 occupancy answer different questions."
+  ]
+}
