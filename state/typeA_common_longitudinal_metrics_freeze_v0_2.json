@@ -1,0 +1,14 @@
+{
+  "schema_version": "typeA_common_longitudinal_metrics_freeze_v0.2",
+  "generated": "2026-08-18",
+  "row_master_ref": "data/typeA/typeA_common_longitudinal_rows_v0_3.json",
+  "qa": {
+    "cohort_units": 4,
+    "t10_cohorts": 4,
+    "t20_cohorts": 2,
+    "khan_2005_t20_scope_ge2_n": 43,
+    "khan_2005_t20_major_ge3_n": 26
+  },
+  "supersedes": "data/typeA/typeA_common_longitudinal_metrics_v0_1.json",
+  "metrics_ref": "data/typeA/typeA_common_longitudinal_metrics_v0_2.json"
+}

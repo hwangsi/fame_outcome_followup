@@ -1,0 +1,151 @@
+{
+  "schema_version": "typeA_common_longitudinal_metrics_v0.2",
+  "generated": "2026-08-18",
+  "status": "row_derived_corrected_after_khan2005_scitech_retirement",
+  "row_master_ref": "data/typeA/typeA_common_longitudinal_rows_v0_3.json",
+  "cohorts": {
+    "khan_2004_17th_assembly_newleaders_20": {
+      "outlet": "경향신문",
+      "unit_scope": "persons",
+      "original_n": 20,
+      "source_ref": "data/typeA/khan_2004_17th_assembly_newleaders_longitudinal_master_v1_0.json",
+      "t10": {
+        "assessable_n": 20,
+        "competing_event_n": 0,
+        "untraceable_n": 0,
+        "scope_ge2_n": 19,
+        "major_ge3_n": 7,
+        "apex_eq4_n": 0,
+        "scope_ge2_rate": 0.95,
+        "major_ge3_rate": 0.35,
+        "apex_eq4_rate": 0.0
+      },
+      "t20": {
+        "assessable_n": 18,
+        "competing_event_n": 2,
+        "untraceable_n": 0,
+        "scope_ge2_n": 12,
+        "major_ge3_n": 6,
+        "apex_eq4_n": 0,
+        "scope_ge2_rate": 0.6666666666666666,
+        "major_ge3_rate": 0.3333333333333333,
+        "apex_eq4_rate": 0.0
+      }
+    },
+    "khan_2005_korea_leaders60_person57": {
+      "outlet": "경향신문",
+      "unit_scope": "person-only secondary from mixed 60-unit selection",
+      "original_parent_units": 60,
+      "person_n": 57,
+      "organization_n_excluded_from_person_metrics": 3,
+      "source_ref": "state/khan_2005_korea_leaders60_person57_longitudinal_freeze_v1_1.json",
+      "t10": {
+        "assessable_n": 54,
+        "competing_event_n": 3,
+        "untraceable_n": 0,
+        "scope_ge2_n": 50,
+        "major_ge3_n": 27,
+        "apex_eq4_n": 3,
+        "scope_ge2_rate": 0.9259259259259259,
+        "major_ge3_rate": 0.5,
+        "apex_eq4_rate": 0.05555555555555555
+      },
+      "t20": {
+        "assessable_n": 52,
+        "competing_event_n": 5,
+        "untraceable_n": 0,
+        "scope_ge2_n": 43,
+        "major_ge3_n": 26,
+        "apex_eq4_n": 10,
+        "scope_ge2_rate": 0.8269230769230769,
+        "major_ge3_rate": 0.5,
+        "apex_eq4_rate": 0.19230769230769232
+      }
+    },
+    "donga_2010_2020_100": {
+      "outlet": "동아일보",
+      "unit_scope": "persons",
+      "original_n": 100,
+      "source_ref": "data/typeA/donga_2010_common_longitudinal_rows_v0_1.json",
+      "explicit_target_alias": "explicit_target_2020",
+      "t10": {
+        "assessable_n": 87,
+        "competing_event_n": 3,
+        "untraceable_n": 10,
+        "scope_ge2_n": 85,
+        "major_ge3_n": 42,
+        "apex_eq4_n": 5,
+        "scope_ge2_rate": 0.9770114942528736,
+        "major_ge3_rate": 0.4827586206896552,
+        "apex_eq4_rate": 0.05747126436781609
+      }
+    },
+    "donga_2011_10yr_100": {
+      "outlet": "동아일보",
+      "unit_scope": "persons",
+      "original_n": 100,
+      "source_ref": "data/typeA/donga_2011_common_longitudinal_rows_v0_1.json",
+      "t10": {
+        "assessable_n": 90,
+        "competing_event_n": 1,
+        "untraceable_n": 9,
+        "scope_ge2_n": 87,
+        "major_ge3_n": 63,
+        "apex_eq4_n": 4,
+        "scope_ge2_rate": 0.9666666666666667,
+        "major_ge3_rate": 0.7,
+        "apex_eq4_rate": 0.044444444444444446
+      }
+    }
+  },
+  "cross_cohort_t10_descriptive": {
+    "scope_ge2_rates": {
+      "khan_2004": 0.95,
+      "khan_2005_person57": 0.9259259259259259,
+      "donga_2010": 0.9770114942528736,
+      "donga_2011": 0.9666666666666667
+    },
+    "major_ge3_rates": {
+      "khan_2004": 0.35,
+      "khan_2005_person57": 0.5,
+      "donga_2010": 0.4827586206896552,
+      "donga_2011": 0.7
+    },
+    "apex_eq4_rates": {
+      "khan_2004": 0.0,
+      "khan_2005_person57": 0.05555555555555555,
+      "donga_2010": 0.05747126436781609,
+      "donga_2011": 0.044444444444444446
+    },
+    "warning": "Descriptive only. Cohorts differ in selection year, design, sector mix, baseline prestige, denominator and target calendar year."
+  },
+  "correction_from_v0_1": {
+    "cohort": "khan_2005_korea_leaders60_person57",
+    "window": "t20",
+    "scope_ge2_n": {
+      "old": 44,
+      "new": 43
+    },
+    "major_ge3_n": {
+      "old": 27,
+      "new": 26
+    },
+    "scope_ge2_rate": {
+      "old": 0.8461538462,
+      "new": 0.8269230769230769
+    },
+    "major_ge3_rate": {
+      "old": 0.5192307692,
+      "new": 0.5
+    },
+    "reason": "Shin Hee-sup T20 retirement correction changed science-tech scope3 to scope1; v0.1 common metrics predated aggregate regeneration."
+  },
+  "key_pattern": "T+10 broad establishment remains high across all four completed row-ready cohorts, while Major occupancy varies substantially; T+20 estimates are available for both Kyunghyang cohorts and must use corrected K05 values.",
+  "guardrails": [
+    "Metrics are derived from the frozen row-level common master, not manually copied field totals.",
+    "Do not pool person and organization snapshot scores.",
+    "Do not treat repeated people across cohorts as independent observations.",
+    "Competing events and untraceable rows are excluded from assessable denominators.",
+    "Lifetime peak and fixed-window occupancy remain separate outcomes."
+  ]
+}
