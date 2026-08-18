@@ -1,0 +1,31 @@
+{
+  "schema_version":"khan_2005_socialedu10_field_completion_v0.1",
+  "generated":"2026-08-18",
+  "status":"field_outcomes_resolved_10_of_10_by_unit_type",
+  "parent_selection":"khan_2005_korea_leaders60",
+  "field":"사회교육",
+  "field_selected_units":10,
+  "unit_composition":{"persons":9,"organizations":1,"organization_name":"경제정의실천시민연합"},
+  "person_outcome_ref":"research/khan_2005_socialedu_person9_peak_audit_v0_1.json",
+  "person_metrics_ref":"data/typeA/khan_2005_socialedu_person9_metrics_v1_0.json",
+  "person_freeze_ref":"state/khan_2005_socialedu_person9_freeze_v1_0.json",
+  "organization_outcome_ref":"research/khan_2005_organizations_outcome_audit_v0_1.json",
+  "person9_summary":{"baseline_mean":2.7777777777777777,"post_peak_mean":3.5555555555555554,"major_n":9,"major_rate":1.0,"apex_n":5,"apex_rate":0.5555555555555556,"advanced_n":4,"advanced_rate":0.4444444444444444,"sustained_high_n":5,"sustained_high_rate":0.5555555555555556},
+  "organization1_summary":{"name":"경제정의실천시민연합","continuity_class":"direct_continuity","t20_reach":"national_broad","t20_field_leadership":"significant","t20_institutional_influence":"moderate","t20_trajectory":"sustained_high","confidence":"M-H"},
+  "field_interpretation":[
+    "All 10 selected social-education units now have an outcome path resolved under the appropriate unit-type architecture.",
+    "All nine persons later occupied scope3+ roles, but only four showed baseline-adjusted advancement because several were already major national or global leaders at selection.",
+    "The strongest baseline-ceiling example is 이종욱, who was already WHO Director-General at T0 and therefore remains sustained_high rather than advanced.",
+    "김상조, 조국 and 하승창 reached presidential-core policy roles and 정운찬 became Prime Minister, producing four person-level advancements.",
+    "경제정의실천시민연합 shows direct organizational continuity and sustained broad national civic-policy activity; it is not converted into a person-style outcome.",
+    "No single social-education10 success percentage is calculated because person and organization outcomes use different architectures."
+  ],
+  "guardrails":[
+    "Original field denominator remains 10.",
+    "Do not report Major 9/10 or Advanced 4/10; those numerators apply to the nine-person subset only.",
+    "Do not silently drop 경제정의실천시민연합 to redefine the field as a nine-person selection.",
+    "Do not convert the organization's sustained_high trajectory into person sustained_high or Advanced.",
+    "Outcome scope records verified roles, not normative approval or later controversy."
+  ],
+  "qa":{"selected_units":10,"resolved_person_units":9,"resolved_organization_units":1,"resolved_total":10,"unit_type_specific_outcome_complete":true,"single_composite_success_rate_generated":false}
+}
