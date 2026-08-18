@@ -1,0 +1,41 @@
+name: Materialize Dong-A 2010 common longitudinal rows
+
+on:
+  push:
+    paths:
+      - 'scripts/build_donga_2010_common_longitudinal_rows_v0_1.py'
+      - '.github/workflows/materialize-donga-2010-common-longitudinal-rows.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build common rows
+        run: python scripts/build_donga_2010_common_longitudinal_rows_v0_1.py
+      - name: QA
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('data/typeA/donga_2010_common_longitudinal_rows_v0_1.json',encoding='utf-8'))
+          q=d['qa']
+          assert q['rows']==100 and q['unique_names']==100
+          assert q['assessable_n']==87 and q['competing_event_n']==3 and q['untraceable_n']==10
+          assert q['scope_ge2_n']==85 and q['major_ge3_n']==42 and q['apex_eq4_n']==5
+          PY
+      - name: Persist
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/typeA/donga_2010_common_longitudinal_rows_v0_1.json state/donga_2010_common_longitudinal_rows_freeze_v0_1.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Materialize Dong-A 2010 common longitudinal rows"
+            git push
+          fi
