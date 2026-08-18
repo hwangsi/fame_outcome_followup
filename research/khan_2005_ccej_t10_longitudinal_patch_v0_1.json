@@ -1,0 +1,23 @@
+{
+  "schema_version":"khan_2005_ccej_t10_longitudinal_patch_v0.1",
+  "generated":"2026-08-18",
+  "status":"t10_organization_snapshot_complete",
+  "parent_selection":"khan_2005_korea_leaders60",
+  "field":"사회교육",
+  "organization_id":"org-khan05-ccej",
+  "entity_key_t0":"경제정의실천시민연합",
+  "target_window":"2015 ±1 year (2014-2016)",
+  "t10":{
+    "operational_status":"active",
+    "continuity_class":"direct_continuity",
+    "reach":"national_broad",
+    "field_leadership":"significant",
+    "institutional_influence":"moderate",
+    "trajectory":"sustained_high",
+    "confidence":"H",
+    "notes":"In 2015 CCEJ remained an active nationwide civic-policy organization, including detailed evaluation of 674 presidential campaign pledges across 20 policy areas. This demonstrates continued broad national policy intervention but does not by itself establish expansion beyond its already prominent 2005 baseline."
+  },
+  "evidence":["https://www.yna.co.kr/view/AKR20150216034300004","https://ccej.or.kr/pages/135"],
+  "rules_ref":["state/coding_rules_typeA_organization_outcome_v0_1.md","research/khan_2005_organizations_outcome_audit_v0_1.json"],
+  "guardrail":"Organization axes only; no person Major/Apex/Advanced score is assigned."
+}
