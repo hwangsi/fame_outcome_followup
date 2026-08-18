@@ -1,0 +1,78 @@
+{
+  "schema_version": "donga_2011_t10_repeat_public_politics_audit_v0.1",
+  "generated": "2026-08-18",
+  "cohort": "동아일보 2011 10년 뒤 한국을 빛낼 100인",
+  "window": {"window_id":"t10","target_year":2021,"window_start":"2020-01-01","window_end":"2022-12-31"},
+  "population_scope": "10 repeat-selected persons in 미래를 여는 지도자 + 행동하는 지성인",
+  "rules_ref": "state/coding_rules_typeA_longitudinal_v0_1.md",
+  "fallback_refs": ["data/typeA/donga_2010_target2020_outcomes_v0_1.json","data/typeA/donga_2010_target2020_outcomes_intellectuals_v0_1.json"],
+  "people": [
+    {
+      "name":"김문수","status":"assessable","role_at_window":"자유통일당·자유공화당 대표 경력의 전국 정치인","scope_score":2,"scope_label":"established","evidence_date":"2020-01~2020-03","match":"nearest_within_window_reused_2020","confidence":"H",
+      "evidence_refs":["data/typeA/donga_2010_target2020_outcomes_v0_1.json"],
+      "coding_note":"No stronger reproducible direct-2021 occupied office was established in the priority check. Reuse the frozen 2020 exact observation as nearest admissible evidence."
+    },
+    {
+      "name":"나경원","status":"assessable","role_at_window":"전 국회의원·국민의힘 서울시장 경선후보","scope_score":2,"scope_label":"established","evidence_date":"2021-03-04","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://www.yna.co.kr/view/AKR20210304070900001"],
+      "coding_note":"2021 direct evidence confirms active national political participation in the Seoul mayoral primary. Candidacy does not itself qualify as score 3, so retain established-national-politician score 2."
+    },
+    {
+      "name":"오세훈","status":"assessable","role_at_window":"서울특별시장","scope_score":3,"scope_label":"major","evidence_date":"2021-07-14","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://www.yna.co.kr/view/AKR20210713128100004"],
+      "coding_note":"Direct 2021 evidence confirms return to office as Seoul mayor; this supersedes the lower 2020 candidate-only snapshot."
+    },
+    {
+      "name":"원희룡","status":"assessable","role_at_window":"제주특별자치도지사(2021년 8월까지)·대선 경선 후보","scope_score":3,"scope_label":"major","evidence_date":"2021-08-01","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://www.yna.co.kr/view/AKR20210801030800056"],
+      "coding_note":"2021 direct evidence confirms he occupied the governor role during the target year before resigning for the presidential race."
+    },
+    {
+      "name":"유시민","status":"assessable","role_at_window":"노무현재단 이사장(2021년 10월까지)·작가/시사평론가","scope_score":2,"scope_label":"established","evidence_date":"2021-10-08","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://www.yna.co.kr/view/AKR20211008080300001"],
+      "coding_note":"Direct 2021 evidence confirms Roh Moo-hyun Foundation chairmanship through October. National civic/media influence is score 2 under the locked rubric."
+    },
+    {
+      "name":"김준영","status":"untraceable","role_at_window":null,"scope_score":null,"scope_label":null,"evidence_date":null,"match":"direct_2021_search_no_reliable_same_person_role","confidence":"M",
+      "evidence_refs":["data/typeA/donga_2010_target2020_outcomes_intellectuals_v0_1.json"],
+      "coding_note":"The frozen 2020 layer was already pending because later labor-leader records could not be safely linked to the frozen Bucheon labor identity. The 2021-priority pass did not resolve that identity/role chain."
+    },
+    {
+      "name":"김해성","status":"untraceable","role_at_window":null,"scope_score":null,"scope_label":null,"evidence_date":null,"match":"direct_2021_search_no_reliable_window_role","confidence":"M",
+      "evidence_refs":["data/typeA/donga_2010_target2020_outcomes_intellectuals_v0_1.json"],
+      "coding_note":"Historic migrant-rights leadership is clear, but no reproducible 2020-2022 direct role evidence was established in this pass. Do not assume continued organizational title from older biographies."
+    },
+    {
+      "name":"박원순","status":"competing_event","role_at_window":null,"scope_score":null,"scope_label":null,"evidence_date":"2020-07-10","match":"competing_event_before_target_year","confidence":"H",
+      "evidence_refs":["data/typeA/donga_2010_target2020_outcomes_intellectuals_v0_1.json"],
+      "coding_note":"Death in 2020 prevents ordinary 2021 role-occupancy assessment. Pre-event Seoul mayor role is retained descriptively but not scored for T+10."
+    },
+    {
+      "name":"이주호","status":"assessable","role_at_window":"KDI 국제정책대학원 교수","scope_score":2,"scope_label":"established","evidence_date":"2021-05-20","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://www.kdi.re.kr/share/pressContriView?bd_no=4055"],
+      "coding_note":"This is a key 2021-first correction: direct 2021 KDI evidence confirms professor status. The higher 2022 deputy-prime-minister/education-minister role lies inside the broad window but must not supersede exact 2021 evidence."
+    },
+    {
+      "name":"조국","status":"assessable","role_at_window":"서울대 법학전문대학원 교수 신분·직위해제 상태","scope_score":1,"scope_label":"limited","evidence_date":"2020-01-29","match":"nearest_within_window_reused_2020","confidence":"H",
+      "evidence_refs":["data/typeA/donga_2010_target2020_outcomes_intellectuals_v0_1.json"],
+      "coding_note":"No stronger direct-2021 occupied role was established in this pass. Reuse the frozen 2020 snapshot, which explicitly records professor status under suspension, as nearest admissible evidence."
+    }
+  ],
+  "qa": {
+    "repeat_public_politics_n":10,
+    "assessable_n":7,
+    "competing_event_n":1,
+    "untraceable_n":2,
+    "exact_2021_n":5,
+    "nearest_2020_reuse_n":2,
+    "score_counts_assessable":{"1":1,"2":4,"3":2},
+    "major_ge3_n":2,
+    "apex_eq4_n":0
+  },
+  "guardrails": [
+    "Candidate status alone does not raise a person to major-national score 3.",
+    "Exact 2021 evidence overrides a higher 2022 role when the protocol requires 2021-first priority.",
+    "Death is a competing event, not failure.",
+    "Unresolved same-person continuity remains untraceable rather than a forced zero."
+  ]
+}
