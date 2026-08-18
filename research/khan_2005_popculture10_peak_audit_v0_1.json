@@ -1,0 +1,231 @@
+{
+  "schema_version": "khan_2005_popculture10_peak_audit_v0.1",
+  "generated": "2026-08-18",
+  "status": "peak_audited_10_of_10",
+  "parent_selection": "khan_2005_korea_leaders60",
+  "parent_selected_units": 60,
+  "field": "대중문화",
+  "field_selected_units": 10,
+  "field_person_units": 10,
+  "field_organization_units": 0,
+  "field_specific_secondary": true,
+  "selection_cutoff": "2005-12-15",
+  "publication_date": "2005-12-30",
+  "rules_ref": [
+    "state/coding_rules_typeA_v0_1.md",
+    "state/coding_rules_typeA_sector_scope_v0_1.md",
+    "state/coding_rules_typeA_mixed_unit_v0_1.md"
+  ],
+  "people": [
+    {
+      "name": "김종학",
+      "identity_anchor": "PD/김종학프로덕션",
+      "t0_role": "김종학프로덕션 대표·'여명의 눈동자'·'모래시계' 등 한국 TV드라마 대표 연출자",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "선정 이전 이미 한국 드라마사에서 독보적 전국 apex 창작자로 평가되고 대형 제작사를 이끈 대표 연출자였으므로 culture scope3.",
+      "post_t0_peak_role": "'태왕사신기' 연출·대형 한류 드라마 제작/연출",
+      "post_t0_peak_year": 2007,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "death_truncated": true,
+      "death_date": "2013-07-23",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301522091",
+        "https://www.yna.co.kr/view/AKR20130723103200005",
+        "https://www.yna.co.kr/view/AKR20130723100200061"
+      ]
+    },
+    {
+      "name": "박찬욱",
+      "t0_role": "영화감독·'올드보이' 2004 칸영화제 Grand Prix 수상",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "칸 Grand Prix와 베를린·베니스·칸 반복 초청으로 이미 세계적 선도 감독이었으나 frozen score4 예시의 Palme/Oscar급 또는 동등한 global-apex institutional status는 선정 이후 누적 성취와 분리.",
+      "post_t0_peak_role": "세계적 auteur·2026 제79회 칸영화제 경쟁부문 심사위원장",
+      "post_t0_peak_year": 2026,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "scope4_basis": "선정 이후 2009 칸 Jury Prize, 2022 칸 Best Director 등 반복 최고권위 수상에 더해 2026 경쟁부문 심사위원장을 맡았고 칸 공식 발표가 이를 한국 영화 최초라고 명시한다. 단일 수상 하나가 아니라 contemporary global-cinema apex를 보여주는 누적 성취와 제도적 지위로 score4.",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301522091",
+        "https://www.festival-cannes.com/en/press/press-releases/park-chan-wook-president-of-the-jury-of-the-79th-festival-de-cannes/",
+        "https://www.festival-cannes.com/en/p/park-chan-wook/"
+      ]
+    },
+    {
+      "printed_name": "비",
+      "name": "정지훈",
+      "identity_anchor": "가수 비(Rain)",
+      "t0_role": "아시아 대표 한류 가수·Rainy Day 아시아 투어 스타",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "2005년 이미 한국을 넘어 아시아권 대표 스타로 대규모 국제 투어를 전개한 leading international entertainer.",
+      "post_t0_peak_role": "가수 Rain·2006 TIME 100 선정·아시아/미국 활동 지속",
+      "post_t0_peak_year": 2006,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "score3_guardrail": "TIME 100 및 할리우드 진출은 강한 국제적 성취이나 global music/film industry의 field-defining apex 또는 최고 국제상 수준으로 자동 score4 하지 않음.",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301522091",
+        "https://www.donga.com/news/Society/article/all/20060501/8301895/1"
+      ]
+    },
+    {
+      "name": "이미경",
+      "identity_key": "이미경|cj_enm_business",
+      "identity_anchor": "CJ 부회장/Miky Lee; 정치인 이미경과 별개",
+      "t0_role": "CJ엔터테인먼트·CJ CGV·CJ미디어·CJ America 부회장·DreamWorks 초기 투자 주도",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "2005년 이미 한국 문화산업의 대표적 콘텐츠 경영 리더이자 글로벌 영화산업 연결자였으므로 culture/business scope3.",
+      "post_t0_peak_role": "CJ ENM 부회장·K-content 글로벌 산업 리더·'기생충' Executive Producer",
+      "post_t0_peak_year": 2022,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "scope4_basis": "Academy Best Picture와 Palme d'Or를 받은 'Parasite'의 Executive Producer, 약 30년간 한류 산업을 세계 무대로 확장한 공로의 International Emmy Directorate Award, Academy Museum 이사회 부의장 등은 global cultural-industry apex/field-defining influence를 직접 뒷받침.",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301522091",
+        "https://www.cjenm.com/en/news/cj-vice-chairwoman-miky-lee-accepts-the-2022-international-emmy-directorate-award/",
+        "https://www.cjenm.com/en/news/miky-lee-vice-chairwoman-of-cj-enm-becomes-the-first-korean-figure-to-receive-the-abu-dhabi-festival-award/"
+      ]
+    },
+    {
+      "name": "최경주",
+      "t0_role": "한국인 최초 PGA TOUR 정회원·PGA TOUR 3승 이상 세계 정상급 프로골퍼",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "세계 최상위 프로투어에서 반복 우승한 국제 최상위권 선수이나 major championship 우승 또는 world No.1은 아니므로 score3.",
+      "post_t0_peak_role": "PGA TOUR 통산 8승·2011 THE PLAYERS Championship 우승",
+      "post_t0_peak_year": 2011,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "score3_guardrail": "THE PLAYERS 우승과 세계랭킹 상위권은 매우 큰 성취이나 frozen sports score4의 major/world championship champion 또는 world No.1과 구분.",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301522091",
+        "https://www.pgatour.com/player/24357/K.J.-Choi/career"
+      ]
+    },
+    {
+      "name": "박지성",
+      "t0_role": "맨체스터 유나이티드 미드필더·한국인 최초 잉글랜드 Premier League 진출",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "선정 당시 이미 세계 최상위 프로리그의 빅클럽 1군 선수였고 PSV의 UEFA Champions League 4강 핵심 경력도 있어 sports scope3.",
+      "post_t0_peak_role": "Manchester United 핵심 로테이션/빅매치 선수·Premier League 4회 우승",
+      "post_t0_peak_year": 2011,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "score3_guardrail": "세계 최상위 클럽에서 장기간 핵심 역할과 4회 리그 우승은 score3의 강한 사례이나 개인 world No.1 또는 국가대표/세계선수권 우승 같은 frozen sports score4는 아님.",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301522091",
+        "https://www.premierleague.com/players/2940/"
+      ]
+    },
+    {
+      "name": "배용준",
+      "t0_role": "'겨울연가'의 욘사마·일본을 중심으로 한 아시아 한류 대표 배우",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "2005년 이미 일본·아시아 대중문화에서 상징적 한류 스타로서 명확한 국제적 영향력을 확보.",
+      "post_t0_peak_role": "'태왕사신기' 주연·2007 MBC 연기대상",
+      "post_t0_peak_year": 2007,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301522091",
+        "https://www.yna.co.kr/view/AKR20071231001100041"
+      ]
+    },
+    {
+      "name": "선동열",
+      "t0_role": "한국 프로야구 전설적 투수·삼성 라이온즈 감독·2005 한국시리즈 우승",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "국내 야구 역사상 최상위 선수이자 우승 감독으로 national sports apex이지만 세계선수권/MLB world-apex 성취로 score4 하지 않음.",
+      "post_t0_peak_role": "삼성 라이온즈 감독·2006 한국시리즈 2연패",
+      "post_t0_peak_year": 2006,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301522091",
+        "https://www.yna.co.kr/view/AKR20151031025451007"
+      ]
+    },
+    {
+      "name": "조승우",
+      "t0_role": "영화·뮤지컬 주연 배우·'지킬 앤 하이드'·'말아톤'·대종상 남우주연상",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "뮤지컬과 영화 양쪽에서 국내 최상위권 주연으로 자리했고 주요 국제영화제 초청작의 주연 경력까지 가진 대표 performer.",
+      "post_t0_peak_role": "영화·뮤지컬·TV 최상위 배우·2018 백상예술대상 TV 남자 최우수연기상",
+      "post_t0_peak_year": 2018,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "score3_guardrail": "장기간 국내 최상위 performer status는 유지했으나 세계 주요 연기상/글로벌 field-defining apex 성취로 score4 하지 않음.",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301522091",
+        "https://ent.sbs.co.kr/m/article.do?article_id=E10009062387"
+      ]
+    },
+    {
+      "name": "홍명보",
+      "t0_role": "한국 축구대표팀 전 주장·2002 FIFA World Cup Bronze Ball·FIFA 100 선정·국가대표 코치",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "월드컵 개인 Bronze Ball과 FIFA100은 세계 최상위권 선수 성취이나 World Cup champion/world No.1 기준과는 구분해 score3.",
+      "post_t0_peak_role": "2012 런던올림픽 남자축구 동메달 감독·대한민국 국가대표 감독",
+      "post_t0_peak_year": 2012,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "score3_guardrail": "올림픽 동메달 감독과 국가대표 감독은 국제경쟁 최상위권 역할이나 frozen sports score4의 올림픽/세계선수권 우승에는 미달.",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301522091",
+        "https://www.fifa.com/en/articles/hong-myung-bo-korea-republic-coach",
+        "https://www.yna.co.kr/view/AKR20120811008300007"
+      ]
+    }
+  ],
+  "qa": {
+    "audited_person_n": 10,
+    "baseline_distribution": {"3": 10},
+    "baseline_mean": 3.0,
+    "post_peak_distribution": {"3": 8, "4": 2},
+    "post_peak_mean": 3.2,
+    "major_n": 10,
+    "major_rate": 1.0,
+    "apex_n": 2,
+    "apex_rate": 0.2,
+    "advanced_n": 2,
+    "advanced_rate": 0.2,
+    "sustained_high_n": 8,
+    "sustained_high_rate": 0.8,
+    "no_clear_advancement_n": 0,
+    "lower_than_baseline_n": 0,
+    "death_truncated_n": 1,
+    "apex_names": ["박찬욱", "이미경"],
+    "advanced_names": ["박찬욱", "이미경"],
+    "sustained_high_names": ["김종학", "정지훈", "최경주", "박지성", "배용준", "선동열", "조승우", "홍명보"],
+    "death_truncated_names": ["김종학"]
+  },
+  "interpretation_guardrails": [
+    "All ten original pop-culture units are persons, so the field denominator remains 10 without a mixed-unit split.",
+    "The printed name 비 is preserved while the canonical person is 정지훈 with the Rain identity anchor.",
+    "이미경 is the CJ entertainment executive identity_key 이미경|cj_enm_business and must never be merged with the politician 이미경.",
+    "김종학 is anchored to the television PD/김종학프로덕션 identity.",
+    "This field has an unusually high T0 baseline: all ten had already reached scope3 before selection. Raw Major therefore mostly measures persistence, not future-rise prediction.",
+    "박찬욱 score4 is based on cumulative post-selection global-cinema apex recognition plus 2026 Cannes Competition Jury presidency, not merely on the pre-T0 2004 Grand Prix.",
+    "International fame alone does not create score4; Rain, 박지성, 최경주 and 홍명보 remain score3 under the frozen anti-inflation rule.",
+    "김종학's death truncates later exposure but does not erase his achieved post-selection peak."
+  ]
+}
