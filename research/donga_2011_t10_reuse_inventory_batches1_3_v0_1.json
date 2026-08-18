@@ -1,0 +1,140 @@
+{
+  "schema_version": "donga_2011_t10_reuse_inventory_batches1_3_v0.1",
+  "generated": "2026-08-18",
+  "cohort": "동아일보 2011 10년 뒤 한국을 빛낼 100인",
+  "window": {
+    "window_id": "t10",
+    "target_year": 2021,
+    "window_start": "2020-01-01",
+    "window_end": "2022-12-31"
+  },
+  "purpose": "Conservative inventory of existing post-T0 peak audit rows whose peak event itself falls inside the T+10 window. This is evidence reuse triage, not automatic lifetime-peak-to-snapshot inheritance.",
+  "source_batches": [
+    "research/donga_2011_post_t0_new_audit_batch1_v0_1.json",
+    "research/donga_2011_post_t0_new_audit_batch2_v0_1.json",
+    "research/donga_2011_post_t0_new_audit_batch3_v0_1.json"
+  ],
+  "coverage": {
+    "audited_rows_reviewed": 30,
+    "direct_window_peak_candidates": 10,
+    "not_auto_reused_requires_window_review": 20
+  },
+  "direct_window_peak_candidates": [
+    {
+      "name": "박형준",
+      "source_batch": 1,
+      "peak_year": 2021,
+      "candidate_role": "부산광역시장",
+      "candidate_scope_score": 3,
+      "candidate_match": "exact_year",
+      "source_urls": ["https://www.busan.go.kr/nbtnewsBU/1484350"],
+      "reuse_status": "eligible_for_t10_snapshot_materialization"
+    },
+    {
+      "name": "김남구",
+      "source_batch": 1,
+      "peak_year": 2020,
+      "candidate_role": "한국투자금융지주 대표이사 회장·한국투자증권 회장",
+      "candidate_scope_score": 3,
+      "candidate_match": "nearest_within_window_candidate",
+      "source_urls": ["https://www.koreaholdings.com/kr/manage/director"],
+      "reuse_status": "eligible_after_no_2021_direct_evidence_check"
+    },
+    {
+      "name": "윤순진",
+      "source_batch": 1,
+      "peak_year": 2021,
+      "candidate_role": "대통령직속 2050 탄소중립위원회 민간위원장",
+      "candidate_scope_score": 3,
+      "candidate_match": "exact_year",
+      "source_urls": ["https://www.2050cnc.go.kr/base/board/read?boardManagementNo=3&boardNo=12&menuLevel=3&menuNo=9&page=16"],
+      "reuse_status": "eligible_for_t10_snapshot_materialization"
+    },
+    {
+      "name": "김부겸",
+      "source_batch": 2,
+      "peak_year": 2021,
+      "candidate_role": "대한민국 국무총리",
+      "candidate_scope_score": 4,
+      "candidate_match": "exact_year",
+      "source_urls": ["https://www.yna.co.kr/view/AKR20210513180600001"],
+      "reuse_status": "eligible_for_t10_snapshot_materialization"
+    },
+    {
+      "name": "김태효",
+      "source_batch": 2,
+      "peak_year": 2022,
+      "candidate_role": "대통령실 국가안보실 제1차장",
+      "candidate_scope_score": 3,
+      "candidate_match": "nearest_within_window_candidate",
+      "source_urls": ["https://www.yna.co.kr/view/AKR20220501032252001"],
+      "reuse_status": "eligible_after_no_2021_direct_evidence_check"
+    },
+    {
+      "name": "손병두",
+      "source_batch": 2,
+      "peak_year": 2020,
+      "candidate_role": "한국거래소 제7대 이사장",
+      "candidate_scope_score": 3,
+      "candidate_match": "nearest_within_window_candidate",
+      "source_urls": ["https://info.krx.co.kr/contents/KRX/01/01020300/KRX01020300.jsp?pageCount=1"],
+      "reuse_status": "strong_continuity_candidate_spans_2021"
+    },
+    {
+      "name": "손흥민",
+      "source_batch": 2,
+      "peak_year": 2022,
+      "candidate_role": "2021/22 Premier League Golden Boot 공동 수상자",
+      "candidate_scope_score": 4,
+      "candidate_match": "nearest_within_window_candidate",
+      "source_urls": ["https://www.premierleague.com/en/news/2626553"],
+      "reuse_status": "eligible_after_2021_role_check"
+    },
+    {
+      "name": "김정주",
+      "source_batch": 2,
+      "peak_year": 2021,
+      "candidate_role": "NXC 대표이사·넥슨 창업자",
+      "candidate_scope_score": 3,
+      "candidate_match": "exact_year",
+      "source_urls": [
+        "https://www.yna.co.kr/view/AKR20210729060500017",
+        "https://www.yna.co.kr/view/AKR20220302075300017"
+      ],
+      "death_year": 2022,
+      "reuse_status": "eligible_for_exact_2021_snapshot_death_after_target_year_not_retroactive_failure",
+      "coding_note": "2021 role occupancy is directly observed. Death in 2022 is retained as a subsequent competing/truncation event but does not erase the already observed exact-2021 snapshot."
+    },
+    {
+      "name": "이미경",
+      "source_batch": 2,
+      "peak_year": 2020,
+      "candidate_role": "CJ그룹 부회장·글로벌 엔터테인먼트 전략 리더",
+      "candidate_scope_score": 3,
+      "candidate_match": "nearest_within_window_candidate",
+      "source_urls": ["https://www.yna.co.kr/view/AKR20200211121351009"],
+      "reuse_status": "eligible_after_no_2021_direct_evidence_check"
+    },
+    {
+      "name": "황철주",
+      "source_batch": 3,
+      "peak_year": 2022,
+      "candidate_role": "주성엔지니어링 대표이사·회장",
+      "candidate_scope_score": 3,
+      "candidate_match": "nearest_within_window_candidate",
+      "source_urls": [
+        "https://www.jusung.com/eng/company/directors.asp",
+        "https://www.jusung.com/eng/company/company.asp"
+      ],
+      "reuse_status": "strong_continuity_candidate_requires_2021_priority_check"
+    }
+  ],
+  "guardrails": [
+    "A peak event inside 2020-2022 is only a reuse candidate; it becomes a canonical snapshot only after the 2021-first priority rule is checked.",
+    "Rows whose lifetime peak lies outside 2020-2022 are not assigned a T+10 score from that peak.",
+    "Earlier roles that may have continued into 2021 require direct tenure/window evidence before reuse.",
+    "Post-2022 roles cannot raise T+10 scope scores.",
+    "Death does not erase an already directly observed exact-target-year role; competing-event handling is used when death prevents meaningful target-window assessment."
+  ],
+  "next": "Repeat the same triage for audit batches 4-6, then separately reconstruct the 38 repeat-selected rows from frozen 2010/2011 evidence before building the 100-row T+10 master."
+}
