@@ -1,0 +1,42 @@
+{
+  "schema_version": "donga_2011_t10_remaining30_public_legal_v1.0",
+  "generated": "2026-08-18",
+  "status": "final_12_of_12_paths",
+  "cohort": "동아일보 2011 10년 뒤 한국을 빛낼 100인",
+  "window": {"window_id":"t10","target_year":2021,"window_start":"2020-01-01","window_end":"2022-12-31"},
+  "protocol_ref": "state/donga_2011_t10_protocol_v0_1.md",
+  "people": [
+    {"name":"박근혜","status":"assessable","role_at_window":"전 대통령; 2021년 대부분 수감 중이며 12월 31일 특별사면·복권","scope_score":0,"scope_label":"no_active_role","evidence_date":"2021-12-31","match":"exact_year","confidence":"H","evidence_refs":["https://www.yna.co.kr/view/AKR20211224039300004","https://www.yna.co.kr/view/AKR20211230178200004"],"coding_note":"과거 대통령 apex는 lifetime peak이며 2021 실제 active leadership role이 아니다. 수감·사면은 adverse/legal trajectory와 함께 기록하되 과거 직위를 복사하지 않음."},
+    {"name":"이정희","status":"assessable","role_at_window":"전 통합진보당 대표; 진보정치·노동문제 토론회 공개 활동","scope_score":1,"scope_label":"limited_public_activity","evidence_date":"2020-02-12","match":"nearest_within_window","confidence":"M","evidence_refs":["https://www.newspim.com/news/view/20200212001136"],"coding_note":"2021 직접 재직 역할은 확인하지 못했으나 허용창 내 2020 공개 정치·사회 활동은 확인. 과거 전국정당 대표 score 3을 소급하지 않음."},
+    {"name":"임성남","status":"assessable","role_at_window":"주아세안 대한민국대사","scope_score":3,"scope_label":"major","evidence_date":"2021-11-17","match":"exact_year","confidence":"H","evidence_refs":["https://www.yna.co.kr/view/AKR20211117093900104"],"coding_note":"2019년부터 2021년 말까지 ASEAN 대표부 대사로 재직하며 주요 외교 리더십 수행."},
+    {"name":"권구훈","status":"assessable","role_at_window":"대통령직속 북방경제협력위원회 위원장","scope_score":3,"scope_label":"major","evidence_date":"2021-07-22","match":"exact_year","confidence":"H","evidence_refs":["https://www.yna.co.kr/view/AKR20210722023400002"],"coding_note":"2021 국가 경제·대외협력 정책기구의 최고책임자 역할 직접 확인."},
+    {"name":"강일원","status":"assessable","role_at_window":"검찰수사심의위원회 위원장","scope_score":3,"scope_label":"major","evidence_date":"2021-09-17","match":"exact_year","confidence":"H","evidence_refs":["https://www.yna.co.kr/view/AKR20210917111800004"],"coding_note":"대검찰청의 전국적 수사·기소 외부심의기구 위원장으로 major national legal/public leadership."},
+    {"name":"곽노현","status":"assessable","role_at_window":"대선후보 교육특보단장·전 서울시교육감","scope_score":2,"scope_label":"established","evidence_date":"2021-12-23","match":"exact_year","confidence":"H","evidence_refs":["https://news.nate.com/view/20211223n26992"],"coding_note":"전국 대선 캠프의 교육정책 특보단장이지만 선출·임명 공직은 아니므로 score 2."},
+    {"name":"김상우","status":"untraceable","role_at_window":null,"scope_score":null,"scope_label":null,"evidence_date":null,"match":"no_reproducible_2020_2022_same_person_role_evidence","confidence":"M","evidence_refs":["https://www.yes24.com/product/goods/5957326","research/donga_2011_post_t0_new_audit_batch6_v0_1.json"],"coding_note":"ICC 파견 경찰관 identity는 확실하나 2020-2022 동일인의 직접 경력을 재현 가능하게 연결하지 못함. 전직 국회의원 동명이인 자료는 배제."},
+    {"name":"백승헌","status":"assessable","role_at_window":"변호사·전 민변 회장; 이재명 상고심 변호인단 참여","scope_score":2,"scope_label":"established","evidence_date":"2021-10","match":"exact_year","confidence":"H","evidence_refs":["https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04037686629212264","https://www.newspim.com/news/view/20211010000274"],"coding_note":"2021에도 전국적으로 알려진 공익·인권 법률가 및 변호사 역할이 확인되나 국가기관 최고책임자 역할은 아니므로 score 2."},
+    {"name":"이국종","status":"assessable","role_at_window":"아주대 의대 교수; 외상센터장 사임 후 진료·강의 중심 평교수 역할","scope_score":2,"scope_label":"established","evidence_date":"2020-02-04","match":"nearest_within_window","confidence":"H","evidence_refs":["https://www.yna.co.kr/view/AKR20200204138300061","https://www.kyeonggi.com/article/202001201110513"],"coding_note":"2020 센터장 사임 이후 교수직 유지가 직접 확인됨. 2023 국군대전병원장 peak를 T+10으로 당겨 쓰지 않음."},
+    {"name":"전혜경","status":"assessable","role_at_window":"UNHCR 미얀마 사무소장","scope_score":3,"scope_label":"major","evidence_date":"2021","match":"exact_year_by_retrospective_tenure","confidence":"H","evidence_refs":["https://www.yna.co.kr/view/AKR20221108092600371","https://www.yna.co.kr/amp/view/AKR20221202028900371"],"coding_note":"후속 공식기관 제공 이력이 2020-11부터 2022까지 UNHCR 미얀마 사무소장 재직을 명시하여 2021 occupancy를 직접 확정."},
+    {"name":"정일용","status":"assessable","role_at_window":"경기도의료원장·수원병원장","scope_score":3,"scope_label":"major","evidence_date":"2021-09-19","match":"exact_year_by_official_tenure","confidence":"H","evidence_refs":["https://www.medical.or.kr/center/contentsInfo.do?brd_mgrno=0&menu_no=1231","https://kms.ggc.go.kr/cms/mntsViewer.do?mntsId=13622"],"coding_note":"2021 제8대 경기도의료원장 연임과 도의회 행정사무감사 출석이 직접 확인됨. 광역 공공의료체계 최고책임자 score 3."},
+    {"name":"최재경","status":"untraceable","role_at_window":null,"scope_score":null,"scope_label":null,"evidence_date":null,"match":"no_reproducible_2020_2022_occupied_role_evidence","confidence":"M","evidence_refs":["https://www.yna.co.kr/view/AKR20161031036100004"],"coding_note":"전 민정수석·검사장 identity는 확실하나 2020-2022 직접 occupied role을 contemporaneous하게 확인하지 못함. 2023 법정 증언에 나온 2021 접촉 정황은 역할 점수 근거로 사용하지 않음."}
+  ],
+  "qa": {
+    "population_n":12,
+    "final_path_n":12,
+    "assessable_n":10,
+    "untraceable_n":2,
+    "untraceable_names":["김상우","최재경"],
+    "competing_event_n":0,
+    "score_counts":{"0":1,"1":1,"2":3,"3":5},
+    "scope_ge2_n":8,
+    "major_ge3_n":5,
+    "apex_eq4_n":0,
+    "exact_2021_or_tenure_n":8,
+    "nearest_2020_n":2
+  },
+  "guardrails": [
+    "Former office titles do not count as current 2021 occupancy.",
+    "Criminal/legal events are not automatically converted to prominence scores; actual occupied role is coded.",
+    "Retrospective tenure evidence is allowed only when it explicitly spans 2021.",
+    "Untraceable is not a zero score."
+  ]
+}
