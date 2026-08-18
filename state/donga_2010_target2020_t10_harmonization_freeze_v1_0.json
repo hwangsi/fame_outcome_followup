@@ -1,0 +1,55 @@
+{
+  "schema_version": "donga_2010_target2020_t10_harmonization_freeze_v1.0",
+  "date": "2026-08-18",
+  "status": "frozen_harmonization_decision",
+  "cohort": "동아일보 2010 2020년 한국을 빛낼 100인",
+  "selected_units": 100,
+  "common_longitudinal_schema_ref": "state/typeA_common_longitudinal_schema_v0_1.json",
+  "protocol_ref": "state/donga_2010_target2020_protocol_v1_0.md",
+  "adapter_ref": "data/typeA/donga_2010_common_longitudinal_adapter_v0_1.json",
+  "window": {
+    "explicit_target_year": 2020,
+    "explicit_target_window_start": "2019-01-01",
+    "explicit_target_window_end": "2021-12-31",
+    "generic_t10_center": 2020,
+    "generic_t10_tolerance_years": 1,
+    "equivalence": "exact_calendar_window_match"
+  },
+  "coverage": {
+    "leaders_plus_reader": 10,
+    "creators": 20,
+    "economy": 25,
+    "intellectuals": 20,
+    "pioneers": 25,
+    "sum": 100,
+    "cohort_coverage": "100/100"
+  },
+  "source_layers": [
+    "data/typeA/donga_2010_target2020_outcomes_v0_1.json",
+    "data/typeA/donga_2010_target2020_outcomes_creators_v0_1.json",
+    "data/typeA/donga_2010_target2020_outcomes_economy_v0_1.json",
+    "data/typeA/donga_2010_target2020_outcomes_intellectuals_v0_1.json",
+    "data/typeA/donga_2010_target2020_outcomes_pioneers_v0_1.json"
+  ],
+  "canonicalization": {
+    "one_snapshot_per_selected_unit": true,
+    "snapshot_id_template": "donga2010:{unit_id}:2020",
+    "semantic_aliases": ["explicit_target_2020", "t10"],
+    "double_counting_prohibited": true,
+    "exact_year_priority_preserved": true,
+    "nearest_2019_2021_only_when_2020_direct_unavailable": true
+  },
+  "interpretation": [
+    "Dong-A 2010 explicit target-year outcome and generic T+10 refer to the same admissible calendar window.",
+    "The same observation may answer two different research questions but is a single canonical observation for counting and pooled analysis.",
+    "Lifetime post-selection peak remains a distinct outcome and must not be substituted for the 2020/T+10 snapshot."
+  ],
+  "guardrails": [
+    "preserve exact_year versus nearest_within_window provenance",
+    "do not replace direct 2020 evidence with a higher 2021 role",
+    "death remains a competing event rather than ordinary failure",
+    "unresolved identity or direct-window evidence remains explicitly non-assessable until resolved",
+    "do not count explicit_target_2020 and t10 as two independent observations"
+  ],
+  "next": "build Dong-A 2011 generic T+10 centered on 2021 with admissible window 2020-01-01 through 2022-12-31"
+}
