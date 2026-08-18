@@ -3,13 +3,20 @@
 > 과거 언론이 선정한 **“미래 인재 / 차세대 리더 / 영향력 인물”**은 10년, 20년 뒤 실제로 어떻게 되었는가?
 
 **기준일:** 2026-08-18  
-**현재 단계:** **동아 2010/2011 lifetime + T+10 완료, 2010–2011 harmonized comparison 완료, Type-A common longitudinal metrics v0.1 freeze 완료**
+**현재 authoritative checkpoint:** `progress_2026-08-18_v34.md`
+
+현재 저장소는 다음 두 공통 분석 레이어를 분리해 운용한다.
+
+- **Lifetime peak layer:** 선정 이후 관찰기간 전체에서 도달한 최고 역할/성과
+- **Fixed-window longitudinal layer:** T+10/T+20/current 시점에 실제로 점유한 역할
+
+두 outcome은 같은 scope rubric을 사용하지만 서로 다른 질문에 답한다.
 
 ---
 
 ## 1. 연구 질문
 
-언론·전문가가 특정 시점에 선정한 유망 인물을 장기 추적해 다음을 분리한다.
+언론·전문가가 특정 시점에 선정한 유망 인물을 장기 추적해 다음을 평가한다.
 
 1. 선정 뒤 높은 수준의 역할·성과에 도달했는가?
 2. 선정 시점보다 실제로 더 성장했는가?
@@ -30,22 +37,20 @@
 ### B. Lifetime post-selection peak
 선정 뒤 관찰기간 전체에서 도달한 최고 수준.
 
-- **Major** = peak `scope ≥3`
+- **Major** = peak `scope >=3`
 - **Apex** = `scope =4`
 - **Advanced** = `post_selection_peak > baseline_scope`
-- **Sustained high** = delta=0 and peak≥3
+- **Sustained high** = delta=0 and peak>=3
 
 ### C. Fixed-window snapshot
-T+10/T+20 시점에 실제로 점유한 역할.
+T+10/T+20/current 시점에 실제로 점유한 역할.
 
-- `scope ≥2 at window`
-- `Major at window = scope ≥3`
+- `scope >=2 at window`
+- `Major at window = scope >=3`
 - `Apex at window = scope =4`
 
-**Lifetime peak와 fixed-window snapshot은 다른 outcome이다.**
-
 ### D. Explicit article target
-기사 자체가 특정 미래 연도를 명시하면 별도 prediction semantic layer로 저장한다. Generic T+10/T+20과 calendar window가 완전히 같으면 한 canonical snapshot에 semantic alias만 여러 개 부여하고 두 번 세지 않는다.
+기사 자체가 특정 미래 연도를 명시하면 별도 prediction semantic layer로 저장한다. Generic T+10/T+20과 calendar window가 완전히 같으면 하나의 canonical snapshot에 alias만 여러 개 부여하고 중복 계수하지 않는다.
 
 Core rules:
 
@@ -70,7 +75,40 @@ Core rules:
 
 ---
 
-## 4. 주요 lifetime 결과
+## 4. Type-A lifetime common layer — authoritative v0.4
+
+### Files
+
+- `data/typeA/typeA_common_master_v0_4.json`
+- `data/typeA/typeA_common_master_v0_4.csv`
+- `data/typeA/typeA_common_metrics_v0_4.json`
+- `state/typeA_common_master_freeze_v0_4.json`
+
+### QA
+
+- placements = **255**
+- canonical persons = **193**
+- unique display names = **192**
+- cohort units = **7**
+- repeated persons = **51**
+- placement count distribution = 1회 142명 / 2회 42명 / 3회 7명 / 4회 2명
+- 4회 선정 = **원희룡, 유시민**
+- not-assessable placements = 1
+
+중요한 identity correction:
+
+- 경향 2005 정치10을 추가할 때 김근태·손학규를 새 인물로 계산했던 기존 audit은 오류였다.
+- 두 사람 모두 이미 뉴스메이커 2003 정치 Top10에 존재한다.
+- 따라서 v0.4는 **255 placements / 193 persons**가 맞으며, 과거 195-person 기대치는 superseded다.
+
+관련 파일:
+
+- `research/khan_2005_politics10_identity_audit_v0_2.json`
+- `state/typeA_common_v0_4_materialization_debug.md`
+
+---
+
+## 5. 주요 lifetime 결과
 
 | cohort | n | Lifetime Major | Lifetime Apex | Advanced |
 |---|---:|---:|---:|---:|
@@ -79,135 +117,158 @@ Core rules:
 | 한겨레21 2004 정치 Top10 | 10 | 100% | 50% | 40% |
 | 경향 2004 「17대국회 이끌 뉴리더」 | 20 | 100% | 20% | 95% |
 | 경향 2005 「한국을 이끌 60인」 person57 | 57 | 93.0% | 42.1% | 42.1% |
-| 동아 2010 「2020년 한국을 빛낼 100인」 | 100 | **71%** | **12%** | **28%** |
-| 동아 2011 「10년 뒤 한국을 빛낼 100인」 | 100 | **90%** | **12%** | **36%** |
+| 동아 2010 「2020년 한국을 빛낼 100인」 | 100 | 71% | 12% | 28% |
+| 동아 2011 「10년 뒤 한국을 빛낼 100인」 | 100 | 90% | 12% | 36% |
+
+경향 2005 전체 원선정은 60 units이며 57 persons + 3 organizations다. person57은 mixed-unit selection에 대한 prespecified secondary person-only analysis다.
 
 ---
 
-## 5. Type-A common longitudinal metrics v0.1
+## 6. Type-A common longitudinal layer — authoritative v0.3 / metrics v0.2
 
-Files:
+### Row master
 
-- `data/typeA/typeA_common_longitudinal_metrics_v0_1.json`
-- `state/typeA_common_longitudinal_metrics_freeze_v0_1.json`
+- `data/typeA/typeA_common_longitudinal_rows_v0_3.json`
+- `state/typeA_common_longitudinal_rows_freeze_v0_3.json`
 
-### T+10
+QA:
 
-| cohort | assessable | Scope ≥2 | Major ≥3 | Apex =4 |
+- canonical snapshot rows = **374**
+- unique snapshot IDs = **374**
+- row-ready selected-person placements = **277**
+- cohort units = **4**
+- cohort-window cells = **7**
+
+Composition:
+
+1. 경향 2004 정치20: 20 placements / T+10·T+20·current = 60 rows
+2. 경향 2005 person57: 57 placements / T+10·T+20 = 114 rows
+3. 동아 2010: 100 placements / T+10 = 100 rows
+4. 동아 2011: 100 placements / T+10 = 100 rows
+
+완료된 네 longitudinal cohort unit은 모두 row-ready이며 metric-only로 남은 completed cohort는 없다.
+
+### Row-derived metrics
+
+- `data/typeA/typeA_common_longitudinal_metrics_v0_2.json`
+- `state/typeA_common_longitudinal_metrics_freeze_v0_2.json`
+
+Aggregate를 field table에서 수기로 복사하지 않고 374-row master에서 재계산한다.
+
+---
+
+## 7. T+10 비교
+
+| cohort | assessable | Scope >=2 | Major >=3 | Apex =4 |
 |---|---:|---:|---:|---:|
-| 경향 2004 정치20 | 20 | **95.0%** | **35.0%** | 0% |
-| 경향 2005 person57 | 54 | **92.6%** | **50.0%** | 5.6% |
-| 동아 2010 | 87 | **97.7%** | **48.3%** | 5.7% |
-| 동아 2011 | 90 | **96.7%** | **70.0%** | 4.4% |
+| 경향 2004 정치20 | 20 | 19/20 = 95.0% | 7/20 = 35.0% | 0% |
+| 경향 2005 person57 | 54 | 50/54 = 92.6% | 27/54 = 50.0% | 3/54 = 5.6% |
+| 동아 2010 | 87 | 85/87 = 97.7% | 42/87 = 48.3% | 5/87 = 5.7% |
+| 동아 2011 | 90 | 87/90 = 96.7% | 63/90 = 70.0% | 4/90 = 4.4% |
 
-현재 완료된 네 longitudinal unit에서:
+현재 완료된 네 longitudinal unit에서 broad establishment(`scope>=2`)는 92.6–97.7%로 높지만 Major occupancy는 35.0–70.0%로 더 넓게 갈린다. 따라서 **Major fixed-window occupancy가 더 변별력 있는 outcome**이다.
 
-- Scope ≥2 = **92.6–97.7%**
-- Major = **35.0–70.0%**
-- Apex = **0–5.7%**
+---
 
-즉 broad establishment는 T+10에서 거의 포화되어 있지만, **Major-role occupancy가 더 변별력 있는 fixed-window outcome**이다.
+## 8. T+20 비교 — corrected
 
-### 현재 확보된 T+20
-
-| cohort | assessable | Scope ≥2 | Major ≥3 | Apex =4 |
+| cohort | assessable | Scope >=2 | Major >=3 | Apex =4 |
 |---|---:|---:|---:|---:|
-| 경향 2004 정치20 | 18 | 66.7% | 33.3% | 0% |
-| 경향 2005 person57 | 52 | 84.6% | 51.9% | 19.2% |
+| 경향 2004 정치20 | 18 | 12/18 = 66.7% | 6/18 = 33.3% | 0% |
+| 경향 2005 person57 | 52 | **43/52 = 82.7%** | **26/52 = 50.0%** | **10/52 = 19.2%** |
+
+### 경향 2005 stale aggregate correction
+
+과학기술 field audit에서 신희섭 T+20은 IBS 공식 은퇴 기록에 따라 scope3에서 scope1로 이미 교정되었으나, 상위 aggregate가 과거 값을 유지하고 있었다.
+
+Corrected T+20 distribution:
+
+- `0:0 / 1:9 / 2:17 / 3:16 / 4:10 / null:5`
+- Scope >=2: **44 -> 43**
+- Major >=3: **27 -> 26**
+
+Authoritative files:
+
+- `data/typeA/khan_2005_korea_leaders60_person57_common_longitudinal_rows_v0_1.json`
+- `data/typeA/khan_2005_korea_leaders60_person57_longitudinal_metrics_v1_1.json`
+- `state/khan_2005_korea_leaders60_person57_longitudinal_freeze_v1_1.json`
+
+v1.0 aggregate는 historical artifact로 보존하지만 v1.1이 supersede한다.
 
 ---
 
-## 6. Competing event
-
-v0.1에서는 **death를 표준 competing event**로 처리한다.
-
-- original denominator에는 유지
-- snapshot `status = competing_event`
-- `scope_score = null`
-- primary assessable denominator에서는 제외
-- 0점/실패로 강제 변환하지 않음
-
-모든 fixed-window 결과는 original N, assessable N, competing event N, unresolved/untraceable N을 함께 보고한다.
-
----
-
-## 7. Dong-A 2010: explicit target2020 = T+10
+## 9. Dong-A 2010: explicit target2020 = T+10
 
 선정연도 2010, explicit target year 2020.
 
 - target window = **2019–2021**
 - generic T+10 window = **2019–2021**
-- canonical aliases = `["explicit_target_2020", "t10"]`
+- aliases = `["explicit_target_2020", "t10"]`
 
-Freeze:
+QA:
 
-- `state/donga_2010_target2020_freeze_v1_0.json`
-- `state/donga_2010_target2020_t10_harmonization_freeze_v1_0.json`
+- original N = 100
+- assessable = 87
+- competing event = 3
+- unresolved/untraceable = 10
+- Scope >=2 = 85/87 = 97.7%
+- Major = 42/87 = 48.3%
+- Apex = 5/87 = 5.7%
 
-T+10/target2020:
+Deterministic master는 과거 workflow가 build만 하고 persist하지 않아 repo에서 빠져 있었으나 현재 복구 완료했다.
 
-- original N = **100**
-- assessable = **87**
-- competing event = **3**
-- unresolved = **10**
-- Scope ≥2 = **85/87 = 97.7%**
-- Major = **42/87 = 48.3%**
-- Apex = **5/87 = 5.7%**
+- `data/typeA/donga_2010_target2020_master_v1_0.json`
+- `data/typeA/donga_2010_target2020_master_v1_0.csv`
+- `data/typeA/donga_2010_common_longitudinal_rows_v0_1.json`
 
 ---
 
-## 8. Dong-A 2011 lifetime + T+10
+## 10. Dong-A 2011 lifetime + T+10
 
-### Lifetime
+Lifetime:
 
-- Major = **90/100 = 90.0%**
-- Apex = **12/100 = 12.0%**
-- Advanced = **36/100 = 36.0%**
+- Major = 90/100 = 90.0%
+- Apex = 12/100 = 12.0%
+- Advanced = 36/100 = 36.0%
 
-Repeat38 vs new62 lifetime:
+T+10:
 
-| Outcome | Repeat | New | baseline-stratified exact p |
-|---|---:|---:|---:|
-| Major ≥3 | 92.1% | 88.7% | 0.691 |
-| Apex =4 | **23.7%** | **4.8%** | **0.0268** |
-| Advanced | 28.9% | 40.3% | 0.339 |
-
-### T+10
-
-- target = **2021**
-- admissible window = **2020–2022**
-- exact 2021 evidence 우선
-- lifetime peak 복사 금지
+- target = 2021
+- admissible window = 2020–2022
+- original N = 100
+- assessable = 90
+- competing event = 1
+- untraceable = 9
+- Scope >=2 = 87/90 = 96.7%
+- Major = 63/90 = 70.0%
+- Apex = 4/90 = 4.4%
 
 Files:
 
 - `data/typeA/donga_2011_t10_final_master_v1_0.json`
 - `data/typeA/donga_2011_t10_metrics_v1_0.json`
+- `data/typeA/donga_2011_common_longitudinal_rows_v0_1.json`
 - `state/donga_2011_t10_freeze_v1_0.json`
-- `analysis/donga_2011_t10_result_v1_0.md`
-
-Final coverage/results:
-
-- original N = **100**
-- assessable = **90**
-- competing event = **1**
-- untraceable = **9**
-- exact 2021 / explicit 2021-tenure evidence = **81/90**
-- Scope ≥2 = **87/90 = 96.7%**
-- Major = **63/90 = 70.0%**
-- Apex = **4/90 = 4.4%**
-
-Fixed-window가 lifetime peak와 달라진 예:
-
-- 이주호: 2022 부총리 3 → **2021 KDI 교수 2**
-- 봉준호: 2020 Academy apex 4 → **2021 감독 역할 3**
-- 손흥민: 2022 Golden Boot 4 → **2021 역할 3**
-- 유범재: 2020 학회장 3 → **2021 KIST 연구자·명예회장 2**
-- 오세훈: 2020 총선후보 2 → **2021 서울시장 3**
 
 ---
 
-## 9. Dong-A 2010 vs 2011 harmonized T+10
+## 11. Dong-A 2010 vs 2011 harmonized T+10
+
+| metric | 2010 | 2011 | 2011 - 2010 |
+|---|---:|---:|---:|
+| Scope >=2 | 97.7% | 96.7% | -1.0 pp |
+| Major >=3 | 48.3% | 70.0% | +21.7 pp |
+| Apex =4 | 5.7% | 4.4% | -1.3 pp |
+
+두 wave를 독립표본처럼 취급하지 않는다.
+
+- placements = 200
+- unique persons = 162
+- repeat = 38
+- 2010-only = 62
+- 2011-new = 62
+
+따라서 +21.7 pp Major 차이는 descriptive cohort contrast이지 causal estimate가 아니다.
 
 Files:
 
@@ -215,172 +276,75 @@ Files:
 - `analysis/donga_2010_2011_t10_harmonized_comparison_v1_0.md`
 - `state/donga_2010_2011_t10_comparison_freeze_v1_0.json`
 
-| metric | 2010 | 2011 | 2011 − 2010 |
-|---|---:|---:|---:|
-| Scope ≥2 | 97.7% | 96.7% | −1.0 pp |
-| Major ≥3 | **48.3%** | **70.0%** | **+21.7 pp** |
-| Apex =4 | 5.7% | 4.4% | −1.3 pp |
+---
 
-100 vs 100을 독립표본처럼 검정하지 않는다.
+## 12. Competing event / unresolved policy
 
-- placements = **200**
-- unique persons = **162**
-- repeat = **38**
-- 2010-only = **62**
-- 2011-new = **62**
-- 두 T+10 window는 2020–2021을 공통 포함
+Death는 표준 competing event로 처리한다.
 
-따라서 +21.7 pp Major 차이는 **descriptive cohort contrast**이며 causal estimate가 아니다.
+- original denominator에는 유지
+- snapshot `status = competing_event`
+- `scope_score = null`
+- primary assessable denominator에서는 제외
+- 0점/실패로 강제 변환하지 않음
 
-### 162 unique-person first-selection sensitivity
-
-- unique N = **162**
-- assessable = **144**
-- competing event = **3**
-- unresolved/untraceable = **15**
-- Scope ≥2 = **140/144 = 97.2%**
-- Major = **80/144 = 55.6%**
-- Apex = **6/144 = 4.2%**
-
-Repeat 38명은 첫 선정인 2010에 한 번만 귀속한다. 이것은 common-calendar snapshot이 아니라 **first-selection 기준 person-specific T+10**이다.
+직접 추적이 불가능한 경우도 `untraceable/unresolved`로 유지하며 임의의 failure score를 부여하지 않는다.
 
 ---
 
-## 10. Two-wave identity layer
-
-- placements = **200**
-- unique persons = **162**
-- 2010-only = **62**
-- repeat = **38**
-- 2011-new = **62**
-
-Lifetime first-selection groups:
-
-| Group | N | Major | Apex | Advanced |
-|---|---:|---:|---:|---:|
-| 2010-only | 62 | 58.1% | 4.8% | 27.4% |
-| Repeat | 38 | 92.1% | 23.7% | 28.9% |
-| 2011-new | 62 | 88.7% | 4.8% | 40.3% |
-
-Files:
-
-- `state/donga_2010_2011_two_wave_freeze_v0_1.json`
-- `state/donga_2010_2011_two_wave_result_v0_1.md`
-
----
-
-## 11. Type-A common layers
-
-### Lifetime layer
-
-Stable committed full placement master:
-
-- `data/typeA/typeA_common_master_v0_3.json`
-- `data/typeA/typeA_common_master_v0_3.csv`
-
-Committed metrics:
-
-- `data/typeA/typeA_common_metrics_v0_4.json`
-
-v0.4 builder:
-
-- `scripts/build_typeA_common_master_v0_4.py`
-
-**현재 repo에는 다음 generated v0.4 artifacts가 아직 materialize되어 있지 않다:**
-
-- `data/typeA/typeA_common_master_v0_4.json`
-- `data/typeA/typeA_common_master_v0_4.csv`
-- `state/typeA_common_master_freeze_v0_4.json`
-
-이 gap은 다음 파일에 명시한다.
-
-- `state/typeA_common_v0_4_materialization_gap_v0_1.json`
-
-즉 v0.4 분석 정의와 builder는 존재하고 metrics도 commit되어 있지만, full row-level generated artifact/freeze의 repo materialization은 아직 pending이다.
-
-### Longitudinal layer
-
-- `data/typeA/typeA_common_longitudinal_metrics_v0_1.json`
-- `state/typeA_common_longitudinal_metrics_freeze_v0_1.json`
-
-Lifetime namespace와 fixed-window namespace는 분리 유지한다.
-
----
-
-## 12. Identity QA
+## 13. Identity QA
 
 이름만 같다고 동일인으로 merge하지 않는다.
 
-실제 위험 사례:
+핵심 원칙:
 
-- 김선욱: 대학 총장 동명이인 ≠ **피아니스트 김선욱**
-- 김승환: 교육감 동명이인 ≠ **POSTECH 물리학자 김승환**
-- 김가영: 당구선수 동명이인 ≠ **농업유통 창업가 김가영**
-- 전혜경: 농업계 동명이인 ≠ **국제기구 경력 전혜경**
-- 하상백: 금융회사 대표 동명이인 ≠ **패션디자이너 하상백**
+- placement novelty != person novelty
+- same-name collision은 identity anchor로 adjudicate
+- true homonym은 `identity_key`를 분리
+- cohort가 달라도 같은 사람은 같은 canonical person으로 연결
 
-안전한 동일인 연결이 없으면 `untraceable`로 유지한다.
+대표 사례:
 
----
+- 이미경: CJ E&M/Miky Lee vs 정치인 이미경 분리
+- 김근태·손학규: 경향 2005 정치10에서 새 placement이지만 기존 canonical person
 
-## 13. 현재까지 가장 안정적인 해석
+Registry:
 
-1. **Selection quality** — 확보된 코호트에서 장기적으로 강한 후보군을 고르는 능력은 상당히 보인다.
-2. **Future rise** — raw lifetime Major는 baseline persistence를 포함하므로 성장 예측력을 과대평가할 수 있다.
-3. **Elite persistence** — lifetime peak와 정확한 T+10/T+20 occupancy는 크게 다를 수 있다.
-4. **Fixed-window discrimination** — T+10 Scope≥2는 거의 포화되고, **Major≥3가 더 변별력 있다.**
-5. **Re-selection** — baseline-adjusted growth보다 elite persistence/apex identification에 가까운 신호다.
-6. **Comparison unit** — outlet보다 list design, year, domain, depth, baseline, follow-up window를 먼저 분리해야 한다.
-7. **Dependence** — 반복 등장 placement를 독립표본으로 처리하면 안 된다.
-
-> **언론은 ‘누가 강한 후보인가’를 고르는 능력은 꽤 보이지만, ‘비슷한 출발점에서 누가 더 크게 성장할 것인가’와 ‘정확히 10년·20년 뒤에도 누가 높은 역할에 있을 것인가’는 별개의 예측 문제다.**
+- `data/typeA/canonical_identity_overrides_v0_1.json`
+- `state/identity_resolution_policy_v0_2.md`
 
 ---
 
-## 14. Reproducibility
+## 14. 현재 authoritative files
 
-주요 deterministic/frozen references:
+### Lifetime common
 
-- `scripts/build_donga_2010_target2020_master.py`
-- `scripts/build_typeA_common_master_v0_4.py`
-- `state/donga_2010_target2020_freeze_v1_0.json`
-- `state/donga_2011_post_t0_peak_freeze_v1_0.json`
-- `state/donga_2011_t10_freeze_v1_0.json`
-- `state/typeA_common_longitudinal_metrics_freeze_v0_1.json`
+- `data/typeA/typeA_common_master_v0_4.json`
+- `data/typeA/typeA_common_master_v0_4.csv`
+- `data/typeA/typeA_common_metrics_v0_4.json`
+- `state/typeA_common_master_freeze_v0_4.json`
 
-Generated artifact가 repo에 없으면 이를 존재한다고 가정하지 않고 별도 materialization status로 기록한다.
+### Longitudinal common
 
----
+- `data/typeA/typeA_common_longitudinal_rows_v0_3.json`
+- `state/typeA_common_longitudinal_rows_freeze_v0_3.json`
+- `data/typeA/typeA_common_longitudinal_metrics_v0_2.json`
+- `state/typeA_common_longitudinal_metrics_freeze_v0_2.json`
 
-## 15. 현재 우선순위
+### Checkpoint
 
-1. **Type-A common master v0.4 generated artifact materialization**  
-   기존 builder를 실제 checkout/CI에서 실행해 JSON/CSV/freeze를 생성하고 assertions를 통과시킨 뒤 commit한다.
-
-2. **Common longitudinal row-level adapters**  
-   경향 2004/2005와 동아 2010/2011 frozen snapshot을 common schema row observations로 변환한다.
-
-3. **추가 comparable Type-A cohort 복원**  
-   조선·중앙·한겨레·경향 등에서 비슷한 시기·분야·list depth의 cohort를 우선 확보한다.
-
-4. **T+20 확대**  
-   follow-up calendar가 가능한 cohort에 T+20 snapshot을 추가한다.
-
-5. **Cross-cohort model**  
-   충분한 코호트가 모이면 baseline, sector, age, list design, repeated person을 반영한 cluster-aware/hierarchical model을 설계한다.
+- `progress_2026-08-18_v34.md`
 
 ---
 
-## 16. 최근 진행 리포
+## 15. 다음 우선순위
 
-현재 checkpoint:
+1. **조선일보·중앙일보 comparable cohort recovery**
+   - 2003–2006 우선
+   - roster denominator와 selection mechanism이 직접 복원되는 리스트만 Type-A 후보로 승격
+   - 단일 인물 기사나 후대 회고 명단을 원래 cohort roster로 대체하지 않음
+2. common longitudinal 374 rows에서 cohort-window comparison table을 row-derived 방식으로 확장
+3. 반복인물 overlap에 대한 clustered sensitivity 설계
+4. 그 다음에만 hierarchical/cluster-aware modeling 검토
 
-`progress_2026-08-18_v32.md`
-
-v32 완료:
-
-- Dong-A 2010 vs 2011 harmonized T+10 comparison
-- 162 unique-person first-selection sensitivity
-- Type-A common longitudinal metrics v0.1 + freeze
-- README status synchronization
-- Type-A common v0.4 materialization gap 확인 및 문서화
+현재 조선 2006 차세대 전문경영인 후보는 일부 membership evidence만 있어 **아직 cohort로 승격하지 않는다.** 후대 2007년 기사 명단을 2006 roster로 대체해서는 안 된다.
