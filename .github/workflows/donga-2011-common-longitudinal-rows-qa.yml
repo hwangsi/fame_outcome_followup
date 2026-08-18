@@ -1,0 +1,73 @@
+name: Dong-A 2011 Common Longitudinal Rows QA
+
+on:
+  push:
+    paths:
+      - 'data/typeA/donga_2011_common_longitudinal_adapter_v0_1.json'
+      - 'scripts/build_donga_2011_common_longitudinal_rows_v0_1.py'
+      - 'scripts/identity_resolution.py'
+      - 'research/donga_2011_t10_repeat_economy_audit_v0_1.json'
+      - 'research/donga_2011_t10_repeat_public_politics_audit_v0_1.json'
+      - 'research/donga_2011_t10_repeat_creators_audit_v0_1.json'
+      - 'research/donga_2011_t10_repeat_science_pioneers_audit_v0_1.json'
+      - 'research/donga_2011_t10_newentrant_inwindow18_audit_v0_1.json'
+      - 'research/donga_2011_t10_pending44_batch1_institutional_v0_1.json'
+      - 'research/donga_2011_t10_pending36_batch2_continuity_v0_1.json'
+      - 'research/donga_2011_t10_remaining30_creative_sports_v1_0.json'
+      - 'research/donga_2011_t10_remaining30_public_legal_v1_0.json'
+      - 'research/donga_2011_t10_remaining30_hard_academic_business_v1_0.json'
+      - '.github/workflows/donga-2011-common-longitudinal-rows-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-freeze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Materialize canonical row adapter
+        run: python scripts/build_donga_2011_common_longitudinal_rows_v0_1.py
+
+      - name: QA canonical row adapter
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('data/typeA/donga_2011_common_longitudinal_rows_v0_1.json',encoding='utf-8'))
+          f=json.load(open('state/donga_2011_common_longitudinal_rows_freeze_v0_1.json',encoding='utf-8'))
+          q=d['qa']
+          assert q['rows']==100
+          assert q['unique_names']==100
+          assert q['unique_snapshot_ids']==100
+          assert q['assessable_n']==90
+          assert q['competing_event_n']==1
+          assert q['untraceable_n']==9
+          assert q['score_counts_assessable']=={'0':1,'1':2,'2':24,'3':59,'4':4}
+          assert q['scope_ge2_n']==87
+          assert q['major_ge3_n']==63
+          assert q['apex_eq4_n']==4
+          assert q['exact_2021_or_tenure_n']==81
+          assert q['nearest_2020_n']==8
+          assert q['nearest_2022_n']==1
+          assert len(d['rows'])==100
+          assert len({r['name'] for r in d['rows']})==100
+          assert len({r['snapshot_id'] for r in d['rows']})==100
+          assert f['qa']==q
+          PY
+
+      - name: Persist row-level outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/typeA/donga_2011_common_longitudinal_rows_v0_1.json \
+            state/donga_2011_common_longitudinal_rows_freeze_v0_1.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Materialize Dong-A 2011 common longitudinal rows"
+            git push
+          fi
