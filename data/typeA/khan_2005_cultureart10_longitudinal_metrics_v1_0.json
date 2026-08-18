@@ -1,0 +1,14 @@
+{
+  "schema_version":"khan_2005_cultureart10_longitudinal_metrics_v1.0",
+  "generated":"2026-08-18",
+  "population":{"n":10,"field_selected_units":10,"person_units":10,"death_truncated_ever_n":0},
+  "target_windows":{"t10":"2015 ±1 year (2014-2016)","t20":"2025 ±1 year (2024-2026)"},
+  "peak_reference":{"major_n":9,"apex_n":2,"advanced_n":3,"sustained_high_n":6,"no_clear_advancement_n":1},
+  "snapshots":{
+    "t10":{"assessable_n":10,"competing_event_n":0,"score_distribution":{"0":0,"1":0,"2":4,"3":6,"4":0,"null":0},"scope_ge2_n":10,"scope_ge2_rate_assessable":1.0,"major_ge3_n":6,"major_ge3_rate_assessable":0.6,"apex_eq4_n":0,"apex_eq4_rate_assessable":0.0},
+    "t20":{"assessable_n":10,"competing_event_n":0,"score_distribution":{"0":0,"1":0,"2":5,"3":4,"4":1,"null":0},"scope_ge2_n":10,"scope_ge2_rate_assessable":1.0,"major_ge3_n":5,"major_ge3_rate_assessable":0.5,"apex_eq4_n":1,"apex_eq4_rate_assessable":0.1}
+  },
+  "trajectory_contrast":{"ever_advanced_n_full":3,"ever_advanced_rate_full":0.3,"t10_major_among_assessable":{"n":6,"denominator":10,"rate":0.6},"t20_major_among_assessable":{"n":5,"denominator":10,"rate":0.5},"t10_apex_among_assessable":{"n":0,"denominator":10,"rate":0.0},"t20_apex_among_assessable":{"n":1,"denominator":10,"rate":0.1},"interpretation":"The field retains very high professional activity at both windows, but fixed-window major scope is lower than lifetime peak attainment. Lee Bul is the sole T+20 score4 based on an in-window global-apex museum commission; earlier Grammy/Biennale/museum-leadership peaks are not inherited automatically."},
+  "source_audit":"research/khan_2005_cultureart10_longitudinal_audit_v0_1.json",
+  "guardrails":["Historical artistic apex is not mechanically inherited into later snapshots.","Current domestic top performance can be score2 without new international-leading evidence.","In-window global-apex institutional recognition is required for score4.","No organization units are present in this field."]
+}
