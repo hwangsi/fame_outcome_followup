@@ -1,0 +1,56 @@
+{
+  "schema_version": "khan_2005_economy10_field_completion_v0.1",
+  "generated": "2026-08-18",
+  "status": "field_outcomes_resolved_10_of_10_by_unit_type",
+  "parent_selection": "khan_2005_korea_leaders60",
+  "field": "경제",
+  "field_selected_units": 10,
+  "unit_composition": {
+    "persons": 9,
+    "organizations": 1,
+    "organization_name": "NHN"
+  },
+  "person_outcome_ref": "research/khan_2005_economy_person9_peak_audit_v0_1.json",
+  "person_metrics_ref": "data/typeA/khan_2005_economy_person9_metrics_v1_0.json",
+  "person_freeze_ref": "state/khan_2005_economy_person9_freeze_v1_0.json",
+  "organization_outcome_ref": "research/khan_2005_organizations_outcome_audit_v0_1.json",
+  "person9_summary": {
+    "baseline_mean": 3.111111111111111,
+    "post_peak_mean": 3.6666666666666665,
+    "major_n": 9,
+    "major_rate": 1.0,
+    "apex_n": 6,
+    "apex_rate": 0.6666666666666666,
+    "advanced_n": 4,
+    "advanced_rate": 0.4444444444444444,
+    "sustained_high_n": 5,
+    "sustained_high_rate": 0.5555555555555556
+  },
+  "organization1_summary": {
+    "name": "NHN",
+    "continuity_class": "branched_continuity",
+    "successor_entities": ["NAVER Corp.", "NHN Corp. (former NHN Entertainment)"],
+    "t20_trajectory": "transformed_branched",
+    "confidence": "H"
+  },
+  "field_interpretation": [
+    "All 10 selected economy units now have an outcome path resolved under the appropriate unit-type architecture.",
+    "The nine persons had very high later major-role attainment, but only four showed baseline-adjusted advancement because several were already apex or near-apex leaders in 2005.",
+    "NHN cannot be assigned a person-style Major/Apex/Advanced label; its post-selection outcome is a branched corporate lineage into NAVER and the present NHN lineage.",
+    "Therefore no single economy10 success percentage is calculated in v0.1."
+  ],
+  "guardrails": [
+    "Original field denominator remains 10.",
+    "Do not report Major 9/10 or Advanced 4/10; the denominator for those person metrics is explicitly 9 persons.",
+    "Do not silently drop NHN to redefine the original field as a nine-person selection.",
+    "Do not combine organization trajectory categories numerically with person career-scope outcomes."
+  ],
+  "qa": {
+    "selected_units": 10,
+    "resolved_person_units": 9,
+    "resolved_organization_units": 1,
+    "resolved_total": 10,
+    "unit_type_specific_outcome_complete": true,
+    "single_composite_success_rate_generated": false
+  }
+}
