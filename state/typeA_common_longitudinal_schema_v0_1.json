@@ -1,0 +1,160 @@
+{
+  "schema_version": "typeA_common_longitudinal_v0.1",
+  "date": "2026-08-18",
+  "status": "active_draft_reference",
+  "research_questions": {
+    "selection_quality": "lifetime post-selection peak",
+    "future_rise": "post-selection peak above baseline",
+    "elite_persistence": "role occupancy at fixed T+10/T+20 windows",
+    "article_prediction": "article-specific explicit target-year outcome"
+  },
+  "unit_types": ["person", "organization"],
+  "required_cohort_fields": [
+    "cohort_id",
+    "outlet",
+    "article_title",
+    "publication_date",
+    "selection_cutoff",
+    "selected_units_n",
+    "person_units_n",
+    "organization_units_n",
+    "source_refs",
+    "schema_version"
+  ],
+  "person": {
+    "baseline": {
+      "required": [
+        "baseline_scope_score",
+        "baseline_scope_label",
+        "baseline_role",
+        "baseline_date_or_window",
+        "baseline_evidence_refs"
+      ]
+    },
+    "lifetime_peak": {
+      "required": [
+        "post_selection_peak_scope_score",
+        "post_selection_peak_scope_label",
+        "post_selection_peak_role",
+        "post_selection_peak_date_or_window",
+        "post_selection_peak_evidence_refs"
+      ],
+      "derived": {
+        "advanced": "post_selection_peak_scope_score > baseline_scope_score",
+        "major": "post_selection_peak_scope_score >= 3",
+        "apex": "post_selection_peak_scope_score == 4"
+      }
+    },
+    "snapshot": {
+      "required": [
+        "snapshot_id",
+        "window_id",
+        "target_year",
+        "window_start",
+        "window_end",
+        "status",
+        "scope_score",
+        "scope_label",
+        "role_at_window",
+        "snapshot_date_or_window",
+        "evidence_refs",
+        "coding_note"
+      ],
+      "allowed_status": [
+        "assessable",
+        "competing_event",
+        "untraceable",
+        "not_applicable"
+      ],
+      "default_windows": {
+        "t10": {"offset_years": 10, "tolerance_years": 1},
+        "t20": {"offset_years": 20, "tolerance_years": 1}
+      },
+      "derived": {
+        "scope_ge2_at_window": "scope_score >= 2",
+        "major_at_window": "scope_score >= 3",
+        "apex_at_window": "scope_score == 4"
+      }
+    },
+    "competing_event": {
+      "v0_1_standard_event": "death",
+      "rules": [
+        "preserve original cohort denominator",
+        "set snapshot status to competing_event",
+        "set scope_score to null",
+        "exclude from primary assessable denominator",
+        "report original N and assessable N",
+        "do not code as zero or ordinary failure"
+      ]
+    }
+  },
+  "explicit_target_year": {
+    "optional_fields": [
+      "explicit_target_year",
+      "explicit_target_label",
+      "explicit_prediction_horizon_years",
+      "target_prediction_snapshot_ref",
+      "target_prediction_metric_namespace"
+    ],
+    "deduplication_rule": {
+      "when_same_window_as_generic_snapshot": [
+        "create one canonical snapshot object",
+        "assign one snapshot_id",
+        "attach multiple semantic aliases",
+        "count once in pooled analyses",
+        "allow reuse under both research questions with disclosure"
+      ],
+      "example": {
+        "cohort": "Dong-A 2010",
+        "canonical_target_year": 2020,
+        "aliases": ["explicit_target_2020", "t10"]
+      }
+    }
+  },
+  "organization": {
+    "person_scope_scores_prohibited": true,
+    "snapshot_fields": [
+      "continuity_class",
+      "trajectory",
+      "reach",
+      "field_leadership",
+      "institutional_influence",
+      "successors",
+      "evidence_refs"
+    ],
+    "single_pooled_success_rate_with_persons_prohibited": true
+  },
+  "aggregation": {
+    "person_window_minimum": [
+      "person_n",
+      "assessable_n",
+      "competing_event_n",
+      "untraceable_n",
+      "scope_ge2_n",
+      "major_ge3_n",
+      "apex_eq4_n"
+    ],
+    "person_lifetime_minimum": [
+      "person_n",
+      "major_n",
+      "apex_n",
+      "advanced_n"
+    ],
+    "overlap_policy": "report placement-level first; optional deduplicated unique-person sensitivity analysis"
+  },
+  "qa_invariants": [
+    "original denominator preserved",
+    "all original units have a unit-type-specific outcome path",
+    "baseline and lifetime peak are distinct",
+    "one canonical object per fixed-window observation",
+    "historical peaks are not imported into fixed-window scores",
+    "competing events are explicit",
+    "same observation with multiple semantic roles reuses snapshot_id",
+    "person and organization architectures remain separate",
+    "substantive non-null outcome claims have evidence references"
+  ],
+  "reference_implementations": [
+    "Kyunghyang 2004 political cohort",
+    "Kyunghyang 2005 Korea leaders60 cohort"
+  ]
+}
