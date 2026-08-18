@@ -1,0 +1,51 @@
+{
+  "schema_version": "donga_2011_t10_repeat38_freeze_v1.0",
+  "generated": "2026-08-18",
+  "status": "repeat38_final_paths_frozen",
+  "cohort": "동아일보 2011 10년 뒤 한국을 빛낼 100인",
+  "window": {"window_id":"t10","target_year":2021,"window_start":"2020-01-01","window_end":"2022-12-31"},
+  "batch_refs": [
+    "research/donga_2011_t10_repeat_economy_audit_v0_1.json",
+    "research/donga_2011_t10_repeat_public_politics_audit_v0_1.json",
+    "research/donga_2011_t10_repeat_creators_audit_v0_1.json",
+    "research/donga_2011_t10_repeat_science_pioneers_audit_v0_1.json"
+  ],
+  "population": {
+    "repeat_n":38,
+    "assessable_n":33,
+    "competing_event_n":1,
+    "competing_event_names":["박원순"],
+    "untraceable_n":4,
+    "untraceable_names":["강덕수","김준영","김해성","박지영"],
+    "final_path_n":38
+  },
+  "evidence_provenance": {
+    "exact_2021_n":28,
+    "nearest_2020_reuse_n":5,
+    "nearest_2020_reuse_names":["김문수","장하준","조국","김필립","임지순"],
+    "note":"Only assessable rows are counted in exact/reuse provenance. Competing-event and untraceable rows are separate."
+  },
+  "assessable_score_counts": {"1":1,"2":7,"3":22,"4":3},
+  "descriptive_repeat_only_metrics": {
+    "scope_ge2_n":32,
+    "scope_ge2_rate_assessable":0.9696969697,
+    "major_ge3_n":25,
+    "major_ge3_rate_assessable":0.7575757576,
+    "apex_eq4_n":3,
+    "apex_eq4_rate_assessable":0.0909090909
+  },
+  "important_window_corrections": [
+    {"name":"이주호","2021_snapshot":"KDI 국제정책대학원 교수","scope_score":2,"excluded_higher_window_event":"2022 부총리 겸 교육부장관 score 3","reason":"exact 2021 evidence has priority"},
+    {"name":"봉준호","2021_snapshot":"국제적 영화감독","scope_score":3,"excluded_higher_window_event":"2020 Academy apex score 4","reason":"exact 2021 evidence has priority"},
+    {"name":"오세훈","2021_snapshot":"서울특별시장","scope_score":3,"replaced_lower_2020_snapshot":"2020 총선 후보 score 2","reason":"exact 2021 evidence has priority"},
+    {"name":"정하웅","2021_snapshot":"KAIST 물리학과 교수·복잡계 네트워크 선도 연구자","scope_score":3,"prior_2020_target_status":"pending","reason":"direct 2021 evidence resolves target-year occupancy"}
+  ],
+  "guardrails": [
+    "These repeat-only metrics are descriptive and are not the final 100-person T+10 cohort metrics.",
+    "Untraceable rows are not zeros and are excluded from the assessable denominator.",
+    "Death before the target-year role assessment is a competing event.",
+    "Exact 2021 role evidence takes priority over both higher and lower 2020/2022 events.",
+    "Repeat selection is observational and must not be interpreted causally."
+  ],
+  "next":"Adjudicate the 18 new-entrant rows whose existing lifetime audit contains an event inside 2020-2022, then audit the remaining 44 new entrants."
+}
