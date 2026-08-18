@@ -1,0 +1,192 @@
+{
+  "schema_version": "khan_2005_organizations_outcome_audit_v0.1",
+  "generated": "2026-08-18",
+  "status": "organization_outcome_audited_3_of_3_current_and_t20_window",
+  "parent_selection": "khan_2005_korea_leaders60",
+  "original_selected_units": 60,
+  "person_units": 57,
+  "organization_units": 3,
+  "rules_ref": [
+    "state/coding_rules_typeA_mixed_unit_v0_1.md",
+    "state/coding_rules_typeA_organization_outcome_v0_1.md"
+  ],
+  "guardrail": "Organization outcomes are not converted to person Major/Apex/Advanced and are not pooled into a single 60-unit success rate.",
+  "organizations": [
+    {
+      "organization_id": "org-khan05-nhn-parent",
+      "entity_key_t0": "NHN|2005_parent_corporation",
+      "printed_name": "NHN",
+      "canonical_name_t0": "NHN Corporation",
+      "field": "경제",
+      "selection_date": "2005-12-15",
+      "selection_source": "https://www.khan.co.kr/article/200512301526291",
+      "continuity_class": "branched_continuity",
+      "lineage_events": [
+        {
+          "date": "2013-08-01",
+          "event": "corporate_split",
+          "detail": "NHN split into NAVER Corporation for the portal business and NHN Entertainment Corporation for the game business. NAVER was described as the surviving corporation and NHN Entertainment as the spun-off corporation.",
+          "source": "https://www.navercorp.com/media/pressReleasesDetail?seq=28884"
+        },
+        {
+          "date": "2019-04",
+          "event": "rename",
+          "detail": "NHN Entertainment changed its company name to NHN.",
+          "source": "https://www.nhn.com/en-US/company?tab=about"
+        }
+      ],
+      "successor_entities": [
+        {
+          "name": "NAVER Corp.",
+          "lineage_role": "surviving_portal_lineage",
+          "active_current": true,
+          "source": "https://www.navercorp.com/en/company/history"
+        },
+        {
+          "name": "NHN Corp.",
+          "lineage_role": "spun_off_game_lineage_former_NHN_Entertainment",
+          "active_current": true,
+          "source": "https://www.nhn.com/en-US/company?tab=about"
+        }
+      ],
+      "t20_window_2024_2026": {
+        "operational_status": "active_through_two_major_successor_lineages",
+        "continuity_class": "branched_continuity",
+        "reach": "branched_multi_entity",
+        "field_leadership": "significant",
+        "institutional_influence": "moderate",
+        "trajectory": "transformed_branched",
+        "confidence": "H",
+        "notes": "Do not force the 2005 NHN unit into only NAVER or only present-day NHN. Both are explicit post-2013 successor lineages. Leadership/influence is coded conservatively because the audit is lineage-focused rather than a cross-company market ranking."
+      },
+      "evidence": [
+        "https://www.navercorp.com/media/pressReleasesDetail?seq=28884",
+        "https://www.navercorp.com/en/company/history",
+        "https://www.nhn.com/en-US/company?tab=about"
+      ]
+    },
+    {
+      "organization_id": "org-khan05-abeek",
+      "entity_key_t0": "한국공학교육인증원",
+      "printed_name": "한국공학교육인증원",
+      "canonical_name_t0": "한국공학교육인증원",
+      "field": "과학기술",
+      "selection_date": "2005-12-15",
+      "selection_source": "https://www.khan.co.kr/article/200512301533251",
+      "continuity_class": "direct_continuity",
+      "lineage_events": [
+        {
+          "date": "2007-06",
+          "event": "international_full_membership",
+          "detail": "Became a full member of the Washington Accord.",
+          "source": "https://abeek.or.kr/abeek/history"
+        },
+        {
+          "date": "2013-01",
+          "event": "formal_recognition",
+          "detail": "Designated as an engineering education program evaluation/accreditation recognition body.",
+          "source": "https://abeek.or.kr/abeek/history"
+        },
+        {
+          "date": "2022-12",
+          "event": "formal_recognition_renewed",
+          "detail": "Re-designated by the Ministry of Education as a program evaluation/accreditation recognition body.",
+          "source": "https://abeek.or.kr/abeek/history"
+        }
+      ],
+      "successor_entities": [
+        {
+          "name": "한국공학교육인증원",
+          "lineage_role": "same_organization",
+          "active_current": true,
+          "source": "https://abeek.or.kr/abeek"
+        }
+      ],
+      "t20_window_2024_2026": {
+        "operational_status": "active",
+        "continuity_class": "direct_continuity",
+        "reach": "international_reach",
+        "field_leadership": "leading",
+        "institutional_influence": "high",
+        "trajectory": "expanded",
+        "confidence": "H",
+        "notes": "Compared with the 2005 state, later full Washington Accord membership and formal government recognition provide structural evidence of increased institutional authority and international reach."
+      },
+      "evidence": [
+        "https://abeek.or.kr/abeek/history",
+        "https://abeek.or.kr/abeek",
+        "https://abeek.or.kr/abeek/chief"
+      ]
+    },
+    {
+      "organization_id": "org-khan05-ccej",
+      "entity_key_t0": "경제정의실천시민연합",
+      "printed_name": "경제정의실천시민연합",
+      "canonical_name_t0": "경제정의실천시민연합",
+      "field": "사회교육",
+      "selection_date": "2005-12-15",
+      "selection_source": "https://www.khan.co.kr/article/200512301630061",
+      "continuity_class": "direct_continuity",
+      "lineage_events": [
+        {
+          "date": "1989",
+          "event": "founding_context",
+          "detail": "Founded as a civic movement organization focused on economic justice; this predates selection and anchors entity identity.",
+          "source": "https://ccej.or.kr/pages/135"
+        },
+        {
+          "date": "2026",
+          "event": "continued_national_activity",
+          "detail": "Continues organized activity across economic, social, political and real-estate policy areas, including national and regional civic advocacy.",
+          "source": "https://ccej.or.kr/posts/0ktMGLO"
+        }
+      ],
+      "successor_entities": [
+        {
+          "name": "경제정의실천시민연합",
+          "lineage_role": "same_organization",
+          "active_current": true,
+          "source": "https://ccej.or.kr/pages/135"
+        }
+      ],
+      "t20_window_2024_2026": {
+        "operational_status": "active",
+        "continuity_class": "direct_continuity",
+        "reach": "national_broad",
+        "field_leadership": "significant",
+        "institutional_influence": "moderate",
+        "trajectory": "sustained_high",
+        "confidence": "M-H",
+        "notes": "Continuity and broad current policy activity are well supported. Expansion beyond its already prominent 2005 baseline is not claimed because the available evidence does not provide a clean comparable baseline metric."
+      },
+      "evidence": [
+        "https://ccej.or.kr/pages/135",
+        "https://ccej.or.kr/posts/0ktMGLO",
+        "https://ccej.or.kr/search_entries?q%5Bterm%5D=%23%EA%B3%B5%EB%8F%99%EB%8C%80%ED%91%9C"
+      ]
+    }
+  ],
+  "qa": {
+    "organization_n": 3,
+    "fields": ["경제", "과학기술", "사회교육"],
+    "continuity_counts": {
+      "branched_continuity": 1,
+      "direct_continuity": 2
+    },
+    "trajectory_counts": {
+      "transformed_branched": 1,
+      "expanded": 1,
+      "sustained_high": 1
+    },
+    "composite_numeric_score_present": false,
+    "person_outcome_terms_used_as_org_score": false,
+    "original_denominator_preserved": 60
+  },
+  "interpretation": [
+    "All three organization units remain traceable 20 years later, but through different structural paths.",
+    "NHN is a branched lineage and must not be forced into a single successor identity.",
+    "ABEEK shows the clearest post-selection institutional expansion through international full-membership and formal accreditation-recognition status.",
+    "CCEJ shows durable organizational continuity and broad policy activity; this audit does not claim quantitative expansion beyond its 2005 baseline.",
+    "These findings are descriptive organization outcomes and are not pooled with person Major/Apex/Advanced rates."
+  ]
+}
