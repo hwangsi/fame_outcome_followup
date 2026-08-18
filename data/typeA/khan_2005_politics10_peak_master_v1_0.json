@@ -1,0 +1,141 @@
+{
+  "schema_version": "khan_2005_politics10_peak_master_v1.0",
+  "generated": "2026-08-18",
+  "status": "field_specific_peak_audited_10_of_10",
+  "cohort": {
+    "publication": "경향신문",
+    "selection_cutoff": "2005-12-15",
+    "publication_date": "2005-12-30",
+    "title": "한국을 이끌 60인 — 정치10",
+    "cohort_type": "A",
+    "domain": "politics",
+    "n": 10,
+    "parent_selection": "khan_2005_korea_leaders60",
+    "parent_selected_units": 60,
+    "field_specific_secondary": true,
+    "design": "multistage_public_awareness_expert_final_field10"
+  },
+  "metrics": {
+    "schema_version": "khan_2005_politics10_metrics_v1.0",
+    "generated": "2026-08-18",
+    "population": {"n": 10, "assessable_n": 10, "parent_selected_units": 60, "field_specific_secondary": true},
+    "baseline": {"mean": 2.6, "distribution": {"2": 4, "3": 6}},
+    "post_peak": {"mean": 3.5, "distribution": {"3": 5, "4": 5}},
+    "outcomes": {"major_n": 10, "major_rate": 1.0, "apex_n": 5, "apex_rate": 0.5, "advanced_n": 8, "advanced_rate": 0.8, "sustained_high_n": 2, "sustained_high_rate": 0.2, "lower_than_baseline_n": 0, "not_assessable_n": 0},
+    "apex_names": ["김부겸", "박근혜", "손학규", "이명박", "정동영"],
+    "sustained_high_names": ["강금실", "김근태"],
+    "death_truncated_names": ["김근태", "노회찬"],
+    "guardrails": [
+      "This is a field-specific secondary analysis of the politics stratum inside the original 60-unit mixed selection.",
+      "The primary parent denominator remains 60 selected units; politics10 must not be presented as the whole 2005 project.",
+      "Use 2005-12-15 as the no-lookahead selection cutoff because the methodology article states selection work ended that day.",
+      "The 2005-12-30 profile article is used to document contemporaneous roles, not to import achievements after the cutoff.",
+      "손학규 scope4 is based on a major national presidential nomination candidacy, explicitly allowed by the frozen political mapping.",
+      "Deaths truncate later exposure but do not erase achieved post-selection peaks."
+    ]
+  },
+  "people": [
+    {
+      "name": "강금실", "t0_role": "전 법무부 장관·인권대사", "baseline_peak_through_t0": 3,
+      "post_t0_peak_role": "2006 열린우리당 서울시장 후보·이후 국가/공공 역할", "post_t0_peak_year": 2006, "post_t0_peak_score": 3,
+      "advancement_delta": 0, "advancement_class": "sustained_high", "death_truncated": false, "confidence": "H",
+      "sources": ["https://www.khan.co.kr/article/200512301518231", "data/typeA/typeA_common_master_v0_3.json"],
+      "outlet": "경향신문", "selection_date": "2005-12-15", "publication_date": "2005-12-30", "cohort_unit": "khan_2005_korea_leaders60_politics10",
+      "list_title": "한국을 이끌 60인 — 정치10", "domain": "politics", "design": "multistage_public_awareness_expert_final_field10",
+      "selection_mechanism": "1168_initial_to_185_expert_recommendation_to_public1266_to_final_expert12", "parent_selection": "khan_2005_korea_leaders60",
+      "parent_selected_units": 60, "field_specific_secondary": true, "major_ge3": true, "apex_eq4": false
+    },
+    {
+      "name": "김근태", "t0_role": "보건복지부 장관", "baseline_peak_through_t0": 3,
+      "post_t0_peak_role": "열린우리당 의장", "post_t0_peak_year": 2006, "post_t0_peak_score": 3,
+      "advancement_delta": 0, "advancement_class": "sustained_high", "death_truncated": true, "death_date": "2011-12-30", "confidence": "H",
+      "sources": ["https://www.khan.co.kr/article/200512301518231", "https://www.korea.kr/news/policyNewsView.do?newsId=75082275", "https://www.yna.co.kr/amp/view/AKR20060618044600001", "https://www.yna.co.kr/view/AKR20111229197300001"],
+      "outlet": "경향신문", "selection_date": "2005-12-15", "publication_date": "2005-12-30", "cohort_unit": "khan_2005_korea_leaders60_politics10",
+      "list_title": "한국을 이끌 60인 — 정치10", "domain": "politics", "design": "multistage_public_awareness_expert_final_field10",
+      "selection_mechanism": "1168_initial_to_185_expert_recommendation_to_public1266_to_final_expert12", "parent_selection": "khan_2005_korea_leaders60",
+      "parent_selected_units": 60, "field_specific_secondary": true, "major_ge3": true, "apex_eq4": false
+    },
+    {
+      "name": "김부겸", "t0_role": "제17대 국회의원·열린우리당 원내수석부대표", "baseline_peak_through_t0": 2,
+      "post_t0_peak_role": "제47대 국무총리", "post_t0_peak_year": 2021, "post_t0_peak_score": 4,
+      "advancement_delta": 2, "advancement_class": "advanced", "death_truncated": false, "confidence": "H",
+      "sources": ["https://www.khan.co.kr/article/200512301518231", "data/typeA/khan_2004_17th_assembly_newleaders_peak_master_v1_0.json"],
+      "outlet": "경향신문", "selection_date": "2005-12-15", "publication_date": "2005-12-30", "cohort_unit": "khan_2005_korea_leaders60_politics10",
+      "list_title": "한국을 이끌 60인 — 정치10", "domain": "politics", "design": "multistage_public_awareness_expert_final_field10",
+      "selection_mechanism": "1168_initial_to_185_expert_recommendation_to_public1266_to_final_expert12", "parent_selection": "khan_2005_korea_leaders60",
+      "parent_selected_units": 60, "field_specific_secondary": true, "major_ge3": true, "apex_eq4": true
+    },
+    {
+      "name": "노회찬", "t0_role": "민주노동당 국회의원·당 간판 정치인", "baseline_peak_through_t0": 2,
+      "post_t0_peak_role": "진보신당 상임대표·진보정의당 공동대표", "post_t0_peak_year": 2008, "post_t0_peak_score": 3,
+      "advancement_delta": 1, "advancement_class": "advanced", "death_truncated": true, "death_date": "2018-07-23", "confidence": "H",
+      "sources": ["https://www.khan.co.kr/article/200512301518231", "data/typeA/khan_2004_17th_assembly_newleaders_peak_master_v1_0.json", "https://www.yna.co.kr/view/AKR20180723139800001"],
+      "outlet": "경향신문", "selection_date": "2005-12-15", "publication_date": "2005-12-30", "cohort_unit": "khan_2005_korea_leaders60_politics10",
+      "list_title": "한국을 이끌 60인 — 정치10", "domain": "politics", "design": "multistage_public_awareness_expert_final_field10",
+      "selection_mechanism": "1168_initial_to_185_expert_recommendation_to_public1266_to_final_expert12", "parent_selection": "khan_2005_korea_leaders60",
+      "parent_selected_units": 60, "field_specific_secondary": true, "major_ge3": true, "apex_eq4": false
+    },
+    {
+      "name": "박근혜", "t0_role": "한나라당 대표", "baseline_peak_through_t0": 3,
+      "post_t0_peak_role": "제18대 대한민국 대통령", "post_t0_peak_year": 2013, "post_t0_peak_score": 4,
+      "advancement_delta": 1, "advancement_class": "advanced", "death_truncated": false, "confidence": "H",
+      "sources": ["https://www.khan.co.kr/article/200512301518231", "data/typeA/typeA_common_master_v0_3.json"],
+      "outlet": "경향신문", "selection_date": "2005-12-15", "publication_date": "2005-12-30", "cohort_unit": "khan_2005_korea_leaders60_politics10",
+      "list_title": "한국을 이끌 60인 — 정치10", "domain": "politics", "design": "multistage_public_awareness_expert_final_field10",
+      "selection_mechanism": "1168_initial_to_185_expert_recommendation_to_public1266_to_final_expert12", "parent_selection": "khan_2005_korea_leaders60",
+      "parent_selected_units": 60, "field_specific_secondary": true, "major_ge3": true, "apex_eq4": true
+    },
+    {
+      "name": "박진", "t0_role": "재선 국회의원·한나라당 국제위원장 경력", "baseline_peak_through_t0": 2,
+      "post_t0_peak_role": "제40대 외교부 장관", "post_t0_peak_year": 2022, "post_t0_peak_score": 3,
+      "advancement_delta": 1, "advancement_class": "advanced", "death_truncated": false, "confidence": "H",
+      "sources": ["https://www.khan.co.kr/article/200512301518231", "data/typeA/khan_2004_17th_assembly_newleaders_peak_master_v1_0.json"],
+      "outlet": "경향신문", "selection_date": "2005-12-15", "publication_date": "2005-12-30", "cohort_unit": "khan_2005_korea_leaders60_politics10",
+      "list_title": "한국을 이끌 60인 — 정치10", "domain": "politics", "design": "multistage_public_awareness_expert_final_field10",
+      "selection_mechanism": "1168_initial_to_185_expert_recommendation_to_public1266_to_final_expert12", "parent_selection": "khan_2005_korea_leaders60",
+      "parent_selected_units": 60, "field_specific_secondary": true, "major_ge3": true, "apex_eq4": false
+    },
+    {
+      "name": "손학규", "t0_role": "경기도지사·전 보건복지부 장관", "baseline_peak_through_t0": 3,
+      "post_t0_peak_role": "2007 대통합민주신당 유력 대통령후보 경선주자", "post_t0_peak_year": 2007, "post_t0_peak_score": 4,
+      "advancement_delta": 1, "advancement_class": "advanced", "death_truncated": false, "confidence": "H",
+      "sources": ["https://www.khan.co.kr/article/200512301518231", "https://www.yna.co.kr/view/AKR20070905184300001", "https://www.yna.co.kr/view/AKR20070905221000001"],
+      "scope4_basis": "Frozen political rule includes a major national presidential candidate/contender. He ranked first in the party preliminary and remained a leading contender in the national nomination race.",
+      "outlet": "경향신문", "selection_date": "2005-12-15", "publication_date": "2005-12-30", "cohort_unit": "khan_2005_korea_leaders60_politics10",
+      "list_title": "한국을 이끌 60인 — 정치10", "domain": "politics", "design": "multistage_public_awareness_expert_final_field10",
+      "selection_mechanism": "1168_initial_to_185_expert_recommendation_to_public1266_to_final_expert12", "parent_selection": "khan_2005_korea_leaders60",
+      "parent_selected_units": 60, "field_specific_secondary": true, "major_ge3": true, "apex_eq4": true
+    },
+    {
+      "name": "원희룡", "t0_role": "재선 국회의원·한나라당 최고위원", "baseline_peak_through_t0": 2,
+      "post_t0_peak_role": "제주특별자치도지사·국토교통부 장관", "post_t0_peak_year": 2022, "post_t0_peak_score": 3,
+      "advancement_delta": 1, "advancement_class": "advanced", "death_truncated": false, "confidence": "H",
+      "sources": ["https://www.khan.co.kr/article/200512301518231", "data/typeA/khan_2004_17th_assembly_newleaders_peak_master_v1_0.json"],
+      "outlet": "경향신문", "selection_date": "2005-12-15", "publication_date": "2005-12-30", "cohort_unit": "khan_2005_korea_leaders60_politics10",
+      "list_title": "한국을 이끌 60인 — 정치10", "domain": "politics", "design": "multistage_public_awareness_expert_final_field10",
+      "selection_mechanism": "1168_initial_to_185_expert_recommendation_to_public1266_to_final_expert12", "parent_selection": "khan_2005_korea_leaders60",
+      "parent_selected_units": 60, "field_specific_secondary": true, "major_ge3": true, "apex_eq4": false
+    },
+    {
+      "name": "이명박", "t0_role": "서울특별시장·유력 차기 대권주자", "baseline_peak_through_t0": 3,
+      "post_t0_peak_role": "제17대 대한민국 대통령", "post_t0_peak_year": 2008, "post_t0_peak_score": 4,
+      "advancement_delta": 1, "advancement_class": "advanced", "death_truncated": false, "confidence": "H",
+      "sources": ["https://www.khan.co.kr/article/200512301518231", "data/typeA/typeA_common_master_v0_3.json"],
+      "outlet": "경향신문", "selection_date": "2005-12-15", "publication_date": "2005-12-30", "cohort_unit": "khan_2005_korea_leaders60_politics10",
+      "list_title": "한국을 이끌 60인 — 정치10", "domain": "politics", "design": "multistage_public_awareness_expert_final_field10",
+      "selection_mechanism": "1168_initial_to_185_expert_recommendation_to_public1266_to_final_expert12", "parent_selection": "khan_2005_korea_leaders60",
+      "parent_selected_units": 60, "field_specific_secondary": true, "major_ge3": true, "apex_eq4": true
+    },
+    {
+      "name": "정동영", "t0_role": "통일부 장관·NSC 상임위원장·전 열린우리당 의장", "baseline_peak_through_t0": 3,
+      "post_t0_peak_role": "2007 대통합민주신당 대통령 후보", "post_t0_peak_year": 2007, "post_t0_peak_score": 4,
+      "advancement_delta": 1, "advancement_class": "advanced", "death_truncated": false, "confidence": "H",
+      "sources": ["https://www.khan.co.kr/article/200512301518231", "data/typeA/typeA_common_master_v0_3.json"],
+      "outlet": "경향신문", "selection_date": "2005-12-15", "publication_date": "2005-12-30", "cohort_unit": "khan_2005_korea_leaders60_politics10",
+      "list_title": "한국을 이끌 60인 — 정치10", "domain": "politics", "design": "multistage_public_awareness_expert_final_field10",
+      "selection_mechanism": "1168_initial_to_185_expert_recommendation_to_public1266_to_final_expert12", "parent_selection": "khan_2005_korea_leaders60",
+      "parent_selected_units": 60, "field_specific_secondary": true, "major_ge3": true, "apex_eq4": true
+    }
+  ],
+  "source_audit": "research/khan_2005_politics10_peak_audit_v0_1.json"
+}
