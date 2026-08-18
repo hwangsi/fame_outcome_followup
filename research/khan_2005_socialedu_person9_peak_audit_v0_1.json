@@ -1,0 +1,218 @@
+{
+  "schema_version": "khan_2005_socialedu_person9_peak_audit_v0.1",
+  "generated": "2026-08-18",
+  "status": "peak_audited_9_of_9_person_units",
+  "parent_selection": "khan_2005_korea_leaders60",
+  "parent_selected_units": 60,
+  "field": "사회교육",
+  "field_selected_units": 10,
+  "field_person_units": 9,
+  "field_organization_units": 1,
+  "organization_unit": "경제정의실천시민연합",
+  "field_specific_secondary": true,
+  "selection_cutoff": "2005-12-15",
+  "publication_date": "2005-12-30",
+  "rules_ref": [
+    "state/coding_rules_typeA_v0_1.md",
+    "state/coding_rules_typeA_sector_scope_v0_1.md",
+    "state/coding_rules_typeA_mixed_unit_v0_1.md",
+    "state/coding_rules_typeA_organization_outcome_v0_1.md"
+  ],
+  "people": [
+    {
+      "name": "김상조",
+      "t0_role": "한성대 교수·참여연대 경제개혁센터 소장",
+      "baseline_peak_through_t0": 2,
+      "baseline_reason": "전국 시민사회에서 재벌개혁을 주도한 저명 교수·센터 리더였으나 2005년까지 주요 국가기관 수장 또는 대통령 핵심 정책책임자는 아니므로 score2.",
+      "post_t0_peak_role": "대통령비서실 정책실장",
+      "post_t0_peak_year": 2019,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 2,
+      "advancement_class": "advanced",
+      "sector_at_peak": "public_policy",
+      "scope4_basis": "Frozen political/public rule includes presidential-core policy responsibility. The presidential policy chief directly coordinates the President's policy agenda.",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301630061",
+        "https://www.korea.kr/news/policyNewsView.do?newsId=148861931",
+        "https://www.korea.kr/briefing/presidentView.do?newsId=148862688"
+      ]
+    },
+    {
+      "name": "김영란",
+      "t0_role": "대법관·헌정사상 최초 여성 대법관",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "대법관은 주요 국가 사법기관의 최상위 리더십 stratum으로 score3.",
+      "post_t0_peak_role": "국민권익위원회 위원장",
+      "post_t0_peak_year": 2011,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301630061",
+        "https://www.acrc.go.kr/board.es?act=view&bid=4A&list_no=5580&mid=a10402010000"
+      ]
+    },
+    {
+      "name": "김영무",
+      "t0_role": "김·장 법률사무소 공동창립 변호사·국내 최대 로펌 성장 주도",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "2005년 기사에서 이미 220명 이상 변호사의 국내 최대 로펌을 구축한 법률서비스 분야의 주요 전국 리더로 확인되어 score3.",
+      "post_t0_peak_role": "김·장 법률사무소 공동창립 변호사·한국 로펌업계 대표적 창업자",
+      "post_t0_peak_year": 2022,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301630061",
+        "https://www.kimchang.com/ko/about/history.kc",
+        "https://www.kimchang.com/ko/professionals/view/ymkim",
+        "https://www.kimchang.com/ko/insights/detail.kc?idx=25440&sch_section=3"
+      ]
+    },
+    {
+      "name": "박원순",
+      "t0_role": "인권변호사·전 참여연대 사무처장·아름다운재단 상임이사",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "선정 이전 이미 전국적 주요 시민단체 참여연대의 사무처장을 장기간 맡고 아름다운재단을 창립·이끈 주요 전국 시민사회 리더였으므로 lifetime baseline3.",
+      "post_t0_peak_role": "서울특별시장",
+      "post_t0_peak_year": 2011,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "death_truncated": true,
+      "death_date": "2020-07-10",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301630061",
+        "https://www.yna.co.kr/view/AKR20111027001500001",
+        "https://www.yna.co.kr/view/AKR20200710000951004"
+      ]
+    },
+    {
+      "name": "안재규",
+      "t0_role": "대한한의사협회 제34·35대 회장·세계약침학회 초대 의장",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "전국 전문직 단체를 두 차례 이끈 최고 리더이며 13개국 참여 세계약침학회 초대 의장까지 맡아 score3.",
+      "post_t0_peak_role": "대한한의사협회 명예회장·국민훈장 석류장 수훈",
+      "post_t0_peak_year": 2010,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301630061",
+        "https://www.akom.org/Home/AkomArticleNews?NewsType=4&id=106978"
+      ]
+    },
+    {
+      "name": "이종욱",
+      "t0_role": "세계보건기구(WHO) 사무총장",
+      "baseline_peak_through_t0": 4,
+      "baseline_reason": "한국인 최초의 유엔 전문기구 수장으로, frozen public rule의 대형 글로벌 다자기구 수장에 직접 해당하는 global apex.",
+      "post_t0_peak_role": "세계보건기구(WHO) 사무총장 재임 지속",
+      "post_t0_peak_year": 2006,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "death_truncated": true,
+      "death_date": "2006-05-22",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301630061",
+        "https://www.mofa.go.kr/www/brd/m_4080/view.do?seq=289717",
+        "https://www.yna.co.kr/view/AKR20060522131400006"
+      ]
+    },
+    {
+      "name": "정운찬",
+      "t0_role": "서울대학교 총장",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "국가 대표 대학의 총장으로 major national academic institution top leadership에 해당.",
+      "post_t0_peak_role": "제40대 국무총리",
+      "post_t0_peak_year": 2009,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "sector_at_peak": "politics_public",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301630061",
+        "https://www.korea.kr/news/policyNewsView.do?newsId=148677157",
+        "https://www.korea.kr/news/interviewView.do?newsId=148675877"
+      ]
+    },
+    {
+      "name": "조국",
+      "t0_role": "서울대 법대 교수·참여연대 사법감시센터 소장",
+      "baseline_peak_through_t0": 2,
+      "baseline_reason": "저명 법학자·전국 시민단체 센터 리더였지만 2005년까지 주요 국가기관 또는 대통령 핵심 리더십에는 도달하지 않았으므로 score2.",
+      "post_t0_peak_role": "대통령비서실 민정수석비서관",
+      "post_t0_peak_year": 2017,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 2,
+      "advancement_class": "advanced",
+      "sector_at_peak": "presidential_public_policy",
+      "scope4_basis": "민정수석은 대통령비서실의 핵심 수석비서관으로 권력기관·사법 및 민정 관련 대통령 정책을 직접 보좌했다. Frozen rule의 presidential-core leadership stratum을 일관되게 적용.",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301630061",
+        "https://www.korea.kr/news/policyNewsView.do?newsId=148833742",
+        "https://www.korea.kr/briefing/presidentView.do?newsId=148849056",
+        "https://www.korea.kr/briefing/presidentView.do?newsId=148864557"
+      ]
+    },
+    {
+      "name": "하승창",
+      "t0_role": "함께하는시민행동 사무처장",
+      "baseline_peak_through_t0": 2,
+      "baseline_reason": "전국 시민운동의 저명 실무 리더였으나 주요 국가기관·전국 조직의 apex leadership에는 아직 도달하지 않아 score2.",
+      "post_t0_peak_role": "대통령비서실 사회혁신수석비서관",
+      "post_t0_peak_year": 2017,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 2,
+      "advancement_class": "advanced",
+      "sector_at_peak": "presidential_public_policy",
+      "scope4_basis": "사회혁신수석은 대통령을 직접 보좌하며 시민사회 소통, 사회혁신과 국민통합을 국정에 반영한 대통령 핵심 정책책임자 역할로 frozen presidential-core rule을 적용.",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301630061",
+        "https://www.korea.kr/news/policyNewsView.do?newsId=148833598",
+        "https://www.korea.kr/briefing/presidentView.do?newsId=148841067"
+      ]
+    }
+  ],
+  "qa": {
+    "audited_person_n": 9,
+    "baseline_distribution": {"2": 3, "3": 5, "4": 1},
+    "baseline_mean": 2.7777777777777777,
+    "post_peak_distribution": {"3": 4, "4": 5},
+    "post_peak_mean": 3.5555555555555554,
+    "major_n": 9,
+    "major_rate": 1.0,
+    "apex_n": 5,
+    "apex_rate": 0.5555555555555556,
+    "advanced_n": 4,
+    "advanced_rate": 0.4444444444444444,
+    "sustained_high_n": 5,
+    "sustained_high_rate": 0.5555555555555556,
+    "no_clear_advancement_n": 0,
+    "lower_than_baseline_n": 0,
+    "death_truncated_n": 2,
+    "apex_names": ["김상조", "이종욱", "정운찬", "조국", "하승창"],
+    "advanced_names": ["김상조", "정운찬", "조국", "하승창"],
+    "sustained_high_names": ["김영란", "김영무", "박원순", "안재규", "이종욱"],
+    "death_truncated_names": ["박원순", "이종욱"]
+  },
+  "interpretation_guardrails": [
+    "The original social-education field denominator is 10 selected units: 9 persons plus 경제정의실천시민연합 as one organization.",
+    "The 9-person career-scope metrics are a unit-type-specific secondary analysis and must not be reported as the full social-education10 result.",
+    "경제정의실천시민연합 is tracked separately under the organization outcome architecture and is not assigned person Major/Apex/Advanced labels.",
+    "Baseline is lifetime peak through the 2005-12-15 cutoff; therefore 박원순's prior 참여연대 사무처장 leadership and 이종욱's WHO directorship are already included at T0.",
+    "Presidential senior-secretary roles are coded consistently with the frozen presidential-core leadership stratum: 김상조 정책실장, 조국 민정수석, 하승창 사회혁신수석 reach scope4.",
+    "Later controversies, investigations or political evaluations do not erase a role actually attained; outcome scoring records verified scope, not normative approval.",
+    "Deaths truncate later observation for 박원순 and 이종욱 but do not erase their achieved post-selection peaks."
+  ]
+}
