@@ -1,0 +1,67 @@
+{
+  "schema_version": "khan_2005_scitech10_field_completion_v0.1",
+  "generated": "2026-08-18",
+  "status": "field_outcomes_resolved_10_of_10_by_unit_type",
+  "parent_selection": "khan_2005_korea_leaders60",
+  "field": "과학기술",
+  "field_selected_units": 10,
+  "unit_composition": {
+    "persons": 9,
+    "organizations": 1,
+    "organization_name": "한국공학교육인증원"
+  },
+  "person_outcome_ref": "research/khan_2005_scitech_person9_peak_audit_v0_1.json",
+  "person_metrics_ref": "data/typeA/khan_2005_scitech_person9_metrics_v1_0.json",
+  "person_freeze_ref": "state/khan_2005_scitech_person9_freeze_v1_0.json",
+  "organization_outcome_ref": "research/khan_2005_organizations_outcome_audit_v0_1.json",
+  "person9_summary": {
+    "baseline_mean": 2.7777777777777777,
+    "post_peak_mean": 3.111111111111111,
+    "major_n": 6,
+    "major_rate": 0.6666666666666666,
+    "apex_n": 4,
+    "apex_rate": 0.4444444444444444,
+    "advanced_n": 3,
+    "advanced_rate": 0.3333333333333333,
+    "sustained_high_n": 3,
+    "sustained_high_rate": 0.3333333333333333,
+    "no_clear_advancement_n": 2,
+    "lower_than_baseline_n": 1
+  },
+  "organization1_summary": {
+    "name": "한국공학교육인증원",
+    "continuity_class": "direct_continuity",
+    "t20_reach": "international_reach",
+    "t20_field_leadership": "leading",
+    "t20_institutional_influence": "high",
+    "t20_trajectory": "expanded",
+    "key_post_selection_events": [
+      "2007 Washington Accord full membership",
+      "2013 formal program-evaluation/accreditation recognition",
+      "2022 Ministry of Education re-designation"
+    ],
+    "confidence": "H"
+  },
+  "field_interpretation": [
+    "All 10 selected science-tech units now have an outcome path resolved under the appropriate unit-type architecture.",
+    "Among the nine persons, six reached post-selection scope3+, but only three showed baseline-adjusted advancement.",
+    "Several apparently spectacular later honors are not counted as advancement when the underlying field-defining achievement was already attained before selection; 임지순 and 조장희 are the clearest examples.",
+    "한국공학교육인증원 shows direct organizational continuity and clear post-selection institutional expansion through international full-membership and formal recognition.",
+    "No single science-tech10 success percentage is calculated because person and organization outcomes use different architectures."
+  ],
+  "guardrails": [
+    "Original field denominator remains 10.",
+    "Do not report Major 6/10 or Advanced 3/10; those numerators apply to the nine-person subset only.",
+    "Do not silently drop 한국공학교육인증원 to redefine the field as a nine-person selection.",
+    "Do not convert the organization's expanded trajectory into a person-style Advanced outcome.",
+    "Do not treat post-T0 recognition of pre-T0 field-defining work as new career advancement."
+  ],
+  "qa": {
+    "selected_units": 10,
+    "resolved_person_units": 9,
+    "resolved_organization_units": 1,
+    "resolved_total": 10,
+    "unit_type_specific_outcome_complete": true,
+    "single_composite_success_rate_generated": false
+  }
+}
