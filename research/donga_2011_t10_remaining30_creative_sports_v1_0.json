@@ -1,0 +1,41 @@
+{
+  "schema_version": "donga_2011_t10_remaining30_creative_sports_v1.0",
+  "generated": "2026-08-18",
+  "status": "final_13_of_13_paths",
+  "cohort": "동아일보 2011 10년 뒤 한국을 빛낼 100인",
+  "window": {"window_id":"t10","target_year":2021,"window_start":"2020-01-01","window_end":"2022-12-31"},
+  "protocol_ref": "state/donga_2011_t10_protocol_v0_1.md",
+  "people": [
+    {"name":"김선욱","status":"assessable","role_at_window":"국제무대 피아니스트·지휘자","scope_score":3,"scope_label":"major","evidence_date":"2021-01-12","match":"exact_year","confidence":"H","evidence_refs":["https://www.hankyung.com/article/2021011391461"],"coding_note":"2021 KBS교향악단 지휘 데뷔와 피아노 활동을 직접 확인. 이후 2024 음악감독 직위는 사용하지 않음."},
+    {"name":"김애란","status":"assessable","role_at_window":"소설가; 창작과비평에 단편 「좋은 이웃」 발표","scope_score":2,"scope_label":"established","evidence_date":"2021-12","match":"exact_year","confidence":"H","evidence_refs":["https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10668205"],"coding_note":"2021 직접 창작 활동은 확인되나 과거 문학상 peak를 snapshot에 복사하지 않고 established national creator로 보수적 코딩."},
+    {"name":"김영준","status":"untraceable","role_at_window":null,"scope_score":null,"scope_label":null,"evidence_date":null,"match":"no_reproducible_2020_2022_same_person_role_evidence","confidence":"M","evidence_refs":["research/donga_2011_post_t0_new_audit_batch6_v0_1.json"],"coding_note":"2011 T0 김영준도시건축 대표 identity와 2016 서울총괄건축가 경력은 확실하나, 2020-2022 동일인의 직접 역할을 재현 가능한 자료로 연결하지 못해 낮은 점수를 강제하지 않음."},
+    {"name":"김영하","status":"assessable","role_at_window":"소설가·김영하 북클럽 운영","scope_score":2,"scope_label":"established","evidence_date":"2021-02-22","match":"exact_year","confidence":"H","evidence_refs":["https://www.hankyung.com/article/2021022215611"],"coding_note":"2021 전국적 독자 영향력과 작가 활동은 명확하나 과거 문학상 peak를 현재 역할 점수로 소급하지 않음."},
+    {"name":"박지성","status":"assessable","role_at_window":"전북 현대 클럽 어드바이저","scope_score":2,"scope_label":"established","evidence_date":"2021-01-19","match":"exact_year","confidence":"H","evidence_refs":["https://www.yna.co.kr/view/AKR20210119083800007"],"coding_note":"K리그 최상위 구단의 선수·유소년 선발, 육성, 스카우트 시스템 자문 역할. 비상근 advisory role이므로 score 2."},
+    {"name":"신준호","status":"untraceable","role_at_window":null,"scope_score":null,"scope_label":null,"evidence_date":null,"match":"no_reproducible_2020_2022_same_person_role_evidence","confidence":"M","evidence_refs":["research/donga_2011_post_t0_new_audit_batch6_v0_1.json"],"coding_note":"호텔신라 조리팀 차장인 T0 인물은 확실하지만 2020-2022 동일인의 조리 경력을 동명이인 없이 연결하지 못함."},
+    {"name":"윤태호","status":"assessable","role_at_window":"웹툰 『미생』 시즌2 2부 연재 작가","scope_score":3,"scope_label":"major","evidence_date":"2021-09-20","match":"exact_year","confidence":"H","evidence_refs":["https://www.yna.co.kr/view/AKR20210916152800017"],"coding_note":"대표작의 대형 플랫폼 연재 재개가 2021 직접 확인되며 국내 최상위 콘텐츠 창작자 역할로 score 3."},
+    {"name":"이불","status":"assessable","role_at_window":"국제 현대미술가; 서울시립미술관 개인전 『이불-시작』","scope_score":3,"scope_label":"major","evidence_date":"2021-03-02","match":"exact_year","confidence":"H","evidence_refs":["https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=461401","https://www.newsis.com/view/NISX20210302_0001355604"],"coding_note":"공공미술관 대규모 개인전과 국제적 작가 위상이 동시 확인되어 score 3."},
+    {"name":"이수만","status":"assessable","role_at_window":"SM엔터테인먼트 총괄 프로듀서","scope_score":3,"scope_label":"major","evidence_date":"2021-11-01","match":"exact_year","confidence":"H","evidence_refs":["https://www.hankyung.com/article/2021110188441"],"coding_note":"2021 SM 총괄프로듀서이자 창업자로 K-pop 산업의 주요 국제적 리더십 지속."},
+    {"name":"이자람","status":"assessable","role_at_window":"판소리 창작자·소리꾼; 『노인과 바다』 공연","scope_score":2,"scope_label":"established","evidence_date":"2021-06-05","match":"exact_year","confidence":"H","evidence_refs":["https://www.artgy.or.kr/PF/PF0201V.aspx?showid=0000006276","https://www.yna.co.kr/view/AKR20210623103900005"],"coding_note":"2021 직접 공연은 명확하나 과거 국제투어 peak를 소급하지 않고 전국적 선도 창작자 역할을 보수적으로 score 2."},
+    {"name":"장미란","status":"assessable","role_at_window":"용인대 교수·장미란재단 이사장","scope_score":2,"scope_label":"established","evidence_date":"2021","match":"exact_year_by_retrospective_tenure","confidence":"H","evidence_refs":["https://www.hankookilbo.com/news/article/A2023062914540005594"],"coding_note":"후속 프로필이 2021 용인대 복직과 재단 이사장 지속을 명시. 선수 시절 올림픽 peak는 현재 snapshot에 복사하지 않음."},
+    {"name":"하상백","status":"untraceable","role_at_window":null,"scope_score":null,"scope_label":null,"evidence_date":null,"match":"no_reproducible_2020_2022_same_person_role_evidence","confidence":"M","evidence_refs":["https://about.ebs.co.kr/board/bbs?boardId=31&boardTypeId=1&cmd=view&no=5&option=respond&pageNo=2&postId=10000026633&searchCondition=title&searchKeyword="],"coding_note":"패션디자이너 identity는 확인되지만 2020-2022 직접 활동 근거를 확보하지 못함. 2021 금융사 공시의 동명이인 하상백은 identity 연결이 없어 배제."},
+    {"name":"하정우","status":"assessable","role_at_window":"배우·미술 작가; 개인전 『At Home』","scope_score":2,"scope_label":"established","evidence_date":"2021-03-23","match":"exact_year","confidence":"H","evidence_refs":["https://www.yna.co.kr/view/AKR20210310157300005","https://www.pyogallery.com/exhibitions/ha-jungwoo/at-home"],"coding_note":"2021 배우이자 미술작가로 직접 활동. 같은 해 형사 사건은 adverse event로 별도 취급하며 역할 score를 소급 삭제하지 않음."}
+  ],
+  "qa": {
+    "population_n":13,
+    "final_path_n":13,
+    "assessable_n":10,
+    "untraceable_n":3,
+    "untraceable_names":["김영준","신준호","하상백"],
+    "competing_event_n":0,
+    "score_counts":{"2":6,"3":4},
+    "scope_ge2_n":10,
+    "major_ge3_n":4,
+    "apex_eq4_n":0
+  },
+  "guardrails": [
+    "Historical awards and lifetime peaks are not substituted for 2021 occupancy.",
+    "Same-name evidence is excluded unless identity continuity is reproducible.",
+    "Adverse legal events are recorded separately from prominence/role scope.",
+    "Untraceable is not a zero score."
+  ]
+}
