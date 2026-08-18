@@ -1,0 +1,43 @@
+name: Materialize Kyunghyang 2005 person57 longitudinal v1.1
+
+on:
+  push:
+    paths:
+      - 'scripts/build_khan_2005_person57_common_longitudinal_rows_v0_1.py'
+      - '.github/workflows/materialize-khan-2005-person57-longitudinal-v1-1.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build corrected person57 rows and metrics
+        run: python scripts/build_khan_2005_person57_common_longitudinal_rows_v0_1.py
+      - name: QA corrected aggregate
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('data/typeA/khan_2005_korea_leaders60_person57_common_longitudinal_rows_v0_1.json',encoding='utf-8'))
+          m=json.load(open('data/typeA/khan_2005_korea_leaders60_person57_longitudinal_metrics_v1_1.json',encoding='utf-8'))
+          assert d['qa']['persons']==57 and d['qa']['snapshot_rows']==114
+          assert m['snapshots']['t10']['major_ge3_n']==27
+          assert m['snapshots']['t20']['scope_ge2_n']==43
+          assert m['snapshots']['t20']['major_ge3_n']==26
+          assert m['snapshots']['t20']['score_distribution']=={'0':0,'1':9,'2':17,'3':16,'4':10,'null':5}
+          PY
+      - name: Persist corrected outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/typeA/khan_2005_korea_leaders60_person57_common_longitudinal_rows_v0_1.json data/typeA/khan_2005_korea_leaders60_person57_longitudinal_metrics_v1_1.json state/khan_2005_korea_leaders60_person57_longitudinal_freeze_v1_1.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Correct and materialize Kyunghyang 2005 person57 longitudinal"
+            git push
+          fi
