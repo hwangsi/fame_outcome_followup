@@ -1,0 +1,31 @@
+{
+  "schema_version": "donga_2011_t10_remaining30_hard_academic_business_v1.0",
+  "generated": "2026-08-18",
+  "status": "final_5_of_5_paths",
+  "cohort": "동아일보 2011 10년 뒤 한국을 빛낼 100인",
+  "window": {"window_id":"t10","target_year":2021,"window_start":"2020-01-01","window_end":"2022-12-31"},
+  "protocol_ref": "state/donga_2011_t10_protocol_v0_1.md",
+  "people": [
+    {"name":"김승환","status":"assessable","role_at_window":"POSTECH 물리학과 교수·생물물리 여름학교 조직/강연","scope_score":2,"scope_label":"established","evidence_date":"2021","match":"exact_year","confidence":"H","evidence_refs":["https://ph.postech.ac.kr/physics/community/notice.do?article.offset=0&articleLimit=10&articleNo=37563&mode=view","https://plms.postech.ac.kr/local/ubion/course/syllabusV.php?id=3312"],"coding_note":"2021 POSTECH 교수·강의·학술활동은 직접 확인. 2013 APCTP 소장이나 과거 한국물리학회장 역할을 2021에 복사하지 않고 score 2."},
+    {"name":"김은성","status":"assessable","role_at_window":"KAIST 물리학과 교수·학과장","scope_score":3,"scope_label":"major","evidence_date":"2021","match":"exact_year_by_official_tenure","confidence":"H","evidence_refs":["https://pure.kaist.ac.kr/en/persons/eunseong-kim/","https://pure.kaist.ac.kr/en/clippings/the-first-unequivocal-experimental-evidence-of-a-superfluid-state/"],"coding_note":"KAIST 공식 프로필이 물리학과장 임기를 2017-2022로 명시하고 2021 연구성과도 직접 확인되어 national research leadership score 3."},
+    {"name":"백운규","status":"assessable","role_at_window":"한양대 에너지공학과 교수·2021 Highly Cited Researcher","scope_score":3,"scope_label":"major","evidence_date":"2021","match":"exact_year","confidence":"H","evidence_refs":["https://hyper-magazine.com/vol260/post33.html"],"coding_note":"전 산업부 장관이라는 과거 공직 대신 2021 한양대 교수 및 세계 상위 1% HCR 연구자 지위를 직접 사용."},
+    {"name":"함돈희","status":"assessable","role_at_window":"Harvard Gordon McKay Professor of Applied Physics and Electrical Engineering","scope_score":3,"scope_label":"major","evidence_date":"2021","match":"exact_year_by_official_tenure","confidence":"H","evidence_refs":["https://www.donheehamlab.org/people","https://www.donheehamlab.org/donhee-ham"],"coding_note":"공식 이력이 Gordon McKay Professor를 2009-07부터 2023-07 이전까지로 명시해 2021 occupancy를 확정. 2023 Armstrong professorship은 사용하지 않음."},
+    {"name":"김가영","status":"assessable","role_at_window":"생생농업유통 대표·사단법인 씨즈 이사","scope_score":2,"scope_label":"established","evidence_date":"2021","match":"exact_year_by_retrospective_tenure","confidence":"H","evidence_refs":["https://www.ilga.or.kr/ilga/%EA%B9%80%EA%B0%80%EC%98%81"],"coding_note":"일가재단 경력표가 두 역할 모두 2012~현재로 명시하여 2021 직접 재직을 확정. 중견/대기업 수준으로 확장하지 않고 score 2."}
+  ],
+  "qa": {
+    "population_n":5,
+    "final_path_n":5,
+    "assessable_n":5,
+    "untraceable_n":0,
+    "competing_event_n":0,
+    "score_counts":{"2":2,"3":3},
+    "scope_ge2_n":5,
+    "major_ge3_n":3,
+    "apex_eq4_n":0
+  },
+  "guardrails": [
+    "Past institutional presidencies are not copied into 2021 when only professor/research activity is directly observed.",
+    "Official tenure spanning 2021 is admissible exact-year evidence.",
+    "Later promotions are not backdated into T+10."
+  ]
+}
