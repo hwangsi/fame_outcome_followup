@@ -1,0 +1,30 @@
+{
+  "schema_version": "typeA_common_v0_4_materialization_gap_v0.1",
+  "generated": "2026-08-18",
+  "status": "builder_and_metrics_present_generated_master_artifacts_absent_from_repo",
+  "builder": {
+    "path": "scripts/build_typeA_common_master_v0_4.py",
+    "present": true,
+    "expected_outputs": [
+      "data/typeA/typeA_common_master_v0_4.json",
+      "data/typeA/typeA_common_master_v0_4.csv",
+      "data/typeA/typeA_common_metrics_v0_4.json",
+      "state/typeA_common_master_freeze_v0_4.json"
+    ]
+  },
+  "repo_presence_check": {
+    "data/typeA/typeA_common_metrics_v0_4.json": "present",
+    "data/typeA/typeA_common_master_v0_4.json": "absent_404",
+    "data/typeA/typeA_common_master_v0_4.csv": "absent_404",
+    "state/typeA_common_master_freeze_v0_4.json": "absent_404"
+  },
+  "known_metrics_v0_4_qa": {
+    "placements": 255,
+    "unique_people": 195,
+    "cohort_units": 7,
+    "not_assessable_placements": 1
+  },
+  "interpretation": "The v0.4 generation logic already exists and the metrics artifact is committed, but the corresponding full placement JSON/CSV and freeze artifact were not materialized in the repository. This is an artifact-presence/reproducibility gap, not an analytical definition gap.",
+  "guardrail": "Do not claim typeA_common_master_v0_4.json/.csv or typeA_common_master_freeze_v0_4.json are currently present until a deterministic builder run materializes and commits them.",
+  "next": "Run scripts/build_typeA_common_master_v0_4.py in a repository checkout or CI job with its required source files, verify its assertions, then commit the generated JSON/CSV/freeze without manually editing row content."
+}
