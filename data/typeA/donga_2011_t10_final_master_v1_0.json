@@ -1,0 +1,47 @@
+{
+  "schema_version": "donga_2011_t10_final_master_v1.0",
+  "generated": "2026-08-18",
+  "status": "final_100_of_100_paths",
+  "cohort": {"outlet":"동아일보","title":"10년 뒤 한국을 빛낼 100인","selection_year":2011,"original_n":100},
+  "window": {"window_id":"t10","target_year":2021,"window_start":"2020-01-01","window_end":"2022-12-31"},
+  "protocol_ref": "state/donga_2011_t10_protocol_v0_1.md",
+  "source_batches": [
+    {"ref":"state/donga_2011_t10_repeat38_freeze_v1_0.json","n":38,"names":["강덕수","김기문","김문수","김빛내리","김연아","김정범","김준영","김택진","김필립","김해성","나경원","박원순","박지영","박진영","박현주","봉준호","서정진","신지애","신현송","안철수","오세훈","원희룡","유시민","이부진","이상엽","이재용","이주호","이창용","이해진","임지순","장하준","장한나","정의선","정태영","정하웅","조국","최태원","현택환"]},
+    {"ref":"research/donga_2011_t10_newentrant_inwindow18_audit_v0_1.json","n":18,"names":["박형준","김남구","윤순진","김부겸","김태효","손병두","손흥민","김정주","이미경","황철주","손영래","양윤선","유범재","조명숙","이상이","김철영","이연희","정근창"]},
+    {"ref":"research/donga_2011_t10_pending44_batch1_institutional_v0_1.json","n":8,"names":["김상욱","박형주","박상일","김영달","변대규","이창준","김은식","석지영"]},
+    {"ref":"research/donga_2011_t10_pending36_batch2_continuity_v0_1.json","n":6,"names":["남광희","정준","남민우","정용진","이서현","장하석"]},
+    {"ref":"research/donga_2011_t10_remaining30_creative_sports_v1_0.json","n":13,"names":["김선욱","김애란","김영준","김영하","박지성","신준호","윤태호","이불","이수만","이자람","장미란","하상백","하정우"]},
+    {"ref":"research/donga_2011_t10_remaining30_public_legal_v1_0.json","n":12,"names":["박근혜","이정희","임성남","권구훈","강일원","곽노현","김상우","백승헌","이국종","전혜경","정일용","최재경"]},
+    {"ref":"research/donga_2011_t10_remaining30_hard_academic_business_v1_0.json","n":5,"names":["김승환","김은성","백운규","함돈희","김가영"]}
+  ],
+  "coverage": {
+    "source_batch_n_sum":100,
+    "final_path_n":100,
+    "assessable_n":90,
+    "competing_event_n":1,
+    "competing_event_names":["박원순"],
+    "untraceable_n":9,
+    "untraceable_names":["강덕수","김준영","김해성","박지영","김영준","신준호","하상백","김상우","최재경"],
+    "not_applicable_n":0
+  },
+  "evidence_provenance_assessable": {
+    "exact_2021_or_explicit_2021_tenure_n":81,
+    "nearest_2020_n":8,
+    "nearest_2022_n":1,
+    "sum":90
+  },
+  "score_counts_assessable": {"0":1,"1":2,"2":24,"3":59,"4":4},
+  "qa_invariants": [
+    "38 + 18 + 8 + 6 + 13 + 12 + 5 = 100",
+    "90 assessable + 1 competing_event + 9 untraceable = 100",
+    "1 + 2 + 24 + 59 + 4 = 90 assessable scores",
+    "81 exact-2021 + 8 nearest-2020 + 1 nearest-2022 = 90 assessable",
+    "no lifetime peak outside the target window is copied into a T+10 score",
+    "all untraceable rows remain null rather than forced low scores"
+  ],
+  "interpretation_notes": [
+    "This is a lossless final index: canonical row details and evidence live in the referenced frozen audit batches.",
+    "The 38 repeat-selected people are placements in the 2011 cohort but must not be treated as independent from their 2010 appearances in cross-wave person-level analyses.",
+    "Fixed-window T+10 is a role-occupancy snapshot and is not equivalent to lifetime post-selection peak."
+  ]
+}
