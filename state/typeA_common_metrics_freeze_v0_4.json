@@ -1,0 +1,49 @@
+{
+  "schema_version": "typeA_common_metrics_freeze_v0.4",
+  "generated": "2026-08-18",
+  "status": "metrics_frozen_full_master_materialization_pending",
+  "base_master": "data/typeA/typeA_common_master_v0_3.json",
+  "base_placements": 245,
+  "added_cohort": "khan_2005_korea_leaders60_politics10",
+  "added_placements": 10,
+  "new_canonical_people": ["김근태", "손학규"],
+  "confirmed_existing_people": ["강금실", "김부겸", "노회찬", "박근혜", "박진", "원희룡", "이명박", "정동영"],
+  "qa": {
+    "placements": 255,
+    "unique_people": 195,
+    "unique_display_names": 194,
+    "true_homonym_split_n": 1,
+    "repeated_person_n": 50,
+    "placement_count_distribution": {"1": 145, "2": 42, "3": 6, "4": 2},
+    "max_placement_count": 4,
+    "max_selected_names": ["원희룡", "유시민"],
+    "cohort_units": 7,
+    "not_assessable_placements": 1
+  },
+  "pooled": {
+    "major_n": 216,
+    "major_rate": 0.8470588235294118,
+    "apex_n": 44,
+    "apex_rate": 0.17254901960784313,
+    "advanced_n": 106,
+    "advanced_rate": 0.41568627450980394
+  },
+  "person_first_selection": {
+    "persons": 195,
+    "major_n": 159,
+    "apex_n": 24,
+    "advanced_n": 79
+  },
+  "materialization": {
+    "full_master_path": "data/typeA/typeA_common_master_v0_4.json",
+    "full_csv_path": "data/typeA/typeA_common_master_v0_4.csv",
+    "materialized": false,
+    "reason": "GitHub Actions did not execute from connector-originated trigger attempts; the large frozen v0.3 placement layer was not copied manually to avoid a non-reproducible or truncated master."
+  },
+  "guardrails": [
+    "Metrics are an exact additive update from frozen v0.3 plus the fully audited 10-person politics field.",
+    "Do not call the full common master v0.4 frozen until the 255-row placement file is materialized and QA-tested.",
+    "The parent Kyunghyang 2005 selection remains 60 units = 57 persons + 3 organizations; only politics10 is included in the person-only metrics layer.",
+    "The 이미경 politician/business homonym split remains inherited from frozen v0.3."
+  ]
+}
