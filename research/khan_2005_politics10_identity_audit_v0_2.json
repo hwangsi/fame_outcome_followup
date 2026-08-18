@@ -1,0 +1,39 @@
+{
+  "schema_version": "khan_2005_politics10_identity_audit_v0.2",
+  "generated": "2026-08-18",
+  "status": "corrected_against_typeA_common_master_v0.3",
+  "source": "research/khan_2005_korea_leaders60_recovery_v0_1.json",
+  "existing_common": "data/typeA/typeA_common_master_v0_3.json",
+  "correction_reason": "v0.1 incorrectly classified 김근태 and 손학규 as new canonical people. Both already appear in NewsMaker 2003 politics Top10 in the v0.3 common master.",
+  "same_person_existing": [
+    {"name":"강금실","confidence":"H"},
+    {"name":"김근태","existing_cohort":"newsmaker_2003_politics_top10","confidence":"H"},
+    {"name":"김부겸","confidence":"H"},
+    {"name":"노회찬","confidence":"H"},
+    {"name":"박근혜","confidence":"H"},
+    {"name":"박진","confidence":"H"},
+    {"name":"손학규","existing_cohort":"newsmaker_2003_politics_top10","confidence":"H"},
+    {"name":"원희룡","confidence":"H"},
+    {"name":"이명박","confidence":"H"},
+    {"name":"정동영","confidence":"H"}
+  ],
+  "new_canonical_people": [],
+  "qa": {
+    "n": 10,
+    "same_existing_n": 10,
+    "new_person_n": 0,
+    "different_person_same_name_n": 0,
+    "pending_n": 0,
+    "base_v0_3_placements": 245,
+    "base_v0_3_unique_people": 193,
+    "expected_common_v0_4_placements": 255,
+    "expected_common_v0_4_unique_people": 193,
+    "expected_common_v0_4_unique_display_names": 192
+  },
+  "supersedes": "research/khan_2005_politics10_identity_audit_v0_1.json",
+  "guardrails": [
+    "Placement novelty and person novelty are different concepts.",
+    "A new cohort placement must not create a new canonical person when that person already exists in an earlier cohort.",
+    "김근태 and 손학규 retain their existing canonical identity/person IDs across NewsMaker 2003 and Kyunghyang 2005."
+  ]
+}
