@@ -1,0 +1,29 @@
+{
+  "schema_version": "donga_2010_common_longitudinal_rows_freeze_v0.1",
+  "generated": "2026-08-18",
+  "qa": {
+    "rows": 100,
+    "unique_names": 100,
+    "unique_snapshot_ids": 100,
+    "assessable_n": 87,
+    "competing_event_n": 3,
+    "untraceable_n": 10,
+    "score_counts_assessable": {
+      "0": 0,
+      "1": 2,
+      "2": 43,
+      "3": 37,
+      "4": 5
+    },
+    "scope_ge2_n": 85,
+    "major_ge3_n": 42,
+    "apex_eq4_n": 5
+  },
+  "source_ref": "data/typeA/donga_2010_target2020_master_v1_0.json",
+  "guardrails": [
+    "one canonical snapshot row per selected unit",
+    "explicit target 2020 and T+10 are semantic aliases, not duplicate observations",
+    "competing event and unresolved remain null rather than score 0",
+    "exact 2020 evidence remains preferred over higher 2021 within-window events"
+  ]
+}
