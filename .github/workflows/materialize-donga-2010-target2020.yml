@@ -1,0 +1,42 @@
+name: Materialize Dong-A 2010 target2020
+
+on:
+  push:
+    paths:
+      - '.github/workflows/materialize-donga-2010-target2020.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build target2020 master
+        run: python scripts/build_donga_2010_target2020_master.py
+      - name: QA frozen invariants
+        run: |
+          python - <<'PY'
+          import json
+          p='data/typeA/donga_2010_target2020_master_v1_0.json'
+          d=json.load(open(p,encoding='utf-8'))
+          q=d['qa']
+          assert q['total']==100
+          assert q['states']=={'resolved':87,'unresolved':10,'competing_event':3}
+          assert q['resolved_score_counts']=={'1':2,'2':43,'3':37,'4':5}
+          PY
+          test "$(wc -l < data/typeA/donga_2010_target2020_master_v1_0.csv)" -eq 101
+      - name: Persist deterministic outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/typeA/donga_2010_target2020_master_v1_0.json data/typeA/donga_2010_target2020_master_v1_0.csv
+          if ! git diff --cached --quiet; then
+            git commit -m "Materialize Dong-A 2010 target2020 master"
+            git push
+          fi
