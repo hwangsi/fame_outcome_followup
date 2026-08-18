@@ -1,0 +1,45 @@
+{
+  "schema_version": "donga_2011_common_longitudinal_rows_freeze_v0.1",
+  "generated": "2026-08-18",
+  "qa": {
+    "rows": 100,
+    "unique_names": 100,
+    "unique_snapshot_ids": 100,
+    "assessable_n": 90,
+    "competing_event_n": 1,
+    "untraceable_n": 9,
+    "score_counts_assessable": {
+      "0": 1,
+      "1": 2,
+      "2": 24,
+      "3": 59,
+      "4": 4
+    },
+    "scope_ge2_n": 87,
+    "major_ge3_n": 63,
+    "apex_eq4_n": 4,
+    "exact_2021_or_tenure_n": 81,
+    "nearest_2020_n": 8,
+    "nearest_2022_n": 1,
+    "source_batch_n": 10
+  },
+  "source_refs": [
+    "research/donga_2011_t10_repeat_economy_audit_v0_1.json",
+    "research/donga_2011_t10_repeat_public_politics_audit_v0_1.json",
+    "research/donga_2011_t10_repeat_creators_audit_v0_1.json",
+    "research/donga_2011_t10_repeat_science_pioneers_audit_v0_1.json",
+    "research/donga_2011_t10_newentrant_inwindow18_audit_v0_1.json",
+    "research/donga_2011_t10_pending44_batch1_institutional_v0_1.json",
+    "research/donga_2011_t10_pending36_batch2_continuity_v0_1.json",
+    "research/donga_2011_t10_remaining30_creative_sports_v1_0.json",
+    "research/donga_2011_t10_remaining30_public_legal_v1_0.json",
+    "research/donga_2011_t10_remaining30_hard_academic_business_v1_0.json"
+  ],
+  "guardrails": [
+    "one canonical snapshot row per 2011 selected unit",
+    "explicit-target-2021 and T+10 are semantic aliases, not duplicate observations",
+    "competing event and untraceable remain null rather than score 0",
+    "direct 2021 evidence has priority over nearest 2020/2022 evidence",
+    "repeat-selected people remain placements here; dependence is handled in person-level analyses"
+  ]
+}
