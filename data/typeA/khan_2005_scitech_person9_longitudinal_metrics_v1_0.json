@@ -1,0 +1,63 @@
+{
+  "schema_version": "khan_2005_scitech_person9_longitudinal_metrics_v1.0",
+  "generated": "2026-08-18",
+  "population": {
+    "person_n": 9,
+    "field_selected_units": 10,
+    "organization_n": 1,
+    "organization_unit": "한국공학교육인증원",
+    "unit_type_specific_secondary": true
+  },
+  "target_windows": {
+    "t10": "2015 ±1 year (2014-2016)",
+    "t20": "2025 ±1 year (2024-2026)"
+  },
+  "peak_reference": {
+    "major_n": 6,
+    "apex_n": 4,
+    "advanced_n": 3,
+    "sustained_high_n": 3,
+    "no_clear_advancement_n": 2,
+    "lower_than_baseline_n": 1
+  },
+  "snapshots": {
+    "t10": {
+      "assessable_n": 9,
+      "competing_event_n": 0,
+      "score_distribution": {"0": 0, "1": 0, "2": 4, "3": 5, "4": 0, "null": 0},
+      "scope_ge2_n": 9,
+      "scope_ge2_rate_assessable": 1.0,
+      "major_ge3_n": 5,
+      "major_ge3_rate_assessable": 0.5555555555555556,
+      "apex_eq4_n": 0,
+      "apex_eq4_rate_assessable": 0.0
+    },
+    "t20": {
+      "assessable_n": 9,
+      "competing_event_n": 0,
+      "score_distribution": {"0": 0, "1": 1, "2": 3, "3": 3, "4": 2, "null": 0},
+      "scope_ge2_n": 8,
+      "scope_ge2_rate_assessable": 0.8888888888888888,
+      "major_ge3_n": 5,
+      "major_ge3_rate_assessable": 0.5555555555555556,
+      "apex_eq4_n": 2,
+      "apex_eq4_rate_assessable": 0.2222222222222222
+    }
+  },
+  "trajectory_contrast": {
+    "ever_advanced_n_full": 3,
+    "ever_advanced_rate_full": 0.3333333333333333,
+    "t10_major_among_assessable": {"n": 5, "denominator": 9, "rate": 0.5555555555555556},
+    "t20_major_among_assessable": {"n": 5, "denominator": 9, "rate": 0.5555555555555556},
+    "t10_apex_among_assessable": {"n": 0, "denominator": 9, "rate": 0.0},
+    "t20_apex_among_assessable": {"n": 2, "denominator": 9, "rate": 0.2222222222222222},
+    "interpretation": "Major-scope persistence is stable from T+10 to T+20, while the composition changes. Some original senior scientific leaders remain active at score3, a former founder recedes, and Ahn Cheol-soo plus Lee Sang-yup reach in-window apex roles through politics and field-defining scientific achievement respectively."
+  },
+  "source_audit": "research/khan_2005_scitech_person9_longitudinal_audit_v0_1.json",
+  "guardrails": [
+    "The original field denominator is 10 units, not 9 persons.",
+    "ABEEK is excluded from person-score denominators and evaluated separately.",
+    "Historic field-defining discoveries are not automatically inherited as fixed-window score4.",
+    "Cross-sector roles are scored in the sector actually occupied in the target window."
+  ]
+}
