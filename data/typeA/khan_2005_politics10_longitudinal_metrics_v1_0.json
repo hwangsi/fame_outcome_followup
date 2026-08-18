@@ -1,0 +1,56 @@
+{
+  "schema_version": "khan_2005_politics10_longitudinal_metrics_v1.0",
+  "generated": "2026-08-18",
+  "population": {
+    "n": 10,
+    "field_specific_secondary": true,
+    "parent_selected_units": 60,
+    "death_truncated_ever_n": 2
+  },
+  "target_windows": {
+    "t10": "2015 ±1 year (2014-2016)",
+    "t20": "2025 ±1 year (2024-2026)"
+  },
+  "peak_reference": {
+    "major_n": 10,
+    "apex_n": 5,
+    "advanced_n": 8,
+    "sustained_high_n": 2
+  },
+  "snapshots": {
+    "t10": {
+      "assessable_n": 9,
+      "competing_event_n": 1,
+      "score_distribution": {"0": 0, "1": 2, "2": 4, "3": 2, "4": 1, "null": 1},
+      "scope_ge2_n": 7,
+      "scope_ge2_rate_assessable": 0.7777777777777778,
+      "major_ge3_n": 3,
+      "major_ge3_rate_assessable": 0.3333333333333333
+    },
+    "t20": {
+      "assessable_n": 8,
+      "competing_event_n": 2,
+      "score_distribution": {"0": 0, "1": 3, "2": 1, "3": 4, "4": 0, "null": 2},
+      "scope_ge2_n": 5,
+      "scope_ge2_rate_assessable": 0.625,
+      "major_ge3_n": 4,
+      "major_ge3_rate_assessable": 0.5
+    }
+  },
+  "trajectory_contrast": {
+    "ever_advanced_n_full": 8,
+    "ever_advanced_rate_full": 0.8,
+    "t10_major_among_assessable": {"n": 3, "denominator": 9, "rate": 0.3333333333333333},
+    "t20_major_among_assessable": {"n": 4, "denominator": 8, "rate": 0.5},
+    "interpretation": "Lifetime advancement and fixed-window persistence answer different questions. The T+20 major fraction is higher than T+10 in this small political stratum because several selected figures held major national campaign or ministerial roles inside 2024-2026; this is not a monotonic career score and should not be read as cumulative survival."
+  },
+  "death_truncated_names": ["김근태", "노회찬"],
+  "source_audit": "research/khan_2005_politics10_longitudinal_audit_v0_1.json",
+  "guardrails": [
+    "Do not replace lifetime post-selection peak with fixed-time/window snapshot or vice versa.",
+    "Death is a competing event; post-death snapshots are null.",
+    "Former officeholder labels do not inherit the earlier office score.",
+    "A role must fall inside the prespecified snapshot window to count.",
+    "This is the politics field-specific secondary stratum, not the whole 60-unit project."
+  ]
+}
