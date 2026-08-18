@@ -1,0 +1,12 @@
+{
+  "schema_version":"khan_2005_cultureart10_longitudinal_freeze_v1.0",
+  "generated":"2026-08-18",
+  "status":"frozen_t10_t20",
+  "population":{"n":10,"person_units":10,"death_truncated_ever_n":0},
+  "target_windows":{"t10":"2015 ±1 year (2014-2016)","t20":"2025 ±1 year (2024-2026)"},
+  "t10":{"assessable_n":10,"competing_event_n":0,"score_distribution":{"0":0,"1":0,"2":4,"3":6,"4":0,"null":0},"scope_ge2_n":10,"major_ge3_n":6,"apex_eq4_n":0},
+  "t20":{"assessable_n":10,"competing_event_n":0,"score_distribution":{"0":0,"1":0,"2":5,"3":4,"4":1,"null":0},"scope_ge2_n":10,"major_ge3_n":5,"apex_eq4_n":1},
+  "audit_ref":"research/khan_2005_cultureart10_longitudinal_audit_v0_1.json",
+  "metrics_ref":"data/typeA/khan_2005_cultureart10_longitudinal_metrics_v1_0.json",
+  "guardrails":["Lifetime artistic peak and fixed-window activity remain separate.","Historic awards/former leadership are not inherited.","Lee Bul is the sole T20 apex based on in-window global-apex evidence."]
+}
