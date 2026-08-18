@@ -1,0 +1,72 @@
+{
+  "schema_version": "donga_2011_t10_repeat_science_pioneers_audit_v0.1",
+  "generated": "2026-08-18",
+  "cohort": "동아일보 2011 10년 뒤 한국을 빛낼 100인",
+  "window": {"window_id":"t10","target_year":2021,"window_start":"2020-01-01","window_end":"2022-12-31"},
+  "population_scope": "9 remaining repeat-selected science/pioneer/political-technology persons",
+  "rules_ref": "state/coding_rules_typeA_longitudinal_v0_1.md",
+  "fallback_ref": "data/typeA/donga_2010_target2020_outcomes_pioneers_v0_1.json",
+  "people": [
+    {
+      "name":"김기문","status":"assessable","role_at_window":"POSTECH University Professor·IBS 복잡계 자기조립 연구단장","scope_score":3,"scope_label":"major","evidence_date":"2021","match":"exact_year_by_continuous_official_tenure","confidence":"H",
+      "evidence_refs":["https://www.ibs.re.kr/eng/sub02_04_02.do","data/typeA/donga_2010_target2020_outcomes_pioneers_v0_1.json"],
+      "coding_note":"Official institutional tenure establishes continuous POSTECH/IBS senior research leadership through 2021."
+    },
+    {
+      "name":"김빛내리","status":"assessable","role_at_window":"서울대 석좌교수·IBS RNA 연구단장","scope_score":3,"scope_label":"major","evidence_date":"2021","match":"exact_year_by_official_tenure_and_research","confidence":"H",
+      "evidence_refs":["https://centers.ibs.re.kr/html/rna_en/people/people_0201.html","https://rna.ibs.re.kr/_prog/publication/?GotoPage=10&menu_dvs_cd=0301&site_dvs_cd=rna_en"],
+      "coding_note":"Official profile gives SNU Distinguished Professor since 2017 and IBS director since 2012, while the center publication record directly documents 2021 research activity."
+    },
+    {
+      "name":"김정범","status":"assessable","role_at_window":"UNIST 바이오메디컬공학과 교수·한스쇨러 줄기세포연구센터장","scope_score":2,"scope_label":"established","evidence_date":"2021-09-24","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://pssh.kr/News/?bmode=view&idx=8077936","https://bme.unist.ac.kr/%EA%B9%80%EC%A0%95%EB%B2%94/"],
+      "coding_note":"Direct 2021 invited lecture identifies the same UNIST biomedical engineering professor; official biography establishes continuous faculty and center-director tenure."
+    },
+    {
+      "name":"김필립","status":"assessable","role_at_window":"Harvard Professor of Physics and Applied Physics","scope_score":3,"scope_label":"major","evidence_date":"2020-04","match":"nearest_within_window_reused_2020","confidence":"H",
+      "evidence_refs":["data/typeA/donga_2010_target2020_outcomes_pioneers_v0_1.json","https://www.physics.harvard.edu/people/facpages/kim"],
+      "coding_note":"No date-specific 2021 source stronger than the frozen exact-2020 observation was established in this pass. Current Harvard institutional profile supports role continuity, but provenance remains nearest-2020 reuse."
+    },
+    {
+      "name":"이상엽","status":"assessable","role_at_window":"KAIST 특훈교수·연구부총장·Royal Society Foreign Member","scope_score":3,"scope_label":"major","evidence_date":"2021-05-07","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://news.kaist.ac.kr/newsen/html/news/?mng_no=13750&mode=V","https://pure.kaist.ac.kr/en/persons/sang-yup-lee/"],
+      "coding_note":"KAIST directly records 2021 Distinguished Professor/research vice-president status and election as a Royal Society foreign member. Retain score 3 under the locked science rubric rather than creating a new apex threshold ad hoc."
+    },
+    {
+      "name":"임지순","status":"assessable","role_at_window":"POSTECH 물리학과 석학교수·국제 재료/응집물질 물리 연구자","scope_score":3,"scope_label":"major","evidence_date":"2020-09-24","match":"nearest_within_window_reused_2020","confidence":"H",
+      "evidence_refs":["data/typeA/donga_2010_target2020_outcomes_pioneers_v0_1.json"],
+      "coding_note":"No stronger reproducible direct-2021 role evidence was established in this priority pass; reuse the frozen 2020 exact snapshot."
+    },
+    {
+      "name":"정하웅","status":"assessable","role_at_window":"KAIST 물리학과 교수·복잡계 네트워크 과학 선도 연구자","scope_score":3,"scope_label":"major","evidence_date":"2021-09-29","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://www.kookje.co.kr/news2011/asp/newsbody.asp?code=&key=20211001.22020007267"],
+      "coding_note":"Direct 2021 contemporaneous profile identifies KAIST professorship and sustained field-leading complex-network research with international publication/citation impact; this resolves the prior 2020 target-layer pending status."
+    },
+    {
+      "name":"현택환","status":"assessable","role_at_window":"서울대 석좌교수·IBS 나노입자 연구단장","scope_score":3,"scope_label":"major","evidence_date":"2021","match":"exact_year_by_official_tenure_and_research","confidence":"H",
+      "evidence_refs":["https://nanomat.snu.ac.kr/bbs/board.php?bo_table=sub2_1","https://nanomat.snu.ac.kr/bbs/board.php?bo_table=sub3_1"],
+      "coding_note":"SNU/IBS institutional profile and laboratory 2021 publication record establish active 2021 senior research leadership."
+    },
+    {
+      "name":"안철수","status":"assessable","role_at_window":"국민의당 대표·제20대 대통령선거 후보","scope_score":3,"scope_label":"major","evidence_date":"2021-11-04","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://www.yna.co.kr/view/AKR20211104160800001"],
+      "coding_note":"Direct 2021 evidence confirms national-party chairmanship and formal presidential candidacy. The score is anchored to national party leadership; candidacy alone is not used to inflate beyond score 3."
+    }
+  ],
+  "qa": {
+    "repeat_science_pioneers_n":9,
+    "assessable_n":9,
+    "competing_event_n":0,
+    "untraceable_n":0,
+    "exact_2021_n":7,
+    "nearest_2020_reuse_n":2,
+    "score_counts_assessable":{"2":1,"3":8},
+    "major_ge3_n":8,
+    "apex_eq4_n":0
+  },
+  "guardrails": [
+    "Direct 2021 evidence is preferred when reproducible; otherwise frozen 2020 evidence is retained with explicit reuse provenance.",
+    "Prestigious 2021 scientific honors do not automatically create score 4 unless the locked sector rubric independently supports apex coding.",
+    "The 2021 pass can resolve a previously pending 2020 target row when new direct target-year evidence exists, as with Jung Hawoong."
+  ]
+}
