@@ -1,0 +1,48 @@
+{
+  "schema_version": "typeA_common_longitudinal_v0.1",
+  "adapter_version": "donga_2010_common_longitudinal_adapter_v0.1",
+  "date": "2026-08-18",
+  "status": "semantic_adapter_no_source_freeze_changes",
+  "cohort": {
+    "cohort_id": "donga_2010_2020_100",
+    "outlet": "동아일보",
+    "article_title": "2020년 한국을 빛낼 100인",
+    "selection_year": 2010,
+    "explicit_target_year": 2020,
+    "explicit_target_label": "2020년 한국을 빛낼 100인",
+    "explicit_prediction_horizon_years": 10
+  },
+  "source_layers": {
+    "roster": "data/typeA/donga_2010_canonical_roster_v2_1.json",
+    "baseline": "data/typeA/donga_2010_baseline_from_capture_v1_0.json",
+    "lifetime_peak_metrics": "data/typeA/donga_2010_post_t0_peak_metrics_v1_2.json",
+    "target2020_master": "data/typeA/donga_2010_target2020_outcomes_v0_1.json",
+    "target2020_sector_layers": [
+      "data/typeA/donga_2010_target2020_outcomes_creators_v0_1.json",
+      "data/typeA/donga_2010_target2020_outcomes_economy_v0_1.json",
+      "data/typeA/donga_2010_target2020_outcomes_intellectuals_v0_1.json",
+      "data/typeA/donga_2010_target2020_outcomes_pioneers_v0_1.json"
+    ]
+  },
+  "canonical_snapshot_policy": {
+    "snapshot_id_template": "donga2010:{unit_id}:2020",
+    "target_year": 2020,
+    "semantic_aliases": ["explicit_target_2020", "t10"],
+    "observation_count_rule": "one canonical 2020 observation per unit, not two",
+    "pooled_analysis_rule": "count canonical snapshot once",
+    "reporting_rule": "may report the same canonical observation under both article-prediction and T+10 research questions with reuse disclosure"
+  },
+  "window_note": "The existing target2020 layer is treated as the canonical 2020 observation. Before numeric pooling with other T+10 cohorts, verify its exact date tolerance against the common default T+10 ±1-year window. If identical, alias directly. If not identical, preserve separate window definitions and document overlap rather than silently equating them.",
+  "guardrails": [
+    "do not duplicate target2020 observations as independent T+10 records",
+    "do not alter frozen source outcome files through this adapter",
+    "keep lifetime peak separate from 2020 snapshot",
+    "preserve placement denominator and identity corrections from canonical roster",
+    "verify exact target2020 window tolerance before pooled T+10 statistics"
+  ],
+  "next": [
+    "materialize per-unit canonical snapshot IDs when exact target2020 window tolerance is verified",
+    "apply the same schema to Dong-A 2011 with generic T+10 centered on 2021",
+    "compare Dong-A 2010 explicit-target performance with Dong-A 2011 generic T+10 only after harmonized-window QA"
+  ]
+}
