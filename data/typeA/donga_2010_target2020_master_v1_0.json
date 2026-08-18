@@ -1,0 +1,3089 @@
+{
+  "schema_version": "donga_2010_target2020_master_v1.0",
+  "generated_from": {
+    "roster": "donga_2010_canonical_roster_v2_1.json",
+    "baseline": "donga_2010_baseline_from_capture_v1_0.json",
+    "base_files": [
+      "donga_2010_target2020_outcomes_v0_1.json",
+      "donga_2010_target2020_outcomes_creators_v0_1.json",
+      "donga_2010_target2020_outcomes_pioneers_v0_1.json",
+      "donga_2010_target2020_outcomes_intellectuals_v0_1.json",
+      "donga_2010_target2020_outcomes_economy_v0_1.json"
+    ],
+    "patch_files": [
+      "donga_2010_target2020_pending_audit_round1_academic_v0_1.json",
+      "donga_2010_target2020_pending_audit_round2_public_civic_v0_1.json",
+      "donga_2010_target2020_pending_audit_round3_resolved_v0_1.json"
+    ],
+    "unresolved_files": [
+      "donga_2010_target2020_round3_unresolved_a_v0_1.json",
+      "donga_2010_target2020_round3_unresolved_b_v0_1.json"
+    ]
+  },
+  "qa": {
+    "total": 100,
+    "states": {
+      "resolved": 87,
+      "unresolved": 10,
+      "competing_event": 3
+    },
+    "resolved_score_counts": {
+      "1": 2,
+      "2": 43,
+      "3": 37,
+      "4": 5
+    },
+    "by_category": {
+      "자유로운 창조인": {
+        "n": 20,
+        "resolved": 17,
+        "competing_event": 1,
+        "unresolved": 2
+      },
+      "꿈꾸는 개척가": {
+        "n": 25,
+        "resolved": 24,
+        "competing_event": 1,
+        "unresolved": 0
+      },
+      "행동하는 지성인": {
+        "n": 20,
+        "resolved": 16,
+        "competing_event": 1,
+        "unresolved": 3
+      },
+      "도전하는 경제인": {
+        "n": 25,
+        "resolved": 21,
+        "competing_event": 0,
+        "unresolved": 4
+      },
+      "미래를 여는 지도자": {
+        "n": 9,
+        "resolved": 8,
+        "competing_event": 0,
+        "unresolved": 1
+      },
+      "독자선정": {
+        "n": 1,
+        "resolved": 1,
+        "competing_event": 0,
+        "unresolved": 0
+      }
+    }
+  },
+  "people": [
+    {
+      "name": "김연아",
+      "category": "자유로운 창조인",
+      "t0_role": "피겨스케이팅 선수",
+      "t0_age": 20,
+      "t0_sex": "여",
+      "target2020": {
+        "role": "은퇴한 올림픽 챔피언·유니세프 국제친선대사",
+        "scope_score": 2,
+        "sector": "sports_civic",
+        "evidence_date": "2020-03-16",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "현역 선수 peak가 아니라 2020 snapshot을 평가. 국제친선대사로 지속적인 전국·국제 공익 역할을 수행",
+        "source_notes": [
+          "유니세프한국위원회가 2020 코로나19 치료 지원 기금 전달 당시 김연아를 유니세프 국제친선대사로 명시"
+        ],
+        "source_urls": [
+          "https://www.unicef.or.kr/about-us/press/115588"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "김윤진",
+      "category": "자유로운 창조인",
+      "t0_role": "영화배우",
+      "t0_age": 37,
+      "t0_sex": "여",
+      "target2020": {
+        "role": "영화배우; 영화 담보 출연 및 자백 촬영",
+        "scope_score": 2,
+        "sector": "film",
+        "evidence_date": "2020",
+        "match": "exact_year_confirmed_by_contemporaneous_and_later_sources",
+        "confidence": "M",
+        "scope_rationale": "국내외 경력을 가진 확립된 배우로 2020에도 영화 활동 지속",
+        "source_notes": [
+          "2020 개봉 영화 담보의 출연진으로 contemporaneous 기사에서 확인",
+          "후대 인터뷰에서 영화 자백 촬영이 2020년에 완료됐음을 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.newsis.com/view/NISX20200928_0001181784",
+          "https://v.daum.net/v/20221021095201552"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "김현수",
+      "category": "자유로운 창조인",
+      "t0_role": "두산베어스 외야수",
+      "t0_age": 22,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "LG 트윈스 주전 외야수·중심타자",
+        "scope_score": 2,
+        "sector": "sports_baseball",
+        "evidence_date": "2020-05-05",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 프로리그의 확립된 주전 선수",
+        "source_notes": [
+          "2020 KBO 개막전 LG 소속으로 첫 홈런 기록"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200505049951007"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "노희경",
+      "category": "자유로운 창조인",
+      "t0_role": "작가",
+      "t0_age": 44,
+      "t0_sex": "여",
+      "target2020": {
+        "role": "드라마 작가; 신작 HERE 집필·제작 준비",
+        "scope_score": 2,
+        "sector": "television_writing",
+        "evidence_date": "2020-07-07",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국적으로 확립된 대표 드라마 작가로 창작 활동 지속",
+        "source_notes": [
+          "2020 코로나19로 해외촬영이 어려워지며 노희경 작가의 HERE 제작이 연기된 사실 확인"
+        ],
+        "source_urls": [
+          "https://sports.donga.com/ent/article/all/20200707/101851390/1"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "박민규",
+      "category": "자유로운 창조인",
+      "t0_role": "소설가",
+      "t0_age": 42,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "소설가",
+        "scope_score": 2,
+        "sector": "literature",
+        "evidence_date": "2020-12-31",
+        "match": "exact_year",
+        "confidence": "M",
+        "source_notes": [
+          "2020 개정2판 서지자료가 박민규를 베스트셀러 소설가·저자로 직접 표기",
+          "2020 문학동네 한국문학전집에도 카스테라 재출간",
+          "재출간은 신작 peak가 아니라 2020 직업적 정체성과 전국적 작가 지위 확인에만 사용"
+        ],
+        "source_urls": [
+          "https://m.yes24.com/goods/detail/96536946",
+          "https://series.naver.com/ebook/detail.nhn?productNo=1665624"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json",
+        "donga_2010_target2020_pending_audit_round3_resolved_v0_1.json"
+      ]
+    },
+    {
+      "name": "박성훈",
+      "category": "자유로운 창조인",
+      "t0_role": "롯데호텔 피에르가니에르 조리장",
+      "t0_age": 20,
+      "t0_sex": "남",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "culinary",
+        "evidence_date": null,
+        "match": "pending_identity_and_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": [
+          "2010 원문에서 국제기능올림픽 요리 금메달리스트이자 롯데호텔 피에르 가니에르의 박성훈으로 identity anchor는 확실하나 2019-2021 경력 연결 근거 미확보"
+        ],
+        "identity_anchor_url": "https://www.donga.com/news/Society/article/all/20100512/28273340/1"
+      },
+      "within_window_followup": null,
+      "final_state": "unresolved",
+      "resolution_state": "active_role_unresolved",
+      "resolution_reason": "2010 국제기능올림픽 요리 금메달·롯데호텔 피에르 가니에르 identity는 확실하나 2019-2021 동일인 직접 경력 자료 미확보.",
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json",
+        "donga_2010_target2020_round3_unresolved_a_v0_1.json"
+      ]
+    },
+    {
+      "name": "박진영",
+      "category": "자유로운 창조인",
+      "t0_role": "가수 겸 프로듀서",
+      "t0_age": 38,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "JYP엔터테인먼트 대표 프로듀서·가수·작곡가",
+        "scope_score": 3,
+        "sector": "music_industry",
+        "evidence_date": "2020-10-06",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 K-pop 제작·산업 리더이자 국제 시장에 지속적으로 영향력을 가진 프로듀서",
+        "source_notes": [
+          "2020 연합뉴스가 박진영을 히트곡 메이커이자 JYP엔터테인먼트 대표 프로듀서로 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20201006037400005"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "봉준호",
+      "category": "자유로운 창조인",
+      "t0_role": "영화감독",
+      "t0_age": 41,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "영화감독; 기생충으로 아카데미 감독상 및 작품상 등 4관왕",
+        "scope_score": 4,
+        "sector": "film",
+        "evidence_date": "2020-02-10",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "아카데미 감독상·작품상 및 국제영화상·각본상 4관왕은 보조규칙상 명시적 global-apex 성취",
+        "source_notes": [
+          "기생충이 아카데미 작품상·감독상·각본상·국제영화상 4관왕을 달성"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200210087351005"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "서도호",
+      "category": "자유로운 창조인",
+      "t0_role": "설치미술가",
+      "t0_age": 48,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "서울·뉴욕·런던을 기반으로 활동하는 국제 설치미술가",
+        "scope_score": 3,
+        "sector": "visual_art",
+        "evidence_date": "2020-09-28",
+        "match": "exact_year",
+        "confidence": "M",
+        "scope_rationale": "복수의 국제 미술도시를 기반으로 지속적으로 작업하는 국제적 leading artist",
+        "source_notes": [
+          "2020 현대미술관회 소개가 서울·뉴욕·런던을 오가며 지속적으로 신작을 작업하는 서도호의 당시 활동을 설명"
+        ],
+        "source_urls": [
+          "https://www.formmca.org/post/%EC%84%9C%EB%8F%84%ED%98%B8%EC%9D%98-%EA%B8%B0%EC%96%B5%EC%9C%BC%EB%A1%9C-%EC%A7%80%EC%9D%80-%EC%A7%91"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "신경숙",
+      "category": "자유로운 창조인",
+      "t0_role": "소설가",
+      "t0_age": 47,
+      "t0_sex": "여",
+      "target2020": {
+        "role": "소설가; 장편 아버지에게 갔었어 연재로 창작 활동 재개",
+        "scope_score": 2,
+        "sector": "literature",
+        "evidence_date": "2020-06-23",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국적으로 확립된 소설가가 2020 장편 연재로 공개 창작활동을 재개",
+        "source_notes": [
+          "연합뉴스가 표절 논란 후 장기 공백을 거쳐 창비 웹진에 새 장편 연재를 시작한다고 보도"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200623141400005"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "신지애",
+      "category": "자유로운 창조인",
+      "t0_role": "프로골퍼",
+      "t0_age": 22,
+      "t0_sex": "여",
+      "target2020": {
+        "role": "JLPGA 투어 프로골퍼; 2020 후지쓰 레이디스 우승",
+        "scope_score": 3,
+        "sector": "sports_golf",
+        "evidence_date": "2020-10-18",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "세계 주요 프로골프 투어에서 우승을 지속하는 국제 최상위권 선수",
+        "source_notes": [
+          "2020 JLPGA 후지쓰 레이디스 우승 및 당시 세계랭킹 30위권 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20201020011100007"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "심승현",
+      "category": "자유로운 창조인",
+      "t0_role": "만화가",
+      "t0_age": 39,
+      "t0_sex": "남",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "comics_illustration",
+        "evidence_date": null,
+        "match": "pending_reliable_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": [
+          "파페포포 작가 identity와 2017까지의 출간 활동은 확인되나 2019-2021 직접 활동 근거 미확보"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "unresolved",
+      "resolution_state": "no_active_public_role_evidence_in_window",
+      "resolution_reason": "파페포포 작가 identity와 2017까지 창작활동은 확인되나 2019-2021 qualifying direct activity evidence 미확보.",
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json",
+        "donga_2010_target2020_round3_unresolved_a_v0_1.json"
+      ]
+    },
+    {
+      "name": "양성원",
+      "category": "자유로운 창조인",
+      "t0_role": "연세대 음대 교수, 첼리스트",
+      "t0_age": 43,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "첼리스트·연세대 음대 교수",
+        "scope_score": 2,
+        "sector": "classical_music_academia",
+        "evidence_date": "2021-09-27",
+        "match": "nearest_within_window",
+        "confidence": "H",
+        "scope_rationale": "전국 단위에서 확립된 연주자·음대 교수로 활동 지속",
+        "source_notes": [
+          "2021 서울신문이 양성원을 첼리스트이자 연세대 교수로 직접 소개하고 협연 활동을 확인"
+        ],
+        "source_urls": [
+          "https://www.seoul.co.kr/news/life/performance/2021/09/27/20210927500109"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "이청용",
+      "category": "자유로운 창조인",
+      "t0_role": "영국 볼턴 원더러스 FC 선수",
+      "t0_age": 22,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "울산 현대 프로축구 선수; 유럽 생활 후 K리그 복귀",
+        "scope_score": 2,
+        "sector": "sports_football",
+        "evidence_date": "2020-03-05",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 프로리그의 핵심 선수",
+        "source_notes": [
+          "2020 보훔에서 울산 현대로 이적하며 11년 만에 K리그 복귀"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200305168200007"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "장한나",
+      "category": "자유로운 창조인",
+      "t0_role": "첼리스트 겸 지휘자",
+      "t0_age": 28,
+      "t0_sex": "여",
+      "target2020": {
+        "role": "Trondheim Symphony Orchestra & Opera 수석지휘자·예술리더",
+        "scope_score": 3,
+        "sector": "classical_music_conducting",
+        "evidence_date": "2020",
+        "match": "exact_year_by_official_tenure",
+        "confidence": "H",
+        "scope_rationale": "유럽 주요 오케스트라의 chief conductor/artistic leader로 국제적 리더십",
+        "source_notes": [
+          "Trondheim Symphony 공식 자료가 장한나가 2017년부터 chief conductor and artistic leader였음을 확인"
+        ],
+        "source_urls": [
+          "https://tso.no/program/konserter/han-nas-farvel-beethoven-mahler"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "정연두",
+      "category": "자유로운 창조인",
+      "t0_role": "현대미술 작가",
+      "t0_age": 41,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "미디어·사진·설치미술가; 2020 개인전 및 외교부 VR 전시 참여",
+        "scope_score": 2,
+        "sector": "visual_art",
+        "evidence_date": "2020-12-14",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 대표 현대미술가로 지속적 전시 활동; 현재 batch에서는 국제 apex 근거를 별도 소급하지 않고 보수적으로 코딩",
+        "source_notes": [
+          "외교부가 2020 Dream Believer VR 전시에 한국 대표 작가 정연두의 작품 참여를 공식 확인"
+        ],
+        "source_urls": [
+          "https://www.mofa.go.kr/www/brd/m_4080/view.do?page=1&pitem=102026&seq=370794"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "정욱준",
+      "category": "자유로운 창조인",
+      "t0_role": "패션디자이너",
+      "t0_age": 43,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "삼성물산 패션부문 JUUN.J 크리에이티브 디렉터·상무; 파리패션위크 참가",
+        "scope_score": 3,
+        "sector": "fashion",
+        "evidence_date": "2020-07-14",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 대기업 패션 브랜드의 창작 리더이자 파리 무대에서 지속 활동하는 국제적 디자이너",
+        "source_notes": [
+          "삼성물산 공식 뉴스룸이 정욱준 크리에이티브 디렉터의 JUUN.J 2021 S/S 디지털 파리패션위크 참가를 확인"
+        ],
+        "source_urls": [
+          "https://news.samsungcnt.com/ko/%EC%A0%84%EC%B2%B4%EA%B8%B0%EC%82%AC/%ED%8C%A8%EC%85%98%EB%B6%80%EB%AC%B8/2020-07-%EC%A4%80%EC%A7%80-21ss-%EC%BB%AC%EB%A0%89%EC%85%98%EC%9D%80-%EB%94%94%EC%A7%80%ED%84%B8%EB%A1%9C/"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "조성진",
+      "category": "자유로운 창조인",
+      "t0_role": "서울예술고 1학년·피아니스트",
+      "t0_age": 16,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "국제 활동 피아니스트; 2020 전국 리사이틀 및 음반 활동",
+        "scope_score": 3,
+        "sector": "classical_music",
+        "evidence_date": "2020-11-05",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국제 주요 무대에서 활동하는 최상위급 클래식 피아니스트",
+        "source_notes": [
+          "2020 연합뉴스가 국내 리사이틀 투어와 신보를 다루며 조성진의 국제 연주 경력을 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20201105061000005"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "최은석",
+      "category": "자유로운 창조인",
+      "t0_role": "디스트릭트 대표이사",
+      "t0_age": 37,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "사망",
+        "scope_score": null,
+        "sector": "digital_media_business",
+        "evidence_date": "2012-02-18",
+        "match": "competing_event_pre_target",
+        "confidence": "H",
+        "competing_event": "death",
+        "scope_rationale": "사망은 예측 실패나 낮은 2020 scope로 코딩하지 않음",
+        "source_notes": [
+          "2010 전자신문 자료로 선정대상 최은석이 디스트릭트 창업자·대표임을 identity anchor",
+          "2012 한국경제가 디스트릭트 최은석 대표가 미국 출장 중 사망했다고 보도"
+        ],
+        "source_urls": [
+          "https://www.etnews.com/201001280176",
+          "https://www.hankyung.com/article/2012022080731"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "competing_event",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "홍명보",
+      "category": "자유로운 창조인",
+      "t0_role": "올림픽 축구대표팀 감독",
+      "t0_age": 41,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "대한축구협회 전무이사 임기 종료 후 울산 현대 감독 선임",
+        "scope_score": 3,
+        "sector": "sports_football_leadership",
+        "evidence_date": "2020-12-24",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국가 축구협회 최고위 실무 리더십과 국내 최상위 프로팀 감독직",
+        "source_notes": [
+          "2020-12-24 대한축구협회 전무이사 3년 임기를 마치고 울산 현대 감독에 선임"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20201224080051007"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_creators_v0_1.json"
+      ]
+    },
+    {
+      "name": "김광수",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "미국 하버드대 의대 교수",
+      "t0_age": 56,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "McLean Hospital/Harvard Medical School 분자신경생물학 연구책임자·정신의학 연구자",
+        "scope_score": 3,
+        "sector": "biomedicine_neuroscience",
+        "evidence_date": "2020-02-03",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "Harvard/McLean 기반의 국제적 파킨슨병 세포치료 연구를 주도하는 선도 연구자",
+        "source_notes": [
+          "2020 JCI 논문에서 McLean Hospital/Harvard Medical School Molecular Neurobiology Laboratory 소속 corresponding author로 확인"
+        ],
+        "source_urls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC6994130/"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "김기문",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "포스텍 화학과 교수",
+      "t0_age": 56,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "POSTECH University Professor·IBS 복잡계 자기조립 연구단장",
+        "scope_score": 3,
+        "sector": "chemistry_nanoscience",
+        "evidence_date": "2020-07-28",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "대학 석학급 교수이자 국가 기초과학 연구단장으로 국제적 연구 리더십",
+        "source_notes": [
+          "POSTECH 공식 2020 보도에서 University Professor 및 IBS Center for Self-assembly and Complexity Director로 명시"
+        ],
+        "source_urls": [
+          "https://www.postech.ac.kr/eng/research/research_results.do?article.offset=470&articleLimit=10&articleNo=13911&mode=view"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "김빛내리",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "서울대 생명과학부 중견석좌교수",
+      "t0_age": 41,
+      "t0_sex": "여",
+      "target2020": {
+        "role": "서울대 교수·IBS RNA 연구단장",
+        "scope_score": 3,
+        "sector": "molecular_biology_rna",
+        "evidence_date": "2020",
+        "match": "exact_year_by_directorship_and_2020_research",
+        "confidence": "H",
+        "scope_rationale": "국가 연구단을 이끄는 세계적 RNA 연구자이며 2020 SARS-CoV-2 전사체 연구를 포함한 국제 선도 연구 수행",
+        "source_notes": [
+          "IBS 공식 연구단 페이지에서 2012년 설립 이후 RNA 연구단장으로 확인되고 주요 2020 SARS-CoV-2 transcriptome 논문이 명시됨"
+        ],
+        "source_urls": [
+          "https://www.ibs.re.kr/kor/sub02_05_03.do"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "김정범",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "울산과학기술대 나노생명과학공학부 교수",
+      "t0_age": 36,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "UNIST 생명과학 교수·줄기세포/혈관전구세포 연구책임자",
+        "scope_score": 2,
+        "sector": "stem_cell_biomedicine",
+        "evidence_date": "2020-04-13",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 단위의 확립된 교수·연구실 리더로 직접전환 세포치료 연구를 수행",
+        "source_notes": [
+          "UNIST 공식 2020 보도에서 School of Life Sciences 교수 및 ischemic vascular disease 연구 책임자로 확인"
+        ],
+        "source_urls": [
+          "https://news.unist.ac.kr/etv2-and-fli1-induced-vascular-progenitor-cells-enhance-functional-recovery-in-ischemic-vascular-disease-model/"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "김창진",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "미국 UCLA 기계항공공학과 교수",
+      "t0_age": 52,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "UCLA Distinguished Professor·Volgenau Chair in Engineering",
+        "scope_score": 3,
+        "sector": "mechanical_bioengineering",
+        "evidence_date": "2020-12-14",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "미국 주요 연구대학 석학교수·석좌교수이자 IEEE Fellow 선정 수준의 국제 공학 리더",
+        "source_notes": [
+          "UCLA Samueli가 2020년 12월 Chang-Jin 'CJ' Kim을 distinguished professor 및 Volgenau Chair로 명시하며 2021 IEEE Fellow 선정을 발표"
+        ],
+        "source_urls": [
+          "https://samueli.ucla.edu/four-ucla-engineering-faculty-named-2021-ieee-fellows/"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "김필립",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "미국 컬럼비아대 물리학과 교수",
+      "t0_age": 43,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "Harvard University Professor of Physics and Applied Physics",
+        "scope_score": 3,
+        "sector": "condensed_matter_physics",
+        "evidence_date": "2020-04",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "Harvard 교수이자 저차원 물질 분야 세계 선도 연구자로 2020 미국예술과학아카데미 회원 선출",
+        "source_notes": [
+          "Harvard 2020 발표에서 Professor of Physics and Applied Physics로 확인되며 American Academy of Arts & Sciences 신입회원에 포함"
+        ],
+        "source_urls": [
+          "https://news.harvard.edu/gazette/story/2020/04/american-academy-of-arts-sciences-announces-new-members/",
+          "https://philipkim.scholars.harvard.edu/bio"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "김호근",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "연세대 병리학교실 교수",
+      "t0_age": 56,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "연세대학교 의과대학 세브란스병원 병리학교실 교수·병리의학 연구자",
+        "scope_score": 2,
+        "sector": "medicine_pathology_academia",
+        "evidence_date": "2020-12-29",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 주요 의과대학·상급종합병원의 확립된 병리학 교수·연구자 역할",
+        "source_notes": [
+          "2020-12-29 온라인 게재된 Cancer Research and Treatment 논문의 저자 Hogeun Kim 소속이 Department of Pathology, Severance Hospital, Yonsei University College of Medicine로 직접 확인됨",
+          "T0 연세대 병리학교실 김호근과 동일 전문분야·기관 경력이 연속됨"
+        ],
+        "source_urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/33421980/"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json",
+        "donga_2010_target2020_pending_audit_round1_academic_v0_1.json"
+      ]
+    },
+    {
+      "name": "남홍길",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "포스텍 생명과학과 교수",
+      "t0_age": 53,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "DGIST/IBS 식물 노화·수명 연구 리더",
+        "scope_score": 3,
+        "sector": "plant_biology_aging",
+        "evidence_date": "2020-05~2020-09",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "IBS 국가 연구단의 핵심 연구그룹을 이끌며 식물 노화·수명 분야에서 국제적 연구 리더십 지속",
+        "source_notes": [
+          "IBS 연구단 구성은 2020년 5월 기준 Group1 Systems Biology of Plant Senescence and Lifespan 책임자를 남홍길로 명시",
+          "DGIST Scholar에 2020년 남홍길 발명자 특허가 복수 확인됨"
+        ],
+        "source_urls": [
+          "https://www.ibs.re.kr/kor/sub02_05_05.do",
+          "https://scholar.dgist.ac.kr/handle/20.500.11750/349"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "박승정",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "서울아산병원 심장병원 원장, 울산대 의대 교수",
+      "t0_age": 56,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "울산대 석좌교수·세계적 중재심장학 연구자",
+        "scope_score": 3,
+        "sector": "medicine_cardiology",
+        "evidence_date": "2020-04-08",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 의료기관/대학의 석좌교수로 국제 중재심장학을 선도하는 의학 리더",
+        "source_notes": [
+          "2020 호암의학상 수상자 발표에서 박승정을 울산대 석좌교수로 명시"
+        ],
+        "source_urls": [
+          "https://busan.fnnews.com/news/202004081846445998"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "박홍근",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "미국 하버드대 화학과 교수",
+      "t0_age": 43,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "Harvard Mark Hyman Jr. Professor of Chemistry and Professor of Physics",
+        "scope_score": 3,
+        "sector": "chemistry_nanoscience",
+        "evidence_date": "2020",
+        "match": "exact_year_by_faculty_role_and_award_record",
+        "confidence": "H",
+        "scope_rationale": "Harvard 석좌급 교수이며 2020 Highly Cited Researcher로 확인되는 국제 선도 연구자",
+        "source_notes": [
+          "Harvard Physics faculty awards archive에서 Hongkun Park이 2020 Clarivate Highly Cited Researchers에 포함"
+        ],
+        "source_urls": [
+          "https://www.physics.harvard.edu/fac_awards"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "서동철",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "미국 스크립스연구소 교수",
+      "t0_age": 49,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "사망",
+        "scope_score": null,
+        "sector": "immunology",
+        "evidence_date": "2017-10-06",
+        "match": "competing_event_pre_target",
+        "confidence": "H",
+        "competing_event": "death",
+        "scope_rationale": "목표연도 이전 사망이므로 2020 예측 실패나 낮은 scope로 코딩하지 않음",
+        "source_notes": [
+          "IBS 공식 약력은 Charles D. Surh가 Scripps Research Institute 교수였고 POSTECH/IBS 면역학 연구단장으로 귀국했으며 2010 '100 Distinguished minds who will shine Korea' 선정자였음을 직접 연결함",
+          "Mucosal Immunology 추모문은 Charles D. Surh가 1961년생이며 2017-10-06 대장암 투병 후 사망했다고 확인",
+          "따라서 T0의 '미국 스크립스연구소 교수 서동철'은 Charles D. Surh와 동일인으로 resolve됨"
+        ],
+        "source_urls": [
+          "https://ibs.re.kr/eng/sub02_05_02.do",
+          "https://www.nature.com/articles/mi2017115"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "competing_event",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json",
+        "donga_2010_target2020_pending_audit_round1_academic_v0_1.json"
+      ]
+    },
+    {
+      "name": "신재원",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "미국 항공우주국(NASA) 항공연구사업본부장",
+      "t0_age": 51,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "현대자동차 UAM사업부장·사장",
+        "scope_score": 3,
+        "sector": "industry_urban_air_mobility",
+        "evidence_date": "2020-12-15",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "현대차그룹 핵심 미래사업인 UAM을 총괄하는 사장급 산업 리더십",
+        "source_notes": [
+          "2020-01 CES에서 UAM 사업을 이끄는 부사장으로 확인되고 2020-12 사장 승진"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200108114800003",
+          "https://www.yna.co.kr/view/AKR20201215057551003"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "안철수",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "KAIST 기술경영전문대학원 석좌교수",
+      "t0_age": 48,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "국민의당 대표",
+        "scope_score": 3,
+        "sector": "politics",
+        "evidence_date": "2020",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 정당 대표로 주요 국가정치 리더십",
+        "source_notes": [
+          "2020 총선 당시 국민의당 대표·선대위원장으로 활동한 contemporaneous 보도로 확인",
+          "2021 이후 대선 출마는 2020 score에 소급 반영하지 않음"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200331052700001"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "이상엽",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "KAIST 생명과학기술대학장, 특훈교수",
+      "t0_age": 46,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "KAIST 생명화학공학과 특훈교수·시스템대사공학 연구리더",
+        "scope_score": 3,
+        "sector": "biochemical_engineering",
+        "evidence_date": "2020-11-20",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "KAIST 특훈교수이며 세계 최고 수준의 시스템대사공학 연구를 이끄는 국제적 공학 리더",
+        "source_notes": [
+          "KAIST 공식 2020 보도에서 생명화학공학과 이상엽 특훈교수 연구팀의 PNAS 성과 확인"
+        ],
+        "source_urls": [
+          "https://www.kaist.ac.kr/news/html/news/?mng_no=11012&mode=V"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "이상훈",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "서울대 뇌인지과학과 교수",
+      "t0_age": 43,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "서울대학교 뇌인지과학과 교수",
+        "scope_score": 2,
+        "sector": "neuroscience_cognitive_science",
+        "evidence_date": "2020-2학기",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 주요 연구대학의 확립된 교수·연구책임자 역할",
+        "source_notes": [
+          "서울대학교 LikeSNU 강의기록이 뇌인지과학과 과목을 '이상훈 교수 (2020년 2학기 정규)'로 직접 기록함"
+        ],
+        "source_urls": [
+          "https://likesnu.snu.ac.kr/usr/course/courseDetail.do?course_cd=M1426.001000"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json",
+        "donga_2010_target2020_pending_audit_round1_academic_v0_1.json"
+      ]
+    },
+    {
+      "name": "이소연",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "한국항공우주연구원 선임연구원",
+      "t0_age": 32,
+      "t0_sex": "여",
+      "target2020": {
+        "role": "우주·STEM 커뮤니케이터 및 우주기술 사업개발/국제파트너십 역할",
+        "scope_score": 2,
+        "sector": "aerospace_business_stem_outreach",
+        "evidence_date": "2021",
+        "match": "nearest_within_window",
+        "confidence": "M",
+        "source_notes": [
+          "2021 UC Berkeley Haas 소개가 Studio XID/ProtoPie 고객 참여와 Loft Orbital 전략사업개발·국제파트너십 역할을 확인",
+          "2020-11 공개 인터뷰는 과학커뮤니케이션 활동 보조근거로 사용"
+        ],
+        "source_urls": [
+          "https://newsroom.haas.berkeley.edu/emmy-award-journalist-diane-dwyer-and-astronaut-soyeon-yi-named-commencement-speakers/",
+          "https://podcasts.apple.com/us/podcast/soyeon-yi-south-koreas-first-astronaut/id1530396160?i=1000499686259"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json",
+        "donga_2010_target2020_pending_audit_round1_academic_v0_1.json",
+        "donga_2010_target2020_pending_audit_round3_resolved_v0_1.json"
+      ]
+    },
+    {
+      "name": "이지오",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "KAIST 화학과 교수",
+      "t0_age": 45,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "POSTECH 생명과학과 교수·구조생물학/면역수용체 연구자",
+        "scope_score": 2,
+        "sector": "structural_biology_immunology",
+        "evidence_date": "2020-12-02",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 주요 연구대학의 선도 교수로 한림원 정회원에 선출될 수준의 연구성과를 보였으나 기관 수장이나 global-apex로 과대평가하지 않고 2로 보수적 코딩",
+        "source_notes": [
+          "POSTECH 공식 2020-12-02 보도는 생명과학과 이지오 교수가 한국과학기술한림원 정회원으로 선임됐다고 직접 확인",
+          "기사의 20년 TLR 구조연구 경력이 T0 KAIST 교수에서 POSTECH 교수로의 identity continuity도 뒷받침"
+        ],
+        "source_urls": [
+          "https://www.postech.ac.kr/kor/newscenter/university-news.do?article.offset=1130&articleLimit=10&articleNo=5146&mode=view&srCategoryId=39"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json",
+        "donga_2010_target2020_pending_audit_round1_academic_v0_1.json"
+      ]
+    },
+    {
+      "name": "이효철",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "KAIST 화학과 및 나노과학기술대학원 교수",
+      "t0_age": 38,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "KAIST 화학과 교수·IBS 나노물질 및 화학반응 연구단 부연구단장",
+        "scope_score": 3,
+        "sector": "physical_chemistry_reaction_dynamics",
+        "evidence_date": "2020-06~2020-07",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국가 기초과학 연구단 부연구단장으로 Nature급 실시간 반응동역학 연구를 이끄는 국제적 선도 연구자",
+        "source_notes": [
+          "KAIST 2020 보도에서 분자 결합 전 과정 및 단백질 접힘 과정의 실시간 관측 성과와 IBS 부연구단장 역할을 직접 확인"
+        ],
+        "source_urls": [
+          "https://news.kaist.ac.kr/news/html/news/?mng_no=8630&mode=V",
+          "https://news.kaist.ac.kr/news/html/news/?mng_no=8891&mode=V"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "임지순",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "서울대 물리천문학부 교수",
+      "t0_age": 59,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "POSTECH 물리학과 석학교수·국제 재료/응집물질 물리 연구자",
+        "scope_score": 3,
+        "sector": "physics_materials_science",
+        "evidence_date": "2020-09-24",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "미국 NAS 외국인 회원 경력을 가진 세계적 물리학자이며 2020 IAAM Scientist Award 수상",
+        "source_notes": [
+          "POSTECH 공식 2020 보도에서 물리학과 석학교수 및 IAAM Scientist Award 수상자로 확인"
+        ],
+        "source_urls": [
+          "https://postech.ac.kr/kor/newscenter/university-news.do?article.offset=970&articleLimit=10&articleNo=5120&mode=view"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "정경민",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "삼성SDI 수석 연구원",
+      "t0_age": 43,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "UNIST 에너지 및 화학공학부 교수·차세대 리튬금속전지 연구책임자",
+        "scope_score": 2,
+        "sector": "battery_engineering_academia",
+        "evidence_date": "2020-08-19",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "산업 연구임원 경력 후 대학 교수로 전환해 대형 차세대 배터리 연구를 이끄는 전국 단위 전문 리더",
+        "source_notes": [
+          "UNIST 공식 2020 보도에서 교수 및 삼성미래기술육성사업 리튬금속전지 공동연구 책임자로 확인",
+          "T0 삼성SDI 연구경력과 이후 UNIST 교수 경력이 동일 인물로 연결됨"
+        ],
+        "source_urls": [
+          "https://news.unist.ac.kr/kor/20200819-1/"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "정하웅",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "KAIST 물리학과 교수",
+      "t0_age": 42,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "KAIST 물리학과 교수·복잡계/네트워크 과학 연구책임자",
+        "scope_score": 2,
+        "sector": "complex_systems_physics",
+        "evidence_date": "2020-11-02",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "KAIST 교수로 독립 연구팀을 이끄는 전국 단위 학술 리더십; PNAS 연구성과만으로 score 3을 자동 부여하지 않음",
+        "source_notes": [
+          "KAIST 공식 2020-11-02 보도가 물리학과 정하웅 교수 연구팀의 PNAS 네트워크과학 연구를 직접 확인"
+        ],
+        "source_urls": [
+          "https://news.kaist.ac.kr/news/html/news/?mng_no=10630&mode=V"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json",
+        "donga_2010_target2020_pending_audit_round1_academic_v0_1.json"
+      ]
+    },
+    {
+      "name": "조동호",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "KAIST 전기전자공학과 석좌교수",
+      "t0_age": 54,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "KAIST 교수·LG-KAIST 6G 연구센터장",
+        "scope_score": 3,
+        "sector": "telecommunications_6g_research_leadership",
+        "evidence_date": "2020-08-13",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최초 6G 산학연 연구센터를 이끌며 LG전자·KRISS와 국가 차세대 통신 핵심기술 연구개발을 총괄하는 주요 기술 리더십",
+        "source_notes": [
+          "KAIST 공식 2020-08-13 자료가 조동호를 LG-KAIST 6G 연구센터장으로 명시하고 LG전자·KRISS와의 6G 테라헤르츠 R&D 협력을 확인"
+        ],
+        "source_urls": [
+          "https://www.kaist.ac.kr/news/html/news/?GotoPage=119&list_e_date=&list_s_date=&mng_no=9450&mode=V&skey=&sval="
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json",
+        "donga_2010_target2020_pending_audit_round1_academic_v0_1.json"
+      ]
+    },
+    {
+      "name": "주영석",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "서울대 의대 유전체의학 연구소 연구원",
+      "t0_age": 28,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "KAIST 의과학대학원 교수·암유전체 연구자",
+        "scope_score": 2,
+        "sector": "cancer_genomics",
+        "evidence_date": "2020-01-22",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "독립 연구실을 이끄는 젊은 의과학자로 전국 단위 전문·학술 리더십",
+        "source_notes": [
+          "KAIST 공식 2020 보도에서 의과학대학원 교수 및 제13회 아산의학상 젊은의학자상 수상자로 확인"
+        ],
+        "source_urls": [
+          "https://www.kaist.ac.kr/news/html/news/?GotoPage=1&list_e_date=&list_s_date=&mng_no=8450&mode=V&skey=keyword&sval=%EC%A0%8A%EC%9D%80%EC%9D%98%ED%95%99%EC%9E%90%EB%B6%80%EB%AC%B8"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "찰스 리",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "미국 하버드대 의대 교수",
+      "t0_age": 41,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "The Jackson Laboratory for Genomic Medicine 초대 Scientific Director·Professor·HUGO President",
+        "scope_score": 3,
+        "sector": "human_genomics_institutional_leadership",
+        "evidence_date": "2020",
+        "match": "exact_year_by_official_tenure_and_public_role",
+        "confidence": "H",
+        "scope_rationale": "미국 유전체의학 연구기관 과학책임자이자 국제 Human Genome Organization 회장으로 국제 연구·기관 리더십",
+        "source_notes": [
+          "JAX 공식 경력에서 2013년 JAX-GM 초대 scientific director, HUGO president 2017-2023 확인",
+          "2020 코로나 PCR 역량 확대 및 Reopen Connecticut Advisory Task Force 위원으로 공공 역할 수행"
+        ],
+        "source_urls": [
+          "https://www.jax.org/news-and-insights/2024/april/charles-lee-receives-honorary-degree-from-university-of-alberta",
+          "https://www.jax.org/news-and-insights/2021/december/the-robert-alvine-family-endowed-chair",
+          "https://www.jax.org/news-and-insights/2020/march/jax-providing-coronavirus-testing-for-connecticut-residents"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "현택환",
+      "category": "꿈꾸는 개척가",
+      "t0_role": "서울대 화학생물공학부 중견석좌교수",
+      "t0_age": 46,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "서울대 석좌교수·IBS 나노입자 연구단장",
+        "scope_score": 3,
+        "sector": "nanochemistry_materials",
+        "evidence_date": "2020-09-25",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국가 연구단장·세계적 나노입자 합성 연구자로 Citation Laureate 수준의 국제 연구 리더십. 실제 Nobel급 수상은 아니므로 score 4로 올리지 않음",
+        "source_notes": [
+          "IBS 공식 2020 보도에서 나노입자 연구단장·서울대 석좌교수 및 2020 Citation Laureate 선정 확인"
+        ],
+        "source_urls": [
+          "https://www.ibs.re.kr/cop/bbs/BBSMSTR_000000000736/selectBoardArticle.do?nttId=19134&pageIndex=1&searchCnd=&searchWrd="
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_pioneers_v0_1.json"
+      ]
+    },
+    {
+      "name": "김강립",
+      "category": "행동하는 지성인",
+      "t0_role": "보건복지부 보건산업정책국장",
+      "t0_age": 45,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "보건복지부 제1차관·WHO 집행이사, 이후 식품의약품안전처장",
+        "scope_score": 3,
+        "sector": "public_health_government",
+        "evidence_date": "2020-05~2020-11",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "중앙정부 차관급 및 식약처장으로 국가 보건정책의 주요 리더십을 맡고 WHO 집행이사로 국제 보건 역할도 수행",
+        "source_notes": [
+          "보건복지부 공식 자료가 2020-05-19 김강립 차관의 WHO 집행이사 지명을 확인",
+          "2020-11-01 식품의약품안전처장 내정으로 연중 직위 전환 확인"
+        ],
+        "source_urls": [
+          "https://www.mohw.go.kr/gallery.es?act=view&bid=0003&list_no=354679&mid=a10607030000&tag=",
+          "https://www.yna.co.kr/view/AKR20201101025652001"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json"
+      ]
+    },
+    {
+      "name": "김숙정",
+      "category": "행동하는 지성인",
+      "t0_role": "교육과학기술부 학교정책국 장학관",
+      "t0_age": 49,
+      "t0_sex": "여",
+      "target2020": {
+        "role": "부산광역시 남부교육지원청 교육장",
+        "scope_score": 2,
+        "sector": "public_education_administration",
+        "evidence_date": "2020",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "지역 교육행정기관 최고책임자로 안정적 공공 교육 리더십을 수행",
+        "source_notes": [
+          "2011 교육과학기술부 인사에서 김숙정이 부산광역시교육청으로 전보된 경력 bridge 확인",
+          "부산광역시의회 2020 업무보고에서 남부교육지원청교육장 김숙정으로 직접 확인",
+          "남부교육지원청 공식 연혁은 2018-09-01 취임, 2020-09-01 후임 취임을 기록"
+        ],
+        "source_urls": [
+          "https://www.donga.com/news/People/article/all/20110901/39970081/1",
+          "https://council.busan.go.kr/assem/user/assem/minute/preViewMovie.busan?assemFullMovie=8924&command=update",
+          "https://home.pen.go.kr/nambu/cm/cntnts/cntntsView.do?cntntsId=88&mi=12257"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json",
+        "donga_2010_target2020_pending_audit_round2_public_civic_v0_1.json"
+      ]
+    },
+    {
+      "name": "김용",
+      "category": "행동하는 지성인",
+      "t0_role": "미국 다트머스대 총장",
+      "t0_age": 51,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "Global Infrastructure Partners Vice Chairman and Partner",
+        "scope_score": 3,
+        "sector": "global_infrastructure_investment",
+        "evidence_date": "2020-11-02",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "세계은행 총재 퇴임 후에도 대형 글로벌 인프라 투자기관의 고위 리더십을 맡음; 과거 세계은행 총재 peak를 2020 score로 소급하지 않음",
+        "source_notes": [
+          "Harvard Medical School 2020 세미나가 Jim Yong Kim을 Global Infrastructure Partners Vice Chairman and Partner로 직접 소개"
+        ],
+        "source_urls": [
+          "https://ghsm.hms.harvard.edu/ghsm-events/department-seminars/covid-19-reflections-and-updates"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json"
+      ]
+    },
+    {
+      "name": "김준영",
+      "category": "행동하는 지성인",
+      "t0_role": "한국노총 부천지역지부 의장",
+      "t0_age": 43,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "한국노총 전국금속노동조합연맹 사무처장",
+        "scope_score": 2,
+        "sector": "labor_union_national",
+        "evidence_date": "2021",
+        "match": "nearest_within_window",
+        "confidence": "H",
+        "scope_rationale": "전국 단위 산별노련의 사무처장으로 안정적 노동조직 리더십을 수행",
+        "source_notes": [
+          "경력 연표에서 2005-2012 부천노총 의장, 2016 한국노총 대변인, 2017 금속노련 사무처장으로 이동한 동일인 trajectory 확인",
+          "2021 경제사회노동위원회 자료에서 '김준영 한국노총 금속노련 사무처장(전 부천노총 의장)'으로 직접 확인",
+          "2020 exact 자료가 없어 2021 nearest-window로 기록"
+        ],
+        "source_urls": [
+          "https://www.eslc.go.kr/bbs/data/view.do?bbs_mst_idx=BM0000000366&data_idx=BD0000000020&menu_idx=2290"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json",
+        "donga_2010_target2020_pending_audit_round2_public_civic_v0_1.json"
+      ]
+    },
+    {
+      "name": "김해성",
+      "category": "행동하는 지성인",
+      "t0_role": "(사단법인)지구촌사랑나눔 이사장",
+      "t0_age": 49,
+      "t0_sex": "남",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "migrant_rights_civic",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": [
+          "2010 identity와 과거 이주노동자 지원 경력은 명확하지만 2019-2021 직접 역할을 확인하지 못해 T0 조직 직함의 지속을 가정하지 않음"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "unresolved",
+      "resolution_state": "role_ambiguous_after_exit",
+      "resolution_reason": "2016 지구촌사랑나눔 대표·중국동포교회 담임목사직 사임 후 단체 관여 주장과 부인이 엇갈려 2019-2021 공식 active role 미확정.",
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json",
+        "donga_2010_target2020_round3_unresolved_a_v0_1.json"
+      ]
+    },
+    {
+      "name": "김형태",
+      "category": "행동하는 지성인",
+      "t0_role": "법무법인 덕수 변호사",
+      "t0_age": 54,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "법무법인 덕수 대표변호사",
+        "scope_score": 2,
+        "sector": "law_public_interest",
+        "evidence_date": "2020-02-06",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국적으로 활동하는 법무법인의 대표변호사이자 권익·공익 법률 활동을 지속하는 전문 리더",
+        "source_notes": [
+          "2020 한국프로야구 은퇴선수협회와의 MOU 기사에서 법무법인 덕수 대표변호사 김형태로 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.newsis.com/view/NISX20200206_0000910647"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json"
+      ]
+    },
+    {
+      "name": "박원순",
+      "category": "행동하는 지성인",
+      "t0_role": "희망제작소 상임이사",
+      "t0_age": 55,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "서울시장 재임 중 2020-07-10 사망",
+        "scope_score": null,
+        "sector": "politics_public_administration",
+        "evidence_date": "2020-07-10",
+        "match": "competing_event_in_target_year",
+        "confidence": "H",
+        "competing_event": "death",
+        "pre_event_role": "서울시장",
+        "pre_event_scope_score": 3,
+        "scope_rationale": "2020년 목표연도 안에 사망했으므로 전체 metric에서는 낮은 scope나 예측 실패로 치환하지 않고 competing event로 censoring",
+        "source_notes": [
+          "서울시 공식 2020-07-07 자료에서 현직 서울시장 활동 확인",
+          "연합뉴스가 2020-07-10 사망을 직접 보도"
+        ],
+        "source_urls": [
+          "https://news.seoul.go.kr/welfare/archives/520406",
+          "https://www.yna.co.kr/view/AKR20200710000500004"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "competing_event",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json"
+      ]
+    },
+    {
+      "name": "송호근",
+      "category": "행동하는 지성인",
+      "t0_role": "서울대 사회학과 교수",
+      "t0_age": 54,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "POSTECH 석좌교수·사회학자",
+        "scope_score": 2,
+        "sector": "sociology_public_intellectual",
+        "evidence_date": "2020",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 단위의 저명 학자·공공 지식인으로 활동 지속",
+        "source_notes": [
+          "포스코 2020 저출산 심포지엄 공식 자료에서 송호근을 포스텍 석좌교수로 직접 확인"
+        ],
+        "source_urls": [
+          "https://newsroom.posco.com/kr/%ED%8F%AC%EC%8A%A4%EC%BD%94-%EC%95%84%EC%9D%B4-%ED%82%A4%EC%9A%B0%EA%B8%B0-%EC%A2%8B%EC%9D%80-%EC%82%AC%ED%9A%8C%EB%A5%BC-%EC%9C%84%ED%95%9C-2020-%EC%A0%80%EC%B6%9C%EC%82%B0-%EC%8B%AC/"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json"
+      ]
+    },
+    {
+      "name": "염형국",
+      "category": "행동하는 지성인",
+      "t0_role": "변호사",
+      "t0_age": 36,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "공익인권법재단 공감 변호사·서울지방변호사회 프로보노지원센터장",
+        "scope_score": 2,
+        "sector": "public_interest_law_human_rights",
+        "evidence_date": "2020",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 단위 공익인권 변호사이자 변호사회의 프로보노 지원 리더십",
+        "source_notes": [
+          "2020 인터뷰에서 공감 소속 공익변호사 및 서울지방변호사회 프로보노지원센터장 역할을 직접 확인"
+        ],
+        "source_urls": [
+          "https://chunchu.yonsei.ac.kr/news/articleView.html?idxno=26760"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json"
+      ]
+    },
+    {
+      "name": "오충현",
+      "category": "행동하는 지성인",
+      "t0_role": "KOICA 보건의료연구관",
+      "t0_age": 35,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "KOICA 글로벌협력의사·국제 보건의료 협력 활동",
+        "scope_score": 2,
+        "sector": "global_health_development_cooperation",
+        "evidence_date": "2020~2021",
+        "match": "exact_year_publication_plus_nearest_window_confirmation",
+        "confidence": "M",
+        "scope_rationale": "의사 전문성을 국제개발협력 현장에서 사용하는 전국·국제 단위 전문 역할",
+        "source_notes": [
+          "2020 발행된 KOICA 글로벌협력의사 활동경험담의 저자로 '글로벌협력의사 오충현'이 확인됨",
+          "2021 대한민국 해외봉사상 기사에서 피지 보건의료 활동을 한 오충현 글로벌협력의사로 확인되어 T0 KOICA·의사 경력과의 연속성을 보조"
+        ],
+        "source_urls": [
+          "https://sdmlib.sen.go.kr/sdmlib/intro/search/index.do?editMode=normal&locExquery=111016&menu_idx=4&search_text=%EC%98%A4%EC%B6%A9%ED%98%84&search_type=titlecollquery",
+          "https://www.yna.co.kr/view/AKR20211216142400371"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json"
+      ]
+    },
+    {
+      "name": "유근배",
+      "category": "행동하는 지성인",
+      "t0_role": "서울대 지리학과 교수",
+      "t0_age": 57,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "서울대학교 지리학과 명예교수·지리학 저술/교육 활동",
+        "scope_score": 1,
+        "sector": "geography_academia",
+        "evidence_date": "2020-01-25",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "퇴임 후 명예교수로 저술·교육 활동을 지속하지만 상근 기관 리더십은 아닌 상태",
+        "source_notes": [
+          "한국방송통신대학교출판문화원 2020 교재 저자소개가 유근배를 '현재 서울대학교 지리학과 명예교수'로 직접 표기"
+        ],
+        "source_urls": [
+          "https://press.knou.ac.kr/goods/commonViewUrl.m?condCmdtCode=9788920035296"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json",
+        "donga_2010_target2020_pending_audit_round2_public_civic_v0_1.json"
+      ]
+    },
+    {
+      "name": "윤명철",
+      "category": "행동하는 지성인",
+      "t0_role": "동국대 교양교육원 교수",
+      "t0_age": 56,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "동국대 명예교수·한국해양정책학회 부회장",
+        "scope_score": 2,
+        "sector": "history_maritime_policy_public_intellectual",
+        "evidence_date": "2020-10-18",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "은퇴 후에도 전국 단위 학술·정책 활동을 지속하는 저명 학자",
+        "source_notes": [
+          "2020 한국경제 기고의 저자 소개에서 동국대 명예교수·한국해양정책학회 부회장으로 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.hankyung.com/article/202010178782g"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json"
+      ]
+    },
+    {
+      "name": "이광형",
+      "category": "행동하는 지성인",
+      "t0_role": "KAIST 바이오뇌공학과 미래산업 석좌교수",
+      "t0_age": 56,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "KAIST 바이오및뇌공학과·문술미래전략대학원 미래산업 초빙 석좌교수",
+        "scope_score": 2,
+        "sector": "academia_future_strategy",
+        "evidence_date": "2021-02-19",
+        "match": "nearest_within_window",
+        "confidence": "H",
+        "scope_rationale": "2021 총장 취임 직전까지 석좌교수로 재직한 사실을 nearest-window로 사용; 2021 총장직은 2020 target score를 소급 상승시키지 않음",
+        "source_notes": [
+          "KAIST 공식 총장 선임 기사에서 2021-02 현재 초빙 석좌교수 재직을 확인하고 2020 국민훈장·국회의장상 수상도 기록"
+        ],
+        "source_urls": [
+          "https://news.kaist.ac.kr/news/html/news/?GotoPage=140&list_e_date=&list_s_date=&mng_no=12450&mode=V&skey=&sval=IT"
+        ]
+      },
+      "within_window_followup": {
+        "role": "KAIST 제17대 총장",
+        "scope_score": 3,
+        "evidence_date": "2021-02-23",
+        "match": "within_window_followup_not_substituted_for_2020"
+      },
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json"
+      ]
+    },
+    {
+      "name": "이명균",
+      "category": "행동하는 지성인",
+      "t0_role": "계명대 에너지환경계획학과 교수",
+      "t0_age": 46,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "UNEP DTU Partnership Institutional Development 섹션장·국제 기후개발 전문가",
+        "scope_score": 3,
+        "sector": "international_climate_development",
+        "evidence_date": "2020-02~2020-04",
+        "match": "exact_year",
+        "confidence": "H",
+        "source_notes": [
+          "2020 UNEP-DTU 채용공고가 Myung Kyoon Lee를 Head of Section, Institutional Development로 직접 명시",
+          "LSE 약력이 Keimyung University 교수와 UNEP/GGGI 경력을 동일 인물로 연결"
+        ],
+        "source_urls": [
+          "https://unepccc.org/job/research-assistant-for-unep-dtu-partnership/",
+          "https://unepccc.org/job/senior-advisor-for-institutional-development-section/",
+          "https://www.lse.ac.uk/granthaminstitute/profile/myung-kyoon-lee/"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json",
+        "donga_2010_target2020_pending_audit_round3_resolved_v0_1.json"
+      ]
+    },
+    {
+      "name": "이연주",
+      "category": "행동하는 지성인",
+      "t0_role": "한국청년유권자연맹 운영위원장",
+      "t0_age": 50,
+      "t0_sex": "여",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "civic_youth_voter",
+        "evidence_date": null,
+        "match": "pending_identity_and_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": [
+          "2019-2021 direct role evidence가 충분하지 않아 T0 시민단체 직책 지속을 가정하지 않음"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "unresolved",
+      "resolution_state": "active_role_unresolved",
+      "resolution_reason": "청년유권자연맹 초대 운영위원장 identity와 2018 연맹 고문 역할은 확인되나 2019-2021 dated role 미확보.",
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json",
+        "donga_2010_target2020_round3_unresolved_a_v0_1.json"
+      ]
+    },
+    {
+      "name": "이은영",
+      "category": "행동하는 지성인",
+      "t0_role": "소비자시민모임 미래자원실장",
+      "t0_age": 41,
+      "t0_sex": "여",
+      "target2020": {
+        "role": "소비자권익포럼 이사장",
+        "scope_score": 2,
+        "sector": "consumer_rights_civic",
+        "evidence_date": "2020",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 단위 소비자권익 시민단체를 이끄는 공익 리더십",
+        "source_notes": [
+          "2006~2010 소비자시민모임 미래자원실장, 2015 사무총장으로 이어지는 경력 bridge 확인",
+          "2020 소비자금융포럼에서 소비자권익포럼 이사장 이은영으로 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.consumernews.co.kr/news/articleView.html?idxno=607292"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json",
+        "donga_2010_target2020_pending_audit_round2_public_civic_v0_1.json"
+      ]
+    },
+    {
+      "name": "이주호",
+      "category": "행동하는 지성인",
+      "t0_role": "교육과학기술부 제1차관",
+      "t0_age": 49,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "KDI국제정책대학원 교수·교육정책 전문가",
+        "scope_score": 2,
+        "sector": "education_policy_academia",
+        "evidence_date": "2020-08-17",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전직 장관이지만 2020 exact snapshot은 현직 KDI국제정책대학원 교수로 전국 단위 교육정책 전문 역할",
+        "source_notes": [
+          "KDI 공식 2020 언론기고 페이지가 이주호를 KDI국제정책대학원 교수로 직접 표기"
+        ],
+        "source_urls": [
+          "https://www.kdi.re.kr/share/pressContriView?bd_no=3988"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json"
+      ]
+    },
+    {
+      "name": "임경진",
+      "category": "행동하는 지성인",
+      "t0_role": "하자센터 프로젝트 매니저",
+      "t0_age": 31,
+      "t0_sex": "여",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "youth_civic_culture",
+        "evidence_date": null,
+        "match": "pending_identity_and_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": [
+          "2020 검색에서 같은 이름의 해군 부사관 등 명백한 동명이인이 다수 노출되어 T0 하자센터 인물과 연결하지 않음"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "unresolved",
+      "resolution_state": "identity_ambiguous",
+      "resolution_reason": "2010 하자센터 프로젝트매니저 이후 전주 사회적경제 분야의 임경진이 등장하지만 두 경력을 직접 잇는 source가 없어 이름만으로 동일인 처리하지 않음.",
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json",
+        "donga_2010_target2020_round3_unresolved_b_v0_1.json"
+      ]
+    },
+    {
+      "name": "조국",
+      "category": "행동하는 지성인",
+      "t0_role": "서울대 법학전문대학원 교수",
+      "t0_age": 45,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "서울대 법학전문대학원 교수 신분이나 2020-01-29부터 직위해제 상태",
+        "scope_score": 1,
+        "sector": "law_academia",
+        "evidence_date": "2020-01-29",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "2020 목표시점에는 교수 신분은 유지됐지만 정상적 직무 수행이 정지된 행정상 직위해제 상태이므로 active national professional role보다 낮게 코딩. 이는 유무죄 판단이 아님",
+        "source_notes": [
+          "연합뉴스가 서울대의 2020-01-29 직위해제 결정을 보도하며, 서울대가 이를 징계나 유무죄 판단이 아닌 교수 직무를 정지하는 행정조치라고 설명했음을 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200129091251004"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json"
+      ]
+    },
+    {
+      "name": "한숭희",
+      "category": "행동하는 지성인",
+      "t0_role": "서울대 교육학과 교수",
+      "t0_age": 49,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "서울대학교 사범대학 교육학과 교수",
+        "scope_score": 2,
+        "sector": "education_academia_lifelong_learning",
+        "evidence_date": "2020",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "서울대 교육학과 교수로 연구·교육·공공 담론 활동을 지속하는 전국 단위 학술 전문 역할",
+        "source_notes": [
+          "동아일보 2010 원문이 선정 인물을 '한숭희 서울대 교육학과 교수'로 확인하여 기존 한승희 표기가 transcription error임을 확정",
+          "서울대 공식 교수 페이지가 1997-09부터 현재까지 서울대 교육학과 재직, 2020-03~2023-12 Asia Pacific Education Review Editor-in-Chief 경력을 확인",
+          "2020-06 서울대 리포지터리 논문 및 2020 경향신문 칼럼으로 목표연도 활동도 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.donga.com/news/Society/article/all/20100511/28249520/1",
+          "https://learning.snu.ac.kr/snu__professor/%ED%95%9C%EC%88%AD%ED%9D%AC/",
+          "https://s-space.snu.ac.kr/handle/10371/198012",
+          "https://www.khan.co.kr/article/202004072044045"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_intellectuals_v0_1.json",
+        "donga_2010_target2020_pending_audit_round2_public_civic_v0_1.json"
+      ]
+    },
+    {
+      "name": "강덕수",
+      "category": "도전하는 경제인",
+      "t0_role": "STX그룹 회장",
+      "t0_age": 60,
+      "t0_sex": "남",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "business_industry",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_role_evidence",
+        "confidence": null,
+        "source_notes": [
+          "2021-01 대법원 판결 보도에서 '전 STX그룹 회장' 신분과 2020 전후 재판 지속은 확인되지만, 이는 2020의 적극적 직업·리더십 역할을 의미하지 않음",
+          "따라서 과거 회장직이나 소송 상태를 target role로 대체하지 않고 보류"
+        ],
+        "timeline_support_urls": [
+          "https://www.yna.co.kr/view/AKR20210107147100004"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "unresolved",
+      "resolution_state": "no_active_public_role_evidence_in_window",
+      "resolution_reason": "2021 nearest-window 자료는 전 STX그룹 회장 신분과 장기 형사재판만 확인하며 2020 active professional/business role을 보여주지 않음.",
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json",
+        "donga_2010_target2020_round3_unresolved_b_v0_1.json"
+      ]
+    },
+    {
+      "name": "강방천",
+      "category": "도전하는 경제인",
+      "t0_role": "에셋플러스자산운용(주) 회장",
+      "t0_age": 50,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "에셋플러스자산운용 회장",
+        "scope_score": 2,
+        "sector": "asset_management_investment",
+        "evidence_date": "2020-03-09",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 단위 독립 자산운용사의 창업자·회장으로 확립된 금융 전문·경영 리더",
+        "source_notes": [
+          "2020-03-09 연합뉴스가 강방천을 에셋플러스자산운용 회장으로 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200309182300008"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "김재하",
+      "category": "도전하는 경제인",
+      "t0_role": "서울예술대 디지털아트학부 교수",
+      "t0_age": 47,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "서울예술대학교 제12대 산학협력단장",
+        "scope_score": 2,
+        "sector": "arts_academia_industry_collaboration",
+        "evidence_date": "2020",
+        "match": "exact_year_by_official_institution_history",
+        "confidence": "H",
+        "scope_rationale": "대학 내 산학협력 조직을 이끄는 전문·기관 리더십",
+        "source_notes": [
+          "서울예술대학교 공식 산학협력단 연혁이 2020년 제12대 산학협력단장 김재하를 명시"
+        ],
+        "source_urls": [
+          "https://www.seoularts.ac.kr/web/content.do?proFn=9421200"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "김택진",
+      "category": "도전하는 경제인",
+      "t0_role": "엔씨소프트 사장",
+      "t0_age": 43,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "엔씨소프트 대표이사",
+        "scope_score": 3,
+        "sector": "gaming_technology",
+        "evidence_date": "2020-10-27",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 게임기업의 창업자·대표로 글로벌 게임시장에서 영향력을 가진 주요 산업 리더",
+        "source_notes": [
+          "2020-10-27 연합뉴스가 엔씨소프트 김택진 대표로 직접 확인",
+          "2020 상반기에도 엔씨소프트 대표 신분과 경영 성과가 확인됨"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20201027087651001",
+          "https://www.yna.co.kr/view/AKR20200814157451017"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "남수정",
+      "category": "도전하는 경제인",
+      "t0_role": "썬앳푸드 대표",
+      "t0_age": 42,
+      "t0_sex": "여",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "food_service_business",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_role_evidence",
+        "confidence": null,
+        "source_notes": [
+          "썬앳푸드는 2020-12 신규 브랜드를 론칭해 회사 활동은 확인되며, 남수정의 썬앳푸드 대표 경력은 2018까지 확인됨",
+          "그러나 2020 회사 활동만으로 남수정 개인의 당시 직함을 추정하지 않음"
+        ],
+        "timeline_support_urls": [
+          "https://www.seoul.co.kr/news/Brandnews/2020/12/14/20201214500043",
+          "https://news.nate.com/view/20180110n01582"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "unresolved",
+      "resolution_state": "active_role_unresolved",
+      "resolution_reason": "2018까지 썬앳푸드 대표 경력과 회사의 2020 활동은 확인되지만 남수정 개인의 2020 직함을 직접 입증하지 못해 회사 존속을 개인 tenure로 추정하지 않음.",
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json",
+        "donga_2010_target2020_round3_unresolved_b_v0_1.json"
+      ]
+    },
+    {
+      "name": "박병엽",
+      "category": "도전하는 경제인",
+      "t0_role": "팬택계열 부회장",
+      "t0_age": 48,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "팬택씨앤아이 대표자·회장",
+        "scope_score": 2,
+        "sector": "holding_investment_it",
+        "evidence_date": "2020-10-05",
+        "match": "exact_year_by_corporate_registration",
+        "confidence": "M",
+        "scope_rationale": "중견 지주·투자회사의 대표자로 신규투자와 IT/계열 사업을 이끄는 전국 단위 기업가 역할",
+        "source_notes": [
+          "사업자·법인 정보에서 2020-10-05 등록된 팬택씨앤아이 대표자명이 박병엽으로 확인됨",
+          "팬택씨앤아이 공식 회사개요·CEO 페이지도 박병엽을 대표이사 회장으로 확인하고 2020 투자 연혁을 제공",
+          "기업 공식 페이지는 현재 페이지이므로 exact-year anchor는 2020 등록정보에 둠"
+        ],
+        "source_urls": [
+          "https://www.bizno.net/article/1088617624",
+          "https://pantechcni.com/bbs/content.php?co_id=overview",
+          "https://pantechcni.com/bbs/content.php?co_id=history"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "박인출",
+      "category": "도전하는 경제인",
+      "t0_role": "예치과원장",
+      "t0_age": 58,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "교정전문 올쏘치과 원장·치과의사",
+        "scope_score": 2,
+        "sector": "dentistry_healthcare",
+        "evidence_date": "2020-08-31",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "치과 네트워크 창업 경력 이후에도 2020 전문 임상·교육 활동을 지속하는 전국 단위 의료 전문 역할",
+        "source_notes": [
+          "2020-08-31 치과 전문매체가 올쏘치과 박인출 원장의 웨비나를 보도",
+          "동 매체의 저자 아카이브에도 2020 박인출 원장 활동이 반복 확인됨"
+        ],
+        "source_urls": [
+          "https://www.dentin.kr/news/article.html?no=9656",
+          "https://www.dentin.kr/news/article_list_writer.html?name=%EB%B0%95%EC%9D%B8%EC%B6%9C"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "박지영",
+      "category": "도전하는 경제인",
+      "t0_role": "컴투스 대표",
+      "t0_age": 35,
+      "t0_sex": "여",
+      "target2020": {
+        "role": "본엔젤스벤처파트너스 파트너·초기 스타트업 투자자",
+        "scope_score": 2,
+        "sector": "venture_capital_startups",
+        "evidence_date": "2020",
+        "match": "exact_year_by_tenure",
+        "confidence": "H",
+        "source_notes": [
+          "2013 컴투스 경영에서 물러난 뒤 2015 본엔젤스 파트너 합류",
+          "2021 기사에서 2015년부터 파트너로 활동했다고 명시해 2020 tenure 포함",
+          "본엔젤스 공식 페이지도 Partner로 확인"
+        ],
+        "source_urls": [
+          "https://www.newspim.com/news/view/20151126000243",
+          "https://magazine.hankyung.com/business/article/202111100679b",
+          "https://www.bonangels.net/member"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json",
+        "donga_2010_target2020_pending_audit_round3_resolved_v0_1.json"
+      ]
+    },
+    {
+      "name": "박현주",
+      "category": "도전하는 경제인",
+      "t0_role": "미래에셋 회장",
+      "t0_age": 52,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "미래에셋그룹 회장",
+        "scope_score": 3,
+        "sector": "financial_group_asset_management",
+        "evidence_date": "2020-05-27",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 주요 금융그룹 창업자·회장으로 글로벌 자산운용·증권 사업을 이끄는 주요 산업 리더",
+        "source_notes": [
+          "2020-05-27 contemporaneous 보도에서 박현주를 미래에셋그룹 회장으로 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200527053051002"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "서경배",
+      "category": "도전하는 경제인",
+      "t0_role": "아모레퍼시픽 대표이사 사장",
+      "t0_age": 47,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "아모레퍼시픽그룹 대표이사 회장",
+        "scope_score": 3,
+        "sector": "beauty_consumer_business",
+        "evidence_date": "2020-04-23",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 대표 뷰티그룹을 이끄는 대기업·글로벌 소비재 산업 리더",
+        "source_notes": [
+          "아모레퍼시픽 공식 2020 보도자료가 서경배를 아모레퍼시픽그룹 대표이사 회장으로 직접 명시"
+        ],
+        "source_urls": [
+          "https://www.apgroup.com/int/ko/misc/news/2020-04-23.html"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "서정진",
+      "category": "도전하는 경제인",
+      "t0_role": "(주)셀트리온 대표이사 회장",
+      "t0_age": 53,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "셀트리온그룹 회장; 2020-12-31 경영 일선 은퇴 발표",
+        "scope_score": 3,
+        "sector": "biopharma_business",
+        "evidence_date": "2020-12-31",
+        "match": "exact_year_by_tenure_and_retirement_date",
+        "confidence": "H",
+        "scope_rationale": "글로벌 바이오시밀러 기업집단 창업자·회장으로 주요 국제 바이오산업 리더. 보조규칙의 score 4는 최상위 대기업집단/세계 산업 apex에 제한하여 보수적으로 3",
+        "source_notes": [
+          "2021-02 보도가 서정진이 2020-12-31 회장직에서 물러났고 2021-03 주총까지 공식 직함을 유지한다고 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20210208031451017"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "성영석",
+      "category": "도전하는 경제인",
+      "t0_role": "스테레오픽쳐스코리아 대표",
+      "t0_age": 39,
+      "t0_sex": "남",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "3d_media_business",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_role_evidence",
+        "confidence": null,
+        "source_notes": [
+          "2010 동아일보 원문으로 스테레오픽쳐스코리아 창업·대표 경력과 당시 3D 변환사업은 명확히 확인됨",
+          "그러나 2019-2021 동일 인물의 직접 직함·활동을 신뢰도 높은 dated source로 아직 연결하지 못함"
+        ],
+        "timeline_support_urls": [
+          "https://www.donga.com/news/article/all/20100520/28474637/1"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "unresolved",
+      "resolution_state": "active_role_unresolved",
+      "resolution_reason": "스테레오픽쳐스 창업·대표 identity는 확실하고 현재 기업정보에도 대표로 표시되지만 2019-2021 dated source로 직함 연속성을 직접 확인하지 못함.",
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json",
+        "donga_2010_target2020_round3_unresolved_b_v0_1.json"
+      ]
+    },
+    {
+      "name": "신동빈",
+      "category": "도전하는 경제인",
+      "t0_role": "롯데그룹 부회장",
+      "t0_age": 55,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "롯데그룹 회장·일본 롯데홀딩스 회장",
+        "scope_score": 4,
+        "sector": "conglomerate_management",
+        "evidence_date": "2020-04-01",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 대기업집단의 총수·회장으로 보조규칙의 경제 score 4 예시에 직접 해당",
+        "source_notes": [
+          "2020-03 연합뉴스가 신동빈을 롯데그룹 회장으로 확인하고 일본 롯데홀딩스 회장 선임 및 4월 1일 취임 예정 사실을 보도"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200319015651073",
+          "https://www.yna.co.kr/view/AKR20200604047500030"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "신현송",
+      "category": "도전하는 경제인",
+      "t0_role": "대통령국제경제보좌관",
+      "t0_age": 51,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "국제결제은행(BIS) 경제자문역·조사국장",
+        "scope_score": 3,
+        "sector": "international_finance_economics",
+        "evidence_date": "2020",
+        "match": "exact_year_by_official_tenure",
+        "confidence": "H",
+        "scope_rationale": "주요 글로벌 중앙은행 협력기구의 최고위 연구·경제정책 리더십이며 조직 전체 수장은 아니므로 3",
+        "source_notes": [
+          "한국은행 공식 약력이 2014-05부터 BIS Economic Adviser and Head of Research 재직을 명시하여 2020 tenure를 직접 포함"
+        ],
+        "source_urls": [
+          "https://www.bok.or.kr/eng/main/contents.do?menuNo=400472"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "안동현",
+      "category": "도전하는 경제인",
+      "t0_role": "서울대 경제학부 교수",
+      "t0_age": 46,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "서울대학교 경제학부 교수",
+        "scope_score": 2,
+        "sector": "economics_academia",
+        "evidence_date": "2020",
+        "match": "exact_year_by_official_tenure",
+        "confidence": "H",
+        "scope_rationale": "국내 주요 대학의 확립된 경제학 교수·전문가 역할",
+        "source_notes": [
+          "서울대 공식 경력 페이지가 안동현의 서울대 경제학부 교수 재직을 2009-09부터 현재까지로 명시"
+        ],
+        "source_urls": [
+          "https://www.snu.ac.kr/about/winners/education/2022/467"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "이근",
+      "category": "도전하는 경제인",
+      "t0_role": "서울대 경제학부 교수",
+      "t0_age": 50,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "서울대학교 경제학부 교수",
+        "scope_score": 2,
+        "sector": "economics_academia",
+        "evidence_date": "2021-01-19",
+        "match": "nearest_within_window",
+        "confidence": "H",
+        "scope_rationale": "2021년 1월의 직접 근거가 2020 목표연도에 가장 가까운 안정적 학술 역할을 확인",
+        "source_notes": [
+          "2021-01-19 연합뉴스가 이근을 서울대 경제학부 교수로 직접 확인",
+          "같은 날 국민경제자문회의 부의장 위촉은 2021 후속 역할이므로 2020 score를 소급 상승시키지 않음"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20210119107300001"
+        ]
+      },
+      "within_window_followup": {
+        "role": "국민경제자문회의 부의장",
+        "scope_score": 3,
+        "evidence_date": "2021-01-19",
+        "match": "within_window_followup_not_substituted_for_2020"
+      },
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "이부진",
+      "category": "도전하는 경제인",
+      "t0_role": "호텔신라 전무",
+      "t0_age": 40,
+      "t0_sex": "여",
+      "target2020": {
+        "role": "호텔신라 대표이사 사장",
+        "scope_score": 3,
+        "sector": "hospitality_dutyfree_business",
+        "evidence_date": "2020-03-19",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 주요 상장 호텔·면세기업의 대표이사로 글로벌 면세사업을 이끄는 대기업 리더십",
+        "source_notes": [
+          "2020-03-19 호텔신라 정기주총에서 이부진 대표이사 사장의 사내이사 재선임이 확인됨"
+        ],
+        "source_urls": [
+          "https://www.greened.kr/news/articleView.html?idxno=242877",
+          "https://www.mk.co.kr/news/special-edition/9642827"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "이원규",
+      "category": "도전하는 경제인",
+      "t0_role": "(주)세실 회장",
+      "t0_age": 56,
+      "t0_sex": "남",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "business_biotech_agriculture",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_role_evidence",
+        "confidence": null,
+        "source_notes": [
+          "2020 세실 관련 민사 강제집행 공지에서 이원규의 세실 주식 가치가 없고 추가 집행 가능한 재산을 찾지 못했다는 사실은 확인됨",
+          "그러나 소송·재산상태는 2020의 적극적 직업 역할이 아니므로 scope score로 치환하지 않음"
+        ],
+        "timeline_support_urls": [
+          "https://onlinesosong.com/lawsuits/28/open/articles/notice/4143/view?pageNo=1"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "unresolved",
+      "resolution_state": "no_active_public_role_evidence_in_window",
+      "resolution_reason": "2020 직접 자료는 세실 관련 민사 강제집행·재산상태를 보여줄 뿐 active professional role을 보여주지 않아 outcome role로 코딩하지 않음.",
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json",
+        "donga_2010_target2020_round3_unresolved_b_v0_1.json"
+      ]
+    },
+    {
+      "name": "이재용",
+      "category": "도전하는 경제인",
+      "t0_role": "삼성전자 부사장",
+      "t0_age": 42,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "삼성전자 부회장·삼성그룹 핵심 경영 리더",
+        "scope_score": 4,
+        "sector": "conglomerate_technology_management",
+        "evidence_date": "2020-09-03",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 대기업집단의 사실상 최고 경영 리더로 경제 score 4의 apex 기준에 해당",
+        "source_notes": [
+          "2020 contemporaneous 보도에서 삼성전자 이재용 부회장 직함이 직접 확인됨",
+          "법적 사건의 내용은 role coding과 분리하며 직함 확인에만 사용"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200903134151004"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "이창용",
+      "category": "도전하는 경제인",
+      "t0_role": "G20 정상회의 준비위 기획조정단장",
+      "t0_age": 50,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "국제통화기금(IMF) 아시아·태평양 담당 국장",
+        "scope_score": 3,
+        "sector": "international_finance_multilateral",
+        "evidence_date": "2020-04-16",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "IMF의 핵심 지역국을 이끄는 고위 국제금융 리더십이며 조직 전체 수장은 아니므로 3",
+        "source_notes": [
+          "2020 인터뷰에서 이창용을 IMF 아시아태평양 담당 국장으로 직접 확인",
+          "IMF 공식 2022 퇴임자료가 2014년부터 8년간 APD를 이끌었다고 확인해 tenure를 교차검증"
+        ],
+        "source_urls": [
+          "https://www.hankyung.com/article/202004163745i",
+          "https://www.imf.org/ko/news/articles/2022/03/23/pr2286-changyong-rhee-to-retire-as-director-of-the-imfs-asia-and-pacific-department"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "이해진",
+      "category": "도전하는 경제인",
+      "t0_role": "NHN 이사회 의장",
+      "t0_age": 43,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "네이버 창업자·글로벌투자책임자(GIO)",
+        "scope_score": 3,
+        "sector": "internet_platform_global_investment",
+        "evidence_date": "2020-03-23",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 대표 인터넷 플랫폼의 창업자이자 글로벌 투자전략 책임자로 주요 기술산업 리더십",
+        "source_notes": [
+          "2020-03-23 contemporaneous 보도에서 이해진을 네이버 글로벌투자책임자(GIO)로 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0300&key=20200323.99099009379"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "장하준",
+      "category": "도전하는 경제인",
+      "t0_role": "영국 케임브리지대 경제학과 교수",
+      "t0_age": 47,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "영국 케임브리지대학교 경제학 교수",
+        "scope_score": 2,
+        "sector": "economics_academia_public_intellectual",
+        "evidence_date": "2020-08-25",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국제적으로 저명한 경제학자이나 target rubric은 명성 자체보다 2020 역할 scope를 평가하므로 대학 교수·공공 지식인 역할을 2로 보수적 코딩",
+        "source_notes": [
+          "2020 경향포럼 contemporaneous 기사에서 장하준을 영국 케임브리지대 교수로 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.khan.co.kr/article/202008252047025"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "정의선",
+      "category": "도전하는 경제인",
+      "t0_role": "현대자동차 부회장",
+      "t0_age": 40,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "현대자동차그룹 회장",
+        "scope_score": 4,
+        "sector": "conglomerate_automotive_management",
+        "evidence_date": "2020-10-14",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 대기업집단 회장으로 경제 score 4의 명시적 apex 기준에 해당",
+        "source_notes": [
+          "2020-10-14 현대차그룹 임시 이사회에서 정의선 신임 회장 선임이 확인됨"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20201014022100003"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "정태영",
+      "category": "도전하는 경제인",
+      "t0_role": "현대캐피탈·현대카드 사장",
+      "t0_age": 50,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "현대카드·현대캐피탈·현대커머셜 대표이사 부회장",
+        "scope_score": 3,
+        "sector": "consumer_finance_business",
+        "evidence_date": "2020-08-14",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "현대차그룹 주요 금융 3사를 동시에 이끄는 대형 금융사업 리더십",
+        "source_notes": [
+          "2020 상반기 보도에서 현대카드·캐피탈·커머셜을 이끄는 정태영 부회장으로 직접 확인",
+          "2021 현대캐피탈 대표 사임 보도가 그 직전까지 3사 대표를 겸임했음을 교차검증"
+        ],
+        "source_urls": [
+          "https://www.hankyung.com/article/2020081408101",
+          "https://www.yna.co.kr/view/AKR20210906063100003"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "최태원",
+      "category": "도전하는 경제인",
+      "t0_role": "SK그룹 회장",
+      "t0_age": 50,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "SK그룹 회장",
+        "scope_score": 4,
+        "sector": "conglomerate_management",
+        "evidence_date": "2020-01-16",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "국내 최상위 대기업집단의 총수·회장으로 경제 score 4의 명시적 apex 기준에 해당",
+        "source_notes": [
+          "2020-01 SK 그룹 행사에서 최태원 SK 회장 직함과 그룹 최고경영진 리더십을 직접 확인",
+          "2020년 SK 주식회사 보수자료도 회장 역할을 교차확인"
+        ],
+        "source_urls": [
+          "https://zdnet.co.kr/view/?no=20200116094219",
+          "https://www.etoday.co.kr/news/view/2006296"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_economy_v0_1.json"
+      ]
+    },
+    {
+      "name": "김문수",
+      "category": "미래를 여는 지도자",
+      "t0_role": "경기도지사",
+      "t0_age": 59,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "자유통일당 대표로 창당 후 자유공화당 공동대표를 맡았다가 2020년 3월 탈당",
+        "scope_score": 2,
+        "sector": "politics",
+        "evidence_date": "2020-01~2020-03",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 단위 정당 대표이지만 당시 주요 거대정당의 지도부·공직은 아님",
+        "source_notes": [
+          "2020-01-31 자유통일당 창당대회에서 대표 선출",
+          "2020-03-03 우리공화당과 통합해 자유공화당 공동대표",
+          "2020-03-21 자유공화당 탈당"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200131165000001",
+          "https://www.yna.co.kr/view/AKR20200303056252001",
+          "https://www.yna.co.kr/view/AKR20200322022100001"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_v0_1.json"
+      ]
+    },
+    {
+      "name": "김병국",
+      "category": "미래를 여는 지도자",
+      "t0_role": "고려대 정치외교학과 교수",
+      "t0_age": 51,
+      "t0_sex": "남",
+      "target2020": {
+        "role": null,
+        "scope_score": null,
+        "sector": "academia_policy",
+        "evidence_date": null,
+        "match": "pending_direct_2019_2021_evidence",
+        "confidence": null,
+        "source_notes": [
+          "고려대 공식 퇴임교수 페이지에서 동일 인물과 경력 및 2016-08-31 퇴임은 확인",
+          "그러나 현재 확보한 자료만으로 2019-2021의 직접 역할을 확정하지 않음"
+        ],
+        "identity_timeline_support": {
+          "evidence_date": "2016-08-31",
+          "confidence": "H",
+          "source_url": "https://politics.korea.ac.kr/kupolitics_kor/people/retirement.do?article.offset=0&articleLimit=100&articleNo=275741&mode=view"
+        }
+      },
+      "within_window_followup": null,
+      "final_state": "unresolved",
+      "resolution_state": "active_role_unresolved",
+      "resolution_reason": "2016 고려대 퇴임과 EAI 설립자·석좌연구위원 경력은 확인되나 2019-2021 dated active role 미확정. 현재 EAI 약력을 2020으로 소급하지 않음.",
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_v0_1.json",
+        "donga_2010_target2020_round3_unresolved_a_v0_1.json"
+      ]
+    },
+    {
+      "name": "김성한",
+      "category": "미래를 여는 지도자",
+      "t0_role": "고려대 국제대학원 교수",
+      "t0_age": 50,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "고려대 국제대학원장·교수",
+        "scope_score": 2,
+        "sector": "academia_policy",
+        "evidence_date": "2020-02-20",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국적 전문·학술 및 정책 영역의 안정적 기관 리더십",
+        "source_notes": [
+          "동아일보 2020 기사에서 고려대 국제대학원 원장 김성한으로 확인"
+        ],
+        "source_urls": [
+          "https://www.donga.com/news/Society/article/all/20200219/99775790/1"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_v0_1.json"
+      ]
+    },
+    {
+      "name": "나경원",
+      "category": "미래를 여는 지도자",
+      "t0_role": "국회의원",
+      "t0_age": 47,
+      "t0_sex": "여",
+      "target2020": {
+        "role": "제20대 국회의원·미래통합당 서울 동작을 제21대 총선 후보; 2020-04-15 총선 낙선 후 의원 임기 종료",
+        "scope_score": 2,
+        "sector": "politics",
+        "evidence_date": "2020-04",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "2020년 상반기 현역 국회의원이며 전국 주요 정당의 총선 후보",
+        "source_notes": [
+          "2020-04-05 연합뉴스가 현역 나경원 의원의 동작을 유세를 보도",
+          "2020-04-16 낙선 인사 보도로 제21대 총선 패배 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200405058900001",
+          "https://v.daum.net/v/20200416181625516"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_v0_1.json"
+      ]
+    },
+    {
+      "name": "송영길",
+      "category": "미래를 여는 지도자",
+      "t0_role": "민주당 최고위원, 전 국회의원",
+      "t0_age": 47,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "제21대 5선 국회의원·국회 외교통일위원장",
+        "scope_score": 3,
+        "sector": "politics",
+        "evidence_date": "2020-06-15",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "5선 의원이자 국회 상임위원장으로 주요 국가 의회 리더십에 해당",
+        "source_notes": [
+          "연합뉴스가 2020-06-15 제21대 국회 전반기 외교통일위원장 선출과 5선 경력을 직접 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200615148200001"
+        ]
+      },
+      "within_window_followup": {
+        "role": "더불어민주당 대표",
+        "scope_score": 3,
+        "evidence_date": "2021-05-02",
+        "match": "within_window_followup_not_substituted_for_2020",
+        "note": "2021 당대표 취임은 허용창 내 후속 사건이지만 2020 target score를 대체하지 않음"
+      },
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_v0_1.json"
+      ]
+    },
+    {
+      "name": "오세훈",
+      "category": "미래를 여는 지도자",
+      "t0_role": "서울시장",
+      "t0_age": 49,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "전 서울시장·미래통합당 서울 광진을 제21대 총선 후보; 총선 낙선",
+        "scope_score": 2,
+        "sector": "politics",
+        "evidence_date": "2020-04",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전직 광역단체장이며 전국 주요 정당의 국회의원 후보였으나 2020 target 시점에는 선출 공직이 없음",
+        "source_notes": [
+          "2020-04-11 연합뉴스가 미래통합당 서울 광진을 오세훈 후보의 선거운동을 보도",
+          "2020-04-21 아시아경제가 최종 득표 47.8%로 고민정 후보에게 패배한 결과를 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200411045051004",
+          "https://www.asiae.co.kr/article/2020042110244999904"
+        ]
+      },
+      "within_window_followup": {
+        "role": "서울시장 복귀",
+        "scope_score": 3,
+        "evidence_date": "2021-04-08",
+        "match": "within_window_followup_not_substituted_for_2020",
+        "source_urls": [
+          "https://www.seoul.go.kr/seoul/mayor.do",
+          "https://www.yna.co.kr/view/AKR20210408030900004"
+        ],
+        "note": "2021 서울시장 복귀는 중요한 허용창 내 후속 사건이나 2020 exact snapshot을 대체하지 않음"
+      },
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_v0_1.json"
+      ]
+    },
+    {
+      "name": "원희룡",
+      "category": "미래를 여는 지도자",
+      "t0_role": "국회의원",
+      "t0_age": 46,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "제주특별자치도지사·야권 대선주자",
+        "scope_score": 3,
+        "sector": "politics",
+        "evidence_date": "2020-12",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "현직 광역자치단체장으로 주요 국가 정치 리더십 범주",
+        "source_notes": [
+          "2020-12 연합뉴스 인터뷰에서 현직 제주지사이자 야권 대선주자로 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20201222023300056"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_v0_1.json"
+      ]
+    },
+    {
+      "name": "유시민",
+      "category": "미래를 여는 지도자",
+      "t0_role": "전 보건복지부 장관",
+      "t0_age": 51,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "노무현재단 이사장·작가/시사평론 활동",
+        "scope_score": 2,
+        "sector": "civic_media",
+        "evidence_date": "2020-08-29",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 단위 시민·정책·미디어 영향력을 가진 비영리기관 리더십",
+        "source_notes": [
+          "연합뉴스 2020-08-29 기사에서 노무현재단 이사장 유시민으로 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20200829065400052"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_v0_1.json"
+      ]
+    },
+    {
+      "name": "임태희",
+      "category": "미래를 여는 지도자",
+      "t0_role": "노동부 장관",
+      "t0_age": 54,
+      "t0_sex": "남",
+      "target2020": {
+        "role": "한경대학교 총장",
+        "scope_score": 2,
+        "sector": "academia_public",
+        "evidence_date": "2020",
+        "match": "exact_year_by_official_tenure",
+        "confidence": "H",
+        "scope_rationale": "국립대학 총장으로 전국 단위 전문·공공기관 리더십",
+        "source_notes": [
+          "한경국립대 공식 역대총장 페이지에서 임태희 제7대 총장 임기를 2017-10-20~2021-10-05로 확인"
+        ],
+        "source_urls": [
+          "https://sanhak.hknu.ac.kr/kor/674/subview.do"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_v0_1.json"
+      ]
+    },
+    {
+      "name": "백경학",
+      "category": "독자선정",
+      "t0_role": "푸르메재단 이사",
+      "t0_age": null,
+      "t0_sex": null,
+      "target2020": {
+        "role": "푸르메재단 상임이사",
+        "scope_score": 2,
+        "sector": "civic_nonprofit",
+        "evidence_date": "2020-12-03",
+        "match": "exact_year",
+        "confidence": "H",
+        "scope_rationale": "전국 단위 비영리·사회복지기관의 상근 리더십",
+        "source_notes": [
+          "연합뉴스 2020-12-03 기사에서 푸르메재단 백경학 상임이사로 확인"
+        ],
+        "source_urls": [
+          "https://www.yna.co.kr/view/AKR20201203111000005"
+        ]
+      },
+      "within_window_followup": null,
+      "final_state": "resolved",
+      "resolution_state": null,
+      "resolution_reason": null,
+      "provenance_layers": [
+        "donga_2010_target2020_outcomes_v0_1.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+﻿name,category,t0_role,t0_age,t0_sex,final_state,resolution_state,target_role,scope_score,sector,evidence_date,match,confidence
+김연아,자유로운 창조인,피겨스케이팅 선수,20,여,resolved,,은퇴한 올림픽 챔피언·유니세프 국제친선대사,2,sports_civic,2020-03-16,exact_year,H
+김윤진,자유로운 창조인,영화배우,37,여,resolved,,영화배우; 영화 담보 출연 및 자백 촬영,2,film,2020,exact_year_confirmed_by_contemporaneous_and_later_sources,M
+김현수,자유로운 창조인,두산베어스 외야수,22,남,resolved,,LG 트윈스 주전 외야수·중심타자,2,sports_baseball,2020-05-05,exact_year,H
+노희경,자유로운 창조인,작가,44,여,resolved,,드라마 작가; 신작 HERE 집필·제작 준비,2,television_writing,2020-07-07,exact_year,H
+박민규,자유로운 창조인,소설가,42,남,resolved,,소설가,2,literature,2020-12-31,exact_year,M
+박성훈,자유로운 창조인,롯데호텔 피에르가니에르 조리장,20,남,unresolved,active_role_unresolved,,,culinary,,pending_identity_and_2019_2021_evidence,
+박진영,자유로운 창조인,가수 겸 프로듀서,38,남,resolved,,JYP엔터테인먼트 대표 프로듀서·가수·작곡가,3,music_industry,2020-10-06,exact_year,H
+봉준호,자유로운 창조인,영화감독,41,남,resolved,,영화감독; 기생충으로 아카데미 감독상 및 작품상 등 4관왕,4,film,2020-02-10,exact_year,H
+서도호,자유로운 창조인,설치미술가,48,남,resolved,,서울·뉴욕·런던을 기반으로 활동하는 국제 설치미술가,3,visual_art,2020-09-28,exact_year,M
+신경숙,자유로운 창조인,소설가,47,여,resolved,,소설가; 장편 아버지에게 갔었어 연재로 창작 활동 재개,2,literature,2020-06-23,exact_year,H
+신지애,자유로운 창조인,프로골퍼,22,여,resolved,,JLPGA 투어 프로골퍼; 2020 후지쓰 레이디스 우승,3,sports_golf,2020-10-18,exact_year,H
+심승현,자유로운 창조인,만화가,39,남,unresolved,no_active_public_role_evidence_in_window,,,comics_illustration,,pending_reliable_2019_2021_evidence,
+양성원,자유로운 창조인,"연세대 음대 교수, 첼리스트",43,남,resolved,,첼리스트·연세대 음대 교수,2,classical_music_academia,2021-09-27,nearest_within_window,H
+이청용,자유로운 창조인,영국 볼턴 원더러스 FC 선수,22,남,resolved,,울산 현대 프로축구 선수; 유럽 생활 후 K리그 복귀,2,sports_football,2020-03-05,exact_year,H
+장한나,자유로운 창조인,첼리스트 겸 지휘자,28,여,resolved,,Trondheim Symphony Orchestra & Opera 수석지휘자·예술리더,3,classical_music_conducting,2020,exact_year_by_official_tenure,H
+정연두,자유로운 창조인,현대미술 작가,41,남,resolved,,미디어·사진·설치미술가; 2020 개인전 및 외교부 VR 전시 참여,2,visual_art,2020-12-14,exact_year,H
+정욱준,자유로운 창조인,패션디자이너,43,남,resolved,,삼성물산 패션부문 JUUN.J 크리에이티브 디렉터·상무; 파리패션위크 참가,3,fashion,2020-07-14,exact_year,H
+조성진,자유로운 창조인,서울예술고 1학년·피아니스트,16,남,resolved,,국제 활동 피아니스트; 2020 전국 리사이틀 및 음반 활동,3,classical_music,2020-11-05,exact_year,H
+최은석,자유로운 창조인,디스트릭트 대표이사,37,남,competing_event,,사망,,digital_media_business,2012-02-18,competing_event_pre_target,H
+홍명보,자유로운 창조인,올림픽 축구대표팀 감독,41,남,resolved,,대한축구협회 전무이사 임기 종료 후 울산 현대 감독 선임,3,sports_football_leadership,2020-12-24,exact_year,H
+김광수,꿈꾸는 개척가,미국 하버드대 의대 교수,56,남,resolved,,McLean Hospital/Harvard Medical School 분자신경생물학 연구책임자·정신의학 연구자,3,biomedicine_neuroscience,2020-02-03,exact_year,H
+김기문,꿈꾸는 개척가,포스텍 화학과 교수,56,남,resolved,,POSTECH University Professor·IBS 복잡계 자기조립 연구단장,3,chemistry_nanoscience,2020-07-28,exact_year,H
+김빛내리,꿈꾸는 개척가,서울대 생명과학부 중견석좌교수,41,여,resolved,,서울대 교수·IBS RNA 연구단장,3,molecular_biology_rna,2020,exact_year_by_directorship_and_2020_research,H
+김정범,꿈꾸는 개척가,울산과학기술대 나노생명과학공학부 교수,36,남,resolved,,UNIST 생명과학 교수·줄기세포/혈관전구세포 연구책임자,2,stem_cell_biomedicine,2020-04-13,exact_year,H
+김창진,꿈꾸는 개척가,미국 UCLA 기계항공공학과 교수,52,남,resolved,,UCLA Distinguished Professor·Volgenau Chair in Engineering,3,mechanical_bioengineering,2020-12-14,exact_year,H
+김필립,꿈꾸는 개척가,미국 컬럼비아대 물리학과 교수,43,남,resolved,,Harvard University Professor of Physics and Applied Physics,3,condensed_matter_physics,2020-04,exact_year,H
+김호근,꿈꾸는 개척가,연세대 병리학교실 교수,56,남,resolved,,연세대학교 의과대학 세브란스병원 병리학교실 교수·병리의학 연구자,2,medicine_pathology_academia,2020-12-29,exact_year,H
+남홍길,꿈꾸는 개척가,포스텍 생명과학과 교수,53,남,resolved,,DGIST/IBS 식물 노화·수명 연구 리더,3,plant_biology_aging,2020-05~2020-09,exact_year,H
+박승정,꿈꾸는 개척가,"서울아산병원 심장병원 원장, 울산대 의대 교수",56,남,resolved,,울산대 석좌교수·세계적 중재심장학 연구자,3,medicine_cardiology,2020-04-08,exact_year,H
+박홍근,꿈꾸는 개척가,미국 하버드대 화학과 교수,43,남,resolved,,Harvard Mark Hyman Jr. Professor of Chemistry and Professor of Physics,3,chemistry_nanoscience,2020,exact_year_by_faculty_role_and_award_record,H
+서동철,꿈꾸는 개척가,미국 스크립스연구소 교수,49,남,competing_event,,사망,,immunology,2017-10-06,competing_event_pre_target,H
+신재원,꿈꾸는 개척가,미국 항공우주국(NASA) 항공연구사업본부장,51,남,resolved,,현대자동차 UAM사업부장·사장,3,industry_urban_air_mobility,2020-12-15,exact_year,H
+안철수,꿈꾸는 개척가,KAIST 기술경영전문대학원 석좌교수,48,남,resolved,,국민의당 대표,3,politics,2020,exact_year,H
+이상엽,꿈꾸는 개척가,"KAIST 생명과학기술대학장, 특훈교수",46,남,resolved,,KAIST 생명화학공학과 특훈교수·시스템대사공학 연구리더,3,biochemical_engineering,2020-11-20,exact_year,H
+이상훈,꿈꾸는 개척가,서울대 뇌인지과학과 교수,43,남,resolved,,서울대학교 뇌인지과학과 교수,2,neuroscience_cognitive_science,2020-2학기,exact_year,H
+이소연,꿈꾸는 개척가,한국항공우주연구원 선임연구원,32,여,resolved,,우주·STEM 커뮤니케이터 및 우주기술 사업개발/국제파트너십 역할,2,aerospace_business_stem_outreach,2021,nearest_within_window,M
+이지오,꿈꾸는 개척가,KAIST 화학과 교수,45,남,resolved,,POSTECH 생명과학과 교수·구조생물학/면역수용체 연구자,2,structural_biology_immunology,2020-12-02,exact_year,H
+이효철,꿈꾸는 개척가,KAIST 화학과 및 나노과학기술대학원 교수,38,남,resolved,,KAIST 화학과 교수·IBS 나노물질 및 화학반응 연구단 부연구단장,3,physical_chemistry_reaction_dynamics,2020-06~2020-07,exact_year,H
+임지순,꿈꾸는 개척가,서울대 물리천문학부 교수,59,남,resolved,,POSTECH 물리학과 석학교수·국제 재료/응집물질 물리 연구자,3,physics_materials_science,2020-09-24,exact_year,H
+정경민,꿈꾸는 개척가,삼성SDI 수석 연구원,43,남,resolved,,UNIST 에너지 및 화학공학부 교수·차세대 리튬금속전지 연구책임자,2,battery_engineering_academia,2020-08-19,exact_year,H
+정하웅,꿈꾸는 개척가,KAIST 물리학과 교수,42,남,resolved,,KAIST 물리학과 교수·복잡계/네트워크 과학 연구책임자,2,complex_systems_physics,2020-11-02,exact_year,H
+조동호,꿈꾸는 개척가,KAIST 전기전자공학과 석좌교수,54,남,resolved,,KAIST 교수·LG-KAIST 6G 연구센터장,3,telecommunications_6g_research_leadership,2020-08-13,exact_year,H
+주영석,꿈꾸는 개척가,서울대 의대 유전체의학 연구소 연구원,28,남,resolved,,KAIST 의과학대학원 교수·암유전체 연구자,2,cancer_genomics,2020-01-22,exact_year,H
+찰스 리,꿈꾸는 개척가,미국 하버드대 의대 교수,41,남,resolved,,The Jackson Laboratory for Genomic Medicine 초대 Scientific Director·Professor·HUGO President,3,human_genomics_institutional_leadership,2020,exact_year_by_official_tenure_and_public_role,H
+현택환,꿈꾸는 개척가,서울대 화학생물공학부 중견석좌교수,46,남,resolved,,서울대 석좌교수·IBS 나노입자 연구단장,3,nanochemistry_materials,2020-09-25,exact_year,H
+김강립,행동하는 지성인,보건복지부 보건산업정책국장,45,남,resolved,,"보건복지부 제1차관·WHO 집행이사, 이후 식품의약품안전처장",3,public_health_government,2020-05~2020-11,exact_year,H
+김숙정,행동하는 지성인,교육과학기술부 학교정책국 장학관,49,여,resolved,,부산광역시 남부교육지원청 교육장,2,public_education_administration,2020,exact_year,H
+김용,행동하는 지성인,미국 다트머스대 총장,51,남,resolved,,Global Infrastructure Partners Vice Chairman and Partner,3,global_infrastructure_investment,2020-11-02,exact_year,H
+김준영,행동하는 지성인,한국노총 부천지역지부 의장,43,남,resolved,,한국노총 전국금속노동조합연맹 사무처장,2,labor_union_national,2021,nearest_within_window,H
+김해성,행동하는 지성인,(사단법인)지구촌사랑나눔 이사장,49,남,unresolved,role_ambiguous_after_exit,,,migrant_rights_civic,,pending_direct_2019_2021_evidence,
+김형태,행동하는 지성인,법무법인 덕수 변호사,54,남,resolved,,법무법인 덕수 대표변호사,2,law_public_interest,2020-02-06,exact_year,H
+박원순,행동하는 지성인,희망제작소 상임이사,55,남,competing_event,,서울시장 재임 중 2020-07-10 사망,,politics_public_administration,2020-07-10,competing_event_in_target_year,H
+송호근,행동하는 지성인,서울대 사회학과 교수,54,남,resolved,,POSTECH 석좌교수·사회학자,2,sociology_public_intellectual,2020,exact_year,H
+염형국,행동하는 지성인,변호사,36,남,resolved,,공익인권법재단 공감 변호사·서울지방변호사회 프로보노지원센터장,2,public_interest_law_human_rights,2020,exact_year,H
+오충현,행동하는 지성인,KOICA 보건의료연구관,35,남,resolved,,KOICA 글로벌협력의사·국제 보건의료 협력 활동,2,global_health_development_cooperation,2020~2021,exact_year_publication_plus_nearest_window_confirmation,M
+유근배,행동하는 지성인,서울대 지리학과 교수,57,남,resolved,,서울대학교 지리학과 명예교수·지리학 저술/교육 활동,1,geography_academia,2020-01-25,exact_year,H
+윤명철,행동하는 지성인,동국대 교양교육원 교수,56,남,resolved,,동국대 명예교수·한국해양정책학회 부회장,2,history_maritime_policy_public_intellectual,2020-10-18,exact_year,H
+이광형,행동하는 지성인,KAIST 바이오뇌공학과 미래산업 석좌교수,56,남,resolved,,KAIST 바이오및뇌공학과·문술미래전략대학원 미래산업 초빙 석좌교수,2,academia_future_strategy,2021-02-19,nearest_within_window,H
+이명균,행동하는 지성인,계명대 에너지환경계획학과 교수,46,남,resolved,,UNEP DTU Partnership Institutional Development 섹션장·국제 기후개발 전문가,3,international_climate_development,2020-02~2020-04,exact_year,H
+이연주,행동하는 지성인,한국청년유권자연맹 운영위원장,50,여,unresolved,active_role_unresolved,,,civic_youth_voter,,pending_identity_and_2019_2021_evidence,
+이은영,행동하는 지성인,소비자시민모임 미래자원실장,41,여,resolved,,소비자권익포럼 이사장,2,consumer_rights_civic,2020,exact_year,H
+이주호,행동하는 지성인,교육과학기술부 제1차관,49,남,resolved,,KDI국제정책대학원 교수·교육정책 전문가,2,education_policy_academia,2020-08-17,exact_year,H
+임경진,행동하는 지성인,하자센터 프로젝트 매니저,31,여,unresolved,identity_ambiguous,,,youth_civic_culture,,pending_identity_and_2019_2021_evidence,
+조국,행동하는 지성인,서울대 법학전문대학원 교수,45,남,resolved,,서울대 법학전문대학원 교수 신분이나 2020-01-29부터 직위해제 상태,1,law_academia,2020-01-29,exact_year,H
+한숭희,행동하는 지성인,서울대 교육학과 교수,49,남,resolved,,서울대학교 사범대학 교육학과 교수,2,education_academia_lifelong_learning,2020,exact_year,H
+강덕수,도전하는 경제인,STX그룹 회장,60,남,unresolved,no_active_public_role_evidence_in_window,,,business_industry,,pending_direct_2019_2021_role_evidence,
+강방천,도전하는 경제인,에셋플러스자산운용(주) 회장,50,남,resolved,,에셋플러스자산운용 회장,2,asset_management_investment,2020-03-09,exact_year,H
+김재하,도전하는 경제인,서울예술대 디지털아트학부 교수,47,남,resolved,,서울예술대학교 제12대 산학협력단장,2,arts_academia_industry_collaboration,2020,exact_year_by_official_institution_history,H
+김택진,도전하는 경제인,엔씨소프트 사장,43,남,resolved,,엔씨소프트 대표이사,3,gaming_technology,2020-10-27,exact_year,H
+남수정,도전하는 경제인,썬앳푸드 대표,42,여,unresolved,active_role_unresolved,,,food_service_business,,pending_direct_2019_2021_role_evidence,
+박병엽,도전하는 경제인,팬택계열 부회장,48,남,resolved,,팬택씨앤아이 대표자·회장,2,holding_investment_it,2020-10-05,exact_year_by_corporate_registration,M
+박인출,도전하는 경제인,예치과원장,58,남,resolved,,교정전문 올쏘치과 원장·치과의사,2,dentistry_healthcare,2020-08-31,exact_year,H
+박지영,도전하는 경제인,컴투스 대표,35,여,resolved,,본엔젤스벤처파트너스 파트너·초기 스타트업 투자자,2,venture_capital_startups,2020,exact_year_by_tenure,H
+박현주,도전하는 경제인,미래에셋 회장,52,남,resolved,,미래에셋그룹 회장,3,financial_group_asset_management,2020-05-27,exact_year,H
+서경배,도전하는 경제인,아모레퍼시픽 대표이사 사장,47,남,resolved,,아모레퍼시픽그룹 대표이사 회장,3,beauty_consumer_business,2020-04-23,exact_year,H
+서정진,도전하는 경제인,(주)셀트리온 대표이사 회장,53,남,resolved,,셀트리온그룹 회장; 2020-12-31 경영 일선 은퇴 발표,3,biopharma_business,2020-12-31,exact_year_by_tenure_and_retirement_date,H
+성영석,도전하는 경제인,스테레오픽쳐스코리아 대표,39,남,unresolved,active_role_unresolved,,,3d_media_business,,pending_direct_2019_2021_role_evidence,
+신동빈,도전하는 경제인,롯데그룹 부회장,55,남,resolved,,롯데그룹 회장·일본 롯데홀딩스 회장,4,conglomerate_management,2020-04-01,exact_year,H
+신현송,도전하는 경제인,대통령국제경제보좌관,51,남,resolved,,국제결제은행(BIS) 경제자문역·조사국장,3,international_finance_economics,2020,exact_year_by_official_tenure,H
+안동현,도전하는 경제인,서울대 경제학부 교수,46,남,resolved,,서울대학교 경제학부 교수,2,economics_academia,2020,exact_year_by_official_tenure,H
+이근,도전하는 경제인,서울대 경제학부 교수,50,남,resolved,,서울대학교 경제학부 교수,2,economics_academia,2021-01-19,nearest_within_window,H
+이부진,도전하는 경제인,호텔신라 전무,40,여,resolved,,호텔신라 대표이사 사장,3,hospitality_dutyfree_business,2020-03-19,exact_year,H
+이원규,도전하는 경제인,(주)세실 회장,56,남,unresolved,no_active_public_role_evidence_in_window,,,business_biotech_agriculture,,pending_direct_2019_2021_role_evidence,
+이재용,도전하는 경제인,삼성전자 부사장,42,남,resolved,,삼성전자 부회장·삼성그룹 핵심 경영 리더,4,conglomerate_technology_management,2020-09-03,exact_year,H
+이창용,도전하는 경제인,G20 정상회의 준비위 기획조정단장,50,남,resolved,,국제통화기금(IMF) 아시아·태평양 담당 국장,3,international_finance_multilateral,2020-04-16,exact_year,H
+이해진,도전하는 경제인,NHN 이사회 의장,43,남,resolved,,네이버 창업자·글로벌투자책임자(GIO),3,internet_platform_global_investment,2020-03-23,exact_year,H
+장하준,도전하는 경제인,영국 케임브리지대 경제학과 교수,47,남,resolved,,영국 케임브리지대학교 경제학 교수,2,economics_academia_public_intellectual,2020-08-25,exact_year,H
+정의선,도전하는 경제인,현대자동차 부회장,40,남,resolved,,현대자동차그룹 회장,4,conglomerate_automotive_management,2020-10-14,exact_year,H
+정태영,도전하는 경제인,현대캐피탈·현대카드 사장,50,남,resolved,,현대카드·현대캐피탈·현대커머셜 대표이사 부회장,3,consumer_finance_business,2020-08-14,exact_year,H
+최태원,도전하는 경제인,SK그룹 회장,50,남,resolved,,SK그룹 회장,4,conglomerate_management,2020-01-16,exact_year,H
+김문수,미래를 여는 지도자,경기도지사,59,남,resolved,,자유통일당 대표로 창당 후 자유공화당 공동대표를 맡았다가 2020년 3월 탈당,2,politics,2020-01~2020-03,exact_year,H
+김병국,미래를 여는 지도자,고려대 정치외교학과 교수,51,남,unresolved,active_role_unresolved,,,academia_policy,,pending_direct_2019_2021_evidence,
+김성한,미래를 여는 지도자,고려대 국제대학원 교수,50,남,resolved,,고려대 국제대학원장·교수,2,academia_policy,2020-02-20,exact_year,H
+나경원,미래를 여는 지도자,국회의원,47,여,resolved,,제20대 국회의원·미래통합당 서울 동작을 제21대 총선 후보; 2020-04-15 총선 낙선 후 의원 임기 종료,2,politics,2020-04,exact_year,H
+송영길,미래를 여는 지도자,"민주당 최고위원, 전 국회의원",47,남,resolved,,제21대 5선 국회의원·국회 외교통일위원장,3,politics,2020-06-15,exact_year,H
+오세훈,미래를 여는 지도자,서울시장,49,남,resolved,,전 서울시장·미래통합당 서울 광진을 제21대 총선 후보; 총선 낙선,2,politics,2020-04,exact_year,H
+원희룡,미래를 여는 지도자,국회의원,46,남,resolved,,제주특별자치도지사·야권 대선주자,3,politics,2020-12,exact_year,H
+유시민,미래를 여는 지도자,전 보건복지부 장관,51,남,resolved,,노무현재단 이사장·작가/시사평론 활동,2,civic_media,2020-08-29,exact_year,H
+임태희,미래를 여는 지도자,노동부 장관,54,남,resolved,,한경대학교 총장,2,academia_public,2020,exact_year_by_official_tenure,H
+백경학,독자선정,푸르메재단 이사,,,resolved,,푸르메재단 상임이사,2,civic_nonprofit,2020-12-03,exact_year,H
