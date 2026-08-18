@@ -1,0 +1,13 @@
+{
+  "schema_version":"khan_2005_korea_leaders60_person57_longitudinal_freeze_v1.0",
+  "generated":"2026-08-18",
+  "status":"frozen_t10_t20_person57_secondary",
+  "population":{"original_selected_units":60,"person_units":57,"organization_units":3,"analysis_type":"prespecified_person_only_secondary"},
+  "target_windows":{"t10":"2015 ±1 year (2014-2016)","t20":"2025 ±1 year (2024-2026)"},
+  "peak_reference":{"major_n":53,"apex_n":24,"advanced_n":24},
+  "t10":{"assessable_n":54,"competing_event_n":3,"score_distribution":{"0":0,"1":4,"2":23,"3":24,"4":3,"null":3},"scope_ge2_n":50,"major_ge3_n":27,"apex_eq4_n":3},
+  "t20":{"assessable_n":52,"competing_event_n":5,"score_distribution":{"0":0,"1":8,"2":17,"3":17,"4":10,"null":5},"scope_ge2_n":44,"major_ge3_n":27,"apex_eq4_n":10},
+  "death_truncated_names":["김근태","노회찬","박원순","이종욱","김종학"],
+  "metrics_ref":"data/typeA/khan_2005_korea_leaders60_person57_longitudinal_metrics_v1_0.json",
+  "guardrails":["Original denominator remains 60 units.","Person57 snapshot metrics are secondary and do not include organization scores.","Death is a competing event.","Peak and snapshot outcomes remain separate.","Former roles and historical awards are not automatically inherited into later snapshots."]
+}
