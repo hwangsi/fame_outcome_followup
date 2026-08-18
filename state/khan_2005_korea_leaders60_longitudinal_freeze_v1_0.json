@@ -1,0 +1,12 @@
+{
+  "schema_version":"khan_2005_korea_leaders60_longitudinal_freeze_v1.0",
+  "generated":"2026-08-18",
+  "status":"frozen_t10_t20_60_of_60_by_unit_type",
+  "selection":{"selected_units":60,"person_units":57,"organization_units":3,"fields":6,"units_per_field":10},
+  "target_windows":{"t10":"2015 ±1 year (2014-2016)","t20":"2025 ±1 year (2024-2026)"},
+  "person57":{"peak":{"major_n":53,"apex_n":24,"advanced_n":24},"t10":{"assessable_n":54,"competing_event_n":3,"score_distribution":{"0":0,"1":4,"2":23,"3":24,"4":3,"null":3},"scope_ge2_n":50,"major_ge3_n":27,"apex_eq4_n":3},"t20":{"assessable_n":52,"competing_event_n":5,"score_distribution":{"0":0,"1":8,"2":17,"3":17,"4":10,"null":5},"scope_ge2_n":44,"major_ge3_n":27,"apex_eq4_n":10}},
+  "organizations3":{"t10":{"NHN":{"continuity":"branched_continuity","trajectory":"transformed_branched"},"한국공학교육인증원":{"continuity":"direct_continuity","trajectory":"expanded"},"경제정의실천시민연합":{"continuity":"direct_continuity","trajectory":"sustained_high"}},"t20":{"NHN":{"continuity":"branched_continuity","trajectory":"transformed_branched"},"한국공학교육인증원":{"continuity":"direct_continuity","trajectory":"expanded"},"경제정의실천시민연합":{"continuity":"direct_continuity","trajectory":"sustained_high"}}},
+  "death_truncated_names":["김근태","노회찬","박원순","이종욱","김종학"],
+  "refs":{"completion":"data/typeA/khan_2005_korea_leaders60_longitudinal_completion_v1_0.json","person57_metrics":"data/typeA/khan_2005_korea_leaders60_person57_longitudinal_metrics_v1_0.json","person57_freeze":"state/khan_2005_korea_leaders60_person57_longitudinal_freeze_v1_0.json","organization_audit":"research/khan_2005_organizations_outcome_audit_v0_1.json","qa_script":"scripts/validate_khan_2005_longitudinal_completion.py"},
+  "guardrails":["Primary denominator remains 60 selected units.","Person and organization outcomes remain separate architectures.","No single 60-unit numeric success rate exists.","Death is a competing event.","Historical peaks/former titles are not inherited into fixed-window scope.","T+10 and T+20 are window snapshots, not cumulative survival probabilities."]
+}
