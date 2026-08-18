@@ -1,0 +1,50 @@
+name: Debug Type-A common v0.4 materialization
+
+on:
+  push:
+    paths:
+      - '.github/workflows/debug-typeA-common-v0-4.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run builder and capture result
+        id: build
+        shell: bash
+        run: |
+          set +e
+          python scripts/build_typeA_common_master_v0_4.py > /tmp/typeA_v04.log 2>&1
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          {
+            echo "# Type-A common v0.4 materialization debug"
+            echo
+            echo "- run commit: $GITHUB_SHA"
+            echo "- exit code: $code"
+            echo
+            echo '```text'
+            cat /tmp/typeA_v04.log
+            echo '```'
+          } > state/typeA_common_v0_4_materialization_debug.md
+          exit 0
+      - name: Persist debug and outputs when present
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/typeA_common_v0_4_materialization_debug.md
+          for f in data/typeA/typeA_common_master_v0_4.json data/typeA/typeA_common_master_v0_4.csv data/typeA/typeA_common_metrics_v0_4.json state/typeA_common_master_freeze_v0_4.json; do
+            test -f "$f" && git add "$f"
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m "Debug Type-A common v0.4 materialization"
+            git push
+          fi
