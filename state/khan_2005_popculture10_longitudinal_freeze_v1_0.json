@@ -1,0 +1,13 @@
+{
+  "schema_version":"khan_2005_popculture10_longitudinal_freeze_v1.0",
+  "generated":"2026-08-18",
+  "status":"frozen_t10_t20",
+  "population":{"n":10,"person_units":10,"death_truncated_ever_n":1},
+  "target_windows":{"t10":"2015 ±1 year (2014-2016)","t20":"2025 ±1 year (2024-2026)"},
+  "t10":{"assessable_n":9,"competing_event_n":1,"score_distribution":{"0":0,"1":1,"2":4,"3":4,"4":0,"null":1},"scope_ge2_n":8,"major_ge3_n":4,"apex_eq4_n":0},
+  "t20":{"assessable_n":9,"competing_event_n":1,"score_distribution":{"0":0,"1":2,"2":3,"3":2,"4":2,"null":1},"scope_ge2_n":7,"major_ge3_n":4,"apex_eq4_n":2},
+  "death_truncated_names":["김종학"],
+  "audit_ref":"research/khan_2005_popculture10_longitudinal_audit_v0_1.json",
+  "metrics_ref":"data/typeA/khan_2005_popculture10_longitudinal_metrics_v1_0.json",
+  "guardrails":["Lifetime peak and fixed-window activity remain separate.","Death is a competing event.","Historical stardom is not inherited after retirement/withdrawal.","Senior-sport achievements are not mechanically converted to open-age score4."]
+}
