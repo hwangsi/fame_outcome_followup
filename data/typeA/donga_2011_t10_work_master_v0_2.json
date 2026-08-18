@@ -1,0 +1,53 @@
+{
+  "schema_version": "donga_2011_t10_work_master_v0.2",
+  "generated": "2026-08-18",
+  "status": "56_final_paths_44_reaudit_pending_no_final_metrics",
+  "cohort": {"outlet":"동아일보","title":"10년 뒤 한국을 빛낼 100인","selection_year":2011,"total_n":100},
+  "window": {"window_id":"t10","target_year":2021,"window_start":"2020-01-01","window_end":"2022-12-31"},
+  "protocol_ref":"state/donga_2011_t10_protocol_v0_1.md",
+  "previous_work_master_ref":"data/typeA/donga_2011_t10_work_master_v0_1.json",
+  "resolved_refs": [
+    "state/donga_2011_t10_repeat38_freeze_v1_0.json",
+    "research/donga_2011_t10_newentrant_inwindow18_audit_v0_1.json"
+  ],
+  "coverage": {
+    "total_n":100,
+    "final_path_n":56,
+    "pending_window_specific_reaudit_n":44,
+    "completion_rate":0.56,
+    "final_assessable_n":51,
+    "final_competing_event_n":1,
+    "final_untraceable_n":4,
+    "final_not_applicable_n":0
+  },
+  "resolved_evidence_provenance": {
+    "exact_2021_n":44,
+    "nearest_2020_n":6,
+    "nearest_2022_n":1,
+    "note":"Counts refer only to the 51 assessable finalized rows. Exact-year-by-tenure rows are included in exact_2021_n."
+  },
+  "resolved_score_counts_descriptive_only": {"1":1,"2":11,"3":35,"4":4},
+  "resolved_partial_metrics_do_not_report_as_cohort_result": {
+    "assessable_n":51,
+    "scope_ge2_n":50,
+    "major_ge3_n":39,
+    "apex_eq4_n":4
+  },
+  "competing_event_names":["박원순"],
+  "untraceable_names":["강덕수","김준영","김해성","박지영"],
+  "pending_window_specific_reaudit_names": [
+    "김상욱","김승환","김영달","김은성","남광희","남민우","박상일","박형주","백운규","이창준","장하석","정준","함돈희","김선욱","김애란","김영준","김영하","박지성","신준호","윤태호","이불","이수만","이자람","장미란","하상백","하정우","박근혜","이정희","임성남","권구훈","김가영","변대규","이서현","정용진","강일원","곽노현","김상우","김은식","백승헌","석지영","이국종","전혜경","정일용","최재경"
+  ],
+  "qa_invariants": [
+    "56 finalized + 44 pending = 100",
+    "51 assessable + 1 competing event + 4 untraceable = 56 finalized",
+    "44 exact 2021 + 6 nearest 2020 + 1 nearest 2022 = 51 assessable",
+    "1 + 11 + 35 + 4 = 51 scored assessable finalized rows",
+    "partial resolved metrics are QA only and must not be presented as the final T+10 cohort result"
+  ],
+  "analysis_gate": {
+    "final_t10_metrics_allowed":false,
+    "remaining_requirement":"Adjudicate all 44 pending new entrants with 2021-first search and explicit untraceable status when necessary."
+  },
+  "next":"Audit the 44 pending new entrants in identity-safe batches, prioritizing rows with likely continuous institutional tenure, then hard same-name/untraceable cases."
+}
