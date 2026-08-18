@@ -1,0 +1,213 @@
+{
+  "schema_version": "khan_2005_scitech_person9_peak_audit_v0.1",
+  "generated": "2026-08-18",
+  "status": "peak_audited_9_of_9_person_units",
+  "parent_selection": "khan_2005_korea_leaders60",
+  "parent_selected_units": 60,
+  "field": "과학기술",
+  "field_selected_units": 10,
+  "field_person_units": 9,
+  "field_organization_units": 1,
+  "organization_unit": "한국공학교육인증원",
+  "field_specific_secondary": true,
+  "selection_cutoff": "2005-12-15",
+  "publication_date": "2005-12-30",
+  "rules_ref": [
+    "state/coding_rules_typeA_v0_1.md",
+    "state/coding_rules_typeA_sector_scope_v0_1.md",
+    "state/coding_rules_typeA_mixed_unit_v0_1.md",
+    "state/coding_rules_typeA_organization_outcome_v0_1.md"
+  ],
+  "people": [
+    {
+      "name": "김선영",
+      "t0_role": "서울대 생명과학부 교수·바이로메드 창업자/대표",
+      "baseline_peak_through_t0": 2,
+      "baseline_reason": "2005년 국내 유전자치료 분야 선두 과학자이자 코스닥 상장 바이오벤처 창업자였으나, frozen score3의 세계적 선도 연구자 또는 주요 국가 연구기관 리더 수준으로는 보수적으로 올리지 않음.",
+      "post_t0_peak_role": "헬릭스미스(구 바이로메드) 대표이사·유전자치료제 개발 리더",
+      "post_t0_peak_year": 2019,
+      "post_t0_peak_score": 2,
+      "advancement_delta": 0,
+      "advancement_class": "no_clear_advancement",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301533251",
+        "https://www.edaily.co.kr/news/read?mediaCodeNo=257&newsId=02679766622623400",
+        "https://www.yna.co.kr/view/AKR20210331084251017"
+      ]
+    },
+    {
+      "name": "신희섭",
+      "t0_role": "KIST 뇌과학자·세계적 뇌파/인지기능 연구자",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "2005년 이미 Nature/Science 성과와 다수 주요 과학상을 가진 세계적 선도 뇌과학자.",
+      "post_t0_peak_role": "대한민국 제1호 국가과학자·IBS 인지 및 사회성 연구단 초대 연구단장",
+      "post_t0_peak_year": 2012,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301533251",
+        "https://www.ibs.re.kr/scc/lounge/ibsPeopleView.do?dtaTy=002&langSe=kor&scienceLoungeNo=16441",
+        "https://www.ibs.re.kr/cop/bbs/BBSMSTR_000000000511/selectBoardArticle.do?nttId=19527"
+      ]
+    },
+    {
+      "name": "안철수",
+      "t0_role": "안철수연구소 창업자·전 대표이사·이사회 의장",
+      "baseline_peak_through_t0": 2,
+      "baseline_reason": "전국적으로 확립된 기술기업 창업자/경영자였지만 2005년에는 이미 대표직에서 물러났고 대기업·국가급 score3 역할로는 코딩하지 않음.",
+      "post_t0_peak_role": "제19대 대통령선거 국민의당 대통령 후보",
+      "post_t0_peak_year": 2017,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 2,
+      "advancement_class": "advanced",
+      "sector_at_peak": "politics",
+      "scope4_basis": "Frozen cross-sector rule permits sector transition, and a formal major national presidential candidacy is political scope4.",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301533251",
+        "https://jn.nec.go.kr/jn/bbs/B0000268/view.do?category1=jn&category2=&deleteCd=0&menuNo=1500008&nttId=41309&pageIndex=53",
+        "https://www.nec.go.kr/site/nec/law/qnaView.do?bcIdx=19415&cbIdx=1245"
+      ]
+    },
+    {
+      "name": "윤송이",
+      "t0_role": "SK텔레콤 상무·AI 개인화서비스 기술 리더",
+      "baseline_peak_through_t0": 2,
+      "baseline_reason": "대기업 임원이지만 2005년에는 핵심 최고경영진/기업 최고 리더까지는 아니므로 score2.",
+      "post_t0_peak_role": "엔씨소프트 사장(CSO)·북미법인 NC West 최고경영자",
+      "post_t0_peak_year": 2021,
+      "post_t0_peak_score": 3,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "sector_at_peak": "technology_business",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301533251",
+        "https://about.ncsoft.com/news/article/ai-framework-ep08-211216",
+        "https://kr.ncsoft.com/kr/pr/newsDetail/5503.do"
+      ]
+    },
+    {
+      "name": "이상엽",
+      "t0_role": "KAIST 교수·대사공학/미생물공장 분야 세계적 권위자",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "2005년 이미 국제적으로 반복 검증된 세계적 선도 연구자였으나, 선정 당시 자료만으로 score4 field-defining apex까지는 올리지 않음.",
+      "post_t0_peak_role": "시스템 대사공학 개척자·KAIST 특훈교수/연구부총장·Eni Award 및 국제대사공학 최고상 수상",
+      "post_t0_peak_year": 2018,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 1,
+      "advancement_class": "advanced",
+      "scope4_basis": "KAIST official sources describe him as a pioneering leader of systems metabolic engineering; later awards include the field's Merck Metabolic Engineering Award and the Eni Award, with sustained field-defining international recognition.",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301533251",
+        "https://kaist.ac.kr/news/html/news/?GotoPage=379&list_e_date=&list_s_date=&mng_no=2581&mode=V&skey=&sval=",
+        "https://www.kaist.ac.kr/news/html/news/?GotoPage=3&list_e_date=&list_s_date=&mng_no=5647&mode=V&skey=keyword&sval=%EC%B9%9C%ED%99%98%EA%B2%BD",
+        "https://www.kaist.ac.kr/news/html/news/?mng_no=47990&mode=V"
+      ]
+    },
+    {
+      "name": "임지순",
+      "t0_role": "서울대 물리학 교수·탄소나노튜브/전산고체물리학 세계적 권위자",
+      "baseline_peak_through_t0": 4,
+      "baseline_reason": "1998년 탄소나노튜브의 반도체 성질을 세계 최초 규명했고, 이후 NAS가 전산고체물리학이라는 새로운 학문 분야를 개척한 공로를 공식 설명했다. 핵심 field-defining 성취가 T0 이전이므로 baseline4로 고정.",
+      "post_t0_peak_role": "미국 National Academy of Sciences 회원·대한민국 최고과학기술인상 수상",
+      "post_t0_peak_year": 2011,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301533251",
+        "https://www.snu.ac.kr/snunow/press?bbsidx=76427&md=v",
+        "https://koreascientists.kr/prizes/scientists/public/?boardId=bbs_0000000000000046&category=&cntId=1727&mode=view&pageIdx=1312"
+      ]
+    },
+    {
+      "name": "정재승",
+      "t0_role": "KAIST 바이오시스템학과 교수·컬럼비아의대 정신과 겸직교수",
+      "baseline_peak_through_t0": 2,
+      "post_t0_peak_role": "KAIST 뇌인지과학과 창립 학과장·융합인재학부 학부장/교수",
+      "post_t0_peak_year": 2022,
+      "post_t0_peak_score": 2,
+      "advancement_delta": 0,
+      "advancement_class": "no_clear_advancement",
+      "score2_guardrail": "학과장·학부장 및 대중적 인지도는 의미 있는 리더십이지만 major national institution top leadership 또는 field-defining scientific achievement를 뜻하지 않으므로 score3으로 자동 상향하지 않음.",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301533251",
+        "https://bcs.kaist.ac.kr/sub020101/view/id/118",
+        "https://pure.kaist.ac.kr/en/persons/jaeseung-jeong/"
+      ]
+    },
+    {
+      "name": "조장희",
+      "t0_role": "가천의과학대 뇌과학연구소장·세계 최초 ring PET 개발자",
+      "baseline_peak_through_t0": 4,
+      "baseline_reason": "세계 최초 원형 PET 개발로 현대 PET 장비의 기반을 마련한 field-defining 의료영상 성취가 1970년대에 이미 완료되어 baseline4.",
+      "post_t0_peak_role": "가천 뇌과학연구소 연구 지속·초고자장 MRI/PET 융합 및 세계 최초 생체 뇌지도 연구·고려대 석좌교수/뇌과학융합센터장",
+      "post_t0_peak_year": 2009,
+      "post_t0_peak_score": 4,
+      "advancement_delta": 0,
+      "advancement_class": "sustained_high",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301533251",
+        "https://www.gachon.ac.kr/eng/7498/subview.do",
+        "https://tlo.korea.ac.kr/researcher/1692"
+      ]
+    },
+    {
+      "name": "채연석",
+      "t0_role": "한국항공우주연구원 원장·국가 로켓/우주발사체 개발 리더",
+      "baseline_peak_through_t0": 3,
+      "baseline_reason": "주요 국가 연구기관 수장이자 국가 우주발사체 프로그램의 핵심 리더로 frozen science score3에 직접 해당.",
+      "post_t0_peak_role": "과학기술연합대학원대학교 교수·로켓/우주기술 전문가",
+      "post_t0_peak_year": 2015,
+      "post_t0_peak_score": 2,
+      "advancement_delta": -1,
+      "advancement_class": "lower_than_baseline",
+      "confidence": "H",
+      "sources": [
+        "https://www.khan.co.kr/article/200512301533251",
+        "https://www.kari.re.kr/kor/article/ATCL87374b48c/9816",
+        "https://www.yna.co.kr/view/AKR20151012140951043",
+        "https://m.science.ytn.co.kr/program/view.php?key=201505121009347325&s_mcd=1101"
+      ]
+    }
+  ],
+  "qa": {
+    "audited_person_n": 9,
+    "baseline_distribution": {"2": 4, "3": 3, "4": 2},
+    "baseline_mean": 2.7777777777777777,
+    "post_peak_distribution": {"2": 3, "3": 2, "4": 4},
+    "post_peak_mean": 3.111111111111111,
+    "major_n": 6,
+    "major_rate": 0.6666666666666666,
+    "apex_n": 4,
+    "apex_rate": 0.4444444444444444,
+    "advanced_n": 3,
+    "advanced_rate": 0.3333333333333333,
+    "sustained_high_n": 3,
+    "sustained_high_rate": 0.3333333333333333,
+    "no_clear_advancement_n": 2,
+    "lower_than_baseline_n": 1,
+    "apex_names": ["안철수", "이상엽", "임지순", "조장희"],
+    "advanced_names": ["안철수", "윤송이", "이상엽"],
+    "sustained_high_names": ["신희섭", "임지순", "조장희"],
+    "no_clear_advancement_names": ["김선영", "정재승"],
+    "lower_than_baseline_names": ["채연석"]
+  },
+  "interpretation_guardrails": [
+    "The original science-tech field denominator is 10 selected units: 9 persons plus 한국공학교육인증원 as one organization.",
+    "The 9-person career-scope metrics are a unit-type-specific secondary analysis and must not be reported as the full science-tech10 result.",
+    "한국공학교육인증원 is tracked separately under the organization outcome architecture and is not assigned person Major/Apex/Advanced labels.",
+    "Pre-T0 field-defining achievements remain in baseline even when major post-T0 honors later recognize the same scientific contribution; this prevents false advancement inflation.",
+    "Sector transition is allowed: 안철수's post-T0 apex is political, not scientific, and is coded under the frozen political scope rule.",
+    "Public fame, department-chair titles, or listed-company CEO status alone do not automatically satisfy science score3/4.",
+    "채연석 lower_than_baseline reflects that his T0 lifetime peak was already national research-institution leadership; it does not erase his earlier contribution to Korean rocketry."
+  ]
+}
