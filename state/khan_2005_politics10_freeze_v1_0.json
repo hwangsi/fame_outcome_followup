@@ -1,0 +1,59 @@
+{
+  "schema_version": "khan_2005_politics10_freeze_v1.0",
+  "generated": "2026-08-18",
+  "population": {
+    "n": 10,
+    "assessable_n": 10,
+    "parent_selected_units": 60,
+    "field_specific_secondary": true
+  },
+  "baseline": {
+    "mean": 2.6,
+    "distribution": {
+      "2": 4,
+      "3": 6
+    }
+  },
+  "post_peak": {
+    "mean": 3.5,
+    "distribution": {
+      "3": 5,
+      "4": 5
+    }
+  },
+  "outcomes": {
+    "major_n": 10,
+    "major_rate": 1.0,
+    "apex_n": 5,
+    "apex_rate": 0.5,
+    "advanced_n": 8,
+    "advanced_rate": 0.8,
+    "sustained_high_n": 2,
+    "sustained_high_rate": 0.2,
+    "lower_than_baseline_n": 0,
+    "not_assessable_n": 0
+  },
+  "apex_names": [
+    "김부겸",
+    "박근혜",
+    "손학규",
+    "이명박",
+    "정동영"
+  ],
+  "sustained_high_names": [
+    "강금실",
+    "김근태"
+  ],
+  "death_truncated_names": [
+    "김근태",
+    "노회찬"
+  ],
+  "guardrails": [
+    "This is a field-specific secondary analysis of the politics stratum inside the original 60-unit mixed selection.",
+    "The primary parent denominator remains 60 selected units; politics10 must not be presented as the whole 2005 project.",
+    "Use 2005-12-15 as the no-lookahead selection cutoff because the methodology article states selection work ended that day.",
+    "The 2005-12-30 profile article is used to document contemporaneous roles, not to import achievements after the cutoff.",
+    "손학규 scope4 is based on a major national presidential nomination candidacy, explicitly allowed by the frozen political mapping.",
+    "Deaths truncate later exposure but do not erase achieved post-selection peaks."
+  ]
+}
