@@ -1,0 +1,91 @@
+{
+  "schema_version":"donga_2011_t10_pending36_batch2_continuity_v0.1",
+  "generated":"2026-08-18",
+  "status":"final_6_of_6_paths",
+  "cohort":"동아일보 2011 10년 뒤 한국을 빛낼 100인",
+  "window":{"window_id":"t10","target_year":2021,"window_start":"2020-01-01","window_end":"2022-12-31"},
+  "population_scope":"Second dedicated batch from the 36 still-pending new entrants; corporate continuity plus one stable international academic role.",
+  "protocol_ref":"state/donga_2011_t10_protocol_v0_1.md",
+  "work_master_ref":"data/typeA/donga_2011_t10_work_master_v0_3.json",
+  "people":[
+    {
+      "name":"남광희",
+      "status":"assessable",
+      "role_at_window":"KH바텍 대표이사",
+      "scope_score":3,
+      "scope_label":"major",
+      "evidence_date":"2021-06-30",
+      "match":"exact_year_by_filing",
+      "confidence":"H",
+      "evidence_refs":["https://kind.krx.co.kr/external/2021/08/17/001483/20210817004600/11012.htm"],
+      "coding_note":"2021 half-year KRX filing directly names Nam Kwang-hee as CEO. Leadership of a major mobile-component manufacturer with international supply-chain presence supports score 3."
+    },
+    {
+      "name":"정준",
+      "status":"assessable",
+      "role_at_window":"쏠리드 각자대표이사",
+      "scope_score":3,
+      "scope_label":"major",
+      "evidence_date":"2021",
+      "match":"exact_year_by_filing",
+      "confidence":"H",
+      "evidence_refs":["https://kind.krx.co.kr/external/2022/03/21/001040/20220321004565/11011.htm"],
+      "coding_note":"The 2021 annual report directly identifies Jun Chung as co-CEO throughout the fiscal year. International telecom-equipment business and sustained national industry leadership support score 3."
+    },
+    {
+      "name":"남민우",
+      "status":"assessable",
+      "role_at_window":"다산네트웍스 대표이사·한국청년기업가정신재단 이사장",
+      "scope_score":3,
+      "scope_label":"major",
+      "evidence_date":"2021-11-05",
+      "match":"exact_year",
+      "confidence":"H",
+      "evidence_refs":["https://kind.krx.co.kr/external/2021/11/15/002672/20211115005796/11013.htm","https://www.yna.co.kr/view/AKR20211105136300003"],
+      "coding_note":"KRX filing directly identifies him as DASAN Networks CEO in 2021, and contemporaneous reporting records appointment as chair of the Korea Entrepreneurship Foundation. Combined national technology-business and entrepreneurship leadership supports score 3."
+    },
+    {
+      "name":"정용진",
+      "status":"assessable",
+      "role_at_window":"신세계그룹 부회장·SSG 랜더스 구단주",
+      "scope_score":3,
+      "scope_label":"major",
+      "evidence_date":"2021-01-04",
+      "match":"exact_year",
+      "confidence":"H",
+      "evidence_refs":["https://www.shinsegaegroupnewsroom.com/2021-shinsegae-group-new-year/","https://www.yna.co.kr/view/AKR20210404034351007"],
+      "coding_note":"Shinsegae Group's official 2021 New Year message identifies Chung as group vice chairman. This is major conglomerate executive leadership, score 3; his later 2024 group-chairman role is outside the window and is not imported."
+    },
+    {
+      "name":"이서현",
+      "status":"assessable",
+      "role_at_window":"삼성복지재단 이사장",
+      "scope_score":2,
+      "scope_label":"established",
+      "evidence_date":"2021-12-03",
+      "match":"exact_year",
+      "confidence":"H",
+      "evidence_refs":["https://www.yna.co.kr/view/AKR20211203121700002","https://www.yna.co.kr/view/AKR20210501034200003"],
+      "coding_note":"2021 contemporaneous reporting directly identifies Lee as Samsung Welfare Foundation chair. Her earlier Samsung C&T fashion-president role was a higher historical peak but is not copied into T+10; the nonprofit foundation chair role is conservatively score 2."
+    },
+    {
+      "name":"장하석",
+      "status":"assessable",
+      "role_at_window":"University of Cambridge Hans Rausing Professor of History and Philosophy of Science·국제과학사철학연합 부회장",
+      "scope_score":3,
+      "scope_label":"major",
+      "evidence_date":"2021",
+      "match":"exact_year_by_tenure",
+      "confidence":"H",
+      "evidence_refs":["https://www.hps.cam.ac.uk/people/chang","https://www.hps.cam.ac.uk/news-events/seminars-reading-groups/archive/mich2021"],
+      "coding_note":"Cambridge records Chang as Hans Rausing Professor and lists 2021-25 service as second vice-president of the relevant international union; 2021 departmental activities also directly show his academic leadership. International named-professor and scholarly-organization leadership supports score 3."
+    }
+  ],
+  "qa":{"batch_n":6,"final_path_n":6,"assessable_n":6,"competing_event_n":0,"untraceable_n":0,"exact_2021_n":6,"score_counts":{"2":1,"3":5},"scope_ge2_n":6,"major_ge3_n":5,"apex_eq4_n":0},
+  "important_window_corrections":[
+    {"name":"이서현","historical_peak":"2015 삼성물산 패션부문장 사장 score 3","t10_2021_snapshot":"삼성복지재단 이사장 score 2"},
+    {"name":"정용진","post_window_peak":"2024 신세계그룹 회장 score 3","t10_2021_snapshot":"신세계그룹 부회장 score 3; later title not imported"}
+  ],
+  "guardrails":["2021 filings and contemporaneous sources take priority over current corporate biographies.","Earlier or later higher titles are not substituted for the 2021 snapshot.","Corporate continuity is coded only where the named person's 2021 office is directly documented."],
+  "next":"Continue the remaining 30 pending new entrants, with separate creative/sports and political/legal batches before hard identity cases."
+}
