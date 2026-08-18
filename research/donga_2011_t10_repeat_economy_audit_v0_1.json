@@ -1,0 +1,98 @@
+{
+  "schema_version": "donga_2011_t10_repeat_economy_audit_v0.1",
+  "generated": "2026-08-18",
+  "cohort": "동아일보 2011 10년 뒤 한국을 빛낼 100인",
+  "window": {"window_id":"t10","target_year":2021,"window_start":"2020-01-01","window_end":"2022-12-31"},
+  "population_scope": "14 repeat-selected persons in 도전하는 경제인",
+  "rules_ref": "state/coding_rules_typeA_longitudinal_v0_1.md",
+  "fallback_ref": "data/typeA/donga_2010_target2020_outcomes_economy_v0_1.json",
+  "people": [
+    {
+      "name":"강덕수","status":"untraceable","role_at_window":null,"scope_score":null,"scope_label":null,"evidence_date":"2021-01-08","match":"direct_2021_search_no_active_role","confidence":"M",
+      "evidence_refs":["https://www.yna.co.kr/view/AKR20210107147100004"],
+      "coding_note":"2021 contemporaneous evidence identifies him only as former STX Group chairman in litigation. No reproducible active professional/leadership role in 2020-2022 was found; do not convert former prestige or legal status into scope 0."
+    },
+    {
+      "name":"김택진","status":"assessable","role_at_window":"엔씨소프트 대표이사·창업자","scope_score":3,"scope_label":"major","evidence_date":"2021-03-25","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://www.yna.co.kr/view/AKR20210325168300017"],
+      "coding_note":"2021 shareholder meeting directly confirms reappointment as NCSoft CEO for another three-year term."
+    },
+    {
+      "name":"박지영","status":"untraceable","role_at_window":null,"scope_score":null,"scope_label":null,"evidence_date":null,"match":"direct_2021_search_no_reliable_same_person_role","confidence":"M",
+      "evidence_refs":["data/typeA/donga_2010_target2020_outcomes_economy_v0_1.json"],
+      "coding_note":"The frozen 2020 layer already found that she left Com2uS management in 2013 and had no reproducible 2019-2021 active public role. Current 2021-priority search did not resolve a reliable same-person role, so retain untraceable rather than forcing a low score."
+    },
+    {
+      "name":"박현주","status":"assessable","role_at_window":"미래에셋그룹 회장","scope_score":3,"scope_label":"major","evidence_date":"2021-01-14","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://www.yna.co.kr/view/AKR20210114173900002"],
+      "coding_note":"2021 contemporaneous report directly identifies Park as Mirae Asset Group chairman."
+    },
+    {
+      "name":"서정진","status":"assessable","role_at_window":"셀트리온그룹 회장(2021년 3월까지), 이후 명예회장","scope_score":3,"scope_label":"major","evidence_date":"2021-03-26","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://kind.krx.co.kr/external/2021/12/06/000312/20211129000495/71209.htm","https://www.yna.co.kr/view/AKR20210817144051017"],
+      "coding_note":"Official disclosure confirms chairman tenure into March 2021 and transition to honorary chairman. Because an actual major-company chairman role was occupied during the target year, score 3 is retained for the 2021 snapshot."
+    },
+    {
+      "name":"신현송","status":"assessable","role_at_window":"BIS Economic Adviser and Head of Research","scope_score":3,"scope_label":"major","evidence_date":"2021-11-17","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://www.bis.org/speeches/sp211117.htm"],
+      "coding_note":"BIS official 2021 speech page directly identifies the role."
+    },
+    {
+      "name":"이부진","status":"assessable","role_at_window":"호텔신라 대표이사 사장","scope_score":3,"scope_label":"major","evidence_date":"2021-03-18","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://www.newsway.co.kr/news/view?ud=2021031909433945290","https://www.yna.co.kr/view/AKR20210817150900030"],
+      "coding_note":"2021 shareholder meeting and compensation reporting directly confirm Hotel Shilla CEO/president role."
+    },
+    {
+      "name":"이재용","status":"assessable","role_at_window":"삼성전자 부회장·삼성그룹 핵심 경영 리더","scope_score":4,"scope_label":"apex","evidence_date":"2021-08-10","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://www.yna.co.kr/view/AKR20210810047851002"],
+      "coding_note":"2021 contemporaneous reporting directly confirms Samsung Electronics vice-chairman status. Legal custody is recorded separately and does not erase the occupied apex corporate role under the locked business rubric."
+    },
+    {
+      "name":"이창용","status":"assessable","role_at_window":"IMF Asia and Pacific Department Director","scope_score":3,"scope_label":"major","evidence_date":"2021","match":"exact_year_by_official_tenure","confidence":"H",
+      "evidence_refs":["https://www.imf.org/ko/news/articles/2022/03/23/pr2286-changyong-rhee-to-retire-as-director-of-the-imfs-asia-and-pacific-department"],
+      "coding_note":"IMF official retirement release states he led the Asia and Pacific Department continuously from 2014 until March 2022, directly establishing 2021 occupancy."
+    },
+    {
+      "name":"이해진","status":"assessable","role_at_window":"네이버 창업자·Global Investment Officer (GIO)","scope_score":3,"scope_label":"major","evidence_date":"2021-06-30","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://www.hankyung.com/article/202106303844g","https://www.newspim.com/news/view/20210903000717"],
+      "coding_note":"Multiple contemporaneous 2021 reports identify Lee as Naver founder and GIO."
+    },
+    {
+      "name":"장하준","status":"assessable","role_at_window":"영국 케임브리지대학교 경제학 교수","scope_score":2,"scope_label":"established","evidence_date":"2020-08-25","match":"nearest_within_window_reused_2020","confidence":"H",
+      "evidence_refs":["https://www.khan.co.kr/article/202008252047025","data/typeA/donga_2010_target2020_outcomes_economy_v0_1.json"],
+      "coding_note":"No stronger reproducible direct-2021 role evidence was found in the priority check. Reuse the frozen exact-2020 Cambridge professor snapshot as nearest admissible evidence; do not upgrade based on later SOAS appointment in 2022."
+    },
+    {
+      "name":"정의선","status":"assessable","role_at_window":"현대자동차그룹 회장·공정거래위원회 지정 동일인(총수)","scope_score":4,"scope_label":"apex","evidence_date":"2021-04-29","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://www.yna.co.kr/view/AKR20210429140100003"],
+      "coding_note":"2021 Fair Trade Commission designation completed the transfer of formal conglomerate-head status to Chung, supporting economic apex score 4."
+    },
+    {
+      "name":"정태영","status":"assessable","role_at_window":"현대카드·현대커머셜 부회장; 2021년 9월까지 현대캐피탈 대표","scope_score":3,"scope_label":"major","evidence_date":"2021-09-06","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://www.yna.co.kr/view/AKR20210906063100003","https://www.yna.co.kr/view/AKR20210331188200002"],
+      "coding_note":"2021 contemporaneous sources directly confirm senior executive leadership across Hyundai Card/Capital/Commercial."
+    },
+    {
+      "name":"최태원","status":"assessable","role_at_window":"SK그룹 회장·대한상공회의소 회장","scope_score":4,"scope_label":"apex","evidence_date":"2021-03-24","match":"exact_year","confidence":"H",
+      "evidence_refs":["https://www.yna.co.kr/view/AKR20210324074900003"],
+      "coding_note":"2021 direct evidence confirms both top-four conglomerate chairmanship and election as Korea Chamber of Commerce and Industry chairman; retain locked economic apex score 4."
+    }
+  ],
+  "qa": {
+    "repeat_economy_n":14,
+    "assessable_n":12,
+    "untraceable_n":2,
+    "competing_event_n":0,
+    "exact_2021_n":11,
+    "nearest_2020_reuse_n":1,
+    "score_counts_assessable":{"2":1,"3":8,"4":3},
+    "major_ge3_n":11,
+    "apex_eq4_n":3
+  },
+  "guardrails": [
+    "The two untraceable rows are not coded as zero or failure.",
+    "Direct 2021 evidence supersedes reusable 2020 evidence when available.",
+    "Later post-2022 roles are not imported into the 2021 snapshot.",
+    "Legal or adverse events are not used to retroactively erase an actually occupied role; they belong to separate outcome dimensions."
+  ]
+}
