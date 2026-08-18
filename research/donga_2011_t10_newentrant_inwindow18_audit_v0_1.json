@@ -1,0 +1,57 @@
+{
+  "schema_version": "donga_2011_t10_newentrant_inwindow18_audit_v0.1",
+  "generated": "2026-08-18",
+  "status": "final_18_of_18_paths",
+  "cohort": "동아일보 2011 10년 뒤 한국을 빛낼 100인",
+  "window": {"window_id":"t10","target_year":2021,"window_start":"2020-01-01","window_end":"2022-12-31"},
+  "population_scope": "18 new 2011 entrants whose lifetime audit already contained a 2020-2022 peak event",
+  "rules_ref": "state/donga_2011_t10_protocol_v0_1.md",
+  "inventory_ref": "research/donga_2011_t10_newentrant_reuse_inventory_v1_0.json",
+  "people": [
+    {"name":"박형준","status":"assessable","role_at_window":"부산광역시장","scope_score":3,"scope_label":"major","evidence_date":"2021","match":"exact_year","confidence":"H","evidence_refs":["research/donga_2011_post_t0_new_audit_batch1_v0_1.json"],"coding_note":"Existing audit event is already exact 2021."},
+    {"name":"김남구","status":"assessable","role_at_window":"한국투자금융지주 대표이사 회장","scope_score":3,"scope_label":"major","evidence_date":"2021-12-17","match":"exact_year","confidence":"H","evidence_refs":["https://www.newspim.com/news/view/20211217000223"],"coding_note":"Direct 2021 group reorganization reporting identifies Korea Investment Holdings as led by CEO/chairman Kim Nam-goo, so exact-year evidence supersedes 2020 reuse."},
+    {"name":"윤순진","status":"assessable","role_at_window":"대통령직속 2050 탄소중립위원회 민간위원장","scope_score":3,"scope_label":"major","evidence_date":"2021","match":"exact_year","confidence":"H","evidence_refs":["research/donga_2011_post_t0_new_audit_batch1_v0_1.json"],"coding_note":"Existing audit event is exact 2021 national-policy leadership."},
+    {"name":"김부겸","status":"assessable","role_at_window":"대한민국 국무총리","scope_score":4,"scope_label":"apex","evidence_date":"2021-05-14","match":"exact_year","confidence":"H","evidence_refs":["research/donga_2011_post_t0_new_audit_batch2_v0_1.json"],"coding_note":"Existing audit event is exact 2021 national apex office."},
+    {"name":"김태효","status":"assessable","role_at_window":"대통령실 국가안보실 제1차장","scope_score":3,"scope_label":"major","evidence_date":"2022-05","match":"nearest_within_window","confidence":"H","evidence_refs":["research/donga_2011_post_t0_new_audit_batch2_v0_1.json"],"coding_note":"A dedicated 2021-priority search did not yield reproducible direct-2021 occupied-role evidence. The official/major-news 2022 appointment remains admissible nearest-within-window evidence; no 2021 professorship is inferred without a dated source."},
+    {"name":"손병두","status":"assessable","role_at_window":"한국거래소 이사장","scope_score":3,"scope_label":"major","evidence_date":"2021","match":"exact_year_by_official_tenure","confidence":"H","evidence_refs":["research/donga_2011_post_t0_new_audit_batch2_v0_1.json"],"coding_note":"Official tenure was 2020-12-21 through 2023-12-20, directly establishing 2021 occupancy."},
+    {"name":"손흥민","status":"assessable","role_at_window":"토트넘 홋스퍼 주전 공격수·PFA Premier League Team of the Year","scope_score":3,"scope_label":"major","evidence_date":"2021-06-05","match":"exact_year","confidence":"H","evidence_refs":["https://www.yna.co.kr/view/AKR20210605014700007"],"coding_note":"Important 2021-first correction: the 2022 Premier League Golden Boot is an apex score-4 event, but direct 2021 evidence has priority. PFA Team of the Year and top-league starring activity support score 3, not copied score 4."},
+    {"name":"김정주","status":"assessable","role_at_window":"NXC 대표이사·넥슨 창업자","scope_score":3,"scope_label":"major","evidence_date":"2021","match":"exact_year","confidence":"H","evidence_refs":["research/donga_2011_post_t0_new_audit_batch2_v0_1.json"],"coding_note":"Exact 2021 leadership is observed. Death in 2022 does not retroactively erase the target-year snapshot."},
+    {"name":"이미경","status":"assessable","role_at_window":"CJ그룹 부회장·글로벌 콘텐츠 전략 리더","scope_score":3,"scope_label":"major","evidence_date":"2021-08-17","match":"exact_year","confidence":"H","evidence_refs":["https://www.seoul.co.kr/news/economy/2021/08/17/20210817500167"],"coding_note":"Direct 2021 reporting identifies Lee as CJ Group vice chair, allowing exact-year rather than 2020 reuse."},
+    {"name":"황철주","status":"assessable","role_at_window":"주성엔지니어링 대표이사·회장","scope_score":3,"scope_label":"major","evidence_date":"2021","match":"exact_year_by_official_tenure","confidence":"H","evidence_refs":["https://kind.krx.co.kr/external/2025/03/25/000955/20250317000150/70482.htm"],"coding_note":"KRX career history states continuous Jusung Engineering CEO/chairman tenure from 1993 to present, directly covering 2021. The 2022 industry roles are not needed."},
+    {"name":"손영래","status":"assessable","role_at_window":"보건복지부 중앙사고수습본부 사회전략반장","scope_score":3,"scope_label":"major","evidence_date":"2021-04-28","match":"exact_year","confidence":"H","evidence_refs":["https://www.korean.go.kr/front/board/boardStandardView.do?b_seq=984&board_id=33&mn_id=249&pageIndex=1&searchCondition=&searchKeyword="],"coding_note":"2021 government briefing directly identifies Son as Central Disaster Management Headquarters social strategy chief, so 2022 evidence is no longer required."},
+    {"name":"양윤선","status":"assessable","role_at_window":"메디포스트 창업자·대표이사","scope_score":2,"scope_label":"established","evidence_date":"2021","match":"exact_year","confidence":"H","evidence_refs":["research/donga_2011_post_t0_new_audit_batch4_v0_1.json"],"coding_note":"Existing audit has direct 2021 KRX evidence."},
+    {"name":"유범재","status":"assessable","role_at_window":"KIST 연구자·한국로봇학회 명예회장","scope_score":2,"scope_label":"established","evidence_date":"2021","match":"exact_year","confidence":"H","evidence_refs":["https://kros.org/intro/sub_intro06.asp","https://pubs.kist.re.kr/handle/201004/88446"],"coding_note":"Important 2021-first correction: he was Korean Robotics Society president in 2020 (score 3), but the society's 2021 officer list records him as KIST researcher and honorary president. Direct 2021 occupancy is therefore conservatively score 2 rather than copying the 2020 presidency."},
+    {"name":"조명숙","status":"assessable","role_at_window":"여명학교 교장·탈북청소년 교육 시민사회 리더","scope_score":2,"scope_label":"established","evidence_date":"2021","match":"exact_year","confidence":"H","evidence_refs":["research/donga_2011_post_t0_new_audit_batch5_v0_1.json"],"coding_note":"Existing audit identifies 2021 promotion to principal."},
+    {"name":"이상이","status":"assessable","role_at_window":"제주대 의대 교수·복지국가소사이어티 공동대표/정책위원장","scope_score":2,"scope_label":"established","evidence_date":"2021-05-25","match":"exact_year","confidence":"H","evidence_refs":["https://humanrights.go.kr/base/board/read?boardManagementNo=9&boardNo=7606636&displayType=&menuLevel=3&menuNo=91&month=&page=24&searchCategory=&searchType=&searchWord=&year="],"coding_note":"National Human Rights Commission 2021 event directly identifies professor and Welfare State Society co-representative role."},
+    {"name":"김철영","status":"assessable","role_at_window":"미래나노텍 대표이사·금탑산업훈장 수훈","scope_score":3,"scope_label":"major","evidence_date":"2021","match":"exact_year","confidence":"H","evidence_refs":["research/donga_2011_post_t0_new_audit_batch6_v0_1.json"],"coding_note":"Existing audit event is exact 2021."},
+    {"name":"이연희","status":"assessable","role_at_window":"항생제내성균주 병원체자원전문은행장·미생물학 연구 인프라 리더","scope_score":3,"scope_label":"major","evidence_date":"2020","match":"nearest_within_window_reused_2020","confidence":"H","evidence_refs":["research/donga_2011_post_t0_new_audit_batch6_v0_1.json"],"coding_note":"No stronger reproducible direct-2021 role evidence was established in this pass; retain the frozen 2020 national research-infrastructure leadership event as nearest admissible evidence."},
+    {"name":"정근창","status":"assessable","role_at_window":"LG에너지솔루션 부사장·배터리연구소장","scope_score":3,"scope_label":"major","evidence_date":"2021","match":"exact_year","confidence":"H","evidence_refs":["research/donga_2011_post_t0_new_audit_batch6_v0_1.json"],"coding_note":"Existing audit event is exact 2021."}
+  ],
+  "qa": {
+    "candidate_n":18,
+    "final_path_n":18,
+    "assessable_n":18,
+    "competing_event_n":0,
+    "untraceable_n":0,
+    "exact_2021_n":15,
+    "nearest_2020_n":1,
+    "nearest_2022_n":1,
+    "exact_2021_by_tenure_n":1,
+    "score_counts":{"2":4,"3":13,"4":1},
+    "scope_ge2_n":18,
+    "major_ge3_n":14,
+    "apex_eq4_n":1
+  },
+  "important_window_corrections": [
+    {"name":"손흥민","from_lifetime_or_nearest_event":"2022 Golden Boot score 4","to_2021_snapshot":"PFA Team of the Year/top-league star score 3"},
+    {"name":"유범재","from_2020_event":"한국로봇학회 회장 score 3","to_2021_snapshot":"KIST 연구자·학회 명예회장 score 2"},
+    {"name":"손영래","from_candidate_event":"2022 사회전략반장 score 3","to_2021_snapshot":"2021 사회전략반장 score 3; direct-year provenance upgraded"}
+  ],
+  "guardrails": [
+    "Being an in-window lifetime-peak candidate did not authorize automatic copying into T+10.",
+    "Direct 2021 evidence was actively sought for 2020/2022 candidates before fallback use.",
+    "A later death does not erase an already observed exact-2021 role.",
+    "Higher 2022 achievements do not override direct 2021 evidence."
+  ],
+  "next":"Audit the remaining 44 new entrants with no pre-existing in-window peak candidate."
+}
