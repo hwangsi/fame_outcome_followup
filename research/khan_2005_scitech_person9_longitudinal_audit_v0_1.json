@@ -1,0 +1,238 @@
+{
+  "schema_version": "khan_2005_scitech_person9_longitudinal_audit_v0.1",
+  "generated": "2026-08-18",
+  "status": "t10_t20_complete_9_of_9_person_units",
+  "parent_selection": "khan_2005_korea_leaders60",
+  "field": "과학기술",
+  "field_selected_units": 10,
+  "field_person_units": 9,
+  "field_organization_units": 1,
+  "organization_unit": "한국공학교육인증원",
+  "selection_cutoff": "2005-12-15",
+  "target_windows": {
+    "t10": "2015 ±1 year (2014-2016)",
+    "t20": "2025 ±1 year (2024-2026)"
+  },
+  "rules_ref": [
+    "state/coding_rules_typeA_v0_1.md",
+    "state/coding_rules_typeA_sector_scope_v0_1.md",
+    "state/coding_rules_typeA_mixed_unit_v0_1.md",
+    "research/khan_2005_scitech_person9_peak_audit_v0_1.json"
+  ],
+  "snapshot_rule": "Fixed-window science scores reflect the role and current-window achievement actually active in the window. A historic field-defining discovery is retained in lifetime peak but is not automatically inherited as a later snapshot score 4. Active world-leading research generally maps to 3 unless a current-window field-defining/apex achievement is directly supported.",
+  "people": [
+    {
+      "name": "김선영",
+      "t10": {
+        "role": "바이로메드 대표·서울대 생명과학부 교수, 유전자치료 개발",
+        "scope_score": 2,
+        "evidence_date": "2015",
+        "match": "target_year",
+        "confidence": "M-H",
+        "sources": ["https://www.hankyung.com/article/2015111889541"]
+      },
+      "t20": {
+        "role": "헬릭스미스 전 대표·5% 이상 주요주주; 확인된 현직 경영 수장 역할 없음",
+        "scope_score": 1,
+        "evidence_date": "2025",
+        "match": "target_year",
+        "confidence": "M-H",
+        "sources": ["https://comp.fnguide.com/SVO2/ASP/SVD_Main.asp?MenuYn=Y&gicode=A084990"]
+      },
+      "guardrail": "Founder/former-CEO history is not inherited after operating control has changed; major-shareholder status alone is not score2/3 leadership."
+    },
+    {
+      "name": "신희섭",
+      "t10": {
+        "role": "IBS 인지 및 사회성 연구단 단장·제1호 국가과학자, KAIST에서 연구단 운영",
+        "scope_score": 3,
+        "evidence_date": "2014-2016",
+        "match": "within_window_continuing_role",
+        "confidence": "H",
+        "sources": ["https://www.ibs.re.kr/scc/lounge/ibsPeopleView.do?dtaTy=002&langSe=kor&scienceLoungeNo=16441"]
+      },
+      "t20": {
+        "role": "IBS 인지 및 사회성 연구단 단장·세계적 뇌과학자",
+        "scope_score": 3,
+        "evidence_date": "2025",
+        "match": "target_window_continuing_role",
+        "confidence": "H",
+        "sources": ["https://www.ibs.re.kr/scc/lounge/ibsPeopleView.do?dtaTy=002&langSe=kor&scienceLoungeNo=16441"]
+      }
+    },
+    {
+      "name": "안철수",
+      "t10": {
+        "role": "제19대 국회의원·전 새정치민주연합 공동대표; 2015 말 탈당",
+        "scope_score": 2,
+        "evidence_date": "2015-12",
+        "match": "target_year",
+        "confidence": "H",
+        "sources": ["https://www.yna.co.kr/view/AKR20151213037551001"]
+      },
+      "t20": {
+        "role": "제22대 국회의원·2025 국민의힘 대통령후보 경선 2차 4인 후보",
+        "scope_score": 4,
+        "evidence_date": "2025-04-29",
+        "match": "target_year",
+        "confidence": "H",
+        "sources": [
+          "https://www.yna.co.kr/view/AKR20250423043251008",
+          "https://www.yna.co.kr/view/AKR20250429134000001"
+        ]
+      },
+      "guardrail": "The T20 score4 is based on an achieved major ruling-party national presidential nomination contest reaching the four-person second round, not on his 2017 lifetime peak being inherited."
+    },
+    {
+      "name": "윤송이",
+      "t10": {
+        "role": "엔씨소프트 사장·Global CSO·NC West CEO",
+        "scope_score": 3,
+        "evidence_date": "2015-01-23",
+        "match": "target_year",
+        "confidence": "H",
+        "sources": ["https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03027446609240672"]
+      },
+      "t20": {
+        "role": "엔씨소프트 경영 퇴임 후 실리콘밸리 AI 벤처투자 PVP 공동창업/매니징파트너",
+        "scope_score": 2,
+        "evidence_date": "2024-2025",
+        "match": "within_window",
+        "confidence": "M-H",
+        "sources": ["https://kr.linkedin.com/posts/bobiyu_%EC%B2%9C%EC%9E%AC-%EC%86%8C%EB%85%80%EB%A1%9C-%EB%B6%88%EB%A6%AC%EB%A9%B0-%EC%97%94%EC%94%A8%EC%86%8C%ED%94%84%ED%8A%B8%EC%9D%98-%EC%B5%9C%EA%B3%A0%EC%A0%84%EB%9E%B5%EC%B1%85%EC%9E%84%EC%9E%90cso-%EC%97%94%EC%94%A8%EC%9B%A8%EC%8A%A4%ED%8A%B8-%EB%8C%80%ED%91%9C%EB%A5%BC-activity-7392807070292561920-mB1C"]
+      },
+      "guardrail": "A new venture-capital founder role is nationally/internationally established professional leadership but is not automatically a major global-company CEO score3."
+    },
+    {
+      "name": "이상엽",
+      "t10": {
+        "role": "KAIST 특훈교수·세계적 시스템/대사공학 연구자",
+        "scope_score": 3,
+        "evidence_date": "2015",
+        "match": "target_year",
+        "confidence": "H",
+        "sources": ["https://www.kaist.ac.kr/news/html/news/?GotoPage=379&list_e_date=&list_s_date=&mng_no=2581&mode=V&skey=&sval="]
+      },
+      "t20": {
+        "role": "KAIST 연구부총장·특훈교수, 2025 Gregory N. Stephanopoulos Metabolic Engineering Award 수상",
+        "scope_score": 4,
+        "evidence_date": "2025-06-20",
+        "match": "target_year",
+        "confidence": "H",
+        "sources": ["https://www.kaist.ac.kr/news/html/news/?GotoPage=1&list_e_date=&list_s_date=&mng_no=47990&mode=V"]
+      },
+      "guardrail": "T20 score4 is supported by an in-window top field award plus continuing field-defining leadership, not simply by carrying forward the lifetime peak."
+    },
+    {
+      "name": "임지순",
+      "t10": {
+        "role": "서울대 물리천문학부 교수·미국 NAS 외국인회원, 세계적 고체물리 연구 지속",
+        "scope_score": 3,
+        "evidence_date": "2015",
+        "match": "target_year_active_research",
+        "confidence": "M-H",
+        "sources": ["https://www.snu.ac.kr/snunow/press?bbsidx=76427&md=v"]
+      },
+      "t20": {
+        "role": "울산대 반도체학과 석좌교수·기후테크 스타트업 카볼루션 창업자/대표",
+        "scope_score": 3,
+        "evidence_date": "2025-04",
+        "match": "target_year",
+        "confidence": "H",
+        "sources": [
+          "https://v.daum.net/v/20250530155449688",
+          "https://car122.imweb.me/"
+        ]
+      },
+      "guardrail": "His pre-2005 carbon-nanotube field-defining discovery remains lifetime peak4, but fixed-window active professor/startup leadership is conservatively score3 absent a new in-window global-apex event."
+    },
+    {
+      "name": "정재승",
+      "t10": {
+        "role": "KAIST 바이오및뇌공학과 교수·뇌과학 연구/대중과학 활동",
+        "scope_score": 2,
+        "evidence_date": "2015",
+        "match": "target_year_continuing_faculty_role",
+        "confidence": "H",
+        "sources": ["https://pure.kaist.ac.kr/en/persons/jaeseung-jeong/"]
+      },
+      "t20": {
+        "role": "KAIST 뇌인지과학과 학과장·교수, 2025 KAIST 교육혁신상",
+        "scope_score": 2,
+        "evidence_date": "2025-04-28",
+        "match": "target_year",
+        "confidence": "H",
+        "sources": ["https://bcs.kaist.ac.kr/korean/sub0801/view/id/354"]
+      },
+      "guardrail": "Department chair and institutional teaching awards do not automatically satisfy score3 major-national-institution top leadership."
+    },
+    {
+      "name": "조장희",
+      "t10": {
+        "role": "가천 뇌과학연구 기반 의료영상 연구를 지속한 세계적 PET/MRI 선구자",
+        "scope_score": 3,
+        "evidence_date": "2014-2016",
+        "match": "within_window_active_research",
+        "confidence": "M",
+        "sources": ["https://www.gachon.ac.kr/eng/7498/subview.do"]
+      },
+      "t20": {
+        "role": "고려대 뇌과학융합센터 석좌교수·2024 MRI/Quantum Computing 집중강좌 및 연구",
+        "scope_score": 3,
+        "evidence_date": "2024-11-22",
+        "match": "within_window_minus1",
+        "confidence": "H",
+        "sources": [
+          "https://tlo.korea.ac.kr/ja/researcher/1692",
+          "https://mediacom.korea.ac.kr/board/notice_view.html?cate=B&no=1313&page=1"
+        ]
+      },
+      "guardrail": "The historic world-first Ring PET achievement remains lifetime peak4 but is not automatically inherited; active chair-professor/research leadership is score3."
+    },
+    {
+      "name": "채연석",
+      "t10": {
+        "role": "과학기술연합대학원대학교(UST) 교수·로켓/우주기술 전문가",
+        "scope_score": 2,
+        "evidence_date": "2015-10-12",
+        "match": "target_year",
+        "confidence": "H",
+        "sources": [
+          "https://www.yna.co.kr/view/AKR20151012140951043",
+          "https://m.science.ytn.co.kr/program/view.php?key=201505121009347325&s_mcd=1101"
+        ]
+      },
+      "t20": {
+        "role": "UST 명예교수·국가 우주기술 원로 전문가",
+        "scope_score": 2,
+        "evidence_date": "2026-05-28",
+        "match": "within_window_plus1",
+        "confidence": "H",
+        "sources": ["https://www.newsis.com/view/NISX20260528_0003647876"]
+      },
+      "guardrail": "His former KARI presidency is not inherited; continuing national expert/honorary-professor status is score2."
+    }
+  ],
+  "qa": {
+    "rows": 9,
+    "t10_assessable_n": 9,
+    "t10_competing_event_n": 0,
+    "t10_score_distribution": {"1": 0, "2": 4, "3": 5, "4": 0, "null": 0},
+    "t10_scope_ge2_n": 9,
+    "t10_major_ge3_n": 5,
+    "t10_apex_eq4_n": 0,
+    "t20_assessable_n": 9,
+    "t20_competing_event_n": 0,
+    "t20_score_distribution": {"1": 1, "2": 3, "3": 3, "4": 2, "null": 0},
+    "t20_scope_ge2_n": 8,
+    "t20_major_ge3_n": 5,
+    "t20_apex_eq4_n": 2
+  },
+  "interpretation_guardrails": [
+    "The original science-tech field denominator remains 10 units: 9 persons plus ABEEK.",
+    "Historic scientific breakthroughs remain in lifetime peak but are not mechanically inherited into later snapshots.",
+    "Cross-sector transition is allowed; Ahn Cheol-soo is scored by his political role in the T20 window.",
+    "Department-level academic leadership is not automatically score3.",
+    "ABEEK is evaluated separately under the organization outcome architecture."
+  ]
+}
