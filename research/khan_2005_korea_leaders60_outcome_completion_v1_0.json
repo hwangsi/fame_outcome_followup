@@ -1,0 +1,75 @@
+{
+  "schema_version":"khan_2005_korea_leaders60_outcome_completion_v1.0",
+  "generated":"2026-08-18",
+  "status":"all_60_selected_units_outcome_resolved_by_unit_type",
+  "publication":"경향신문",
+  "series_title":"한국을 이끌 60인",
+  "selection_cutoff":"2005-12-15",
+  "publication_date":"2005-12-30",
+  "original_selected_units":60,
+  "unit_composition":{"persons":57,"organizations":3},
+  "field_status":{
+    "정치":{"selected_units":10,"persons":10,"organizations":0,"resolved_units":10,"status":"complete"},
+    "경제":{"selected_units":10,"persons":9,"organizations":1,"resolved_units":10,"status":"complete_by_unit_type"},
+    "과학기술":{"selected_units":10,"persons":9,"organizations":1,"resolved_units":10,"status":"complete_by_unit_type"},
+    "사회교육":{"selected_units":10,"persons":9,"organizations":1,"resolved_units":10,"status":"complete_by_unit_type"},
+    "대중문화":{"selected_units":10,"persons":10,"organizations":0,"resolved_units":10,"status":"complete"},
+    "문화예술":{"selected_units":10,"persons":10,"organizations":0,"resolved_units":10,"status":"complete"}
+  },
+  "qa":{"selected_units":60,"resolved_person_units":57,"resolved_organization_units":3,"resolved_total":60,"completion_rate":1.0,"single_cross_unit_type_success_rate_generated":false},
+  "person57_secondary":{
+    "metrics_ref":"data/typeA/khan_2005_korea_leaders60_person57_metrics_v1_0.json",
+    "freeze_ref":"state/khan_2005_korea_leaders60_person57_freeze_v1_0.json",
+    "baseline_mean":2.8421052631578947,
+    "post_peak_mean":3.3508771929824563,
+    "major_n":53,
+    "major_rate":0.9298245614035088,
+    "apex_n":24,
+    "apex_rate":0.42105263157894735,
+    "advanced_n":24,
+    "advanced_rate":0.42105263157894735,
+    "sustained_high_n":29,
+    "no_clear_advancement_n":3,
+    "lower_than_baseline_n":1
+  },
+  "organization3":{
+    "outcome_ref":"research/khan_2005_organizations_outcome_audit_v0_1.json",
+    "NHN":{"field":"경제","continuity_class":"branched_continuity","t20_trajectory":"transformed_branched","successor_entities":["NAVER Corp.","NHN Corp. (former NHN Entertainment)"],"confidence":"H"},
+    "한국공학교육인증원":{"field":"과학기술","continuity_class":"direct_continuity","t20_trajectory":"expanded","t20_reach":"international_reach","t20_field_leadership":"leading","t20_institutional_influence":"high","confidence":"H"},
+    "경제정의실천시민연합":{"field":"사회교육","continuity_class":"direct_continuity","t20_trajectory":"sustained_high","t20_reach":"national_broad","t20_field_leadership":"significant","t20_institutional_influence":"moderate","confidence":"M-H"}
+  },
+  "field_person_metrics":{
+    "정치":{"n":10,"baseline_mean":2.6,"post_peak_mean":3.5,"major_rate":1.0,"apex_rate":0.5,"advanced_rate":0.8},
+    "경제":{"n":9,"baseline_mean":3.111111111111111,"post_peak_mean":3.6666666666666665,"major_rate":1.0,"apex_rate":0.6666666666666666,"advanced_rate":0.4444444444444444},
+    "과학기술":{"n":9,"baseline_mean":2.7777777777777777,"post_peak_mean":3.111111111111111,"major_rate":0.6666666666666666,"apex_rate":0.4444444444444444,"advanced_rate":0.3333333333333333},
+    "사회교육":{"n":9,"baseline_mean":2.7777777777777777,"post_peak_mean":3.5555555555555554,"major_rate":1.0,"apex_rate":0.5555555555555556,"advanced_rate":0.4444444444444444},
+    "대중문화":{"n":10,"baseline_mean":3.0,"post_peak_mean":3.2,"major_rate":1.0,"apex_rate":0.2,"advanced_rate":0.2},
+    "문화예술":{"n":10,"baseline_mean":2.8,"post_peak_mean":3.1,"major_rate":0.9,"apex_rate":0.2,"advanced_rate":0.3}
+  },
+  "identity_corrections":[{
+    "name":"임지선",
+    "prior_wrong_anchor":"바이올리니스트",
+    "correct_anchor":"작곡가/연세대학교 작곡과 교수",
+    "ref":"research/khan_2005_recovery_identity_correction_v0_1.json"
+  }],
+  "interpretation":[
+    "The original 60-unit selection is now outcome-complete without deleting or numerically coercing the three organization units.",
+    "The person-only 57-unit secondary analysis shows very high later Major attainment (53/57), but baseline-adjusted advancement is much lower (24/57), illustrating that the list frequently selected people who were already established leaders.",
+    "Field differences are substantial: politics had the highest person advancement rate (80%), while pop culture had only 20% because every selected person was already scope3 at T0.",
+    "The science-tech field provides the clearest example of anti-inflation coding: later honors for pre-existing field-defining work do not count as new advancement.",
+    "Organization outcomes are trajectories rather than person career scores: NHN branched, ABEEK expanded institutionally, and CCEJ sustained broad national activity."
+  ],
+  "guardrails":[
+    "Do not call 53/57 a 60-unit success rate.",
+    "Do not add organization trajectories to person Major/Apex/Advanced numerators.",
+    "Do not compare raw field rates as outlet performance; all six fields come from one parent project and have different baseline distributions and domain-specific ceilings.",
+    "Do not integrate all field secondaries into the common cross-media placement master without an explicit parent-project weighting/version policy.",
+    "Use the composer identity for 임지선 in all future work."
+  ],
+  "next_recommended_layers":[
+    "T+10 (2015±1) and T+20 (2025±1) longitudinal snapshots for the 57 persons, with death as competing event.",
+    "T+10/T+20 organization snapshots using the frozen organization trajectory schema.",
+    "Identity audit of the remaining 47 non-politics persons against the existing cross-cohort canonical registry before any common-master integration.",
+    "Parent-project-aware weighting policy before adding multiple field-specific secondaries to pooled cross-media analyses."
+  ]
+}
